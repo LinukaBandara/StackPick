@@ -1,0 +1,45 @@
+# StackPick
+
+> Independent, budget-focused comparisons of business software for freelancers and small
+> teams. Some links are affiliate links (see /affiliate-disclosure); this does not change
+> which tools are recommended — recommendations are based on fit, not commission.
+
+## Comparisons
+- [Best Invoicing Software for Freelancers](/best/invoicing-software): Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks.
+- [Best Accounting Software for Small Business](/best/accounting-software): Xero, QuickBooks, Wave, Zoho Books.
+- [Best Payroll Software for Small Business](/best/payroll-software): Gusto, QuickBooks Payroll, OnPay, Patriot Software.
+- [Best Expense Management Software for Small Business](/best/expense-management-software): Expensify, Ramp, Zoho Expense.
+- [Best CRM Software for Freelancers & Small Teams](/best/crm-software): HubSpot, Pipedrive, Zoho CRM, Notion.
+- [Best Email Marketing Software for Small Business](/best/email-marketing-software): Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit.
+- [Best Social Media Scheduling Tool for Small Business](/best/social-media-scheduling): Buffer, Hootsuite, Later.
+- [Best Project Management Software for Small Teams](/best/project-management-software): Trello, Asana, ClickUp, monday.com.
+- [Best Website Builder for Small Business](/best/website-builders): Squarespace, Wix, Shopify, Webflow.
+- [Best Appointment Scheduling Software for Small Business](/best/appointment-scheduling-software): Calendly, Acuity Scheduling, Cal.com.
+- [Best Form Builder for Small Business](/best/form-builders): Google Forms, Typeform, Jotform.
+- [Best Cloud Storage for Small Business Teams](/best/cloud-storage): Google Drive, Dropbox, Microsoft OneDrive.
+- [Best Inventory Management Software for Small Business](/best/inventory-management-software): Zoho Inventory, Sortly, Square for Retail, inFlow.
+- [Best POS System for Small Business](/best/pos-systems): Square, Toast, Clover, Shopify POS.
+- [Best Online Course Platform for Creators & Small Business](/best/online-course-platforms): Teachable, Thinkific, Kajabi.
+- [Best Contract Management Software for Small Business](/best/contract-management-software): PandaDoc, Concord, ContractSafe.
+- [Best Business VPN for Remote Teams](/best/business-vpn): NordLayer, Perimeter 81, Twingate, Cloudflare Zero Trust.
+- [Best Password Manager for Business Teams](/best/password-managers): 1Password, Bitwarden, Keeper, NordPass.
+- [Best Help Desk Software for Small Business](/best/help-desk-software): Help Scout, Freshdesk, Zoho Desk, Gorgias.
+- [Best E-Signature Software for Small Business](/best/esignature-software): DocuSign, PandaDoc, Dropbox Sign, SignWell.
+- [Best Time Tracking Software for Freelancers & Small Teams](/best/time-tracking-software): Toggl Track, Clockify, Harvest, Hubstaff.
+- [Best Web Hosting for Small Business](/best/web-hosting): Hostinger, SiteGround, Bluehost, Cloudways.
+- [Best Business Phone System (VoIP) for Small Business](/best/business-phone-voip): Nextiva, RingCentral, Ooma, Grasshopper.
+- [Best Live Chat Software for Small Business Websites](/best/live-chat-software): Tidio, Crisp, Intercom, Tawk.to.
+- [Best Antivirus & Endpoint Security for Small Business](/best/antivirus-endpoint-security): Bitdefender GravityZone, Microsoft Defender for Endpoint, Norton Small Business, CrowdStrike.
+- [Best HR Software for Small Business](/best/hr-software): BambooHR, Gusto, Rippling, Deel.
+- [Best Survey & Customer Feedback (NPS) Software for Small Business](/best/survey-nps-software): SurveyMonkey, Delighted, Zoho Survey.
+- [Best Video Conferencing Software for Small Business](/best/video-conferencing): Zoom, Google Meet, Microsoft Teams, Whereby.
+- [Best Cloud Backup Software for Small Business](/best/cloud-backup-software): Backblaze, IDrive, Acronis Cyber Protect, Carbonite.
+- [Best Applicant Tracking System (ATS) for Small Business](/best/applicant-tracking-software): Breezy HR, Zoho Recruit, Workable, Greenhouse.
+- [Best Employee Scheduling Software for Small Business](/best/employee-scheduling-software): When I Work, Deputy, Connecteam, 7shifts.
+- [Best Business Email Hosting for Small Business](/best/business-email-hosting): Google Workspace, Microsoft 365, Zoho Mail, Proton Mail.
+
+## Policies
+- [About](/about)
+- [Affiliate Disclosure](/affiliate-disclosure): Explains affiliate links and how they do/don't influence recommendations.
+- [Privacy Policy](/privacy): No accounts; no analytics or ads currently installed.
+- [Contact](/contact)
