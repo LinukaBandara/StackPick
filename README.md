@@ -68,13 +68,13 @@ pricing yourself** — this is genuinely necessary, not optional polish.
 
 ## Before deploying
 
-1. Replace `stackpick.example` domain across `app/layout.tsx`, `app/sitemap.ts`, `app/robots.ts`.
+1. Set `NEXT_PUBLIC_SITE_URL` to the real production domain in the deployment environment; the app, sitemap, robots file, and article schema all read from this value.
 2. Sign up for real affiliate programs and swap placeholder vendor URLs for actual affiliate
    links. Most tools mentioned have public affiliate/partner programs (search "[tool name]
    affiliate program" or check their footer).
 3. Verify every "free tier" and pricing claim in each article against the live vendor page —
    several were flagged during research as recently changed or disputed between sources.
-4. Replace the placeholder contact email.
+4. Confirm the public contact/corrections route and add a real inbox only when one is ready; no fake contact address is used.
 5. Run `npm install && npm run build` locally (not run in this sandboxed environment — no
    network access here).
 
