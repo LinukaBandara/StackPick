@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Video Conferencing Software for Small Business (2026)",
   description:
-    "An honest comparison of Zoom, Google Meet, Microsoft Teams, and Whereby — and why the tool you already pay for elsewhere is often the right default.",
+    "An honest comparison of Zoom, Google Meet, Microsoft Teams, and Whereby - and why the tool you already pay for elsewhere is often the right default.",
   alternates: { canonical: "/best/video-conferencing" },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
     <ComparisonArticle
       title="Best Video Conferencing Software for Small Business"
       slug="video-conferencing"
-      intro="Before comparing features, check what you're already paying for. If you're on Google Workspace or Microsoft 365, video conferencing is already bundled in at no extra cost — adding Zoom on top means paying twice for the same basic job. Zoom's case is strongest when you need something neither bundle covers well: large webinars or external client calls with no download friction."
+      intro="Before comparing features, check what you're already paying for. If you're on Google Workspace or Microsoft 365, video conferencing is already bundled in at no extra cost - adding Zoom on top means paying twice for the same basic job. Zoom's case is strongest when you need something neither bundle covers well: large webinars or external client calls with no download friction."
       pricingNote="Per-user pricing and participant caps shift periodically, and bundled-suite pricing changes based on which tier you're already on. Confirm current limits directly."
       tools={[
         {
@@ -29,7 +29,7 @@ export default function Page() {
           bestFor: "Teams already on Google Workspace",
           freeOption: "Free tier available for anyone with a Google account (60-minute cap on group calls).",
           tradeoff:
-            "If you're already paying for Google Workspace, this is effectively already included — paying separately for Zoom on top makes little sense at small-team scale. Video quality and large-meeting capacity trail Zoom's, which matters more for webinars and large hybrid events than everyday team meetings.",
+            "If you're already paying for Google Workspace, this is effectively already included - paying separately for Zoom on top makes little sense at small-team scale. Video quality and large-meeting capacity trail Zoom's, which matters more for webinars and large hybrid events than everyday team meetings.",
           url: "https://workspace.google.com/products/meet/",
         },
         {
@@ -37,7 +37,7 @@ export default function Page() {
           bestFor: "Teams already on Microsoft 365",
           freeOption: "Limited free tier; full functionality comes bundled with Microsoft 365 Business plans.",
           tradeoff:
-            "Same logic as Google Meet — already bundled if you're paying for the right Microsoft 365 tier, and it integrates tightly with Outlook calendar and SharePoint. Less useful as a standalone product if you're not otherwise in the Microsoft ecosystem.",
+            "Same logic as Google Meet - already bundled if you're paying for the right Microsoft 365 tier, and it integrates tightly with Outlook calendar and SharePoint. Less useful as a standalone product if you're not otherwise in the Microsoft ecosystem.",
           url: "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
         },
         {
@@ -45,11 +45,11 @@ export default function Page() {
           bestFor: "External client calls where you want zero download friction",
           freeOption: "Free tier available for small meetings.",
           tradeoff:
-            "Permanent, no-download meeting rooms genuinely remove a real point of friction for external guests who don't want to install anything — a meaningful advantage for client-facing calls specifically. It's not trying to compete on large-meeting or webinar capacity the way Zoom does.",
+            "Permanent, no-download meeting rooms genuinely remove a real point of friction for external guests who don't want to install anything - a meaningful advantage for client-facing calls specifically. It's not trying to compete on large-meeting or webinar capacity the way Zoom does.",
           url: "https://whereby.com/",
         },
       ]}
-      bottomLine="Already on Google Workspace or Microsoft 365? Use the video tool that's already bundled in — don't pay for Zoom on top of it. Running large webinars, hybrid events, or need the most reliable video for high-stakes external calls? Zoom is worth paying for specifically. Frequent external client calls where you want zero friction for the other side? Whereby's no-download rooms solve a real, specific problem."
+      bottomLine="Already on Google Workspace or Microsoft 365? Use the video tool that's already bundled in - don't pay for Zoom on top of it. Running large webinars, hybrid events, or need the most reliable video for high-stakes external calls? Zoom is worth paying for specifically. Frequent external client calls where you want zero friction for the other side? Whereby's no-download rooms solve a real, specific problem."
     />
   );
 }
