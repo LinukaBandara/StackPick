@@ -117,7 +117,7 @@ export interface ComparisonArticleProps {
 }
 
 export default function ComparisonArticle({ title, slug, intro, pricingNote, tools, bottomLine, children }: ComparisonArticleProps) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.stackpick.tech";
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -146,25 +146,25 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
-      <header className="bg-white">
+      <header className="sp-article-hero">
         <div className="sp-container py-16 sm:py-24">
           <nav aria-label="Breadcrumb" className="text-sm text-[#6e6e73]">
             <Link href="/" className="hover:text-[#06c]">Home</Link>
             <span className="mx-2">/</span>
             <Link href="/best" className="hover:text-[#06c]">Comparisons</Link>
           </nav>
-          <p className="sp-eyebrow mt-12">Software comparison</p>
+          <div className="sp-kicker mt-12"><span className="sp-kicker-dot" /> StackPick comparison</div>
           <h1 className="sp-title mt-4 max-w-5xl">{title}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6e6e73]">{intro}</p>
-          <p className="mt-6 text-sm text-[#6e6e73]">Updated October 8, 2026</p>
+          <div className="mt-7 flex flex-wrap items-center gap-3 text-xs font-medium text-[#667085]"><span className="rounded-full bg-[#f2f4f7] px-3 py-1.5">Updated October 8, 2026</span><span>Pricing-aware</span><span>Built for small teams</span></div>
         </div>
       </header>
 
       <section className="bg-[#f5f5f7]">
         <div className="sp-container py-14 sm:py-20">
           {pricingNote && (
-            <div className="rounded-[28px] bg-white p-7 sm:p-9">
-              <p className="text-sm font-semibold text-[#06c]">Pricing reality</p>
+            <div className="sp-pricing-callout">
+              <p className="text-sm font-semibold text-[#5b5ce2]">Pricing reality</p>
               <p className="mt-3 max-w-4xl text-lg leading-8">{pricingNote}</p>
             </div>
           )}
@@ -173,7 +173,7 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
             <p className="sp-eyebrow">At a glance</p>
             <h2 className="mt-3 text-3xl font-semibold tracking-[-.03em]">Which one fits?</h2>
 
-            <div className="mt-8 overflow-hidden rounded-[28px] bg-white">
+            <div className="sp-comparison-table mt-8">
               <div className="hidden grid-cols-[1.1fr_1fr_1.2fr] border-b border-black/10 px-6 py-4 text-xs font-semibold text-[#6e6e73] sm:grid">
                 <span>Tool</span><span>Best for</span><span>Free option</span>
               </div>
@@ -288,9 +288,9 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
         </div>
       </section>
 
-      <section className="bg-black text-white">
+      <section className="sp-verdict">
         <div className="sp-container py-24 sm:py-32">
-          <p className="text-sm font-semibold text-[#a1a1a6]">StackPick verdict</p>
+          <div className="sp-kicker border-white/10 bg-white/10 text-white"><span className="h-2 w-2 rounded-full bg-[#a7f3d0]" /> StackPick verdict</div>
           <h2 className="mt-4 max-w-4xl text-4xl font-semibold tracking-[-.04em] sm:text-6xl">The bottom line.</h2>
           <p className="mt-8 max-w-3xl text-lg leading-8 text-[#a1a1a6]">{bottomLine}</p>
         </div>
