@@ -8,13 +8,20 @@ export const metadata: Metadata = {
   alternates: { canonical: "/best/invoicing-software" },
 };
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example";
+
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "Best Invoicing Software for Freelancers",
   description: "An honest, fee-aware comparison of invoicing tools for freelancers.",
-  url: "/best/invoicing-software",
+  url: SITE_URL + "/best/invoicing-software",
   dateModified: "2026-10-08",
+  inLanguage: "en-US",
+  mainEntityOfPage: { "@type": "WebPage", "@id": SITE_URL + "/best/invoicing-software" },
+  author: { "@type": "Organization", name: "StackPick", url: SITE_URL },
+  publisher: { "@type": "Organization", name: "StackPick", url: SITE_URL },
+  isAccessibleForFree: true,
 };
 
 interface Tool {
