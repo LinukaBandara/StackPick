@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Honest Software Comparisons for Freelancers & Small Businesses",
+  description: "Practical software comparisons for freelancers and small businesses, focused on pricing, limits, fit and trade-offs.",
+  alternates: { canonical: "/" },
+};
 
 function ArrowIcon() {
   return <svg aria-hidden="true" viewBox="0 0 16 16" className="inline-block h-4 w-4 align-[-2px]" fill="none"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>;
