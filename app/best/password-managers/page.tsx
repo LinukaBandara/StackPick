@@ -21,7 +21,7 @@ export default function Page() {
           bestFor: "Mixed technical/non-technical teams who want the smoothest onboarding",
           freeOption: "No free tier - paid only, but often includes a free family plan per employee as a perk.",
           tradeoff:
-            "Consistently rated as having the cleanest admin experience and easiest non-technical adoption in this category - the trade-off is a higher per-seat price than the budget options below.",
+            "Its admin experience is designed to reduce friction for mixed technical and non-technical teams. The trade-off is a higher per-seat cost than budget-oriented alternatives.",
           url: "https://1password.com/business",
         },
         {
@@ -37,7 +37,7 @@ export default function Page() {
           bestFor: "Compliance-heavy organizations (healthcare, finance, government contractors)",
           freeOption: "No free tier.",
           tradeoff:
-            "Strongest granular policy controls and audit depth in this list, with compliance certifications competitors lack - overkill if you're a 5-person team with no regulatory requirements.",
+            "It offers granular policy and audit controls aimed at organizations with stronger governance requirements. Those capabilities can be unnecessary for a very small team without regulatory or compliance needs.",
           url: "https://www.keepersecurity.com/business.html",
         },
         {
