@@ -41,7 +41,9 @@ const ARTICLES = [
   { href: "/best/applicant-tracking-software", title: "Best Applicant Tracking System (ATS) for Small Business", desc: "Breezy HR, Zoho Recruit, Workable, Greenhouse" },
   { href: "/best/employee-scheduling-software", title: "Best Employee Scheduling Software for Small Business", desc: "When I Work, Deputy, Connecteam, 7shifts" },
   { href: "/best/business-email-hosting", title: "Best Business Email Hosting for Small Business", desc: "Google Workspace, Microsoft 365, Zoho Mail, Proton Mail" },
-];\n\nconst CATEGORIES = [
+];
+
+const CATEGORIES = [
   { name: "Money & Finance", desc: "Invoicing, accounting, payroll and expense tools.", items: ARTICLES.filter((a) => ["/best/invoicing-software", "/best/accounting-software", "/best/payroll-software", "/best/expense-management-software"].includes(a.href)) },
   { name: "Sales & Marketing", desc: "CRM, customer communication and growth tools.", items: ARTICLES.filter((a) => ["/best/crm-software", "/best/email-marketing-software", "/best/social-media-scheduling", "/best/appointment-scheduling-software", "/best/live-chat-software", "/best/survey-nps-software"].includes(a.href)) },
   { name: "Work & Operations", desc: "Project, people, inventory and workflow software.", items: ARTICLES.filter((a) => ["/best/project-management-software", "/best/time-tracking-software", "/best/employee-scheduling-software", "/best/inventory-management-software", "/best/pos-systems", "/best/contract-management-software", "/best/hr-software", "/best/applicant-tracking-software"].includes(a.href)) },
