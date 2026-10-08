@@ -2,20 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --sp-bg: #f7f8fc;
+  --sp-surface: #ffffff;
+  --sp-surface-2: #f1f4f9;
+  --sp-ink: #101828;
+  --sp-muted: #667085;
+  --sp-primary: #5b5ce2;
+  --sp-primary-dark: #4546c9;
+  --sp-primary-soft: #eef0ff;
+  --sp-success: #12b76a;
+  --sp-warning: #f79009;
+  --sp-border: #e4e7ec;
+  --sp-shadow-sm: 0 2px 8px rgba(16,24,40,.05);
+  --sp-shadow-md: 0 16px 40px rgba(16,24,40,.10);
+  --sp-shadow-lg: 0 28px 70px rgba(16,24,40,.14);
+}
+
+html { scroll-behavior: smooth; }
+
 body {
-  background: #F8FAFC;
-  color: #0F172A;
+  background: var(--sp-bg);
+  color: var(--sp-ink);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.65;
+}
+
+::selection {
+  background: #dfe1ff;
+  color: #17184d;
+}
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #4F46E5;
-  outline-offset: 2px;
-  border-radius: 4px;
+  outline: 3px solid rgba(91,92,226,.35);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+@layer components {
+  .sp-container { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+
+  .sp-card {
+    @apply rounded-2xl border bg-white;
+    border-color: var(--sp-border);
+    box-shadow: var(--sp-shadow-sm);
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+  }
+
+  .sp-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sp-shadow-md);
+    border-color: #cfd3ff;
+  }
+
+  .sp-pill {
+    @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold;
+  }
+
+  .sp-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all;
+  }
+
+  .sp-button-primary {
+    @apply sp-button text-white;
+    background: var(--sp-primary);
+    box-shadow: 0 8px 20px rgba(91,92,226,.22);
+  }
+
+  .sp-button-primary:hover {
+    background: var(--sp-primary-dark);
+    transform: translateY(-1px);
+  }
+
+  .sp-button-secondary {
+    @apply sp-button border bg-white;
+    border-color: var(--sp-border);
+    color: var(--sp-ink);
+  }
+
+  .sp-button-secondary:hover {
+    border-color: #cfd3ff;
+    background: #fafaff;
+  }
+
+  .sp-gradient-text {
+    background: linear-gradient(100deg, #4546c9 0%, #7c3aed 52%, #0ea5e9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .sp-grid-pattern {
+    background-image:
+      linear-gradient(rgba(91,92,226,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(91,92,226,.06) 1px, transparent 1px);
+    background-size: 34px 34px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
