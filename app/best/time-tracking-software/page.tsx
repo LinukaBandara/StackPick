@@ -50,6 +50,19 @@ export default function Page() {
         },
       ]}
       bottomLine="Tracking your own time as a freelancer? Toggl Track for the smoothest daily experience. Budget-conscious team of any size? Clockify's unlimited free tier is genuinely hard to beat. Billing hours directly to clients? Harvest removes a whole invoicing step. Managing hourly remote workers and specifically need verification? Hubstaff - but be transparent with your team about what it tracks."
-    />
+    >
+      <section className="bg-white">
+        <div className="sp-contain py-10">
+          <h2 className="text-2xl font-semibold">Test the timer during a normal workday</h2>
+          <p className="mt-3 text-slate-600">Start with the work you already do rather than an artificial demo. Track one task, stop and restart it, switch projects, then generate the report you would actually use for a client invoice or weekly review.</p>
+          <ul className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
+            <li><strong>Friction:</strong> Can you start and stop tracking without breaking your concentration?</li>
+            <li><strong>Accuracy:</strong> Check how idle time, edits and manual adjustments are handled.</li>
+            <li><strong>Reporting:</strong> Build the client or team report you need before committing.</li>
+            <li><strong>Privacy:</strong> If monitoring features exist, verify exactly what is collected and who can see it.</li>
+          </ul>
+        </div>
+      </section>
+    </ComparisonArticle>
   );
 }
