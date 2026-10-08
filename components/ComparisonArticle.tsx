@@ -26,6 +26,8 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
     description: intro,
     url: siteUrl + "/best/" + slug,
     dateModified: "2026-10-08",
+    inLanguage: "en-US",
+    mainEntityOfPage: { "@type": "WebPage", "@id": siteUrl + "/best/" + slug },
     author: { "@type": "Organization", name: "StackPick", url: siteUrl },
     publisher: { "@type": "Organization", name: "StackPick", url: siteUrl },
     isAccessibleForFree: true,
