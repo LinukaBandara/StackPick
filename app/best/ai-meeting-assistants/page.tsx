@@ -15,10 +15,10 @@ export default function Page() {
       intro="Compare AI meeting assistants for transcripts, summaries, action items and searchable meeting records."
       pricingNote="AI features, models, usage limits and pricing change frequently. Verify current provider terms and test outputs before adopting a tool."
       tools={[
-        { name: "ChatGPT", bestFor: "General-purpose AI work", freeOption: "Check current plan limits.", tradeoff: "Broad capability means you still need to define the workflow.", url: "https://chatgpt.com/" },
-        { name: "Claude", bestFor: "Writing, analysis and long-context work", freeOption: "Check current plan limits.", tradeoff: "Limits and available features vary by plan.", url: "https://claude.ai/" },
-        { name: "Gemini", bestFor: "AI work within Google's ecosystem", freeOption: "Check current plan limits.", tradeoff: "Feature availability can vary by account and region.", url: "https://gemini.google.com/" },
-        { name: "Microsoft Copilot", bestFor: "AI-assisted work in Microsoft's ecosystem", freeOption: "Check current access and limits.", tradeoff: "The useful features depend on the Microsoft products and plan involved.", url: "https://copilot.microsoft.com/" },
+        { name: "Otter", bestFor: "Meeting transcription and summaries", freeOption: "Check current provider terms.", tradeoff: "Accuracy still needs review, especially for names and decisions.", url: "https://otter.ai/" },
+        { name: "Fireflies.ai", bestFor: "Searchable meeting notes and follow-up", freeOption: "Check current provider terms.", tradeoff: "Useful automation depends on supported integrations and plan limits.", url: "https://fireflies.ai/" },
+        { name: "Fathom", bestFor: "Meeting summaries with a simple workflow", freeOption: "Check current provider terms.", tradeoff: "Feature depth and integrations should be checked against your meeting stack.", url: "https://fathom.video/" },
+        { name: "Granola", bestFor: "AI-assisted notes for conversations", freeOption: "Check current provider terms.", tradeoff: "Workflow and platform support should match how you actually take notes.", url: "https://www.granola.ai/" },
       ]}
       bottomLine="A useful meeting assistant should reduce follow-up work, not create another dashboard to maintain."
     >
