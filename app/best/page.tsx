@@ -45,24 +45,38 @@ const ARTICLES = [
 
 export default function BestHubPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10">
-      <h1 className="text-3xl font-bold text-ink mb-2">All Software Comparisons</h1>
-      <p className="text-slate mb-8 max-w-xl">
-        Every comparison on StackPick — researched, honest about trade-offs, and updated when
-        pricing or plans change meaningfully.
-      </p>
-      <div className="grid sm:grid-cols-2 gap-4">
-        {ARTICLES.map((a) => (
-          <Link
-            key={a.href}
-            href={a.href}
-            className="block rounded-card border border-borderc bg-white p-5 hover:border-indigo hover:shadow-sm transition-all"
-          >
-            <h2 className="font-semibold text-ink">{a.title}</h2>
-            <p className="text-sm text-slate mt-1">{a.desc}</p>
-          </Link>
-        ))}
-      </div>
-    </div>
+    <main>
+      <section className="bg-white">
+        <div className="sp-container py-20 sm:py-28">
+          <p className="sp-eyebrow">StackPick comparisons</p>
+          <h1 className="sp-title mt-4 max-w-4xl">Software worth a closer look.</h1>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#6e6e73]">
+            Practical comparisons for freelancers and small businesses. Start with the job,
+            understand the trade-offs, then choose the tool that fits.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-[#f5f5f7]">
+        <div className="sp-container py-14 sm:py-20">
+          <div className="grid gap-4 sm:grid-cols-2">
+            {ARTICLES.map((a, index) => (
+              <Link
+                key={a.href}
+                href={a.href}
+                className="group rounded-[28px] bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(0,0,0,.08)] sm:p-8"
+              >
+                <div className="flex items-start justify-between gap-6">
+                  <span className="text-sm font-semibold text-[#6e6e73]">{String(index + 1).padStart(2, "0")}</span>
+                  <span className="text-sm text-[#06c] opacity-0 transition-opacity group-hover:opacity-100">Read →</span>
+                </div>
+                <h2 className="mt-10 max-w-xl text-2xl font-semibold leading-tight tracking-[-.03em] sm:text-3xl">{a.title}</h2>
+                <p className="mt-4 max-w-xl text-sm leading-6 text-[#6e6e73]">{a.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
