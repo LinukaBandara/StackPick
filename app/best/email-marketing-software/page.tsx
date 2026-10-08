@@ -14,7 +14,7 @@ const articleJsonLd = {
   headline: "Best Email Marketing Software for Small Business",
   description: "An honest comparison of email marketing tools for small businesses.",
   url: "/best/email-marketing-software",
-  dateModified: "2026-09-24",
+  dateModified: "2026-10-08",
 };
 
 interface Tool {
@@ -80,7 +80,7 @@ export default function EmailMarketingSoftwarePage() {
       </nav>
 
       <h1 className="text-3xl font-bold text-ink mb-2">Best Email Marketing Software for Small Business</h1>
-      <p className="text-slate mb-1">Last reviewed: September 2026.</p>
+      <p className="text-slate mb-1">Page updated: October 8, 2026.</p>
       <p className="text-lg text-ink bg-indigo/5 border border-indigo/20 rounded-card p-4 my-6">
         The right tool here depends on whether your cost driver is list size or send frequency —
         most comparisons skip that distinction and just rank by feature count.
