@@ -29,7 +29,7 @@ export default function Page() {
           bestFor: "US businesses that want the accountant network effect",
           freeOption: "No free tier.",
           tradeoff:
-            "It's the most widely used platform among US accountants and bookkeepers specifically - that ecosystem advantage is real and often outweighs feature comparisons. The trade-off is per-seat pricing that adds up once more than one person needs access.",
+            "Its established accountant and bookkeeper ecosystem can be a practical advantage for US businesses that want outside accounting support. That ecosystem fit may matter more than small differences in feature lists. The trade-off is per-seat pricing that adds up once more than one person needs access.",
           url: "https://quickbooks.intuit.com/",
         },
         {
@@ -37,7 +37,7 @@ export default function Page() {
           bestFor: "Freelancers and very small service businesses on a genuinely zero budget",
           freeOption: "Free accounting and unlimited invoicing, with payment processing fees on transactions.",
           tradeoff:
-            "Actually free, not a crippled trial - the real cost shows up in per-transaction payment processing fees instead of a subscription. Fine at low volume, worth recalculating once your invoiced total grows.",
+            "A no-subscription option can reduce fixed costs, while payment processing fees become the main variable cost when clients pay through supported methods. Fine at low volume, worth recalculating once your invoiced total grows.",
           url: "https://www.waveapps.com/",
         },
         {
@@ -45,7 +45,7 @@ export default function Page() {
           bestFor: "Solopreneurs already using other Zoho products, or anyone under roughly $50K revenue",
           freeOption: "Free plan available below a revenue threshold - check Zoho's current cutoff.",
           tradeoff:
-            "Genuinely free while you qualify, and connects smoothly if you're already using Zoho Invoice or Zoho CRM. Fewer accountants specialize in it compared to QuickBooks or Xero, which can matter at tax time.",
+            "A free option can be attractive while you remain within the current eligibility limits, especially if you already use Zoho Invoice or Zoho CRM. If you rely on an outside accountant, check whether they already support the platform.",
           url: "https://www.zoho.com/books/",
         },
       ]}
