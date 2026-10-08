@@ -151,7 +151,7 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
                     <p className="mt-2 text-sm text-[#6e6e73]">Best for {tool.bestFor}</p>
                   </div>
                   <a href={tool.url} target="_blank" rel="noopener noreferrer sponsored" className="sp-button-secondary shrink-0">
-                    Check current pricing ↗
+                    Check current pricing
                   </a>
                 </div>
                 <div className="mt-10 grid gap-8 border-t border-black/10 pt-8 sm:grid-cols-2">
