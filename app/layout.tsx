@@ -5,8 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-
-const SITE_URL = "https://stackpick.example"; // TODO: replace with real domain
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -15,13 +14,13 @@ export const metadata: Metadata = {
     template: "%s | StackPick",
   },
   description:
-    "Independent, budget-focused comparisons of business software — CRM, invoicing, email marketing, and project management tools for freelancers and small teams.",
+    "Independent, practical comparisons of business software for freelancers and small teams, focused on price, limits, fit and trade-offs.",
   openGraph: {
     type: "website",
     siteName: "StackPick",
     title: "StackPick — Honest Software Comparisons for Small Businesses",
     description:
-      "Independent, budget-focused comparisons of business software for freelancers and small teams.",
+      "Independent, practical comparisons of business software for freelancers and small teams.",
     url: SITE_URL,
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "StackPick" }],
   },
@@ -34,7 +33,7 @@ const websiteJsonLd = {
   "@type": "WebSite",
   name: "StackPick",
   url: SITE_URL,
-  description: "Independent, budget-focused business software comparisons.",
+  description: "Independent, practical business software comparisons.",
 };
 
 const organizationJsonLd = {
@@ -43,7 +42,7 @@ const organizationJsonLd = {
   name: "StackPick",
   url: SITE_URL,
   description:
-    "An independent software review and comparison site. Some links are affiliate links — see our affiliate disclosure.",
+    "An independent software comparison publication. Some links are affiliate links — see our affiliate disclosure.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
