@@ -93,6 +93,11 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
               really includes, where it fits, and which trade-offs are easy to miss. We cross-check
               vendor documentation and pricing information rather than repeating a feature list.
             </p>
+            <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
+              For a useful comparison, start with the job you need to complete, test the same
+              workflow in each finalist, and check what happens when the free plan stops being enough.
+              Then verify the current price and terms directly with the vendor before you commit.
+            </p>
           </div>
 
           <div className="mt-16 grid gap-12 border-t border-black/10 pt-10 md:grid-cols-3">
