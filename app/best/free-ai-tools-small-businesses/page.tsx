@@ -15,10 +15,10 @@ export default function Page() {
       intro="A practical guide to free AI tools for small businesses, with attention to limits, usage caps, privacy and when a paid plan becomes necessary."
       pricingNote="Free AI plans can have usage caps, model restrictions, feature limits or changing availability. Verify current provider terms before relying on a free plan."
       tools={[
-        { name: "ChatGPT", bestFor: "General-purpose AI work", freeOption: "Check current plan limits.", tradeoff: "Broad capability means you still need to define the workflow.", url: "https://chatgpt.com/" },
-        { name: "Claude", bestFor: "Writing, analysis and long-context work", freeOption: "Check current plan limits.", tradeoff: "Limits and available features vary by plan.", url: "https://claude.ai/" },
-        { name: "Gemini", bestFor: "AI work within Google's ecosystem", freeOption: "Check current plan limits.", tradeoff: "Feature availability can vary by account and region.", url: "https://gemini.google.com/" },
-        { name: "Microsoft Copilot", bestFor: "AI-assisted work in Microsoft's ecosystem", freeOption: "Check current access and limits.", tradeoff: "The useful features depend on the Microsoft products and plan involved.", url: "https://copilot.microsoft.com/" },
+        { name: "ChatGPT", bestFor: "General-purpose AI tasks", freeOption: "Check current plan limits.", tradeoff: "Broad capability makes it useful across many jobs, but limits vary.", url: "https://chatgpt.com/" },
+        { name: "Gemini", bestFor: "General AI with Google ecosystem access", freeOption: "Check current plan limits.", tradeoff: "Availability and features can vary by account and region.", url: "https://gemini.google.com/" },
+        { name: "Claude", bestFor: "Writing and long-context analysis", freeOption: "Check current plan limits.", tradeoff: "Free usage and features can change.", url: "https://claude.ai/" },
+        { name: "Microsoft Copilot", bestFor: "General AI within Microsoft's ecosystem", freeOption: "Check current access and limits.", tradeoff: "The strongest business features depend on Microsoft products and plans.", url: "https://copilot.microsoft.com/" },
       ]}
       bottomLine="A free AI tool is valuable only if its limits still fit the job."
     >
