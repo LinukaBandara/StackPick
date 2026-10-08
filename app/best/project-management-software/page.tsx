@@ -52,7 +52,7 @@ export default function Page() {
       bottomLine="Team under 5 people with simple tasks? Trello's free tier is genuinely enough - don't overbuy. Growing past that and want the safe, well-documented choice? Asana. Want one workspace that does everything and don't mind a setup investment? ClickUp. Running client work with real automation needs? monday.com is worth the higher price there specifically."
     >
       <section className="bg-white">
-        <div className="sp-contain py-10">
+        <div className="sp-container py-10">
           <h2 className="text-2xl font-semibold">A five-minute project-management test</h2>
           <p className="mt-3 text-slate-600">Before paying, recreate one real piece of work instead of comparing feature counts. Add a project, create three tasks, assign one, add a deadline, move work through the workflow, and try the view your team would use every week.</p>
           <ul className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
