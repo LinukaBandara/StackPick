@@ -15,10 +15,10 @@ export default function Page() {
       intro="Compare AI writing tools for small-business content, emails, drafts and marketing workflows without treating generated text as finished work."
       pricingNote="AI features, models, usage limits and pricing change frequently. Verify current provider terms and test outputs before adopting a tool."
       tools={[
-        { name: "ChatGPT", bestFor: "General-purpose AI work", freeOption: "Check current plan limits.", tradeoff: "Broad capability means you still need to define the workflow.", url: "https://chatgpt.com/" },
-        { name: "Claude", bestFor: "Writing, analysis and long-context work", freeOption: "Check current plan limits.", tradeoff: "Limits and available features vary by plan.", url: "https://claude.ai/" },
-        { name: "Gemini", bestFor: "AI work within Google's ecosystem", freeOption: "Check current plan limits.", tradeoff: "Feature availability can vary by account and region.", url: "https://gemini.google.com/" },
-        { name: "Microsoft Copilot", bestFor: "AI-assisted work in Microsoft's ecosystem", freeOption: "Check current access and limits.", tradeoff: "The useful features depend on the Microsoft products and plan involved.", url: "https://copilot.microsoft.com/" },
+        { name: "Claude", bestFor: "Long-form drafts and editing", freeOption: "Check current plan limits.", tradeoff: "You still need fact-checking and a consistent brand voice.", url: "https://claude.ai/" },
+        { name: "Jasper", bestFor: "Marketing-focused content workflows", freeOption: "Check current provider terms.", tradeoff: "Marketing features are more specialized than a general AI assistant.", url: "https://www.jasper.ai/" },
+        { name: "Grammarly", bestFor: "Editing, tone and polishing", freeOption: "Check current plan limits.", tradeoff: "Best for refinement rather than building an entire content strategy.", url: "https://www.grammarly.com/" },
+        { name: "Copy.ai", bestFor: "Marketing copy and repeatable content workflows", freeOption: "Check current provider terms.", tradeoff: "Workflow depth and limits depend on the plan.", url: "https://www.copy.ai/" },
       ]}
       bottomLine="Use AI to accelerate drafts while keeping human review and brand judgment."
     >
