@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Best CRM Software for Freelancers & Small Teams (2026)",
   description:
-    "An honest comparison of CRM tools for freelancers and small teams — HubSpot, Pipedrive, Zoho CRM, and Notion — covering free tiers and real trade-offs.",
+    "An honest comparison of CRM tools for freelancers and small teams - HubSpot, Pipedrive, Zoho CRM, and Notion - covering free tiers and real trade-offs.",
   alternates: { canonical: "/best/crm-software" },
 };
 
@@ -31,15 +31,15 @@ const TOOLS: Tool[] = [
     bestFor: "Freelancers who want a genuinely capable free tier to start with",
     freeOption: "Free plan covers contact management and basic email tracking with no time limit.",
     tradeoff:
-      "The free tier is real, not a crippled trial — but meaningful automation is gated behind a separate, considerably more expensive Marketing Hub subscription. Fine if you only need contact tracking; frustrating if you want automated follow-ups.",
+      "The free tier is real, not a crippled trial - but meaningful automation is gated behind a separate, considerably more expensive Marketing Hub subscription. Fine if you only need contact tracking; frustrating if you want automated follow-ups.",
     url: "https://www.hubspot.com/products/crm",
   },
   {
     name: "Pipedrive",
     bestFor: "Freelancers and small teams who actively sell and want a visual pipeline",
-    freeOption: "No free tier — paid plans start at a relatively low per-user monthly price.",
+    freeOption: "No free tier - paid plans start at a relatively low per-user monthly price.",
     tradeoff:
-      "Built specifically around a visual sales pipeline rather than marketing features, so it's the cleanest option if closing deals is your main workflow — but it's not trying to be an all-in-one marketing platform, and you'll feel that if you expect one.",
+      "Built specifically around a visual sales pipeline rather than marketing features, so it's the cleanest option if closing deals is your main workflow - but it's not trying to be an all-in-one marketing platform, and you'll feel that if you expect one.",
     url: "https://www.pipedrive.com/",
   },
   {
@@ -47,7 +47,7 @@ const TOOLS: Tool[] = [
     bestFor: "Small teams already using other Zoho products (Invoice, Books, Projects)",
     freeOption: "Free plan supports a small number of users with basic workflow rules included.",
     tradeoff:
-      "The connected-suite advantage is real if you're already in the Zoho ecosystem — otherwise the interface has a steeper learning curve than Pipedrive or HubSpot for a first-time CRM user.",
+      "The connected-suite advantage is real if you're already in the Zoho ecosystem - otherwise the interface has a steeper learning curve than Pipedrive or HubSpot for a first-time CRM user.",
     url: "https://www.zoho.com/crm/",
   },
   {
@@ -55,7 +55,7 @@ const TOOLS: Tool[] = [
     bestFor: "Freelancers who want full control and already live in Notion for everything else",
     freeOption: "Free for personal use; no per-contact limits since it's not a dedicated CRM product.",
     tradeoff:
-      "Total flexibility, zero built-in sales automation — you're building and maintaining the database yourself. Great if you enjoy that kind of setup; a time sink if you don't.",
+      "Total flexibility, zero built-in sales automation - you're building and maintaining the database yourself. Great if you enjoy that kind of setup; a time sink if you don't.",
     url: "https://www.notion.so/",
   },
 ];
@@ -74,7 +74,7 @@ export default function CrmSoftwarePage() {
       <h1 className="text-3xl font-bold text-ink mb-2">Best CRM Software for Freelancers & Small Teams</h1>
       <p className="text-slate mb-1">Page updated: October 8, 2026.</p>
       <p className="text-lg text-ink bg-indigo/5 border border-indigo/20 rounded-card p-4 my-6">
-        If you have fewer than 10 clients you talk to regularly, a CRM is probably overkill — a
+        If you have fewer than 10 clients you talk to regularly, a CRM is probably overkill - a
         well-organized spreadsheet works fine. Once lead follow-up starts slipping through the
         cracks, that's the real signal it's time for one of these.
       </p>
@@ -95,7 +95,7 @@ export default function CrmSoftwarePage() {
                 rel="noopener noreferrer sponsored"
                 className="text-sm text-indigo font-medium hover:underline"
               >
-                Check current pricing →
+                Check current pricing
               </a>
             </div>
             <p className="text-sm text-slate mt-2"><strong className="text-ink">Best for:</strong> {t.bestFor}</p>
@@ -126,7 +126,7 @@ export default function CrmSoftwarePage() {
       </p>
 
       <p className="text-xs text-slate mt-8 border-t border-borderc pt-4">
-        Some links on this page are affiliate links — see our{" "}
+        Some links on this page are affiliate links - see our{" "}
         <Link href="/affiliate-disclosure" className="text-indigo hover:underline">affiliate disclosure</Link>.
       </p>
     </div>
