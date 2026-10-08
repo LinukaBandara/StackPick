@@ -44,7 +44,7 @@ export default function Page() {
       bottomLine="Booking sales calls or 1:1 meetings? Calendly - it's the default for a reason. Running a service business that takes deposits and needs intake forms? Acuity Scheduling is built for exactly that, not adapted to it. Technical team that wants open source or to self-host? Cal.com."
     >
       <section className="bg-white">
-        <div className="sp-contain py-10">
+        <div className="sp-container py-10">
           <h2 className="text-2xl font-semibold">Run one complete booking before paying</h2>
           <p className="mt-3 text-slate-600">The useful test is not creating a booking link. Send yourself the full customer journey: choose a slot, complete any intake questions, receive the confirmation, reschedule, cancel, and check what the business owner sees afterwards.</p>
           <ul className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
