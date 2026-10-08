@@ -52,7 +52,7 @@ export default function Page() {
       bottomLine="Selling products? Shopify, don't fight it with a general-purpose builder. Want a polished service-business site with the least effort? Squarespace. Want it free to start and don't mind spending more design time? Wix. A designer who wants real control over every pixel? Webflow - but budget real time to learn it."
     >
       <section className="bg-white">
-        <div className="sp-contain py-10">
+        <div className="sp-container py-10">
           <h2 className="text-2xl font-semibold">Test the builder with the page you actually need</h2>
           <p className="mt-3 text-slate-600">A template demo can make every builder look good. Instead, build one representative page: your homepage, a contact form, one mobile layout, and the main conversion action. Then check how much editing is needed before it looks credible.</p>
           <ul className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
