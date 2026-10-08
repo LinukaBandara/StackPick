@@ -41,6 +41,13 @@ const ARTICLES = [
   { href: "/best/applicant-tracking-software", title: "Best Applicant Tracking System (ATS) for Small Business", desc: "Breezy HR, Zoho Recruit, Workable, Greenhouse" },
   { href: "/best/employee-scheduling-software", title: "Best Employee Scheduling Software for Small Business", desc: "When I Work, Deputy, Connecteam, 7shifts" },
   { href: "/best/business-email-hosting", title: "Best Business Email Hosting for Small Business", desc: "Google Workspace, Microsoft 365, Zoho Mail, Proton Mail" },
+];\n\nconst CATEGORIES = [
+  { name: "Money & Finance", desc: "Invoicing, accounting, payroll and expense tools.", items: ARTICLES.filter((a) => ["/best/invoicing-software", "/best/accounting-software", "/best/payroll-software", "/best/expense-management-software"].includes(a.href)) },
+  { name: "Sales & Marketing", desc: "CRM, customer communication and growth tools.", items: ARTICLES.filter((a) => ["/best/crm-software", "/best/email-marketing-software", "/best/social-media-scheduling", "/best/appointment-scheduling-software", "/best/live-chat-software", "/best/survey-nps-software"].includes(a.href)) },
+  { name: "Work & Operations", desc: "Project, people, inventory and workflow software.", items: ARTICLES.filter((a) => ["/best/project-management-software", "/best/time-tracking-software", "/best/employee-scheduling-software", "/best/inventory-management-software", "/best/pos-systems", "/best/contract-management-software", "/best/hr-software", "/best/applicant-tracking-software"].includes(a.href)) },
+  { name: "Web & Business Infrastructure", desc: "Websites, hosting, communication and collaboration tools.", items: ARTICLES.filter((a) => ["/best/website-builders", "/best/web-hosting", "/best/business-email-hosting", "/best/form-builders", "/best/cloud-storage", "/best/video-conferencing", "/best/business-phone-voip", "/best/online-course-platforms", "/best/esignature-software"].includes(a.href)) },
+  { name: "Security & IT", desc: "Security, backup and secure-access software for small teams.", items: ARTICLES.filter((a) => ["/best/password-managers", "/best/business-vpn", "/best/antivirus-endpoint-security", "/best/cloud-backup-software"].includes(a.href)) },
+  { name: "Customer & Support Operations", desc: "Support and service tools for customer-facing teams.", items: ARTICLES.filter((a) => ["/best/help-desk-software"].includes(a.href)) },
 ];
 
 export default function BestHubPage() {
@@ -59,20 +66,26 @@ export default function BestHubPage() {
 
       <section className="bg-[#f5f5f7]">
         <div className="sp-container py-14 sm:py-20">
-          <div className="grid gap-4 sm:grid-cols-2">
-            {ARTICLES.map((a, index) => (
-              <Link
-                key={a.href}
-                href={a.href}
-                className="group rounded-[28px] bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(0,0,0,.08)] sm:p-8"
-              >
-                <div className="flex items-start justify-between gap-6">
-                  <span className="text-sm font-semibold text-[#6e6e73]">{String(index + 1).padStart(2, "0")}</span>
-                  <span className="inline-flex items-center gap-1.5 text-sm text-[#06c] opacity-0 transition-opacity group-hover:opacity-100">Read <svg aria-hidden="true" viewBox="0 0 16 16" className="h-4 w-4" fill="none"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+          <div className="space-y-16">
+            {CATEGORIES.map((category) => (
+              <section key={category.name}>
+                <div className="mb-7 max-w-2xl">
+                  <h2 className="text-3xl font-semibold tracking-[-.03em]">{category.name}</h2>
+                  <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{category.desc}</p>
                 </div>
-                <h2 className="mt-10 max-w-xl text-2xl font-semibold leading-tight tracking-[-.03em] sm:text-3xl">{a.title}</h2>
-                <p className="mt-4 max-w-xl text-sm leading-6 text-[#6e6e73]">{a.desc}</p>
-              </Link>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {category.items.map((a) => (
+                    <Link key={a.href} href={a.href} className="group rounded-[28px] bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(0,0,0,.08)] sm:p-8">
+                      <div className="flex items-start justify-between gap-6">
+                        <span className="text-sm font-semibold text-[#6e6e73]">Comparison</span>
+                        <span className="inline-flex items-center gap-1.5 text-sm text-[#06c] opacity-0 transition-opacity group-hover:opacity-100">Read <svg aria-hidden="true" viewBox="0 0 16 16" className="h-4 w-4" fill="none"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+                      </div>
+                      <h3 className="mt-10 max-w-xl text-2xl font-semibold leading-tight tracking-[-.03em] sm:text-3xl">{a.title}</h3>
+                      <p className="mt-4 max-w-xl text-sm leading-6 text-[#6e6e73]">{a.desc}</p>
+                    </Link>
+                  ))}
+                </div>
+              </section>
             ))}
           </div>
         </div>
