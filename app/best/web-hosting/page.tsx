@@ -21,7 +21,7 @@ export default function Page() {
           bestFor: "Most small businesses wanting the best overall value",
           freeOption: "No free tier - paid plans start very low, especially on long-term commitments.",
           tradeoff:
-            "Consistently rated strong on price-to-performance with a genuinely full toolset included even at entry pricing. The lowest advertised rates require committing to a long term (sometimes 48 months) upfront - the monthly-equivalent price rises noticeably on shorter terms.",
+            "Its low-cost plans can offer a broad set of included hosting features, but the value depends heavily on the initial term, renewal rate and resources included in the exact plan. The lowest advertised rates require committing to a long term (sometimes 48 months) upfront - the monthly-equivalent price rises noticeably on shorter terms.",
           url: "https://www.hostinger.com/",
         },
         {
@@ -29,7 +29,7 @@ export default function Page() {
           bestFor: "Businesses that want premium, hands-off support and don't want to think about hosting again",
           freeOption: "No free tier.",
           tradeoff:
-            "Consistently the top pick across independent reviews for support quality and uptime reliability - worth paying for if a hosting problem at 2am would actually hurt your business. Renewal pricing after the first term is notably steeper than the intro rate, more so than most competitors here.",
+            "Support quality and reliability are important reasons to consider a premium host. Compare the latest independent uptime evidence, support terms and renewal pricing rather than relying on a single review ranking. Renewal pricing after the first term is notably steeper than the intro rate, more so than most competitors here.",
           url: "https://www.siteground.com/",
         },
         {
@@ -37,7 +37,7 @@ export default function Page() {
           bestFor: "First-time WordPress site owners",
           freeOption: "No free tier - trial only.",
           tradeoff:
-            "An official WordPress.org-recommended host with a genuinely simple setup flow for beginners - the easiest on-ramp here if you've never built a site before. Backups on entry plans are only weekly, which matters if your site content changes often.",
+            "Its WordPress-focused setup can be approachable for first-time site owners. If WordPress is your stack, compare the current plan features, backup schedule and support terms before choosing. Backups on entry plans are only weekly, which matters if your site content changes often.",
           url: "https://www.bluehost.com/",
         },
         {
