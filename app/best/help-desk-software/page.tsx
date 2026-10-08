@@ -50,6 +50,19 @@ export default function Page() {
         },
       ]}
       bottomLine="Small team, mostly email, want the least clutter? Help Scout. Expect to grow and want a strong free tier to start? Freshdesk. Already paying for other Zoho tools? Zoho Desk. Running a Shopify store? Gorgias isn't really optional - the order-data integration is worth the switch."
-    />
+    >
+      <section className="bg-white">
+        <div className="sp-contain py-10">
+          <h2 className="text-2xl font-semibold">Run one support request end to end</h2>
+          <p className="mt-3 text-slate-600">Create a test customer request and follow it through the same path your real customers will use. The useful comparison is how quickly a teammate can understand the issue, reply, assign it and close it without losing context.</p>
+          <ul className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
+            <li><strong>Intake:</strong> Send a message through your main support channel and check what information arrives with it.</li>
+            <li><strong>Ownership:</strong> Assign the request and confirm another teammate can see its history.</li>
+            <li><strong>Resolution:</strong> Add an internal note, reply, and close the request.</li>
+            <li><strong>Search:</strong> Find the closed request again using the information a teammate would realistically remember.</li>
+          </ul>
+        </div>
+      </section>
+    </ComparisonArticle>
   );
 }
