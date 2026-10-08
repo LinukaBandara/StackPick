@@ -21,7 +21,7 @@ export default function Page() {
           bestFor: "Small businesses with mixed salaried/hourly staff who also want benefits admin",
           freeOption: "No free tier.",
           tradeoff:
-            "The most full-featured option here - automated tax filing, benefits, time tracking add-ons - with a genuinely modern, easy-to-use interface. Pricing has risen over the years and the base fee plus per-person cost adds up faster than budget-tier competitors as headcount grows.",
+            "A broad feature set combines payroll with benefits and optional time-tracking workflows. That breadth can reduce tool switching, although the base fee plus per-person cost can add up as headcount grows. Pricing has risen over the years and the base fee plus per-person cost adds up faster than budget-tier competitors as headcount grows.",
           url: "https://gusto.com/",
         },
         {
@@ -37,7 +37,7 @@ export default function Page() {
           bestFor: "Multi-state employers who don't want per-state add-on fees",
           freeOption: "No free tier.",
           tradeoff:
-            "Flat pricing that includes multi-state filing where several competitors charge extra per additional state - a real saving if your team isn't all in one place. Fewer bundled HR extras than Gusto if you want payroll and HR fully combined.",
+            "A pricing structure that can include multi-state filing may be attractive when employees work across states. Compare the current included states, filing scope and total per-employee cost before deciding. Fewer bundled HR extras than Gusto if you want payroll and HR fully combined.",
           url: "https://onpay.com/",
         },
         {
@@ -45,7 +45,7 @@ export default function Page() {
           bestFor: "Very budget-conscious small businesses with simple payroll needs",
           freeOption: "No free tier, but the lowest starting price in this category.",
           tradeoff:
-            "The cheapest genuine entry point here with consistently well-rated support - but the feature set is intentionally basic. Fine for straightforward payroll, limiting if you want integrated benefits administration or HR tools.",
+            "A lower starting price can suit straightforward payroll needs. The trade-off is a narrower feature set than broader payroll-and-HR platforms, so check whether benefits, HR and time-tracking needs are covered. Fine for straightforward payroll, limiting if you want integrated benefits administration or HR tools.",
           url: "https://www.patriotsoftware.com/payroll/",
         },
       ]}
