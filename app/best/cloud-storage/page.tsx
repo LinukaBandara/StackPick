@@ -44,7 +44,7 @@ export default function Page() {
       bottomLine="Already on Google Workspace? Use Google Drive - don't add a second tool. Already on Microsoft 365? OneDrive, for the same reason. Neither, and you work heavily with large media files or external collaborators who need clean sharing? Dropbox is worth paying for on its own merits."
     >
       <section className="bg-white">
-        <div className="sp-contain py-10">
+        <div className="sp-container py-10">
           <h2 className="text-2xl font-semibold">Test collaboration and recovery, not just storage size</h2>
           <p className="mt-3 text-slate-600">Storage capacity is easy to compare. The more important test is what happens when two people edit the same file, someone shares a folder externally, or a file is accidentally deleted.</p>
           <ul className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
