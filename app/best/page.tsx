@@ -68,7 +68,7 @@ export default function BestHubPage() {
               >
                 <div className="flex items-start justify-between gap-6">
                   <span className="text-sm font-semibold text-[#6e6e73]">{String(index + 1).padStart(2, "0")}</span>
-                  <span className="text-sm text-[#06c] opacity-0 transition-opacity group-hover:opacity-100">Read →</span>
+                  <span className="inline-flex items-center gap-1.5 text-sm text-[#06c] opacity-0 transition-opacity group-hover:opacity-100">Read <svg aria-hidden="true" viewBox="0 0 16 16" className="h-4 w-4" fill="none"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
                 </div>
                 <h2 className="mt-10 max-w-xl text-2xl font-semibold leading-tight tracking-[-.03em] sm:text-3xl">{a.title}</h2>
                 <p className="mt-4 max-w-xl text-sm leading-6 text-[#6e6e73]">{a.desc}</p>
