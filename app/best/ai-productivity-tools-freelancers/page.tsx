@@ -15,10 +15,10 @@ export default function Page() {
       intro="AI productivity tools for freelancers, focused on planning, research, writing, notes and repetitive administrative work."
       pricingNote="AI features, models, usage limits and pricing change frequently. Verify current provider terms and test outputs before adopting a tool."
       tools={[
-        { name: "ChatGPT", bestFor: "General-purpose AI work", freeOption: "Check current plan limits.", tradeoff: "Broad capability means you still need to define the workflow.", url: "https://chatgpt.com/" },
-        { name: "Claude", bestFor: "Writing, analysis and long-context work", freeOption: "Check current plan limits.", tradeoff: "Limits and available features vary by plan.", url: "https://claude.ai/" },
-        { name: "Gemini", bestFor: "AI work within Google's ecosystem", freeOption: "Check current plan limits.", tradeoff: "Feature availability can vary by account and region.", url: "https://gemini.google.com/" },
-        { name: "Microsoft Copilot", bestFor: "AI-assisted work in Microsoft's ecosystem", freeOption: "Check current access and limits.", tradeoff: "The useful features depend on the Microsoft products and plan involved.", url: "https://copilot.microsoft.com/" },
+        { name: "ChatGPT", bestFor: "Research, planning and general freelance work", freeOption: "Check current plan limits.", tradeoff: "Flexible, but you must build your own workflow around it.", url: "https://chatgpt.com/" },
+        { name: "Notion AI", bestFor: "AI inside notes, docs and project knowledge", freeOption: "Check current provider terms.", tradeoff: "Most useful if your work already lives in Notion.", url: "https://www.notion.com/product/ai" },
+        { name: "Perplexity", bestFor: "Web research and source discovery", freeOption: "Check current plan limits.", tradeoff: "Sources still need to be checked before client-facing use.", url: "https://www.perplexity.ai/" },
+        { name: "Zapier", bestFor: "Automating repetitive app-to-app tasks", freeOption: "Check current provider terms.", tradeoff: "Automation value depends on the workflows and apps you connect.", url: "https://zapier.com/" },
       ]}
       bottomLine="Use AI where it removes busywork without taking control of important decisions."
     >
