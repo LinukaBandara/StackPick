@@ -24,7 +24,7 @@ const FEATURED = [
 const NEEDS = [["Customers","/best/crm-software"],["Invoices","/best/invoicing-software"],["Projects","/best/project-management-software"],["Time","/best/time-tracking-software"],["Security","/best/business-vpn"],["Payroll","/best/payroll-software"]];
 
 export default function HomePage() {
-  return <main>
+  return <>
     <section className="bg-white"><div className="sp-container flex min-h-[720px] flex-col items-center justify-center py-24 text-center sm:min-h-[780px]">
       <p className="sp-eyebrow">Software, without the noise.</p>
       <h1 className="sp-display mt-7 max-w-5xl">Find the right tool.<br />Not the loudest one.</h1>
