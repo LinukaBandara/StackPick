@@ -91,7 +91,7 @@ function relatedFor(slug: string) {
     ["smallBusiness", ["crm-for-small-businesses", "invoicing-for-small-businesses", "website-builder-for-small-businesses", "scheduling-for-small-businesses"]],
     ["comparisons", ["hubspot-vs-pipedrive", "quickbooks-vs-xero", "trello-vs-asana", "asana-vs-clickup", "clickup-vs-monday"]],
     ["alternatives", ["hubspot-alternatives-small-businesses", "quickbooks-alternatives", "calendly-alternatives", "mailchimp-alternatives", "trello-alternatives"]],
-    ["workflows", ["how-to-choose-software-for-small-business", "simple-small-business-software-stack", "choose-free-vs-paid-business-software", "automate-repetitive-small-business-tasks", "switch-business-software-without-losing-data"]],
+    ["workflows", ["how-to-choose-software-small-business", "simple-small-business-software-stack", "free-vs-paid-business-software", "automate-repetitive-small-business-tasks", "switch-business-software-without-losing-data"]],
     ["ai", ["ai-tools-small-businesses", "ai-tools-freelancers", "ai-automation-tools-small-businesses", "ai-writing-tools-small-businesses", "free-ai-tools-small-businesses"]],
   ];
   const group = groups.find(([, slugs]) => slugs.includes(slug))?.[0] ?? "operations";
@@ -131,10 +131,20 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
     publisher: { "@type": "Organization", name: "StackPick", url: siteUrl },
     isAccessibleForFree: true,
   };
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl + "/" },
+      { "@type": "ListItem", position: 2, name: "Comparisons", item: siteUrl + "/best" },
+      { "@type": "ListItem", position: 3, name: title, item: siteUrl + "/best/" + slug },
+    ],
+  };
 
   return (
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <header className="bg-white">
         <div className="sp-container py-16 sm:py-24">
