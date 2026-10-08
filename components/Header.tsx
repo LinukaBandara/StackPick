@@ -5,29 +5,20 @@ function ArrowIcon() {
 }
 
 function StackPickMark() {
-  return <svg aria-hidden="true" viewBox="0 0 32 32" className="h-7 w-7 shrink-0">
-    <rect x="3" y="4" width="26" height="6" rx="3" fill="currentColor" />
-    <rect x="3" y="13" width="20" height="6" rx="3" fill="currentColor" opacity=".72" />
-    <rect x="3" y="22" width="14" height="6" rx="3" fill="currentColor" opacity=".46" />
-  </svg>;
+  return <span aria-hidden="true" className="flex h-8 w-8 items-center justify-center rounded-[11px] bg-[#5b5ce2] text-white shadow-[0_6px_18px_rgba(91,92,226,.25)]"><svg viewBox="0 0 20 20" className="h-5 w-5" fill="none"><path d="M4 5h12M4 10h8M4 15h5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg></span>;
 }
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-black/10 bg-white/80 backdrop-blur-xl">
-      <div className="sp-container h-14 flex items-center justify-between gap-6">
-        <Link href="/" className="flex items-center gap-2.5 text-[17px] font-semibold tracking-[-.025em] text-[#1d1d1f]" aria-label="StackPick home">
-          <StackPickMark />
-          <span>StackPick</span>
-        </Link>
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Primary">
-          <Link href="/best" className="text-xs text-[#1d1d1f] hover:text-[#06c]">Comparisons</Link>
-          <Link href="/about" className="text-xs text-[#1d1d1f] hover:text-[#06c]">How it works</Link>
-          <Link href="/contact" className="text-xs text-[#1d1d1f] hover:text-[#06c]">Contact</Link>
+    <header className="sticky top-0 z-40 border-b border-[#e4e7ec]/80 bg-white/85 backdrop-blur-xl">
+      <div className="sp-container flex h-[68px] items-center justify-between gap-6">
+        <Link href="/" className="flex items-center gap-2.5 text-[17px] font-bold tracking-[-.03em]" aria-label="StackPick home"><StackPickMark /><span>StackPick</span></Link>
+        <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+          <Link href="/best" className="text-sm font-medium text-[#475467] transition hover:text-[#5b5ce2]">Comparisons</Link>
+          <Link href="/about" className="text-sm font-medium text-[#475467] transition hover:text-[#5b5ce2]">How it works</Link>
+          <Link href="/contact" className="text-sm font-medium text-[#475467] transition hover:text-[#5b5ce2]">Contact</Link>
         </nav>
-        <Link href="/best" className="inline-flex items-center gap-1.5 text-xs font-medium text-[#06c] hover:underline">
-          Explore <ArrowIcon />
-        </Link>
+        <Link href="/best" className="inline-flex items-center gap-1.5 rounded-full bg-[#101828] px-4 py-2.5 text-xs font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#344054]">Explore <ArrowIcon /></Link>
       </div>
     </header>
   );
