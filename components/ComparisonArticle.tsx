@@ -44,6 +44,38 @@ const RELATED_COMPARISONS: Record<string, { href: string; title: string; desc: s
     { href: "/best/business-phone-voip", title: "Best Business Phone System (VoIP) for Small Business", desc: "Compare business calling platforms." },
     { href: "/best/help-desk-software", title: "Best Help Desk Software for Small Business", desc: "Compare customer support platforms." },
   ],
+  freelancers: [
+    { href: "/best/crm-for-freelancers", title: "Best CRM for Freelancers", desc: "Choose a CRM without adding unnecessary admin." },
+    { href: "/best/invoicing-for-freelancers", title: "Best Invoicing Software for Freelancers", desc: "Compare client billing workflows and limits." },
+    { href: "/best/accounting-for-freelancers", title: "Best Accounting Software for Freelancers", desc: "Match bookkeeping tools to a solo workflow." },
+    { href: "/best/project-management-for-freelancers", title: "Best Project Management Software for Freelancers", desc: "Compare lightweight ways to manage client work." },
+  ],
+  smallBusiness: [
+    { href: "/best/crm-for-small-businesses", title: "Best CRM for Small Businesses", desc: "Compare CRM options by team size and workflow." },
+    { href: "/best/invoicing-for-small-businesses", title: "Best Invoicing Software for Small Businesses", desc: "Compare billing tools for growing businesses." },
+    { href: "/best/website-builder-for-small-businesses", title: "Best Website Builder for Small Businesses", desc: "Compare website platforms by business need." },
+    { href: "/best/scheduling-for-small-businesses", title: "Best Scheduling Software for Small Businesses", desc: "Compare booking tools for customer-facing businesses." },
+  ],
+  comparisons: [
+    { href: "/best/hubspot-vs-pipedrive", title: "HubSpot vs Pipedrive", desc: "Compare two CRM approaches side by side." },
+    { href: "/best/quickbooks-vs-xero", title: "QuickBooks vs Xero", desc: "Compare accounting workflows and trade-offs." },
+    { href: "/best/trello-vs-asana", title: "Trello vs Asana", desc: "Compare simple boards with broader project management." },
+  ],
+  alternatives: [
+    { href: "/best/hubspot-alternatives-small-businesses", title: "Best HubSpot Alternatives for Small Businesses", desc: "Find simpler or more focused CRM options." },
+    { href: "/best/quickbooks-alternatives", title: "Best QuickBooks Alternatives", desc: "Compare alternatives when QuickBooks is not the right fit." },
+    { href: "/best/calendly-alternatives", title: "Best Calendly Alternatives", desc: "Compare scheduling tools by workflow and cost." },
+  ],
+  workflows: [
+    { href: "/best/how-to-choose-software-for-small-business", title: "How to Choose Software for a Small Business", desc: "A practical framework for evaluating tools." },
+    { href: "/best/simple-small-business-software-stack", title: "How to Build a Simple Small-Business Software Stack", desc: "Avoid paying for overlapping tools." },
+    { href: "/best/choose-free-vs-paid-business-software", title: "How to Choose Between Free and Paid Business Software", desc: "Know when a free plan stops being the better deal." },
+  ],
+  ai: [
+    { href: "/best/ai-tools-small-businesses", title: "Best AI Tools for Small Businesses", desc: "Compare AI by the work it actually improves." },
+    { href: "/best/ai-tools-freelancers", title: "Best AI Tools for Freelancers", desc: "Focus AI spending on tasks that save real time." },
+    { href: "/best/ai-automation-tools-small-businesses", title: "Best AI Automation Tools for Small Businesses", desc: "Compare tools for reducing repetitive work." },
+  ],
 };
 
 function relatedFor(slug: string) {
@@ -55,6 +87,12 @@ function relatedFor(slug: string) {
     ["security", ["password-managers", "business-vpn", "antivirus-endpoint-security", "cloud-backup-software"]],
     ["people", ["hr-software", "payroll-software", "applicant-tracking-software", "employee-scheduling-software"]],
     ["collaboration", ["cloud-storage", "video-conferencing", "business-phone-voip", "help-desk-software"]],
+    ["freelancers", ["crm-for-freelancers", "invoicing-for-freelancers", "accounting-for-freelancers", "project-management-for-freelancers"]],
+    ["smallBusiness", ["crm-for-small-businesses", "invoicing-for-small-businesses", "website-builder-for-small-businesses", "scheduling-for-small-businesses"]],
+    ["comparisons", ["hubspot-vs-pipedrive", "quickbooks-vs-xero", "trello-vs-asana", "asana-vs-clickup", "clickup-vs-monday"]],
+    ["alternatives", ["hubspot-alternatives-small-businesses", "quickbooks-alternatives", "calendly-alternatives", "mailchimp-alternatives", "trello-alternatives"]],
+    ["workflows", ["how-to-choose-software-for-small-business", "simple-small-business-software-stack", "choose-free-vs-paid-business-software", "automate-repetitive-small-business-tasks", "switch-business-software-without-losing-data"]],
+    ["ai", ["ai-tools-small-businesses", "ai-tools-freelancers", "ai-automation-tools-small-businesses", "ai-writing-tools-small-businesses", "free-ai-tools-small-businesses"]],
   ];
   const group = groups.find(([, slugs]) => slugs.includes(slug))?.[0] ?? "operations";
   return RELATED_COMPARISONS[group].filter((item) => item.href !== `/best/${slug}`).slice(0, 3);
