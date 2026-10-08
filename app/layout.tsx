@@ -10,7 +10,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example"
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "StackPick — Honest Software Comparisons for Small Businesses",
+    default: "StackPick - Honest Software Comparisons for Small Businesses",
     template: "%s | StackPick",
   },
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "StackPick",
-    title: "StackPick — Honest Software Comparisons for Small Businesses",
+    title: "StackPick - Honest Software Comparisons for Small Businesses",
     description:
       "Independent, practical comparisons of business software for freelancers and small teams.",
     url: SITE_URL,
@@ -42,7 +42,7 @@ const organizationJsonLd = {
   name: "StackPick",
   url: SITE_URL,
   description:
-    "An independent software comparison publication. Some links are affiliate links — see our affiliate disclosure.",
+    "An independent software comparison publication. Some links are affiliate links - see our affiliate disclosure.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
