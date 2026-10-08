@@ -45,7 +45,7 @@ export default function Page() {
           bestFor: "Budget-conscious teams already in Cloudflare's ecosystem",
           freeOption: "Free tier available for a meaningful number of users.",
           tradeoff:
-            "The free tier is unusually generous for what it includes - but you're adopting Cloudflare's broader platform and terminology, which has a real learning curve if you've never used it before.",
+            "Its free tier can be attractive for small teams, but the product sits inside Cloudflare's broader security platform. Teams unfamiliar with that ecosystem should budget time for setup and policy learning.",
           url: "https://www.cloudflare.com/zero-trust/",
         },
       ]}
