@@ -24,7 +24,7 @@ export default function HomePage() {
           <p className="sp-eyebrow">Software, without the noise.</p>
           <h1 className="sp-display mt-7 max-w-5xl">Find the right tool.<br />Not the loudest one.</h1>
           <p className="sp-body-large mt-8 max-w-2xl">
-            StackPick compares software for freelancers and small businesses —
+            StackPick compares software for freelancers and small businesses -
             pricing, limits, strengths, trade-offs, and the details that actually change a decision.
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-3">
@@ -37,7 +37,7 @@ export default function HomePage() {
               {[
                 ["01", "Start with the job", "What are you actually trying to get done?"],
                 ["02", "Compare the trade-offs", "What does the free plan really include? What will become a problem later?"],
-                ["03", "Choose with context", "The best tool is the one that fits your workflow — not the one with the longest feature list."],
+                ["03", "Choose with context", "The best tool is the one that fits your workflow - not the one with the longest feature list."],
               ].map(([n, title, desc]) => (
                 <div key={n}>
                   <p className="text-sm font-semibold text-[#06c]">{n}</p>
@@ -103,7 +103,7 @@ export default function HomePage() {
             {[
               ["Pricing reality", "We separate the advertised starting price from the plan you will actually need."],
               ["Fit over features", "A smaller tool can be a better choice when it matches the way you work."],
-              ["Clear verdicts", "Every comparison should help you decide — including when the answer is to use nothing."],
+              ["Clear verdicts", "Every comparison should help you decide - including when the answer is to use nothing."],
             ].map(([title, desc]) => (
               <div key={title}>
                 <h3 className="text-xl font-semibold tracking-tight">{title}</h3>
