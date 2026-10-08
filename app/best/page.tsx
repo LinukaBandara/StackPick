@@ -54,7 +54,7 @@ const CATEGORIES = [
 
 export default function BestHubPage() {
   return (
-    <main>
+    <>
       <section className="bg-white">
         <div className="sp-container py-20 sm:py-28">
           <p className="sp-eyebrow">StackPick comparisons</p>
