@@ -67,9 +67,9 @@ const RELATED_COMPARISONS: Record<string, { href: string; title: string; desc: s
     { href: "/best/calendly-alternatives", title: "Best Calendly Alternatives", desc: "Compare scheduling tools by workflow and cost." },
   ],
   workflows: [
-    { href: "/best/how-to-choose-software-for-small-business", title: "How to Choose Software for a Small Business", desc: "A practical framework for evaluating tools." },
+    { href: "/best/how-to-choose-software-small-business", title: "How to Choose Software for a Small Business", desc: "A practical framework for evaluating tools." },
     { href: "/best/simple-small-business-software-stack", title: "How to Build a Simple Small-Business Software Stack", desc: "Avoid paying for overlapping tools." },
-    { href: "/best/choose-free-vs-paid-business-software", title: "How to Choose Between Free and Paid Business Software", desc: "Know when a free plan stops being the better deal." },
+    { href: "/best/free-vs-paid-business-software", title: "How to Choose Between Free and Paid Business Software", desc: "Know when a free plan stops being the better deal." },
   ],
   ai: [
     { href: "/best/ai-tools-small-businesses", title: "Best AI Tools for Small Businesses", desc: "Compare AI by the work it actually improves." },
