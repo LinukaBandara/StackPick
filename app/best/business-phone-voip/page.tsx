@@ -21,7 +21,7 @@ export default function Page() {
           bestFor: "Small-to-mid teams wanting the simplest rollout and strong support",
           freeOption: "No free tier.",
           tradeoff:
-            "Consistently rated easiest to administer and among the best-supported in this category - genuinely designed so a non-technical team can set it up without an IT hire. Integration catalog is narrower than RingCentral's, which matters if you need deep CRM/tool connections.",
+            "Its admin workflow is aimed at teams that want a relatively straightforward rollout without dedicated telecom expertise. The integration catalog is narrower than some broader platforms, which matters if you need deep CRM or business-tool connections.",
           url: "https://www.nextiva.com/",
         },
         {
