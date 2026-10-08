@@ -37,7 +37,7 @@ export default function Page() {
           bestFor: "Growing businesses (roughly 50-500 employees) that want HR, IT, and payroll unified",
           freeOption: "No free tier.",
           tradeoff:
-            "The unique pitch here is genuinely unique - provisioning a new hire's payroll, benefits, and company laptop/software access from one onboarding flow, in minutes rather than across three separate systems. That breadth is more than a very small team needs, and per-user pricing adds up faster than Gusto's simpler structure at low headcount.",
+            "Its differentiator is connecting HR workflows with employee provisioning and IT-related onboarding. That broader workflow can reduce tool switching, but it may be more than a small business needs if basic HR is the only requirement. That breadth is more than a very small team needs, and per-user pricing adds up faster than Gusto's simpler structure at low headcount.",
           url: "https://www.rippling.com/",
         },
         {
