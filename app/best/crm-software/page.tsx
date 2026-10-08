@@ -14,7 +14,7 @@ const articleJsonLd = {
   headline: "Best CRM Software for Freelancers & Small Teams",
   description: "An honest comparison of CRM tools for freelancers and small teams.",
   url: "/best/crm-software",
-  dateModified: "2026-09-24",
+  dateModified: "2026-10-08",
 };
 
 interface Tool {
@@ -72,7 +72,7 @@ export default function CrmSoftwarePage() {
       </nav>
 
       <h1 className="text-3xl font-bold text-ink mb-2">Best CRM Software for Freelancers & Small Teams</h1>
-      <p className="text-slate mb-1">Last reviewed: September 2026.</p>
+      <p className="text-slate mb-1">Page updated: October 8, 2026.</p>
       <p className="text-lg text-ink bg-indigo/5 border border-indigo/20 rounded-card p-4 my-6">
         If you have fewer than 10 clients you talk to regularly, a CRM is probably overkill — a
         well-organized spreadsheet works fine. Once lead follow-up starts slipping through the
@@ -105,6 +105,18 @@ export default function CrmSoftwarePage() {
         ))}
       </div>
 
+      <h2 className="text-xl font-semibold text-ink mt-10 mb-4">Which CRM fits which workflow?</h2>
+      <div className="overflow-x-auto rounded-card border border-borderc bg-white mb-8">
+        <table className="w-full text-sm"><thead><tr className="border-b border-borderc text-left"><th className="p-3">Priority</th><th className="p-3">Start with</th><th className="p-3">Reason</th></tr></thead><tbody>
+        <tr className="border-b border-borderc"><td className="p-3 text-slate">Simple contact tracking</td><td className="p-3 font-medium">HubSpot</td><td className="p-3 text-slate">Low-friction starting point.</td></tr>
+        <tr className="border-b border-borderc"><td className="p-3 text-slate">Visual sales pipeline</td><td className="p-3 font-medium">Pipedrive</td><td className="p-3 text-slate">Built around deal stages.</td></tr>
+        <tr className="border-b border-borderc"><td className="p-3 text-slate">Broader business suite</td><td className="p-3 font-medium">Zoho CRM</td><td className="p-3 text-slate">Strongest fit with other Zoho products.</td></tr>
+        <tr><td className="p-3 text-slate">Flexible custom database</td><td className="p-3 font-medium">Notion</td><td className="p-3 text-slate">Maximum flexibility, less automation.</td></tr>
+        </tbody></table>
+      </div>
+      <h2 className="text-xl font-semibold text-ink mb-3">What to check before moving your contacts</h2>
+      <p className="text-slate mb-3">Before importing a real client list, check export options, user permissions, email/calendar connections and what happens when the free tier is no longer enough.</p>
+      <p className="text-slate mb-6">For a one-person service business, the best CRM is often the one that takes less than an hour to configure and makes follow-up harder to forget. A sophisticated feature list is not useful if maintaining the system becomes another administrative job.</p>
       <h2 className="text-xl font-semibold text-ink mt-10 mb-2">Bottom line</h2>
       <p className="text-slate">
         Starting from zero and just need to stop losing track of leads? HubSpot's free tier
