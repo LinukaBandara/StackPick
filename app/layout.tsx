@@ -25,6 +25,10 @@ export const metadata: Metadata = {
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "StackPick" }],
   },
   twitter: { card: "summary_large_image" },
+  robots: { index: true, follow: true },
+  authors: [{ name: "StackPick Editorial" }],
+  creator: "StackPick",
+  publisher: "StackPick",
   icons: { icon: "/favicon.ico", apple: "/apple-touch-icon.png" },
 };
 
