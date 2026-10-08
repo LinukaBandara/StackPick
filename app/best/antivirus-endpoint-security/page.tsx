@@ -21,7 +21,7 @@ export default function Page() {
           bestFor: "Small businesses wanting strong detection without enterprise pricing or complexity",
           freeOption: "No free tier for business plans.",
           tradeoff:
-            "Independent malware detection tests have consistently ranked it near the top for over a decade, at meaningfully lower cost than CrowdStrike for comparable detection quality - genuinely the best value pick here. The management console has more of a learning curve than Norton's consumer-simple setup.",
+            "Independent malware-testing results can help put detection performance in context, but they should not be treated as a permanent ranking. Compare the latest test methodology, coverage and current pricing before calling it the best value. The management console has more of a learning curve than Norton's consumer-simple setup.",
           url: "https://www.bitdefender.com/business/",
         },
         {
@@ -37,7 +37,7 @@ export default function Page() {
           bestFor: "Very small teams (under ~20 devices) with no dedicated IT person",
           freeOption: "No free tier.",
           tradeoff:
-            "Consistently the easiest setup and cloud console in this category - genuinely built for a small team with nobody dedicated to managing security full time. Advanced threat-hunting and response depth trail the dedicated business platforms above it, which is an acceptable trade at this scale.",
+            "Its cloud-managed approach can be a practical fit for a small team without dedicated security staff. The trade-off is less depth for advanced threat hunting and response than dedicated security platforms. Advanced threat-hunting and response depth trail the dedicated business platforms above it, which is an acceptable trade at this scale.",
           url: "https://www.norton.com/small-business",
         },
         {
@@ -45,7 +45,7 @@ export default function Page() {
           bestFor: "Growing businesses with a real IT/security function and higher risk exposure",
           freeOption: "No free tier - quote-based, with some published entry pricing for smaller deployments.",
           tradeoff:
-            "Consistently rated at or near the top for detection quality and threat intelligence across independent evaluations - if security is genuinely business-critical, this is the strongest option here. Pricing is modular and accumulates, and it assumes a level of security operations maturity most very small businesses haven't reached yet.",
+            "Its threat-intelligence and detection capabilities are aimed at organizations with more mature security operations. If security is business-critical, compare its current independent test results, response features and total licensing cost against your requirements. Pricing is modular and accumulates, and it assumes a level of security operations maturity most very small businesses haven't reached yet.",
           url: "https://www.crowdstrike.com/",
         },
       ]}
