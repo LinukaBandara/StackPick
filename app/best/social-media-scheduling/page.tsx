@@ -44,7 +44,7 @@ export default function Page() {
       bottomLine="Small team or solo, want the cheapest clean option? Buffer, and check that first before anything else. Managing many accounts with a real marketing team that needs approvals and listening? Hootsuite is worth the price at that scale. Instagram or TikTok is genuinely your main channel? Later's visual planning is worth the switch."
     >
       <section className="bg-white">
-        <div className="sp-contain py-10">
+        <div className="sp-container py-10">
           <h2 className="text-2xl font-semibold">Schedule one week before choosing</h2>
           <p className="mt-3 text-slate-600">The best scheduler is the one that handles your actual posting routine without creating another job. Draft a week's worth of posts, connect the channels you use, preview each format, and check what requires manual publishing.</p>
           <ul className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
