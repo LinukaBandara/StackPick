@@ -17,175 +17,145 @@ export interface ComparisonArticleProps {
   bottomLine: string;
 }
 
-function ToolMark({ index }: { index: number }) {
-  return (
-    <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-slate-950 text-sm font-black text-white shadow-sm">
-      {String(index + 1).padStart(2, "0")}
-    </span>
-  );
-}
-
-export default function ComparisonArticle({
-  title,
-  slug,
-  intro,
-  pricingNote,
-  tools,
-  bottomLine,
-}: ComparisonArticleProps) {
+export default function ComparisonArticle({ title, slug, intro, pricingNote, tools, bottomLine }: ComparisonArticleProps) {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example";
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description: intro,
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example"}/best/${slug}`,
+    url: siteUrl + "/best/" + slug,
     dateModified: "2026-10-08",
-    author: { "@type": "Organization", name: "StackPick", url: process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example" },
-    publisher: { "@type": "Organization", name: "StackPick", url: process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example" },
+    author: { "@type": "Organization", name: "StackPick", url: siteUrl },
+    publisher: { "@type": "Organization", name: "StackPick", url: siteUrl },
     isAccessibleForFree: true,
   };
 
   return (
-    <article className="sp-container py-10 sm:py-14">
+    <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
-      <nav aria-label="Breadcrumb" className="mb-8 text-sm text-slate-500">
-        <Link href="/" className="font-medium hover:text-indigo-600">Home</Link>
-        <span className="mx-2 text-slate-300">/</span>
-        <Link href="/best" className="font-medium hover:text-indigo-600">Comparisons</Link>
-        <span className="mx-2 text-slate-300">/</span>
-        <span className="text-slate-700" aria-current="page">{title}</span>
-      </nav>
+      <header className="bg-white">
+        <div className="sp-container py-16 sm:py-24">
+          <nav aria-label="Breadcrumb" className="text-sm text-[#6e6e73]">
+            <Link href="/" className="hover:text-[#06c]">Home</Link>
+            <span className="mx-2">/</span>
+            <Link href="/best" className="hover:text-[#06c]">Comparisons</Link>
+          </nav>
+          <p className="sp-eyebrow mt-12">Software comparison</p>
+          <h1 className="sp-title mt-4 max-w-5xl">{title}</h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6e6e73]">{intro}</p>
+          <p className="mt-6 text-sm text-[#6e6e73]">Updated October 8, 2026</p>
+        </div>
+      </header>
 
-      <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
-        <div>
-          <div className="sp-pill border border-indigo-100 bg-indigo-50 text-indigo-700">
-            <span className="h-1.5 w-1.5 rounded-full bg-indigo-500" />
-            Software comparison
-          </div>
-
-          <h1 className="mt-5 max-w-4xl text-4xl font-black tracking-[-.035em] text-slate-950 sm:text-5xl">
-            {title}
-          </h1>
-          <p className="mt-4 text-sm font-medium text-slate-500">Page updated: October 8, 2026</p>
-
-          <div className="mt-7 rounded-3xl border border-indigo-100 bg-gradient-to-br from-indigo-50 to-white p-6 sm:p-7">
-            <p className="text-lg font-medium leading-8 text-slate-800">{intro}</p>
-          </div>
-
+      <section className="bg-[#f5f5f7]">
+        <div className="sp-container py-14 sm:py-20">
           {pricingNote && (
-            <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm leading-6 text-slate-800">
-              <strong className="text-slate-950">Pricing reality:</strong> {pricingNote}
+            <div className="rounded-[28px] bg-white p-7 sm:p-9">
+              <p className="text-sm font-semibold text-[#06c]">Pricing reality</p>
+              <p className="mt-3 max-w-4xl text-lg leading-8">{pricingNote}</p>
             </div>
           )}
 
-          <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6" aria-labelledby="methodology">
-            <p className="text-xs font-bold uppercase tracking-[.16em] text-indigo-600">How we compare</p>
-            <h2 id="methodology" className="mt-1 text-xl font-black text-slate-950">What matters beyond the feature list</h2>
-            <p className="mt-3 text-sm leading-6 text-slate-600">
-              StackPick focuses on the practical decision a freelancer or small team is making:
-              what the tool costs, what the free or entry plan really includes, where the product
-              fits best, and which trade-offs are easy to miss. We cross-check vendor documentation
-              and pricing information, then turn those findings into a clear recommendation rather
-              than repeating a vendor feature list.
-            </p>
-            <div className="mt-4 grid gap-3 sm:grid-cols-3">
-              {[
-                ["01", "Cost reality", "Subscription, usage and important limits."],
-                ["02", "Fit", "Who benefits and who should skip it."],
-                ["03", "Trade-offs", "The limitation most likely to affect the decision."],
-              ].map(([n, label, text]) => (
-                <div key={n} className="rounded-xl bg-slate-50 p-4">
-                  <span className="text-xs font-black text-indigo-600">{n}</span>
-                  <h3 className="mt-2 text-sm font-bold text-slate-950">{label}</h3>
-                  <p className="mt-1 text-xs leading-5 text-slate-500">{text}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <div className={pricingNote ? "mt-16" : ""}>
+            <p className="sp-eyebrow">At a glance</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-.03em]">Which one fits?</h2>
 
-          <section className="mt-10" aria-labelledby="quick-picks">
-            <div className="flex items-end justify-between gap-4">
-              <div>
-                <p className="text-xs font-bold uppercase tracking-[.16em] text-indigo-600">Quick comparison</p>
-                <h2 id="quick-picks" className="mt-1 text-2xl font-black text-slate-950">The shortlist</h2>
-              </div>
-            </div>
-
-            <div className="mt-5 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <div className="hidden grid-cols-[1.2fr_1fr_1fr] border-b border-slate-100 bg-slate-50 px-5 py-3 text-xs font-bold uppercase tracking-wider text-slate-500 sm:grid">
+            <div className="mt-8 overflow-hidden rounded-[28px] bg-white">
+              <div className="hidden grid-cols-[1.1fr_1fr_1.2fr] border-b border-black/10 px-6 py-4 text-xs font-semibold text-[#6e6e73] sm:grid">
                 <span>Tool</span><span>Best for</span><span>Free option</span>
               </div>
-              {tools.map((t, i) => (
-                <div key={t.name} className="grid gap-3 border-b border-slate-100 px-5 py-4 last:border-0 sm:grid-cols-[1.2fr_1fr_1fr] sm:items-center">
-                  <div className="flex items-center gap-3">
-                    <ToolMark index={i} />
-                    <span className="font-extrabold text-slate-950">{t.name}</span>
+              {tools.map((tool, index) => (
+                <div key={tool.name} className="grid gap-3 border-b border-black/10 px-6 py-6 last:border-0 sm:grid-cols-[1.1fr_1fr_1.2fr] sm:items-center">
+                  <div className="flex items-center gap-4">
+                    <span className="text-sm font-semibold text-[#6e6e73]">{String(index + 1).padStart(2, "0")}</span>
+                    <span className="text-lg font-semibold tracking-tight">{tool.name}</span>
                   </div>
-                  <div className="text-sm text-slate-600"><span className="font-semibold text-slate-800 sm:hidden">Best for: </span>{t.bestFor}</div>
-                  <div className="text-sm text-slate-600"><span className="font-semibold text-slate-800 sm:hidden">Free: </span>{t.freeOption}</div>
+                  <p className="text-sm text-[#6e6e73]"><span className="font-medium text-[#1d1d1f] sm:hidden">Best for: </span>{tool.bestFor}</p>
+                  <p className="text-sm text-[#6e6e73]"><span className="font-medium text-[#1d1d1f] sm:hidden">Free: </span>{tool.freeOption}</p>
                 </div>
               ))}
             </div>
-          </section>
-
-          <section className="mt-12" aria-labelledby="detailed-picks">
-            <p className="text-xs font-bold uppercase tracking-[.16em] text-indigo-600">Detailed look</p>
-            <h2 id="detailed-picks" className="mt-1 text-2xl font-black text-slate-950">What to know before choosing</h2>
-
-            <div className="mt-5 grid gap-4">
-              {tools.map((t, i) => (
-                <section key={t.name} className="sp-card p-5 sm:p-6">
-                  <div className="flex flex-wrap items-start justify-between gap-4">
-                    <div className="flex items-center gap-3">
-                      <ToolMark index={i} />
-                      <div>
-                        <h3 className="text-xl font-extrabold text-slate-950">{t.name}</h3>
-                        <p className="mt-0.5 text-xs font-semibold uppercase tracking-wider text-indigo-600">Best for {t.bestFor}</p>
-                      </div>
-                    </div>
-                    <a href={t.url} target="_blank" rel="noopener noreferrer sponsored" className="sp-button-secondary">
-                      Check current pricing <span aria-hidden="true">↗</span>
-                    </a>
-                  </div>
-                  <div className="mt-6 grid gap-4 border-t border-slate-100 pt-5 sm:grid-cols-2">
-                    <div>
-                      <p className="text-xs font-bold uppercase tracking-wider text-emerald-600">Free option</p>
-                      <p className="mt-1 text-sm leading-6 text-slate-600">{t.freeOption}</p>
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold uppercase tracking-wider text-amber-600">Trade-off</p>
-                      <p className="mt-1 text-sm leading-6 text-slate-600">{t.tradeoff}</p>
-                    </div>
-                  </div>
-                </section>
-              ))}
-            </div>
-          </section>
-
-          <section className="mt-12 rounded-3xl bg-slate-950 p-6 text-white sm:p-8" aria-labelledby="bottom-line">
-            <p className="text-xs font-bold uppercase tracking-[.16em] text-indigo-300">StackPick verdict</p>
-            <h2 id="bottom-line" className="mt-2 text-2xl font-black">Bottom line</h2>
-            <p className="mt-3 leading-7 text-slate-300">{bottomLine}</p>
-          </section>
-
-          <p className="mt-8 border-t border-slate-200 pt-5 text-xs leading-6 text-slate-500">
-            Some links on this page may be affiliate links. Read our{" "}
-            <Link href="/affiliate-disclosure" className="font-semibold text-indigo-600 hover:underline">affiliate disclosure</Link>.
-          </p>
-        </div>
-
-        <aside className="hidden lg:block">
-          <div className="sticky top-24 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-            <p className="text-xs font-bold uppercase tracking-[.16em] text-slate-400">On this page</p>
-            <nav className="mt-4 grid gap-2 text-sm font-semibold">
-              <a href="#methodology" className="rounded-lg px-3 py-2 text-slate-700 hover:bg-indigo-50 hover:text-indigo-700">How we compare</a>
-              <a href="#quick-picks" className="rounded-lg px-3 py-2 text-slate-700 hover:bg-indigo-50 hover:text-indigo-700">Quick comparison</a>
-              <a href="#detailed-picks" className="rounded-lg px-3 py-2 text-slate-700 hover:bg-indigo-50 hover:text-indigo-700">Detailed look</a>
-              <a href="#bottom-line" className="rounded-lg px-3 py-2 text-slate-700 hover:bg-indigo-50 hover:text-indigo-700">Bottom line</a>
-            </nav>
           </div>
-        </aside>
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="sp-container py-20 sm:py-28">
+          <div className="max-w-3xl">
+            <p className="sp-eyebrow">How we compare</p>
+            <h2 className="sp-title mt-4">The details that change the decision.</h2>
+            <p className="mt-6 text-lg leading-8 text-[#6e6e73]">
+              We focus on practical decisions: what the tool costs, what the free or entry plan
+              really includes, where it fits, and which trade-offs are easy to miss. We cross-check
+              vendor documentation and pricing information rather than repeating a feature list.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-12 border-t border-black/10 pt-10 md:grid-cols-3">
+            {[
+              ["01", "Cost reality", "Subscription, usage and important limits."],
+              ["02", "Fit", "Who benefits and who should skip it."],
+              ["03", "Trade-offs", "The limitation most likely to affect the decision."],
+            ].map(([n, title, desc]) => (
+              <div key={n}>
+                <p className="text-sm font-semibold text-[#06c]">{n}</p>
+                <h3 className="mt-3 text-xl font-semibold">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f5f5f7]">
+        <div className="sp-container py-20 sm:py-28">
+          <p className="sp-eyebrow">Detailed comparison</p>
+          <h2 className="sp-title mt-4 max-w-4xl">What to know before you choose.</h2>
+
+          <div className="mt-14 space-y-5">
+            {tools.map((tool, index) => (
+              <section key={tool.name} className="rounded-[28px] bg-white p-7 sm:p-10">
+                <div className="flex flex-col gap-7 sm:flex-row sm:items-start sm:justify-between">
+                  <div>
+                    <p className="text-sm font-semibold text-[#06c]">{String(index + 1).padStart(2, "0")}</p>
+                    <h3 className="mt-2 text-3xl font-semibold tracking-[-.035em]">{tool.name}</h3>
+                    <p className="mt-2 text-sm text-[#6e6e73]">Best for {tool.bestFor}</p>
+                  </div>
+                  <a href={tool.url} target="_blank" rel="noopener noreferrer sponsored" className="sp-button-secondary shrink-0">
+                    Check current pricing ↗
+                  </a>
+                </div>
+                <div className="mt-10 grid gap-8 border-t border-black/10 pt-8 sm:grid-cols-2">
+                  <div>
+                    <p className="text-sm font-semibold">Free option</p>
+                    <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{tool.freeOption}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold">Trade-off</p>
+                    <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{tool.tradeoff}</p>
+                  </div>
+                </div>
+              </section>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-black text-white">
+        <div className="sp-container py-24 sm:py-32">
+          <p className="text-sm font-semibold text-[#a1a1a6]">StackPick verdict</p>
+          <h2 className="mt-4 max-w-4xl text-4xl font-semibold tracking-[-.04em] sm:text-6xl">The bottom line.</h2>
+          <p className="mt-8 max-w-3xl text-lg leading-8 text-[#a1a1a6]">{bottomLine}</p>
+        </div>
+      </section>
+
+      <div className="sp-container py-8">
+        <p className="text-xs leading-6 text-[#6e6e73]">
+          Some links on this page may be affiliate links. Read our{" "}
+          <Link href="/affiliate-disclosure" className="text-[#06c] hover:underline">affiliate disclosure</Link>.
+        </p>
       </div>
     </article>
   );
