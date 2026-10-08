@@ -111,6 +111,33 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
 
       <section className="bg-[#f5f5f7]">
         <div className="sp-container py-20 sm:py-28">
+          <p className="sp-eyebrow">Do this before paying</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Run the same five-minute test on every finalist.</h2>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6e6e73]">
+            Feature lists are easy to compare and easy to overvalue. If the service offers a free
+            plan or trial, use the same small real-world task in each finalist instead. Record what
+            you can complete, where you hit a limit, and what requires an upgrade.
+          </p>
+          <ol className="mt-10 grid gap-4 md:grid-cols-5">
+            {[
+              ["01", "Create", "Set up the smallest realistic workspace."],
+              ["02", "Do", "Complete the task you actually need."],
+              ["03", "Limit", "Find the first meaningful free-plan cap."],
+              ["04", "Export", "Check whether your data can leave cleanly."],
+              ["05", "Price", "Check the current paid plan and renewal terms."],
+            ].map(([n, title, desc]) => (
+              <li key={n} className="rounded-3xl bg-white p-6">
+                <span className="text-sm font-semibold text-[#06c]">{n}</span>
+                <h3 className="mt-3 text-lg font-semibold">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{desc}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+            <section className="bg-[#f5f5f7]">
+        <div className="sp-container py-20 sm:py-28">
           <p className="sp-eyebrow">Detailed comparison</p>
           <h2 className="sp-title mt-4 max-w-4xl">What to know before you choose.</h2>
 
