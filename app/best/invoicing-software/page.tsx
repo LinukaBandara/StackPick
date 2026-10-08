@@ -14,7 +14,7 @@ const articleJsonLd = {
   headline: "Best Invoicing Software for Freelancers",
   description: "An honest, fee-aware comparison of invoicing tools for freelancers.",
   url: "/best/invoicing-software",
-  dateModified: "2026-09-24",
+  dateModified: "2026-10-08",
 };
 
 interface Tool {
@@ -82,7 +82,7 @@ export default function InvoicingSoftwarePage() {
       </nav>
 
       <h1 className="text-3xl font-bold text-ink mb-2">Best Invoicing Software for Freelancers</h1>
-      <p className="text-slate mb-1">Last reviewed: September 2026.</p>
+      <p className="text-slate mb-1">Page updated: October 8, 2026.</p>
       <p className="text-lg text-ink bg-indigo/5 border border-indigo/20 rounded-card p-4 my-6">
         There's no single "best" — it depends on your invoice volume and whether payment
         processing fees or a flat monthly price costs you less. Below is what actually
@@ -133,6 +133,16 @@ export default function InvoicingSoftwarePage() {
         ))}
       </div>
 
+      <h2 className="text-xl font-semibold text-ink mt-10 mb-4">Choose by how you actually get paid</h2>
+      <div className="grid gap-4 sm:grid-cols-2 mb-8">
+        <div className="rounded-card border border-borderc bg-white p-5"><h3 className="font-semibold text-ink mb-2">Mostly bank transfer</h3><p className="text-sm text-slate">Prioritize invoices, reminders, recurring billing and a clean client payment workflow.</p></div>
+        <div className="rounded-card border border-borderc bg-white p-5"><h3 className="font-semibold text-ink mb-2">Mostly card payments</h3><p className="text-sm text-slate">Calculate processing costs against monthly payment volume. Free subscription does not mean lowest total cost.</p></div>
+        <div className="rounded-card border border-borderc bg-white p-5"><h3 className="font-semibold text-ink mb-2">Invoices plus bookkeeping</h3><p className="text-sm text-slate">A broader accounting product can reduce duplicate data entry.</p></div>
+        <div className="rounded-card border border-borderc bg-white p-5"><h3 className="font-semibold text-ink mb-2">Data ownership matters</h3><p className="text-sm text-slate">Check export options and self-hosting where available, while accounting for maintenance responsibilities.</p></div>
+      </div>
+      <h2 className="text-xl font-semibold text-ink mb-3">A five-minute invoice test</h2>
+      <p className="text-slate mb-3">Create one realistic invoice instead of judging a product from its marketing page. Add a line item, discount or tax if relevant, payment instructions and a client note. Preview it on a phone and inspect the payment flow.</p>
+      <p className="text-slate mb-6">This exposes practical issues feature lists miss: editing speed, professional output, required fields and whether the free tier blocks something you actually need.</p>
       <h2 className="text-xl font-semibold text-ink mt-10 mb-2">Bottom line</h2>
       <p className="text-slate">
         Sending fewer than 5 invoices a month to repeat clients? Start free with Wave or Zoho
