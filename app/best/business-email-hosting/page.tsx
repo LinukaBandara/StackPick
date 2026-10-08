@@ -29,7 +29,7 @@ export default function Page() {
           bestFor: "Teams standardized on Word, Excel, and PowerPoint",
           freeOption: "No free tier - trial only.",
           tradeoff:
-            "Bundles a genuinely large amount of value - desktop and web Office apps plus 1TB of OneDrive storage per user - at a comparable price to Google Workspace. The interface and app ecosystem assume more comfort with traditional Office-style software than Google's simpler web-first tools.",
+            "Its plans can bundle business email with desktop and web Office apps plus substantial OneDrive storage, which can be valuable if your team already relies on Microsoft tools. Compare the exact current plan before treating the bundle as cheaper than alternatives. The interface and app ecosystem assume more comfort with traditional Office-style software than Google's simpler web-first tools.",
           url: "https://www.microsoft.com/microsoft-365/business",
         },
         {
@@ -37,7 +37,7 @@ export default function Page() {
           bestFor: "Tight budgets, especially already using other Zoho products",
           freeOption: "Limited free tier available.",
           tradeoff:
-            "Meaningfully cheaper than Google Workspace or Microsoft 365 for straightforward business email, and it connects cleanly to Zoho CRM, Books, and Invoice if you're already in that ecosystem. Storage on entry tiers is modest, and the broader collaboration suite is less mature than Google's or Microsoft's.",
+            "It can be a lower-cost option for straightforward business email, particularly for teams already using Zoho CRM, Books or Invoice. Compare current storage, support and collaboration limits against the larger suites. Storage on entry tiers is modest, and the broader collaboration suite is less mature than Google's or Microsoft's.",
           url: "https://www.zoho.com/mail/",
         },
         {
