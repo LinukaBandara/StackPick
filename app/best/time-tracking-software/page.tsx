@@ -52,7 +52,7 @@ export default function Page() {
       bottomLine="Tracking your own time as a freelancer? Toggl Track for the smoothest daily experience. Budget-conscious team of any size? Clockify's unlimited free tier is genuinely hard to beat. Billing hours directly to clients? Harvest removes a whole invoicing step. Managing hourly remote workers and specifically need verification? Hubstaff - but be transparent with your team about what it tracks."
     >
       <section className="bg-white">
-        <div className="sp-contain py-10">
+        <div className="sp-container py-10">
           <h2 className="text-2xl font-semibold">Test the timer during a normal workday</h2>
           <p className="mt-3 text-slate-600">Start with the work you already do rather than an artificial demo. Track one task, stop and restart it, switch projects, then generate the report you would actually use for a client invoice or weekly review.</p>
           <ul className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
