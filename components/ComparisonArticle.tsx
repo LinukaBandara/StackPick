@@ -1,5 +1,64 @@
 import Link from "next/link";
 
+const RELATED_COMPARISONS: Record<string, { href: string; title: string; desc: string }[]> = {
+  finance: [
+    { href: "/best/invoicing-software", title: "Best Invoicing Software for Freelancers", desc: "Compare practical invoicing options and free-plan limits." },
+    { href: "/best/accounting-software", title: "Best Accounting Software for Small Business", desc: "Compare accounting tools for growing small teams." },
+    { href: "/best/expense-management-software", title: "Best Expense Management Software for Small Business", desc: "Compare expense tracking and reimbursement tools." },
+    { href: "/best/payroll-software", title: "Best Payroll Software for Small Business", desc: "Compare payroll options and their trade-offs." },
+  ],
+  sales: [
+    { href: "/best/crm-software", title: "Best CRM Software for Freelancers & Small Teams", desc: "Compare CRMs for managing leads and customers." },
+    { href: "/best/email-marketing-software", title: "Best Email Marketing Software for Small Business", desc: "Compare email tools for growing an audience." },
+    { href: "/best/live-chat-software", title: "Best Live Chat Software for Small Business Websites", desc: "Compare website chat tools for customer conversations." },
+    { href: "/best/appointment-scheduling-software", title: "Best Appointment Scheduling Software for Small Business", desc: "Compare scheduling tools for booking customers." },
+  ],
+  operations: [
+    { href: "/best/project-management-software", title: "Best Project Management Software for Small Teams", desc: "Compare tools for planning and tracking work." },
+    { href: "/best/time-tracking-software", title: "Best Time Tracking Software for Freelancers & Small Teams", desc: "Compare time tracking tools for billable work." },
+    { href: "/best/employee-scheduling-software", title: "Best Employee Scheduling Software for Small Business", desc: "Compare staff scheduling options." },
+    { href: "/best/inventory-management-software", title: "Best Inventory Management Software for Small Business", desc: "Compare inventory tools for stock-based businesses." },
+  ],
+  web: [
+    { href: "/best/website-builders", title: "Best Website Builder for Small Business", desc: "Compare website builders for business sites." },
+    { href: "/best/web-hosting", title: "Best Web Hosting for Small Business", desc: "Compare hosting options and practical trade-offs." },
+    { href: "/best/business-email-hosting", title: "Best Business Email Hosting for Small Business", desc: "Compare professional email hosting options." },
+    { href: "/best/form-builders", title: "Best Form Builder for Small Business", desc: "Compare forms for leads, surveys and workflows." },
+  ],
+  security: [
+    { href: "/best/password-managers", title: "Best Password Manager for Business Teams", desc: "Compare password management for small teams." },
+    { href: "/best/business-vpn", title: "Best Business VPN for Remote Teams", desc: "Compare VPN and secure-access options." },
+    { href: "/best/antivirus-endpoint-security", title: "Best Antivirus & Endpoint Security for Small Business", desc: "Compare endpoint protection options." },
+    { href: "/best/cloud-backup-software", title: "Best Cloud Backup Software for Small Business", desc: "Compare backup tools for business data." },
+  ],
+  people: [
+    { href: "/best/hr-software", title: "Best HR Software for Small Business", desc: "Compare HR platforms for growing teams." },
+    { href: "/best/payroll-software", title: "Best Payroll Software for Small Business", desc: "Compare payroll options for small employers." },
+    { href: "/best/applicant-tracking-software", title: "Best Applicant Tracking System for Small Business", desc: "Compare ATS tools for hiring workflows." },
+    { href: "/best/employee-scheduling-software", title: "Best Employee Scheduling Software for Small Business", desc: "Compare scheduling tools for teams." },
+  ],
+  collaboration: [
+    { href: "/best/cloud-storage", title: "Best Cloud Storage for Small Business Teams", desc: "Compare storage and file-sharing tools." },
+    { href: "/best/video-conferencing", title: "Best Video Conferencing Software for Small Business", desc: "Compare video meeting platforms." },
+    { href: "/best/business-phone-voip", title: "Best Business Phone System (VoIP) for Small Business", desc: "Compare business calling platforms." },
+    { href: "/best/help-desk-software", title: "Best Help Desk Software for Small Business", desc: "Compare customer support platforms." },
+  ],
+};
+
+function relatedFor(slug: string) {
+  const groups: [keyof typeof RELATED_COMPARISONS, string[]][] = [
+    ["finance", ["invoicing-software", "accounting-software", "payroll-software", "expense-management-software"]],
+    ["sales", ["crm-software", "email-marketing-software", "social-media-scheduling", "appointment-scheduling-software", "live-chat-software", "survey-nps-software"]],
+    ["operations", ["project-management-software", "time-tracking-software", "employee-scheduling-software", "inventory-management-software", "pos-systems", "contract-management-software"]],
+    ["web", ["website-builders", "web-hosting", "business-email-hosting", "form-builders", "online-course-platforms", "esignature-software"]],
+    ["security", ["password-managers", "business-vpn", "antivirus-endpoint-security", "cloud-backup-software"]],
+    ["people", ["hr-software", "payroll-software", "applicant-tracking-software", "employee-scheduling-software"]],
+    ["collaboration", ["cloud-storage", "video-conferencing", "business-phone-voip", "help-desk-software"]],
+  ];
+  const group = groups.find(([, slugs]) => slugs.includes(slug))?.[0] ?? "operations";
+  return RELATED_COMPARISONS[group].filter((item) => item.href !== `/best/${slug}`).slice(0, 3);
+}
+
 export interface ComparisonTool {
   name: string;
   bestFor: string;
@@ -182,6 +241,22 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
           <p className="text-sm font-semibold text-[#a1a1a6]">StackPick verdict</p>
           <h2 className="mt-4 max-w-4xl text-4xl font-semibold tracking-[-.04em] sm:text-6xl">The bottom line.</h2>
           <p className="mt-8 max-w-3xl text-lg leading-8 text-[#a1a1a6]">{bottomLine}</p>
+        </div>
+      </section>
+
+      <section className="bg-[#f5f5f7]">
+        <div className="sp-container py-16 sm:py-20">
+          <p className="sp-eyebrow">Keep exploring</p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-[-.03em]">Related comparisons</h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {relatedFor(slug).map((item) => (
+              <Link key={item.href} href={item.href} className="group rounded-3xl bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(0,0,0,.08)]">
+                <h3 className="text-lg font-semibold tracking-tight group-hover:text-[#06c]">{item.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{item.desc}</p>
+                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-[#06c]">Read comparison <svg aria-hidden="true" viewBox="0 0 16 16" className="h-4 w-4" fill="none"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
