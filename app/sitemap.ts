@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://stackpick.example"; // TODO: replace with real domain
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example";
 
 const ROUTES = [
   "/",
