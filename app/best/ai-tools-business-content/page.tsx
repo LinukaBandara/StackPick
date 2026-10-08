@@ -15,10 +15,10 @@ export default function Page() {
       intro="Compare AI tools that can help create business content while preserving accuracy, brand voice and human review."
       pricingNote="AI features, models, usage limits and pricing change frequently. Verify current provider terms and test outputs before adopting a tool."
       tools={[
-        { name: "ChatGPT", bestFor: "General-purpose AI work", freeOption: "Check current plan limits.", tradeoff: "Broad capability means you still need to define the workflow.", url: "https://chatgpt.com/" },
-        { name: "Claude", bestFor: "Writing, analysis and long-context work", freeOption: "Check current plan limits.", tradeoff: "Limits and available features vary by plan.", url: "https://claude.ai/" },
-        { name: "Gemini", bestFor: "AI work within Google's ecosystem", freeOption: "Check current plan limits.", tradeoff: "Feature availability can vary by account and region.", url: "https://gemini.google.com/" },
-        { name: "Microsoft Copilot", bestFor: "AI-assisted work in Microsoft's ecosystem", freeOption: "Check current access and limits.", tradeoff: "The useful features depend on the Microsoft products and plan involved.", url: "https://copilot.microsoft.com/" },
+        { name: "ChatGPT", bestFor: "Drafting and repurposing business content", freeOption: "Check current plan limits.", tradeoff: "Output still needs fact-checking, editing and brand review.", url: "https://chatgpt.com/" },
+        { name: "Claude", bestFor: "Long-form content and document editing", freeOption: "Check current plan limits.", tradeoff: "You remain responsible for accuracy and originality.", url: "https://claude.ai/" },
+        { name: "Canva", bestFor: "Visual content, social posts and branded assets", freeOption: "Check current plan limits.", tradeoff: "Template-based workflows need brand direction to avoid sameness.", url: "https://www.canva.com/" },
+        { name: "Jasper", bestFor: "Structured marketing content workflows", freeOption: "Check current provider terms.", tradeoff: "More specialized than a general AI assistant.", url: "https://www.jasper.ai/" },
       ]}
       bottomLine="AI can speed production, but the business still owns accuracy and originality."
     >
