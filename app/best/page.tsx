@@ -95,16 +95,18 @@ export default function BestHubPage() {
           </div>
         </div>
       </section>
-      <section className="mt-20 border-t border-[#e4e7ec] pt-16">
-        <div className="mb-7 max-w-2xl">
-          <p className="sp-eyebrow">More from StackPick</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-[-.03em]">Explore the full decision library.</h2>
-          <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Persona guides, head-to-head comparisons, alternatives, practical workflows and AI tools.</p>
-        </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {EXTENDED_ARTICLES.map(([href, title]) => (
-            <Link key={href} href={href} className="rounded-2xl border border-[#e4e7ec] bg-white px-5 py-4 text-sm font-medium text-[#101828] transition hover:-translate-y-0.5 hover:shadow-md">{title}</Link>
-          ))}
+      <section className="border-t border-[#e4e7ec] bg-white">
+        <div className="sp-container py-16 sm:py-20">
+          <div className="mb-7 max-w-2xl">
+            <p className="sp-eyebrow">More from StackPick</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-.03em]">Explore the full decision library.</h2>
+            <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Persona guides, head-to-head comparisons, alternatives, practical workflows and AI tools.</p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {EXTENDED_ARTICLES.map(([href, title]) => (
+              <Link key={href} href={href} className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] px-5 py-4 text-sm font-medium text-[#101828] transition hover:-translate-y-0.5 hover:bg-white hover:shadow-md">{title}</Link>
+            ))}
+          </div>
         </div>
       </section>
     </>
