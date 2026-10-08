@@ -77,3 +77,60 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(91,92,226,.28); 
   .sp-verdict::after { content: ""; position: absolute; width: 360px; height: 360px; right: -160px; top: -100px; border-radius: 50%; border: 1px solid rgba(255,255,255,.1); box-shadow: 0 0 0 70px rgba(255,255,255,.025), 0 0 0 140px rgba(255,255,255,.018); pointer-events: none; }
   .sp-verdict-mark { @apply mb-7 flex h-12 w-12 items-center justify-center rounded-2xl; background: rgba(167,243,208,.12); color: #a7f3d0; font-size: 20px; font-weight: 700; }
 }
+
+
+@layer components {
+  .sp-library-hero { position: relative; overflow: hidden; background: #fff; border-bottom: 1px solid var(--sp-border); }
+  .sp-library-hero::before { content: ""; position: absolute; width: 620px; height: 620px; right: -220px; top: -280px; border-radius: 50%; background: radial-gradient(circle, rgba(91,92,226,.14), rgba(91,92,226,0) 68%); pointer-events: none; }
+  .sp-library-title { max-width: 900px; font-size: clamp(3.2rem, 8vw, 7rem); line-height: .94; letter-spacing: -.07em; font-weight: 750; }
+  .sp-library-lede { max-width: 700px; font-size: clamp(1.15rem, 2.2vw, 1.5rem); line-height: 1.5; color: #667085; }
+  .sp-library-proof { display: flex; flex-wrap: wrap; gap: 0; border-top: 1px solid var(--sp-border); max-width: 760px; }
+  .sp-library-proof > div { min-width: 190px; padding: 20px 32px 0 0; }
+  .sp-library-proof strong { display: block; font-size: 1.45rem; letter-spacing: -.04em; }
+  .sp-library-proof span { display: block; margin-top: 2px; color: #667085; font-size: .82rem; }
+  .sp-section-title { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1; letter-spacing: -.055em; font-weight: 700; }
+  .sp-feature-card { display: flex; min-height: 320px; flex-direction: column; border: 1px solid var(--sp-border); border-radius: 30px; padding: 28px; background: #fff; text-decoration: none; color: inherit; transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+  .sp-feature-card:hover { transform: translateY(-4px); border-color: #cfd1ff; box-shadow: 0 24px 65px rgba(16,24,40,.09); }
+  .sp-feature-card h3 { max-width: 700px; margin-top: auto; padding-top: 46px; font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.05; letter-spacing: -.045em; }
+  .sp-feature-card p { max-width: 620px; margin-top: 14px; color: #667085; font-size: .96rem; line-height: 1.6; }
+  .sp-feature-card-primary { background: linear-gradient(135deg,#f5f5ff 0%,#fff 72%); border-color: #d9dbff; }
+  .sp-card-arrow { color: #4546c9; font-size: 1.15rem; text-decoration: none; transition: transform .2s ease; }
+  .sp-feature-card:hover .sp-card-arrow, .sp-category-card:hover .sp-card-arrow, .sp-explore-card:hover i { transform: translate(3px,-3px); }
+  .sp-read-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 22px; color: #4546c9; font-size: .88rem; font-weight: 650; }
+  .sp-library-categories { background: #101828; color: #fff; }
+  .sp-library-categories .sp-eyebrow { color: #98a2b3; }
+  .sp-library-categories .sp-section-title { color: #fff; }
+  .sp-library-categories > .sp-container > div:first-child > p:last-child { color: #98a2b3; }
+  .sp-category-card { min-height: 310px; display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,.10); border-radius: 26px; padding: 26px; background: rgba(255,255,255,.045); transition: transform .3s ease, background .3s ease, border-color .3s ease; }
+  .sp-category-card:hover { transform: translateY(-4px); background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.2); }
+  .sp-category-number { color: #98a2b3; font-size: .75rem; font-weight: 700; letter-spacing: .12em; }
+  .sp-category-card .sp-card-arrow { color: #c7c9ff; }
+  .sp-category-card h3 { margin-top: 58px; font-size: 1.55rem; line-height: 1.1; letter-spacing: -.035em; }
+  .sp-category-card > p { margin-top: 10px; color: #98a2b3; font-size: .9rem; line-height: 1.5; }
+  .sp-category-links { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; padding-top: 22px; }
+  .sp-category-links a { border: 1px solid rgba(255,255,255,.11); border-radius: 999px; padding: 7px 10px; color: #d0d5dd; font-size: .72rem; text-decoration: none; transition: background .2s ease, color .2s ease; }
+  .sp-category-links a:hover { background: #fff; color: #101828; }
+  .sp-explore-header { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; }
+  .sp-explore-header > p { max-width: 430px; color: #667085; font-size: .9rem; line-height: 1.6; }
+  .sp-explore-card { position: relative; display: flex; min-height: 135px; flex-direction: column; justify-content: center; border-top: 1px solid var(--sp-border); padding: 22px 44px 22px 2px; text-decoration: none; color: inherit; transition: padding .2s ease; }
+  .sp-explore-card:hover { padding-left: 8px; }
+  .sp-explore-card span { color: #667085; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; }
+  .sp-explore-card strong { margin-top: 7px; font-size: 1.15rem; letter-spacing: -.025em; }
+  .sp-explore-card i { position: absolute; right: 4px; top: 25px; color: #4546c9; font-size: 1.15rem; font-style: normal; transition: transform .2s ease; }
+  .sp-library-bottom { background: #f7f8fc; border-top: 1px solid var(--sp-border); }
+  .sp-library-bottom-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; border-radius: 30px; padding: 42px; background: #eef0ff; border: 1px solid #d9dbff; }
+  .sp-library-bottom-inner h2 { max-width: 620px; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1; letter-spacing: -.055em; }
+  .sp-library-bottom-inner p { max-width: 650px; color: #667085; line-height: 1.6; }
+  .sp-library-bottom-inner .sp-button-secondary { flex: 0 0 auto; }
+}
+
+@media (max-width: 640px) {
+  .sp-library-title { font-size: clamp(3rem, 15vw, 4.7rem); }
+  .sp-library-proof > div { min-width: 50%; padding-right: 18px; }
+  .sp-feature-card { min-height: 285px; padding: 23px; border-radius: 24px; }
+  .sp-feature-card h3 { padding-top: 38px; font-size: 1.75rem; }
+  .sp-category-card { min-height: 285px; padding: 23px; }
+  .sp-category-card h3 { margin-top: 48px; }
+  .sp-explore-header, .sp-library-bottom-inner { align-items: flex-start; flex-direction: column; }
+  .sp-library-bottom-inner { padding: 28px; }
+}
