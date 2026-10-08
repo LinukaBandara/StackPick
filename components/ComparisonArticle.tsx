@@ -38,8 +38,10 @@ export default function ComparisonArticle({
     "@type": "Article",
     headline: title,
     description: intro,
-    url: `/best/${slug}`,
-    dateModified: "2026-09-24",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example"}/best/${slug}`,
+    dateModified: "2026-10-08",
+    author: { "@type": "Organization", name: "StackPick", url: process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example" },
+    publisher: { "@type": "Organization", name: "StackPick", url: process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example" },
     isAccessibleForFree: true,
   };
 
@@ -65,7 +67,7 @@ export default function ComparisonArticle({
           <h1 className="mt-5 max-w-4xl text-4xl font-black tracking-[-.035em] text-slate-950 sm:text-5xl">
             {title}
           </h1>
-          <p className="mt-4 text-sm font-medium text-slate-500">Last reviewed: September 2026</p>
+          <p className="mt-4 text-sm font-medium text-slate-500">Page updated: October 8, 2026</p>
 
           <div className="mt-7 rounded-3xl border border-indigo-100 bg-gradient-to-br from-indigo-50 to-white p-6 sm:p-7">
             <p className="text-lg font-medium leading-8 text-slate-800">{intro}</p>
