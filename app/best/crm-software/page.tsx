@@ -8,13 +8,20 @@ export const metadata: Metadata = {
   alternates: { canonical: "/best/crm-software" },
 };
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example";
+
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "Best CRM Software for Freelancers & Small Teams",
   description: "An honest comparison of CRM tools for freelancers and small teams.",
-  url: "/best/crm-software",
+  url: SITE_URL + "/best/crm-software",
   dateModified: "2026-10-08",
+  inLanguage: "en-US",
+  mainEntityOfPage: { "@type": "WebPage", "@id": SITE_URL + "/best/crm-software" },
+  author: { "@type": "Organization", name: "StackPick", url: SITE_URL },
+  publisher: { "@type": "Organization", name: "StackPick", url: SITE_URL },
+  isAccessibleForFree: true,
 };
 
 interface Tool {
