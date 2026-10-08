@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
   title: "Best CRM Software for Freelancers & Small Teams (2026)",
@@ -8,134 +8,75 @@ export const metadata: Metadata = {
   alternates: { canonical: "/best/crm-software" },
 };
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example";
-
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best CRM Software for Freelancers & Small Teams",
-  description: "An honest comparison of CRM tools for freelancers and small teams.",
-  url: SITE_URL + "/best/crm-software",
-  dateModified: "2026-10-08",
-  inLanguage: "en-US",
-  mainEntityOfPage: { "@type": "WebPage", "@id": SITE_URL + "/best/crm-software" },
-  author: { "@type": "Organization", name: "StackPick", url: SITE_URL },
-  publisher: { "@type": "Organization", name: "StackPick", url: SITE_URL },
-  isAccessibleForFree: true,
-};
-
-interface Tool {
-  name: string;
-  bestFor: string;
-  freeOption: string;
-  tradeoff: string;
-  url: string;
-}
-
-const TOOLS: Tool[] = [
-  {
-    name: "HubSpot CRM",
-    bestFor: "Freelancers who want a genuinely capable free tier to start with",
-    freeOption: "Free plan covers contact management and basic email tracking with no time limit.",
-    tradeoff:
-      "The free tier is real, not a crippled trial - but meaningful automation is gated behind a separate, considerably more expensive Marketing Hub subscription. Fine if you only need contact tracking; frustrating if you want automated follow-ups.",
-    url: "https://www.hubspot.com/products/crm",
-  },
-  {
-    name: "Pipedrive",
-    bestFor: "Freelancers and small teams who actively sell and want a visual pipeline",
-    freeOption: "No free tier - paid plans start at a relatively low per-user monthly price.",
-    tradeoff:
-      "Built specifically around a visual sales pipeline rather than marketing features, so it's the cleanest option if closing deals is your main workflow - but it's not trying to be an all-in-one marketing platform, and you'll feel that if you expect one.",
-    url: "https://www.pipedrive.com/",
-  },
-  {
-    name: "Zoho CRM",
-    bestFor: "Small teams already using other Zoho products (Invoice, Books, Projects)",
-    freeOption: "Free plan supports a small number of users with basic workflow rules included.",
-    tradeoff:
-      "The connected-suite advantage is real if you're already in the Zoho ecosystem - otherwise the interface has a steeper learning curve than Pipedrive or HubSpot for a first-time CRM user.",
-    url: "https://www.zoho.com/crm/",
-  },
-  {
-    name: "Notion (as a CRM)",
-    bestFor: "Freelancers who want full control and already live in Notion for everything else",
-    freeOption: "Free for personal use; no per-contact limits since it's not a dedicated CRM product.",
-    tradeoff:
-      "Total flexibility, zero built-in sales automation - you're building and maintaining the database yourself. Great if you enjoy that kind of setup; a time sink if you don't.",
-    url: "https://www.notion.so/",
-  },
-];
-
 export default function CrmSoftwarePage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-
-      <nav aria-label="Breadcrumb" className="text-sm text-slate mb-6">
-        <Link href="/" className="hover:text-indigo">Home</Link>
-        <span className="mx-2">/</span>
-        <span className="text-ink">Best CRM Software</span>
-      </nav>
-
-      <h1 className="text-3xl font-bold text-ink mb-2">Best CRM Software for Freelancers & Small Teams</h1>
-      <p className="text-slate mb-1">Page updated: October 8, 2026.</p>
-      <p className="text-lg text-ink bg-indigo/5 border border-indigo/20 rounded-card p-4 my-6">
-        If you have fewer than 10 clients you talk to regularly, a CRM is probably overkill - a
-        well-organized spreadsheet works fine. Once lead follow-up starts slipping through the
-        cracks, that's the real signal it's time for one of these.
-      </p>
-
-      <div className="rounded-card border border-amber/40 bg-amber-50 p-4 text-sm text-ink mb-8">
-        <strong>A note on pricing:</strong> CRM pricing tiers change often and vary by user count.
-        We've linked each tool's live pricing page rather than publishing numbers that go stale.
-      </div>
-
-      <div className="space-y-6">
-        {TOOLS.map((t) => (
-          <div key={t.name} className="rounded-card border border-borderc bg-white p-5">
-            <div className="flex items-baseline justify-between flex-wrap gap-2">
-              <h2 className="text-lg font-semibold text-ink">{t.name}</h2>
-              <a
-                href={t.url}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="text-sm text-indigo font-medium hover:underline"
-              >
-                Check current pricing
-              </a>
-            </div>
-            <p className="text-sm text-slate mt-2"><strong className="text-ink">Best for:</strong> {t.bestFor}</p>
-            <p className="text-sm text-slate mt-2"><strong className="text-ink">Free option:</strong> {t.freeOption}</p>
-            <p className="text-sm text-slate mt-2"><strong className="text-ink">The trade-off:</strong> {t.tradeoff}</p>
+    <ComparisonArticle
+      title="Best CRM Software for Freelancers & Small Teams"
+      slug="crm-software"
+      intro="If you have fewer than 10 clients you talk to regularly, a CRM may be overkill - a well-organized spreadsheet can work. Once lead follow-up starts slipping through the cracks, the right CRM becomes useful. We compare the practical fit, free access and trade-offs rather than rewarding the longest feature list."
+      pricingNote="CRM pricing tiers change often and vary by user count. We link each tool's current product page so you can verify today's plan limits and pricing before committing."
+      tools={[
+        {
+          name: "HubSpot CRM",
+          bestFor: "Freelancers who want a genuinely capable free tier to start with",
+          freeOption: "Free plan covers contact management and basic email tracking with no time limit.",
+          tradeoff: "The free tier is real, but meaningful automation is gated behind paid HubSpot products. Great for contact tracking; less attractive when automated follow-up becomes the priority.",
+          url: "https://www.hubspot.com/products/crm",
+        },
+        {
+          name: "Pipedrive",
+          bestFor: "Freelancers and small teams who actively sell and want a visual pipeline",
+          freeOption: "No permanent free tier - paid plans are user-based.",
+          tradeoff: "Built around a visual sales pipeline rather than being an all-in-one marketing suite. That focus is an advantage for deal management, but you need other tools for broader marketing workflows.",
+          url: "https://www.pipedrive.com/",
+        },
+        {
+          name: "Zoho CRM",
+          bestFor: "Small teams already using other Zoho products",
+          freeOption: "A limited free edition is available in supported circumstances; verify the current user and feature limits.",
+          tradeoff: "The connected-suite advantage is strong if you already use Zoho Invoice, Books or Projects. The interface can take longer to learn than simpler CRM options.",
+          url: "https://www.zoho.com/crm/",
+        },
+        {
+          name: "Notion as a CRM",
+          bestFor: "Freelancers who already live in Notion and want a flexible database",
+          freeOption: "Free for personal use, subject to Notion's current plan terms.",
+          tradeoff: "You get flexibility rather than built-in sales automation. That can be ideal for a simple custom workflow and a time sink if you need a mature CRM without maintaining it yourself.",
+          url: "https://www.notion.so/",
+        },
+      ]}
+      bottomLine="Starting from zero and mainly need to stop losing track of leads? HubSpot is the easiest free starting point. Actively selling services and want a visual pipeline? Pipedrive. Already paying for Zoho elsewhere? Zoho CRM can reduce tool sprawl. Already a Notion power user with a simple workflow? You may not need a dedicated CRM yet."
+    >
+      <section className="bg-white">
+        <div className="sp-container py-16 sm:py-20">
+          <p className="sp-eyebrow">Workflow check</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Choose the CRM around the job, not the feature count.</h2>
+          <div className="mt-10 overflow-x-auto rounded-[28px] border border-black/10 bg-white">
+            <table className="w-full min-w-[640px] text-left text-sm">
+              <thead>
+                <tr className="border-b border-black/10">
+                  <th className="p-5 font-semibold">Priority</th>
+                  <th className="p-5 font-semibold">Start with</th>
+                  <th className="p-5 font-semibold">Why</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-black/10"><td className="p-5 text-[#6e6e73]">Simple contact tracking</td><td className="p-5 font-medium">HubSpot</td><td className="p-5 text-[#6e6e73]">Low-friction starting point.</td></tr>
+                <tr className="border-b border-black/10"><td className="p-5 text-[#6e6e73]">Visual sales pipeline</td><td className="p-5 font-medium">Pipedrive</td><td className="p-5 text-[#6e6e73]">Built around deal stages.</td></tr>
+                <tr className="border-b border-black/10"><td className="p-5 text-[#6e6e73]">Broader business suite</td><td className="p-5 font-medium">Zoho CRM</td><td className="p-5 text-[#6e6e73]">Strong fit with other Zoho products.</td></tr>
+                <tr><td className="p-5 text-[#6e6e73]">Flexible custom database</td><td className="p-5 font-medium">Notion</td><td className="p-5 text-[#6e6e73]">Maximum flexibility, less automation.</td></tr>
+              </tbody>
+            </table>
           </div>
-        ))}
-      </div>
-
-      <h2 className="text-xl font-semibold text-ink mt-10 mb-4">Which CRM fits which workflow?</h2>
-      <div className="overflow-x-auto rounded-card border border-borderc bg-white mb-8">
-        <table className="w-full text-sm"><thead><tr className="border-b border-borderc text-left"><th className="p-3">Priority</th><th className="p-3">Start with</th><th className="p-3">Reason</th></tr></thead><tbody>
-        <tr className="border-b border-borderc"><td className="p-3 text-slate">Simple contact tracking</td><td className="p-3 font-medium">HubSpot</td><td className="p-3 text-slate">Low-friction starting point.</td></tr>
-        <tr className="border-b border-borderc"><td className="p-3 text-slate">Visual sales pipeline</td><td className="p-3 font-medium">Pipedrive</td><td className="p-3 text-slate">Built around deal stages.</td></tr>
-        <tr className="border-b border-borderc"><td className="p-3 text-slate">Broader business suite</td><td className="p-3 font-medium">Zoho CRM</td><td className="p-3 text-slate">Strongest fit with other Zoho products.</td></tr>
-        <tr><td className="p-3 text-slate">Flexible custom database</td><td className="p-3 font-medium">Notion</td><td className="p-3 text-slate">Maximum flexibility, less automation.</td></tr>
-        </tbody></table>
-      </div>
-      <h2 className="text-xl font-semibold text-ink mb-3">What to check before moving your contacts</h2>
-      <p className="text-slate mb-3">Before importing a real client list, check export options, user permissions, email/calendar connections and what happens when the free tier is no longer enough.</p>
-      <p className="text-slate mb-6">For a one-person service business, the best CRM is often the one that takes less than an hour to configure and makes follow-up harder to forget. A sophisticated feature list is not useful if maintaining the system becomes another administrative job.</p>
-      <h2 className="text-xl font-semibold text-ink mt-10 mb-2">Bottom line</h2>
-      <p className="text-slate">
-        Starting from zero and just need to stop losing track of leads? HubSpot's free tier
-        genuinely covers that. Actively selling services and want a pipeline you can see at a
-        glance? Pipedrive. Already paying for Zoho elsewhere? Use Zoho CRM and skip a second
-        subscription. Already a Notion power user? You probably don't need a dedicated CRM yet.
-      </p>
-
-      <p className="text-xs text-slate mt-8 border-t border-borderc pt-4">
-        Some links on this page are affiliate links - see our{" "}
-        <Link href="/affiliate-disclosure" className="text-indigo hover:underline">affiliate disclosure</Link>.
-      </p>
-    </div>
+          <h3 className="mt-12 text-2xl font-semibold tracking-tight">Before moving your contacts</h3>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">
+            Check export options, user permissions, email and calendar connections, duplicate handling,
+            and what happens when the free tier is no longer enough. A one-person service business
+            usually benefits more from a CRM that takes less than an hour to configure than from a
+            platform whose advanced features will never be used.
+          </p>
+        </div>
+      </section>
+    </ComparisonArticle>
   );
 }
