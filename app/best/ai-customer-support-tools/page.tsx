@@ -15,10 +15,10 @@ export default function Page() {
       intro="Explore AI customer-support tools for small businesses that want faster answers while keeping escalation and human oversight."
       pricingNote="AI features, models, usage limits and pricing change frequently. Verify current provider terms and test outputs before adopting a tool."
       tools={[
-        { name: "ChatGPT", bestFor: "General-purpose AI work", freeOption: "Check current plan limits.", tradeoff: "Broad capability means you still need to define the workflow.", url: "https://chatgpt.com/" },
-        { name: "Claude", bestFor: "Writing, analysis and long-context work", freeOption: "Check current plan limits.", tradeoff: "Limits and available features vary by plan.", url: "https://claude.ai/" },
-        { name: "Gemini", bestFor: "AI work within Google's ecosystem", freeOption: "Check current plan limits.", tradeoff: "Feature availability can vary by account and region.", url: "https://gemini.google.com/" },
-        { name: "Microsoft Copilot", bestFor: "AI-assisted work in Microsoft's ecosystem", freeOption: "Check current access and limits.", tradeoff: "The useful features depend on the Microsoft products and plan involved.", url: "https://copilot.microsoft.com/" },
+        { name: "Intercom Fin", bestFor: "AI answers inside customer support", freeOption: "Check current provider terms.", tradeoff: "Works best when your support knowledge is well maintained.", url: "https://www.intercom.com/fin" },
+        { name: "Zendesk AI", bestFor: "AI-assisted help-desk workflows", freeOption: "Check current provider terms.", tradeoff: "The strongest features depend on your Zendesk plan and setup.", url: "https://www.zendesk.com/ai/" },
+        { name: "Tidio", bestFor: "AI chat for smaller support teams", freeOption: "Check current provider terms.", tradeoff: "Conversation volume and automation features vary by plan.", url: "https://www.tidio.com/" },
+        { name: "Gorgias", bestFor: "AI support for ecommerce businesses", freeOption: "Check current provider terms.", tradeoff: "Most compelling when support is tied to an ecommerce store.", url: "https://www.gorgias.com/" },
       ]}
       bottomLine="Automate repeatable questions first and keep a clear path to a human."
     >
