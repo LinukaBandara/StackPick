@@ -206,7 +206,7 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
 
       {children}
 
-            <section className="bg-[#f5f5f7]">
+      <section className="bg-[#f5f5f7]">
         <div className="sp-container py-20 sm:py-28">
           <p className="sp-eyebrow">Detailed comparison</p>
           <h2 className="sp-title mt-4 max-w-4xl">What to know before you choose.</h2>
