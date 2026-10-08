@@ -40,6 +40,7 @@ export default function ComparisonArticle({
     description: intro,
     url: `/best/${slug}`,
     dateModified: "2026-09-24",
+    isAccessibleForFree: true,
   };
 
   return (
@@ -75,6 +76,31 @@ export default function ComparisonArticle({
               <strong className="text-slate-950">Pricing reality:</strong> {pricingNote}
             </div>
           )}
+
+          <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6" aria-labelledby="methodology">
+            <p className="text-xs font-bold uppercase tracking-[.16em] text-indigo-600">How we compare</p>
+            <h2 id="methodology" className="mt-1 text-xl font-black text-slate-950">What matters beyond the feature list</h2>
+            <p className="mt-3 text-sm leading-6 text-slate-600">
+              StackPick focuses on the practical decision a freelancer or small team is making:
+              what the tool costs, what the free or entry plan really includes, where the product
+              fits best, and which trade-offs are easy to miss. We cross-check vendor documentation
+              and pricing information, then turn those findings into a clear recommendation rather
+              than repeating a vendor feature list.
+            </p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-3">
+              {[
+                ["01", "Cost reality", "Subscription, usage and important limits."],
+                ["02", "Fit", "Who benefits and who should skip it."],
+                ["03", "Trade-offs", "The limitation most likely to affect the decision."],
+              ].map(([n, label, text]) => (
+                <div key={n} className="rounded-xl bg-slate-50 p-4">
+                  <span className="text-xs font-black text-indigo-600">{n}</span>
+                  <h3 className="mt-2 text-sm font-bold text-slate-950">{label}</h3>
+                  <p className="mt-1 text-xs leading-5 text-slate-500">{text}</p>
+                </div>
+              ))}
+            </div>
+          </section>
 
           <section className="mt-10" aria-labelledby="quick-picks">
             <div className="flex items-end justify-between gap-4">
@@ -151,6 +177,7 @@ export default function ComparisonArticle({
           <div className="sticky top-24 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-xs font-bold uppercase tracking-[.16em] text-slate-400">On this page</p>
             <nav className="mt-4 grid gap-2 text-sm font-semibold">
+              <a href="#methodology" className="rounded-lg px-3 py-2 text-slate-700 hover:bg-indigo-50 hover:text-indigo-700">How we compare</a>
               <a href="#quick-picks" className="rounded-lg px-3 py-2 text-slate-700 hover:bg-indigo-50 hover:text-indigo-700">Quick comparison</a>
               <a href="#detailed-picks" className="rounded-lg px-3 py-2 text-slate-700 hover:bg-indigo-50 hover:text-indigo-700">Detailed look</a>
               <a href="#bottom-line" className="rounded-lg px-3 py-2 text-slate-700 hover:bg-indigo-50 hover:text-indigo-700">Bottom line</a>
