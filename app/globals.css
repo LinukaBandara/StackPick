@@ -3,81 +3,64 @@
 @tailwind utilities;
 
 :root {
-  --sp-bg: #f7f8fc;
+  --sp-bg: #f5f5f7;
   --sp-surface: #ffffff;
-  --sp-surface-2: #f1f4f9;
-  --sp-ink: #101828;
-  --sp-muted: #667085;
-  --sp-primary: #5b5ce2;
-  --sp-primary-dark: #4546c9;
-  --sp-primary-soft: #eef0ff;
-  --sp-success: #12b76a;
-  --sp-warning: #f79009;
-  --sp-border: #e4e7ec;
-  --sp-shadow-sm: 0 2px 8px rgba(16,24,40,.05);
-  --sp-shadow-md: 0 16px 40px rgba(16,24,40,.10);
-  --sp-shadow-lg: 0 28px 70px rgba(16,24,40,.14);
+  --sp-ink: #1d1d1f;
+  --sp-muted: #6e6e73;
+  --sp-blue: #06c;
+  --sp-border: #d2d2d7;
+  --sp-radius: 28px;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
+  margin: 0;
   background: var(--sp-bg);
   color: var(--sp-ink);
-  font-size: 16px;
-  line-height: 1.65;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
 
-::selection {
-  background: #dfe1ff;
-  color: #17184d;
-}
+::selection { background: #dbeafe; color: #1d1d1f; }
 
-a, button {
-  -webkit-tap-highlight-color: transparent;
-}
+a, button { -webkit-tap-highlight-color: transparent; }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(91,92,226,.35);
-  outline-offset: 3px;
+  outline: 3px solid rgba(0,102,204,.28);
+  outline-offset: 4px;
   border-radius: 8px;
 }
 
 @layer components {
-  .sp-container { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .sp-container { @apply mx-auto w-full max-w-[1200px] px-5 sm:px-8 lg:px-10; }
 
-  .sp-card {
-    @apply rounded-2xl border bg-white;
-    border-color: var(--sp-border);
-    box-shadow: var(--sp-shadow-sm);
-    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+  .sp-shell {
+    background: #fff;
+    border-radius: var(--sp-radius);
   }
 
-  .sp-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--sp-shadow-md);
-    border-color: #cfd3ff;
+  .sp-link {
+    color: var(--sp-blue);
+    text-decoration: none;
+    transition: opacity .2s ease;
   }
 
-  .sp-pill {
-    @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold;
-  }
+  .sp-link:hover { opacity: .72; }
 
   .sp-button {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all;
+    @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition-all;
   }
 
   .sp-button-primary {
     @apply sp-button text-white;
-    background: var(--sp-primary);
-    box-shadow: 0 8px 20px rgba(91,92,226,.22);
+    background: #0071e3;
   }
 
-  .sp-button-primary:hover {
-    background: var(--sp-primary-dark);
-    transform: translateY(-1px);
-  }
+  .sp-button-primary:hover { background: #0077ed; transform: translateY(-1px); }
 
   .sp-button-secondary {
     @apply sp-button border bg-white;
@@ -85,31 +68,59 @@ button:focus-visible {
     color: var(--sp-ink);
   }
 
-  .sp-button-secondary:hover {
-    border-color: #cfd3ff;
-    background: #fafaff;
+  .sp-button-secondary:hover { background: #f5f5f7; }
+
+  .sp-card {
+    @apply rounded-[28px] border bg-white;
+    border-color: var(--sp-border);
+    transition: transform .3s ease, box-shadow .3s ease;
   }
 
-  .sp-gradient-text {
-    background: linear-gradient(100deg, #4546c9 0%, #7c3aed 52%, #0ea5e9 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  .sp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(0,0,0,.08);
   }
 
-  .sp-grid-pattern {
-    background-image:
-      linear-gradient(rgba(91,92,226,.06) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(91,92,226,.06) 1px, transparent 1px);
-    background-size: 34px 34px;
+  .sp-eyebrow {
+    @apply text-sm font-semibold tracking-tight;
+    color: var(--sp-muted);
+  }
+
+  .sp-muted { color: var(--sp-muted); }
+
+  .sp-section-dark {
+    background: #000;
+    color: #f5f5f7;
+  }
+
+  .sp-section-dark .sp-muted { color: #a1a1a6; }
+
+  .sp-display {
+    font-size: clamp(3.2rem, 7vw, 6.8rem);
+    line-height: .96;
+    letter-spacing: -.055em;
+    font-weight: 700;
+  }
+
+  .sp-title {
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -.045em;
+    font-weight: 700;
+  }
+
+  .sp-body-large {
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
+    line-height: 1.45;
+    color: var(--sp-muted);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
-    animation-duration: 0.01ms !important;
+    animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition-duration: .01ms !important;
   }
 }
