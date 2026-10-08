@@ -52,7 +52,7 @@ export default function Page() {
       bottomLine="Selling across multiple online channels on a budget? Zoho Inventory. Just need simple visual tracking for a small team? Sortly. Already running Square for payments? Add Square for Retail rather than a second system. Doing wholesale/B2B orders? inFlow's showroom feature is worth the price on its own."
     >
       <section className="bg-white">
-        <div className="sp-contain py-10">
+        <div className="sp-container py-10">
           <h2 className="text-2xl font-semibold">Test your real stock movement</h2>
           <p className="mt-3 text-slate-600">Inventory software is easiest to judge with one real product rather than a feature checklist. Add an item, receive stock, sell or issue one unit, adjust the quantity, and look for the audit trail or low-stock signal your business needs.</p>
           <ul className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
