@@ -15,10 +15,10 @@ export default function Page() {
       intro="Practical AI tools for small-business marketing, including content, creative work, research and campaign workflows."
       pricingNote="AI features, models, usage limits and pricing change frequently. Verify current provider terms and test outputs before adopting a tool."
       tools={[
-        { name: "ChatGPT", bestFor: "General-purpose AI work", freeOption: "Check current plan limits.", tradeoff: "Broad capability means you still need to define the workflow.", url: "https://chatgpt.com/" },
-        { name: "Claude", bestFor: "Writing, analysis and long-context work", freeOption: "Check current plan limits.", tradeoff: "Limits and available features vary by plan.", url: "https://claude.ai/" },
-        { name: "Gemini", bestFor: "AI work within Google's ecosystem", freeOption: "Check current plan limits.", tradeoff: "Feature availability can vary by account and region.", url: "https://gemini.google.com/" },
-        { name: "Microsoft Copilot", bestFor: "AI-assisted work in Microsoft's ecosystem", freeOption: "Check current access and limits.", tradeoff: "The useful features depend on the Microsoft products and plan involved.", url: "https://copilot.microsoft.com/" },
+        { name: "Canva", bestFor: "Fast marketing graphics and campaign creative", freeOption: "Check current plan limits.", tradeoff: "Template-driven output can look generic without brand customization.", url: "https://www.canva.com/" },
+        { name: "Jasper", bestFor: "Marketing copy and brand-focused workflows", freeOption: "Check current provider terms.", tradeoff: "Specialized marketing features come with a higher commitment than a general chatbot.", url: "https://www.jasper.ai/" },
+        { name: "HubSpot", bestFor: "AI-assisted marketing inside a CRM", freeOption: "Check current provider terms.", tradeoff: "The broader platform can be more than a small business needs.", url: "https://www.hubspot.com/" },
+        { name: "Adobe Express", bestFor: "AI-assisted branded visual content", freeOption: "Check current plan limits.", tradeoff: "Best value depends on how much Adobe tooling you already use.", url: "https://www.adobe.com/express/" },
       ]}
       bottomLine="A smaller AI marketing stack is easier to review, measure and keep consistent."
     >
