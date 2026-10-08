@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 const RELATED_COMPARISONS: Record<string, { href: string; title: string; desc: string }[]> = {
   finance: [
@@ -74,9 +75,10 @@ export interface ComparisonArticleProps {
   pricingNote?: string;
   tools: ComparisonTool[];
   bottomLine: string;
+  children?: ReactNode;
 }
 
-export default function ComparisonArticle({ title, slug, intro, pricingNote, tools, bottomLine }: ComparisonArticleProps) {
+export default function ComparisonArticle({ title, slug, intro, pricingNote, tools, bottomLine, children }: ComparisonArticleProps) {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example";
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -201,6 +203,8 @@ export default function ComparisonArticle({ title, slug, intro, pricingNote, too
           </ol>
         </div>
       </section>
+
+      {children}
 
             <section className="bg-[#f5f5f7]">
         <div className="sp-container py-20 sm:py-28">
