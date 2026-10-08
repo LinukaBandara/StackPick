@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.example";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.stackpick.tech";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
