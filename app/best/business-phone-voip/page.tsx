@@ -50,6 +50,27 @@ export default function Page() {
         },
       ]}
       bottomLine="Solo or a tiny team, just need a professional number? Grasshopper - don't overbuy a full VoIP system. Under 10 people, tight budget? Ooma Office. Growing small team wanting the easiest rollout? Nextiva. Already past 15-20 people or need deep integrations? RingCentral, and accept the added setup complexity as the cost of that depth."
-    />
+    >
+      <section className="bg-white">
+        <div className="sp-container py-16 sm:py-20">
+          <p className="sp-eyebrow">Call-flow test</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Test the phone system from both sides.</h2>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6e6e73]">Do not judge a business phone system from the admin dashboard alone. Call the number from an outside phone, follow the greeting, reach a person, leave a voicemail and return the call. Then test the same flow when the intended person is unavailable.</p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+            {[
+              ["Inbound call", "Check the greeting, menu, routing and what happens outside business hours."],
+              ["Outbound call", "Verify the caller ID and whether staff can make calls without exposing personal numbers."],
+              ["Missed call", "Test voicemail, notifications and whether another teammate can pick up the conversation."],
+              ["Admin change", "Add or remove a user and change routing so you know how much setup work normal changes require."],
+            ].map(([title, desc]) => (
+              <div key={title} className="rounded-3xl bg-[#f5f5f7] p-6">
+                <h3 className="text-lg font-semibold">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </ComparisonArticle>
   );
 }
