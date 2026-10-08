@@ -15,10 +15,10 @@ export default function Page() {
       intro="Find AI automation tools that can connect repetitive business workflows and reduce manual handoffs."
       pricingNote="AI features, models, usage limits and pricing change frequently. Verify current provider terms and test outputs before adopting a tool."
       tools={[
-        { name: "ChatGPT", bestFor: "General-purpose AI work", freeOption: "Check current plan limits.", tradeoff: "Broad capability means you still need to define the workflow.", url: "https://chatgpt.com/" },
-        { name: "Claude", bestFor: "Writing, analysis and long-context work", freeOption: "Check current plan limits.", tradeoff: "Limits and available features vary by plan.", url: "https://claude.ai/" },
-        { name: "Gemini", bestFor: "AI work within Google's ecosystem", freeOption: "Check current plan limits.", tradeoff: "Feature availability can vary by account and region.", url: "https://gemini.google.com/" },
-        { name: "Microsoft Copilot", bestFor: "AI-assisted work in Microsoft's ecosystem", freeOption: "Check current access and limits.", tradeoff: "The useful features depend on the Microsoft products and plan involved.", url: "https://copilot.microsoft.com/" },
+        { name: "Zapier", bestFor: "No-code workflow automation with AI steps", freeOption: "Check current provider terms.", tradeoff: "Task limits and multi-step workflows can push you toward paid plans.", url: "https://zapier.com/" },
+        { name: "Make", bestFor: "Visual, multi-step business automations", freeOption: "Check current provider terms.", tradeoff: "More flexibility also means more setup complexity.", url: "https://www.make.com/" },
+        { name: "n8n", bestFor: "Flexible automation for technical small teams", freeOption: "Check current provider terms.", tradeoff: "Self-hosting can reduce vendor lock-in but adds maintenance.", url: "https://n8n.io/" },
+        { name: "Relevance AI", bestFor: "AI agents and task-oriented workflows", freeOption: "Check current provider terms.", tradeoff: "Agent workflows need careful testing before handling important processes.", url: "https://relevanceai.com/" },
       ]}
       bottomLine="Start with predictable repetitive processes before automating high-risk decisions."
     >
