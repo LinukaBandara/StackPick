@@ -56,14 +56,6 @@ export default function Footer() {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href="https://ark-ii.studio/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-[#004bb5]"
-              >
-                ARK II Studio ↗
-              </a>
             </nav>
           </div>
         </div>
@@ -75,7 +67,7 @@ export default function Footer() {
               href="https://ark-ii.studio/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#1d1d1f] hover:text-[#004bb5] underline font-medium transition-colors"
+              className="text-[#1d1d1f] hover:text-[#004bb5] font-medium transition-colors"
             >
               ARK II Studio
             </a>
