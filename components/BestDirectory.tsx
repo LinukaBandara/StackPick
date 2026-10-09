@@ -60,7 +60,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search guides (e.g. invoicing, crm, vpn, time tracking)..."
-            className="w-full rounded-full border border-[#d2d2d7] bg-white py-3 pl-11 pr-12 text-sm text-[#1d1d1f] placeholder-[#86868b] shadow-sm transition-all focus:border-[#004bb5] focus:outline-none focus:ring-2 focus:ring-[#004bb5]/20"
+            className="w-full rounded-full border border-[#d2d2d7] bg-white py-3 pl-11 pr-12 text-sm text-[#1d1d1f] placeholder-[#86868b] shadow-sm transition-all focus:border-[#001D39] focus:outline-none focus:ring-2 focus:ring-[#001D39]/20"
           />
           {searchQuery && (
             <button
@@ -82,7 +82,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
                 onClick={() => setActiveCategory(cat)}
                 className={`rounded-full px-4 py-1.5 text-xs font-medium transition-all duration-200 ${
                   isActive
-                    ? "bg-[#004bb5] text-white shadow-sm"
+                    ? "bg-[#001D39] text-white shadow-sm"
                     : "bg-white text-[#6e6e73] border border-[#d2d2d7] hover:border-[#86868b] hover:text-[#1d1d1f]"
                 }`}
               >
@@ -110,10 +110,10 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
             >
               <div>
                 <div className="flex items-start justify-between gap-4">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#004bb5]">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#001D39]">
                     {a.category} · {String(index + 1).padStart(2, "0")}
                   </span>
-                  <span className="text-xs font-semibold text-[#004bb5] opacity-0 transition-opacity group-hover:opacity-100">
+                  <span className="text-xs font-semibold text-[#001D39] opacity-0 transition-opacity group-hover:opacity-100">
                     Read →
                   </span>
                 </div>
@@ -125,7 +125,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-black/[0.06] flex items-center justify-between">
-                <span className="text-xs font-semibold text-[#004bb5] group-hover:underline">
+                <span className="text-xs font-semibold text-[#001D39] group-hover:underline">
                   View comparison →
                 </span>
               </div>
@@ -141,7 +141,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
               setSearchQuery("");
               setActiveCategory("All");
             }}
-            className="mt-6 inline-flex rounded-full bg-[#004bb5] px-5 py-2 text-xs font-semibold text-white transition hover:bg-[#00388c]"
+            className="mt-6 inline-flex rounded-full bg-[#001D39] px-5 py-2 text-xs font-semibold text-white transition hover:bg-[#00142A]"
           >
             Reset filters
           </button>
