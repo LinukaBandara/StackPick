@@ -23,7 +23,7 @@ export default function AffiliateDisclosurePage() {
         <h2 className="text-xl font-semibold text-ink pt-2">How this affects our content</h2>
         <p>
           Our rankings and recommendations are based on our own research into features, pricing,
-          and trade-offs - not on which tool pays the highest commission. Where a tool is a
+          and trade-offs — not on which tool pays the highest commission. Where a tool is a
           genuinely poor fit for a use case, we say so, even if it has an affiliate program and a
           competitor doesn't.
         </p>
