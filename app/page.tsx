@@ -118,7 +118,7 @@ export default function HomePage() {
             </p>
             <div className="mt-8 grid gap-8 text-left sm:grid-cols-3">
               <div>
-                <p className="text-sm font-semibold text-[#004bb5]">01</p>
+                <p className="text-sm font-semibold text-[#001D39]">01</p>
                 <h2 className="mt-2 text-base font-semibold tracking-tight text-[#1d1d1f]">
                   Start with the job
                 </h2>
@@ -127,7 +127,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-[#004bb5]">02</p>
+                <p className="text-sm font-semibold text-[#001D39]">02</p>
                 <h2 className="mt-2 text-base font-semibold tracking-tight text-[#1d1d1f]">
                   Compare the trade-offs
                 </h2>
@@ -136,7 +136,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-[#004bb5]">03</p>
+                <p className="text-sm font-semibold text-[#001D39]">03</p>
                 <h2 className="mt-2 text-base font-semibold tracking-tight text-[#1d1d1f]">
                   Choose with context
                 </h2>
@@ -208,7 +208,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/best"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#004bb5] hover:underline"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#001D39] hover:underline"
             >
               See all comparisons →
             </Link>
@@ -233,7 +233,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="mt-8">
-                  <span className="text-xs font-semibold text-[#004bb5] group-hover:underline">
+                  <span className="text-xs font-semibold text-[#001D39] group-hover:underline">
                     Read the comparison →
                   </span>
                 </div>
@@ -294,7 +294,7 @@ export default function HomePage() {
           </h2>
           <Link
             href="/best"
-            className="mt-8 inline-block text-sm font-semibold text-[#004bb5] hover:underline"
+            className="mt-8 inline-block text-sm font-semibold text-[#001D39] hover:underline"
           >
             Browse all comparisons →
           </Link>
