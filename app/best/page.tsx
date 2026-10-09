@@ -2,147 +2,67 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Software Comparisons & Buying Guides",
+  title: "All Software Comparisons",
   description:
-    "Explore StackPick's practical software comparisons for freelancers and small businesses - organized by the job you need to get done.",
+    "Every StackPick comparison across accounting, sales, marketing, operations, IT, and infrastructure software for small businesses.",
   alternates: { canonical: "/best" },
 };
 
-const FEATURED = [
-  { href: "/best/crm-software", tag: "Sales", title: "Best CRM Software for Freelancers & Small Teams", desc: "Compare the tools that help a small team keep leads, contacts and follow-ups under control." },
-  { href: "/best/invoicing-software", tag: "Money", title: "Best Invoicing Software for Freelancers", desc: "Find an invoicing workflow that gets clients paid without adding unnecessary admin." },
-  { href: "/best/project-management-software", tag: "Work", title: "Best Project Management Software for Small Teams", desc: "A practical look at task management, collaboration and the trade-offs behind popular picks." },
-  { href: "/best/ai-tools-small-businesses", tag: "AI", title: "Best AI Tools for Small Businesses", desc: "Useful AI tools across writing, research, productivity and everyday business work." },
-];
-
-const CATEGORIES = [
-  { key: "money", number: "01", name: "Money & finance", desc: "Invoicing, accounting, payroll and expenses.", href: "/best/invoicing-software", links: [["/best/invoicing-software","Invoicing"],["/best/accounting-software","Accounting"],["/best/payroll-software","Payroll"],["/best/expense-management-software","Expenses"]] },
-  { key: "sales", number: "02", name: "Sales & marketing", desc: "CRM, email, social and customer acquisition.", href: "/best/crm-software", links: [["/best/crm-software","CRM"],["/best/email-marketing-software","Email marketing"],["/best/social-media-scheduling","Social scheduling"],["/best/appointment-scheduling-software","Scheduling"]] },
-  { key: "work", number: "03", name: "Work & operations", desc: "Projects, people, inventory and daily workflows.", href: "/best/project-management-software", links: [["/best/project-management-software","Project management"],["/best/time-tracking-software","Time tracking"],["/best/employee-scheduling-software","Employee scheduling"],["/best/inventory-management-software","Inventory"]] },
-  { key: "web", number: "04", name: "Web & infrastructure", desc: "Websites, hosting, communication and business tools.", href: "/best/website-builders", links: [["/best/website-builders","Website builders"],["/best/web-hosting","Web hosting"],["/best/business-email-hosting","Business email"],["/best/cloud-storage","Cloud storage"]] },
-  { key: "security", number: "05", name: "Security & IT", desc: "Security, backup and secure access for small teams.", href: "/best/password-managers", links: [["/best/password-managers","Password managers"],["/best/business-vpn","Business VPN"],["/best/antivirus-endpoint-security","Endpoint security"],["/best/cloud-backup-software","Cloud backup"]] },
-  { key: "support", number: "06", name: "Customer support", desc: "Help desks, chat and customer feedback tools.", href: "/best/help-desk-software", links: [["/best/help-desk-software","Help desk"],["/best/live-chat-software","Live chat"],["/best/survey-nps-software","Customer feedback"],["/best/esignature-software","E-signatures"]] },
-];
-
-const EXPLORE = [
-  ["Comparisons", "Head-to-head decisions", "/best/hubspot-vs-pipedrive"],
-  ["Alternatives", "Find a replacement", "/best/hubspot-alternatives-small-businesses"],
-  ["Free tools", "No-cost starting points", "/best/free-business-tools-for-freelancers"],
-  ["Workflows", "Solve the job, not the feature list", "/best/how-to-choose-software-small-business"],
-  ["For freelancers", "Tools for one-person businesses", "/best/ai-tools-freelancers"],
-  ["AI", "Practical AI buying guides", "/best/ai-tools-small-businesses"],
+const ARTICLES = [
+  { href: "/best/invoicing-software", title: "Best Invoicing Software for Freelancers", desc: "Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks" },
+  { href: "/best/accounting-software", title: "Best Accounting Software for Small Business", desc: "Xero, QuickBooks, Wave, Zoho Books" },
+  { href: "/best/payroll-software", title: "Best Payroll Software for Small Business", desc: "Gusto, QuickBooks Payroll, OnPay, Patriot Software" },
+  { href: "/best/expense-management-software", title: "Best Expense Management Software for Small Business", desc: "Expensify, Ramp, Zoho Expense" },
+  { href: "/best/crm-software", title: "Best CRM Software for Freelancers & Small Teams", desc: "HubSpot, Pipedrive, Zoho CRM, Notion" },
+  { href: "/best/email-marketing-software", title: "Best Email Marketing Software for Small Business", desc: "Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit" },
+  { href: "/best/social-media-scheduling", title: "Best Social Media Scheduling Tool for Small Business", desc: "Buffer, Hootsuite, Later" },
+  { href: "/best/project-management-software", title: "Best Project Management Software for Small Teams", desc: "Trello, Asana, ClickUp, monday.com" },
+  { href: "/best/website-builders", title: "Best Website Builder for Small Business", desc: "Squarespace, Wix, Shopify, Webflow" },
+  { href: "/best/appointment-scheduling-software", title: "Best Appointment Scheduling Software for Small Business", desc: "Calendly, Acuity Scheduling, Cal.com" },
+  { href: "/best/form-builders", title: "Best Form Builder for Small Business", desc: "Google Forms, Typeform, Jotform" },
+  { href: "/best/cloud-storage", title: "Best Cloud Storage for Small Business Teams", desc: "Google Drive, Dropbox, Microsoft OneDrive" },
+  { href: "/best/inventory-management-software", title: "Best Inventory Management Software for Small Business", desc: "Zoho Inventory, Sortly, Square for Retail, inFlow" },
+  { href: "/best/pos-systems", title: "Best POS System for Small Business", desc: "Square, Toast, Clover, Shopify POS" },
+  { href: "/best/online-course-platforms", title: "Best Online Course Platform for Creators & Small Business", desc: "Teachable, Thinkific, Kajabi" },
+  { href: "/best/contract-management-software", title: "Best Contract Management Software for Small Business", desc: "PandaDoc, Concord, ContractSafe" },
+  { href: "/best/business-vpn", title: "Best Business VPN for Remote Teams", desc: "NordLayer, Perimeter 81, Twingate, Cloudflare Zero Trust" },
+  { href: "/best/password-managers", title: "Best Password Manager for Business Teams", desc: "1Password, Bitwarden, Keeper, NordPass" },
+  { href: "/best/help-desk-software", title: "Best Help Desk Software for Small Business", desc: "Help Scout, Freshdesk, Zoho Desk, Gorgias" },
+  { href: "/best/esignature-software", title: "Best E-Signature Software for Small Business", desc: "DocuSign, PandaDoc, Dropbox Sign, SignWell" },
+  { href: "/best/time-tracking-software", title: "Best Time Tracking Software for Freelancers & Small Teams", desc: "Toggl Track, Clockify, Harvest, Hubstaff" },
+  { href: "/best/web-hosting", title: "Best Web Hosting for Small Business", desc: "Hostinger, SiteGround, Bluehost, Cloudways" },
+  { href: "/best/business-phone-voip", title: "Best Business Phone System (VoIP) for Small Business", desc: "Nextiva, RingCentral, Ooma, Grasshopper" },
+  { href: "/best/live-chat-software", title: "Best Live Chat Software for Small Business Websites", desc: "Tidio, Crisp, Intercom, Tawk.to" },
+  { href: "/best/antivirus-endpoint-security", title: "Best Antivirus & Endpoint Security for Small Business", desc: "Bitdefender GravityZone, Microsoft Defender for Endpoint, Norton Small Business, CrowdStrike" },
+  { href: "/best/hr-software", title: "Best HR Software for Small Business", desc: "BambooHR, Gusto, Rippling, Deel" },
+  { href: "/best/survey-nps-software", title: "Best Survey & Customer Feedback (NPS) Software for Small Business", desc: "SurveyMonkey, Delighted, Zoho Survey" },
+  { href: "/best/video-conferencing", title: "Best Video Conferencing Software for Small Business", desc: "Zoom, Google Meet, Microsoft Teams, Whereby" },
+  { href: "/best/cloud-backup-software", title: "Best Cloud Backup Software for Small Business", desc: "Backblaze, IDrive, Acronis Cyber Protect, Carbonite" },
+  { href: "/best/applicant-tracking-software", title: "Best Applicant Tracking System (ATS) for Small Business", desc: "Breezy HR, Zoho Recruit, Workable, Greenhouse" },
+  { href: "/best/employee-scheduling-software", title: "Best Employee Scheduling Software for Small Business", desc: "When I Work, Deputy, Connecteam, 7shifts" },
+  { href: "/best/business-email-hosting", title: "Best Business Email Hosting for Small Business", desc: "Google Workspace, Microsoft 365, Zoho Mail, Proton Mail" },
 ];
 
 export default function BestHubPage() {
   return (
-    <main>
-      <section className="sp-library-hero">
-        <div className="sp-container py-20 sm:py-28 lg:py-32">
-          <div className="max-w-4xl">
-            <p className="sp-eyebrow">The StackPick decision library</p>
-            <h1 className="sp-library-title mt-5">Choose software with a reason.</h1>
-            <p className="sp-library-lede mt-7">
-              Practical comparisons for freelancers and small businesses. Start with the job,
-              understand the trade-offs, then choose the tool that fits.
-            </p>
-          </div>
-          <div className="mt-12 flex flex-wrap gap-3">
-            <a href="#categories" className="sp-button-primary">Browse by category <span aria-hidden="true">↓</span></a>
-            <a href="#featured" className="sp-button-secondary">See featured decisions</a>
-          </div>
-          <div className="sp-library-proof mt-16">
-            <div><strong>100+</strong><span>decision guides</span></div>
-            <div><strong>6</strong><span>core categories</span></div>
-            <div><strong>1</strong><span>clear goal: better fit</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="featured" className="bg-white">
-        <div className="sp-container py-16 sm:py-24">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="sp-eyebrow">Start here</p>
-              <h2 className="sp-section-title mt-3">Popular decisions</h2>
-            </div>
-            <p className="max-w-md text-sm leading-6 text-[#667085]">
-              The questions small teams ask most often - without the enterprise buying theatre.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-5 lg:grid-cols-2">
-            {FEATURED.map((item, index) => (
-              <Link key={item.href} href={item.href} className={`sp-feature-card ${index === 0 ? "sp-feature-card-primary" : ""}`}>
-                <div className="flex items-center justify-between gap-4">
-                  <span className="sp-category">{item.tag}</span>
-                  <span className="sp-card-arrow" aria-hidden="true">↗</span>
-                </div>
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
-                <span className="sp-read-link">Read comparison <span aria-hidden="true">→</span></span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="categories" className="sp-library-categories">
-        <div className="sp-container py-16 sm:py-24">
-          <div className="max-w-2xl">
-            <p className="sp-eyebrow">Browse the library</p>
-            <h2 className="sp-section-title mt-3">What are you trying to get done?</h2>
-            <p className="mt-4 text-base leading-7 text-[#667085]">
-              Pick the area of your business first. We&apos;ll get you to the relevant tools.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {CATEGORIES.map((category) => (
-              <article key={category.name} className={`sp-category-card sp-category-${category.key}`}>
-                <div className="flex items-start justify-between">
-                  <span className="sp-category-number">{category.number}</span>
-                  <Link href={category.href} className="sp-card-arrow" aria-label={`Explore ${category.name}`}>↗</Link>
-                </div>
-                <h3>{category.name}</h3>
-                <p>{category.desc}</p>
-                <div className="sp-category-links">
-                  {category.links.map(([href, label]) => <Link key={href} href={href}>{label}</Link>)}
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white">
-        <div className="sp-container py-16 sm:py-24">
-          <div className="sp-explore-header">
-            <div>
-              <p className="sp-eyebrow">More ways to choose</p>
-              <h2 className="sp-section-title mt-3">Explore by decision type.</h2>
-            </div>
-            <p>Compare, replace, save, automate or find a tool for a specific kind of business.</p>
-          </div>
-          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {EXPLORE.map(([tag, title, href]) => (
-              <Link key={href} href={href} className="sp-explore-card">
-                <span>{tag}</span><strong>{title}</strong><i aria-hidden="true">↗</i>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="sp-library-bottom">
-        <div className="sp-container py-16 sm:py-24">
-          <div className="sp-library-bottom-inner">
-            <div>
-              <p className="sp-eyebrow">How StackPick works</p>
-              <h2 className="mt-3">Fit over feature count.</h2>
-              <p className="mt-4">We focus on pricing reality, practical workflows, useful limits and the situations where a tool is - or isn&apos;t - worth your time.</p>
-            </div>
-            <Link href="/" className="sp-button-secondary">Learn about our method <span aria-hidden="true">→</span></Link>
-          </div>
-        </div>
-      </section>
-    </main>
+    <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10">
+      <h1 className="text-3xl font-bold text-ink mb-2">All Software Comparisons</h1>
+      <p className="text-slate mb-8 max-w-xl">
+        Every comparison on StackPick — researched, honest about trade-offs, and updated when
+        pricing or plans change meaningfully.
+      </p>
+      <div className="grid sm:grid-cols-2 gap-4">
+        {ARTICLES.map((a) => (
+          <Link
+            key={a.href}
+            href={a.href}
+            className="block rounded-card border border-borderc bg-white p-5 hover:border-indigo hover:shadow-sm transition-all"
+          >
+            <h2 className="font-semibold text-ink">{a.title}</h2>
+            <p className="text-sm text-slate mt-1">{a.desc}</p>
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }
