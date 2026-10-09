@@ -42,7 +42,7 @@ export default function Footer() {
             <p className="text-xs font-semibold text-[#1d1d1f]">Explore</p>
             <nav className="mt-4 grid gap-2.5 text-xs text-[#6e6e73]" aria-label="Explore navigation">
               {EXPLORE_LINKS.map((link) => (
-                <Link key={link.href} href={link.href} className="transition-colors hover:text-[#004bb5]">
+                <Link key={link.href} href={link.href} className="transition-colors hover:text-[#001D39]">
                   {link.label}
                 </Link>
               ))}
@@ -52,7 +52,7 @@ export default function Footer() {
             <p className="text-xs font-semibold text-[#1d1d1f]">StackPick</p>
             <nav className="mt-4 grid gap-2.5 text-xs text-[#6e6e73]" aria-label="Company navigation">
               {COMPANY_LINKS.map((link) => (
-                <Link key={link.href} href={link.href} className="transition-colors hover:text-[#004bb5]">
+                <Link key={link.href} href={link.href} className="transition-colors hover:text-[#001D39]">
                   {link.label}
                 </Link>
               ))}
@@ -67,7 +67,7 @@ export default function Footer() {
               href="https://ark-ii.studio/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#1d1d1f] hover:text-[#004bb5] font-medium transition-colors"
+              className="text-[#1d1d1f] hover:text-[#001D39] font-medium transition-colors"
             >
               ARK II Studio
             </a>
