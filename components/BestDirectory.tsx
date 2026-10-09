@@ -49,7 +49,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
       {/* Search and Category Filter Bar */}
       <div className="mb-10 space-y-6">
         {/* Search input with Apple style */}
-        <div className="relative max-w-xl">
+        <div id="directory-search" className="relative max-w-xl scroll-mt-24">
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-[#86868b]">
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -99,6 +99,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
       </div>
 
       {/* Grid of Results */}
+      <div id="directory-results" className="scroll-mt-24">
       {filteredArticles.length > 0 ? (
         <div className="grid gap-5 sm:grid-cols-2">
           {filteredArticles.map((a, index) => (
@@ -146,6 +147,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
           </button>
         </div>
       )}
+      </div>
     </div>
   );
 }
