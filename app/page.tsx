@@ -1,97 +1,305 @@
 import Link from "next/link";
 
 const FEATURED = [
-  { href: "/best/invoicing-software", category: "Finance", number: "01", title: "Invoicing software", desc: "Get paid faster, spend less time chasing invoices, and keep cash flow clear.", tools: "Wave · FreshBooks · Zoho Invoice" },
-  { href: "/best/crm-software", category: "Sales", number: "02", title: "CRM software", desc: "Keep every customer, conversation, and next step in one place.", tools: "HubSpot · Pipedrive · Zoho CRM" },
-  { href: "/best/project-management-software", category: "Productivity", number: "03", title: "Project management", desc: "Find a calmer way to plan work and keep your team moving.", tools: "Trello · Asana · ClickUp" },
-  { href: "/best/payroll-software", category: "People", number: "04", title: "Payroll software", desc: "Pay your team accurately without making payday complicated.", tools: "Gusto · OnPay · QuickBooks" },
-  { href: "/best/business-vpn", category: "Security", number: "05", title: "Business VPNs", desc: "Protect your remote team without enterprise-level complexity.", tools: "NordLayer · Twingate · Cloudflare" },
-  { href: "/best/time-tracking-software", category: "Operations", number: "06", title: "Time tracking", desc: "Understand where the hours go and make billing simpler.", tools: "Toggl · Clockify · Harvest" },
+  {
+    href: "/best/invoicing-software",
+    eyebrow: "Invoicing",
+    title: "The best invoicing software for small businesses.",
+    desc: "Compare the tools that help you send, track, and get paid for invoices.",
+  },
+  {
+    href: "/best/crm-software",
+    eyebrow: "CRM",
+    title: "A CRM that stays simple.",
+    desc: "See which customer-management tools make sense before your business outgrows them.",
+  },
+  {
+    href: "/best/project-management-software",
+    eyebrow: "Projects",
+    title: "Projects, without the overhead.",
+    desc: "A practical look at project tools for small teams that need to get work moving.",
+  },
+  {
+    href: "/best/time-tracking-software",
+    eyebrow: "Time tracking",
+    title: "Know where the hours go.",
+    desc: "Compare simple time trackers for freelancers and small teams.",
+  },
 ];
 
-const PRINCIPLES = [
-  { number: "01", title: "Clarity over hype", text: "Plain-language comparisons that get to the point." },
-  { number: "02", title: "Trade-offs included", text: "What each tool does well — and where it falls short." },
-  { number: "03", title: "Built for real budgets", text: "Practical choices for freelancers and growing teams." },
+const ROW1_CATEGORIES = [
+  {
+    label: "Customers",
+    href: "/best/crm-software",
+    icon: (
+      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Invoices",
+    href: "/best/invoicing-software",
+    icon: (
+      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Projects",
+    href: "/best/project-management-software",
+    icon: (
+      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+      </svg>
+    ),
+  },
+];
+
+const ROW2_CATEGORIES = [
+  {
+    label: "Time",
+    href: "/best/time-tracking-software",
+    icon: (
+      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Security",
+    href: "/best/business-vpn",
+    icon: (
+      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Payroll",
+    href: "/best/payroll-software",
+    icon: (
+      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+      </svg>
+    ),
+  },
 ];
 
 export default function HomePage() {
   return (
-    <div className="home-page">
-      <section className="hero-shell">
-        <div className="hero-orb hero-orb-one" aria-hidden="true" />
-        <div className="hero-orb hero-orb-two" aria-hidden="true" />
-        <div className="hero-content">
-          <div className="eyebrow"><span className="eyebrow-dot" /> INDEPENDENT SOFTWARE GUIDES</div>
-          <h1>Good software.<br /><span>Clear decisions.</span></h1>
-          <p className="hero-copy">
-            Find the tools that fit your work, your team, and your budget.
-            Thoughtful comparisons, without the noise.
+    <>
+      {/* 1. Hero Section */}
+      <section className="bg-white">
+        <div className="sp-container flex min-h-[700px] flex-col items-center justify-center py-20 text-center sm:min-h-[760px] sm:py-28">
+          <p className="sp-eyebrow">Software, without the noise.</p>
+          <h1 className="sp-display mt-6 max-w-5xl">
+            Find the right tool.<br />
+            Not the loudest one.
+          </h1>
+          <p className="sp-body-large mt-7 max-w-2xl">
+            StackPick compares software for freelancers and small businesses, pricing,
+            limits, strengths, trade-offs, and the details that actually change a decision.
           </p>
-          <div className="hero-actions">
-            <Link href="/best" className="button-primary">Explore comparisons <span aria-hidden="true">↗</span></Link>
-            <Link href="/about" className="button-secondary">How we choose</Link>
-          </div>
-          <div className="hero-footnote"><span className="tiny-check">✓</span> Independent research <span className="footnote-divider">·</span> Honest trade-offs <span className="footnote-divider">·</span> No enterprise bias</div>
-        </div>
-        <div className="hero-bottom" aria-hidden="true">
-          <span>LESS GUESSWORK.</span>
-          <span>BETTER WORKFLOWS.</span>
-          <span>MORE ROOM TO GROW.</span>
-        </div>
-      </section>
-
-      <section className="featured-section section-wrap" id="comparisons">
-        <div className="section-heading">
-          <div>
-            <p className="section-kicker">THE SHORTLIST</p>
-            <h2>Make your next choice<br className="desktop-break" /> a confident one.</h2>
-          </div>
-          <Link href="/best" className="text-link">Browse all guides <span aria-hidden="true">↗</span></Link>
-        </div>
-        <div className="comparison-grid">
-          {FEATURED.map((item) => (
-            <Link href={item.href} key={item.href} className="comparison-card">
-              <div className="card-topline"><span className="card-category">{item.category}</span><span className="card-number">{item.number}</span></div>
-              <h3>{item.title}<span className="card-arrow" aria-hidden="true">↗</span></h3>
-              <p>{item.desc}</p>
-              <div className="card-tools">{item.tools}</div>
+          <div className="mt-9 flex flex-wrap justify-center gap-3">
+            <Link href="/best" className="sp-button-primary">
+              Explore comparisons
             </Link>
-          ))}
-        </div>
-        <div className="all-guides-bar">
-          <div className="all-guides-mark" aria-hidden="true"><span /><span /><span /></div>
-          <div><strong>Looking for something specific?</strong><p>Explore the full library of software guides and comparisons.</p></div>
-          <Link href="/best" className="button-dark">View all guides <span aria-hidden="true">→</span></Link>
+            <Link href="/about" className="sp-button-secondary">
+              How StackPick works
+            </Link>
+          </div>
+
+          {/* 3 Steps Container */}
+          <div className="mt-16 w-full max-w-4xl rounded-[32px] bg-[#f5f5f7] px-6 py-10 sm:px-12 sm:py-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#6e6e73]">
+              A better way to choose
+            </p>
+            <div className="mt-8 grid gap-8 text-left sm:grid-cols-3">
+              <div>
+                <p className="text-sm font-semibold text-[#004bb5]">01</p>
+                <h2 className="mt-2 text-base font-semibold tracking-tight text-[#1d1d1f]">
+                  Start with the job
+                </h2>
+                <p className="mt-2 text-xs leading-5 text-[#6e6e73]">
+                  What are you actually trying to get done?
+                </p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-[#004bb5]">02</p>
+                <h2 className="mt-2 text-base font-semibold tracking-tight text-[#1d1d1f]">
+                  Compare the trade-offs
+                </h2>
+                <p className="mt-2 text-xs leading-5 text-[#6e6e73]">
+                  What does the free plan really include? What will become a problem later?
+                </p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-[#004bb5]">03</p>
+                <h2 className="mt-2 text-base font-semibold tracking-tight text-[#1d1d1f]">
+                  Choose with context
+                </h2>
+                <p className="mt-2 text-xs leading-5 text-[#6e6e73]">
+                  The best tool is the one that fits your workflow - not the one with the longest feature list.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="principles-section">
-        <div className="section-wrap principles-wrap">
-          <div className="principles-intro">
-            <p className="section-kicker">THE STACKPICK STANDARD</p>
-            <h2>Less marketing.<br /><span>More meaning.</span></h2>
-            <p>Choosing software shouldn’t feel like decoding a sales pitch. We focus on the details that actually change your day-to-day.</p>
-            <Link href="/about" className="text-link">Our approach <span aria-hidden="true">↗</span></Link>
+      {/* 2. Dark Showcase Section (Software for the work you do) */}
+      <section className="bg-black text-white">
+        <div className="sp-container py-24 sm:py-32">
+          <p className="sp-eyebrow text-[#a1a1a6]">What are you looking for?</p>
+          <h2 className="sp-title mt-3 max-w-3xl text-white">
+            Software for the work you do.
+          </h2>
+
+          <div className="mt-16 sm:mt-20">
+            {/* Row 1: Customers, Invoices, Projects */}
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              {ROW1_CATEGORIES.map((item) => (
+                <Link key={item.label} href={item.href} className="group block">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-transform group-hover:scale-105">
+                    {item.icon}
+                  </div>
+                  <h3 className="mt-5 text-2xl font-semibold tracking-tight text-white">
+                    {item.label}
+                  </h3>
+                  <span className="mt-8 sm:mt-10 block text-xs text-[#a1a1a6] transition-colors group-hover:text-white">
+                    Explore {item.label.toLowerCase()} →
+                  </span>
+                </Link>
+              ))}
+            </div>
+
+            {/* Subtle Divider Line spanning across columns */}
+            <div className="my-10 sm:my-12 border-b border-white/15" />
+
+            {/* Row 2: Time, Security, Payroll */}
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              {ROW2_CATEGORIES.map((item) => (
+                <Link key={item.label} href={item.href} className="group block">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-transform group-hover:scale-105">
+                    {item.icon}
+                  </div>
+                  <h3 className="mt-5 text-2xl font-semibold tracking-tight text-white">
+                    {item.label}
+                  </h3>
+                  <span className="mt-8 sm:mt-10 block text-xs text-[#a1a1a6] transition-colors group-hover:text-white">
+                    Explore {item.label.toLowerCase()} →
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
-          <div className="principles-list">
-            {PRINCIPLES.map((item) => (
-              <div className="principle-row" key={item.number}>
-                <span className="principle-number">{item.number}</span>
-                <div><h3>{item.title}</h3><p>{item.text}</p></div>
-                <span className="principle-arrow" aria-hidden="true">↗</span>
-              </div>
+        </div>
+      </section>
+
+      {/* 3. Popular Comparisons Section */}
+      <section className="bg-[#f5f5f7]">
+        <div className="sp-container py-24 sm:py-32">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="sp-eyebrow">Featured comparisons</p>
+              <h2 className="sp-title mt-3 max-w-3xl">The shortlist starts here.</h2>
+            </div>
+            <Link
+              href="/best"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#004bb5] hover:underline"
+            >
+              See all comparisons →
+            </Link>
+          </div>
+
+          <div className="mt-14 grid gap-6 lg:grid-cols-2">
+            {FEATURED.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group flex min-h-[300px] flex-col justify-between rounded-[28px] border border-[#d2d2d7] bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-10"
+              >
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-[#6e6e73]">
+                    {item.eyebrow}
+                  </p>
+                  <h3 className="mt-4 text-2xl font-bold leading-snug tracking-[-0.03em] text-[#1d1d1f] sm:text-3xl">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-6 text-[#6e6e73]">
+                    {item.desc}
+                  </p>
+                </div>
+                <div className="mt-8">
+                  <span className="text-xs font-semibold text-[#004bb5] group-hover:underline">
+                    Read the comparison →
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="closing-section section-wrap">
-        <p className="section-kicker">YOUR NEXT BETTER DECISION</p>
-        <h2>The right tool should<br />make work feel <span>lighter.</span></h2>
-        <p>Start with what you need. We’ll help you narrow down what fits.</p>
-        <Link href="/best" className="button-primary">Find your software <span aria-hidden="true">↗</span></Link>
+      {/* 4. The Approach Section */}
+      <section className="bg-white">
+        <div className="sp-container py-24 sm:py-32">
+          <div className="max-w-3xl">
+            <p className="sp-eyebrow">Our approach</p>
+            <h2 className="sp-title mt-3">Useful beats impressive.</h2>
+            <p className="sp-body-large mt-6">
+              We care about the things that are easy to miss in a polished product demo:
+              real pricing, meaningful free limits, setup friction, workflow fit, and
+              the reason you might regret choosing a tool six months later.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-10 border-t border-black/10 pt-10 md:grid-cols-3">
+            <div>
+              <h3 className="text-lg font-bold tracking-tight text-[#1d1d1f]">
+                Pricing reality
+              </h3>
+              <p className="mt-2.5 text-xs leading-6 text-[#6e6e73]">
+                We separate the advertised starting price from the plan you will actually need.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold tracking-tight text-[#1d1d1f]">
+                Fit over features
+              </h3>
+              <p className="mt-2.5 text-xs leading-6 text-[#6e6e73]">
+                A smaller tool can be a better choice when it matches the way you work.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold tracking-tight text-[#1d1d1f]">
+                Clear verdicts
+              </h3>
+              <p className="mt-2.5 text-xs leading-6 text-[#6e6e73]">
+                Every comparison should help you decide - including when the answer is to use nothing.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-    </div>
+
+      {/* 5. Closing CTA Section */}
+      <section className="bg-[#f5f5f7]">
+        <div className="sp-container py-24 text-center sm:py-32">
+          <p className="sp-eyebrow">Ready when you are.</p>
+          <h2 className="sp-title mx-auto mt-3 max-w-3xl">
+            Make your next software decision a simpler one.
+          </h2>
+          <Link
+            href="/best"
+            className="mt-8 inline-block text-sm font-semibold text-[#004bb5] hover:underline"
+          >
+            Browse all comparisons →
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }

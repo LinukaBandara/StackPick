@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About StackPick",
@@ -8,25 +9,28 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
-      <h1 className="text-3xl font-bold text-ink mb-6">About StackPick</h1>
-      <div className="text-[15px] text-slate space-y-4">
-        <p>
-          StackPick compares business software for freelancers and small teams, with a specific
-          focus on budget-conscious picks — not just the biggest enterprise names.
-        </p>
-        <p>
-          We're not a large team, and we're upfront about how these comparisons get built:
-          researched from vendor documentation, pricing pages, and public reviews, structured
-          around the trade-offs that actually matter (not just feature checklists).
-        </p>
-        <p>
-          Some of our links are affiliate links — see our{" "}
-          <a href="/affiliate-disclosure" className="text-indigo hover:underline">
-            Affiliate Disclosure
-          </a>{" "}
-          for exactly how that works and how it does (and doesn't) affect our recommendations.
-        </p>
+    <div className="bg-white w-full">
+      <div className="sp-container max-w-3xl py-16 sm:py-24">
+        <p className="sp-eyebrow uppercase tracking-wider text-xs">About us</p>
+        <h1 className="sp-title mt-3 text-[#1d1d1f]">About StackPick</h1>
+        <div className="mt-8 space-y-6 text-base sm:text-lg leading-relaxed text-[#6e6e73]">
+          <p>
+            StackPick compares business software for freelancers and small teams, with a specific
+            focus on budget-conscious picks - not just the biggest enterprise names.
+          </p>
+          <p>
+            We are upfront about how these comparisons get built: researched from vendor
+            documentation, pricing pages, and public reviews, structured around the trade-offs that
+            actually matter (not just endless feature checklists).
+          </p>
+          <p>
+            Some of our links are affiliate links - see our{" "}
+            <Link href="/affiliate-disclosure" className="text-[#004bb5] font-medium hover:underline">
+              Affiliate Disclosure
+            </Link>{" "}
+            for exactly how that works and how it does (and doesn't) affect our recommendations.
+          </p>
+        </div>
       </div>
     </div>
   );

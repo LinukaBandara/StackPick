@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import BestDirectory from "@/components/BestDirectory";
 
 export const metadata: Metadata = {
   title: "All Software Comparisons",
-  description: "Every StackPick comparison across accounting, sales, marketing, operations, IT, and infrastructure software for small businesses.",
+  description:
+    "Every StackPick comparison across accounting, sales, marketing, operations, IT, and infrastructure software for small businesses.",
   alternates: { canonical: "/best" },
 };
 
@@ -44,19 +45,21 @@ const ARTICLES = [
 
 export default function BestHubPage() {
   return (
-    <section className="page-shell">
-      <p className="page-eyebrow">THE STACKPICK LIBRARY</p>
-      <h1 className="page-title">Find the right tool<br />for the work ahead.</h1>
-      <p className="page-intro">Browse practical, independent comparisons across the software categories that keep small businesses moving.</p>
-      <div className="hub-grid">
-        {ARTICLES.map((article, index) => (
-          <Link href={article.href} key={article.href} className="hub-card">
-            <div className="hub-card-top"><span>{article.category}</span><span>{String(index + 1).padStart(2, "0")} ↗</span></div>
-            <h2>{article.title}</h2>
-            <p>{article.desc}</p>
-          </Link>
-        ))}
-      </div>
-    </section>
+    <>
+      <section className="bg-white border-b border-black/[0.06]">
+        <div className="sp-container py-16 sm:py-24">
+          <p className="sp-eyebrow uppercase tracking-wider text-xs">StackPick comparisons</p>
+          <h1 className="sp-title mt-3 max-w-4xl">Software worth a closer look.</h1>
+          <p className="mt-5 max-w-2xl text-base sm:text-lg leading-relaxed text-[#6e6e73]">
+            Practical comparisons for freelancers and small businesses. Start with the job,
+            understand the trade-offs, then choose the tool that fits.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-[#f5f5f7]">
+        <BestDirectory articles={ARTICLES} />
+      </section>
+    </>
   );
 }

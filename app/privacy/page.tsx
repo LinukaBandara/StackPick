@@ -1,44 +1,46 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "StackPick's privacy policy — what data is collected and how affiliate/ad tracking works.",
+  description: "StackPick's privacy policy - what data is collected and how affiliate/ad tracking works.",
   alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
-      <h1 className="text-3xl font-bold text-ink mb-2">Privacy Policy</h1>
-      <p className="text-sm text-slate mb-8">This page reflects the site's current implementation.</p>
-      <div className="text-[15px] text-slate space-y-6">
-        <section>
-          <h2 className="text-xl font-semibold text-ink mb-2">No accounts</h2>
-          <p>StackPick doesn't require sign-up or collect personal profiles.</p>
-        </section>
-        <section>
-          <h2 className="text-xl font-semibold text-ink mb-2">Affiliate links</h2>
-          <p>
-            When you click an affiliate link, the destination site (not StackPick) sets a
-            tracking cookie or parameter to credit the referral. See our{" "}
-            <a href="/affiliate-disclosure" className="text-indigo hover:underline">
-              Affiliate Disclosure
-            </a>{" "}
-            for details.
-          </p>
-        </section>
-        <section>
-          <h2 className="text-xl font-semibold text-ink mb-2">Advertising & analytics</h2>
-          <p>
-            As currently built, this site has no analytics or advertising installed. If/when
-            Google AdSense or an analytics tool is added, this policy will be updated to name
-            the exact tool, the cookies it sets, and how to opt out.
-          </p>
-        </section>
-        <section>
-          <h2 className="text-xl font-semibold text-ink mb-2">Contact</h2>
-          <p>Emails sent via the Contact page are handled like normal email and not shared with third parties.</p>
-        </section>
+    <div className="bg-white w-full">
+      <div className="sp-container max-w-3xl py-16 sm:py-24">
+        <p className="sp-eyebrow uppercase tracking-wider text-xs">Legal</p>
+        <h1 className="sp-title mt-3 text-[#1d1d1f]">Privacy Policy</h1>
+        <p className="mt-3 text-sm text-[#86868b]">Last updated October 2026</p>
+        <div className="mt-8 space-y-8 text-base sm:text-lg leading-relaxed text-[#6e6e73]">
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">No accounts</h2>
+            <p>StackPick does not require user sign-up or collect personal customer profiles.</p>
+          </section>
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Affiliate links</h2>
+            <p>
+              When you click an affiliate link, the destination site (not StackPick) sets a
+              tracking cookie or parameter to credit the referral. See our{" "}
+              <Link href="/affiliate-disclosure" className="text-[#004bb5] font-medium hover:underline">
+                Affiliate Disclosure
+              </Link>{" "}
+              for details.
+            </p>
+          </section>
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Analytics</h2>
+            <p>
+              StackPick uses privacy-conscious analytics to understand aggregate traffic and improve our software comparisons. No sensitive personal data is shared with third parties.
+            </p>
+          </section>
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Contact</h2>
+            <p>Emails sent via the Contact page are handled privately and never shared with third parties.</p>
+          </section>
+        </div>
       </div>
     </div>
   );

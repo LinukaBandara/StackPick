@@ -54,7 +54,7 @@ const organizationJsonLd = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans bg-cloud text-ink antialiased">
+      <body className="font-sans bg-white text-ink antialiased">
         {GA_ID && (
           <>
             <Script
