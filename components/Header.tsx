@@ -27,13 +27,13 @@ export default function Header() {
           <span>StackPick</span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
-          <Link href="/best" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#004bb5]">
+          <Link href="/best" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
             Categories
           </Link>
-          <Link href="/best" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#004bb5]">
+          <Link href="/best" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
             Comparisons
           </Link>
-          <Link href="/best" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#004bb5]">
+          <Link href="/best" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
             Guides
           </Link>
         </nav>
@@ -50,7 +50,7 @@ export default function Header() {
           </Link>
           <Link
             href="/best#directory-results"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#004bb5] transition-opacity hover:opacity-80 no-underline"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#001D39] transition-opacity hover:opacity-80 no-underline"
           >
             <span>Browse all</span>
             <ArrowIcon />
