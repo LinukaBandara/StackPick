@@ -57,12 +57,7 @@ export default function ComparisonArticle({
             name: tool.name,
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web, macOS, Windows, iOS, Android",
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "USD",
-              description: tool.freeOption,
-            },
+            description: tool.bestFor,
           },
         })),
       },
