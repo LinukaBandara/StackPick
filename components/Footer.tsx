@@ -34,7 +34,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} StackPick. All rights reserved.</span>
-        <span>StackPick is created by <a href="https://ark-ii.studio" target="_blank" rel="noopener noreferrer">ARK II</a>.</span>
+        <span>A project by <a href="https://ark-ii.studio" target="_blank" rel="noopener noreferrer">ARK II</a>.</span>
       </div>
     </footer>
   );
