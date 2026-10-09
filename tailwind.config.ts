@@ -6,7 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         ink: "#1D1D1F",
-        indigo: { DEFAULT: "#0071E3", dark: "#0066CC" },
+        indigo: { DEFAULT: "#001D39", dark: "#00345F" },
         amber: "#D97706",
         cloud: "#F5F5F7",
         slate: "#6E6E73",
