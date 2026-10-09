@@ -151,24 +151,24 @@ export default function HomePage() {
 
       {/* 2. Dark Showcase Section (Software for the work you do) */}
       <section className="bg-black text-white">
-        <div className="sp-container py-24 sm:py-32">
+        <div className="sp-container py-14 sm:py-24 lg:py-32">
           <p className="sp-eyebrow text-[#a1a1a6]">What are you looking for?</p>
-          <h2 className="sp-title mt-3 max-w-3xl text-white">
+          <h2 className="sp-title mt-3 max-w-3xl text-white text-[clamp(2rem,8vw,4.2rem)] leading-[1.05]">
             Software for the work you do.
           </h2>
 
-          <div className="mt-16 sm:mt-20">
+          <div className="mt-10 sm:mt-16 lg:mt-20">
             {/* Row 1: Customers, Invoices, Projects */}
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3">
               {ROW1_CATEGORIES.map((item) => (
                 <Link key={item.label} href={item.href} className="group block">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-transform group-hover:scale-105">
                     {item.icon}
                   </div>
-                  <h3 className="mt-5 text-2xl font-semibold tracking-tight text-white">
+                  <h3 className="mt-4 text-xl font-semibold tracking-tight text-white sm:mt-5 sm:text-2xl">
                     {item.label}
                   </h3>
-                  <span className="mt-8 sm:mt-10 block text-xs text-[#a1a1a6] transition-colors group-hover:text-white">
+                  <span className="mt-5 block text-xs text-[#a1a1a6] transition-colors group-hover:text-white sm:mt-8 lg:mt-10">
                     Explore {item.label.toLowerCase()} →
                   </span>
                 </Link>
@@ -176,7 +176,7 @@ export default function HomePage() {
             </div>
 
             {/* Subtle Divider Line spanning across columns */}
-            <div className="my-10 sm:my-12 border-b border-white/15" />
+            <div className="my-8 border-b border-white/15 sm:my-12" />
 
             {/* Row 2: Time, Security, Payroll */}
             <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
