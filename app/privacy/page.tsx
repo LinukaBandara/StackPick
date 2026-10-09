@@ -33,12 +33,29 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Analytics</h2>
             <p>
-              StackPick uses privacy-conscious analytics to understand aggregate traffic and improve our software comparisons. No sensitive personal data is shared with third parties.
+              StackPick uses Google Analytics to understand site usage, including which pages are
+              visited and how visitors interact with the site. Google may process online identifiers,
+              device and browser information, and usage events to provide these analytics. Browser
+              settings and available Google tools may offer ways to limit analytics collection.
+              Please do not submit sensitive personal information through this website.
+            </p>
+          </section>
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Advertising</h2>
+            <p>
+              StackPick does not currently serve display advertisements. If we introduce an
+              advertising service such as Google AdSense, that service may use cookies or similar
+              technologies to deliver, measure, or personalize advertisements, subject to applicable
+              law and the choices made available to visitors. This policy will be updated before
+              advertising is enabled.
             </p>
           </section>
           <section>
             <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Contact</h2>
-            <p>Emails sent via the Contact page are handled privately and never shared with third parties.</p>
+            <p>
+              For privacy questions or requests, use the contact details published on our Contact
+              page. Please do not include sensitive personal information in your message.
+            </p>
           </section>
         </div>
       </div>
