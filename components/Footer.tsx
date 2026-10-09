@@ -1,33 +1,39 @@
 import Link from "next/link";
 
 const LINKS = [
-  { href: "/about", label: "About" },
-  { href: "/affiliate-disclosure", label: "Affiliate Disclosure" },
-  { href: "/privacy", label: "Privacy Policy" },
+  { href: "/best", label: "All comparisons" },
+  { href: "/about", label: "About StackPick" },
+  { href: "/affiliate-disclosure", label: "Affiliate disclosure" },
+  { href: "/privacy", label: "Privacy" },
   { href: "/contact", label: "Contact" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-white mt-20">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10">
-        <p className="font-bold">StackPick</p>
-        <p className="text-sm text-slate-300 mt-1 max-w-md">
-          Independent software comparisons for freelancers and small businesses. Some links on
-          this site are affiliate links — see our{" "}
-          <Link href="/affiliate-disclosure" className="underline hover:text-indigo">
-            affiliate disclosure
+    <footer className="site-footer">
+      <div className="footer-main">
+        <div className="footer-brand-column">
+          <Link href="/" className="brand footer-brand" aria-label="StackPick home">
+            <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
+            <span className="brand-word">stack<span>pick</span></span>
           </Link>
-          .
-        </p>
-        <nav className="flex flex-wrap gap-4 mt-6 text-sm text-slate-300">
-          {LINKS.map((l) => (
-            <Link key={l.href} href={l.href} className="hover:text-white">
-              {l.label}
-            </Link>
-          ))}
-        </nav>
-        <p className="text-xs text-slate-400 mt-6">© {new Date().getFullYear()} StackPick.</p>
+          <p>Better software choices start with a little more clarity.</p>
+        </div>
+        <div className="footer-links-column">
+          <span className="footer-label">EXPLORE</span>
+          <nav aria-label="Footer navigation">
+            {LINKS.map((link) => <Link href={link.href} key={link.href}>{link.label}</Link>)}
+          </nav>
+        </div>
+        <div className="footer-note">
+          <span className="footer-label">OUR PROMISE</span>
+          <p>Independent-minded comparisons for people building something of their own.</p>
+          <Link href="/about" className="footer-about-link">How we work <span aria-hidden="true">↗</span></Link>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <span>© {new Date().getFullYear()} StackPick. All rights reserved.</span>
+        <span>Made for clearer decisions.</span>
       </div>
     </footer>
   );
