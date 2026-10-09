@@ -3,6 +3,7 @@
 > Independent, budget-focused comparisons of business software for freelancers and small
 > teams. Some links are affiliate links (see /affiliate-disclosure); this does not change
 > which tools are recommended — recommendations are based on fit, not commission.
+> Google Analytics is configured to measure site usage. Display ads are not currently served.
 
 ## Comparisons
 - [Best Invoicing Software for Freelancers](/best/invoicing-software): Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks.
@@ -41,5 +42,5 @@
 ## Policies
 - [About](/about)
 - [Affiliate Disclosure](/affiliate-disclosure): Explains affiliate links and how they do/don't influence recommendations.
-- [Privacy Policy](/privacy): No accounts; no analytics or ads currently installed.
+- [Privacy Policy](/privacy): Explains analytics, affiliate links, and the site's current advertising status.
 - [Contact](/contact)
