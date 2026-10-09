@@ -2,19 +2,17 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 bg-white border-b border-borderc">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="font-bold text-lg text-ink">
-          Stack<span className="text-indigo">Pick</span>
+    <header className="site-header">
+      <div className="header-inner">
+        <Link href="/" className="brand" aria-label="StackPick home">
+          <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
+          <span className="brand-word">stack<span>pick</span></span>
         </Link>
-        <nav className="flex items-center gap-6" aria-label="Primary">
-          <Link href="/best" className="text-sm text-ink hover:text-indigo font-medium">
-            All Comparisons
-          </Link>
-          <Link href="/about" className="text-sm text-ink hover:text-indigo">
-            About
-          </Link>
+        <nav className="primary-nav" aria-label="Primary navigation">
+          <Link href="/best">Explore guides</Link>
+          <Link href="/about">Our approach</Link>
         </nav>
+        <Link href="/best" className="header-cta">Find your tool <span aria-hidden="true">↗</span></Link>
       </div>
     </header>
   );
