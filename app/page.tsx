@@ -179,16 +179,16 @@ export default function HomePage() {
             <div className="my-8 border-b border-white/15 sm:my-12" />
 
             {/* Row 2: Time, Security, Payroll */}
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3">
               {ROW2_CATEGORIES.map((item) => (
                 <Link key={item.label} href={item.href} className="group block">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-transform group-hover:scale-105">
                     {item.icon}
                   </div>
-                  <h3 className="mt-5 text-2xl font-semibold tracking-tight text-white">
+                  <h3 className="mt-4 text-xl font-semibold tracking-tight text-white sm:mt-5 sm:text-2xl">
                     {item.label}
                   </h3>
-                  <span className="mt-8 sm:mt-10 block text-xs text-[#a1a1a6] transition-colors group-hover:text-white">
+                  <span className="mt-5 block text-xs text-[#a1a1a6] transition-colors group-hover:text-white sm:mt-8 lg:mt-10">
                     Explore {item.label.toLowerCase()} →
                   </span>
                 </Link>
