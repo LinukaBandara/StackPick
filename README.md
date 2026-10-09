@@ -54,8 +54,8 @@ npm run build    # production build
   31. `/best/employee-scheduling-software` - When I Work, Deputy, Connecteam, 7shifts
   32. `/best/business-email-hosting` - Google Workspace, Microsoft 365, Zoho Mail, Proton Mail
 
-- **Legal pages**: About, Affiliate Disclosure (FTC-shaped), Privacy Policy (honest about
-  current no-analytics/no-ads state), Contact.
+- **Legal pages**: About, Affiliate Disclosure, Privacy Policy (documents configured Google
+  Analytics and the fact that display ads are not yet enabled), Contact.
 
 ## Important: pricing is intentionally NOT hard-coded as fact
 
