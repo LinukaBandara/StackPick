@@ -8,9 +8,9 @@
   --sp-ink: #1d1d1f;
   --sp-muted: #6e6e73;
   --sp-muted-light: #86868b;
-  --sp-blue: #004bb5;
-  --sp-blue-dark: #00388c;
-  --sp-blue-light: #ebf2fc;
+  --sp-blue: #001D39;
+  --sp-blue-dark: #00142A;
+  --sp-blue-light: #E6EDF3;
   --sp-border: #d2d2d7;
   --sp-border-subtle: rgba(0, 0, 0, 0.08);
   --sp-radius: 28px;
@@ -43,7 +43,7 @@ a, button {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(0, 75, 181, 0.35);
+  outline: 3px solid rgba(0, 29, 57, 0.35);
   outline-offset: 4px;
   border-radius: 8px;
 }
@@ -77,13 +77,13 @@ button:focus-visible {
   .sp-button-primary {
     @apply sp-button text-white;
     background: var(--sp-blue);
-    box-shadow: 0 2px 8px rgba(0, 75, 181, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 29, 57, 0.2);
   }
 
   .sp-button-primary:hover {
     background: var(--sp-blue-dark);
     transform: translateY(-1px);
-    box-shadow: 0 4px 14px rgba(0, 75, 181, 0.3);
+    box-shadow: 0 4px 14px rgba(0, 29, 57, 0.3);
   }
 
   .sp-button-secondary {
