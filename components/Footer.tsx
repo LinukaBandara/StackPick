@@ -23,6 +23,7 @@ export default function Footer() {
           <span className="footer-label">EXPLORE</span>
           <nav aria-label="Footer navigation">
             {LINKS.map((link) => <Link href={link.href} key={link.href}>{link.label}</Link>)}
+            <a href="https://ark-ii.studio" target="_blank" rel="noopener noreferrer">ARK II Studio <span aria-hidden="true">↗</span></a>
           </nav>
         </div>
         <div className="footer-note">
@@ -33,7 +34,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} StackPick. All rights reserved.</span>
-        <span>Made for clearer decisions.</span>
+        <span>StackPick is created by <a href="https://ark-ii.studio" target="_blank" rel="noopener noreferrer">ARK II</a>.</span>
       </div>
     </footer>
   );
