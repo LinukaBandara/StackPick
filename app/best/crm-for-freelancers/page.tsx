@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Best CRM for Freelancers (2026): Simple, Affordable Options",
+  title: "Best CRM for Freelancers (2026): Free Plans Compared",
   description:
     "Find a CRM that fits a solo freelance business without paying for features you will never use. Compare HubSpot, Pipedrive, Zoho CRM and Notion.",
   alternates: { canonical: "/best/crm-for-freelancers" },
@@ -14,7 +14,7 @@ export default function CrmForFreelancersPage() {
       title="Best CRM for Freelancers"
       slug="crm-for-freelancers"
       intro="A freelancer usually does not need a giant sales operation. You need to remember who contacted you, what you promised, when to follow up, and which leads are actually worth pursuing. We focus on that smaller job: low setup, useful free access, clear client tracking, and a sensible upgrade path."
-      pricingNote="Compare the current free plan by contacts, deal pipelines, users, email tracking, reminders, custom fields, automation and export. Some CRMs are free for core contact management but charge for workflow automation, reporting or team administration. If you are a US freelancer, test whether your existing email/calendar integrations work on the free tier before importing real client data."
+      pricingNote="Plan limits were checked against official provider pages on October 11, 2026. HubSpot currently lists free tools for up to 2 users and 1,000 contacts; Zoho CRM lists a free edition for up to 3 users. Pipedrive offers a time-limited trial rather than a permanent free plan. Notion’s free plan is generous for a solo workspace, but it is a DIY database rather than a dedicated sales CRM. Recheck provider terms before signing up, because feature limits and offers can change."
       tools={[
         {
           name: "HubSpot CRM",
@@ -23,7 +23,7 @@ export default function CrmForFreelancersPage() {
             "A permanent free CRM tier is available for core contact and deal management; verify current feature and usage limits.",
           tradeoff:
             "It gives a solo freelancer room to grow, but the wider HubSpot ecosystem can introduce paid features you may not need at the beginning.",
-          url: "https://www.hubspot.com/products/crm",
+          url: "https://www.hubspot.com/pricing/crm",
         },
         {
           name: "Pipedrive",
@@ -32,7 +32,7 @@ export default function CrmForFreelancersPage() {
             "No permanent free plan; a trial may be available depending on the current offer.",
           tradeoff:
             "Its pipeline-first approach is easy to understand when every prospect has a sales stage, but it is harder to justify if you mainly need a lightweight client address book.",
-          url: "https://www.pipedrive.com/",
+          url: "https://www.pipedrive.com/en/pricing",
         },
         {
           name: "Zoho CRM",
@@ -41,7 +41,7 @@ export default function CrmForFreelancersPage() {
             "A limited free edition may be available under current Zoho terms; check the current user and feature limits.",
           tradeoff:
             "It can make sense when your workflow already uses Zoho products, while the larger feature set can mean more setup than a solo freelancer actually needs.",
-          url: "https://www.zoho.com/crm/",
+          url: "https://www.zoho.com/crm/zohocrm-pricing.html",
         },
         {
           name: "Notion as a CRM",
@@ -50,10 +50,10 @@ export default function CrmForFreelancersPage() {
             "Notion offers a free plan subject to its current terms.",
           tradeoff:
             "You can shape the database around your own process, but you are responsible for designing and maintaining the CRM workflow instead of getting a purpose-built sales system.",
-          url: "https://www.notion.so/",
+          url: "https://www.notion.com/pricing",
         },
       ]}
-      bottomLine="Choose HubSpot first if you want a purpose-built CRM and its current free limits cover your contacts and follow-ups. Choose Pipedrive only when a structured deal pipeline is worth paying for; consider Zoho when its wider ecosystem matches tools you already use. Notion can work for a lightweight client tracker, but it is not a drop-in replacement for CRM automation. If you have only a handful of repeat clients and never miss a follow-up, keep the spreadsheet until a real workflow problem appears."
+      bottomLine="For a solo freelancer, start with HubSpot if 1,000 contacts and a two-user ceiling cover your needs. Zoho is worth testing if you need a purpose-built CRM with up to three users on its free edition. Pipedrive is a paid-product trial, so use it to judge whether its pipeline workflow earns its subscription. Notion is best when you want a flexible DIY client database and are comfortable maintaining it. If a spreadsheet already handles your leads and reminders reliably, you may not need a CRM yet."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
