@@ -14,6 +14,8 @@ Build a useful, interconnected developer-tools section for organic search visito
 | `/best/llm-tools-for-developers` | Choose LLM APIs and developer tooling | Cost per successful task, evaluation, structured outputs, observability and local model trade-offs |
 | `/best/github-tools-for-developers` | Choose Git hosting and workflow tools | Protected branches, CI checks, dependency updates, secrets and reviewable changes |
 | `/best/devops-tools-small-teams` | Find a manageable DevOps stack | CI/CD, deployment previews, monitoring, spend controls, backups and rollback |
+| `/best/ai-agent-frameworks` | Choose an AI agent framework | Tool boundaries, state, tracing, cost and safety controls |
+| `/best/n8n-workflow-examples` | Learn practical n8n workflow patterns | Lead intake, support triage, reporting, retries and deduplication |
  
 ## Priority order for the next editorial sprint
 
@@ -23,6 +25,8 @@ Build a useful, interconnected developer-tools section for organic search visito
 4. **LLM tools for developers** — broad query family. Keep this page about engineering a dependable LLM feature, not a shallow list of every model.
 5. **GitHub tools for developers** — prioritize practical team workflows and security defaults rather than generic tool descriptions.
 6. **DevOps tools for small teams** — include a cost and operations checklist; avoid suggesting every small app needs a large platform stack.
+7. **AI agent frameworks** — explain when not to use multi-agent architecture and require explicit tool permissions and evaluation.
+8. **n8n workflow examples** — add tested, importable examples only after verifying each workflow against current node versions and connected services.
 
 ## Keyword validation workflow
 
