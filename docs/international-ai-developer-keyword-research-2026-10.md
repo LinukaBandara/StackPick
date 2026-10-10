@@ -217,3 +217,67 @@ Subject to SERP review and validation in all four markets:
 7. **AI tools for DevOps and CI/CD troubleshooting** — research further after the first coding-tool cluster, because the exact keyword demand and SERP intent are not yet validated.
 
 The next research pass should retrieve monthly country data for the full seed list (April–October 2026 where available), compare the last three months with the prior three, inspect the live top 10 results, and record all findings in a dated CSV/table. Do not publish the entire shortlist automatically.
+
+
+## Country-level monthly demand audit — first measured pass
+
+A reproducible public dataset is available from the Cleanor Search Index, which republishes country-level Google Keyword Planner historical metrics. The September 2026 snapshot contains monthly data through August 2026, so it does **not** yet cover September or October search volumes. It tracks product/brand head terms rather than all generic queries such as "best AI for React", so use it to validate brand interest and trend direction, not as a substitute for exact query research.
+
+- Dataset repository and methodology: https://github.com/cleanor-app/search-index
+- Coding monthly CSV: https://raw.githubusercontent.com/cleanor-app/search-index/main/data/popularity/csv/popularity-coding-monthly.csv
+- AI monthly CSV: https://raw.githubusercontent.com/cleanor-app/search-index/main/data/popularity/csv/popularity-ai-monthly.csv
+- Licence: CC BY 4.0 for the data; attribution required to Cleanor Labs / Cleanor Search Index.
+- Method note: Google Keyword Planner rounds volumes into bands. These are estimates, and brand terms can contain close variants. Do not add related variants together as if they were unique users.
+
+A copy of selected country-level series for March–August 2026 is committed in `docs/data/ai-developer-brand-demand-2026-03-to-08.csv`. It includes Claude Code, Cursor, GitHub Copilot, Replit, VS Code, Claude, Gemini, ChatGPT, Perplexity, and DeepSeek for US, UK (GB), Canada (CA), and Australia (AU).
+
+### Coding tool brand demand: August 2026 and recent direction
+
+The percentage compares the average of June–August 2026 with the average of March–May 2026. It is not year-over-year growth.
+
+| Country | Brand | Aug 2026 searches | Mar–May average | Jun–Aug average | Recent direction |
+|---|---|---:|---:|---:|---:|
+| US | Claude Code | 301,000 | 832,000 | 406,333 | -51% |
+| US | Cursor | 60,500 | 111,833 | 89,833 | -20% |
+| US | GitHub Copilot | 49,500 | 204,000 | 57,667 | -72% |
+| US | Replit | 201,000 | 264,333 | 189,000 | -28% |
+| UK | Claude Code | 60,500 | 136,667 | 75,000 | -45% |
+| UK | Cursor | 12,100 | 20,000 | 17,100 | -15% |
+| UK | GitHub Copilot | 12,100 | 24,100 | 14,100 | -41% |
+| UK | Replit | 40,500 | 53,167 | 43,500 | -18% |
+| Canada | Claude Code | 49,500 | 130,167 | 61,333 | -53% |
+| Canada | Cursor | 9,900 | 17,000 | 12,633 | -26% |
+| Canada | GitHub Copilot | 9,900 | 33,567 | 11,533 | -66% |
+| Canada | Replit | 27,100 | 38,033 | 29,100 | -23% |
+| Australia | Claude Code | 33,100 | 91,500 | 41,033 | -55% |
+| Australia | Cursor | 8,100 | 10,633 | 8,933 | -16% |
+| Australia | GitHub Copilot | 8,100 | 20,833 | 8,700 | -58% |
+| Australia | Replit | 22,200 | 25,467 | 23,833 | -6% |
+
+**What this means:** branded interest in AI coding tools remains material across all four markets, but these selected head terms declined from the March–May average to the June–August average. We must not describe them as currently surging based on this dataset. A decline in branded demand does not prove that generic "best AI coding tool" or task-based searches are declining; those exact queries still need separate research.
+
+### AI assistant brand demand: context only
+
+August 2026 head-term volume for Claude was about 7.48M in the US, 1.22M in the UK, 1.00M in Canada, and 1.22M in Australia in this dataset. These broad branded searches are much larger than the tool-selection terms StackPick can realistically target, and they do not measure demand for Claude Code comparisons or AI workflow tutorials.
+
+### Updated decision
+
+1. Keep AI coding tools and automation as a strategic pillar because it fits StackPick and has demonstrated product-search demand, but do not call every topic "trending" without recent query evidence.
+2. First investigate high-intent generic queries such as "best AI coding tools", "AI coding assistant", "best AI for React development", "best AI for Next.js development", "Claude Code vs Cursor", and "n8n vs Make vs Zapier" in Keyword Planner and the live SERPs for each target country.
+3. Treat brand-head-term volume as supporting evidence, not a page target by itself. A large branded query may be navigational and difficult to capture with a third-party comparison article.
+4. Continue the April–October research objective, but clearly label the current measurable dataset as March–August series / August latest month. The September 2026 snapshot does not provide September–October monthly search values yet.
+5. Do not use CPC as expected AdSense revenue. Use it only as a weak indicator of advertiser interest, then evaluate actual page RPM only after monetization is approved and ads serve.
+
+### Country-specific keyword research still outstanding
+
+The public dataset gives us a defensible brand-demand series but not complete generic-query data for the proposed content. The following must still be measured country-by-country:
+- best AI coding tools / best AI for coding
+- best AI for React / Next.js development
+- AI code editor
+- Claude Code vs Cursor / GitHub Copilot
+- n8n vs Make vs Zapier
+- n8n AI agents / n8n GitHub automation
+- best AI tools for DevOps / GitHub Actions / CI/CD
+- tool pricing, free-plan limits, and alternatives
+
+Do not mark the country-level generic keyword research milestone complete until the query-level metrics and SERP review are saved.
