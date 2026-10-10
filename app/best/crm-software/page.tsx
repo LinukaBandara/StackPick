@@ -13,8 +13,8 @@ export default function CrmSoftwarePage() {
     <ComparisonArticle
       title="Best CRM Software for Freelancers & Small Teams"
       slug="crm-software"
-      intro="If you have fewer than 10 clients you talk to regularly, a CRM may be overkill - a well-organized spreadsheet can work. Once lead follow-up starts slipping through the cracks, the right CRM becomes useful. We compare the practical fit, free access and trade-offs rather than rewarding the longest feature list."
-      pricingNote="CRM pricing tiers change often and vary by user count. We link each tool's current product page so you can verify today's plan limits and pricing before committing."
+      intro="If you have a small list of repeat clients and no missed follow-ups, a well-maintained spreadsheet may be enough. A CRM becomes useful when enquiries arrive from several channels, proposals need follow-up, or more than one person handles customer conversations. This guide compares solo-friendly and small-team options by contact and deal limits, reminders, automation, exportability and the cost of adding users."
+      pricingNote="Compare free CRM plans by the limits that affect real work: users, contacts, deal pipelines, email tracking, custom fields, automation, reporting and data export. A free tier may be excellent for one person but unsuitable for a team handoff. Confirm whether the features you need are permanently free or available only during a trial, and calculate the cost at your expected seat count."
       tools={[
         {
           name: "HubSpot CRM",
