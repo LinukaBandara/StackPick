@@ -1,0 +1,241 @@
+source_snapshot,category,country_code,country,brand,vendor,year_month,avg_monthly_searches
+2026-09,coding,US,United States,Claude Code,AI coding agent,2026-03,1000000
+2026-09,coding,US,United States,Claude Code,AI coding agent,2026-04,823000
+2026-09,coding,US,United States,Claude Code,AI coding agent,2026-05,673000
+2026-09,coding,US,United States,Claude Code,AI coding agent,2026-06,550000
+2026-09,coding,US,United States,Claude Code,AI coding agent,2026-07,368000
+2026-09,coding,US,United States,Claude Code,AI coding agent,2026-08,301000
+2026-09,coding,US,United States,VS Code,Editor,2026-03,301000
+2026-09,coding,US,United States,VS Code,Editor,2026-04,301000
+2026-09,coding,US,United States,VS Code,Editor,2026-05,246000
+2026-09,coding,US,United States,VS Code,Editor,2026-06,246000
+2026-09,coding,US,United States,VS Code,Editor,2026-07,201000
+2026-09,coding,US,United States,VS Code,Editor,2026-08,246000
+2026-09,coding,US,United States,Replit,Cloud IDE,2026-03,301000
+2026-09,coding,US,United States,Replit,Cloud IDE,2026-04,246000
+2026-09,coding,US,United States,Replit,Cloud IDE,2026-05,246000
+2026-09,coding,US,United States,Replit,Cloud IDE,2026-06,201000
+2026-09,coding,US,United States,Replit,Cloud IDE,2026-07,165000
+2026-09,coding,US,United States,Replit,Cloud IDE,2026-08,201000
+2026-09,coding,US,United States,Cursor,AI editor,2026-03,110000
+2026-09,coding,US,United States,Cursor,AI editor,2026-04,135000
+2026-09,coding,US,United States,Cursor,AI editor,2026-05,90500
+2026-09,coding,US,United States,Cursor,AI editor,2026-06,135000
+2026-09,coding,US,United States,Cursor,AI editor,2026-07,74000
+2026-09,coding,US,United States,Cursor,AI editor,2026-08,60500
+2026-09,coding,US,United States,GitHub Copilot,AI assistant,2026-03,201000
+2026-09,coding,US,United States,GitHub Copilot,AI assistant,2026-04,246000
+2026-09,coding,US,United States,GitHub Copilot,AI assistant,2026-05,165000
+2026-09,coding,US,United States,GitHub Copilot,AI assistant,2026-06,74000
+2026-09,coding,US,United States,GitHub Copilot,AI assistant,2026-07,49500
+2026-09,coding,US,United States,GitHub Copilot,AI assistant,2026-08,49500
+2026-09,coding,GB,United Kingdom,Claude Code,AI coding agent,2026-03,165000
+2026-09,coding,GB,United Kingdom,Claude Code,AI coding agent,2026-04,135000
+2026-09,coding,GB,United Kingdom,Claude Code,AI coding agent,2026-05,110000
+2026-09,coding,GB,United Kingdom,Claude Code,AI coding agent,2026-06,90500
+2026-09,coding,GB,United Kingdom,Claude Code,AI coding agent,2026-07,74000
+2026-09,coding,GB,United Kingdom,Claude Code,AI coding agent,2026-08,60500
+2026-09,coding,GB,United Kingdom,VS Code,Editor,2026-03,60500
+2026-09,coding,GB,United Kingdom,VS Code,Editor,2026-04,49500
+2026-09,coding,GB,United Kingdom,VS Code,Editor,2026-05,49500
+2026-09,coding,GB,United Kingdom,VS Code,Editor,2026-06,49500
+2026-09,coding,GB,United Kingdom,VS Code,Editor,2026-07,49500
+2026-09,coding,GB,United Kingdom,VS Code,Editor,2026-08,40500
+2026-09,coding,GB,United Kingdom,Replit,Cloud IDE,2026-03,60500
+2026-09,coding,GB,United Kingdom,Replit,Cloud IDE,2026-04,49500
+2026-09,coding,GB,United Kingdom,Replit,Cloud IDE,2026-05,49500
+2026-09,coding,GB,United Kingdom,Replit,Cloud IDE,2026-06,49500
+2026-09,coding,GB,United Kingdom,Replit,Cloud IDE,2026-07,40500
+2026-09,coding,GB,United Kingdom,Replit,Cloud IDE,2026-08,40500
+2026-09,coding,GB,United Kingdom,Cursor,AI editor,2026-03,18100
+2026-09,coding,GB,United Kingdom,Cursor,AI editor,2026-04,27100
+2026-09,coding,GB,United Kingdom,Cursor,AI editor,2026-05,14800
+2026-09,coding,GB,United Kingdom,Cursor,AI editor,2026-06,27100
+2026-09,coding,GB,United Kingdom,Cursor,AI editor,2026-07,12100
+2026-09,coding,GB,United Kingdom,Cursor,AI editor,2026-08,12100
+2026-09,coding,GB,United Kingdom,GitHub Copilot,AI assistant,2026-03,27100
+2026-09,coding,GB,United Kingdom,GitHub Copilot,AI assistant,2026-04,27100
+2026-09,coding,GB,United Kingdom,GitHub Copilot,AI assistant,2026-05,18100
+2026-09,coding,GB,United Kingdom,GitHub Copilot,AI assistant,2026-06,18100
+2026-09,coding,GB,United Kingdom,GitHub Copilot,AI assistant,2026-07,12100
+2026-09,coding,GB,United Kingdom,GitHub Copilot,AI assistant,2026-08,12100
+2026-09,coding,CA,Canada,Claude Code,AI coding agent,2026-03,165000
+2026-09,coding,CA,Canada,Claude Code,AI coding agent,2026-04,135000
+2026-09,coding,CA,Canada,Claude Code,AI coding agent,2026-05,90500
+2026-09,coding,CA,Canada,Claude Code,AI coding agent,2026-06,74000
+2026-09,coding,CA,Canada,Claude Code,AI coding agent,2026-07,60500
+2026-09,coding,CA,Canada,Claude Code,AI coding agent,2026-08,49500
+2026-09,coding,CA,Canada,VS Code,Editor,2026-03,40500
+2026-09,coding,CA,Canada,VS Code,Editor,2026-04,40500
+2026-09,coding,CA,Canada,VS Code,Editor,2026-05,49500
+2026-09,coding,CA,Canada,VS Code,Editor,2026-06,33100
+2026-09,coding,CA,Canada,VS Code,Editor,2026-07,33100
+2026-09,coding,CA,Canada,VS Code,Editor,2026-08,33100
+2026-09,coding,CA,Canada,Replit,Cloud IDE,2026-03,40500
+2026-09,coding,CA,Canada,Replit,Cloud IDE,2026-04,33100
+2026-09,coding,CA,Canada,Replit,Cloud IDE,2026-05,40500
+2026-09,coding,CA,Canada,Replit,Cloud IDE,2026-06,33100
+2026-09,coding,CA,Canada,Replit,Cloud IDE,2026-07,27100
+2026-09,coding,CA,Canada,Replit,Cloud IDE,2026-08,27100
+2026-09,coding,CA,Canada,Cursor,AI editor,2026-03,18100
+2026-09,coding,CA,Canada,Cursor,AI editor,2026-04,18100
+2026-09,coding,CA,Canada,Cursor,AI editor,2026-05,14800
+2026-09,coding,CA,Canada,Cursor,AI editor,2026-06,18100
+2026-09,coding,CA,Canada,Cursor,AI editor,2026-07,9900
+2026-09,coding,CA,Canada,Cursor,AI editor,2026-08,9900
+2026-09,coding,CA,Canada,GitHub Copilot,AI assistant,2026-03,27100
+2026-09,coding,CA,Canada,GitHub Copilot,AI assistant,2026-04,33100
+2026-09,coding,CA,Canada,GitHub Copilot,AI assistant,2026-05,40500
+2026-09,coding,CA,Canada,GitHub Copilot,AI assistant,2026-06,14800
+2026-09,coding,CA,Canada,GitHub Copilot,AI assistant,2026-07,9900
+2026-09,coding,CA,Canada,GitHub Copilot,AI assistant,2026-08,9900
+2026-09,coding,AU,Australia,Claude Code,AI coding agent,2026-03,110000
+2026-09,coding,AU,Australia,Claude Code,AI coding agent,2026-04,90500
+2026-09,coding,AU,Australia,Claude Code,AI coding agent,2026-05,74000
+2026-09,coding,AU,Australia,Claude Code,AI coding agent,2026-06,49500
+2026-09,coding,AU,Australia,Claude Code,AI coding agent,2026-07,40500
+2026-09,coding,AU,Australia,Claude Code,AI coding agent,2026-08,33100
+2026-09,coding,AU,Australia,VS Code,Editor,2026-03,33100
+2026-09,coding,AU,Australia,VS Code,Editor,2026-04,27100
+2026-09,coding,AU,Australia,VS Code,Editor,2026-05,27100
+2026-09,coding,AU,Australia,VS Code,Editor,2026-06,27100
+2026-09,coding,AU,Australia,VS Code,Editor,2026-07,27100
+2026-09,coding,AU,Australia,VS Code,Editor,2026-08,27100
+2026-09,coding,AU,Australia,Replit,Cloud IDE,2026-03,27100
+2026-09,coding,AU,Australia,Replit,Cloud IDE,2026-04,22200
+2026-09,coding,AU,Australia,Replit,Cloud IDE,2026-05,27100
+2026-09,coding,AU,Australia,Replit,Cloud IDE,2026-06,27100
+2026-09,coding,AU,Australia,Replit,Cloud IDE,2026-07,22200
+2026-09,coding,AU,Australia,Replit,Cloud IDE,2026-08,22200
+2026-09,coding,AU,Australia,Cursor,AI editor,2026-03,9900
+2026-09,coding,AU,Australia,Cursor,AI editor,2026-04,12100
+2026-09,coding,AU,Australia,Cursor,AI editor,2026-05,9900
+2026-09,coding,AU,Australia,Cursor,AI editor,2026-06,12100
+2026-09,coding,AU,Australia,Cursor,AI editor,2026-07,6600
+2026-09,coding,AU,Australia,Cursor,AI editor,2026-08,8100
+2026-09,coding,AU,Australia,GitHub Copilot,AI assistant,2026-03,18100
+2026-09,coding,AU,Australia,GitHub Copilot,AI assistant,2026-04,22200
+2026-09,coding,AU,Australia,GitHub Copilot,AI assistant,2026-05,22200
+2026-09,coding,AU,Australia,GitHub Copilot,AI assistant,2026-06,9900
+2026-09,coding,AU,Australia,GitHub Copilot,AI assistant,2026-07,8100
+2026-09,coding,AU,Australia,GitHub Copilot,AI assistant,2026-08,8100
+2026-09,ai,US,United States,ChatGPT,OpenAI,2026-03,124000000
+2026-09,ai,US,United States,ChatGPT,OpenAI,2026-04,124000000
+2026-09,ai,US,United States,ChatGPT,OpenAI,2026-05,124000000
+2026-09,ai,US,United States,ChatGPT,OpenAI,2026-06,101000000
+2026-09,ai,US,United States,ChatGPT,OpenAI,2026-07,101000000
+2026-09,ai,US,United States,ChatGPT,OpenAI,2026-08,124000000
+2026-09,ai,US,United States,Gemini,Google,2026-03,6120000
+2026-09,ai,US,United States,Gemini,Google,2026-04,6120000
+2026-09,ai,US,United States,Gemini,Google,2026-05,6120000
+2026-09,ai,US,United States,Gemini,Google,2026-06,5000000
+2026-09,ai,US,United States,Gemini,Google,2026-07,5000000
+2026-09,ai,US,United States,Gemini,Google,2026-08,5000000
+2026-09,ai,US,United States,Claude,Anthropic,2026-03,7480000
+2026-09,ai,US,United States,Claude,Anthropic,2026-04,9140000
+2026-09,ai,US,United States,Claude,Anthropic,2026-05,7480000
+2026-09,ai,US,United States,Claude,Anthropic,2026-06,7480000
+2026-09,ai,US,United States,Claude,Anthropic,2026-07,6120000
+2026-09,ai,US,United States,Claude,Anthropic,2026-08,7480000
+2026-09,ai,US,United States,Perplexity,Perplexity AI,2026-03,1830000
+2026-09,ai,US,United States,Perplexity,Perplexity AI,2026-04,1830000
+2026-09,ai,US,United States,Perplexity,Perplexity AI,2026-05,1220000
+2026-09,ai,US,United States,Perplexity,Perplexity AI,2026-06,1000000
+2026-09,ai,US,United States,Perplexity,Perplexity AI,2026-07,823000
+2026-09,ai,US,United States,Perplexity,Perplexity AI,2026-08,1000000
+2026-09,ai,US,United States,DeepSeek,DeepSeek,2026-03,1220000
+2026-09,ai,US,United States,DeepSeek,DeepSeek,2026-04,1220000
+2026-09,ai,US,United States,DeepSeek,DeepSeek,2026-05,1220000
+2026-09,ai,US,United States,DeepSeek,DeepSeek,2026-06,1000000
+2026-09,ai,US,United States,DeepSeek,DeepSeek,2026-07,1000000
+2026-09,ai,US,United States,DeepSeek,DeepSeek,2026-08,1000000
+2026-09,ai,GB,United Kingdom,ChatGPT,OpenAI,2026-03,30400000
+2026-09,ai,GB,United Kingdom,ChatGPT,OpenAI,2026-04,30400000
+2026-09,ai,GB,United Kingdom,ChatGPT,OpenAI,2026-05,30400000
+2026-09,ai,GB,United Kingdom,ChatGPT,OpenAI,2026-06,24900000
+2026-09,ai,GB,United Kingdom,ChatGPT,OpenAI,2026-07,24900000
+2026-09,ai,GB,United Kingdom,ChatGPT,OpenAI,2026-08,24900000
+2026-09,ai,GB,United Kingdom,Gemini,Google,2026-03,1000000
+2026-09,ai,GB,United Kingdom,Gemini,Google,2026-04,1000000
+2026-09,ai,GB,United Kingdom,Gemini,Google,2026-05,1220000
+2026-09,ai,GB,United Kingdom,Gemini,Google,2026-06,1220000
+2026-09,ai,GB,United Kingdom,Gemini,Google,2026-07,1000000
+2026-09,ai,GB,United Kingdom,Gemini,Google,2026-08,1000000
+2026-09,ai,GB,United Kingdom,Claude,Anthropic,2026-03,1500000
+2026-09,ai,GB,United Kingdom,Claude,Anthropic,2026-04,1830000
+2026-09,ai,GB,United Kingdom,Claude,Anthropic,2026-05,1830000
+2026-09,ai,GB,United Kingdom,Claude,Anthropic,2026-06,1830000
+2026-09,ai,GB,United Kingdom,Claude,Anthropic,2026-07,1500000
+2026-09,ai,GB,United Kingdom,Claude,Anthropic,2026-08,1220000
+2026-09,ai,GB,United Kingdom,Perplexity,Perplexity AI,2026-03,301000
+2026-09,ai,GB,United Kingdom,Perplexity,Perplexity AI,2026-04,246000
+2026-09,ai,GB,United Kingdom,Perplexity,Perplexity AI,2026-05,246000
+2026-09,ai,GB,United Kingdom,Perplexity,Perplexity AI,2026-06,201000
+2026-09,ai,GB,United Kingdom,Perplexity,Perplexity AI,2026-07,165000
+2026-09,ai,GB,United Kingdom,Perplexity,Perplexity AI,2026-08,165000
+2026-09,ai,GB,United Kingdom,DeepSeek,DeepSeek,2026-03,301000
+2026-09,ai,GB,United Kingdom,DeepSeek,DeepSeek,2026-04,301000
+2026-09,ai,GB,United Kingdom,DeepSeek,DeepSeek,2026-05,301000
+2026-09,ai,GB,United Kingdom,DeepSeek,DeepSeek,2026-06,246000
+2026-09,ai,GB,United Kingdom,DeepSeek,DeepSeek,2026-07,201000
+2026-09,ai,GB,United Kingdom,DeepSeek,DeepSeek,2026-08,201000
+2026-09,ai,CA,Canada,ChatGPT,OpenAI,2026-03,24900000
+2026-09,ai,CA,Canada,ChatGPT,OpenAI,2026-04,24900000
+2026-09,ai,CA,Canada,ChatGPT,OpenAI,2026-05,24900000
+2026-09,ai,CA,Canada,ChatGPT,OpenAI,2026-06,24900000
+2026-09,ai,CA,Canada,ChatGPT,OpenAI,2026-07,20400000
+2026-09,ai,CA,Canada,ChatGPT,OpenAI,2026-08,20400000
+2026-09,ai,CA,Canada,Gemini,Google,2026-03,1220000
+2026-09,ai,CA,Canada,Gemini,Google,2026-04,1220000
+2026-09,ai,CA,Canada,Gemini,Google,2026-05,1220000
+2026-09,ai,CA,Canada,Gemini,Google,2026-06,1220000
+2026-09,ai,CA,Canada,Gemini,Google,2026-07,1000000
+2026-09,ai,CA,Canada,Gemini,Google,2026-08,1000000
+2026-09,ai,CA,Canada,Claude,Anthropic,2026-03,1220000
+2026-09,ai,CA,Canada,Claude,Anthropic,2026-04,1500000
+2026-09,ai,CA,Canada,Claude,Anthropic,2026-05,1220000
+2026-09,ai,CA,Canada,Claude,Anthropic,2026-06,1220000
+2026-09,ai,CA,Canada,Claude,Anthropic,2026-07,1000000
+2026-09,ai,CA,Canada,Claude,Anthropic,2026-08,1000000
+2026-09,ai,CA,Canada,Perplexity,Perplexity AI,2026-03,301000
+2026-09,ai,CA,Canada,Perplexity,Perplexity AI,2026-04,246000
+2026-09,ai,CA,Canada,Perplexity,Perplexity AI,2026-05,201000
+2026-09,ai,CA,Canada,Perplexity,Perplexity AI,2026-06,165000
+2026-09,ai,CA,Canada,Perplexity,Perplexity AI,2026-07,135000
+2026-09,ai,CA,Canada,Perplexity,Perplexity AI,2026-08,110000
+2026-09,ai,CA,Canada,DeepSeek,DeepSeek,2026-03,301000
+2026-09,ai,CA,Canada,DeepSeek,DeepSeek,2026-04,246000
+2026-09,ai,CA,Canada,DeepSeek,DeepSeek,2026-05,246000
+2026-09,ai,CA,Canada,DeepSeek,DeepSeek,2026-06,201000
+2026-09,ai,CA,Canada,DeepSeek,DeepSeek,2026-07,165000
+2026-09,ai,CA,Canada,DeepSeek,DeepSeek,2026-08,165000
+2026-09,ai,AU,Australia,ChatGPT,OpenAI,2026-03,16600000
+2026-09,ai,AU,Australia,ChatGPT,OpenAI,2026-04,16600000
+2026-09,ai,AU,Australia,ChatGPT,OpenAI,2026-05,16600000
+2026-09,ai,AU,Australia,ChatGPT,OpenAI,2026-06,16600000
+2026-09,ai,AU,Australia,ChatGPT,OpenAI,2026-07,16600000
+2026-09,ai,AU,Australia,ChatGPT,OpenAI,2026-08,16600000
+2026-09,ai,AU,Australia,Gemini,Google,2026-03,550000
+2026-09,ai,AU,Australia,Gemini,Google,2026-04,550000
+2026-09,ai,AU,Australia,Gemini,Google,2026-05,673000
+2026-09,ai,AU,Australia,Gemini,Google,2026-06,550000
+2026-09,ai,AU,Australia,Gemini,Google,2026-07,550000
+2026-09,ai,AU,Australia,Gemini,Google,2026-08,550000
+2026-09,ai,AU,Australia,Claude,Anthropic,2026-03,1000000
+2026-09,ai,AU,Australia,Claude,Anthropic,2026-04,1220000
+2026-09,ai,AU,Australia,Claude,Anthropic,2026-05,1500000
+2026-09,ai,AU,Australia,Claude,Anthropic,2026-06,1220000
+2026-09,ai,AU,Australia,Claude,Anthropic,2026-07,1000000
+2026-09,ai,AU,Australia,Claude,Anthropic,2026-08,1220000
+2026-09,ai,AU,Australia,Perplexity,Perplexity AI,2026-03,246000
+2026-09,ai,AU,Australia,Perplexity,Perplexity AI,2026-04,165000
+2026-09,ai,AU,Australia,Perplexity,Perplexity AI,2026-05,165000
+2026-09,ai,AU,Australia,Perplexity,Perplexity AI,2026-06,135000
+2026-09,ai,AU,Australia,Perplexity,Perplexity AI,2026-07,110000
+2026-09,ai,AU,Australia,Perplexity,Perplexity AI,2026-08,110000
+2026-09,ai,AU,Australia,DeepSeek,DeepSeek,2026-03,201000
+2026-09,ai,AU,Australia,DeepSeek,DeepSeek,2026-04,165000
+2026-09,ai,AU,Australia,DeepSeek,DeepSeek,2026-05,201000
+2026-09,ai,AU,Australia,DeepSeek,DeepSeek,2026-06,135000
+2026-09,ai,AU,Australia,DeepSeek,DeepSeek,2026-07,110000
+2026-09,ai,AU,Australia,DeepSeek,DeepSeek,2026-08,135000
