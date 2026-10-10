@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import BestDirectory from "@/components/BestDirectory";
 
 export const metadata: Metadata = {
-  title: "All Software Comparisons",
+  title: "Software Comparisons & Practical Guides",
   description:
-    "Every StackPick comparison across accounting, sales, marketing, operations, IT, and infrastructure software for small businesses.",
+    "Browse practical software comparisons and step-by-step guides for freelancers and small businesses, organized by category and real-world task.",
   alternates: { canonical: "/best" },
 };
 
