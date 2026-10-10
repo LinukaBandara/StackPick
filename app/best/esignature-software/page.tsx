@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Best E-Signature Software for Small Business (2026)",
+  title: "Best E-Signature Software for Freelancers & Small Business (2026)",
   description:
-    "An honest comparison of DocuSign, PandaDoc, Dropbox Sign, and SignWell - covering when you need document creation, not just signing.",
+    "Compare DocuSign, Dropbox Sign, PandaDoc and SignWell for freelancers and small businesses, including free signing limits, templates, audit trails and proposal workflows.",
   alternates: { canonical: "/best/esignature-software" },
 };
 
 export default function Page() {
   return (
     <ComparisonArticle
-      title="Best E-Signature Software for Small Business"
+      title="Best E-Signature Software for Freelancers and Small Business"
       slug="esignature-software"
-      intro="The first question isn't which tool signs fastest - it's whether you need a signature tool or a document tool that also signs. If your bottleneck is building proposals and quotes, that's a different product than if you just need a contract signed quickly."
-      pricingNote="Several of these tools price per envelope/document at low volume and per-seat at higher volume - the two pricing models aren't directly comparable without knowing your actual monthly volume. Check current terms directly."
+      intro="Freelancers usually need a repeatable way to send a proposal or contract, collect a signature, and keep a record of what was signed. Small teams may also need templates, reminders, multiple senders, integrations and a clear audit trail. The key distinction is whether you need signing only or a proposal/document workflow that includes signing."
+      pricingNote="Free tiers can limit monthly signature requests, reusable templates, senders, branding or integrations; trial access is not a permanent free plan. Before choosing, check the current monthly envelope cap, template allowance, signer authentication, audit-trail availability, and whether the plan is billed per user or per document."
       tools={[
         {
           name: "DocuSign",
