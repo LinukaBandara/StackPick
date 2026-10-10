@@ -156,3 +156,64 @@ Success is not the number of URLs published. Track:
 - Valid ad revenue only after AdSense approval and actual ads serving
 
 No guaranteed rankings, traffic, AdSense approval, or earnings.
+
+
+## Public keyword-volume evidence found in the first research pass
+
+These are third-party snapshots published as Google Ads/Keyword Planner-derived data. They help shortlist topics but are not a substitute for a fresh, country-by-country export from StackPick's own research session. Preserve the exact query and snapshot date because close variants can have different intent.
+
+### US query snapshots
+
+| Exact query | Published monthly searches | Published top-of-page CPC | Snapshot date | Initial interpretation |
+|---|---:|---:|---|---|
+| best AI for coding | 8,100 | $16.89 | May/July 2026 dataset; related-query snapshot | Strong candidate for a job-specific best-of page |
+| best coding AI | 4,400 | $17.93 | 7 Jul 2026 | Same broad coding-tool intent cluster; avoid making a separate competing URL without SERP review |
+| AI coding tools | 2,400 | $13.14 | Related-query snapshot | Natural primary/supporting phrase for the same guide |
+| AI code editor | 2,900 | $11.71 | 6 Jul 2026 | Potentially distinct editor-focused intent; inspect SERP before deciding on a separate page |
+| AI-powered code generation tools | 880 | $4.95 | 16 May 2026 | More specific coding workflow/tool intent |
+
+Sources:
+- https://www.seodata.dev/keyword/best-coding-ai
+- https://www.seodata.dev/keyword/ai-code-editor
+- https://www.seodata.dev/keyword/ai-powered-code-generation-tools
+
+### Cross-market directional snapshot: “AI code tool”
+
+AiDemandLive reports the following for August 2026, based on its aggregation of Google Keyword Planner data:
+
+| Market | Average monthly searches | August 2026 searches | Reported YoY change | Minimum top-of-page bid |
+|---|---:|---:|---:|---:|
+| United States | 4,400 | 22,200 | +405% | $12.18 |
+| Canada | 390 | 3,600 | +823% | $11.84 |
+| Australia | 320 | 2,900 | +1,015% | $7.47 |
+| United Kingdom | 260 | 210 | -56% | $7.48 |
+
+Source: https://aidemandlive.com/trends/ai-code-tool
+
+Interpretation caution: “AI code tool” is not necessarily the best page's primary keyword. The large gap between trailing average and the August value, and the UK decline, show why one monthly spike should not be treated as stable demand. Validate related phrases such as “best AI for coding”, “AI coding assistant”, “AI code editor”, and brand/tool queries separately in each target market. CPC values are advertiser bid indicators, not predicted AdSense revenue.
+
+### Brand-demand signal: Claude AI
+
+AiDemandLive's August 2026 snapshot reports branded “Claude AI” search demand of 4.09M in the US, 1.0M in the UK, 673K in Canada, and 673K in Australia. The same report shows strong year-over-year growth in these markets. Source: https://aidemandlive.com/trends/claude-ai
+
+This is broad branded demand, not demand for “Claude Code vs Cursor” or another comparison. It supports checking the Claude/Claude Code topic cluster, but do not use these large branded totals to forecast visits to a StackPick page.
+
+### Trend and market signals that should influence research, not replace it
+
+- The 2026 Stack Overflow survey reports Claude Code and GitHub Copilot among the most-used coding agents/assistants in its respondent sample, and Make/n8n among the automation tools respondents use: https://survey.stackoverflow.co/2026/ai/data
+- JetBrains' May–July 2026 developer survey reports growing AI coding-agent adoption, including high Claude Code use in its US sample: https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/
+- A September 2026 developer-tools analysis reports rising React, Next.js and TypeScript package downloads, but downloads are not unique developers or search volume: https://stackness.dev/blog/trending-developer-tools-september-2026
+
+## First provisional shortlist
+
+Subject to SERP review and validation in all four markets:
+
+1. **Best AI for coding / best AI coding tools** — combine overlapping variants into one useful guide; include Claude Code, Cursor, Copilot, Codex and other relevant tools only after hands-on criteria are defined.
+2. **AI code editors** — validate whether search results show a distinct editor-selection intent before creating a separate page.
+3. **Claude Code vs Cursor** — high relevance to active tool selection, but country-level exact query volume and ranking difficulty remain unverified.
+4. **Best AI tools for React / Next.js development** — narrow job-specific guides; include real examples and tests, not just a product list.
+5. **n8n vs Make vs Zapier** — strong strategic fit with workflow automation; exact country-level search metrics remain unverified in this pass.
+6. **AI automation for GitHub / GitHub Actions** — workflow tutorial only if it can include a tested, reproducible implementation.
+7. **AI tools for DevOps and CI/CD troubleshooting** — research further after the first coding-tool cluster, because the exact keyword demand and SERP intent are not yet validated.
+
+The next research pass should retrieve monthly country data for the full seed list (April–October 2026 where available), compare the last three months with the prior three, inspect the live top 10 results, and record all findings in a dated CSV/table. Do not publish the entire shortlist automatically.
