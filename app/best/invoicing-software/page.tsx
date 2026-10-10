@@ -13,8 +13,8 @@ export default function InvoicingSoftwarePage() {
     <ComparisonArticle
       title="Best Invoicing Software for Freelancers"
       slug="invoicing-software"
-      intro="There is no single best invoicing tool - the right choice depends on invoice volume, payment method, bookkeeping needs and how much administrative work you want the software to handle. We focus on what actually changes the total cost and workflow rather than a feature checklist."
-      pricingNote="Invoicing pricing and plan limits change frequently. Payment processing fees can matter as much as the subscription price, so verify both the software plan and the payment method you expect clients to use."
+      intro="For a US freelancer, the right invoicing tool should make it easy to send a professional invoice, remind clients about overdue balances, accept the payment methods clients prefer, and export clean records for bookkeeping. A free plan can be enough when invoices are simple; recurring billing, time tracking, accounting reports or higher card-payment volume can change the calculation. This comparison separates free invoice creation from the cost of getting paid."
+      pricingNote="Before choosing, verify monthly invoice and client caps, recurring invoices, automatic reminders, custom branding, exports, payment methods supported for US businesses, and transaction fees. Compare total monthly cost at your expected payment volume—not just the advertised subscription. If you operate outside the US, check country eligibility before building around a payment processor."
       tools={[
         {
           name: "Wave",
