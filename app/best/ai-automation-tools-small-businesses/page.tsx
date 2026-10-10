@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
@@ -36,6 +37,16 @@ export default function Page() {
             <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Same task</p><p className="mt-2 text-sm leading-6 text-[#667085]">Compare tools on identical inputs instead of marketing demos.</p></div>
             <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Human review</p><p className="mt-2 text-sm leading-6 text-[#667085]">Count the time needed to fact-check, edit and approve the output.</p></div>
             <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Real limit</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check usage caps, paid gates and data controls before committing.</p></div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white">
+        <div className="sp-container pb-16">
+          <p className="sp-eyebrow">Related developer workflows</p>
+          <h2 className="sp-title mt-3">Build and maintain the automation stack.</h2>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <Link href="/best/n8n-vs-make-vs-zapier" className="rounded-2xl border border-[#e4e7ec] p-5"><strong>n8n vs Make vs Zapier</strong><span className="mt-2 block text-sm text-[#6e6e73]">Compare control, pricing drivers and failure handling.</span></Link>
+            <Link href="/best/llm-tools-for-developers" className="rounded-2xl border border-[#e4e7ec] p-5"><strong>LLM tools for developers</strong><span className="mt-2 block text-sm text-[#6e6e73]">Evaluate model APIs, cost and output reliability.</span></Link>
           </div>
         </div>
       </section>

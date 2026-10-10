@@ -16,10 +16,10 @@ export default function ContactPage() {
           Spotted outdated pricing, a broken link, or want to suggest a tool we should cover?
           Email{" "}
           <a
-            href="mailto:hello@stackpick.example"
+            href="mailto:stackpick.contact@gmail.com"
             className="text-[#004bb5] font-semibold hover:underline"
           >
-            hello@stackpick.example
+            stackpick.contact@gmail.com
           </a>
           .
         </p>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import SoftwareLogo from "@/components/SoftwareLogo";
 import type { ReactNode } from "react";
 
 export interface ComparisonTool {
@@ -141,7 +142,7 @@ export default function ComparisonArticle({
                 <span>Tool</span>
                 <span>Best for</span>
                 <span>Free option</span>
-                <span className="text-right">Pricing</span>
+                <span className="text-right">Official link</span>
               </div>
               {tools.map((tool, index) => (
                 <div
@@ -150,6 +151,7 @@ export default function ComparisonArticle({
                 >
                   <div className="flex items-center gap-3">
                     <span className="text-xs font-semibold text-[#86868b]">{String(index + 1).padStart(2, "0")}</span>
+                    <SoftwareLogo name={tool.name} url={tool.url} size="small" />
                     <span className="text-base font-semibold text-[#1d1d1f]">{tool.name}</span>
                   </div>
                   <p className="text-xs sm:text-sm text-[#6e6e73]">
@@ -167,7 +169,7 @@ export default function ComparisonArticle({
                       rel="noopener noreferrer"
                       className="inline-flex rounded-full bg-[#004bb5] px-3.5 py-1.5 text-xs font-semibold text-white transition hover:bg-[#00388c]"
                     >
-                      Pricing ↗
+                      Official site ↗
                     </a>
                   </div>
                 </div>
@@ -192,8 +194,13 @@ export default function ComparisonArticle({
               >
                 <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <span className="text-xs font-bold text-[#004bb5]">OPTION {String(index + 1).padStart(2, "0")}</span>
-                    <h3 className="mt-2 text-3xl font-bold tracking-tight text-[#1d1d1f]">{tool.name}</h3>
+                    <div className="flex items-center gap-3">
+                      <SoftwareLogo name={tool.name} url={tool.url} />
+                      <div>
+                        <span className="text-xs font-bold text-[#004bb5]">OPTION {String(index + 1).padStart(2, "0")}</span>
+                        <h3 className="mt-1 text-2xl sm:text-3xl font-bold tracking-tight text-[#1d1d1f]">{tool.name}</h3>
+                      </div>
+                    </div>
                     <p className="mt-1 text-sm text-[#6e6e73]">Best for {tool.bestFor}</p>
                   </div>
                   <a
@@ -202,7 +209,7 @@ export default function ComparisonArticle({
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center rounded-full bg-[#004bb5] px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-[#00388c] shrink-0"
                   >
-                    Check current pricing ↗
+                    Open official site ↗
                   </a>
                 </div>
 

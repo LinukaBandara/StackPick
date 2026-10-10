@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 
 export interface ArticleItem {
@@ -24,11 +24,20 @@ const CATEGORIES = [
   "Marketing",
   "People",
   "Infrastructure",
+  "Development",
+  "Automation",
 ];
 
 export default function BestDirectory({ articles }: BestDirectoryProps) {
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    const requestedCategory = new URLSearchParams(window.location.search).get("category");
+    if (requestedCategory && CATEGORIES.some((category) => category.toLowerCase() === requestedCategory.toLowerCase())) {
+      setActiveCategory(CATEGORIES.find((category) => category.toLowerCase() === requestedCategory.toLowerCase())!);
+    }
+  }, []);
 
   const filteredArticles = useMemo(() => {
     return articles.filter((item) => {
