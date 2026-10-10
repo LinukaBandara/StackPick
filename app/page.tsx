@@ -174,7 +174,7 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="mx-auto mt-10 w-full max-w-5xl sm:mt-16 lg:mt-20">
+          <div className="mx-auto mt-10 w-full max-w-4xl sm:mt-16 lg:mt-20">
             {/* Row 1: Customers, Invoices, Projects */}
             <div className="grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3">
               {ROW1_CATEGORIES.map((item) => (
