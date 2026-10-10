@@ -15,10 +15,10 @@ export default function Page() {
       intro="Compare Notion and ClickUp for small businesses and freelancers deciding between flexible knowledge work and dedicated project management."
       pricingNote="Pricing, limits and included features can change. Check the providers' current plans before making a decision."
       tools={[
-        { name: "Notion", bestFor: "Flexible docs, databases and lightweight workflows", freeOption: "Free plan available; verify current limits.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://www.notion.com/" },
-        { name: "ClickUp", bestFor: "Dedicated tasks and project workflows", freeOption: "Free and paid limits vary.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://clickup.com/" },
+        { name: "Notion", bestFor: "Flexible docs, databases and lightweight workflows", freeOption: "Free plan available; verify current limits.", tradeoff: "Its flexible databases and docs can keep notes and lightweight project tracking together, but you must design and maintain the workflow yourself.", url: "https://www.notion.com/" },
+        { name: "ClickUp", bestFor: "Dedicated tasks and project workflows", freeOption: "Free and paid limits vary.", tradeoff: "Its task-management features are more purpose-built for recurring work and ownership, but the breadth of views and settings can create setup overhead for a small team.", url: "https://clickup.com/" },
       ]}
-      bottomLine="There is no universal winner. The better tool is the one that handles your normal workflow with less friction at the price you can justify. Test the same job in both products before switching."
+      bottomLine="Choose Notion when your work revolves around connected documents, notes and a flexible lightweight database. Choose ClickUp when assigning tasks, tracking deadlines and managing repeatable project workflows is the priority. Run a one-week pilot with a real project before moving your team's work."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
