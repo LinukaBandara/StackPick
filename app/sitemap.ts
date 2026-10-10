@@ -101,6 +101,8 @@ const ROUTES = [
   "/best/llm-tools-for-developers",
   "/best/github-tools-for-developers",
   "/best/devops-tools-small-teams",
+  "/best/ai-agent-frameworks",
+  "/best/n8n-workflow-examples",
   "/best/ai-tools-small-businesses",
   "/best/ai-tools-freelancers",
   "/best/ai-writing-tools-small-businesses",
