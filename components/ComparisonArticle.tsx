@@ -171,6 +171,11 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/ai-productivity-tools-freelancers", title: "AI productivity tools for freelancers" },
     { href: "/best/ai-tools-freelancers", title: "AI tools for freelancers" },
   ],
+  "chatgpt-vs-claude-for-freelancers": [
+    { href: "/best/ai-tools-freelancers", title: "AI tools for freelancers" },
+    { href: "/best/ai-writing-tools-small-businesses", title: "AI writing tools for small businesses" },
+    { href: "/best/ai-productivity-tools-freelancers", title: "AI productivity tools for freelancers" },
+  ],
   "ai-tools-freelancers": [
     { href: "/best/ai-writing-tools-small-businesses", title: "AI writing tools for small business" },
     { href: "/best/ai-meeting-assistants", title: "AI meeting assistants" },
