@@ -24,18 +24,18 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick AI test</p>
-          <h2 className="sp-title mt-4 max-w-4xl">Measure the work saved, not the AI hype.</h2>
+          <p className="sp-eyebrow">Writing quality checklist</p>
+          <h2 className="sp-title mt-4 max-w-4xl">The best draft should sound like your business—not every business.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Give each tool the same realistic task. Record setup time, output quality, editing time,
-            usage limits, integrations and the point where a paid plan becomes relevant. For
-            business data, also check privacy, retention and administrator controls before putting
-            sensitive information into an AI service.
+            Before testing a writing tool, collect a few approved examples of your emails, product
+            descriptions or support replies. Ask for a new draft using the same audience and tone,
+            then check whether it preserves the facts and sounds specific to your offer. Do not
+            publish generic claims, invented testimonials or promises that your business cannot keep.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Same task</p><p className="mt-2 text-sm leading-6 text-[#667085]">Compare tools on identical inputs instead of marketing demos.</p></div>
-            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Human review</p><p className="mt-2 text-sm leading-6 text-[#667085]">Count the time needed to fact-check, edit and approve the output.</p></div>
-            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Real limit</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check usage caps, paid gates and data controls before committing.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Brand voice</p><p className="mt-2 text-sm leading-6 text-[#667085]">Use real examples and a short list of phrases or claims to avoid.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Accuracy</p><p className="mt-2 text-sm leading-6 text-[#667085]">Verify names, specifications, prices and policy details against approved sources.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Useful edits</p><p className="mt-2 text-sm leading-6 text-[#667085]">Track how much rewriting is needed before the draft is ready for customers.</p></div>
           </div>
         </div>
       </section>
