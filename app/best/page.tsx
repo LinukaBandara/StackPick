@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   description:
     "Browse practical software comparisons and step-by-step guides for freelancers and small businesses, organized by category and real-world task.",
   alternates: { canonical: "/best" },
+  openGraph: {
+    title: "Software Comparisons & Practical Guides",
+    description:
+      "Browse practical software comparisons and step-by-step guides for freelancers and small businesses, organized by category and real-world task.",
+    url: "/best",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Software Comparisons & Practical Guides",
+    description:
+      "Browse practical software comparisons and step-by-step guides for freelancers and small businesses, organized by category and real-world task.",
+  },
 };
 
 const ARTICLES = [
