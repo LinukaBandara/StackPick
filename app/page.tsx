@@ -91,8 +91,8 @@ export default function HomePage() {
   return (
     <>
       {/* 1. Hero Section */}
-      <section className="bg-white">
-        <div className="sp-container flex min-h-[700px] flex-col items-center justify-center py-20 text-center sm:min-h-[760px] sm:py-28">
+      <section className="sp-hero-section bg-white">
+        <div className="sp-container flex min-h-[620px] flex-col items-center justify-center py-16 text-center sm:min-h-[760px] sm:py-28">
           <p className="sp-eyebrow">Software, without the noise.</p>
           <h1 className="sp-display mt-6 max-w-5xl">
             Find the right tool.<br />
