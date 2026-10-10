@@ -22,14 +22,16 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick head-to-head test</p>
-          <h2 className="sp-title mt-4 max-w-4xl">Don't compare features. Compare the job.</h2>
+          <p className="sp-eyebrow">StackPick accounting workflow</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Test the month-end close, not just the dashboard.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Use one realistic workflow and run it through both products. Record setup time,
-            clicks, limits, collaboration friction, exports, integrations and the first feature
-            that requires an upgrade. The winner should make the recurring job easier, not simply
-            have the longer feature list.
+            Use a sample month that includes a bank statement, a supplier bill, a customer invoice and one expense. Check how each product handles reconciliation, corrections, recurring transactions and the handoff to your accountant. Then confirm local bank feeds, tax reports and payroll support in your country before treating either option as suitable.
           </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Bank reconciliation</p><p className="mt-2 text-sm leading-6 text-[#667085]">Can you match transactions and resolve exceptions without workarounds?</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Accountant handoff</p><p className="mt-2 text-sm leading-6 text-[#667085]">Can your accountant access reports and review changes with the right permissions?</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Local compliance</p><p className="mt-2 text-sm leading-6 text-[#667085]">Verify bank feeds, tax reports and payroll availability for your jurisdiction.</p></div>
+          </div>
         </div>
       </section>
     </ComparisonArticle>
