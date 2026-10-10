@@ -1,46 +1,114 @@
 # StackPick
 
-> Independent, budget-focused comparisons of business software for freelancers and small
-> teams. Some links are affiliate links (see /affiliate-disclosure); this does not change
-> which tools are recommended — recommendations are based on fit, not commission.
-> Google Analytics is configured to measure site usage. Display ads are not currently served.
+> Independent, practical software guides for freelancers and small businesses. We focus on fit, workflow, limitations and trade-offs rather than feature counts alone. Vendor links currently go directly to the vendors; StackPick does not currently earn affiliate commissions from those links. Google Analytics is configured. Display ads are not currently served.
 
-## Comparisons
-- [Best Invoicing Software for Freelancers](/best/invoicing-software): Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks.
-- [Best Accounting Software for Small Business](/best/accounting-software): Xero, QuickBooks, Wave, Zoho Books.
-- [Best Payroll Software for Small Business](/best/payroll-software): Gusto, QuickBooks Payroll, OnPay, Patriot Software.
-- [Best Expense Management Software for Small Business](/best/expense-management-software): Expensify, Ramp, Zoho Expense.
-- [Best CRM Software for Freelancers & Small Teams](/best/crm-software): HubSpot, Pipedrive, Zoho CRM, Notion.
-- [Best Email Marketing Software for Small Business](/best/email-marketing-software): Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit.
-- [Best Social Media Scheduling Tool for Small Business](/best/social-media-scheduling): Buffer, Hootsuite, Later.
-- [Best Project Management Software for Small Teams](/best/project-management-software): Trello, Asana, ClickUp, monday.com.
-- [Best Website Builder for Small Business](/best/website-builders): Squarespace, Wix, Shopify, Webflow.
-- [Best Appointment Scheduling Software for Small Business](/best/appointment-scheduling-software): Calendly, Acuity Scheduling, Cal.com.
-- [Best Form Builder for Small Business](/best/form-builders): Google Forms, Typeform, Jotform.
-- [Best Cloud Storage for Small Business Teams](/best/cloud-storage): Google Drive, Dropbox, Microsoft OneDrive.
-- [Best Inventory Management Software for Small Business](/best/inventory-management-software): Zoho Inventory, Sortly, Square for Retail, inFlow.
-- [Best POS System for Small Business](/best/pos-systems): Square, Toast, Clover, Shopify POS.
-- [Best Online Course Platform for Creators & Small Business](/best/online-course-platforms): Teachable, Thinkific, Kajabi.
-- [Best Contract Management Software for Small Business](/best/contract-management-software): PandaDoc, Concord, ContractSafe.
-- [Best Business VPN for Remote Teams](/best/business-vpn): NordLayer, Perimeter 81, Twingate, Cloudflare Zero Trust.
-- [Best Password Manager for Business Teams](/best/password-managers): 1Password, Bitwarden, Keeper, NordPass.
-- [Best Help Desk Software for Small Business](/best/help-desk-software): Help Scout, Freshdesk, Zoho Desk, Gorgias.
-- [Best E-Signature Software for Small Business](/best/esignature-software): DocuSign, PandaDoc, Dropbox Sign, SignWell.
-- [Best Time Tracking Software for Freelancers & Small Teams](/best/time-tracking-software): Toggl Track, Clockify, Harvest, Hubstaff.
-- [Best Web Hosting for Small Business](/best/web-hosting): Hostinger, SiteGround, Bluehost, Cloudways.
-- [Best Business Phone System (VoIP) for Small Business](/best/business-phone-voip): Nextiva, RingCentral, Ooma, Grasshopper.
-- [Best Live Chat Software for Small Business Websites](/best/live-chat-software): Tidio, Crisp, Intercom, Tawk.to.
-- [Best Antivirus & Endpoint Security for Small Business](/best/antivirus-endpoint-security): Bitdefender GravityZone, Microsoft Defender for Endpoint, Norton Small Business, CrowdStrike.
-- [Best HR Software for Small Business](/best/hr-software): BambooHR, Gusto, Rippling, Deel.
-- [Best Survey & Customer Feedback (NPS) Software for Small Business](/best/survey-nps-software): SurveyMonkey, Delighted, Zoho Survey.
-- [Best Video Conferencing Software for Small Business](/best/video-conferencing): Zoom, Google Meet, Microsoft Teams, Whereby.
-- [Best Cloud Backup Software for Small Business](/best/cloud-backup-software): Backblaze, IDrive, Acronis Cyber Protect, Carbonite.
-- [Best Applicant Tracking System (ATS) for Small Business](/best/applicant-tracking-software): Breezy HR, Zoho Recruit, Workable, Greenhouse.
-- [Best Employee Scheduling Software for Small Business](/best/employee-scheduling-software): When I Work, Deputy, Connecteam, 7shifts.
-- [Best Business Email Hosting for Small Business](/best/business-email-hosting): Google Workspace, Microsoft 365, Zoho Mail, Proton Mail.
+## Start here
+- [StackPick homepage](/): overview of the publication and its approach.
+- [All software guides](/best): searchable, category-filtered directory of 100 guides.
+- [About StackPick](/about): editorial approach and scope.
+- [Affiliate Disclosure](/affiliate-disclosure): current commercial-link status and future disclosure policy.
+- [Privacy Policy](/privacy): analytics and current advertising status.
+- [Contact](/contact): corrections and enquiries.
 
-## Policies
-- [About](/about)
-- [Affiliate Disclosure](/affiliate-disclosure): Explains affiliate links and how they do/don't influence recommendations.
-- [Privacy Policy](/privacy): Explains analytics, affiliate links, and the site's current advertising status.
-- [Contact](/contact)
+## Guides
+
+- [Best Invoicing Software for Freelancers](/best/invoicing-software) (Finance): Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks
+- [Best Accounting Software for Small Business](/best/accounting-software) (Finance): Xero, QuickBooks, Wave, Zoho Books
+- [Best Payroll Software for Small Business](/best/payroll-software) (People): Gusto, QuickBooks Payroll, OnPay, Patriot Software
+- [Best Expense Management Software for Small Business](/best/expense-management-software) (Finance): Expensify, Ramp, Zoho Expense
+- [Best CRM Software for Freelancers & Small Teams](/best/crm-software) (Sales): HubSpot, Pipedrive, Zoho CRM, Notion
+- [Best Email Marketing Software for Small Business](/best/email-marketing-software) (Marketing): Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit
+- [Best Social Media Scheduling Tool for Small Business](/best/social-media-scheduling) (Marketing): Buffer, Hootsuite, Later
+- [Best Project Management Software for Small Teams](/best/project-management-software) (Productivity): Trello, Asana, ClickUp, monday.com
+- [Best Website Builder for Small Business](/best/website-builders) (Marketing): Squarespace, Wix, Shopify, Webflow
+- [Best Appointment Scheduling Software for Small Business](/best/appointment-scheduling-software) (Operations): Calendly, Acuity Scheduling, Cal.com
+- [Best Form Builder for Small Business](/best/form-builders) (Productivity): Google Forms, Typeform, Jotform
+- [Best Cloud Storage for Small Business Teams](/best/cloud-storage) (Security): Google Drive, Dropbox, Microsoft OneDrive
+- [Best Inventory Management Software for Small Business](/best/inventory-management-software) (Operations): Zoho Inventory, Sortly, Square for Retail, inFlow
+- [Best POS System for Small Business](/best/pos-systems) (Finance): Square, Toast, Clover, Shopify POS
+- [Best Online Course Platform for Creators & Small Business](/best/online-course-platforms) (Marketing): Teachable, Thinkific, Kajabi
+- [Best Contract Management Software for Small Business](/best/contract-management-software) (Operations): PandaDoc, Concord, ContractSafe
+- [Best Business VPN for Remote Teams](/best/business-vpn) (Security): NordLayer, Perimeter 81, Twingate, Cloudflare Zero Trust
+- [Best Password Manager for Business Teams](/best/password-managers) (Security): 1Password, Bitwarden, Keeper, NordPass
+- [Best Help Desk Software for Small Business](/best/help-desk-software) (Operations): Help Scout, Freshdesk, Zoho Desk, Gorgias
+- [Best E-Signature Software for Small Business](/best/esignature-software) (Operations): DocuSign, PandaDoc, Dropbox Sign, SignWell
+- [Best Time Tracking Software for Freelancers & Small Teams](/best/time-tracking-software) (Productivity): Toggl Track, Clockify, Harvest, Hubstaff
+- [Best Web Hosting for Small Business](/best/web-hosting) (Infrastructure): Hostinger, SiteGround, Bluehost, Cloudways
+- [Best Business Phone System (VoIP) for Small Business](/best/business-phone-voip) (Operations): Nextiva, RingCentral, Ooma, Grasshopper
+- [Best Live Chat Software for Small Business Websites](/best/live-chat-software) (Sales): Tidio, Crisp, Intercom, Tawk.to
+- [Best Antivirus & Endpoint Security for Small Business](/best/antivirus-endpoint-security) (Security): Bitdefender GravityZone, Microsoft Defender for Endpoint, Norton Small Business, CrowdStrike
+- [Best HR Software for Small Business](/best/hr-software) (People): BambooHR, Gusto, Rippling, Deel
+- [Best Survey & Customer Feedback (NPS) Software for Small Business](/best/survey-nps-software) (Marketing): SurveyMonkey, Delighted, Zoho Survey
+- [Best Video Conferencing Software for Small Business](/best/video-conferencing) (Productivity): Zoom, Google Meet, Microsoft Teams, Whereby
+- [Best Cloud Backup Software for Small Business](/best/cloud-backup-software) (Security): Backblaze, IDrive, Acronis Cyber Protect, Carbonite
+- [Best Applicant Tracking System (ATS) for Small Business](/best/applicant-tracking-software) (People): Breezy HR, Zoho Recruit, Workable, Greenhouse
+- [Best Employee Scheduling Software for Small Business](/best/employee-scheduling-software) (People): When I Work, Deputy, Connecteam, 7shifts
+- [Best Business Email Hosting for Small Business](/best/business-email-hosting) (Infrastructure): Google Workspace, Microsoft 365, Zoho Mail, Proton Mail
+- [Best CRM for Freelancers](/best/crm-for-freelancers) (Sales): Track leads, client conversations and follow-ups without creating a heavy sales process.
+- [Best CRM for Small Businesses](/best/crm-for-small-businesses) (Sales): Compare customer-management tools by team fit, pipeline visibility and everyday administration.
+- [Best Free CRM Software](/best/free-crm-software) (Sales): Understand the limits that matter in free CRM plans, including users, contacts and automation.
+- [Best CRM for Solopreneurs](/best/crm-for-solopreneurs) (Sales): A lightweight way to organize prospects, client notes and next actions when you work alone.
+- [Best Invoicing Software for Freelancers](/best/invoicing-for-freelancers) (Finance): Compare invoice creation, reminders, payment collection and client-friendly workflows.
+- [Best Free Invoicing Software](/best/free-invoicing-software) (Finance): Compare free invoice tools and check payment, client and monthly-document limits.
+- [Best Invoicing for Small Businesses](/best/invoicing-for-small-businesses) (Finance): Find an invoicing workflow that supports recurring bills, overdue follow-ups and bookkeeping.
+- [Best Accounting Software for Freelancers](/best/accounting-for-freelancers) (Finance): Compare expense tracking, tax-time organization and reports for independent workers.
+- [Best Accounting Software for Small Businesses](/best/accounting-for-small-businesses) (Finance): Evaluate bookkeeping tools by bank feeds, reconciliation, reporting and accountant access.
+- [Best Free Accounting Software](/best/free-accounting-software) (Finance): Understand what free accounting tools cover and when limits make a paid plan necessary.
+- [Best Project Management for Small Teams](/best/project-management-for-small-teams) (Productivity): Compare task ownership, deadlines and team visibility without enterprise-level overhead.
+- [Best Free Project Management Software](/best/free-project-management-software) (Productivity): Compare free task and project tools by seats, projects, views and collaboration limits.
+- [Best Project Management for Freelancers](/best/project-management-for-freelancers) (Productivity): Organize client work, deadlines and reviews while keeping administration manageable.
+- [Best Website Builder for Small Businesses](/best/website-builder-for-small-businesses) (Marketing): Compare site builders by design control, maintenance, commerce needs and ownership trade-offs.
+- [Best Website Builder for Freelancers](/best/website-builder-for-freelancers) (Marketing): Choose a portfolio or service-site builder based on launch speed, flexibility and upkeep.
+- [Best Free Website Builders](/best/free-website-builders) (Marketing): Check branding, domain, storage and publishing restrictions before choosing a free builder.
+- [Best Scheduling Software for Small Businesses](/best/scheduling-for-small-businesses) (Operations): Compare booking, reminders, staff calendars and client self-service for service businesses.
+- [Best Free Scheduling Software](/best/free-scheduling-software) (Operations): Review free booking tools and verify calendar, appointment and notification limits.
+- [HubSpot vs Pipedrive](/best/hubspot-vs-pipedrive) (Sales): Compare a broader customer platform with a sales-focused pipeline workflow.
+- [HubSpot vs Zoho CRM](/best/hubspot-vs-zoho-crm) (Sales): Compare ease of adoption, customization and the systems your sales process needs.
+- [Pipedrive vs Zoho CRM](/best/pipedrive-vs-zoho-crm) (Sales): Choose between pipeline-focused selling and a more configurable CRM workflow.
+- [QuickBooks vs Xero](/best/quickbooks-vs-xero) (Finance): Compare accounting workflows, reporting, bank reconciliation and accountant collaboration.
+- [QuickBooks vs FreshBooks](/best/quickbooks-vs-freshbooks) (Finance): Compare broader bookkeeping needs with freelancer-friendly invoicing and client workflows.
+- [FreshBooks vs Wave](/best/freshbooks-vs-wave) (Finance): Compare invoice-first workflows, bookkeeping needs and the total cost of paid features.
+- [Trello vs Asana](/best/trello-vs-asana) (Productivity): Compare visual boards with more structured project ownership and deadline coordination.
+- [Asana vs ClickUp](/best/asana-vs-clickup) (Productivity): Compare structured project coordination with a highly configurable workspace.
+- [ClickUp vs monday.com](/best/clickup-vs-monday) (Productivity): Compare customizable workspaces, visual boards, reporting and administration effort.
+- [Notion vs ClickUp](/best/notion-vs-clickup) (Productivity): Compare flexible documentation and knowledge work with task-focused project management.
+- [Calendly vs Google Calendar](/best/calendly-vs-google-calendar) (Operations): Compare dedicated booking links with calendar-native scheduling for your appointment flow.
+- [Mailchimp vs Brevo](/best/mailchimp-vs-brevo) (Marketing): Compare audience billing, campaign workflows and multi-channel marketing needs.
+- [Mailchimp vs MailerLite](/best/mailchimp-vs-mailerlite) (Marketing): Compare newsletter workflows, audience growth, automation and plan restrictions.
+- [Zoho Invoice vs Wave](/best/zoho-invoice-vs-wave) (Finance): Compare invoice creation, payment collection and the accounting workflow around each tool.
+- [Canva vs Adobe Express](/best/canva-vs-adobe-express) (Marketing): Compare quick brand assets, templates, collaboration and design-workflow fit.
+- [HubSpot Alternatives for Small Businesses](/best/hubspot-alternatives-small-businesses) (Sales): Explore customer-management options when cost, complexity or feature sprawl becomes a concern.
+- [Salesforce Alternatives for Small Businesses](/best/salesforce-alternatives-small-businesses) (Sales): Compare simpler CRM options for teams that do not need a highly customized enterprise setup.
+- [QuickBooks Alternatives](/best/quickbooks-alternatives) (Finance): Compare bookkeeping alternatives by accounting workflow, reporting and migration requirements.
+- [FreshBooks Alternatives](/best/freshbooks-alternatives) (Finance): Explore invoicing and accounting alternatives based on client work and reporting needs.
+- [Calendly Alternatives](/best/calendly-alternatives) (Operations): Compare booking tools by calendar connections, team scheduling and customization.
+- [Mailchimp Alternatives](/best/mailchimp-alternatives) (Marketing): Explore email marketing options based on audience pricing, automation and campaign workflow.
+- [Slack Alternatives for Small Teams](/best/slack-alternatives-small-teams) (Productivity): Compare team messaging options by search, integrations, guest access and notification noise.
+- [Trello Alternatives](/best/trello-alternatives) (Productivity): Find other visual task and project tools when boards no longer fit your workflow.
+- [Asana Alternatives](/best/asana-alternatives) (Productivity): Compare project-management alternatives by usability, reporting, workflow structure and cost.
+- [Notion Alternatives for Small Businesses](/best/notion-alternatives-small-businesses) (Productivity): Compare knowledge-base and workspace tools by structure, collaboration and maintenance.
+- [Free CRM Without a Credit Card](/best/free-crm-without-credit-card) (Sales): Compare CRM trials and free plans while checking signup requirements and usage limits.
+- [Free Project Management Without a Credit Card](/best/free-project-management-without-credit-card) (Productivity): Find project tools with no-card signup options and verify the limits before adopting one.
+- [Free Invoicing Without a Credit Card](/best/free-invoicing-without-credit-card) (Finance): Review invoice tools with no-card signup options and check payment or document restrictions.
+- [Free Website Builders With No Coding](/best/free-website-builders-no-coding) (Marketing): Compare beginner-friendly builders and check free publishing, branding and domain limits.
+- [Free Business Tools for Freelancers](/best/free-business-tools-for-freelancers) (Productivity): Build a lean tool stack for client work, invoicing, scheduling and project organization.
+- [How to Choose Software for a Small Business](/best/how-to-choose-software-small-business) (Productivity): A practical framework for defining requirements, testing tools and avoiding unnecessary subscriptions.
+- [How Much Business Software Do You Need?](/best/how-much-business-software-do-you-need) (Productivity): Identify overlapping subscriptions and decide which tools genuinely improve your workflow.
+- [A Simple Small-Business Software Stack](/best/simple-small-business-software-stack) (Productivity): Plan a minimal set of tools for customers, projects, invoicing and communication.
+- [Track Business Expenses Without Spreadsheets](/best/track-business-expenses-without-spreadsheets) (Finance): Compare ways to capture receipts, categorize spending and prepare usable expense records.
+- [How to Invoice Clients as a Freelancer](/best/invoice-clients-as-freelancer) (Finance): A practical workflow for invoice details, due dates, payment reminders and record keeping.
+- [Manage Client Projects Without a Full-Time Team](/best/manage-client-projects-without-full-time-team) (Productivity): Set expectations, assign ownership and track delivery across a small or freelance team.
+- [Automate Repetitive Small-Business Tasks](/best/automate-repetitive-small-business-tasks) (Operations): Find repeatable workflows worth automating and plan safeguards for errors and handoffs.
+- [Manage Customer Leads as a Freelancer](/best/manage-customer-leads-as-freelancer) (Sales): Create a simple process for lead capture, follow-up, qualification and next actions.
+- [Free vs Paid Business Software](/best/free-vs-paid-business-software) (Productivity): Decide when plan limits, time savings, support or collaboration justify paying.
+- [Switch Business Software Without Losing Data](/best/switch-business-software-without-losing-data) (Operations): Plan exports, field mapping, permissions, testing and a safe cutover before migration.
+- [AI Tools for Small Businesses](/best/ai-tools-small-businesses) (Productivity): Evaluate AI tools by specific business tasks, review requirements, privacy and total cost.
+- [AI Tools for Freelancers](/best/ai-tools-freelancers) (Productivity): Compare AI workflows for research, writing, planning and admin without adding tool sprawl.
+- [AI Writing Tools for Small Businesses](/best/ai-writing-tools-small-businesses) (Marketing): Compare drafting and editing workflows while keeping fact-checking and human review in place.
+- [AI Meeting Assistants](/best/ai-meeting-assistants) (Productivity): Evaluate meeting notes, summaries, consent, integrations and how recordings are handled.
+- [AI Customer Support Tools](/best/ai-customer-support-tools) (Operations): Compare support automation by handoff quality, knowledge sources and escalation controls.
+- [AI Productivity Tools for Freelancers](/best/ai-productivity-tools-freelancers) (Productivity): Identify useful automations for planning and admin while checking output quality and privacy.
+- [AI Marketing Tools for Small Businesses](/best/ai-tools-marketing-small-businesses) (Marketing): Compare AI-assisted campaign workflows with brand review, accuracy and approval steps.
+- [AI Tools for Business Content](/best/ai-tools-business-content) (Marketing): Evaluate content tools by editing control, factual verification and repeatable publishing workflow.
+- [AI Automation Tools for Small Businesses](/best/ai-automation-tools-small-businesses) (Operations): Compare task automation options by integrations, failure handling, permissions and monitoring.
+- [Free AI Tools for Small Businesses](/best/free-ai-tools-small-businesses) (Productivity): Check free usage caps, data policies and upgrade triggers before building a workflow around AI.
