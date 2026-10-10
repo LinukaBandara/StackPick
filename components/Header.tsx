@@ -27,13 +27,13 @@ export default function Header() {
           <span>StackPick</span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
-          <Link href="/best" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
+          <Link href="/categories" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
             Categories
           </Link>
-          <Link href="/best" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
+          <Link href="/comparisons" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
             Comparisons
           </Link>
-          <Link href="/best" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
+          <Link href="/guides" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
             Guides
           </Link>
         </nav>
