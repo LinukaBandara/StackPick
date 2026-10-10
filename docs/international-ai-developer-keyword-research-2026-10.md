@@ -281,3 +281,42 @@ The public dataset gives us a defensible brand-demand series but not complete ge
 - tool pricing, free-plan limits, and alternatives
 
 Do not mark the country-level generic keyword research milestone complete until the query-level metrics and SERP review are saved.
+
+
+## Recent AI coding query signals — August 2026 public snapshots
+
+AiDemandLive's August 2026 category report aggregates Google Keyword Planner data across 10 English-speaking markets. It reports these combined-market terms and year-over-year directions:
+
+| Keyword / tracked phrase | Average searches per month across 10 markets | Reported YoY change | Editorial interpretation |
+|---|---:|---:|---|
+| AI powered coding assistant | 18K | +122% | Strong candidate to validate for a practical assistant guide |
+| AI coding assistant | 16K | +83% | Strong candidate; validate generic-query intent by country |
+| Codex AI | 12K | +1,721% | Investigate immediately, but check brand ambiguity, freshness, and SERPs before choosing a page |
+| AI code tool | 8K trailing average; 54,410 in August | +555% | Interesting emerging phrase; latest-month spike means trend may be volatile |
+| GitHub Copilot Pricing | About 15K across markets in the July snapshot | -6% | Pricing intent is commercially useful; data is July and not all markets have a non-null latest-month value |
+| Intelligent automation tools | About 2K trailing average; 10,450 in August | -64% | Do not prioritize this exact broad phrase; use specific task/tool queries instead |
+
+Sources:
+- AI coding & developer tools category, August 2026: https://aidemandlive.com/category/ai-coding-developer-tools
+- AI code tool, country-level August 2026 table: https://aidemandlive.com/trends/ai-code-tool
+- GitHub Copilot Pricing, July 2026: https://aidemandlive.com/trends/github-copilot-pricing
+- Intelligent Automation Tools, August 2026: https://aidemandlive.com/trends/intelligent-automation-tools
+
+Country-level "AI code tool" latest-month metrics from the August snapshot:
+- US: 22,200 searches (published trailing average 4,400/mo; YoY +405%)
+- Canada: 3,600 (trailing average 390/mo; YoY +823%)
+- Australia: 2,900 (trailing average 320/mo; YoY +1,015%)
+- UK: 210 (trailing average 260/mo; YoY -56%)
+
+The extreme difference between trailing averages and latest-month counts is a warning: do not extrapolate a one-month spike. Also, the phrase "AI code tool" may not match the language users use for a high-intent best-of article. We must inspect actual SERPs and related query variants.
+
+### Refined first-batch topic decision
+
+1. **Best AI coding assistants / AI-powered coding assistants** — top candidate for a validated best-of guide, because the tracked phrases show growth across the 10-market dataset and fit StackPick's discovery model. Must distinguish tool types (IDE, repo agent, chat assistant, code review) and test the tools.
+2. **Codex AI / AI coding agents** — urgent SERP review because of the large reported year-over-year increase. Do not blindly create a page targeting only the ambiguous "Codex AI" phrase; verify the exact current product intent and the competing results.
+3. **AI code tool / best AI for coding** — validate exact query language, country splits, and SERP type. Treat latest-month volume as volatile.
+4. **GitHub Copilot pricing and alternatives** — evaluate whether a single-tool pricing guide or alternatives comparison best matches current results. Verify all plan details from official sources before publication.
+5. **Claude Code vs Cursor** — keep as a candidate comparison due to relevant tool-choice intent, but do not describe the exact branded demand as rising based on March–August data; the tracked brand series declined over the latest three-month average.
+6. **n8n / AI automation** — continue query research around task-based automation and product comparisons. The exact broad phrase "intelligent automation tools" is not a good priority based on its reported decline.
+
+All values above are third-party public snapshots of Google Keyword Planner data, not Search Console results for StackPick. Aggregated 10-market volumes must not be presented as US-only or as the sum of only the four target countries.
