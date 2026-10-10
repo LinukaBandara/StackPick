@@ -152,10 +152,12 @@ export default function HomePage() {
       {/* 2. Dark Showcase Section (Software for the work you do) */}
       <section className="bg-black text-white">
         <div className="sp-container py-14 sm:py-24 lg:py-32">
-          <p className="sp-eyebrow text-[#a1a1a6]">What are you looking for?</p>
-          <h2 className="sp-title mt-3 max-w-3xl text-white text-[clamp(2rem,8vw,4.2rem)] leading-[1.05]">
-            Software for the work you do.
-          </h2>
+          <div className="max-w-5xl">
+            <p className="sp-eyebrow text-[#a1a1a6]">What are you looking for?</p>
+            <h2 className="sp-title mt-3 max-w-none text-balance text-white text-[clamp(2.25rem,5.2vw,4.2rem)] leading-[1.05]">
+              Software for the work you do.
+            </h2>
+          </div>
 
           <div className="mt-10 sm:mt-16 lg:mt-20">
             {/* Row 1: Customers, Invoices, Projects */}
