@@ -122,6 +122,7 @@ const ARTICLES = [
   { href: "/best/n8n-workflow-examples", title: "Practical n8n Workflow Examples", desc: "Build lead intake, support triage and reporting workflows with safe failure handling.", category: "Automation" },
   { href: "/best/ai-tools-small-businesses", title: "AI Tools for Small Businesses", desc: "Evaluate AI tools by specific business tasks, review requirements, privacy and total cost.", category: "Productivity" },
   { href: "/best/ai-tools-freelancers", title: "AI Tools for Freelancers", desc: "Compare AI workflows for research, writing, planning and admin without adding tool sprawl.", category: "Productivity" },
+  { href: "/best/chatgpt-vs-claude-for-freelancers", title: "ChatGPT vs Claude for Freelancers", desc: "Compare the assistants on proposal writing, long briefs, free usage and review effort.", category: "Productivity" },
   { href: "/best/ai-writing-tools-small-businesses", title: "AI Writing Tools for Small Businesses", desc: "Compare drafting and editing workflows while keeping fact-checking and human review in place.", category: "Marketing" },
   { href: "/best/ai-meeting-assistants", title: "AI Meeting Assistants", desc: "Evaluate meeting notes, summaries, consent, integrations and how recordings are handled.", category: "Productivity" },
   { href: "/best/ai-customer-support-tools", title: "AI Customer Support Tools", desc: "Compare support automation by handoff quality, knowledge sources and escalation controls.", category: "Operations" },
