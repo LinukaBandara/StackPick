@@ -95,6 +95,7 @@ const ROUTES = [
   "/best/manage-customer-leads-as-freelancer",
   "/best/free-vs-paid-business-software",
   "/best/switch-business-software-without-losing-data",
+  "/best/ai-coding-assistants",
   "/best/ai-tools-small-businesses",
   "/best/ai-tools-freelancers",
   "/best/ai-writing-tools-small-businesses",
