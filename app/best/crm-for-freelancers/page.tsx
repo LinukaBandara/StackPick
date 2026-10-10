@@ -14,7 +14,7 @@ export default function CrmForFreelancersPage() {
       title="Best CRM for Freelancers"
       slug="crm-for-freelancers"
       intro="A freelancer usually does not need a giant sales operation. You need to remember who contacted you, what you promised, when to follow up, and which leads are actually worth pursuing. We focus on that smaller job: low setup, useful free access, clear client tracking, and a sensible upgrade path."
-      pricingNote="Plans, limits and included features change. Check each provider's current pricing and plan details before paying, especially if you expect to add collaborators or automation."
+      pricingNote="Compare the current free plan by contacts, deal pipelines, users, email tracking, reminders, custom fields, automation and export. Some CRMs are free for core contact management but charge for workflow automation, reporting or team administration. If you are a US freelancer, test whether your existing email/calendar integrations work on the free tier before importing real client data."
       tools={[
         {
           name: "HubSpot CRM",
@@ -53,7 +53,7 @@ export default function CrmForFreelancersPage() {
           url: "https://www.notion.so/",
         },
       ]}
-      bottomLine="For most freelancers starting from scratch, HubSpot is the easiest place to start if you want a real CRM without an immediate subscription. Pipedrive makes more sense when selling and following deals is the center of your week. Zoho is compelling when it fits an existing Zoho stack. Notion is the better answer when your real requirement is a flexible client database rather than sales automation."
+      bottomLine="Choose HubSpot first if you want a purpose-built CRM and its current free limits cover your contacts and follow-ups. Choose Pipedrive only when a structured deal pipeline is worth paying for; consider Zoho when its wider ecosystem matches tools you already use. Notion can work for a lightweight client tracker, but it is not a drop-in replacement for CRM automation. If you have only a handful of repeat clients and never miss a follow-up, keep the spreadsheet until a real workflow problem appears."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
