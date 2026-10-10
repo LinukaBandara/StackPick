@@ -48,7 +48,7 @@ const organizationJsonLd = {
   name: "StackPick",
   url: SITE_URL,
   description:
-    "An independent software comparison publication. Some links are affiliate links - see our affiliate disclosure.",
+    "An independent software comparison publication. Vendor links currently go directly to providers; StackPick does not currently earn affiliate commissions.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
