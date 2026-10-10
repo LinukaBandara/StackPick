@@ -15,10 +15,10 @@ export default function Page() {
       intro="A practical HubSpot vs Zoho CRM comparison for small businesses choosing between a broad ecosystem and a highly configurable CRM."
       pricingNote="Pricing, limits and included features can change. Check the providers' current plans before making a decision."
       tools={[
-        { name: "HubSpot", bestFor: "Businesses wanting an approachable CRM ecosystem", freeOption: "Free CRM option available; verify current limits.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://www.hubspot.com/" },
-        { name: "Zoho CRM", bestFor: "Businesses wanting deeper configuration across a broad suite", freeOption: "Plan features and limits vary.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://www.zoho.com/crm/" },
+        { name: "HubSpot", bestFor: "Businesses wanting an approachable CRM ecosystem", freeOption: "Free CRM option available; verify current limits.", tradeoff: "Its connected marketing and sales ecosystem is useful, but advanced automation and bundled products can make the eventual bill larger than the free CRM suggests.", url: "https://www.hubspot.com/" },
+        { name: "Zoho CRM", bestFor: "Businesses wanting deeper configuration across a broad suite", freeOption: "Plan features and limits vary.", tradeoff: "It can be cost-effective when you already use Zoho apps, but setup and configuration can feel heavier if you only need a basic contact list and reminders.", url: "https://www.zoho.com/crm/" },
       ]}
-      bottomLine="There is no universal winner. The better tool is the one that handles your normal workflow with less friction at the price you can justify. Test the same job in both products before switching."
+      bottomLine="Choose HubSpot when ease of onboarding and connected marketing workflows matter most. Choose Zoho CRM when cost control and integration with an existing Zoho setup are more important. Compare the same contact-to-sale workflow and confirm the paid tier needed for automation before migrating."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
