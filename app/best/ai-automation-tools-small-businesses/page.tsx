@@ -25,18 +25,18 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick AI test</p>
-          <h2 className="sp-title mt-4 max-w-4xl">Measure the work saved, not the AI hype.</h2>
+          <p className="sp-eyebrow">Automation risk check</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Automate one predictable handoff before rebuilding the whole business.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Give each tool the same realistic task. Record setup time, output quality, editing time,
-            usage limits, integrations and the point where a paid plan becomes relevant. For
-            business data, also check privacy, retention and administrator controls before putting
-            sensitive information into an AI service.
+            Map the current process first: what triggers it, what data is required, who approves the
+            result and what happens if a step fails. Start with a reversible workflow such as routing
+            a form submission or creating a draft task. Add logging, duplicate protection and a manual
+            fallback before letting an automation send customer messages or change important records.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Same task</p><p className="mt-2 text-sm leading-6 text-[#667085]">Compare tools on identical inputs instead of marketing demos.</p></div>
-            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Human review</p><p className="mt-2 text-sm leading-6 text-[#667085]">Count the time needed to fact-check, edit and approve the output.</p></div>
-            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Real limit</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check usage caps, paid gates and data controls before committing.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Trigger and inputs</p><p className="mt-2 text-sm leading-6 text-[#667085]">Document required fields and what should happen with incomplete data.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Failure handling</p><p className="mt-2 text-sm leading-6 text-[#667085]">Test retries, duplicate events, rate limits and alerts for failed runs.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Human approval</p><p className="mt-2 text-sm leading-6 text-[#667085]">Keep approval gates for payments, customer commitments and sensitive data.</p></div>
           </div>
         </div>
       </section>
