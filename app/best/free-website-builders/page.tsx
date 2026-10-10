@@ -15,23 +15,25 @@ export default function Page() {
       intro="Compare free website builders by what you can actually publish, customize and connect before paying for a domain or removing platform restrictions."
       pricingNote="Plans, limits and included features can change. Verify the provider's current pricing and terms before publishing a site or moving a live business workflow."
       tools={[
-        { name: "Wix", bestFor: "Easy visual site building", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "Compare booking, publishing, collaboration and upgrade limits against your actual workflow.", url: "https://www.wix.com/" },
-        { name: "WordPress.com", bestFor: "Content and simple sites", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "Compare booking, publishing, collaboration and upgrade limits against your actual workflow.", url: "https://wordpress.com/" },
-        { name: "Framer", bestFor: "Design-focused landing pages", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "Compare booking, publishing, collaboration and upgrade limits against your actual workflow.", url: "https://www.framer.com/" },
-        { name: "Webflow", bestFor: "Advanced visual design workflows", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "Compare booking, publishing, collaboration and upgrade limits against your actual workflow.", url: "https://webflow.com/" },
+        { name: "Wix", bestFor: "Easy visual site building", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "The visual editor can make it approachable for a small business site, but verify the current free-site branding, subdomain and custom-domain upgrade requirements.", url: "https://www.wix.com/" },
+        { name: "WordPress.com", bestFor: "Content and simple sites", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "It can suit content-led sites and publishing, but confirm which custom-domain, plugin, design and monetization options are included in the plan you would use.", url: "https://wordpress.com/" },
+        { name: "Framer", bestFor: "Design-focused landing pages", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "Its design-focused workflow can be useful for landing pages, but verify current limits for custom domains, site publishing, forms and CMS features.", url: "https://www.framer.com/" },
+        { name: "Webflow", bestFor: "Advanced visual design workflows", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "Its visual design controls can support more custom layouts, but check the current staging, publishing, page and CMS limits before building a production site.", url: "https://webflow.com/" },
       ]}
       bottomLine="Choose the smallest tool that handles the work you actually do. Before committing, test the normal workflow from setup through the first real customer or client task, then check what happens when you hit the free-plan or entry-tier limit."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick reality check</p>
-          <h2 className="sp-title mt-4 max-w-4xl">The free plan is only useful if it survives your normal workflow.</h2>
+          <p className="sp-eyebrow">StackPick publishing test</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Publish a small business site before paying for the full plan.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Test the job you would repeat every week: create the project, add the people or
-            content you need, complete the normal task, and try the export or handoff step.
-            Then identify the first restriction that would force an upgrade. That is more useful
-            than comparing feature counts in isolation.
+            Build a simple three-page draft with a homepage, service page and contact form. Preview it on mobile, publish to the platform's free address, then check the exact restrictions on a custom domain, platform branding, forms, SEO controls and content updates. Confirm the upgrade required to launch the site you actually want—not just the one you can design in the editor.
           </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Launch restrictions</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check the free address, platform branding and custom-domain requirements.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Business essentials</p><p className="mt-2 text-sm leading-6 text-[#667085]">Test contact forms, mobile layouts, page titles and analytics access.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Growth and exit</p><p className="mt-2 text-sm leading-6 text-[#667085]">Verify CMS or page limits, export options and the plan needed to keep expanding.</p></div>
+          </div>
         </div>
       </section>
     </ComparisonArticle>
