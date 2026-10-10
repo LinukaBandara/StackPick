@@ -15,10 +15,10 @@ export default function Page() {
       intro="Compare Calendly and Google Calendar for appointment booking, availability, client experience and how much scheduling infrastructure you actually need."
       pricingNote="Pricing, limits and included features can change. Check the providers' current plans before making a decision."
       tools={[
-        { name: "Calendly", bestFor: "Customer-facing booking links", freeOption: "Free and paid features vary.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://calendly.com/" },
-        { name: "Google Calendar", bestFor: "Simple scheduling around an existing calendar", freeOption: "Features depend on personal or Workspace setup.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://calendar.google.com/" },
+        { name: "Calendly", bestFor: "Customer-facing booking links", freeOption: "Free and paid features vary.", tradeoff: "It is built to let outsiders book available slots without a long email exchange, but advanced routing, reminders and team scheduling may require a paid tier.", url: "https://calendly.com/" },
+        { name: "Google Calendar", bestFor: "Simple scheduling around an existing calendar", freeOption: "Features depend on personal or Workspace setup.", tradeoff: "It works well for internal calendar coordination and basic appointment use, but client-facing booking pages and more advanced booking controls may be more limited than a dedicated scheduler.", url: "https://calendar.google.com/" },
       ]}
-      bottomLine="There is no universal winner. The better tool is the one that handles your normal workflow with less friction at the price you can justify. Test the same job in both products before switching."
+      bottomLine="Use Google Calendar if you mainly need to coordinate your own schedule or arrange meetings manually. Use Calendly if clients or prospects should book from a link within rules you control. Test time zones, buffers, cancellation, reminders and team availability before choosing."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
