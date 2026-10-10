@@ -123,9 +123,20 @@ const ROUTES = [
   "/contact"
 ];
 
+// Keep lastModified tied to real editorial updates. Do not use the build date,
+// because deploying unrelated changes should not make every URL look freshly updated.
+const LAST_MODIFIED: Record<string, string> = {
+  "/best/crm-for-freelancers": "2026-10-10",
+  "/best/invoicing-software": "2026-10-10",
+  "/best/ai-meeting-assistants": "2026-10-09",
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return ROUTES.map((path) => ({
     url: `${SITE_URL}${path}`,
+    ...(LAST_MODIFIED[path]
+      ? { lastModified: new Date(`${LAST_MODIFIED[path]}T00:00:00.000Z`) }
+      : {}),
     changeFrequency: "monthly",
     priority: path === "/" ? 1 : path === "/best" ? 0.9 : 0.7,
   }));
