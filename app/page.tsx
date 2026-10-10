@@ -2,28 +2,28 @@ import Link from "next/link";
 
 const FEATURED = [
   {
-    href: "/best/invoicing-software",
-    eyebrow: "Invoicing",
-    title: "The best invoicing software for small businesses.",
-    desc: "Compare the tools that help you send, track, and get paid for invoices.",
+    href: "/best/accounting-software",
+    eyebrow: "Accounting",
+    title: "The best accounting software for small businesses.",
+    desc: "Compare real plan costs, bookkeeping features, invoicing, and the trade-offs for a growing business.",
   },
   {
-    href: "/best/crm-software",
-    eyebrow: "CRM",
-    title: "A CRM that stays simple.",
-    desc: "See which customer-management tools make sense before your business outgrows them.",
+    href: "/best/payroll-software",
+    eyebrow: "Payroll",
+    title: "Payroll software that fits a small business.",
+    desc: "Compare payroll tools by team size, pricing, tax support, and the work they take off your plate.",
   },
   {
-    href: "/best/project-management-software",
-    eyebrow: "Projects",
-    title: "Projects, without the overhead.",
-    desc: "A practical look at project tools for small teams that need to get work moving.",
+    href: "/best/help-desk-software",
+    eyebrow: "Customer support",
+    title: "Find the right help desk software.",
+    desc: "Compare ticketing tools, automation, team limits, and support workflows without paying for features you do not need.",
   },
   {
-    href: "/best/time-tracking-software",
-    eyebrow: "Time tracking",
-    title: "Know where the hours go.",
-    desc: "Compare simple time trackers for freelancers and small teams.",
+    href: "/best/inventory-management-software",
+    eyebrow: "Inventory",
+    title: "Inventory software for growing businesses.",
+    desc: "Compare stock tracking, integrations, order workflows, and pricing before you commit.",
   },
 ];
 
