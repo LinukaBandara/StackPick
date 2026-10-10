@@ -99,6 +99,7 @@ const ARTICLES = [
   { href: "/best/manage-customer-leads-as-freelancer", title: "Manage Customer Leads as a Freelancer", desc: "Create a simple process for lead capture, follow-up, qualification and next actions.", category: "Sales" },
   { href: "/best/free-vs-paid-business-software", title: "Free vs Paid Business Software", desc: "Decide when plan limits, time savings, support or collaboration justify paying.", category: "Productivity" },
   { href: "/best/switch-business-software-without-losing-data", title: "Switch Business Software Without Losing Data", desc: "Plan exports, field mapping, permissions, testing and a safe cutover before migration.", category: "Operations" },
+  { href: "/best/ai-coding-assistants", title: "Best AI Coding Assistants for Developers", desc: "Compare editor assistants and coding agents by workflow, review controls and current plan limits.", category: "Development" },
   { href: "/best/ai-tools-small-businesses", title: "AI Tools for Small Businesses", desc: "Evaluate AI tools by specific business tasks, review requirements, privacy and total cost.", category: "Productivity" },
   { href: "/best/ai-tools-freelancers", title: "AI Tools for Freelancers", desc: "Compare AI workflows for research, writing, planning and admin without adding tool sprawl.", category: "Productivity" },
   { href: "/best/ai-writing-tools-small-businesses", title: "AI Writing Tools for Small Businesses", desc: "Compare drafting and editing workflows while keeping fact-checking and human review in place.", category: "Marketing" },
