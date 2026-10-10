@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Best Form Builder for Small Business (2026)",
+  title: "Best Form Builders for Lead Generation (2026): Free Options Compared",
   description:
-    "An honest comparison of Google Forms, Typeform, and Jotform - three completely different philosophies for what a form should be, not just three competitors.",
+    "Compare Google Forms, Typeform and Jotform for lead-generation forms, free response limits, branding, conditional logic, integrations and collecting qualified enquiries.",
   alternates: { canonical: "/best/form-builders" },
 };
 
 export default function Page() {
   return (
     <ComparisonArticle
-      title="Best Form Builder for Small Business"
+      title="Best Form Builders for Lead Generation and Small Business"
       slug="form-builders"
-      intro="These three represent genuinely different philosophies, not just different price points. Google Forms treats the form as a free utility. Typeform treats it as a branded, conversion-focused experience. Jotform treats it as a Swiss Army knife with payments, logic, and compliance features bolted onto everything. Picking based on price alone misses which job you actually need done."
-      pricingNote="Response/submission limits on free and entry tiers change periodically for all three. Confirm current caps directly if you're near a threshold."
+      intro="For lead generation, a form is part of the sales funnel: it should ask only useful questions, work well on mobile, send submissions to the right inbox or CRM, and make consent and follow-up expectations clear. Google Forms is a low-cost utility, Typeform emphasizes a branded conversational experience, and Jotform offers a broader set of form workflows. The right choice depends on whether you need simple capture, a polished conversion flow, or conditional logic and integrations."
+      pricingNote="Check the current free monthly submission/view cap, number of forms, file-upload allowance, branding controls, conditional logic and integrations. A free plan that accepts responses but cannot send them to your CRM or remove provider branding may not fit a business lead funnel; test the whole path from mobile form to follow-up."
       tools={[
         {
           name: "Google Forms",
