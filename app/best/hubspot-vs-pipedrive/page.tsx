@@ -22,14 +22,16 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick head-to-head test</p>
-          <h2 className="sp-title mt-4 max-w-4xl">Don't compare features. Compare the job.</h2>
+          <p className="sp-eyebrow">StackPick sales workflow</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Run the same lead through first contact, follow-up and close.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Use one realistic workflow and run it through both products. Record setup time,
-            clicks, limits, collaboration friction, exports, integrations and the first feature
-            that requires an upgrade. The winner should make the recurring job easier, not simply
-            have the longer feature list.
+            Create a test lead, record its source, schedule a follow-up, move it through the sales stages and mark the deal won or lost. Compare how quickly the next action is visible, whether your team can maintain clean records, and which reporting or automation step requires an upgrade. Include marketing integration only if it is part of your actual sales process.
           </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Pipeline clarity</p><p className="mt-2 text-sm leading-6 text-[#667085]">Can you see stalled deals and the next action without extra spreadsheets?</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Follow-up discipline</p><p className="mt-2 text-sm leading-6 text-[#667085]">Test reminders, activity history and assignment to the right owner.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Plan gates</p><p className="mt-2 text-sm leading-6 text-[#667085]">Price the users and the exact automation or reporting features you need.</p></div>
+          </div>
         </div>
       </section>
     </ComparisonArticle>
