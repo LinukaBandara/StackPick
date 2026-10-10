@@ -40,7 +40,7 @@ export default function Header() {
         <div className="flex items-center gap-2 sm:gap-3">
           <Link
             href="/best#directory-search"
-            className="flex h-8 w-8 items-center justify-center rounded-full text-[#6e6e73] transition-colors hover:bg-[#f5f5f7] hover:text-[#1d1d1f]"
+            className="flex h-10 w-10 items-center justify-center rounded-full text-[#6e6e73] transition-colors hover:bg-[#f5f5f7] hover:text-[#1d1d1f]"
             aria-label="Search comparisons"
             title="Search comparisons"
           >
