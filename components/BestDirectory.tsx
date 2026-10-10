@@ -24,6 +24,8 @@ const CATEGORIES = [
   "Marketing",
   "People",
   "Infrastructure",
+  "Development",
+  "Automation",
 ];
 
 export default function BestDirectory({ articles }: BestDirectoryProps) {
