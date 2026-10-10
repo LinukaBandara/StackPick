@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Small Business Software Comparisons & Practical Guides",
+  description:
+    "Choose software with confidence. StackPick compares business tools for freelancers and small teams by pricing, free-plan limits, workflow fit and trade-offs.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Small Business Software Comparisons & Practical Guides",
+    description:
+      "Compare business tools by pricing, free-plan limits, workflow fit and trade-offs before you commit.",
+    url: "/",
+    type: "website",
+  },
+};
 
 const FEATURED = [
   {
