@@ -4,7 +4,7 @@
 
 ## Start here
 - [StackPick homepage](/): overview of the publication and its approach.
-- [All software guides](/best): searchable, category-filtered directory of 100 guides.
+- [All software guides](/best): searchable, category-filtered directory of 108 guides.
 - [About StackPick](/about): editorial approach and scope.
 - [Affiliate Disclosure](/affiliate-disclosure): current commercial-link status and future disclosure policy.
 - [Privacy Policy](/privacy): analytics and current advertising status.
@@ -102,6 +102,14 @@
 - [Manage Customer Leads as a Freelancer](/best/manage-customer-leads-as-freelancer) (Sales): Create a simple process for lead capture, follow-up, qualification and next actions.
 - [Free vs Paid Business Software](/best/free-vs-paid-business-software) (Productivity): Decide when plan limits, time savings, support or collaboration justify paying.
 - [Switch Business Software Without Losing Data](/best/switch-business-software-without-losing-data) (Operations): Plan exports, field mapping, permissions, testing and a safe cutover before migration.
+- [Best AI Coding Assistants](/best/ai-coding-assistants) (Developer tools): Compare AI coding assistants by workflow fit, review controls, context handling and pricing limits.
+- [AI Tools for React and Next.js](/best/ai-tools-react-nextjs) (Developer tools): Review coding, testing and workflow tools for React and Next.js projects.
+- [n8n vs Make vs Zapier](/best/n8n-vs-make-vs-zapier) (Automation): Compare workflow automation platforms by flexibility, setup, integrations and cost.
+- [LLM Tools for Developers](/best/llm-tools-for-developers) (Developer tools): Explore developer-facing LLM tools and verify API limits, model access and operational trade-offs.
+- [GitHub Tools for Developers](/best/github-tools-for-developers) (Developer tools): Compare tools for code review, repository workflows, collaboration and automation.
+- [DevOps Tools for Small Teams](/best/devops-tools-small-teams) (Developer tools): Evaluate CI/CD, monitoring, deployment and infrastructure tools for smaller teams.
+- [AI Agent Frameworks](/best/ai-agent-frameworks) (Developer tools): Compare agent frameworks by orchestration, tool use, observability and complexity.
+- [n8n Workflow Examples](/best/n8n-workflow-examples) (Automation): Review practical automation patterns, error handling and safe workflow design.
 - [AI Tools for Small Businesses](/best/ai-tools-small-businesses) (Productivity): Evaluate AI tools by specific business tasks, review requirements, privacy and total cost.
 - [AI Tools for Freelancers](/best/ai-tools-freelancers) (Productivity): Compare AI workflows for research, writing, planning and admin without adding tool sprawl.
 - [AI Writing Tools for Small Businesses](/best/ai-writing-tools-small-businesses) (Marketing): Compare drafting and editing workflows while keeping fact-checking and human review in place.
