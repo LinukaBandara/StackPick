@@ -1,44 +1,64 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "StackPick's privacy policy — what data is collected and how affiliate/ad tracking works.",
+  description: "StackPick's privacy policy - what data is collected and how affiliate/ad tracking works.",
   alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
-      <h1 className="text-3xl font-bold text-ink mb-2">Privacy Policy</h1>
-      <p className="text-sm text-slate mb-8">This page reflects the site's current implementation.</p>
-      <div className="text-[15px] text-slate space-y-6">
-        <section>
-          <h2 className="text-xl font-semibold text-ink mb-2">No accounts</h2>
-          <p>StackPick doesn't require sign-up or collect personal profiles.</p>
-        </section>
-        <section>
-          <h2 className="text-xl font-semibold text-ink mb-2">Affiliate links</h2>
-          <p>
-            When you click an affiliate link, the destination site (not StackPick) sets a
-            tracking cookie or parameter to credit the referral. See our{" "}
-            <a href="/affiliate-disclosure" className="text-indigo hover:underline">
-              Affiliate Disclosure
-            </a>{" "}
-            for details.
-          </p>
-        </section>
-        <section>
-          <h2 className="text-xl font-semibold text-ink mb-2">Advertising & analytics</h2>
-          <p>
-            As currently built, this site has no analytics or advertising installed. If/when
-            Google AdSense or an analytics tool is added, this policy will be updated to name
-            the exact tool, the cookies it sets, and how to opt out.
-          </p>
-        </section>
-        <section>
-          <h2 className="text-xl font-semibold text-ink mb-2">Contact</h2>
-          <p>Emails sent via the Contact page are handled like normal email and not shared with third parties.</p>
-        </section>
+    <div className="bg-white w-full">
+      <div className="sp-container max-w-3xl py-16 sm:py-24">
+        <p className="sp-eyebrow uppercase tracking-wider text-xs">Legal</p>
+        <h1 className="sp-title mt-3 text-[#1d1d1f]">Privacy Policy</h1>
+        <p className="mt-3 text-sm text-[#86868b]">Last updated October 2026</p>
+        <div className="mt-8 space-y-8 text-base sm:text-lg leading-relaxed text-[#6e6e73]">
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">No accounts</h2>
+            <p>StackPick does not require user sign-up or collect personal customer profiles.</p>
+          </section>
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Affiliate links</h2>
+            <p>
+              StackPick does not currently use affiliate links or earn affiliate commissions from vendor links. If affiliate relationships are introduced, we will disclose them on relevant pages and update this policy. See our{" "}
+              <Link href="/affiliate-disclosure" className="text-[#004bb5] font-medium hover:underline">
+                Affiliate Disclosure
+              </Link>{" "}
+              for details.
+            </p>
+          </section>
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Analytics</h2>
+            <p>
+              StackPick uses Google Analytics to understand site usage, including which pages are
+              visited and how visitors interact with the site. Analytics services may use cookies
+              or similar technologies and may process online identifiers, device and browser
+              information, and usage events. You can review your browser's cookie settings and
+              Google's available privacy controls to learn about choices for analytics collection.
+              Please do not submit sensitive personal information through this website.
+            </p>
+          </section>
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Advertising</h2>
+            <p>
+              StackPick does not currently serve display advertisements. If we introduce an
+              advertising service such as Google AdSense, that service may use cookies or similar
+              technologies to deliver, measure, or personalize advertisements, subject to applicable
+              law and the choices made available to visitors. Where required, appropriate consent
+              controls will be implemented before non-essential advertising technologies are used.
+              This policy will be updated before advertising is enabled.
+            </p>
+          </section>
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Contact</h2>
+            <p>
+              For privacy questions or requests, use the contact details published on our Contact
+              page. Please do not include sensitive personal information in your message.
+            </p>
+          </section>
+        </div>
       </div>
     </div>
   );

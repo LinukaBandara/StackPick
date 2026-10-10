@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best POS System for Small Business (2026)",
   description:
-    "An honest comparison of Square, Toast, Clover, and Shopify POS — and why the processing rate, not the monthly fee, is usually the number that actually matters.",
+    "An honest comparison of Square, Toast, Clover, and Shopify POS - and why the processing rate, not the monthly fee, is usually the number that actually matters.",
   alternates: { canonical: "/best/pos-systems" },
 };
 
@@ -19,17 +19,17 @@ export default function Page() {
         {
           name: "Square",
           bestFor: "Most small businesses starting out, especially without a long-term contract",
-          freeOption: "Genuinely usable free plan — not a crippled trial.",
+          freeOption: "Genuinely usable free plan - not a crippled trial.",
           tradeoff:
-            "No contracts, no early termination fees, and the cheapest hardware entry point here by a wide margin. Processing fees on the free plan are fine at low volume but get expensive fast — a shop doing meaningful monthly card volume should compare an interchange-plus processor once they outgrow \"just starting out.\"",
+            "No contracts, no early termination fees, and the cheapest hardware entry point here by a wide margin. Processing fees on the free plan are fine at low volume but get expensive fast - a shop doing meaningful monthly card volume should compare an interchange-plus processor once they outgrow \"just starting out.\"",
           url: "https://squareup.com/us/en/point-of-sale",
         },
         {
           name: "Toast",
-          bestFor: "Full-service restaurants specifically — not adapted for retail",
+          bestFor: "Full-service restaurants specifically - not adapted for retail",
           freeOption: "Free Starter Kit available, tied to a multi-year agreement.",
           tradeoff:
-            "Built from the ground up for restaurant service — kitchen display routing, tip handling, and online ordering all feel purpose-made rather than bolted on. The trade-off is a real one: typical multi-year contracts with meaningful early termination penalties, unlike Square's month-to-month flexibility.",
+            "Built from the ground up for restaurant service - kitchen display routing, tip handling, and online ordering all feel purpose-made rather than bolted on. The trade-off is a real one: typical multi-year contracts with meaningful early termination penalties, unlike Square's month-to-month flexibility.",
           url: "https://pos.toasttab.com/",
         },
         {
@@ -37,13 +37,13 @@ export default function Page() {
           bestFor: "Businesses that want to choose their own payment processor",
           freeOption: "Software-only free tier in some configurations, varies by reseller.",
           tradeoff:
-            "The open app marketplace and processor flexibility are genuine advantages over Square's more closed ecosystem. Pricing and terms vary meaningfully by which reseller/processor you go through — get quotes from more than one before committing.",
+            "The open app marketplace and processor flexibility are genuine advantages over Square's more closed ecosystem. Pricing and terms vary meaningfully by which reseller/processor you go through - get quotes from more than one before committing.",
           url: "https://www.clover.com/",
         },
         {
           name: "Shopify POS",
           bestFor: "Businesses selling both online and in person who want one inventory system",
-          freeOption: "No free tier — requires a Shopify e-commerce subscription as a base.",
+          freeOption: "No free tier - requires a Shopify e-commerce subscription as a base.",
           tradeoff:
             "If you already run a Shopify store, unifying online and in-store inventory into one system genuinely eliminates a real operational headache. You're paying for a Shopify subscription on top of the POS add-on, so it only makes sense if e-commerce is actually part of the business.",
           url: "https://www.shopify.com/pos",

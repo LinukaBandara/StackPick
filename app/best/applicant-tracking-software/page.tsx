@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Applicant Tracking System (ATS) for Small Business (2026)",
   description:
-    "An honest comparison of Breezy HR, Zoho Recruit, Workable, and Greenhouse — and why Greenhouse's enterprise pricing makes it the wrong choice for most small businesses.",
+    "An honest comparison of Breezy HR, Zoho Recruit, Workable, and Greenhouse - and why Greenhouse's enterprise pricing makes it the wrong choice for most small businesses.",
   alternates: { canonical: "/best/applicant-tracking-software" },
 };
 
@@ -21,7 +21,7 @@ export default function Page() {
           bestFor: "Most small and mid-sized businesses",
           freeOption: "Free plan covers one active job posting.",
           tradeoff:
-            "Flat-rate pricing with unlimited users at every paid tier is a genuinely different model from headcount-based competitors — cost doesn't creep up as your team grows or more people need pipeline visibility. Automation and reporting depth don't match Greenhouse's, which is the right trade for a small business's actual needs.",
+            "Flat-rate pricing with unlimited users at every paid tier is a genuinely different model from headcount-based competitors - cost doesn't creep up as your team grows or more people need pipeline visibility. Automation and reporting depth don't match Greenhouse's, which is the right trade for a small business's actual needs.",
           url: "https://breezy.hr/",
         },
         {
@@ -37,15 +37,15 @@ export default function Page() {
           bestFor: "Businesses that want to proactively source candidates, not just post jobs and wait",
           freeOption: "No free tier.",
           tradeoff:
-            "Genuinely strong at proactive candidate sourcing — searching and reaching out to potential candidates rather than only managing inbound applicants. That extra capability comes at a higher price point than Breezy HR for teams that don't need active sourcing.",
+            "Genuinely strong at proactive candidate sourcing - searching and reaching out to potential candidates rather than only managing inbound applicants. That extra capability comes at a higher price point than Breezy HR for teams that don't need active sourcing.",
           url: "https://www.workable.com/",
         },
         {
           name: "Greenhouse",
           bestFor: "Companies with a dedicated recruiting function hiring at real volume, not typical small businesses",
-          freeOption: "No free tier — enterprise, quote-based pricing.",
+          freeOption: "No free tier - enterprise, quote-based pricing.",
           tradeoff:
-            "The structured hiring methodology, 500+ integration ecosystem, and scorecarding are genuinely best-in-class for organizations with real hiring volume and a dedicated recruiting team. For most small businesses hiring a handful of people a year, this is meaningfully more tool — and cost — than the job requires.",
+            "The structured hiring methodology, 500+ integration ecosystem, and scorecarding are genuinely best-in-class for organizations with real hiring volume and a dedicated recruiting team. For most small businesses hiring a handful of people a year, this is meaningfully more tool - and cost - than the job requires.",
           url: "https://www.greenhouse.io/",
         },
       ]}
