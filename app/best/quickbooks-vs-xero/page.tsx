@@ -15,10 +15,10 @@ export default function Page() {
       intro="Compare QuickBooks and Xero for small businesses by bookkeeping workflow, collaboration, reporting, integrations and regional fit."
       pricingNote="Pricing, limits and included features can change. Check the providers' current plans before making a decision."
       tools={[
-        { name: "QuickBooks", bestFor: "Businesses wanting a mature accounting platform", freeOption: "Paid plans and features vary by region.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://quickbooks.intuit.com/" },
-        { name: "Xero", bestFor: "Businesses wanting cloud accounting and collaboration", freeOption: "Plans and regional features vary.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://www.xero.com/" },
+        { name: "QuickBooks", bestFor: "Businesses wanting a mature accounting platform", freeOption: "Paid plans and features vary by region.", tradeoff: "Its broad accounting ecosystem may suit businesses whose bookkeeper already works in QuickBooks, but plans and features vary by country so regional availability must be checked.", url: "https://quickbooks.intuit.com/" },
+        { name: "Xero", bestFor: "Businesses wanting cloud accounting and collaboration", freeOption: "Plans and regional features vary.", tradeoff: "Its cloud collaboration approach can suit owners and external accountants working together, but local bank feeds, payroll support and tax workflows vary by market.", url: "https://www.xero.com/" },
       ]}
-      bottomLine="There is no universal winner. The better tool is the one that handles your normal workflow with less friction at the price you can justify. Test the same job in both products before switching."
+      bottomLine="Do not choose either accounting platform by brand alone. First confirm that it supports your country's tax and bank workflows, then test bank reconciliation, recurring invoices, expense capture and accountant access. If your accountant already has a preferred system, include migration and ongoing collaboration costs in the decision."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
