@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Invoicing Software for Freelancers (2026 Comparison)",
   description:
-    "An honest comparison of invoicing tools for freelancers - Wave, FreshBooks, Zoho Invoice, Invoice Ninja, and QuickBooks - covering free tiers, payment fees, and who each one actually fits.",
+    "Compare the best invoicing software for freelancers in 2026. See free plans, payment fees, and how Wave, Zoho Invoice, FreshBooks, and more compare.",
   alternates: { canonical: "/best/invoicing-software" },
 };
 
