@@ -22,14 +22,16 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick head-to-head test</p>
-          <h2 className="sp-title mt-4 max-w-4xl">Don't compare features. Compare the job.</h2>
+          <p className="sp-eyebrow">StackPick scheduling workflow</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Test a real client booking across time zones.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Use one realistic workflow and run it through both products. Record setup time,
-            clicks, limits, collaboration friction, exports, integrations and the first feature
-            that requires an upgrade. The winner should make the recurring job easier, not simply
-            have the longer feature list.
+            Set a realistic availability window, add a buffer between meetings, then book, reschedule and cancel a test appointment from the visitor's perspective. Check how the invite appears in your calendar, whether reminders are sent as expected, and whether team routing or multiple event types push you into a paid plan. For client-facing booking, the guest experience matters as much as the calendar view.
           </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Booking rules</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check buffers, notice periods, meeting length and unavailable times.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Guest experience</p><p className="mt-2 text-sm leading-6 text-[#667085]">Test time zones, confirmations, rescheduling and cancellation.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Team requirements</p><p className="mt-2 text-sm leading-6 text-[#667085]">Verify multiple calendars, routing, reminders and the plan needed for them.</p></div>
+          </div>
         </div>
       </section>
     </ComparisonArticle>
