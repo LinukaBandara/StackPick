@@ -22,14 +22,16 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick head-to-head test</p>
-          <h2 className="sp-title mt-4 max-w-4xl">Don't compare features. Compare the job.</h2>
+          <p className="sp-eyebrow">StackPick billing workflow</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Compare a month of client billing and bookkeeping.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Use one realistic workflow and run it through both products. Record setup time,
-            clicks, limits, collaboration friction, exports, integrations and the first feature
-            that requires an upgrade. The winner should make the recurring job easier, not simply
-            have the longer feature list.
+            Run the same service-business month through both products: create an estimate, track billable time, issue an invoice, record a payment and categorize an expense. Check how much work remains for month-end bookkeeping, which client or transaction limits apply, and what the full plan costs at your expected client volume.
           </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Quote to invoice</p><p className="mt-2 text-sm leading-6 text-[#667085]">Test estimates, time entries and turning approved work into an invoice.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Records after payment</p><p className="mt-2 text-sm leading-6 text-[#667085]">Record a payment and expense, then check the reports and export you can hand to an accountant.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Cost at your size</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check client, user and feature limits on the plan you would actually need.</p></div>
+          </div>
         </div>
       </section>
     </ComparisonArticle>

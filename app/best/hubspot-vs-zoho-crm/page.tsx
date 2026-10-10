@@ -22,14 +22,16 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick head-to-head test</p>
-          <h2 className="sp-title mt-4 max-w-4xl">Don't compare features. Compare the job.</h2>
+          <p className="sp-eyebrow">StackPick CRM workflow</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Model the journey from a new lead to a closed sale.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Use one realistic workflow and run it through both products. Record setup time,
-            clicks, limits, collaboration friction, exports, integrations and the first feature
-            that requires an upgrade. The winner should make the recurring job easier, not simply
-            have the longer feature list.
+            Use a small set of sample contacts and run the same journey in each CRM: import records, remove duplicates, assign an owner, move a deal through stages, schedule a follow-up and export the result. Note which steps are easy by default and which require configuration, paid automation or extra products. This keeps the comparison tied to the process your team will maintain.
           </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Contact hygiene</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check imports, duplicate handling, field mapping and data export.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Sales handoffs</p><p className="mt-2 text-sm leading-6 text-[#667085]">Test ownership, pipeline stages, reminders and team visibility.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Paid gates</p><p className="mt-2 text-sm leading-6 text-[#667085]">Confirm the exact plan required for automation and reporting you expect to use.</p></div>
+          </div>
         </div>
       </section>
     </ComparisonArticle>

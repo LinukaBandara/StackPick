@@ -22,14 +22,16 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick head-to-head test</p>
-          <h2 className="sp-title mt-4 max-w-4xl">Don't compare features. Compare the job.</h2>
+          <p className="sp-eyebrow">StackPick project workflow</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Run one real project for a week before moving your team.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Use one realistic workflow and run it through both products. Record setup time,
-            clicks, limits, collaboration friction, exports, integrations and the first feature
-            that requires an upgrade. The winner should make the recurring job easier, not simply
-            have the longer feature list.
+            Choose a small active project and mirror its tasks, notes, owners and due dates in both products. Track how quickly teammates find the current status, how recurring work and dependencies behave, and how noisy notifications become. Keep the documentation close to the tasks if that is central to your work; prioritize ownership and deadline visibility if missed handoffs are the bigger problem.
           </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Capture the work</p><p className="mt-2 text-sm leading-6 text-[#667085]">Can people quickly add tasks, notes, files and decisions without losing context?</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Track ownership</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check due dates, recurring tasks, dependencies and a clear view of what is blocked.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Team adoption</p><p className="mt-2 text-sm leading-6 text-[#667085]">Notice setup overhead, notification noise and how easily a new teammate understands the project.</p></div>
+          </div>
         </div>
       </section>
     </ComparisonArticle>
