@@ -105,6 +105,8 @@ const ARTICLES = [
   { href: "/best/llm-tools-for-developers", title: "Best LLM Tools for Developers", desc: "Compare hosted APIs, local models, observability, evaluation and cost controls.", category: "Development" },
   { href: "/best/github-tools-for-developers", title: "Best GitHub Tools for Developers", desc: "Compare repository hosting, pull requests, CI, security and local Git workflows.", category: "Development" },
   { href: "/best/devops-tools-small-teams", title: "Best DevOps Tools for Small Teams", desc: "Compare CI/CD, app hosting, containers, monitoring and production readiness.", category: "Infrastructure" },
+  { href: "/best/ai-agent-frameworks", title: "Best AI Agent Frameworks for Developers", desc: "Compare tool calling, stateful workflows, agent coordination and production controls.", category: "Development" },
+  { href: "/best/n8n-workflow-examples", title: "Practical n8n Workflow Examples", desc: "Build lead intake, support triage and reporting workflows with safe failure handling.", category: "Automation" },
   { href: "/best/ai-tools-small-businesses", title: "AI Tools for Small Businesses", desc: "Evaluate AI tools by specific business tasks, review requirements, privacy and total cost.", category: "Productivity" },
   { href: "/best/ai-tools-freelancers", title: "AI Tools for Freelancers", desc: "Compare AI workflows for research, writing, planning and admin without adding tool sprawl.", category: "Productivity" },
   { href: "/best/ai-writing-tools-small-businesses", title: "AI Writing Tools for Small Businesses", desc: "Compare drafting and editing workflows while keeping fact-checking and human review in place.", category: "Marketing" },
