@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Best Expense Management Software for Small Business (2026)",
+  title: "Best Expense Tracking Software for Freelancers & Small Business (2026)",
   description:
-    "An honest comparison of Expensify, Ramp, and Zoho Expense - including why a free corporate-card-based tool isn't automatically the cheapest option.",
+    "Compare expense tracking and receipt tools for US freelancers and small businesses, including reimbursement workflows, free-plan restrictions, card requirements and exports.",
   alternates: { canonical: "/best/expense-management-software" },
 };
 
 export default function Page() {
   return (
     <ComparisonArticle
-      title="Best Expense Management Software for Small Business"
+      title="Best Expense Tracking Software for Freelancers and Small Business"
       slug="expense-management-software"
-      intro="Several tools in this category (Ramp, Brex) are free specifically because they make money on interchange fees from their own corporate cards - which usually requires holding a meaningful bank balance with them or issuing their cards to your team. That's a genuinely different model from a subscription tool like Expensify, not just a cheaper version of the same thing."
-      pricingNote="Per-user pricing and free-tier limits shift periodically across this category, and several tools (Ramp specifically) restructured pricing significantly in the past year. Confirm current terms directly."
+      intro="Freelancers often need to capture receipts, categorize business purchases and export records for tax preparation; small teams may also need employee submissions, approvals, reimbursements and card controls. Those are different jobs. A tool tied to a corporate card can offer low software fees but may require changing how the business pays, while a subscription product may fit an existing payment setup better. This guide focuses on workflow fit, not the word “free” alone."
+      pricingNote="Before choosing, verify current monthly receipt or transaction limits, supported users, reimbursement features, accounting exports, receipt capture, integrations and required payment accounts. For card-linked products, check eligibility, approval requirements and whether you must issue or route spending through the provider's cards. Confirm availability for your business structure and location, and do not assume a US-focused corporate-card offer is available to every freelancer."
       tools={[
         {
           name: "Expensify",
@@ -41,7 +41,7 @@ export default function Page() {
           url: "https://www.zoho.com/expense/",
         },
       ]}
-      bottomLine="Want simple, no-strings expense reporting and reimbursement? Expensify. Comfortable moving company card spend to a new provider in exchange for real-time controls and a free tier? Ramp. Very small team, tight budget, maybe already on Zoho? Zoho Expense. Decide based on whether you're willing to switch corporate cards, not just on the sticker price."
+      bottomLine="For a solo freelancer, first test whether a receipt-capture and export workflow is enough; do not pay for team approvals you will never use. For a small team that needs reimbursement and review, compare the full submission-to-payment process. Consider card-linked spend management only if the business is eligible and willing to use that card ecosystem. Before committing, export a month of test transactions and check whether the categories and records are usable by your bookkeeper or tax preparer."
     />
   );
 }

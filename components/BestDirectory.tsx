@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import Link from "next/link";
 
 export interface ArticleItem {
@@ -31,11 +31,18 @@ const CATEGORIES = [
 export default function BestDirectory({ articles }: BestDirectoryProps) {
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const requestedCategory = new URLSearchParams(window.location.search).get("category");
     if (requestedCategory && CATEGORIES.some((category) => category.toLowerCase() === requestedCategory.toLowerCase())) {
       setActiveCategory(CATEGORIES.find((category) => category.toLowerCase() === requestedCategory.toLowerCase())!);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (window.location.hash === "#directory-search") {
+      searchInputRef.current?.focus({ preventScroll: true });
     }
   }, []);
 
@@ -65,6 +72,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
             </svg>
           </div>
           <input
+            ref={searchInputRef}
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}

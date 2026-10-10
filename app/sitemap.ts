@@ -108,6 +108,7 @@ const ROUTES = [
   "/best/n8n-workflow-examples",
   "/best/ai-tools-small-businesses",
   "/best/ai-tools-freelancers",
+  "/best/chatgpt-vs-claude-for-freelancers",
   "/best/ai-writing-tools-small-businesses",
   "/best/ai-meeting-assistants",
   "/best/ai-customer-support-tools",

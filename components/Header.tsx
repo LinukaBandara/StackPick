@@ -49,7 +49,7 @@ export default function Header() {
             </svg>
           </Link>
           <Link
-            href="/best#directory-results"
+            href="/best"
             className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-[#001D39] transition-opacity hover:opacity-80 no-underline"
           >
             <span>Browse all</span>
@@ -65,7 +65,7 @@ export default function Header() {
               <Link href="/comparisons" className="sp-mobile-nav-link">Comparisons <span>Compare tools side by side</span></Link>
               <Link href="/guides" className="sp-mobile-nav-link">Guides <span>Practical buying advice</span></Link>
               <Link href="/best#directory-search" className="sp-mobile-nav-link">Search software <span>Find a tool</span></Link>
-              <Link href="/best#directory-results" className="mt-1 flex min-h-11 items-center justify-center rounded-xl bg-[#001D39] px-4 text-sm font-semibold text-white">Browse all software</Link>
+              <Link href="/best" className="mt-1 flex min-h-11 items-center justify-center rounded-xl bg-[#001D39] px-4 text-sm font-semibold text-white">Browse all software</Link>
             </nav>
           </details>
         </div>

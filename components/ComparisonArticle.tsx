@@ -104,6 +104,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/ai-tools-small-businesses", title: "AI tools for small businesses" },
     { href: "/best/free-ai-tools-small-businesses", title: "Free AI tools for small businesses" },
     { href: "/best/ai-tools-business-content", title: "AI tools for business content" },
+    { href: "/best/ai-tools-freelancers", title: "AI tools for freelancers" },
   ],
   "how-to-choose-software-small-business": [
     { href: "/best/how-much-business-software-do-you-need", title: "How much business software do you need?" },
@@ -133,6 +134,72 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   "switch-business-software-without-losing-data": [
     { href: "/best/how-to-choose-software-small-business", title: "How to choose business software" },
     { href: "/best/how-much-business-software-do-you-need", title: "How much software do you need?" },
+    { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
+  ],
+
+  "invoicing-software": [
+    { href: "/best/free-invoicing-software", title: "Best free invoicing software" },
+    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
+  ],
+  "crm-software": [
+    { href: "/best/crm-for-freelancers", title: "CRM for freelancers" },
+    { href: "/best/crm-for-small-businesses", title: "CRM for small businesses" },
+    { href: "/best/free-crm-software", title: "Best free CRM software" },
+  ],
+  "password-managers": [
+    { href: "/best/business-vpn", title: "Business VPNs for remote teams" },
+    { href: "/best/cloud-storage", title: "Cloud storage for small teams" },
+    { href: "/best/antivirus-endpoint-security", title: "Endpoint security for small business" },
+  ],
+  "esignature-software": [
+    { href: "/best/contract-management-software", title: "Contract management software" },
+    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/crm-for-small-businesses", title: "CRM for small businesses" },
+  ],
+  "form-builders": [
+    { href: "/best/email-marketing-software", title: "Email marketing software" },
+    { href: "/best/survey-nps-software", title: "Survey and customer feedback tools" },
+    { href: "/best/appointment-scheduling-software", title: "Appointment scheduling software" },
+  ],
+  "ai-coding-assistants": [
+    { href: "/best/ai-tools-react-nextjs", title: "AI tools for React and Next.js" },
+    { href: "/best/llm-tools-for-developers", title: "LLM tools for developers" },
+    { href: "/best/github-tools-for-developers", title: "GitHub tools for developers" },
+  ],
+  "ai-meeting-assistants": [
+    { href: "/best/video-conferencing", title: "Video conferencing for small business" },
+    { href: "/best/ai-productivity-tools-freelancers", title: "AI productivity tools for freelancers" },
+    { href: "/best/ai-tools-freelancers", title: "AI tools for freelancers" },
+  ],
+  "chatgpt-vs-claude-for-freelancers": [
+    { href: "/best/ai-tools-freelancers", title: "AI tools for freelancers" },
+    { href: "/best/ai-writing-tools-small-businesses", title: "AI writing tools for small businesses" },
+    { href: "/best/ai-productivity-tools-freelancers", title: "AI productivity tools for freelancers" },
+  ],
+  "ai-tools-freelancers": [
+    { href: "/best/ai-writing-tools-small-businesses", title: "AI writing tools for small business" },
+    { href: "/best/ai-meeting-assistants", title: "AI meeting assistants" },
+    { href: "/best/ai-productivity-tools-freelancers", title: "AI productivity tools for freelancers" },
+  ],
+  "ai-productivity-tools-freelancers": [
+    { href: "/best/ai-tools-freelancers", title: "AI tools for freelancers" },
+    { href: "/best/ai-meeting-assistants", title: "AI meeting assistants" },
+    { href: "/best/automate-repetitive-small-business-tasks", title: "Automate repetitive business tasks" },
+  ],
+  "time-tracking-software": [
+    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
+    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
+  ],
+  "appointment-scheduling-software": [
+    { href: "/best/free-scheduling-software", title: "Free scheduling software" },
+    { href: "/best/scheduling-for-small-businesses", title: "Scheduling for small businesses" },
+    { href: "/best/form-builders", title: "Form builders for small business" },
+  ],
+  "n8n-vs-make-vs-zapier": [
+    { href: "/best/automate-repetitive-small-business-tasks", title: "Automate repetitive small-business tasks" },
+    { href: "/best/ai-automation-tools-small-businesses", title: "AI automation tools for small business" },
     { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
   ],
 };

@@ -14,8 +14,8 @@ export default function Page() {
     <ComparisonArticle
       title="Best AI Tools for Freelancers"
       slug="ai-tools-freelancers"
-      intro="Freelancers rarely need an all-in-one AI stack. The useful choice depends on where billable time disappears: drafting proposals, polishing client copy, creating visual assets or turning calls into follow-up tasks. Start with one repeated task, then add a tool only if it measurably reduces work."
-      pricingNote="Free access, AI credits, included features and usage limits change frequently. Confirm current terms on each provider's official site. Before uploading client material, check confidentiality obligations, data retention and whether the client has approved the workflow."
+      intro="Freelancers rarely need an all-in-one AI stack. The useful choice depends on where billable time disappears: drafting proposals, polishing client copy, researching a client, creating visuals or turning calls into follow-up tasks. Compare tools by the exact deliverable, free usage limits, review effort and client-confidentiality requirements. Start with one repeated task and add a tool only if it measurably reduces work."
+      pricingNote="Free access, message or credit limits, included models, file uploads and integrations change frequently. Confirm the current provider terms before planning a workflow around a free tier. For client material, check confidentiality obligations, data retention and training settings, and obtain approval where required. Keep a human review step for claims, quotes, deliverables and commitments."
       tools={[
         {
           name: "ChatGPT",

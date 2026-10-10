@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Appointment Scheduling Software for Small Business (2026)",
   description:
-    "An honest comparison of Calendly, Acuity Scheduling, and Cal.com - meetings vs. service-business bookings are two different jobs, and the right tool depends on which one you actually have.",
+    "Compare Calendly, Acuity Scheduling and Cal.com for consultants, coaches and small businesses by free booking limits, calendar connections, payments, intake forms and client workflow.",
   alternates: { canonical: "/best/appointment-scheduling-software" },
 };
 
@@ -13,8 +13,8 @@ export default function Page() {
     <ComparisonArticle
       title="Best Appointment Scheduling Software for Small Business"
       slug="appointment-scheduling-software"
-      intro="Two different jobs get lumped into this category: scheduling 1:1 meetings (sales calls, consultations) and scheduling service-business appointments (with deposits, intake forms, and client payment). The best tool depends entirely on which one you're actually doing."
-      pricingNote="Free-tier limits (event types, connected calendars) vary and change between these tools. Confirm current limits directly before assuming a free plan covers your use case."
+      intro="Consultants and coaches often need a simple booking link, calendar conflict prevention, reminders and a short intake form. Service businesses may also need deposits, packages, recurring sessions, multiple staff calendars or rescheduling rules. This guide separates meeting schedulers from appointment-management tools so you do not pay for a full booking system when a simple consultation link would do."
+      pricingNote="Before adopting a free plan, verify how many event types and calendars are included, whether reminders and intake questions are available, whether payments or deposits require a paid tier, and whether multiple hosts can share availability. Run the entire customer journey—including rescheduling, cancellation, time zones and confirmation emails—before linking the booking page from your website."
       tools={[
         {
           name: "Calendly",
