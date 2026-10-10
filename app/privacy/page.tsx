@@ -33,9 +33,10 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Analytics</h2>
             <p>
               StackPick uses Google Analytics to understand site usage, including which pages are
-              visited and how visitors interact with the site. Google may process online identifiers,
-              device and browser information, and usage events to provide these analytics. Browser
-              settings and available Google tools may offer ways to limit analytics collection.
+              visited and how visitors interact with the site. Analytics services may use cookies
+              or similar technologies and may process online identifiers, device and browser
+              information, and usage events. You can review your browser's cookie settings and
+              Google's available privacy controls to learn about choices for analytics collection.
               Please do not submit sensitive personal information through this website.
             </p>
           </section>
@@ -45,8 +46,9 @@ export default function PrivacyPage() {
               StackPick does not currently serve display advertisements. If we introduce an
               advertising service such as Google AdSense, that service may use cookies or similar
               technologies to deliver, measure, or personalize advertisements, subject to applicable
-              law and the choices made available to visitors. This policy will be updated before
-              advertising is enabled.
+              law and the choices made available to visitors. Where required, appropriate consent
+              controls will be implemented before non-essential advertising technologies are used.
+              This policy will be updated before advertising is enabled.
             </p>
           </section>
           <section>
