@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description:
       "Independent, practical comparisons of business software for freelancers and small teams.",
     url: SITE_URL,
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "StackPick — Software, without the noise" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "StackPick — Software, without the noise" }],
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
