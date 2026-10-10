@@ -22,8 +22,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Affiliate links</h2>
             <p>
-              When you click an affiliate link, the destination site (not StackPick) sets a
-              tracking cookie or parameter to credit the referral. See our{" "}
+              StackPick does not currently use affiliate links or earn affiliate commissions from vendor links. If affiliate relationships are introduced, we will disclose them on relevant pages and update this policy. See our{" "}
               <Link href="/affiliate-disclosure" className="text-[#004bb5] font-medium hover:underline">
                 Affiliate Disclosure
               </Link>{" "}
