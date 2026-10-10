@@ -40,8 +40,6 @@ export default function ComparisonArticle({
         headline: title,
         description: intro,
         url: `${siteUrl}/best/${slug}`,
-        datePublished: "2026-09-24",
-        dateModified: "2026-10-09",
         author: { "@type": "Organization", name: "StackPick Editorial", url: siteUrl },
         publisher: { "@type": "Organization", name: "StackPick", url: siteUrl },
         isAccessibleForFree: true,
@@ -92,7 +90,7 @@ export default function ComparisonArticle({
           <p className="sp-eyebrow mt-8 uppercase tracking-wider text-xs">Software comparison</p>
           <h1 className="sp-title mt-3 max-w-4xl text-[#1d1d1f]">{title}</h1>
           <p className="mt-5 max-w-3xl text-base sm:text-lg leading-relaxed text-[#6e6e73]">{intro}</p>
-          <p className="mt-5 text-xs text-[#86868b]">Independent research · Updated October 2026</p>
+          <p className="mt-5 text-xs text-[#86868b]">Independent research · Verify current pricing with each provider</p>
         </div>
       </header>
 
