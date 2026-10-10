@@ -14,8 +14,8 @@ export default function Page() {
     <ComparisonArticle
       title="Best AI Coding Assistants for Developers"
       slug="ai-coding-assistants"
-      intro="The right coding assistant depends on the work: inline completions, editing several files, understanding an unfamiliar repository, or running a task from the terminal. This guide separates those workflows so you can shortlist a tool without treating every AI product as interchangeable."
-      pricingNote="Plans, model access, usage limits and included agent features change often. Treat the options below as a workflow shortlist, not a claim that one tool wins every coding benchmark. Confirm current limits on each provider's official site before paying."
+      intro="For freelancers and small development teams, the best AI coding assistant depends on the task: autocomplete while typing, understanding an unfamiliar repository, editing several files, or running a terminal-based coding task. We compare workflow fit and review burden rather than claiming a universal benchmark winner. Treat free access as a trial of your real stack—such as React, TypeScript, Next.js or .NET—not as proof that the same usage will remain free at project scale."
+      pricingNote="Free access may limit completions, premium model requests, agent tasks, context size, repository indexing or monthly usage. Check the exact IDE, model and agent features included, and whether API usage is billed separately from a subscription. For client repositories, review data controls and permissions, never paste secrets into prompts, and inspect diffs and commands before accepting changes. StackPick has not presented this shortlist as a controlled hands-on benchmark."
       tools={[
         {
           name: "GitHub Copilot",
