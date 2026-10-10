@@ -4,6 +4,139 @@ import Link from "next/link";
 import SoftwareLogo from "@/components/SoftwareLogo";
 import type { ReactNode } from "react";
 
+const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
+  "accounting-for-freelancers": [
+    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/free-accounting-software", title: "Free accounting software" },
+    { href: "/best/quickbooks-vs-freshbooks", title: "QuickBooks vs FreshBooks" },
+  ],
+  "accounting-for-small-businesses": [
+    { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
+    { href: "/best/free-accounting-software", title: "Free accounting software" },
+    { href: "/best/quickbooks-vs-xero", title: "QuickBooks vs Xero" },
+  ],
+  "free-accounting-software": [
+    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
+    { href: "/best/track-business-expenses-without-spreadsheets", title: "Track expenses without spreadsheets" },
+  ],
+  "crm-for-freelancers": [
+    { href: "/best/crm-for-small-businesses", title: "CRM for small businesses" },
+    { href: "/best/free-crm-software", title: "Free CRM software" },
+    { href: "/best/manage-customer-leads-as-freelancer", title: "Manage freelance leads" },
+  ],
+  "crm-for-small-businesses": [
+    { href: "/best/crm-for-freelancers", title: "CRM for freelancers" },
+    { href: "/best/free-crm-software", title: "Free CRM software" },
+    { href: "/best/hubspot-vs-pipedrive", title: "HubSpot vs Pipedrive" },
+  ],
+  "free-crm-software": [
+    { href: "/best/crm-for-small-businesses", title: "CRM for small businesses" },
+    { href: "/best/crm-for-freelancers", title: "CRM for freelancers" },
+    { href: "/best/hubspot-alternatives-small-businesses", title: "HubSpot alternatives" },
+  ],
+  "invoicing-for-freelancers": [
+    { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
+    { href: "/best/free-invoicing-software", title: "Free invoicing software" },
+    { href: "/best/invoice-clients-as-freelancer", title: "How to invoice freelance clients" },
+  ],
+  "invoicing-for-small-businesses": [
+    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/free-invoicing-software", title: "Free invoicing software" },
+    { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
+  ],
+  "free-invoicing-software": [
+    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
+    { href: "/best/freshbooks-vs-wave", title: "FreshBooks vs Wave" },
+  ],
+  "project-management-for-freelancers": [
+    { href: "/best/project-management-for-small-teams", title: "Project management for small teams" },
+    { href: "/best/free-project-management-software", title: "Free project management software" },
+    { href: "/best/manage-client-projects-without-full-time-team", title: "Manage client projects" },
+  ],
+  "project-management-for-small-teams": [
+    { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
+    { href: "/best/free-project-management-software", title: "Free project management software" },
+    { href: "/best/trello-vs-asana", title: "Trello vs Asana" },
+  ],
+  "free-project-management-software": [
+    { href: "/best/project-management-for-small-teams", title: "Project management for small teams" },
+    { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
+    { href: "/best/trello-alternatives", title: "Trello alternatives" },
+  ],
+  "free-website-builders": [
+    { href: "/best/website-builder-for-small-businesses", title: "Website builders for small businesses" },
+    { href: "/best/website-builder-for-freelancers", title: "Website builders for freelancers" },
+    { href: "/best/free-website-builders-no-coding", title: "Free no-code website builders" },
+  ],
+  "website-builder-for-small-businesses": [
+    { href: "/best/free-website-builders", title: "Free website builders" },
+    { href: "/best/website-builder-for-freelancers", title: "Website builders for freelancers" },
+    { href: "/best/web-hosting", title: "Web hosting for small businesses" },
+  ],
+  "website-builder-for-freelancers": [
+    { href: "/best/free-website-builders", title: "Free website builders" },
+    { href: "/best/website-builder-for-small-businesses", title: "Website builders for small businesses" },
+    { href: "/best/web-hosting", title: "Web hosting for small businesses" },
+  ],
+  "free-scheduling-software": [
+    { href: "/best/scheduling-for-small-businesses", title: "Scheduling for small businesses" },
+    { href: "/best/appointment-scheduling-software", title: "Appointment scheduling software" },
+    { href: "/best/calendly-vs-google-calendar", title: "Calendly vs Google Calendar" },
+  ],
+  "scheduling-for-small-businesses": [
+    { href: "/best/free-scheduling-software", title: "Free scheduling software" },
+    { href: "/best/appointment-scheduling-software", title: "Appointment scheduling software" },
+    { href: "/best/employee-scheduling-software", title: "Employee scheduling software" },
+  ],
+  "ai-tools-small-businesses": [
+    { href: "/best/free-ai-tools-small-businesses", title: "Free AI tools for small businesses" },
+    { href: "/best/ai-writing-tools-small-businesses", title: "AI writing tools for small businesses" },
+    { href: "/best/ai-automation-tools-small-businesses", title: "AI automation tools" },
+  ],
+  "free-ai-tools-small-businesses": [
+    { href: "/best/ai-tools-small-businesses", title: "AI tools for small businesses" },
+    { href: "/best/ai-tools-marketing-small-businesses", title: "AI tools for small-business marketing" },
+    { href: "/best/ai-writing-tools-small-businesses", title: "AI writing tools" },
+  ],
+  "ai-writing-tools-small-businesses": [
+    { href: "/best/ai-tools-small-businesses", title: "AI tools for small businesses" },
+    { href: "/best/free-ai-tools-small-businesses", title: "Free AI tools for small businesses" },
+    { href: "/best/ai-tools-business-content", title: "AI tools for business content" },
+  ],
+  "how-to-choose-software-small-business": [
+    { href: "/best/how-much-business-software-do-you-need", title: "How much business software do you need?" },
+    { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
+    { href: "/best/switch-business-software-without-losing-data", title: "Switch software without losing data" },
+  ],
+  "how-much-business-software-do-you-need": [
+    { href: "/best/how-to-choose-software-small-business", title: "How to choose business software" },
+    { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
+    { href: "/best/free-vs-paid-business-software", title: "Free vs paid business software" },
+  ],
+  "simple-small-business-software-stack": [
+    { href: "/best/how-to-choose-software-small-business", title: "How to choose business software" },
+    { href: "/best/how-much-business-software-do-you-need", title: "How much software do you need?" },
+    { href: "/best/automate-repetitive-small-business-tasks", title: "Automate repetitive tasks" },
+  ],
+  "track-business-expenses-without-spreadsheets": [
+    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
+    { href: "/best/free-accounting-software", title: "Free accounting software" },
+  ],
+  "automate-repetitive-small-business-tasks": [
+    { href: "/best/n8n-vs-make-vs-zapier", title: "n8n vs Make vs Zapier" },
+    { href: "/best/ai-automation-tools-small-businesses", title: "AI automation tools for small businesses" },
+    { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
+  ],
+  "switch-business-software-without-losing-data": [
+    { href: "/best/how-to-choose-software-small-business", title: "How to choose business software" },
+    { href: "/best/how-much-business-software-do-you-need", title: "How much software do you need?" },
+    { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
+  ],
+};
+
 export interface ComparisonTool {
   name: string;
   bestFor: string;
@@ -240,6 +373,25 @@ export default function ComparisonArticle({
           <p className="mt-6 max-w-3xl text-base sm:text-lg leading-relaxed text-[#a1a1a6]">{bottomLine}</p>
         </div>
       </section>
+
+      {/* Related guides: contextual internal links to adjacent search intents */}
+      {RELATED_GUIDES[slug] && (
+        <section className="bg-[#f5f5f7] border-t border-black/[0.06]">
+          <div className="sp-container py-14 sm:py-16">
+            <p className="sp-eyebrow">Keep exploring</p>
+            <h2 className="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-[#1d1d1f]">Related software guides</h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">Explore closely related comparisons and practical guides to narrow your shortlist.</p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-3">
+              {RELATED_GUIDES[slug].filter((guide) => guide.href !== `/best/${slug}`).map((guide) => (
+                <Link key={guide.href} href={guide.href} className="group rounded-2xl border border-[#d2d2d7] bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-md">
+                  <span className="text-sm font-semibold text-[#1d1d1f]">{guide.title}</span>
+                  <span className="mt-3 block text-xs font-semibold text-[#004bb5] group-hover:underline">Read guide →</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Affiliate disclosure footer */}
       <div className="sp-container py-8">
