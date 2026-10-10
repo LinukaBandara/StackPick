@@ -17,10 +17,12 @@ npm run build    # production build
   favicon/apple-touch-icon/OG image, `llms.txt`, AI-crawler-aware `robots.ts`.
 - **SEO infra**: per-page metadata + canonical URLs, `sitemap.ts`, `WebSite`/`Organization`
   JSON-LD sitewide, `Article` JSON-LD per comparison.
-- **`/best` hub page** listing all comparisons (nav links here instead of a cluttered
-  12-item menu - cleaner UX at this content volume).
-- **32 genuine comparison articles**, all researched (cross-checked multiple sources, not
-  fabricated), all using the shared `components/ComparisonArticle.tsx`:
+- **`/best` hub page** listing all 100 published guides with search and category filters.
+- **100 published guide pages**: 32 core comparison pages listed below, plus 68 additional
+  guides covering head-to-head comparisons, alternatives, free-plan use cases and practical
+  small-business workflows. The six recently expanded head-to-head pages have dedicated
+  decision criteria and task-based evaluation checklists. The 32 core comparisons use the
+  shared `components/ComparisonArticle.tsx`:
   1. `/best/invoicing-software` - Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks
   2. `/best/accounting-software` - Xero, QuickBooks, Wave, Zoho Books
   3. `/best/payroll-software` - Gusto, QuickBooks Payroll, OnPay, Patriot Software
