@@ -104,6 +104,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/ai-tools-small-businesses", title: "AI tools for small businesses" },
     { href: "/best/free-ai-tools-small-businesses", title: "Free AI tools for small businesses" },
     { href: "/best/ai-tools-business-content", title: "AI tools for business content" },
+    { href: "/best/ai-tools-freelancers", title: "AI tools for freelancers" },
   ],
   "how-to-choose-software-small-business": [
     { href: "/best/how-much-business-software-do-you-need", title: "How much business software do you need?" },
@@ -180,11 +181,6 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/ai-writing-tools-small-businesses", title: "AI writing tools for small business" },
     { href: "/best/ai-meeting-assistants", title: "AI meeting assistants" },
     { href: "/best/ai-productivity-tools-freelancers", title: "AI productivity tools for freelancers" },
-  ],
-  "ai-writing-tools-small-businesses": [
-    { href: "/best/ai-tools-freelancers", title: "AI tools for freelancers" },
-    { href: "/best/ai-tools-business-content", title: "AI tools for business content" },
-    { href: "/best/free-ai-tools-small-businesses", title: "Free AI tools for small business" },
   ],
   "ai-productivity-tools-freelancers": [
     { href: "/best/ai-tools-freelancers", title: "AI tools for freelancers" },
