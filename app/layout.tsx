@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BackNavigation from "@/components/BackNavigation";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.stackpick.tech";
@@ -78,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <Header />
+        <BackNavigation />
         <main id="main">{children}</main>
         <Footer />
       </body>
