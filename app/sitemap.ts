@@ -5,6 +5,9 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.stackpick.tech
 const ROUTES = [
   "/",
   "/best",
+  "/categories",
+  "/comparisons",
+  "/guides",
   "/best/invoicing-software",
   "/best/accounting-software",
   "/best/payroll-software",
