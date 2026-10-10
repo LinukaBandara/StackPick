@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Affiliate Disclosure",
-  description: "How StackPick uses affiliate links and how that relates to our recommendations.",
+  description: "StackPick's current affiliate-link status and editorial policy for any future commercial relationships.",
   alternates: { canonical: "/affiliate-disclosure" },
 };
 
@@ -14,25 +14,27 @@ export default function AffiliateDisclosurePage() {
         <h1 className="sp-title mt-3 text-[#1d1d1f]">Affiliate Disclosure</h1>
         <div className="mt-8 space-y-6 text-base sm:text-lg leading-relaxed text-[#6e6e73]">
           <p>
-            Some links on StackPick are affiliate links. If you sign up for a tool through one of
-            these links, we may earn a commission from the software provider, at no additional
-            cost to you.
+            StackPick currently links directly to software vendors and does not currently earn
+            affiliate commissions from the vendor links on this site. We are publishing this
+            policy so readers can understand our approach before any commercial links are added.
           </p>
           <p>
-            This is how StackPick stays free to use and ad-light. It does not change the price you
-            pay for any tool.
+            If we introduce affiliate links in the future, we will update this page and clearly
+            identify those relationships on relevant pages before using them. An affiliate link
+            may earn StackPick a commission if you purchase or sign up through it; the vendor's
+            terms determine the transaction, and any commission should not increase the price you
+            pay.
           </p>
           <h2 className="text-2xl font-bold tracking-tight text-[#1d1d1f] pt-4">How this affects our content</h2>
           <p>
-            Our rankings and recommendations are based on our own research into features, pricing,
-            and trade-offs - not on which tool pays the highest commission. Where a tool is a
-            genuinely poor fit for a use case, we say so, even if it has an affiliate program and a
-            competitor doesn't.
+            Our comparisons should explain who a product suits, its practical trade-offs and what
+            readers should verify before buying. Any future commercial relationship will not be a
+            reason to recommend a tool that is a poor fit. We aim to make the basis for our
+            recommendations clear and to correct material errors when they are identified.
           </p>
           <p>
-            We disclose affiliate relationships on any page where they're present, and mark
-            individual affiliate links with a "sponsored" attribute per search engine disclosure
-            guidelines.
+            Vendor links currently go to the vendors' websites. If an individual link becomes an
+            affiliate link, we will disclose that relationship and mark the link appropriately.
           </p>
         </div>
       </div>
