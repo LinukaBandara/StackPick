@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Help Desk Software for Small Business (2026)",
   description:
-    "An honest comparison of Help Scout, Freshdesk, Zoho Desk, and Gorgias - which one fits depending on whether you're email-first, e-commerce, or scaling fast.",
+    "Compare help desk software for solo operators and small teams by free agent limits, shared inboxes, ticket workflows, automation, customer context and upgrade costs.",
   alternates: { canonical: "/best/help-desk-software" },
 };
 
@@ -13,8 +13,8 @@ export default function Page() {
     <ComparisonArticle
       title="Best Help Desk Software for Small Business"
       slug="help-desk-software"
-      intro="The biggest split in this category is between tools that feel like a shared email inbox and tools that feel like enterprise ticketing software. For a small team, that difference in day-to-day feel usually matters more than the feature checklist."
-      pricingNote="Free-tier user caps and per-agent pricing shift often in this category. Live pricing is linked directly rather than published here."
+      intro="A solo operator or 2–5 person team usually needs a dependable place to receive customer questions, assign ownership, find previous conversations and avoid duplicate replies. A shared inbox may be enough for low volume; a help desk becomes more useful when requests need categories, assignment rules, saved replies, service-level targets or reporting. Choose based on the support workflow you actually run—not on enterprise features you will never configure."
+      pricingNote="Verify the current free agent cap, ticket or contact limits, shared inbox access, channels, automation, reporting, saved replies and data export. Some providers offer a temporary trial rather than a permanent free tier, and AI features may have separate limits or charges. Calculate the price for your actual agent count and confirm what happens to ticket history if you downgrade or leave."
       tools={[
         {
           name: "Help Scout",
@@ -49,7 +49,7 @@ export default function Page() {
           url: "https://www.gorgias.com/",
         },
       ]}
-      bottomLine="Small team, mostly email, want the least clutter? Help Scout. Expect to grow and want a strong free tier to start? Freshdesk. Already paying for other Zoho tools? Zoho Desk. Running a Shopify store? Gorgias isn't really optional - the order-data integration is worth the switch."
+      bottomLine="For low-volume email support, prioritize a shared inbox your team will consistently use. If you need assignment, ticket states and basic reporting, compare the current Freshdesk and Zoho Desk plans against your actual agent count. Help Scout is worth evaluating if a customer-friendly shared-inbox workflow is central; Gorgias is most relevant when store-order context is essential to e-commerce support. Run a sample ticket through intake, assignment, reply, escalation and export before moving live customer history."
     >
       <section className="bg-white">
         <div className="sp-container py-10">
