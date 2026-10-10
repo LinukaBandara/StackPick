@@ -15,22 +15,19 @@ export default function Page() {
       intro="Compare scheduling tools for small businesses that need customers to book appointments without creating extra admin for staff."
       pricingNote="Plans, limits and included features can change. Verify the provider's current pricing and terms before publishing a site or moving a live business workflow."
       tools={[
-        { name: "Calendly", bestFor: "Simple appointment booking", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "Compare booking, publishing, collaboration and upgrade limits against your actual workflow.", url: "https://calendly.com/" },
-        { name: "Google Calendar", bestFor: "Businesses already using Google Workspace", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "Compare booking, publishing, collaboration and upgrade limits against your actual workflow.", url: "https://calendar.google.com/" },
-        { name: "Microsoft Bookings", bestFor: "Microsoft 365-based businesses", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "Compare booking, publishing, collaboration and upgrade limits against your actual workflow.", url: "https://www.microsoft.com/microsoft-365/business/scheduling-and-booking-app" },
-        { name: "SimplyBook.me", bestFor: "Businesses needing richer booking workflows", freeOption: "Check the provider's current free or trial terms and limits.", tradeoff: "Compare booking, publishing, collaboration and upgrade limits against your actual workflow.", url: "https://simplybook.me/" },
+        { name: "Calendly", bestFor: "Service businesses with client booking links", freeOption: "Check current event-type, calendar, reminder and team-routing limits against the appointments you offer.", tradeoff: "Works well for sharing a clear booking link, but multiple staff, round-robin assignment or more complex scheduling rules may change the plan you need.", url: "https://calendly.com/" },
+        { name: "Google Calendar", bestFor: "Small teams already using Google calendars", freeOption: "Confirm appointment-schedule availability for your account and test whether its booking and team controls cover your process.", tradeoff: "Can keep scheduling close to an existing calendar workflow, but check whether customers can book the service types and durations you offer without manual follow-up.", url: "https://calendar.google.com/" },
+        { name: "Microsoft Bookings", bestFor: "Businesses using Microsoft 365", freeOption: "Verify the exact Microsoft 365 license, staff permissions and tenant configuration needed before rollout.", tradeoff: "Its fit depends on your Microsoft 365 setup; check staff calendars, shared booking pages and notification behavior with the account you will actually use.", url: "https://www.microsoft.com/microsoft-365/business/scheduling-and-booking-app" },
+        { name: "SimplyBook.me", bestFor: "Businesses offering multiple services", freeOption: "Check current booking-count, service, staff and notification limits, plus any paid add-ons needed for payments.", tradeoff: "Can suit service-based businesses with more booking steps, but include booking volume, service configuration and add-on costs in the comparison.", url: "https://simplybook.me/" },
       ]}
-      bottomLine="Choose the smallest tool that handles the work you actually do. Before committing, test the normal workflow from setup through the first real customer or client task, then check what happens when you hit the free-plan or entry-tier limit."
+      bottomLine="Choose based on how appointments move through your business: customer booking, staff assignment, confirmation, rescheduling, reminders and the final calendar entry. Test the busiest realistic week, not just one demo booking. If a missed appointment or manual handoff costs staff time, prioritize reliable notifications and shared visibility over a longer feature list."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick reality check</p>
-          <h2 className="sp-title mt-4 max-w-4xl">The free plan is only useful if it survives your normal workflow.</h2>
+          <p className="sp-eyebrow">StackPick scheduling test</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Test a busy week, including changes and staff handoffs.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Test the job you would repeat every week: create the project, add the people or
-            content you need, complete the normal task, and try the export or handoff step.
-            Then identify the first restriction that would force an upgrade. That is more useful
-            than comparing feature counts in isolation.
+            Set up two or more services, assign staff availability, and create sample bookings that include a reschedule and cancellation. Check whether the right staff member is notified, whether calendar conflicts are prevented, and what the customer receives. Then price the plan and add-ons needed for your normal booking volume.
           </p>
         </div>
       </section>
