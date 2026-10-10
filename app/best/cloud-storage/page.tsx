@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Cloud Storage for Small Business Teams (2026)",
   description:
-    "An honest comparison of Google Drive, Dropbox, and Microsoft OneDrive - the real decision is which productivity ecosystem your team already lives in.",
+    "Compare Google Drive, OneDrive and Dropbox for small-business file sharing, team permissions, recovery, external collaboration, free storage limits and total cost.",
   alternates: { canonical: "/best/cloud-storage" },
 };
 
@@ -13,8 +13,8 @@ export default function Page() {
     <ComparisonArticle
       title="Best Cloud Storage for Small Business Teams"
       slug="cloud-storage"
-      intro="This decision is usually made for you already: if your team lives in Google Workspace, use Google Drive. If you're on Microsoft 365, use OneDrive. Paying for a third cloud storage tool on top of a suite you're already paying for rarely makes sense unless you have a specific reason - like Dropbox's strength with large media files and external collaborators."
-      pricingNote="Storage tiers and per-user pricing shift periodically across all three, and 'free storage' amounts specifically have changed multiple times in recent years. Confirm current limits directly."
+      intro="For a small business, cloud storage is not just a gigabyte comparison. Choose around the tools your team already pays for, how often you share files with clients, who can access sensitive folders, and how reliably you can restore deleted or overwritten work. Google Drive and OneDrive are especially compelling inside their existing productivity suites; Dropbox can still be worth evaluating when external file sharing and large creative files are central to the workflow."
+      pricingNote="Check current storage quotas, per-user pricing, shared-drive or team-folder availability, external sharing controls, file version history, deleted-file recovery and minimum seat commitments. Free personal storage is not equivalent to a managed business workspace. Verify whether storage is shared with email or other services and whether your required admin controls are included in the plan you intend to buy."
       tools={[
         {
           name: "Google Drive",
@@ -41,7 +41,7 @@ export default function Page() {
           url: "https://www.dropbox.com/business",
         },
       ]}
-      bottomLine="Already on Google Workspace? Use Google Drive - don't add a second tool. Already on Microsoft 365? OneDrive, for the same reason. Neither, and you work heavily with large media files or external collaborators who need clean sharing? Dropbox is worth paying for on its own merits."
+      bottomLine="If your team already pays for Google Workspace, start with Drive; if it pays for Microsoft 365, start with OneDrive and verify the business sharing controls included in your subscription. Evaluate Dropbox when large-file delivery or external collaboration solves a specific recurring problem. Whichever you choose, test permissions from a separate account, restore a deleted test file, and confirm how you would export your data before migrating client documents."
     >
       <section className="bg-white">
         <div className="sp-container py-10">
