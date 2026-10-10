@@ -472,5 +472,5 @@ button:focus-visible {
   .sp-hero-section::before { top: -190px; width: 140vw; height: 520px; }
   .sp-hero-section .sp-display { font-size: clamp(2.75rem, 12vw, 4.1rem); line-height: 1.02; }
   .sp-hero-section .sp-body-large { max-width: 34rem; font-size: 1rem; line-height: 1.6; }
-  .sp-hero-section .sp-button { min-height: 46px; padding-inline: 18px; }
+  .sp-hero-section .sp-button-primary, .sp-hero-section .sp-button-secondary { min-height: 46px; padding-inline: 18px; }
 }
