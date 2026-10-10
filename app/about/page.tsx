@@ -24,11 +24,11 @@ export default function AboutPage() {
             actually matter (not just endless feature checklists).
           </p>
           <p>
-            Some of our links are affiliate links - see our{" "}
+            Our vendor links currently go directly to software providers, and StackPick does not currently earn affiliate commissions from them. Read our{" "}
             <Link href="/affiliate-disclosure" className="text-[#004bb5] font-medium hover:underline">
               Affiliate Disclosure
             </Link>{" "}
-            for exactly how that works and how it does (and doesn't) affect our recommendations.
+            for how we will handle and disclose any future commercial relationships.
           </p>
         </div>
       </div>
