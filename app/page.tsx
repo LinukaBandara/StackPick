@@ -178,7 +178,7 @@ export default function HomePage() {
             {/* Row 1: Customers, Invoices, Projects */}
             <div className="grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3">
               {ROW1_CATEGORIES.map((item) => (
-                <Link key={item.label} href={item.href} className="group block">
+                <Link key={item.label} href={item.href} className="group flex flex-col items-center text-center">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-transform group-hover:scale-105">
                     {item.icon}
                   </div>
@@ -198,7 +198,7 @@ export default function HomePage() {
             {/* Row 2: Time, Security, Payroll */}
             <div className="grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3">
               {ROW2_CATEGORIES.map((item) => (
-                <Link key={item.label} href={item.href} className="group block">
+                <Link key={item.label} href={item.href} className="group flex flex-col items-center text-center">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-transform group-hover:scale-105">
                     {item.icon}
                   </div>
