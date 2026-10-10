@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best CRM for Freelancers (2026): Free Plans Compared",
   description:
-    "Find a CRM that fits a solo freelance business without paying for features you will never use. Compare HubSpot, Pipedrive, Zoho CRM and Notion.",
+    "Compare HubSpot, Zoho CRM, Pipedrive and Notion for freelance client tracking, current free-plan limits, follow-ups and upgrade tradeoffs.",
   alternates: { canonical: "/best/crm-for-freelancers" },
 };
 
@@ -20,7 +20,7 @@ export default function CrmForFreelancersPage() {
           name: "HubSpot CRM",
           bestFor: "Freelancers who want a ready-made CRM without building their own system",
           freeOption:
-            "A permanent free CRM tier is available for core contact and deal management; verify current feature and usage limits.",
+            "HubSpot’s official pricing page lists its free tools at $0, with up to 2 users and 1,000 contacts. It is a permanent free tier, not just a trial; paid features and higher limits require an upgrade.",
           tradeoff:
             "It gives a solo freelancer room to grow, but the wider HubSpot ecosystem can introduce paid features you may not need at the beginning.",
           url: "https://www.hubspot.com/pricing/crm",
@@ -29,7 +29,7 @@ export default function CrmForFreelancersPage() {
           name: "Pipedrive",
           bestFor: "Freelancers whose work is driven by a steady stream of proposals and deals",
           freeOption:
-            "No permanent free plan; a trial may be available depending on the current offer.",
+            "Pipedrive offers a 14-day trial of paid plans, rather than a permanent free plan. Export your data before the trial ends if you decide not to subscribe.",
           tradeoff:
             "Its pipeline-first approach is easy to understand when every prospect has a sales stage, but it is harder to justify if you mainly need a lightweight client address book.",
           url: "https://www.pipedrive.com/en/pricing",
@@ -38,7 +38,7 @@ export default function CrmForFreelancersPage() {
           name: "Zoho CRM",
           bestFor: "Freelancers who want CRM features alongside a broader Zoho toolset",
           freeOption:
-            "A limited free edition may be available under current Zoho terms; check the current user and feature limits.",
+            "Zoho CRM’s Free Edition supports up to 3 users and includes core leads, contacts, deals, tasks, events, call logs and notes. More advanced features are reserved for paid editions.",
           tradeoff:
             "It can make sense when your workflow already uses Zoho products, while the larger feature set can mean more setup than a solo freelancer actually needs.",
           url: "https://www.zoho.com/crm/zohocrm-pricing.html",
@@ -47,7 +47,7 @@ export default function CrmForFreelancersPage() {
           name: "Notion as a CRM",
           bestFor: "Freelancers who prefer to build a simple client tracker around their existing workspace",
           freeOption:
-            "Notion offers a free plan subject to its current terms.",
+            "For a solo workspace, Notion’s Free plan allows unlimited pages and blocks. Multi-member workspaces have different limits, and a client tracker still needs to be designed and maintained by you.",
           tradeoff:
             "You can shape the database around your own process, but you are responsible for designing and maintaining the CRM workflow instead of getting a purpose-built sales system.",
           url: "https://www.notion.com/pricing",
