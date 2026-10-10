@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Time Tracking Software for Freelancers & Small Teams (2026)",
   description:
-    "An honest comparison of Toggl Track, Clockify, Harvest, and Hubstaff - and the difference between billing-focused tracking and employee monitoring, which are not the same thing.",
+    "Compare Toggl Track, Clockify, Harvest and Hubstaff for freelancer time tracking, billable hours, invoice workflows, free-plan limits and employee-monitoring trade-offs.",
   alternates: { canonical: "/best/time-tracking-software" },
 };
 
@@ -13,8 +13,8 @@ export default function Page() {
     <ComparisonArticle
       title="Best Time Tracking Software for Freelancers & Small Teams"
       slug="time-tracking-software"
-      intro="Worth being upfront about: some tools in this category (Hubstaff, Time Doctor) include employee monitoring - screenshots, activity levels, GPS. Others (Toggl, Clockify) deliberately don't. If you're a freelancer tracking your own hours, that distinction doesn't matter; if you're managing a remote team, it's the first decision to make, not an afterthought."
-      pricingNote="Free-tier user limits vary meaningfully between these tools and change periodically - Clockify's unlimited-user free plan is the standout worth double-checking still holds at signup."
+      intro="If you bill clients by the hour, time tracking should lead to usable timesheets and invoices—not another spreadsheet cleanup job. Freelancers should prioritize billable/non-billable labels, client and project reports, rounding rules, and invoice export or billing integrations. Small-team managers must make a separate decision about monitoring: screenshots, activity levels and GPS are not the same thing as a timer, and should only be introduced for a clear, transparent reason."
+      pricingNote="Check current limits for users, projects, billable reports, timesheet approvals, integrations and invoice creation. A free timer may be enough for personal tracking but still require manual work to create invoices; integrated billing can justify a paid plan if it saves time every week. Confirm whether monitoring features are included, optional or restricted to higher tiers, and disclose monitoring practices to workers."
       tools={[
         {
           name: "Toggl Track",
