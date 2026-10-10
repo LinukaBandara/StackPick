@@ -15,10 +15,10 @@ export default function Page() {
       intro="Compare HubSpot and Pipedrive for freelancers and small businesses by CRM setup, sales workflow, automation, pricing structure and day-to-day complexity."
       pricingNote="Pricing, limits and included features can change. Check the providers' current plans before making a decision."
       tools={[
-        { name: "HubSpot", bestFor: "Businesses wanting a broad CRM with marketing and sales tools", freeOption: "Free CRM option available; verify current limits.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://www.hubspot.com/" },
-        { name: "Pipedrive", bestFor: "Sales-focused teams wanting a straightforward pipeline", freeOption: "Paid plans and trial terms vary.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://www.pipedrive.com/" },
+        { name: "HubSpot", bestFor: "Businesses wanting a broad CRM with marketing and sales tools", freeOption: "Free CRM option available; verify current limits.", tradeoff: "The breadth is useful if marketing and sales data need to live together, but the jump from free basics to advanced automation can change the total cost quickly.", url: "https://www.hubspot.com/" },
+        { name: "Pipedrive", bestFor: "Sales-focused teams wanting a straightforward pipeline", freeOption: "Paid plans and trial terms vary.", tradeoff: "The pipeline-first workflow keeps deal stages visible, but it is less compelling if your work is mostly relationship tracking rather than a repeatable sales process.", url: "https://www.pipedrive.com/" },
       ]}
-      bottomLine="There is no universal winner. The better tool is the one that handles your normal workflow with less friction at the price you can justify. Test the same job in both products before switching."
+      bottomLine="Start with HubSpot if you need contact management plus room to connect marketing activity; choose Pipedrive if sales stages, follow-up discipline and deal forecasting are the main job. Before committing, price the exact number of users and the automation/reporting features you expect to use."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
