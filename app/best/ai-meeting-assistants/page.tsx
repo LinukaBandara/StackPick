@@ -24,18 +24,18 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">StackPick AI test</p>
-          <h2 className="sp-title mt-4 max-w-4xl">Measure the work saved, not the AI hype.</h2>
+          <p className="sp-eyebrow">Meeting notes quality check</p>
+          <h2 className="sp-title mt-4 max-w-4xl">A transcript is not the same thing as an accurate decision log.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            Give each tool the same realistic task. Record setup time, output quality, editing time,
-            usage limits, integrations and the point where a paid plan becomes relevant. For
-            business data, also check privacy, retention and administrator controls before putting
-            sensitive information into an AI service.
+            Test a meeting assistant with a conversation where you already know the decisions,
+            owners and deadlines. Compare its notes with your own record, especially speaker names,
+            numbers, disagreements and action items. Tell participants when recording or transcription
+            is happening and follow your team's consent and retention rules.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Same task</p><p className="mt-2 text-sm leading-6 text-[#667085]">Compare tools on identical inputs instead of marketing demos.</p></div>
-            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Human review</p><p className="mt-2 text-sm leading-6 text-[#667085]">Count the time needed to fact-check, edit and approve the output.</p></div>
-            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Real limit</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check usage caps, paid gates and data controls before committing.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Decision accuracy</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check whether the summary preserves what was actually agreed.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Action ownership</p><p className="mt-2 text-sm leading-6 text-[#667085]">Confirm each task has the right owner and deadline—or is marked unknown.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Data handling</p><p className="mt-2 text-sm leading-6 text-[#667085]">Review recording consent, access controls and transcript retention before rollout.</p></div>
           </div>
         </div>
       </section>
