@@ -15,10 +15,10 @@ export default function Page() {
       intro="Compare FreshBooks and Wave for freelancers and small service businesses, with emphasis on invoicing, bookkeeping, client workflows and cost."
       pricingNote="Pricing, limits and included features can change. Check the providers' current plans before making a decision."
       tools={[
-        { name: "FreshBooks", bestFor: "Service businesses needing client and billing workflows", freeOption: "Paid plans and features vary.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://www.freshbooks.com/" },
-        { name: "Wave", bestFor: "Businesses in supported markets wanting simple bookkeeping", freeOption: "Core availability and services vary by region.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://www.waveapps.com/" },
+        { name: "FreshBooks", bestFor: "Service businesses needing client and billing workflows", freeOption: "Paid plans and features vary.", tradeoff: "The polished client workflow and time tracking can save admin time, but a recurring subscription is hard to justify if you only send occasional invoices.", url: "https://www.freshbooks.com/" },
+        { name: "Wave", bestFor: "Businesses in supported markets wanting simple bookkeeping", freeOption: "Core availability and services vary by region.", tradeoff: "The no-monthly-subscription angle can be attractive, but availability, payment processing fees and country-specific features can change whether it is actually cheaper.", url: "https://www.waveapps.com/" },
       ]}
-      bottomLine="There is no universal winner. The better tool is the one that handles your normal workflow with less friction at the price you can justify. Test the same job in both products before switching."
+      bottomLine="Wave is worth checking first if it is available in your country and your workflow is mostly straightforward invoicing. FreshBooks is worth paying for when time tracking, estimates and client-facing workflows save enough effort to offset the subscription. Compare payment fees as well as monthly price."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
