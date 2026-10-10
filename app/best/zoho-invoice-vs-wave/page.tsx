@@ -15,10 +15,10 @@ export default function Page() {
       intro="Compare Zoho Invoice and Wave for small businesses and freelancers choosing between dedicated invoicing and a broader bookkeeping workflow."
       pricingNote="Pricing, limits and included features can change. Check the providers' current plans before making a decision."
       tools={[
-        { name: "Zoho Invoice", bestFor: "Dedicated invoicing workflows", freeOption: "Check current free-plan limits and regional availability.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://www.zoho.com/invoice/" },
-        { name: "Wave", bestFor: "Invoicing plus bookkeeping in supported markets", freeOption: "Availability and services vary by region.", tradeoff: "Compare the same real task in both tools before choosing.", url: "https://www.waveapps.com/" },
+        { name: "Zoho Invoice", bestFor: "Dedicated invoicing workflows", freeOption: "Check current free-plan limits and regional availability.", tradeoff: "It may be a strong fit for small businesses already using Zoho, but verify current country availability, client limits and supported payment methods.", url: "https://www.zoho.com/invoice/" },
+        { name: "Wave", bestFor: "Invoicing plus bookkeeping in supported markets", freeOption: "Availability and services vary by region.", tradeoff: "Its simple no-monthly-fee positioning can be attractive, but payment processing and regional availability can make the true cost different from the headline price.", url: "https://www.waveapps.com/" },
       ]}
-      bottomLine="There is no universal winner. The better tool is the one that handles your normal workflow with less friction at the price you can justify. Test the same job in both products before switching."
+      bottomLine="Compare these two against your country and payment workflow first: confirm that each supports the way your clients pay, then check invoice limits, recurring billing, reminders and expense tracking. If both fit, choose the one that needs less manual work—not simply the one with the lowest advertised price."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
