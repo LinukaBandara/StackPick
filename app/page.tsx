@@ -167,14 +167,14 @@ export default function HomePage() {
       {/* 2. Dark Showcase Section (Software for the work you do) */}
       <section className="bg-black text-white">
         <div className="sp-container py-14 sm:py-24 lg:py-32">
-          <div className="max-w-5xl">
+          <div className="mx-auto max-w-5xl text-center">
             <p className="sp-eyebrow text-[#a1a1a6]">What are you looking for?</p>
             <h2 className="sp-title mt-3 max-w-none text-balance text-white text-[clamp(2.25rem,5.2vw,4.2rem)] leading-[1.05]">
               Software for the work you do.
             </h2>
           </div>
 
-          <div className="mt-10 sm:mt-16 lg:mt-20">
+          <div className="mx-auto mt-10 max-w-5xl sm:mt-16 lg:mt-20">
             {/* Row 1: Customers, Invoices, Projects */}
             <div className="grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3">
               {ROW1_CATEGORIES.map((item) => (
