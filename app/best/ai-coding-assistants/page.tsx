@@ -112,15 +112,13 @@ export default function Page() {
         <div className="sp-container">
           <p className="sp-eyebrow">Keep exploring</p>
           <h2 className="sp-title mt-4 max-w-4xl">Compare related workflows.</h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <Link href="/best/ai-automation-tools-small-businesses" className="rounded-2xl border border-[#e4e7ec] p-5 transition hover:border-[#004bb5]">
-              <span className="font-semibold text-[#1d1d1f]">AI automation tools</span>
-              <span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Connect tools and automate repeatable workflows.</span>
-            </Link>
-            <Link href="/best/ai-tools-freelancers" className="rounded-2xl border border-[#e4e7ec] p-5 transition hover:border-[#004bb5]">
-              <span className="font-semibold text-[#1d1d1f]">AI tools for freelancers</span>
-              <span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Explore broader tools for independent work.</span>
-            </Link>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <Link href="/best/ai-tools-react-nextjs" className="rounded-2xl border border-[#e4e7ec] p-5 transition hover:border-[#004bb5]"><span className="font-semibold text-[#1d1d1f]">AI tools for React and Next.js</span><span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Framework-specific coding and testing workflows.</span></Link>
+            <Link href="/best/llm-tools-for-developers" className="rounded-2xl border border-[#e4e7ec] p-5 transition hover:border-[#004bb5]"><span className="font-semibold text-[#1d1d1f]">LLM tools for developers</span><span className="mt-2 block text-sm leading-6 text-[#6e6e73]">APIs, evaluation, observability and cost controls.</span></Link>
+            <Link href="/best/github-tools-for-developers" className="rounded-2xl border border-[#e4e7ec] p-5 transition hover:border-[#004bb5]"><span className="font-semibold text-[#1d1d1f]">GitHub tools for developers</span><span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Pull requests, CI and repository safety.</span></Link>
+            <Link href="/best/devops-tools-small-teams" className="rounded-2xl border border-[#e4e7ec] p-5 transition hover:border-[#004bb5]"><span className="font-semibold text-[#1d1d1f]">DevOps tools for small teams</span><span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Build, deploy, monitor and recover.</span></Link>
+            <Link href="/best/n8n-vs-make-vs-zapier" className="rounded-2xl border border-[#e4e7ec] p-5 transition hover:border-[#004bb5]"><span className="font-semibold text-[#1d1d1f]">n8n vs Make vs Zapier</span><span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Compare automation control and maintenance.</span></Link>
+            <Link href="/best/ai-tools-freelancers" className="rounded-2xl border border-[#e4e7ec] p-5 transition hover:border-[#004bb5]"><span className="font-semibold text-[#1d1d1f]">AI tools for freelancers</span><span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Explore tools for independent work.</span></Link>
           </div>
         </div>
       </section>
