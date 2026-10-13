@@ -14,7 +14,7 @@ export default function CrmForFreelancersPage() {
       title="Best CRM for Freelancers"
       slug="crm-for-freelancers"
       intro="A freelancer usually does not need a giant sales operation. You need to remember who contacted you, what you promised, when to follow up, and which leads are actually worth pursuing. We focus on that smaller job: low setup, useful free access, clear client tracking, and a sensible upgrade path."
-      pricingNote="Plan limits were checked against official provider pages on October 11, 2026. HubSpot currently lists free tools for up to 2 users and 1,000 contacts; Zoho CRM lists a free edition for up to 3 users. Pipedrive offers a time-limited trial rather than a permanent free plan. Notion’s free plan is generous for a solo workspace, but it is a DIY database rather than a dedicated sales CRM. Recheck provider terms before signing up, because feature limits and offers can change."
+      pricingNote="Plan limits were checked against official provider pages on October 13, 2026. HubSpot currently lists free tools for up to 2 users and 1,000 contacts; Zoho CRM lists a free edition for up to 3 users. Pipedrive offers a time-limited trial rather than a permanent free plan. Notion’s free plan is generous for a solo workspace, but it is a DIY database rather than a dedicated sales CRM. Recheck provider terms before signing up, because feature limits and offers can change."
       tools={[
         {
           name: "HubSpot CRM",
@@ -111,6 +111,35 @@ export default function CrmForFreelancersPage() {
             Also check whether the free plan lets you export your contacts before you commit to a
             workflow.
           </p>
+
+          <h3 className="mt-12 text-2xl font-semibold tracking-tight">
+            Verify the limits before you move real client data
+          </h3>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">
+            Free-plan labels can hide important differences: a permanent free tier is not the same
+            as a time-limited trial, and a flexible workspace is not automatically a dedicated CRM.
+            Before importing client details, confirm the current user and contact limits, which
+            features require payment, and how to export your records. We checked the providers’
+            published plan information, not paid accounts or hands-on product performance.
+          </p>
+          <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
+            <li>
+              <a className="underline underline-offset-4" href="https://www.hubspot.com/pricing/crm" target="_blank" rel="noreferrer">HubSpot official CRM pricing</a>
+              {" "}— free tools, user and contact limits.
+            </li>
+            <li>
+              <a className="underline underline-offset-4" href="https://www.pipedrive.com/pricing/essential-crm" target="_blank" rel="noreferrer">Pipedrive official pricing</a>
+              {" "}— trial duration and paid plan structure.
+            </li>
+            <li>
+              <a className="underline underline-offset-4" href="https://www.zoho.com/en-us/crm/zohocrm-pricing.html" target="_blank" rel="noreferrer">Zoho CRM official pricing</a>
+              {" "}— free-edition features and user limit.
+            </li>
+            <li>
+              <a className="underline underline-offset-4" href="https://www.notion.com/pricing" target="_blank" rel="noreferrer">Notion official pricing</a>
+              {" "}— solo versus multi-member free-plan limits.
+            </li>
+          </ul>
         </div>
       </section>
     </ComparisonArticle>
