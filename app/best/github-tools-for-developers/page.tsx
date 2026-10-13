@@ -3,7 +3,7 @@ import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Best GitHub Tools for Developers and Small Teams (2026) | StackPick",
+  title: "Best GitHub Tools for Developers and Small Teams (2026)",
   description: "Compare GitHub, GitLab, Bitbucket, GitHub CLI and pre-commit tooling for pull requests, CI, code review, repository security and team workflows.",
   alternates: { canonical: "/best/github-tools-for-developers" },
 };
