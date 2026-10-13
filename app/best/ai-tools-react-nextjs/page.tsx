@@ -3,7 +3,7 @@ import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Best AI Tools for React and Next.js Developers (2026) | StackPick",
+  title: "Best AI Tools for React and Next.js Developers (2026)",
   description: "Compare AI tools for React, TypeScript and Next.js work: coding assistants, testing, debugging and UI prototyping. Choose by workflow, not hype.",
   alternates: { canonical: "/best/ai-tools-react-nextjs" },
 };
