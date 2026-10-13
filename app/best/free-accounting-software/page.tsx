@@ -57,6 +57,26 @@ export default function Page() {
             <li><a className="underline underline-offset-4" href="https://www.gnucash.org/features.phtml?lang=en_US" target="_blank" rel="noreferrer">GnuCash official features</a> — double-entry accounting, reconciliation and reports.</li>
             <li><a className="underline underline-offset-4" href="https://www.manager.io/download" target="_blank" rel="noreferrer">Manager desktop edition</a> — free terms and single-user limitation.</li>
           </ul>
+          <h3 className="mt-12 text-2xl font-semibold tracking-tight">Related StackPick guides</h3>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">Accounting software is only one part of the workflow. Use these guides to compare invoicing and expense capture before choosing a tool or moving your records.</p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <a href="/best/accounting-for-small-businesses" className="group rounded-2xl border border-black/10 p-6 transition-colors hover:bg-[#f7f7f8]">
+              <p className="font-semibold">Accounting software for small businesses <span aria-hidden="true">↗</span></p>
+              <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Compare cloud accounting, accountant collaboration and month-end workflows as your business grows.</p>
+            </a>
+            <a href="/best/free-invoicing-software" className="group rounded-2xl border border-black/10 p-6 transition-colors hover:bg-[#f7f7f8]">
+              <p className="font-semibold">Best free invoicing software <span aria-hidden="true">↗</span></p>
+              <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Check free invoice limits, payment fees and the difference between invoicing and full bookkeeping.</p>
+            </a>
+            <a href="/best/invoicing-for-freelancers" className="group rounded-2xl border border-black/10 p-6 transition-colors hover:bg-[#f7f7f8]">
+              <p className="font-semibold">Invoicing software for freelancers <span aria-hidden="true">↗</span></p>
+              <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Compare tools for client billing, recurring work and getting paid for services.</p>
+            </a>
+            <a href="/best/track-business-expenses-without-spreadsheets" className="group rounded-2xl border border-black/10 p-6 transition-colors hover:bg-[#f7f7f8]">
+              <p className="font-semibold">Track expenses without spreadsheets <span aria-hidden="true">↗</span></p>
+              <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Build a reliable receipt, review and reconciliation process without adding unnecessary subscriptions.</p>
+            </a>
+          </div>
         </div>
       </section>
     </ComparisonArticle>
