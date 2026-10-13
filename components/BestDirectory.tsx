@@ -66,7 +66,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
       <div className="mb-10 space-y-6">
         {/* Search input with Apple style */}
         <div id="directory-search" className="relative max-w-xl scroll-mt-24">
-          <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-[#86868b]">
+          <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-[#6e6e73]">
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -77,12 +77,12 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search guides (e.g. invoicing, crm, vpn, time tracking)..."
-            className="w-full rounded-full border border-[#d2d2d7] bg-white py-3 pl-11 pr-12 text-sm text-[#1d1d1f] placeholder-[#86868b] shadow-sm transition-all focus:border-[#001D39] focus:outline-none focus:ring-2 focus:ring-[#001D39]/20"
+            className="w-full rounded-full border border-[#d2d2d7] bg-white py-3 pl-11 pr-12 text-sm text-[#1d1d1f] placeholder-[#6e6e73] shadow-sm transition-all focus:border-[#001D39] focus:outline-none focus:ring-2 focus:ring-[#001D39]/20"
           />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery("")}
-              className="absolute inset-y-0 right-0 flex items-center pr-4 text-xs font-semibold text-[#86868b] hover:text-[#1d1d1f]"
+              className="absolute inset-y-0 right-0 flex items-center pr-4 text-xs font-semibold text-[#6e6e73] hover:text-[#1d1d1f]"
             >
               Clear
             </button>
@@ -110,7 +110,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
         </div>
 
         {/* Count Indicator */}
-        <div className="text-xs text-[#86868b]">
+        <div className="text-xs text-[#6e6e73]">
           Showing {filteredArticles.length} of {articles.length} comparison guides
         </div>
       </div>
