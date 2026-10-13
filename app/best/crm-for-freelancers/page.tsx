@@ -38,7 +38,7 @@ export default function CrmForFreelancersPage() {
           name: "Zoho CRM",
           bestFor: "Freelancers who want CRM features alongside a broader Zoho toolset",
           freeOption:
-            "Zoho CRM’s Free Edition supports up to 3 users and includes core leads, contacts, deals, tasks, events, call logs and notes. More advanced features are reserved for paid editions.",
+            "Zoho CRM’s Free Edition is free forever for up to 3 users. It includes leads, contacts, deals, tasks, meetings, calls, notes, follow-up reminders, workflow automation, standard reports and mobile apps. The official pricing page also lists up to 10 custom email templates, 5,000 API calls per day and data export up to 10 times for free; check the detailed edition comparison for feature-specific limits. Advanced capabilities such as email integration and mass emailing are reserved for paid editions.",
           tradeoff:
             "It can make sense when your workflow already uses Zoho products, while the larger feature set can mean more setup than a solo freelancer actually needs.",
           url: "https://www.zoho.com/crm/zohocrm-pricing.html",
@@ -47,7 +47,7 @@ export default function CrmForFreelancersPage() {
           name: "Notion as a CRM",
           bestFor: "Freelancers who prefer to build a simple client tracker around their existing workspace",
           freeOption:
-            "For a solo workspace, Notion’s Free plan allows unlimited pages and blocks. Multi-member workspaces have different limits, and a client tracker still needs to be designed and maintained by you.",
+            "For a solo workspace, Notion’s Free plan allows unlimited pages and blocks. Notion’s help documentation says Free workspaces with 2 or more workspace owners are limited to 1,000 blocks per workspace; deleting blocks does not reset that count. A client tracker still needs to be designed and maintained by you.",
           tradeoff:
             "You can shape the database around your own process, but you are responsible for designing and maintaining the CRM workflow instead of getting a purpose-built sales system.",
           url: "https://www.notion.com/pricing",
@@ -137,7 +137,7 @@ export default function CrmForFreelancersPage() {
             </li>
             <li>
               <a className="underline underline-offset-4" href="https://www.notion.com/pricing" target="_blank" rel="noreferrer">Notion official pricing</a>
-              {" "}— solo versus multi-member free-plan limits.
+              {" "}— plan overview. For the specific block limit, see the <a className="underline underline-offset-4" href="https://www.notion.com/help/understanding-block-usage" target="_blank" rel="noreferrer">official block-usage guide</a>.
             </li>
           </ul>
         </div>
