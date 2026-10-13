@@ -38,6 +38,19 @@ export default function Page() {
         <div className="sp-container py-16 sm:py-20">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#1d1d1f]">Compare the limits that affect your real bill</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">FreshBooks’ US pricing page lists standard monthly prices of $23 for Lite (5 billable clients), $43 for Plus (50 clients) and $70 for Premium (unlimited clients); promotions can temporarily reduce the displayed price. FreshBooks offers a 30-day trial. Wave Starter has no monthly subscription fee, while online payment processing and selected features are paid. Wave’s published Starter card rate for Visa, Mastercard and Discover is 2.9% + $0.60 per transaction. Confirm current rates, supported countries and your likely client count before choosing. This is a desk-based comparison, not a hands-on test.</p>
+          <h3 className="mt-8 text-xl font-semibold tracking-tight">Turn the limits into a monthly budget</h3>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">Using the listed FreshBooks US monthly prices, a business with five billable clients may fit Lite at $23/month; a sixth client exceeds Lite's stated five-client limit, so compare the $43 Plus plan rather than assuming the same price continues. At 51 billable clients, Plus's 50-client limit becomes the next decision point against Premium at $70/month. These are standard list prices, not a guarantee of the checkout price.</p>
+          <div className="mt-6 overflow-x-auto rounded-2xl border border-[#e4e7ec]">
+            <table className="w-full min-w-[600px] border-collapse text-left text-sm">
+              <thead className="bg-[#f7f8fc] text-[#101828]"><tr><th className="border-b border-[#e4e7ec] p-4 font-semibold">Example workload</th><th className="border-b border-[#e4e7ec] p-4 font-semibold">FreshBooks checkpoint</th><th className="border-b border-[#e4e7ec] p-4 font-semibold">Wave checkpoint</th></tr></thead>
+              <tbody className="text-[#424245]">
+                <tr><td className="border-b border-[#e4e7ec] p-4">5 billable clients</td><td className="border-b border-[#e4e7ec] p-4">Lite is listed at $23/month before temporary offers and add-ons.</td><td className="border-b border-[#e4e7ec] p-4">No Starter subscription fee; check payment processing and feature add-ons.</td></tr>
+                <tr><td className="border-b border-[#e4e7ec] p-4">6–50 billable clients</td><td className="border-b border-[#e4e7ec] p-4">Plus is listed at $43/month; check the feature mix too.</td><td className="border-b border-[#e4e7ec] p-4">Estimate fees from actual payment methods and monthly collected volume.</td></tr>
+                <tr><td className="p-4">51+ billable clients</td><td className="p-4">Premium is listed at $70/month for unlimited clients.</td><td className="p-4">Confirm whether Starter and paid add-ons support the full workflow you need.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-5 max-w-3xl text-sm leading-6 text-[#667085]">For a simple illustration of Wave's published 2.9% + $0.60 card rate, a $100 card payment would incur $3.50 in processing fees and a $500 payment would incur $15.10. These examples exclude any other fees and only apply where that published rate and payment method are available; check the current fee schedule for the account's country.</p>
           <h3 className="mt-8 text-xl font-semibold tracking-tight">Official sources checked</h3>
           <ul className="mt-4 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
             <li><a className="underline underline-offset-4" href="https://www.freshbooks.com/pricing" target="_blank" rel="noreferrer">FreshBooks official pricing and client limits</a>.</li>
