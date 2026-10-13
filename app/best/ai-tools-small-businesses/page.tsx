@@ -36,6 +36,30 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section className="border-t border-[#e4e7ec] bg-[#f7f8fc]">
+        <div className="sp-container py-14 sm:py-16">
+          <p className="sp-eyebrow">Verify before you adopt</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Check the provider’s actual data terms and plan.</h2>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
+            Consumer assistants and business subscriptions can have different data-use terms, admin controls and connected-app permissions. Do not treat a provider-wide privacy statement as proof that every plan has the same protections. Review the terms for the exact product and account you intend to use, then test with non-sensitive material first.
+          </p>
+          <ul className="mt-7 grid gap-3 sm:grid-cols-2">
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://openai.com/business/enterprise-privacy/" target="_blank" rel="noreferrer">OpenAI business data privacy ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Review the business-product data commitments and confirm which plan they apply to.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://privacy.anthropic.com/" target="_blank" rel="noreferrer">Anthropic privacy resources ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Check the applicable Claude consumer or commercial policy before sharing company material.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://support.google.com/a/answer/15706919" target="_blank" rel="noreferrer">Google Workspace AI privacy guidance ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Distinguish Workspace protections from the terms of a personal Google account.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy" target="_blank" rel="noreferrer">Microsoft 365 Copilot privacy ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Understand the Microsoft 365 Copilot context and verify license eligibility.</p></li>
+          </ul>
+          <div className="mt-8 rounded-2xl border border-[#e4e7ec] bg-white p-6">
+            <h3 className="font-semibold text-[#101828]">Explore related AI workflows</h3>
+            <p className="mt-2 text-sm leading-6 text-[#667085]">Narrow the choice by the work you need to improve, rather than buying a general assistant for every job.</p>
+            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium">
+              <a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/free-ai-tools-small-businesses">Free AI tools for small businesses →</a>
+              <a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/ai-writing-tools-small-businesses">AI writing tools for small businesses →</a>
+              <a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/ai-automation-tools-small-businesses">AI automation tools for small businesses →</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </ComparisonArticle>
   );
 }
