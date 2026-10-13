@@ -3,7 +3,7 @@ import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Best AI Coding Assistants for Developers (2026) | StackPick",
+  title: "Best AI Coding Assistants for Developers (2026)",
   description:
     "Compare AI coding assistants for React, TypeScript, Next.js and multi-file development. Learn which tools fit editor autocomplete, codebase tasks and terminal agents.",
   alternates: { canonical: "/best/ai-coding-assistants" },
