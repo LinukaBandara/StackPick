@@ -15,6 +15,16 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/free-accounting-software", title: "Free accounting software" },
     { href: "/best/quickbooks-vs-xero", title: "QuickBooks vs Xero" },
   ],
+  "quickbooks-vs-freshbooks": [
+    { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
+    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
+  ],
+  "quickbooks-vs-xero": [
+    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/free-accounting-software", title: "Free accounting software" },
+    { href: "/best/track-business-expenses-without-spreadsheets", title: "Track business expenses" },
+  ],
   "free-accounting-software": [
     { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
     { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
@@ -43,11 +53,13 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   "invoicing-for-small-businesses": [
     { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
     { href: "/best/free-invoicing-software", title: "Free invoicing software" },
+    { href: "/best/quickbooks-vs-freshbooks", title: "QuickBooks vs FreshBooks" },
     { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
   ],
   "free-invoicing-software": [
     { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
     { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
+    { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
     { href: "/best/freshbooks-vs-wave", title: "FreshBooks vs Wave" },
   ],
   "project-management-for-freelancers": [
