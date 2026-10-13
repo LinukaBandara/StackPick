@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CookieSettingsButton from "@/components/CookieSettingsButton";
 
 function StackPickMark() {
   return (
@@ -63,7 +64,7 @@ export default function Footer() {
         <div className="mt-12 flex flex-col gap-3 border-t border-black/[0.08] pt-6 text-xs text-[#6e6e73] sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} StackPick. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-            <button type="button" onClick={() => window.dispatchEvent(new Event("stackpick:cookie-settings"))} className="font-medium underline-offset-4 hover:text-[#001D39] hover:underline">Cookie settings</button>
+            <CookieSettingsButton />
             <p>
             Made by{" "}
             <a
