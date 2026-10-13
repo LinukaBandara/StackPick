@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BackNavigation from "@/components/BackNavigation";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.stackpick.tech";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.tech";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-6X9SEJMZDV";
 
 export const metadata: Metadata = {
