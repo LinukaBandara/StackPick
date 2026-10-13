@@ -52,6 +52,16 @@ export default function PrivacyPage() {
             </p>
           </section>
           <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Third-party assets</h2>
+            <p>
+              Some comparison cards display provider favicons loaded from Google's public favicon
+              service. When those images load, your browser connects to Google and may disclose
+              technical request information such as your IP address and browser details. These
+              image requests are separate from Google Analytics consent. We do not use those images
+              to create a StackPick account or user profile.
+            </p>
+          </section>
+          <section>
             <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Advertising</h2>
             <p>
               StackPick does not currently serve display advertisements. If we introduce an
