@@ -39,6 +39,16 @@ export default function CookieConsent() {
     return () => window.removeEventListener("stackpick:cookie-settings", openSettings);
   }, []);
 
+  useEffect(() => {
+    if (!ready || !GA_ID) return;
+    const browser = window as unknown as Record<string, unknown>;
+    browser[`ga-disable-${GA_ID}`] = !consent?.analytics;
+    const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+    if (!consent?.analytics && typeof gtag === "function") {
+      gtag("consent", "update", { analytics_storage: "denied" });
+    }
+  }, [consent?.analytics, ready]);
+
   const save = useCallback((analytics: boolean) => {
     const next = { analytics, savedAt: new Date().toISOString() };
     try {
