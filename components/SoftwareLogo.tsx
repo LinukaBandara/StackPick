@@ -23,6 +23,7 @@ export default function SoftwareLogo({ name, url, size = "medium" }: SoftwareLog
 
   return (
     <span
+      role="img"
       className={`inline-flex ${dimension} shrink-0 items-center justify-center overflow-hidden border border-[#e5e5ea] bg-white text-sm font-semibold text-[#001D39]`}
       aria-label={`${name} logo`}
       title={name}
