@@ -3,7 +3,7 @@ import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "n8n vs Make vs Zapier: Which Automation Tool Fits? (2026) | StackPick",
+  title: "n8n vs Make vs Zapier: Which Automation Tool Fits? (2026)",
   description: "Compare n8n, Make and Zapier for non-technical small businesses by setup effort, free usage limits, integrations, failure recovery, maintenance and total cost.",
   alternates: { canonical: "/best/n8n-vs-make-vs-zapier" },
 };
