@@ -121,7 +121,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
 
         {/* Count Indicator */}
         <div className="text-xs text-[#6e6e73]">
-          {filteredArticles.length === 0 ? "No comparison guides" : `Showing ${pageStart + 1}–${Math.min(pageStart + pageSize, filteredArticles.length)} of ${filteredArticles.length}`} {filteredArticles.length === 1 ? "guide" : "comparison guides"}
+          {filteredArticles.length === 0 ? "No comparison guides found" : `Showing ${pageStart + 1}–${Math.min(pageStart + pageSize, filteredArticles.length)} of ${filteredArticles.length} ${filteredArticles.length === 1 ? "guide" : "comparison guides"}`}
         </div>
       </div>
 
