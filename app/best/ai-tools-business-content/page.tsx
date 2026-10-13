@@ -39,6 +39,20 @@ export default function Page() {
           </ol>
         </div>
       </section>
+      <section className="border-t border-[#e4e7ec] bg-[#f7f8fc]">
+        <div className="sp-container py-14 sm:py-16">
+          <p className="sp-eyebrow">Plan and rights checklist</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Budget for editing, assets and approval—not generation alone.</h2>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">A content workflow can involve separate costs for writing, design assets, team access and commercial usage. Confirm the terms for the exact plan and asset type you use. Before publication, check factual claims against approved sources, obtain permission for supplied materials, and have a person approve customer promises and rights-sensitive content.</p>
+          <ul className="mt-7 grid gap-3 sm:grid-cols-2">
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://openai.com/business/enterprise-privacy/" target="_blank" rel="noreferrer">OpenAI business data privacy ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Check product and plan scope before adding business information to a workflow.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://privacy.anthropic.com/" target="_blank" rel="noreferrer">Anthropic privacy resources ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Review the policy that applies to the Claude account and type of use.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://www.canva.com/pricing/" target="_blank" rel="noreferrer">Canva plans ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Confirm the design, collaboration and asset features available on your plan.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://www.jasper.ai/pricing" target="_blank" rel="noreferrer">Jasper plans ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Compare marketing workflow and brand controls with the team's actual publishing needs.</p></li>
+          </ul>
+          <div className="mt-8 rounded-2xl border border-[#e4e7ec] bg-white p-6"><h3 className="font-semibold text-[#101828]">More focused guides</h3><div className="mt-4 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium"><a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/ai-writing-tools-small-businesses">AI writing tools for small businesses →</a><a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/ai-tools-small-businesses">General AI assistants →</a><a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/free-ai-tools-small-businesses">Free AI tools →</a></div></div>
+        </div>
+      </section>
     </ComparisonArticle>
   );
 }
