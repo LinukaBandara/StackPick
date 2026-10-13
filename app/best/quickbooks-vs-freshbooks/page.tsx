@@ -15,8 +15,8 @@ export default function Page() {
       intro="QuickBooks vs FreshBooks for freelancers and small service businesses: compare accounting depth, invoicing, time tracking and ease of use."
       pricingNote="Pricing, limits and included features can change. Check the providers' current plans before making a decision."
       tools={[
-        { name: "QuickBooks", bestFor: "Businesses needing broader accounting", freeOption: "Paid plans and features vary by region.", tradeoff: "It can cover invoicing and broader bookkeeping in one place, but the extra accounting surface area may be unnecessary for a freelancer who only needs to bill clients.", url: "https://quickbooks.intuit.com/" },
-        { name: "FreshBooks", bestFor: "Service businesses centered on clients and billing", freeOption: "Paid plans and feature tiers vary.", tradeoff: "Its freelancer-oriented invoicing and time-tracking workflow can be approachable, but client limits and add-on/payment costs need checking as the business grows.", url: "https://www.freshbooks.com/" },
+        { name: "QuickBooks", bestFor: "Businesses needing broader accounting", freeOption: "Paid plans; US pricing pages may show time-limited introductory promotions.", tradeoff: "It can cover invoicing and broader bookkeeping in one place, but the extra accounting surface area may be unnecessary for a freelancer who only needs to bill clients.", url: "https://quickbooks.intuit.com/" },
+        { name: "FreshBooks", bestFor: "Service businesses centered on clients and billing", freeOption: "30-day trial; paid plans afterward, with client limits by tier.", tradeoff: "Its freelancer-oriented invoicing and time-tracking workflow can be approachable, but client limits and add-on/payment costs need checking as the business grows.", url: "https://www.freshbooks.com/" },
       ]}
       bottomLine="Pick QuickBooks when you need a wider bookkeeping workflow and your local version supports the tax/reporting tasks you rely on. Pick FreshBooks when quoting, time tracking and client invoicing are the daily priority. Test one real month of invoices and expenses, then compare the total cost at your expected client count."
     >
@@ -32,6 +32,12 @@ export default function Page() {
             <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Records after payment</p><p className="mt-2 text-sm leading-6 text-[#667085]">Record a payment and expense, then check the reports and export you can hand to an accountant.</p></div>
             <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Cost at your size</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check client, user and feature limits on the plan you would actually need.</p></div>
           </div>
+          <h3 className="mt-12 text-2xl font-semibold tracking-tight">Official plan sources checked</h3>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">Provider plan information checked October 14, 2026. This is a desk-based comparison, not a hands-on product test. Introductory prices and feature packaging can change, so compare the renewal price and required tier—not just the first-month offer.</p>
+          <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
+            <li><a className="underline underline-offset-4" href="https://quickbooks.intuit.com/pricing/" target="_blank" rel="noreferrer">QuickBooks Online official pricing</a> — plan comparison and current promotions.</li>
+            <li><a className="underline underline-offset-4" href="https://www.freshbooks.com/pricing" target="_blank" rel="noreferrer">FreshBooks official pricing</a> — 30-day trial, client limits and paid tiers.</li>
+          </ul>
         </div>
       </section>
     </ComparisonArticle>
