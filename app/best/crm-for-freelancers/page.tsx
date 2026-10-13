@@ -29,7 +29,7 @@ export default function CrmForFreelancersPage() {
           name: "Pipedrive",
           bestFor: "Freelancers whose work is driven by a steady stream of proposals and deals",
           freeOption:
-            "Pipedrive offers a 14-day trial of paid plans, rather than a permanent free plan. Export your data before the trial ends if you decide not to subscribe.",
+            "Pipedrive offers a 14-day trial of its paid plans with no credit card required, rather than a permanent free plan. If you decide not to subscribe, export any data you want to keep before the trial ends.",
           tradeoff:
             "Its pipeline-first approach is easy to understand when every prospect has a sales stage, but it is harder to justify if you mainly need a lightweight client address book.",
           url: "https://www.pipedrive.com/en/pricing",
@@ -129,7 +129,7 @@ export default function CrmForFreelancersPage() {
             </li>
             <li>
               <a className="underline underline-offset-4" href="https://www.pipedrive.com/en/pricing" target="_blank" rel="noreferrer">Pipedrive official pricing</a>
-              {" "}— trial duration and paid plan structure.
+              {" "}— 14-day trial, no credit card required, and paid plan structure.
             </li>
             <li>
               <a className="underline underline-offset-4" href="https://www.zoho.com/en-us/crm/zohocrm-pricing.html" target="_blank" rel="noreferrer">Zoho CRM official pricing</a>
