@@ -32,12 +32,23 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Analytics</h2>
             <p>
-              StackPick uses Google Analytics to understand site usage, including which pages are
-              visited and how visitors interact with the site. Analytics services may use cookies
-              or similar technologies and may process online identifiers, device and browser
-              information, and usage events. You can review your browser's cookie settings and
-              Google's available privacy controls to learn about choices for analytics collection.
-              Please do not submit sensitive personal information through this website.
+              StackPick only loads Google Analytics after you choose to accept optional analytics
+              in the cookie banner. If you reject optional analytics, the analytics script is not
+              loaded by the site. You can change your choice at any time using “Cookie settings” in
+              the footer. If you accept analytics, Google may process usage events, device and
+              browser information, and online identifiers under its own terms. Your choice is saved
+              in your browser's local storage as a preference; StackPick does not use that preference
+              to identify you. Please do not submit sensitive personal information through this website.
+            </p>
+          </section>
+          <section>
+            <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Cookie and local storage choices</h2>
+            <p>
+              The consent banner lets you accept or reject optional analytics and reopen the settings
+              from the site footer. StackPick stores the preference in your browser's local storage,
+              not in an authentication or advertising profile. Essential storage is used only to
+              remember your choice. Clearing browser storage removes that saved choice, so the banner
+              may appear again. Your browser may also offer separate controls for cookies and site data.
             </p>
           </section>
           <section>
