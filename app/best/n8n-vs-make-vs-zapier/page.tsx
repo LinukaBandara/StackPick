@@ -34,6 +34,31 @@ export default function Page() {
           <li>Estimate monthly volume and include hosting, AI/API charges, retries and maintenance in total cost.</li>
         </ol>
       </section>
+      <section className="border-t border-[#e4e7ec] bg-[#f7f8fc]">
+        <div className="sp-container py-14 sm:py-16">
+          <p className="sp-eyebrow">The billing model changes the decision</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Compare how each platform counts a real workflow.</h2>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">Do not compare plan quotas as if a task, credit and execution were the same unit. Estimate the cost using the actual records, branches, AI calls and successful actions your process will run.</p>
+          <div className="mt-8 overflow-x-auto rounded-2xl border border-[#e4e7ec] bg-white">
+            <table className="w-full min-w-[680px] border-collapse text-left text-sm">
+              <thead className="bg-[#f7f8fc] text-[#101828]"><tr><th className="border-b border-[#e4e7ec] p-4 font-semibold">Platform</th><th className="border-b border-[#e4e7ec] p-4 font-semibold">Usage unit</th><th className="border-b border-[#e4e7ec] p-4 font-semibold">What to estimate</th><th className="border-b border-[#e4e7ec] p-4 font-semibold">Main trade-off</th></tr></thead>
+              <tbody className="text-[#424245]">
+                <tr><td className="border-b border-[#e4e7ec] p-4 font-semibold text-[#101828]">Zapier</td><td className="border-b border-[#e4e7ec] p-4">Successful action steps consume tasks; triggers and some built-in steps do not.</td><td className="border-b border-[#e4e7ec] p-4">Records processed × successful action steps, plus repeated runs and AI step rates.</td><td className="border-b border-[#e4e7ec] p-4">Straightforward to adopt, but action-heavy workflows can use tasks quickly.</td></tr>
+                <tr><td className="border-b border-[#e4e7ec] p-4 font-semibold text-[#101828]">Make</td><td className="border-b border-[#e4e7ec] p-4">Credits; ordinary operations commonly use one credit, while some AI features vary.</td><td className="border-b border-[#e4e7ec] p-4">Module runs, bundles/records, branching and whether AI usage is token-based.</td><td className="border-b border-[#e4e7ec] p-4">Visual control, but you need to understand the scenario's actual credit consumption.</td></tr>
+                <tr><td className="p-4 font-semibold text-[#101828]">n8n</td><td className="p-4">Cloud plans are based on workflow executions, not the number of steps inside a run.</td><td className="p-4">How many times the workflow starts, plus AI/API costs and any self-hosting overhead.</td><td className="p-4">Flexible execution model; self-hosting shifts maintenance and security work to your team.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 max-w-3xl text-sm leading-6 text-[#667085]">Illustration: if 1,000 records each pass through three successful Zapier action steps, those actions could use about 3,000 tasks before accounting for other actions or repeated runs. A comparable Make scenario must be estimated from its module and credit rules; an n8n workflow triggered once per record would count about 1,000 executions. Your real design may differ, so test it with representative data.</p>
+          <h3 className="mt-8 text-lg font-semibold text-[#101828]">Official documentation to check before choosing</h3>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://help.zapier.com/hc/en-us/articles/8496196837261-How-is-task-usage-measured-in-Zapier" target="_blank" rel="noreferrer">Zapier task counting ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Review what counts as a task and how plan limits affect runs.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://help.make.com/credits" target="_blank" rel="noreferrer">Make credit rules ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Understand fixed and dynamic credit use, including AI-related usage.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://support.n8n.io/article/n-8-n-cloud-subscription-features-per-tier" target="_blank" rel="noreferrer">n8n Cloud plan limits ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Check execution allowances and plan-specific features.</p></li>
+          </ul>
+          <div className="mt-8 rounded-2xl border border-[#e4e7ec] bg-white p-6"><h3 className="font-semibold text-[#101828]">A practical selection test</h3><ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-6 text-[#424245]"><li>Build the same small workflow in each platform using test records.</li><li>Run enough sample records to reveal branches, retries and duplicate handling.</li><li>Record actual task/credit/execution use and the time needed to debug a failed run.</li><li>Calculate monthly cost at expected volume, including any AI provider charges and hosting.</li><li>Choose the simplest platform that meets your reliability and control requirements.</li></ol></div>
+        </div>
+      </section>
       <section>
         <p className="sp-eyebrow">Continue exploring</p>
         <div className="mt-5 grid gap-4 sm:grid-cols-2">
