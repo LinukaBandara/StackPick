@@ -14,7 +14,7 @@ export default function CrmForFreelancersPage() {
       title="Best CRM for Freelancers"
       slug="crm-for-freelancers"
       intro="A freelancer usually does not need a giant sales operation. You need to remember who contacted you, what you promised, when to follow up, and which leads are actually worth pursuing. We focus on that smaller job: low setup, useful free access, clear client tracking, and a sensible upgrade path."
-      pricingNote="Plan limits were checked against official provider pages on October 13, 2026. HubSpot currently lists free tools for up to 2 users and 1,000 contacts; Zoho CRM lists a free edition for up to 3 users. Pipedrive offers a time-limited trial rather than a permanent free plan. Notion’s free plan is generous for a solo workspace, but it is a DIY database rather than a dedicated sales CRM. Recheck provider terms before signing up, because feature limits and offers can change."
+      pricingNote="Plan limits were checked against official provider pages on October 14, 2026. HubSpot currently lists free tools for up to 2 users and 1,000 contacts; Zoho CRM lists a free edition for up to 3 users. Pipedrive offers a time-limited trial rather than a permanent free plan. Notion’s free plan is generous for a solo workspace, but it is a DIY database rather than a dedicated sales CRM. Recheck provider terms before signing up, because feature limits and offers can change."
       tools={[
         {
           name: "HubSpot CRM",
@@ -38,7 +38,7 @@ export default function CrmForFreelancersPage() {
           name: "Zoho CRM",
           bestFor: "Freelancers who want CRM features alongside a broader Zoho toolset",
           freeOption:
-            "Zoho CRM’s Free Edition is free forever for up to 3 users. It includes leads, contacts, deals, tasks, meetings, calls, notes, follow-up reminders, workflow automation, standard reports and mobile apps. The official pricing page also lists up to 10 custom email templates, 5,000 API calls per day and data export up to 10 times for free; check the detailed edition comparison for feature-specific limits. Advanced capabilities such as email integration and mass emailing are reserved for paid editions.",
+            "Zoho CRM’s Free Edition is free forever for up to 3 users. It includes leads, contacts, deals, tasks, meetings, calls, notes, follow-up reminders, workflow automation, standard reports and mobile apps. The official pricing page lists up to 10 custom email templates, 5,000 API calls per day and up to 10 data exports for free. Zoho’s API documentation describes this allowance as 5,000 API credits per 24-hour window; some operations consume more than one credit, so API usage is not always a one-call/one-credit match. Check the edition comparison for other feature-specific limits. Advanced capabilities such as email integration and mass emailing are reserved for paid editions.",
           tradeoff:
             "It can make sense when your workflow already uses Zoho products, while the larger feature set can mean more setup than a solo freelancer actually needs.",
           url: "https://www.zoho.com/crm/zohocrm-pricing.html",
@@ -128,7 +128,7 @@ export default function CrmForFreelancersPage() {
               {" "}— free tools, user and contact limits.
             </li>
             <li>
-              <a className="underline underline-offset-4" href="https://www.pipedrive.com/pricing/essential-crm" target="_blank" rel="noreferrer">Pipedrive official pricing</a>
+              <a className="underline underline-offset-4" href="https://www.pipedrive.com/en/pricing" target="_blank" rel="noreferrer">Pipedrive official pricing</a>
               {" "}— trial duration and paid plan structure.
             </li>
             <li>
