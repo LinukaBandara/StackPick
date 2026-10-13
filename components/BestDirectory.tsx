@@ -31,6 +31,8 @@ const CATEGORIES = [
 export default function BestDirectory({ articles }: BestDirectoryProps) {
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 12;
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -59,6 +61,14 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
       return matchesCategory && matchesSearch;
     });
   }, [articles, activeCategory, searchQuery]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [activeCategory, searchQuery]);
+
+  const pageCount = Math.max(1, Math.ceil(filteredArticles.length / pageSize));
+  const pageStart = (currentPage - 1) * pageSize;
+  const visibleArticles = filteredArticles.slice(pageStart, pageStart + pageSize);
 
   return (
     <div className="sp-container py-10 sm:py-16">
@@ -111,7 +121,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
 
         {/* Count Indicator */}
         <div className="text-xs text-[#6e6e73]">
-          Showing {filteredArticles.length} of {articles.length} comparison guides
+          {filteredArticles.length === 0 ? "No comparison guides" : `Showing ${pageStart + 1}–${Math.min(pageStart + pageSize, filteredArticles.length)} of ${filteredArticles.length}`} {filteredArticles.length === 1 ? "guide" : "comparison guides"}
         </div>
       </div>
 
@@ -119,7 +129,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
       <div id="directory-results" className="scroll-mt-24">
       {filteredArticles.length > 0 ? (
         <div className="grid gap-5 sm:grid-cols-2">
-          {filteredArticles.map((a, index) => (
+          {visibleArticles.map((a, index) => (
             <Link
               key={a.href}
               href={a.href}
@@ -128,7 +138,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
               <div>
                 <div className="flex items-start justify-between gap-4">
                   <span className="text-xs font-semibold uppercase tracking-wider text-[#001D39]">
-                    {a.category} · {String(index + 1).padStart(2, "0")}
+                    {a.category} · {String(pageStart + index + 1).padStart(2, "0")}
                   </span>
                   <span className="text-xs font-semibold text-[#001D39] opacity-0 transition-opacity group-hover:opacity-100">
                     Read →
@@ -165,6 +175,15 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
         </div>
       )}
       </div>
+      {filteredArticles.length > pageSize && (
+        <nav className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-black/[0.08] pt-6 sm:flex-row" aria-label="Comparison guide pagination">
+          <p className="text-xs text-[#6e6e73]">Page {currentPage} of {pageCount}</p>
+          <div className="flex items-center gap-2">
+            <button type="button" onClick={() => setCurrentPage((page) => Math.max(1, page - 1))} disabled={currentPage === 1} className="min-h-10 rounded-full border border-[#d2d2d7] px-4 py-2 text-sm font-medium text-[#1d1d1f] transition hover:bg-[#f5f5f7] disabled:cursor-not-allowed disabled:opacity-50">Previous</button>
+            <button type="button" onClick={() => setCurrentPage((page) => Math.min(pageCount, page + 1))} disabled={currentPage === pageCount} className="min-h-10 rounded-full bg-[#001D39] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#123b5d] disabled:cursor-not-allowed disabled:opacity-50">Next</button>
+          </div>
+        </nav>
+      )}
     </div>
   );
 }
