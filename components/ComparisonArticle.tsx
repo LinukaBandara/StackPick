@@ -246,7 +246,7 @@ export default function ComparisonArticle({
   bottomLine,
   children,
 }: ComparisonArticleProps) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.stackpick.tech";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.tech";
 
   const articleJsonLd = {
     "@context": "https://schema.org",
