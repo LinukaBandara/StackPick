@@ -37,6 +37,24 @@ export default function Page() {
             <li><a className="underline underline-offset-4" href="https://www.pipedrive.com/en/pricing" target="_blank" rel="noreferrer">Pipedrive official pricing</a> — 14-day trial and paid per-seat plans.</li>
             <li><a className="underline underline-offset-4" href="https://support.pipedrive.com/en/article/what-happens-when-my-pipedrive-trial-expires" target="_blank" rel="noreferrer">Pipedrive trial-expiry guidance</a> — what happens if you do not subscribe.</li>
           </ul>
+          <h3 className="mt-12 text-2xl font-semibold tracking-tight">The cost changes when the team grows</h3>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">Use these simple cases to shortlist—not as a substitute for a live quote. HubSpot's free CRM is a strong starting point for a team of one or two that fits within 1,000 contacts. A third user or a need for paid-only functionality means you should calculate the required paid tier rather than assume the free plan will stretch. Pipedrive's current Lite list price is $14 per seat per month when billed annually, so three seats work out to $42 per month equivalent or $504 paid for the year before tax, add-ons or plan changes.</p>
+          <div className="mt-6 overflow-x-auto rounded-2xl border border-[#e4e7ec]">
+            <table className="w-full min-w-[620px] border-collapse text-left text-sm">
+              <thead className="bg-[#f7f8fc] text-[#101828]"><tr><th className="border-b border-[#e4e7ec] p-4 font-semibold">Business situation</th><th className="border-b border-[#e4e7ec] p-4 font-semibold">HubSpot starting point</th><th className="border-b border-[#e4e7ec] p-4 font-semibold">Pipedrive starting point</th><th className="border-b border-[#e4e7ec] p-4 font-semibold">What to verify</th></tr></thead>
+              <tbody className="text-[#424245]">
+                <tr><td className="border-b border-[#e4e7ec] p-4">Solo operator or 2-person team</td><td className="border-b border-[#e4e7ec] p-4">Free tier may fit if 1,000 contacts and included features are enough.</td><td className="border-b border-[#e4e7ec] p-4">14-day trial, then paid subscription.</td><td className="border-b border-[#e4e7ec] p-4">Required fields, email workflow and reporting.</td></tr>
+                <tr><td className="border-b border-[#e4e7ec] p-4">3+ users</td><td className="border-b border-[#e4e7ec] p-4">Free tier's 2-user limit no longer fits.</td><td className="border-b border-[#e4e7ec] p-4">Budget per seat; 3 Lite seats at the listed annual-billing rate equal $504/year.</td><td className="border-b border-[#e4e7ec] p-4">Annual upfront payment, paid features and add-ons.</td></tr>
+                <tr><td className="p-4">Sales team depends on two-way email sync or automation</td><td className="p-4">Check which specific features require an upgrade.</td><td className="p-4">Pipedrive Lite does not include two-way email sync; check the plan matrix for automation.</td><td className="p-4">Test the exact follow-up and reporting workflow before subscribing.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 className="mt-10 text-xl font-semibold tracking-tight">Check the feature gate—not just the brand</h3>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">A CRM can look inexpensive until a team needs two-way email synchronization, automated follow-ups, extra seats or advanced reporting. List the three features your sales process cannot work without, then verify that each is included in the exact plan and billing cycle you would buy. If a feature is only available in a higher tier, include that tier in the comparison instead of comparing a free plan with a paid plan as though they were equivalent.</p>
+          <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
+            <li><a className="underline underline-offset-4" href="https://support.pipedrive.com/en/article/what-features-does-the-lite-plan-have" target="_blank" rel="noreferrer">Pipedrive Lite plan features and limits</a> — including email sync and lead/deal limits.</li>
+            <li><a className="underline underline-offset-4" href="https://support.pipedrive.com/en/article/how-does-pricing-work-in-pipedrive" target="_blank" rel="noreferrer">How Pipedrive pricing works</a> — seats, billing cycle, add-ons and top-ups.</li>
+          </ul>
         </div>
       </section>
     </ComparisonArticle>
