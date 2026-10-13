@@ -13,14 +13,38 @@ export default function CrmForSmallBusinessesPage() {
       title="Best CRM for Small Businesses"
       slug="crm-for-small-businesses"
       intro="A small business CRM has one job first: make sure opportunities and customer conversations do not disappear between people, inboxes and spreadsheets. We compare tools around that reality, with attention to setup effort, team handoffs, free access and the point where costs start to matter."
-      pricingNote="For a small team, verify seat minimums, contact and deal limits, automation, reporting, permission controls, email/calendar integrations and data export. A free tier that works for one owner may not cover shared inboxes, team handoffs or manager reporting. Calculate the cost at the number of seats you will need—not only the introductory price."
+      pricingNote="Free-plan details were checked against official provider pages on October 14, 2026. HubSpot lists free tools for up to 2 users and 1,000 contacts; Zoho CRM and Freshsales each list a free option for up to 3 users; Pipedrive offers a 14-day trial rather than a permanent free plan. Confirm the exact features and limits on the provider's pricing page before importing customer data, because plans can change."
       tools={[
-        { name:"HubSpot CRM", bestFor:"Small teams wanting a broad starting point with a usable free tier", freeOption:"Core CRM features are available on a permanent free tier; current limits should be checked before rollout.", tradeoff:"Easy to start, but advanced automation and the wider ecosystem can move a growing team into paid products.", url:"https://www.hubspot.com/products/crm" },
-        { name:"Pipedrive", bestFor:"Sales-led small businesses that need a clear deal pipeline", freeOption:"No permanent free plan; current trial and paid pricing should be checked.", tradeoff:"Excellent focus for sales processes, but businesses wanting broad marketing or service functionality may need more tools.", url:"https://www.pipedrive.com/" },
-        { name:"Zoho CRM", bestFor:"Small businesses already building around Zoho", freeOption:"A limited free edition may be available under current Zoho terms.", tradeoff:"Strong suite integration can reduce tool sprawl, while the larger system can require more configuration.", url:"https://www.zoho.com/crm/" },
-        { name:"Freshsales", bestFor:"Small teams wanting CRM and sales communication in one product", freeOption:"Free or trial availability can change by market and plan.", tradeoff:"Useful sales tooling, but compare current included features and contact/user limits against simpler options.", url:"https://www.freshworks.com/crm/sales/" },
+        {
+          name: "HubSpot CRM",
+          bestFor: "Small teams wanting a broad starting point with a usable free tier",
+          freeOption: "The official pricing page lists free tools at $0 for up to 2 users and 1,000 contacts, with no time limit. HubSpot also states a limit of 1 million records across other standard object types per account.",
+          tradeoff: "It is a practical starting point for a small team, but advanced automation and capabilities across the wider HubSpot platform may require paid products. Check the specific feature gate before building a process around it.",
+          url: "https://www.hubspot.com/pricing/crm",
+        },
+        {
+          name: "Pipedrive",
+          bestFor: "Sales-led small businesses that need a clear deal pipeline",
+          freeOption: "Pipedrive currently offers a 14-day trial with no credit card required, not a permanent free plan. Its official pricing page lists paid plans by seat; the Lite plan is shown at $14 per seat per month when billed annually at the time of review.",
+          tradeoff: "Its pipeline-first workflow suits repeatable sales, but the team should budget for every seat after the trial and confirm which email, automation and reporting features are included in the chosen plan.",
+          url: "https://www.pipedrive.com/en/pricing",
+        },
+        {
+          name: "Zoho CRM",
+          bestFor: "Small businesses that want a traditional CRM and may use other Zoho products",
+          freeOption: "Zoho's official US pricing page lists its Free Edition as free forever for up to 3 users. It includes contact management, follow-up reminders, tasks, meetings, calls, standard reports and mobile apps; the page also lists up to 10 custom email templates, up to 10 free data exports and a 5,000 API-credit allowance per rolling 24-hour window.",
+          tradeoff: "The free edition has meaningful limits, and some email integrations and mass-email features sit in paid editions. Check the feature comparison against the exact process your team needs rather than assuming every Zoho CRM feature is included.",
+          url: "https://www.zoho.com/en-us/crm/zohocrm-pricing.html",
+        },
+        {
+          name: "Freshsales",
+          bestFor: "Small sales teams that want contact management and sales activities in one place",
+          freeOption: "Freshworks' official comparison lists a $0 Free plan for up to 3 users. Review the plan matrix for the exact included features; more advanced sales sequences and capabilities are part of paid plans.",
+          tradeoff: "A useful alternative to test if your team likes its workflow, but compare the free feature set and the per-user cost of Growth or higher plans before rollout.",
+          url: "https://www.freshworks.com/crm/pricing-compare/",
+        },
       ]}
-      bottomLine="Start with HubSpot if the current free plan supports the team’s contact and deal workflow; choose Pipedrive when sales-stage visibility and follow-up discipline are worth a paid subscription. Zoho is attractive when it reduces tool sprawl across an existing Zoho stack. Avoid buying a CRM before agreeing who owns each lead, what stages mean, and when follow-up is due. If the team will not maintain those basics, a more expensive CRM will not fix the process."
+      bottomLine="For a team of one or two that needs a broad starting point, test HubSpot's free CRM first. Zoho CRM or Freshsales are worth comparing if you need a free plan for up to three users. Choose Pipedrive when a focused sales pipeline justifies a paid subscription. Before adopting any tool, agree who owns each lead, what each stage means and when follow-up is due—a more expensive CRM will not fix an undefined process."
     >
       <section className="bg-white"><div className="sp-container py-16 sm:py-20">
         <p className="sp-eyebrow">Small-team reality</p>
@@ -36,6 +60,14 @@ export default function CrmForSmallBusinessesPage() {
             <li><strong className="text-black">5. Exit:</strong> Can you export your customer data if the tool stops fitting?</li>
           </ol>
         </div>
+        <h3 className="mt-12 text-2xl font-semibold tracking-tight">Official plan pages checked</h3>
+        <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">We checked published pricing and plan information on October 14, 2026. This is a desk-based comparison, not a claim that every feature was tested in a paid account. Recheck the current plan matrix before relying on a specific feature.</p>
+        <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
+          <li><a className="underline underline-offset-4" href="https://www.hubspot.com/pricing/crm" target="_blank" rel="noreferrer">HubSpot official pricing</a> — free user and contact limits.</li>
+          <li><a className="underline underline-offset-4" href="https://www.pipedrive.com/en/pricing" target="_blank" rel="noreferrer">Pipedrive official pricing</a> — trial terms and paid seats.</li>
+          <li><a className="underline underline-offset-4" href="https://www.zoho.com/en-us/crm/zohocrm-pricing.html" target="_blank" rel="noreferrer">Zoho CRM official pricing</a> — Free Edition limits and included features.</li>
+          <li><a className="underline underline-offset-4" href="https://www.freshworks.com/crm/pricing-compare/" target="_blank" rel="noreferrer">Freshsales official plan comparison</a> — Free plan and paid-plan differences.</li>
+        </ul>
       </div></section>
     </ComparisonArticle>
   );
