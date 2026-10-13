@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <div className="sp-container max-w-3xl py-16 sm:py-24">
         <p className="sp-eyebrow uppercase tracking-wider text-xs">Legal</p>
         <h1 className="sp-title mt-3 text-[#1d1d1f]">Privacy Policy</h1>
-        <p className="mt-3 text-sm text-[#86868b]">Last updated October 2026</p>
+        <p className="mt-3 text-sm text-[#6e6e73]">Last updated October 2026</p>
         <div className="mt-8 space-y-8 text-base sm:text-lg leading-relaxed text-[#6e6e73]">
           <section>
             <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">No accounts</h2>
