@@ -20,7 +20,7 @@ export default function CrmForFreelancersPage() {
           name: "HubSpot CRM",
           bestFor: "Freelancers who want a ready-made CRM without building their own system",
           freeOption:
-            "HubSpot’s official pricing page lists its free tools at $0, with up to 2 users and 1,000 contacts. It is a permanent free tier, not just a trial; paid features and higher limits require an upgrade.",
+            "HubSpot’s official pricing page lists its free tools at $0, with up to 2 users and 1,000 contacts, plus up to 1 million records across other standard object types per account. It is a permanent free tier, not just a trial; paid features and higher limits require an upgrade.",
           tradeoff:
             "It gives a solo freelancer room to grow, but the wider HubSpot ecosystem can introduce paid features you may not need at the beginning.",
           url: "https://www.hubspot.com/pricing/crm",
@@ -47,7 +47,7 @@ export default function CrmForFreelancersPage() {
           name: "Notion as a CRM",
           bestFor: "Freelancers who prefer to build a simple client tracker around their existing workspace",
           freeOption:
-            "For a solo workspace, Notion’s Free plan allows unlimited pages and blocks. Notion’s help documentation says Free workspaces with 2 or more workspace owners are limited to 1,000 blocks per workspace; deleting blocks does not reset that count. A client tracker still needs to be designed and maintained by you.",
+            "For a solo workspace, Notion’s Free plan allows unlimited pages and blocks, with a 5 MB limit per uploaded file. Notion’s help documentation says Free workspaces with 2 or more workspace owners are limited to 1,000 blocks per workspace; deleting blocks does not reset that count. A client tracker still needs to be designed and maintained by you.",
           tradeoff:
             "You can shape the database around your own process, but you are responsible for designing and maintaining the CRM workflow instead of getting a purpose-built sales system.",
           url: "https://www.notion.com/pricing",
