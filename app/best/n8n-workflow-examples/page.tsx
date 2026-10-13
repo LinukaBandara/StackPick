@@ -3,7 +3,7 @@ import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Practical n8n Workflow Examples for Small Teams (2026) | StackPick",
+  title: "Practical n8n Workflow Examples for Small Teams (2026)",
   description: "Explore practical n8n workflow blueprints for lead intake, support triage and weekly reporting, with deduplication, error handling and credential-safety checks.",
   alternates: { canonical: "/best/n8n-workflow-examples" },
 };
