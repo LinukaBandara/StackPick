@@ -3,7 +3,7 @@ import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Best DevOps Tools for Small Teams: CI/CD, Hosting and Monitoring (2026) | StackPick",
+  title: "Best DevOps Tools for Small Teams: CI/CD, Hosting and Monitoring (2026)",
   description: "Compare practical DevOps tools for small teams across CI/CD, app hosting, containers, uptime monitoring and error tracking, with trade-offs and selection criteria.",
   alternates: { canonical: "/best/devops-tools-small-teams" },
 };
