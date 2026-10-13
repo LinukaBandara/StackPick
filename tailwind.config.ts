@@ -19,7 +19,7 @@ const config: Config = {
         },
         cloud: "#F5F5F7",
         slate: "#6E6E73",
-        muted: "#86868B",
+        muted: "#6E6E73",
         borderc: "#D2D2D7",
         success: "#248A3D",
       },
