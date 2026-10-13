@@ -3,7 +3,7 @@ import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Best LLM Tools for Developers: APIs, Local Models and Evaluation (2026) | StackPick",
+  title: "Best LLM Tools for Developers: APIs, Local Models and Evaluation (2026)",
   description: "Compare developer LLM platforms and local-model tools by API access, model choice, privacy, structured output, cost controls and evaluation workflow.",
   alternates: { canonical: "/best/llm-tools-for-developers" },
 };
