@@ -38,7 +38,7 @@ export default function CrmForFreelancersPage() {
           name: "Zoho CRM",
           bestFor: "Freelancers who want CRM features alongside a broader Zoho toolset",
           freeOption:
-            "Zoho CRM’s Free Edition is free forever for up to 3 users. It includes leads, contacts, deals, tasks, meetings, calls, notes, follow-up reminders, workflow automation, standard reports and mobile apps. The official pricing page lists up to 10 custom email templates, 5,000 API calls per day and up to 10 data exports for free. Zoho’s API documentation describes this allowance as 5,000 API credits per 24-hour window; some operations consume more than one credit, so API usage is not always a one-call/one-credit match. Check the edition comparison for other feature-specific limits. Advanced capabilities such as email integration and mass emailing are reserved for paid editions.",
+            "Zoho CRM’s Free Edition is free forever for up to 3 users. It includes leads, contacts, deals, tasks, meetings, calls, notes, follow-up reminders, workflow automation, standard reports and mobile apps. The official pricing page lists up to 10 custom email templates, advertises 5,000 API calls per day and allows up to 10 data exports for free. Zoho’s API documentation defines the Free Edition allowance as 5,000 API credits in a rolling 24-hour window; some operations consume more than one credit, so 5,000 credits does not guarantee 5,000 completed calls. Check the edition comparison for other feature-specific limits. Advanced capabilities such as email integration and mass emailing are reserved for paid editions.",
           tradeoff:
             "It can make sense when your workflow already uses Zoho products, while the larger feature set can mean more setup than a solo freelancer actually needs.",
           url: "https://www.zoho.com/crm/zohocrm-pricing.html",
@@ -133,11 +133,11 @@ export default function CrmForFreelancersPage() {
             </li>
             <li>
               <a className="underline underline-offset-4" href="https://www.zoho.com/en-us/crm/zohocrm-pricing.html" target="_blank" rel="noreferrer">Zoho CRM official pricing</a>
-              {" "}— free-edition features and user limit.
+              {" "}— free-edition features and user limit. See the <a className="underline underline-offset-4" href="https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html" target="_blank" rel="noreferrer">official API-credit limits</a> for the rolling 24-hour quota and per-operation costs.
             </li>
             <li>
               <a className="underline underline-offset-4" href="https://www.notion.com/pricing" target="_blank" rel="noreferrer">Notion official pricing</a>
-              {" "}— plan overview. For the specific block limit, see the <a className="underline underline-offset-4" href="https://www.notion.com/help/understanding-block-usage" target="_blank" rel="noreferrer">official block-usage guide</a>.
+              {" "}— plan overview. For the specific block limit, see the <a className="underline underline-offset-4" href="https://www.notion.com/help/understanding-block-usage" target="_blank" rel="noreferrer">official block-usage guide</a>; for the 5 MB Free-plan upload limit, see <a className="underline underline-offset-4" href="https://www.notion.com/help/images-files-and-media" target="_blank" rel="noreferrer">Notion’s files and media help</a>.
             </li>
           </ul>
         </div>
