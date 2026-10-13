@@ -120,6 +120,7 @@ const ROUTES = [
   "/about",
   "/affiliate-disclosure",
   "/privacy",
+  "/terms",
   "/contact"
 ];
 
