@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   authors: [{ name: "StackPick Editorial" }],
   creator: "StackPick",
   publisher: "StackPick",
-  icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }], apple: "/apple-touch-icon.png" },
+  icons: { icon: [{ url: "/favicon.svg?v=20261014", type: "image/svg+xml" }, { url: "/favicon.ico?v=20261014", type: "image/x-icon" }], apple: "/apple-touch-icon.png" },
 };
 
 const websiteJsonLd = {
