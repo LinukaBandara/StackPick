@@ -22,6 +22,7 @@ const COMPANY_LINKS = [
   { href: "/contact", label: "Contact" },
   { href: "/affiliate-disclosure", label: "Affiliate disclosure" },
   { href: "/privacy", label: "Privacy" },
+  { href: "/terms", label: "Terms and conditions" },
 ];
 
 export default function Footer() {
@@ -59,9 +60,11 @@ export default function Footer() {
             </nav>
           </div>
         </div>
-        <div className="mt-12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-t border-black/[0.08] pt-6 text-xs text-[#6e6e73]">
+        <div className="mt-12 flex flex-col gap-3 border-t border-black/[0.08] pt-6 text-xs text-[#6e6e73] sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} StackPick. All rights reserved.</p>
-          <p>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <button type="button" onClick={() => window.dispatchEvent(new Event("stackpick:cookie-settings"))} className="font-medium underline-offset-4 hover:text-[#001D39] hover:underline">Cookie settings</button>
+            <p>
             Made by{" "}
             <a
               href="https://ark-ii.studio/"
@@ -71,7 +74,8 @@ export default function Footer() {
             >
               ARK II Studio
             </a>
-          </p>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
