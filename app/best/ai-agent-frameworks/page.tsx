@@ -3,7 +3,7 @@ import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
-  title: "Best AI Agent Frameworks for Developers (2026) | StackPick",
+  title: "Best AI Agent Frameworks for Developers (2026)",
   description: "Compare AI agent development options by tool calling, state, workflow control, observability and deployment complexity before building an agent.",
   alternates: { canonical: "/best/ai-agent-frameworks" },
 };
