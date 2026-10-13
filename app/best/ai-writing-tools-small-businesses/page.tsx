@@ -36,6 +36,20 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section className="border-t border-[#e4e7ec] bg-[#f7f8fc]">
+        <div className="sp-container py-14 sm:py-16">
+          <p className="sp-eyebrow">Source and publication checks</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Treat AI copy as a draft, not a source of truth.</h2>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">For customer-facing copy, keep an approved source of truth for prices, product specifications, guarantees and policy statements. Check every claim against that source, and confirm the terms for any tool before sharing unpublished campaigns, customer information or confidential briefs. Features and commercial terms may differ between free, trial and paid plans.</p>
+          <ul className="mt-7 grid gap-3 sm:grid-cols-2">
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://www.jasper.ai/pricing" target="_blank" rel="noreferrer">Jasper plans and pricing ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Confirm current plan, trial and team features before standardizing a campaign workflow.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://www.grammarly.com/plans" target="_blank" rel="noreferrer">Grammarly plans ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Compare current free and paid editing capabilities against your actual review process.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://privacy.anthropic.com/" target="_blank" rel="noreferrer">Anthropic privacy resources ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Review the policy applicable to the Claude account used for client or business work.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://openai.com/business/enterprise-privacy/" target="_blank" rel="noreferrer">OpenAI business data privacy ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Check the exact product and plan scope rather than assuming business terms apply to every account.</p></li>
+          </ul>
+          <div className="mt-8 rounded-2xl border border-[#e4e7ec] bg-white p-6"><h3 className="font-semibold text-[#101828]">Related StackPick guides</h3><div className="mt-4 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium"><a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/ai-tools-small-businesses">General AI tools for small businesses →</a><a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/free-ai-tools-small-businesses">Free AI tools →</a><a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/ai-tools-business-content">AI tools for business content →</a></div></div>
+        </div>
+      </section>
     </ComparisonArticle>
   );
 }
