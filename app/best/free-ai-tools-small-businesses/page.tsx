@@ -36,6 +36,20 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section className="border-t border-[#e4e7ec] bg-[#f7f8fc]">
+        <div className="sp-container py-14 sm:py-16">
+          <p className="sp-eyebrow">Free does not mean risk-free</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Check the account terms before uploading business data.</h2>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">Free consumer accounts are useful for low-risk trials, but they should not automatically become a repository for customer records or confidential company material. Review the terms for your exact account, turn off or limit data sharing where appropriate, and start with public or anonymized examples.</p>
+          <ul className="mt-7 grid gap-3 sm:grid-cols-2">
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noreferrer">OpenAI privacy policy ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Review how the consumer service handles information and available data controls.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://privacy.anthropic.com/" target="_blank" rel="noreferrer">Anthropic privacy resources ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Check the terms relevant to the Claude account and usage type.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://support.google.com/gemini/answer/13594961" target="_blank" rel="noreferrer">Gemini Apps Privacy Hub ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Review activity and privacy controls for personal Gemini use.</p></li>
+            <li className="rounded-xl border border-[#e4e7ec] bg-white p-5"><a className="font-semibold text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="https://www.microsoft.com/en-us/privacy/privacystatement" target="_blank" rel="noreferrer">Microsoft privacy statement ↗</a><p className="mt-2 text-sm leading-6 text-[#667085]">Check the applicable Microsoft service and account privacy details.</p></li>
+          </ul>
+          <div className="mt-8 rounded-2xl border border-[#e4e7ec] bg-white p-6"><h3 className="font-semibold text-[#101828]">Compare the next step</h3><div className="mt-4 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium"><a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/ai-tools-small-businesses">Best AI tools for small businesses →</a><a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/ai-writing-tools-small-businesses">AI writing tools →</a><a className="text-[#101828] underline decoration-[#c7cdd6] underline-offset-4" href="/best/ai-automation-tools-small-businesses">AI automation tools →</a></div></div>
+        </div>
+      </section>
     </ComparisonArticle>
   );
 }
