@@ -55,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <meta name="impact-site-verification" value="8c133419-5f0c-490c-8b97-821b88a36fae" />
+        <meta name="impact-site-verification" content="8c133419-5f0c-490c-8b97-821b88a36fae" />
       </head>
       <body className="font-sans bg-white text-ink antialiased">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
