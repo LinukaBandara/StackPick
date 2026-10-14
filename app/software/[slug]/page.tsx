@@ -160,8 +160,14 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
               <h2 className="mt-1 text-lg font-semibold tracking-tight text-[#1d1d1f]">{software.name}</h2>
             </div>
           </div>
-          <p className="mt-4 text-sm leading-6 text-[#6e6e73]">Before choosing, try the same task in each shortlisted tool: add a contact, record an interaction, schedule the next action, find the record later and export your data.</p>
-          <Link href="/best/crm-software" className="mt-5 inline-flex text-sm font-semibold text-[#001D39] hover:underline">Compare CRM options →</Link>
+          <p className="mt-4 text-sm leading-6 text-[#6e6e73]">
+            {software.category === "Sales"
+              ? "Before choosing, try the same task in each shortlisted CRM: add a contact, record an interaction, schedule the next action, find the record later and export your data."
+              : "Before choosing, test a typical workflow in each shortlisted tool, check the plan limits, verify required integrations and confirm you can export your data."}
+          </p>
+          <Link href={software.category === "Sales" ? "/best/crm-software" : "/software"} className="mt-5 inline-flex text-sm font-semibold text-[#001D39] hover:underline">
+            {software.category === "Sales" ? "Compare CRM options →" : "Explore all software →"}
+          </Link>
           <div className="mt-6 border-t border-black/10 pt-5">
             <p className="text-xs font-semibold uppercase tracking-wide text-[#6e6e73]">Official sources</p>
             <a href={software.officialUrl} target="_blank" rel="noreferrer" className="mt-3 block break-words text-sm text-[#001D39] underline underline-offset-4">Product website</a>
