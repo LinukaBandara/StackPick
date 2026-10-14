@@ -19,6 +19,8 @@ jobs:
           cache: npm
       - name: Install locked dependencies
         run: npm ci
+      - name: Report framework versions
+        run: npm ls next react react-dom postcss source-map-js
       - name: Audit production dependencies
         run: npm audit --omit=dev --audit-level=high
       - name: Check internal links
