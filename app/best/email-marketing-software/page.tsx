@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Email Marketing Software for Small Business (2026)",
   description:
-    "An honest comparison of email marketing tools - Mailchimp, Brevo, MailerLite, ActiveCampaign, and Kit - covering how each one actually prices and who it fits.",
+    "Compare Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit and Systeme.io for small businesses, creators and teams choosing email marketing and automation tools.",
   alternates: { canonical: "/best/email-marketing-software" },
 };
 
@@ -51,8 +51,15 @@ export default function EmailMarketingSoftwarePage() {
           tradeoff: "Designed around creators and publishing rather than broad B2B or e-commerce marketing workflows, so its focus can be an advantage or limitation depending on the business.",
           url: "https://kit.com/",
         },
+        {
+          name: "Systeme.io",
+          bestFor: "Solo businesses that want email campaigns alongside simple sales funnels and digital-product delivery",
+          freeOption: "A free plan is advertised; verify current email, contact, funnel and automation limits before choosing.",
+          tradeoff: "Combining email, funnels and digital-product tools may reduce the number of subscriptions a new business needs. Dedicated email platforms can offer more depth for complex segmentation, deliverability controls or large-scale campaign operations, so test your actual workflow before migrating.",
+          url: "https://systeme.io/",
+        },
       ]}
-      bottomLine="Large list, infrequent sends? Brevo's volume-oriented pricing model is worth checking first. Just starting and want simplicity? MailerLite. Need deep behavioral automation? ActiveCampaign once basic tools stop being enough. Writing a creator newsletter rather than running a traditional business list? Kit is purpose-built for that."
+      bottomLine="Large list, infrequent sends? Brevo's volume-oriented pricing model is worth checking first. Just starting and want simplicity? MailerLite. Need deep behavioral automation? ActiveCampaign once basic tools stop being enough. Writing a creator newsletter rather than running a traditional business list? Kit is purpose-built for that. Want email plus simple funnels and digital products in one place? Evaluate Systeme.io's current limits against your workflow."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
