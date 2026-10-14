@@ -79,7 +79,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
               />
             </div>
             <p className="mt-3 text-xs leading-5 text-[#6e6e73]">
-              Product imagery is published by the vendor and may change as its interface evolves. StackPick is an independent guide, not the software provider.
+              Product imagery is credited to the vendor or linked source. Screenshots may be older or vary by plan and region. StackPick is an independent guide, not the software provider.
             </p>
           </section>
 
