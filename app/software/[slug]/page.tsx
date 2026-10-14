@@ -48,7 +48,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="sp-container grid gap-10 py-14 sm:py-18 lg:grid-cols-[minmax(0,1fr)_320px]">
+      <section className="sp-container grid gap-10 py-14 sm:py-20 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="min-w-0">
           <section>
             <p className="sp-eyebrow">At a glance</p>
