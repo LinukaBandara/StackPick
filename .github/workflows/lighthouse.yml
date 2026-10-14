@@ -1,0 +1,43 @@
+name: StackPick Lighthouse audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 4 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lighthouse-production
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 20
+      - name: Run Lighthouse against production
+        run: npx --yes lighthouse https://www.stackpick.tech --chrome-flags="--headless --no-sandbox" --output=json --output-path=./lighthouse-report.json --only-categories=performance,accessibility,best-practices,seo
+      - name: Print Lighthouse category scores
+        run: |
+          node -e '
+            const r = require("./lighthouse-report.json");
+            for (const name of ["performance", "accessibility", "best-practices", "seo"]) {
+              const score = r.categories[name]?.score;
+              console.log(name + ": " + (score == null ? "not available" : Math.round(score * 100) + "/100"));
+            }
+          '
+      - name: Upload Lighthouse report
+        uses: actions/upload-artifact@v4
+        with:
+          name: stackpick-lighthouse-report
+          path: lighthouse-report.json
+          if-no-files-found: error
+          retention-days: 14
