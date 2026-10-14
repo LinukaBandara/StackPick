@@ -68,7 +68,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
                 <p className="sp-eyebrow">Inside the product</p>
                 <h2 className="sp-title mt-3">A look at the interface.</h2>
               </div>
-              <a href={software.productImage.sourceUrl} target="_blank" rel="noreferrer" className="text-sm font-semibold text-[#001D39] hover:underline">View vendor source ↗</a>
+              <a href={software.productImage.sourceUrl} target="_blank" rel="noreferrer" className="text-sm font-semibold text-[#001D39] hover:underline">View image source ↗</a>
             </div>
             <div className="mt-5 overflow-hidden rounded-[24px] border border-black/10 bg-white">
               <ProductScreenshot
