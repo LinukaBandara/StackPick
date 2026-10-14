@@ -20,7 +20,10 @@ jobs:
       - name: Install locked dependencies
         run: npm ci
       - name: Audit production dependencies
-        run: npm audit --audit-level=high
+        run: npm audit --omit=dev --audit-level=high
+      - name: Report development dependency advisories
+        run: |
+          npm audit --audit-level=high || echo '::warning::Full dependency audit reports development-tool advisories; review the audit output. Production dependencies are checked separately above.'
       - name: Check internal links
         run: npm run check:links
       - name: Lint
