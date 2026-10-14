@@ -1,0 +1,29 @@
+name: StackPick concurrent-user smoke test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  load-smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 20
+      - name: Run 10-user smoke test against production
+        run: node scripts/load-test.mjs
+        env:
+          LOAD_TEST_URL: https://www.stackpick.tech/
+          LOAD_TEST_CONCURRENCY: 10
+          LOAD_TEST_DURATION_MS: 10000
