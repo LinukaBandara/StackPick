@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Online Course Platform for Creators & Small Business (2026)",
   description:
-    "An honest comparison of Teachable, Thinkific, and Kajabi - and why the real decision is whether you want a focused course tool or an all-in-one marketing platform.",
+    "Compare Teachable, Thinkific, Kajabi and Systeme.io for creators, including course delivery, email marketing, funnels and all-in-one platform trade-offs.",
   alternates: { canonical: "/best/online-course-platforms" },
 };
 
@@ -35,13 +35,21 @@ export default function Page() {
         {
           name: "Kajabi",
           bestFor: "Established creators who want courses, email, funnels, and a website in one platform",
-          freeOption: "No free tier - the highest price floor of the three.",
+          freeOption: "No permanent free tier; verify current plan and trial terms.",
           tradeoff:
             "Genuinely replaces several separate subscriptions (email marketing tool, funnel builder, website), which can make the higher sticker price a better overall value than it first appears - but only if you'd otherwise be paying for those tools separately. A poor fit if you already have an email/marketing stack you like and just need course hosting.",
           url: "https://kajabi.com/",
         },
+        {
+          name: "Systeme.io",
+          bestFor: "Solo creators and small businesses looking to combine basic funnels, email campaigns and digital-product sales",
+          freeOption: "A free plan is advertised; confirm the current contact, email, funnel and product limits before committing.",
+          tradeoff:
+            "Its all-in-one approach can reduce the number of separate tools a new creator needs. The trade-off is that a bundled platform may not match a dedicated course host or advanced email service in every workflow, so test checkout, course access, automations and data export before moving an established business.",
+          url: "https://systeme.io/",
+        },
       ]}
-      bottomLine="Launching your first course and want it live fast and cheap? Teachable. Want to scale without transaction fees eating into revenue? Thinkific. Already committed to going all-in on one platform for courses, email, and funnels together? Kajabi - but do the math on what you'd otherwise pay for those tools separately before assuming it's more expensive than it looks."
+      bottomLine="Launching your first course and want it live fast and cheap? Compare Teachable. Want a course-focused platform with room to customize? Thinkific. Want an established all-in-one suite? Kajabi. Starting on a tighter budget and combining funnels, email and digital products? Evaluate Systeme.io's current plan limits against your actual workflow before choosing."
     />
   );
 }
