@@ -25,8 +25,7 @@ export default function SoftwareCatalogue({ software }: Props) {
       const hasFreeOption =
         freeText.includes("yes") ||
         freeText.includes("free edition") ||
-        freeText.includes("free tier") ||
-        freeText.includes("free plan");
+        freeText.includes("free tier");
       const matchesFilter =
         filter === "all" ||
         (filter === "free" && hasFreeOption) ||
