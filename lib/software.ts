@@ -4,6 +4,12 @@ export type SoftwareProfile = {
   category: string;
   tagline: string;
   summary: string;
+  productImage: {
+    src: string;
+    alt: string;
+    caption: string;
+    sourceUrl: string;
+  };
   bestFor: string[];
   keyFeatures: string[];
   strengths: string[];
@@ -25,6 +31,12 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
     tagline: "A broad CRM starting point with a permanent free tier.",
     summary:
       "HubSpot CRM brings contact records, deal pipelines and sales activity into one workspace. It can suit freelancers and small teams that need a clear place to track enquiries before they invest in a larger sales or marketing stack.",
+    productImage: {
+      src: "https://www.hubspot.com/hs-fs/hubfs/CRM_Dashboards_SalesTeam_EN_06082026.png?width=1030&name=CRM_Dashboards_SalesTeam_EN_06082026.png",
+      alt: "HubSpot CRM sales team reporting dashboard interface",
+      caption: "An example of HubSpot's sales reporting dashboard.",
+      sourceUrl: "https://www.hubspot.com/products/reporting-dashboards",
+    },
     bestFor: [
       "Freelancers who need to organise leads and client conversations",
       "Small teams that want a shared view of contacts and deals",
@@ -69,6 +81,12 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
     tagline: "A sales-focused CRM built around deals and pipeline stages.",
     summary:
       "Pipedrive is designed to help salespeople keep leads, deals and next actions visible as opportunities move through a pipeline. It is worth evaluating when the main job is managing a repeatable sales process rather than running an all-in-one marketing platform.",
+    productImage: {
+      src: "https://www-cms.pipedriveassets.com/SaaS-reporting-Pipedrive-sales-pipeline.png",
+      alt: "Pipedrive CRM deal pipeline with opportunities arranged by sales stage",
+      caption: "Pipedrive's visual deal pipeline, shown in vendor-published product imagery.",
+      sourceUrl: "https://www.pipedrive.com/en/features/pipeline-management",
+    },
     bestFor: [
       "Service businesses with a defined lead-to-close process",
       "Small sales teams that want to see deal stages at a glance",
@@ -113,6 +131,12 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
     tagline: "A configurable CRM that connects with a wider business software suite.",
     summary:
       "Zoho CRM helps businesses organise customer records, sales activities and deal stages. It is particularly worth shortlisting if your business already uses Zoho products or wants to evaluate a CRM alongside accounting, invoicing, support and other operational tools.",
+    productImage: {
+      src: "https://www.zohowebstatic.com/sites/zweb/images/canvas/zc-canvas-sales.svg",
+      alt: "Zoho CRM sales interface showing a customized sales workspace",
+      caption: "A vendor-published example of Zoho CRM's customizable sales interface.",
+      sourceUrl: "https://www.zoho.com/crm/customization/",
+    },
     bestFor: [
       "Small businesses that already use Zoho apps",
       "Teams that want configurable sales processes and records",
