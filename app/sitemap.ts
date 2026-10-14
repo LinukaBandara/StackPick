@@ -132,6 +132,7 @@ const LAST_MODIFIED: Record<string, string> = {
   "/best/ai-meeting-assistants": "2026-10-09",
   "/best/web-hosting": "2026-10-14",
   "/best/online-course-platforms": "2026-10-14",
+  "/best/email-marketing-software": "2026-10-14",
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
