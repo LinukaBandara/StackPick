@@ -65,7 +65,10 @@ export default function CategoriesPage() {
             </Link>
           ))}
         </div>
-        <p className="mt-10 text-sm text-[#6e6e73]">Looking for a specific tool? <Link className="font-semibold text-[#001D39] hover:underline" href="/best">Search all comparison guides →</Link></p>
+        <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#6e6e73]">
+          <p>Looking for a specific tool? <Link className="font-semibold text-[#001D39] hover:underline" href="/best">Search all comparison guides →</Link></p>
+          <p>Know the product already? <Link className="font-semibold text-[#001D39] hover:underline" href="/software">Browse software profiles →</Link></p>
+        </div>
       </div>
     </section>
   );
