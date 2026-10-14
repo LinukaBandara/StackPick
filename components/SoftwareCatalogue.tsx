@@ -10,7 +10,7 @@ type Props = { software: SoftwareProfile[] };
 
 export default function SoftwareCatalogue({ software }: Props) {
   const [query, setQuery] = useState("");
-  const [filter, setFilter] = useState<"all" | "free" | "sales">("all");
+  const [filter, setFilter] = useState("all");
 
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -29,15 +29,16 @@ export default function SoftwareCatalogue({ software }: Props) {
       const matchesFilter =
         filter === "all" ||
         (filter === "free" && hasFreeOption) ||
-        (filter === "sales" && /sales|crm/i.test(item.category));
+        filter === `category:${item.category}`;
       return matchesQuery && matchesFilter;
     });
   }, [software, query, filter]);
 
+  const categories = Array.from(new Set(software.map((item) => item.category))).sort();
   const filters = [
-    { id: "all" as const, label: "All software" },
-    { id: "free" as const, label: "Free option" },
-    { id: "sales" as const, label: "Sales & CRM" },
+    { id: "all", label: "All software" },
+    { id: "free", label: "Free option" },
+    ...categories.map((category) => ({ id: `category:${category}`, label: category })),
   ];
 
   return (
