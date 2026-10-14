@@ -315,7 +315,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
     pricingSummary:
       "QuickBooks' US pricing page currently advertises a $0 Free plan and paid subscriptions, but promotional rates and plan details change. Availability, tax support, bank connections and pricing differ by country; check the official regional page before choosing.",
     freePlan:
-      "A $0 plan is listed on the US pricing page, with one user, no accountant access, up to two invoices per month (subject to payment eligibility) and one connected bank. Do not assume this plan is available in every country.",
+      "Yes, the US pricing page lists a $0 plan with one user, no accountant access, up to two invoices per month (subject to payment eligibility) and one connected bank. Do not assume this plan is available in every country.",
     officialUrl: "https://quickbooks.intuit.com/online/",
     pricingUrl: "https://quickbooks.intuit.com/pricing/",
     comparisons: [
