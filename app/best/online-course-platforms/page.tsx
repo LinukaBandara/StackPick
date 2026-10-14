@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Online Course Platform for Creators & Small Business (2026)",
   description:
-    "Compare Teachable, Thinkific, Kajabi and Systeme.io for creators, including course delivery, email marketing, funnels and all-in-one platform trade-offs.",
+    "Compare Teachable, Thinkific, LearnWorlds, Kajabi and Systeme.io for creators, including course delivery, learner experience, email marketing, funnels and all-in-one platform trade-offs.",
   alternates: { canonical: "/best/online-course-platforms" },
 };
 
@@ -33,6 +33,14 @@ export default function Page() {
           url: "https://www.thinkific.com/",
         },
         {
+          name: "LearnWorlds",
+          bestFor: "Creators and training businesses that want interactive learning experiences and branded course delivery",
+          freeOption: "Check the current trial and plan terms; do not assume a permanent free plan is available.",
+          tradeoff:
+            "Its focus on learner engagement, course-building and branded learning experiences can suit structured training businesses. Compare the features included in each plan, transaction fees, integrations and the total cost at your expected student volume before choosing it over a simpler course host.",
+          url: "https://www.learnworlds.com/",
+        },
+        {
           name: "Kajabi",
           bestFor: "Established creators who want courses, email, funnels, and a website in one platform",
           freeOption: "No permanent free tier; verify current plan and trial terms.",
@@ -49,7 +57,7 @@ export default function Page() {
           url: "https://systeme.io/",
         },
       ]}
-      bottomLine="Launching your first course and want it live fast and cheap? Compare Teachable. Want a course-focused platform with room to customize? Thinkific. Want an established all-in-one suite? Kajabi. Starting on a tighter budget and combining funnels, email and digital products? Evaluate Systeme.io's current plan limits against your actual workflow before choosing."
+      bottomLine="Launching your first course and want a straightforward setup? Compare Teachable. Want customization and a course-focused platform? Thinkific. Prioritizing interactive learning and branded course delivery? Evaluate LearnWorlds. Want an established all-in-one suite? Kajabi. Starting on a tighter budget and combining funnels, email and digital products? Evaluate Systeme.io's current plan limits against your actual workflow before choosing."
     />
   );
 }
