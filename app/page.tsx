@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SoftwareLogo from "@/components/SoftwareLogo";
+import { SOFTWARE_PROFILES } from "@/lib/software";
 
 export const metadata: Metadata = {
   title: "Small Business Software Comparisons & Practical Guides",
@@ -173,6 +175,35 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Popular software profiles */}
+      <section className="border-y border-black/[0.06] bg-white">
+        <div className="sp-container py-10 sm:py-14">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="sp-eyebrow">Start with a product</p>
+              <h2 className="mt-2 text-xl font-semibold tracking-tight text-[#1d1d1f] sm:text-2xl">Explore software, not just categories.</h2>
+            </div>
+            <Link href="/software" className="text-sm font-semibold text-[#001D39] hover:underline">Browse the software catalogue →</Link>
+          </div>
+          <div className="mt-6 grid gap-3 sm:grid-cols-3">
+            {SOFTWARE_PROFILES.map((software) => (
+              <Link
+                key={software.slug}
+                href={`/software/${software.slug}`}
+                className="group flex min-w-0 items-center gap-4 rounded-2xl border border-[#d2d2d7] bg-white p-4 transition-colors hover:border-[#001D39]/40 hover:bg-[#f9fafb] sm:p-5"
+              >
+                <SoftwareLogo name={software.name} url={software.officialUrl} />
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate text-sm font-semibold text-[#1d1d1f]">{software.name}</span>
+                  <span className="mt-1 block text-xs text-[#6e6e73]">{software.category} · Product profile</span>
+                </span>
+                <span aria-hidden="true" className="text-[#001D39] transition-transform group-hover:translate-x-0.5">→</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
