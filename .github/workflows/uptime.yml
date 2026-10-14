@@ -11,16 +11,16 @@ jobs:
     timeout-minutes: 3
     steps:
       - name: Check HTTPS homepage
-        run: curl --retry 3 --retry-delay 5 --max-time 20 --fail --silent --show-error https://stackpick.tech/ -o /dev/null
+        run: curl --location --retry 3 --retry-delay 5 --max-time 20 --fail --silent --show-error https://www.stackpick.tech/ -o /dev/null
       - name: Check sitemap
-        run: curl --retry 3 --retry-delay 5 --max-time 20 --fail --silent --show-error https://stackpick.tech/sitemap.xml -o /dev/null
+        run: curl --location --retry 3 --retry-delay 5 --max-time 20 --fail --silent --show-error https://www.stackpick.tech/sitemap.xml -o /dev/null
       - name: Check robots.txt
-        run: curl --retry 3 --retry-delay 5 --max-time 20 --fail --silent --show-error https://stackpick.tech/robots.txt -o /dev/null
+        run: curl --location --retry 3 --retry-delay 5 --max-time 20 --fail --silent --show-error https://www.stackpick.tech/robots.txt -o /dev/null
       - name: Confirm HTTP redirects to HTTPS
         shell: bash
         run: |
-          final_url="$(curl --retry 2 --max-time 20 --silent --show-error --output /dev/null --write-out '%{url_effective}' http://stackpick.tech/)"
-          if [[ "$final_url" != https://* ]]; then
-            echo "Expected HTTP to redirect to HTTPS; final URL was: $final_url"
+          final_url="$(curl --location --retry 2 --max-time 20 --silent --show-error --output /dev/null --write-out '%{url_effective}' http://stackpick.tech/)"
+          if [[ "$final_url" != "https://www.stackpick.tech/" ]]; then
+            echo "Expected HTTP to redirect to canonical HTTPS https://www.stackpick.tech/; final URL was: $final_url"
             exit 1
           fi
