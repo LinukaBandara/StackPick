@@ -174,6 +174,109 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
     ],
     reviewedOn: "October 14, 2026",
   },
+
+  {
+    slug: "wave",
+    name: "Wave",
+    category: "Accounting & Invoicing",
+    tagline: "Straightforward bookkeeping and invoicing for eligible small businesses.",
+    summary:
+      "Wave combines invoicing, estimates and basic bookkeeping in one workspace. It is worth considering for solo operators and small businesses that want to send invoices and keep financial records together without starting with a monthly software subscription.",
+    productImage: {
+      src: "https://images.ctfassets.net/lzny33ho1g45/30vs29k4wb6ODdXzUC6KWc/4bfaa3ee5b1909205e0b0b31fe30a682/image9.png",
+      alt: "Wave accounting dashboard showing cash flow and profit-and-loss reports",
+      caption: "Wave dashboard screenshot published in a third-party software guide; availability and interface may change.",
+      sourceUrl: "https://zapier.com/blog/accounting-bookkeeping-software-freelance/",
+    },
+    bestFor: [
+      "Freelancers and small businesses that need simple invoicing and bookkeeping",
+      "Owners who want estimates, invoices and records in one workspace",
+      "Businesses that can use Wave's supported regional features and payment options",
+    ],
+    keyFeatures: [
+      "Create estimates and invoices",
+      "Record bookkeeping transactions",
+      "View cash-flow and profit-and-loss reports",
+      "Optional paid features for bank imports, receipt capture and other workflows",
+    ],
+    strengths: [
+      "A $0 Starter plan is advertised for core invoicing and bookkeeping",
+      "Keeps basic customer billing and financial records together",
+      "Can be a practical starting point for simple business finances",
+    ],
+    tradeoffs: [
+      "Some automation and receipt features require paid plans or add-ons",
+      "Payment processing and payroll availability vary by region",
+      "Confirm local eligibility and tax/accounting requirements before relying on it",
+    ],
+    pricingSummary:
+      "Wave advertises a Starter plan at $0 and a Pro plan with additional automation. Its official pricing page lists Pro at US$19 per month or US$190 per year for the displayed US pricing; promotions, taxes, eligibility and payment fees can vary. Confirm current terms directly.",
+    freePlan:
+      "Yes. The Starter plan is advertised at $0 and includes estimates, invoices and bookkeeping records. Bank transaction automation, receipt features and payment processing have separate plan, add-on or transaction-fee conditions.",
+    officialUrl: "https://www.waveapps.com/accounting",
+    pricingUrl: "https://www.waveapps.com/pricing",
+    comparisons: [
+      { title: "FreshBooks vs Wave", href: "/best/freshbooks-vs-wave" },
+      { title: "Zoho Invoice vs Wave", href: "/best/zoho-invoice-vs-wave" },
+      { title: "Best free accounting software", href: "/best/free-accounting-software" },
+    ],
+    alternatives: [
+      { name: "FreshBooks", href: "/best/freshbooks-vs-wave", reason: "Compare the invoicing workflow and paid-plan trade-offs." },
+      { name: "Zoho Invoice", href: "/best/zoho-invoice-vs-wave", reason: "Compare another invoicing option before choosing a workflow." },
+    ],
+    reviewedOn: "October 14, 2026",
+  },
+  {
+    slug: "trello",
+    name: "Trello",
+    category: "Project Management",
+    tagline: "A visual Kanban board for organising tasks and lightweight team workflows.",
+    summary:
+      "Trello organises work into boards, lists and cards, making task status easy to understand at a glance. It is a strong candidate for personal planning and small teams that prefer a simple visual workflow over a more structured project-management system.",
+    productImage: {
+      src: "https://assets.efficient.app/2d33ad5c265c6961bc5db8ef16027da8e777099c7a17d6dbdd2e2a4e0fadb928.png",
+      alt: "Trello board interface with tasks organised into workflow columns",
+      caption: "Trello interface screenshot published in a third-party product review.",
+      sourceUrl: "https://efficient.app/apps/trello",
+    },
+    bestFor: [
+      "Individuals and small teams who like Kanban-style task boards",
+      "Simple editorial, marketing or project workflows",
+      "Teams that want to start with a free plan before adding advanced controls",
+    ],
+    keyFeatures: [
+      "Boards, lists and cards for visual task tracking",
+      "Assignees and due dates",
+      "Unlimited cards on the Free plan",
+      "Power-Ups and automation, subject to plan limits",
+    ],
+    strengths: [
+      "The free plan supports up to 10 collaborators per Workspace",
+      "A simple board-and-card model has a low learning curve",
+      "Useful for making task status visible without a complex setup",
+    ],
+    tradeoffs: [
+      "The Free plan limits each Workspace to 10 boards and has automation caps",
+      "Advanced views, controls and other features require paid plans",
+      "Complex projects may need more structure than a basic board provides",
+    ],
+    pricingSummary:
+      "Trello's official pricing page lists a Free plan at $0 for up to 10 collaborators per Workspace. Standard is listed at US$5 per user per month when billed annually (US$6 monthly); check the official page for current terms and regional pricing.",
+    freePlan:
+      "Yes. The Free plan includes unlimited cards, up to 10 boards per Workspace and up to 10 collaborators per Workspace. Attachment size and monthly automation runs are limited.",
+    officialUrl: "https://trello.com/",
+    pricingUrl: "https://trello.com/en/pricing",
+    comparisons: [
+      { title: "Trello vs Asana", href: "/best/trello-vs-asana" },
+      { title: "Trello alternatives", href: "/best/trello-alternatives" },
+      { title: "Best free project management software", href: "/best/free-project-management-software" },
+    ],
+    alternatives: [
+      { name: "Asana", href: "/best/trello-vs-asana", reason: "Compare a more structured task and project workflow with Trello's visual boards." },
+      { name: "ClickUp", href: "/best/free-project-management-software", reason: "Explore a broader feature set in a project-management shortlist." },
+    ],
+    reviewedOn: "October 14, 2026",
+  },
 ];
 
 export function getSoftwareProfile(slug: string) {
