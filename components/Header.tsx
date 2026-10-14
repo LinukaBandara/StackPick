@@ -27,6 +27,9 @@ export default function Header() {
           <span>StackPick</span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+          <Link href="/software" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
+            Software
+          </Link>
           <Link href="/categories" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
             Categories
           </Link>
@@ -61,6 +64,7 @@ export default function Header() {
               <svg className="sp-menu-close hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path strokeLinecap="round" d="m6 6 12 12M18 6 6 18" /></svg>
             </summary>
             <nav aria-label="Mobile primary" className="sp-mobile-menu-panel absolute right-0 top-12 z-50 w-[min(88vw,320px)] rounded-2xl border border-black/10 bg-white p-2 shadow-[0_18px_50px_rgba(0,0,0,0.14)]">
+              <Link href="/software" className="sp-mobile-nav-link">Software profiles <span>Explore individual tools</span></Link>
               <Link href="/categories" className="sp-mobile-nav-link">Categories <span>Explore by need</span></Link>
               <Link href="/comparisons" className="sp-mobile-nav-link">Comparisons <span>Compare tools side by side</span></Link>
               <Link href="/guides" className="sp-mobile-nav-link">Guides <span>Practical buying advice</span></Link>

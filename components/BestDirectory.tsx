@@ -36,10 +36,13 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const requestedCategory = new URLSearchParams(window.location.search).get("category");
+    const params = new URLSearchParams(window.location.search);
+    const requestedCategory = params.get("category");
+    const requestedQuery = params.get("q");
     if (requestedCategory && CATEGORIES.some((category) => category.toLowerCase() === requestedCategory.toLowerCase())) {
       setActiveCategory(CATEGORIES.find((category) => category.toLowerCase() === requestedCategory.toLowerCase())!);
     }
+    if (requestedQuery) setSearchQuery(requestedQuery);
   }, []);
 
   useEffect(() => {
@@ -86,7 +89,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search guides (e.g. invoicing, crm, vpn, time tracking)..."
+            placeholder="Search software comparisons (e.g. invoicing, CRM, VPN, time tracking)..."
             className="w-full rounded-full border border-[#d2d2d7] bg-white py-3 pl-11 pr-12 text-sm text-[#1d1d1f] placeholder-[#6e6e73] shadow-sm transition-all focus:border-[#001D39] focus:outline-none focus:ring-2 focus:ring-[#001D39]/20"
           />
           {searchQuery && (

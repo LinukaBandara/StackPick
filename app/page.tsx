@@ -107,7 +107,7 @@ export default function HomePage() {
     <>
       {/* 1. Hero Section */}
       <section className="sp-hero-section bg-white">
-        <div className="sp-container flex min-h-[620px] flex-col items-center justify-center py-16 text-center sm:min-h-[760px] sm:py-28">
+        <div className="sp-container flex min-h-[600px] flex-col items-center justify-center py-16 text-center sm:min-h-[680px] sm:py-24">
           <p className="sp-eyebrow">Software, without the noise.</p>
           <h1 className="sp-display mt-6 max-w-5xl">
             Find the right tool.<br />
@@ -117,13 +117,26 @@ export default function HomePage() {
             StackPick compares software for freelancers and small businesses, pricing,
             limits, strengths, trade-offs, and the details that actually change a decision.
           </p>
-          <div className="mt-9 flex flex-wrap justify-center gap-3">
-            <Link href="/best" className="sp-button-primary">
-              Explore comparisons
-            </Link>
-            <Link href="/about" className="sp-button-secondary">
-              How StackPick works
-            </Link>
+          <form action="/best#directory-search" method="get" className="mt-9 flex w-full max-w-2xl flex-col gap-3 rounded-[22px] border border-[#d2d2d7] bg-white p-2 shadow-[0_12px_40px_rgba(0,29,57,0.08)] sm:flex-row sm:items-center">
+            <label htmlFor="software-search" className="sr-only">Search software comparisons</label>
+            <div className="flex min-w-0 flex-1 items-center gap-3 px-3">
+              <svg aria-hidden="true" className="h-5 w-5 shrink-0 text-[#6e6e73]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <input id="software-search" name="q" type="search" placeholder="What software are you looking for?" className="h-12 min-w-0 w-full bg-transparent text-sm text-[#1d1d1f] outline-none placeholder:text-[#86868b]" />
+            </div>
+            <button type="submit" className="sp-button-primary shrink-0">Find software <span aria-hidden="true">→</span></button>
+          </form>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-xs text-[#6e6e73]">
+            <span className="mr-1">Popular:</span>
+            <Link href="/best?q=CRM#directory-search" className="rounded-full border border-[#d2d2d7] px-3 py-1.5 transition hover:border-[#001D39] hover:text-[#001D39]">CRM</Link>
+            <Link href="/best?q=invoicing#directory-search" className="rounded-full border border-[#d2d2d7] px-3 py-1.5 transition hover:border-[#001D39] hover:text-[#001D39]">Invoicing</Link>
+            <Link href="/best?q=project%20management#directory-search" className="rounded-full border border-[#d2d2d7] px-3 py-1.5 transition hover:border-[#001D39] hover:text-[#001D39]">Project management</Link>
+            <Link href="/best?q=AI#directory-search" className="rounded-full border border-[#d2d2d7] px-3 py-1.5 transition hover:border-[#001D39] hover:text-[#001D39]">AI tools</Link>
+          </div>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <Link href="/best" className="sp-button-secondary">Browse all comparisons</Link>
+            <Link href="/about" className="inline-flex items-center px-3 py-2 text-sm font-medium text-[#6e6e73] transition hover:text-[#001D39]">How StackPick works</Link>
           </div>
 
           {/* 3 Steps Container */}
@@ -309,12 +322,14 @@ export default function HomePage() {
           <h2 className="sp-title mx-auto mt-3 max-w-3xl">
             Make your next software decision a simpler one.
           </h2>
-          <Link
-            href="/best"
-            className="mt-8 inline-block text-sm font-semibold text-[#001D39] hover:underline"
-          >
-            Browse all comparisons →
-          </Link>
+          <div className="mt-8 flex flex-wrap justify-center gap-6">
+            <Link href="/best" className="inline-block text-sm font-semibold text-[#001D39] hover:underline">
+              Browse all comparisons →
+            </Link>
+            <Link href="/software" className="inline-block text-sm font-semibold text-[#001D39] hover:underline">
+              Explore software profiles →
+            </Link>
+          </div>
         </div>
       </section>
     </>

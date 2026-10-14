@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
@@ -75,6 +76,16 @@ export default function CrmSoftwarePage() {
             usually benefits more from a CRM that takes less than an hour to configure than from a
             platform whose advanced features will never be used.
           </p>
+          <div className="mt-10 rounded-[24px] border border-black/10 bg-[#f5f5f7] p-6 sm:p-8">
+            <p className="sp-eyebrow">Go deeper</p>
+            <h2 className="mt-3 text-xl font-semibold tracking-tight text-[#1d1d1f]">Explore each CRM on its own terms.</h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">Our software profiles break down who each product suits, free-plan limits, strengths and trade-offs, with links to official pricing.</p>
+            <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-[#001D39]">
+              <Link href="/software/hubspot-crm" className="hover:underline">HubSpot CRM profile →</Link>
+              <Link href="/software/pipedrive" className="hover:underline">Pipedrive profile →</Link>
+              <Link href="/software/zoho-crm" className="hover:underline">Zoho CRM profile →</Link>
+            </div>
+          </div>
         </div>
       </section>
     </ComparisonArticle>
