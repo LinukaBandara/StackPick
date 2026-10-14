@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { SOFTWARE_PROFILES } from "@/lib/software";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.tech";
 
@@ -9,9 +10,6 @@ const ROUTES = [
   "/comparisons",
   "/guides",
   "/software",
-  "/software/hubspot-crm",
-  "/software/pipedrive",
-  "/software/zoho-crm",
   "/best/invoicing-software",
   "/best/accounting-software",
   "/best/payroll-software",
@@ -140,7 +138,8 @@ const LAST_MODIFIED: Record<string, string> = {
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ROUTES.map((path) => ({
+  const routes = [...new Set([...ROUTES, ...SOFTWARE_PROFILES.map((profile) => "/software/" + profile.slug)])];
+  return routes.map((path) => ({
     url: `${SITE_URL}${path}`,
     ...(LAST_MODIFIED[path]
       ? { lastModified: new Date(`${LAST_MODIFIED[path]}T00:00:00.000Z`) }
