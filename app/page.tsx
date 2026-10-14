@@ -322,12 +322,14 @@ export default function HomePage() {
           <h2 className="sp-title mx-auto mt-3 max-w-3xl">
             Make your next software decision a simpler one.
           </h2>
-          <Link
-            href="/best"
-            className="mt-8 inline-block text-sm font-semibold text-[#001D39] hover:underline"
-          >
-            Browse all comparisons →
-          </Link>
+          <div className="mt-8 flex flex-wrap justify-center gap-6">
+            <Link href="/best" className="inline-block text-sm font-semibold text-[#001D39] hover:underline">
+              Browse all comparisons →
+            </Link>
+            <Link href="/software" className="inline-block text-sm font-semibold text-[#001D39] hover:underline">
+              Explore software profiles →
+            </Link>
+          </div>
         </div>
       </section>
     </>
