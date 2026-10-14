@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Email Marketing Software for Small Business (2026)",
   description:
-    "Compare Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit and Systeme.io for small businesses, creators and teams choosing email marketing and automation tools.",
+    "Compare Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit, Systeme.io and GetResponse for small businesses, creators and teams choosing email marketing and automation tools.",
   alternates: { canonical: "/best/email-marketing-software" },
 };
 
@@ -58,8 +58,15 @@ export default function EmailMarketingSoftwarePage() {
           tradeoff: "Combining email, funnels and digital-product tools may reduce the number of subscriptions a new business needs. Dedicated email platforms can offer more depth for complex segmentation, deliverability controls or large-scale campaign operations, so test your actual workflow before migrating.",
           url: "https://systeme.io/",
         },
+        {
+          name: "GetResponse",
+          bestFor: "Small businesses and creators that want email campaigns, automation and landing pages in one platform",
+          freeOption: "A free plan may be available with feature and audience limits; verify the current plan details.",
+          tradeoff: "GetResponse combines email marketing with landing pages and automation features, which can reduce tool switching. Compare contact-based pricing, automation depth, and the features included at your expected list size before choosing it over a more focused email service.",
+          url: "https://www.getresponse.com/",
+        },
       ]}
-      bottomLine="Large list, infrequent sends? Brevo's volume-oriented pricing model is worth checking first. Just starting and want simplicity? MailerLite. Need deep behavioral automation? ActiveCampaign once basic tools stop being enough. Writing a creator newsletter rather than running a traditional business list? Kit is purpose-built for that. Want email plus simple funnels and digital products in one place? Evaluate Systeme.io's current limits against your workflow."
+      bottomLine="Large list, infrequent sends? Brevo's volume-oriented pricing model is worth checking first. Just starting and want simplicity? MailerLite. Need deep behavioral automation? ActiveCampaign once basic tools stop being enough. Writing a creator newsletter rather than running a traditional business list? Kit is purpose-built for that. Want email plus simple funnels and digital products in one place? Compare Systeme.io and GetResponse against your workflow, contact count and total subscription cost."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
