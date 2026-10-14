@@ -22,7 +22,7 @@ export default function SoftwareCataloguePage() {
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-2 text-xs text-[#6e6e73]">
-          <span className="rounded-full border border-black/10 px-3 py-1.5">Vendor-published product previews</span>
+          <span className="rounded-full border border-black/10 px-3 py-1.5">Product screenshots with source links</span>
           <span className="rounded-full border border-black/10 px-3 py-1.5">Free-plan checks</span>
           <span className="rounded-full border border-black/10 px-3 py-1.5">Official pricing links</span>
         </div>
