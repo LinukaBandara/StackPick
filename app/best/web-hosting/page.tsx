@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Web Hosting for Small Business (2026)",
   description:
-    "An honest comparison of Hostinger, SiteGround, Bluehost, and Cloudways - and the renewal-price trap almost every hosting comparison glosses over.",
+    "Compare Hostinger, SiteGround, Bluehost, Cloudways and Kinsta for small-business hosting, including renewal prices, managed WordPress hosting and trade-offs.",
   alternates: { canonical: "/best/web-hosting" },
 };
 
@@ -48,8 +48,16 @@ export default function Page() {
             "Managed cloud hosting across multiple infrastructure providers gives genuine room to scale without migrating hosts later - a real advantage over fixed shared-hosting plans that cap out. Pay-as-you-go pricing is less predictable month to month than a flat plan, and it assumes more technical comfort than Bluehost's beginner-friendly setup.",
           url: "https://www.cloudways.com/",
         },
+        {
+          name: "Kinsta",
+          bestFor: "Businesses running WordPress that want managed hosting and a hands-off technical stack",
+          freeOption: "No permanent free hosting plan; check the current trial and plan terms.",
+          tradeoff:
+            "Kinsta focuses on managed WordPress hosting, with platform-level support and performance tooling rather than low-cost shared hosting. It is usually a more premium-priced choice, so compare the included visits, storage, backup policy, overage rules and renewal cost against your actual traffic before switching.",
+          url: "https://kinsta.com/wordpress-hosting/",
+        },
       ]}
-      bottomLine="Most small businesses starting out: Hostinger for the best value, but commit to the longer term to actually get the low rate, and know what it renews at. Want premium support you'll never have to think about? SiteGround, and budget for the renewal jump. First WordPress site, want simplicity? Bluehost. Expect real growth and want performance headroom? Cloudways."
+      bottomLine="Most small businesses starting out: Hostinger for the best value, but commit to the longer term to actually get the low rate, and know what it renews at. Want premium support you'll never have to think about? SiteGround, and budget for the renewal jump. First WordPress site, want simplicity? Bluehost. Expect real growth and want performance headroom? Cloudways. Running WordPress and prioritizing managed support over the lowest price? Compare Kinsta carefully against your traffic and budget."
     />
   );
 }
