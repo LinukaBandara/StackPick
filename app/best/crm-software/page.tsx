@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
+import SoftwareLogo from "@/components/SoftwareLogo";
 
 export const metadata: Metadata = {
   title: "Best CRM Software for Freelancers & Small Teams (2026)",
@@ -8,6 +9,12 @@ export const metadata: Metadata = {
     "An honest comparison of CRM tools for freelancers and small teams - HubSpot, Pipedrive, Zoho CRM, and Notion - covering free tiers and real trade-offs.",
   alternates: { canonical: "/best/crm-software" },
 };
+
+const CRM_PROFILES = [
+  { name: "HubSpot CRM", url: "https://www.hubspot.com/products/crm", href: "/software/hubspot-crm", note: "Free starting point and connected customer tools" },
+  { name: "Pipedrive", url: "https://www.pipedrive.com/", href: "/software/pipedrive", note: "Visual, sales-first pipeline management" },
+  { name: "Zoho CRM", url: "https://www.zoho.com/crm/", href: "/software/zoho-crm", note: "Configurable CRM within a wider business suite" },
+];
 
 export default function CrmSoftwarePage() {
   return (
@@ -77,13 +84,20 @@ export default function CrmSoftwarePage() {
             platform whose advanced features will never be used.
           </p>
           <div className="mt-10 rounded-[24px] border border-black/10 bg-[#f5f5f7] p-6 sm:p-8">
-            <p className="sp-eyebrow">Go deeper</p>
-            <h2 className="mt-3 text-xl font-semibold tracking-tight text-[#1d1d1f]">Explore each CRM on its own terms.</h2>
-            <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">Our software profiles break down who each product suits, free-plan limits, strengths and trade-offs, with links to official pricing.</p>
-            <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-[#001D39]">
-              <Link href="/software/hubspot-crm" className="hover:underline">HubSpot CRM profile →</Link>
-              <Link href="/software/pipedrive" className="hover:underline">Pipedrive profile →</Link>
-              <Link href="/software/zoho-crm" className="hover:underline">Zoho CRM profile →</Link>
+            <p className="sp-eyebrow">Product profiles</p>
+            <h2 className="mt-3 text-xl font-semibold tracking-tight text-[#1d1d1f]">See the tools before you choose.</h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">Open a dedicated profile for vendor-published interface imagery, plan details, strengths, trade-offs and official pricing.</p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              {CRM_PROFILES.map((profile) => (
+                <Link key={profile.href} href={profile.href} className="group rounded-2xl border border-black/10 bg-white p-4 transition hover:border-[#001D39]/35 hover:shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <SoftwareLogo name={profile.name} url={profile.url} size="small" />
+                    <span className="text-sm font-semibold text-[#1d1d1f]">{profile.name}</span>
+                  </div>
+                  <p className="mt-3 text-xs leading-5 text-[#6e6e73]">{profile.note}</p>
+                  <span className="mt-4 inline-flex text-xs font-semibold text-[#001D39] group-hover:underline">View profile →</span>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
