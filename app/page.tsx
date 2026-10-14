@@ -117,7 +117,7 @@ export default function HomePage() {
             StackPick compares software for freelancers and small businesses, pricing,
             limits, strengths, trade-offs, and the details that actually change a decision.
           </p>
-          <form action="/best" method="get" className="mt-9 flex w-full max-w-2xl flex-col gap-3 rounded-[22px] border border-[#d2d2d7] bg-white p-2 shadow-[0_12px_40px_rgba(0,29,57,0.08)] sm:flex-row sm:items-center">
+          <form action="/best#directory-search" method="get" className="mt-9 flex w-full max-w-2xl flex-col gap-3 rounded-[22px] border border-[#d2d2d7] bg-white p-2 shadow-[0_12px_40px_rgba(0,29,57,0.08)] sm:flex-row sm:items-center">
             <label htmlFor="software-search" className="sr-only">Search software comparisons</label>
             <div className="flex min-w-0 flex-1 items-center gap-3 px-3">
               <svg aria-hidden="true" className="h-5 w-5 shrink-0 text-[#6e6e73]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
