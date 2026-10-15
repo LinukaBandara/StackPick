@@ -286,7 +286,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
     summary:
       "QuickBooks Online brings income and expense tracking, invoices, bank transactions and financial reporting into one accounting workspace. It is worth comparing when a business needs more than standalone invoicing, but plan availability, tax support and bank connections depend on the country and edition.",
     productImage: {
-      src: "https://www.upmenu.com/wp-content/uploads/2021/05/5-restaurant-accounting-software-quickbooks-example.jpg.jpg",
+      src: "https://www.upmenu.com/assets/5-restaurant-accounting-software-quickbooks-example.jpg.webp?2026-07-28T15%3A33%3A40.691Z=",
       alt: "QuickBooks Online dashboard with invoice status, expense categories and profit-and-loss reporting",
       caption: "Third-party screenshot of a QuickBooks dashboard; the interface and regional features may differ from the current product.",
       sourceUrl: "https://www.upmenu.com/blog/restaurant-accounting-software/",
