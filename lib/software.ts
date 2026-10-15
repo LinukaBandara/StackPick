@@ -337,10 +337,10 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
     summary:
       "FreshBooks focuses on invoicing and day-to-day finances for freelancers and service businesses. It can suit people who bill clients regularly and want estimates, expense tracking and reports, but client caps and add-on costs matter when comparing plans.",
     productImage: {
-      src: "https://media.trustradius.com/product-screenshots/Kf/aM/3R24OORKZNSS.png",
+      src: "https://www.freshbooks.com/media/2024/12/default-image.png",
       alt: "FreshBooks invoice overview showing invoice statuses and outstanding amounts",
-      caption: "Third-party FreshBooks interface screenshot hosted by TrustRadius; verify current interface details on FreshBooks' own website.",
-      sourceUrl: "https://www.trustradius.com/compare-products/freshbooks-vs-shoeboxed",
+      caption: "FreshBooks dashboard screenshot hosted on FreshBooks' official website.",
+      sourceUrl: "https://www.freshbooks.com/honeybook-vs-freshbooks",
     },
     bestFor: [
       "Freelancers and consultants who invoice clients",
