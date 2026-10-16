@@ -12,11 +12,11 @@ export default function Page() {
     <ComparisonArticle
       title="QuickBooks vs Xero"
       slug="quickbooks-vs-xero"
-      intro="Compare QuickBooks and Xero for small businesses by bookkeeping workflow, collaboration, reporting, integrations and regional fit."
-      pricingNote="Pricing, limits and included features can change. Check the providers' current plans before making a decision."
+      intro="For US small businesses, QuickBooks offers a limited free starting point while Xero starts with a paid plan and caps activity on its Early tier. The better fit depends on invoice volume, accountant access, team workflow and local accounting support—not a universal winner. Prices and product details below were checked on October 17, 2026; features and offers can change."
+      pricingNote="US pricing snapshot checked October 17, 2026: QuickBooks lists a $0 Free option (one user, no accountant access, two invoices per month and one connected bank) and Simple Start at $38/month before any introductory offer. Xero lists Early at $27/month, capped at 20 invoices and 5 bills; Growing is $59/month and Established is $97/month. Prices exclude applicable tax, and provider offers or checkout totals may differ."
       tools={[
-        { name: "QuickBooks", bestFor: "Businesses wanting a mature accounting platform", freeOption: "Paid plans; introductory US promotions may change the effective first-month price.", tradeoff: "Its broad accounting ecosystem may suit businesses whose bookkeeper already works in QuickBooks, but plans and features vary by country so regional availability must be checked.", url: "https://quickbooks.intuit.com/" },
-        { name: "Xero", bestFor: "Businesses wanting cloud accounting and collaboration", freeOption: "US plans currently start at $27/month after the October 1, 2026 price update; Early limits invoices and bills.", tradeoff: "Its cloud collaboration approach can suit owners and external accountants working together, but local bank feeds, payroll support and tax workflows vary by market.", url: "https://www.xero.com/" },
+        { name: "QuickBooks", bestFor: "US sole proprietors or small teams comparing a limited free entry plan with paid bookkeeping features", freeOption: "The US pricing page lists a $0 Free option for one user, with no accountant access, up to two invoices per month, and one connected bank. Simple Start is a paid plan; check the live page for its regular price and any time-limited offer.", tradeoff: "The free plan is restrictive for recurring invoicing or accountant collaboration. Paid plan user limits also matter: compare the exact tier against your team size and required features. Regional products and plan details differ outside the US.", url: "https://quickbooks.intuit.com/pricing/" },
+        { name: "Xero", bestFor: "Businesses that need a paid accounting plan with room to invite collaborators", freeOption: "The US Early plan is $27/month before tax and includes up to 20 invoices/quotes and 5 bills. Growing is $59/month and Established is $97/month; optional add-ons and payment fees can add to the total.", tradeoff: "There is no permanent free plan on the US pricing page. Early's invoice and bill caps can be a poor fit for businesses with higher transaction volume, so estimate a full month before choosing it.", url: "https://www.xero.com/us/pricing-plans/" },
       ]}
       bottomLine="QuickBooks is the practical first choice when your bookkeeper already uses it or its local integrations match your workflow. Xero is worth shortlisting when cloud collaboration and its plan structure fit your team. Neither wins universally: confirm local tax and bank support, calculate the full recurring cost, and test month-end tasks before migrating."
     >
@@ -57,6 +57,20 @@ export default function Page() {
           <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">
             Before subscribing, write down the monthly price after any introductory offer, the number of users, invoice and bill limits, bank-feed access, payroll or payment add-ons, and any accountant or migration charges. Recheck the checkout price for your country: a US price or promotion is not a reliable quote for another market.
           </p>
+          <h3 className="mt-12 text-2xl font-semibold tracking-tight">Where the entry plans stop fitting</h3>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">
+            QuickBooks Free is a narrow US starting point: its current pricing page lists one user, no accountant access, two invoices per month and one connected bank. It may suit someone exploring basic bookkeeping, but not a business that invoices regularly or needs an accountant in the books. Xero Early is paid and allows 20 invoices/quotes and 5 bills; a business near either cap should compare the next tier rather than assume the entry plan will be enough. These are plan limits, not a recommendation to choose one vendor.
+          </p>
+          <div className="mt-6 overflow-x-auto rounded-2xl border border-[#e4e7ec]">
+            <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+              <thead className="bg-[#f7f8fc] text-[#101828]"><tr><th scope="col" className="border-b border-[#e4e7ec] p-4 font-semibold">Decision point</th><th scope="col" className="border-b border-[#e4e7ec] p-4 font-semibold">QuickBooks US</th><th scope="col" className="border-b border-[#e4e7ec] p-4 font-semibold">Xero US</th></tr></thead>
+              <tbody className="text-[#424245]">
+                <tr><th scope="row" className="border-b border-[#e4e7ec] p-4 font-medium">Lowest-cost entry</th><td className="border-b border-[#e4e7ec] p-4">Free plan listed at $0; one user, no accountant access, two invoices/month, one bank connection.</td><td className="border-b border-[#e4e7ec] p-4">Early is $27/month before tax; up to 20 invoices/quotes and 5 bills.</td></tr>
+                <tr><th scope="row" className="border-b border-[#e4e7ec] p-4 font-medium">When to move up</th><td className="border-b border-[#e4e7ec] p-4">When you need accountant collaboration, more invoices, extra users or paid-plan features.</td><td className="border-b border-[#e4e7ec] p-4">When you exceed Early's invoice or bill cap, or need features in Growing or Established.</td></tr>
+                <tr><th scope="row" className="p-4 font-medium">Check before buying</th><td className="p-4">Regular price after any offer, user count, accountant access and bank connections.</td><td className="p-4">Recurring price, activity caps, add-ons, payment fees and local tax/bank support.</td></tr>
+              </tbody>
+            </table>
+          </div>
           <h3 className="mt-12 text-2xl font-semibold tracking-tight">A low-risk migration checklist</h3>
           <ol className="mt-5 max-w-3xl list-decimal space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
             <li>Export your chart of accounts, customer and supplier records, open invoices, bills and transaction history from the current system.</li>
@@ -65,11 +79,10 @@ export default function Page() {
             <li>Confirm permissions, audit history, data exports and the process for correcting mistakes before inviting the whole team.</li>
           </ol>
           <h3 className="mt-12 text-2xl font-semibold tracking-tight">Official plan sources checked</h3>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">Provider information checked October 14, 2026. Xero's US price update took effect October 1, 2026: Early is $27/month, Growing $59/month and Established $97/month before tax and optional add-ons. Early is capped at 20 invoices/quotes and 5 bills, and online payment processing fees may apply. QuickBooks prices and promotions should be verified on the live checkout page. This is a desk-based comparison, not a hands-on test.</p>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">Provider pages checked October 17, 2026. The figures above are US list prices and plan limits shown on the linked pages on that date; promotions, taxes, add-ons and plan details can change. QuickBooks' pricing page lists a limited Free plan and paid tiers. Xero's US page lists Early, Growing and Established at $27, $59 and $97 per month respectively, with the Early limits noted above. This is a desk-based comparison; StackPick has not documented a hands-on test of these accounting products.</p>
           <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
             <li><a className="underline underline-offset-4" href="https://quickbooks.intuit.com/pricing/" target="_blank" rel="noreferrer">QuickBooks Online official pricing</a> — current plan details and promotions.</li>
             <li><a className="underline underline-offset-4" href="https://www.xero.com/us/pricing-plans/" target="_blank" rel="noreferrer">Xero US pricing plans</a> — current subscription tiers, usage caps and add-ons.</li>
-            <li><a className="underline underline-offset-4" href="https://www.xero.com/us/pricing-plans/update/" target="_blank" rel="noreferrer">Xero's October 2026 price update</a> — effective US subscription prices.</li>
           </ul>
         </div>
       </section>

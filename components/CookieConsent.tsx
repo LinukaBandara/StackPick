@@ -5,7 +5,10 @@ import { useCallback, useEffect, useState } from "react";
 
 type Consent = { analytics: boolean; savedAt: string };
 const STORAGE_KEY = "stackpick-consent-v1";
-const GA_ID = "G-BV28TGDZ1B";
+// Keep analytics tied to the deployment's configured property. An empty value
+// intentionally disables analytics instead of sending consented events to an
+// unverified or unrelated property.
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
 function readConsent(): Consent | null {
   try {
