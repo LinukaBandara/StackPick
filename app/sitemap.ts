@@ -45,7 +45,6 @@ const ROUTES = [
   "/best/crm-for-freelancers",
   "/best/crm-for-small-businesses",
   "/best/free-crm-software",
-  "/best/crm-for-solopreneurs",
   "/best/free-invoicing-software",
   "/best/invoicing-for-small-businesses",
   "/best/accounting-for-freelancers",
