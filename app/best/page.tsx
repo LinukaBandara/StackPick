@@ -61,7 +61,6 @@ const ARTICLES = [
   { href: "/best/free-invoicing-software", title: "Best Free Invoicing Software", desc: "Compare free invoice tools and check payment, client and monthly-document limits.", category: "Finance" },
   { href: "/best/invoicing-for-small-businesses", title: "Best Invoicing for Small Businesses", desc: "Find an invoicing workflow that supports recurring bills, overdue follow-ups and bookkeeping.", category: "Finance" },
   { href: "/best/accounting-for-freelancers", title: "Best Accounting Software for Freelancers", desc: "Compare expense tracking, tax-time organization and reports for independent workers.", category: "Finance" },
-  { href: "/best/accounting-for-small-businesses", title: "Best Accounting Software for Small Businesses", desc: "Evaluate bookkeeping tools by bank feeds, reconciliation, reporting and accountant access.", category: "Finance" },
   { href: "/best/free-accounting-software", title: "Best Free Accounting Software", desc: "Understand what free accounting tools cover and when limits make a paid plan necessary.", category: "Finance" },
   { href: "/best/project-management-for-small-teams", title: "Best Project Management for Small Teams", desc: "Compare task ownership, deadlines and team visibility without enterprise-level overhead.", category: "Productivity" },
   { href: "/best/free-project-management-software", title: "Best Free Project Management Software", desc: "Compare free task and project tools by seats, projects, views and collaboration limits.", category: "Productivity" },
