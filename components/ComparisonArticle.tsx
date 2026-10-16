@@ -80,6 +80,21 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
     { href: "/best/trello-alternatives", title: "Trello alternatives" },
   ],
+  "email-marketing-software": [
+    { href: "/best/mailchimp-alternatives", title: "Mailchimp alternatives" },
+    { href: "/best/mailchimp-vs-brevo", title: "Mailchimp vs Brevo" },
+    { href: "/best/mailchimp-vs-mailerlite", title: "Mailchimp vs MailerLite" },
+  ],
+  "mailchimp-vs-brevo": [
+    { href: "/best/email-marketing-software", title: "Email marketing software" },
+    { href: "/best/mailchimp-alternatives", title: "Mailchimp alternatives" },
+    { href: "/best/mailchimp-vs-mailerlite", title: "Mailchimp vs MailerLite" },
+  ],
+  "mailchimp-vs-mailerlite": [
+    { href: "/best/email-marketing-software", title: "Email marketing software" },
+    { href: "/best/mailchimp-alternatives", title: "Mailchimp alternatives" },
+    { href: "/best/mailchimp-vs-brevo", title: "Mailchimp vs Brevo" },
+  ],
   "mailchimp-alternatives": [
     { href: "/best/email-marketing-software", title: "Email marketing software for small businesses" },
     { href: "/best/mailchimp-vs-brevo", title: "Mailchimp vs Brevo" },
