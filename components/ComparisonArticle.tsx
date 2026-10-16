@@ -96,7 +96,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/web-hosting", title: "Web hosting for small businesses" },
   ],
   "free-scheduling-software": [
-    { href: "/best/scheduling-for-small-businesses", title: "Scheduling for small businesses" },
+    { href: "/best/appointment-scheduling-software", title: "Scheduling for small businesses" },
     { href: "/best/appointment-scheduling-software", title: "Appointment scheduling software" },
     { href: "/best/calendly-vs-google-calendar", title: "Calendly vs Google Calendar" },
   ],
@@ -209,7 +209,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "appointment-scheduling-software": [
     { href: "/best/free-scheduling-software", title: "Free scheduling software" },
-    { href: "/best/scheduling-for-small-businesses", title: "Scheduling for small businesses" },
+    { href: "/best/appointment-scheduling-software", title: "Scheduling for small businesses" },
     { href: "/best/form-builders", title: "Form builders for small business" },
   ],
   "n8n-vs-make-vs-zapier": [
