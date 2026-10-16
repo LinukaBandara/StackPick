@@ -49,7 +49,6 @@ const ROUTES = [
   "/best/free-invoicing-software",
   "/best/invoicing-for-small-businesses",
   "/best/accounting-for-freelancers",
-  "/best/accounting-for-small-businesses",
   "/best/free-accounting-software",
   "/best/project-management-for-small-teams",
   "/best/free-project-management-software",
