@@ -12,11 +12,11 @@ export default function Page() {
     <ComparisonArticle
       title="ClickUp vs monday.com"
       slug="clickup-vs-monday"
-      intro="ClickUp and monday.com both let teams shape how work is tracked, but a flexible workspace only helps when the team can understand and maintain it. Compare the way each represents tasks, handoffs, status and reporting for your actual process."
-      pricingNote="Match the plans against the same team size and workflow. Verify minimum seats, guest access, automations, integrations, dashboards and permission controls using each provider's current pricing details."
+      intro="ClickUp and monday.com both let teams shape how work is tracked, but their free tiers suit different constraints: ClickUp emphasizes unlimited tasks and members with 60 MB of storage, while monday.com's free Work Management plan allows two seats, three boards and 200 total items. Compare the actual workflow and upgrade point, not just the word ‘free’. Plan details checked against official US pages on October 17, 2026."
+      pricingNote="ClickUp lists Unlimited at $7 per user/month billed yearly; monday.com lists Basic at $9 per seat/month billed yearly and has a three-seat minimum for paid plans. Prices, billing terms, taxes and product-specific tiers can vary; verify the live checkout for your region."
       tools={[
-        { name: "ClickUp", bestFor: "Teams that want a configurable workspace spanning tasks, documentation and project views.", freeOption: "Check current usage limits and whether the views, storage, automation and permission features you need are included.", tradeoff: "Many configuration options can lead to inconsistent spaces or fields unless someone owns the workspace standards.", url: "https://clickup.com/" },
-        { name: "monday.com", bestFor: "Teams that prefer visual boards and status-driven workflows that can be adapted to different processes.", freeOption: "Verify current seat minimums, board or item limits, automations and which reporting features are plan-gated.", tradeoff: "A board can look simple while its automation and reporting requirements push the team toward a higher plan.", url: "https://monday.com/" },
+        { name: "ClickUp", bestFor: "Teams that want a configurable workspace spanning tasks, documentation and project views.", freeOption: "Free Forever lists unlimited tasks and members, 60 MB storage and one form; guest permissions are limited, so validate sharing needs.", tradeoff: "Many configuration options can lead to inconsistent spaces or fields unless someone owns the workspace standards.", url: "https://clickup.com/" },
+        { name: "monday.com", bestFor: "Teams that prefer visual boards and status-driven workflows that can be adapted to different processes.", freeOption: "Free Work Management allows two seats, three boards and 200 total items; it has no guests or viewers.", tradeoff: "Paid plans have a three-seat minimum, and automation/reporting requirements can push a small team to a paid tier.", url: "https://monday.com/" },
       ]}
       bottomLine="Choose ClickUp if your team will use its broader workspace and can maintain consistent conventions. Choose monday.com if visual boards and clearly defined status transitions are the heart of the process. Test the setup and ongoing admin effort, not just how attractive the demo looks."
     >
@@ -48,6 +48,9 @@ export default function Page() {
               </ul>
             </div>
           </div>
+          <h2 className="mt-12 text-2xl font-bold tracking-tight text-[#1d1d1f]">Where the free plans stop fitting</h2>
+          <p className="mt-3 max-w-3xl text-base leading-7 text-[#6e6e73]">A two-person team can hit monday.com's 200-item ceiling even with only a few boards. ClickUp's free storage allowance can be the limiting factor for attachment-heavy work. If either cap is likely to interrupt the workflow, compare the paid tier cost at the real seat count before migrating.</p>
+          <p className="mt-5 text-sm leading-6 text-[#6e6e73]">Official plan details checked October 17, 2026: <a className="underline" href="https://clickup.com/pricing">ClickUp pricing</a>, <a className="underline" href="https://help.clickup.com/hc/en-us/articles/6303426241687-Intro-to-ClickUp-pricing">ClickUp plan details</a>, <a className="underline" href="https://monday.com/pricing">monday.com pricing</a> and <a className="underline" href="https://support.monday.com/hc/en-us/articles/360010487220-Understanding-the-Free-Plan">monday.com Free plan limits</a>. Prices and limits can change; this is a desk-based comparison, not a hands-on product test.</p>
         </div>
       </section>
     </ComparisonArticle>

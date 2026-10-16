@@ -12,11 +12,11 @@ export default function Page() {
     <ComparisonArticle
       title="Trello vs Asana"
       slug="trello-vs-asana"
-      intro="Trello makes work easy to visualize as cards moving across a board. Asana is oriented toward coordinating work across projects, owners and deadlines. The useful question is whether your team needs a simple shared board or more structure around dependencies and accountability."
-      pricingNote="Compare the plan required by your actual team, not just the entry-level price. Verify current collaborator or seat limits, project views, automation, reporting and permission controls with each provider."
+      intro="Trello makes work easy to visualize as cards moving across a board. Its Free plan allows up to 10 collaborators per Workspace and 10 boards; Asana Personal is free for up to two users with unlimited tasks and projects. When a team grows past those shapes, the paid feature and seat requirements—not the starting price—become the comparison. Official US plan details checked October 17, 2026."
+      pricingNote="Trello Standard is listed at $5 per user/month billed annually ($6 monthly). Asana Starter is listed at $10.99 per user/month billed annually ($13.49 monthly), with a two-seat minimum. Prices and billing terms can vary by region and change; confirm at checkout."
       tools={[
-        { name: "Trello", bestFor: "Solo operators and small teams that can describe most work as cards moving through a few clear stages.", freeOption: "Check current board, automation, attachment and workspace limits before adopting it as your main system.", tradeoff: "A board is easy to understand, but cross-project workload and dependency reporting may need extra planning or a different workflow.", url: "https://trello.com/" },
-        { name: "Asana", bestFor: "Teams coordinating work across owners, due dates, milestones and multiple related projects.", freeOption: "Verify current user limits and which timeline, reporting and team-management capabilities are included.", tradeoff: "More structure is useful only when the team keeps owners, dates and project data up to date.", url: "https://asana.com/" },
+        { name: "Trello", bestFor: "Solo operators and small teams that can describe most work as cards moving through a few clear stages.", freeOption: "Free includes up to 10 collaborators per Workspace, 10 boards, unlimited cards and 250 monthly Workspace command runs.", tradeoff: "A board is easy to understand, but cross-project workload and dependency reporting may need extra planning or a different workflow.", url: "https://trello.com/" },
+        { name: "Asana", bestFor: "Teams coordinating work across owners, due dates, milestones and multiple related projects.", freeOption: "Personal supports up to two users with unlimited tasks/projects and list, board and calendar views; files are capped at 100 MB each.", tradeoff: "More structure is useful only when the team keeps owners, dates and project data up to date; paid Starter has a two-seat minimum.", url: "https://asana.com/" },
       ]}
       bottomLine="Choose Trello when a shared visual board is enough and the team values a low-friction starting point. Choose Asana when coordinating owners, deadlines and related projects is becoming a recurring management problem. If you cannot identify a real limitation in your current board, avoid migrating just to get more features."
     >
@@ -48,6 +48,9 @@ export default function Page() {
               </ul>
             </div>
           </div>
+          <h2 className="mt-12 text-2xl font-bold tracking-tight text-[#1d1d1f]">A practical upgrade threshold</h2>
+          <p className="mt-3 max-w-3xl text-base leading-7 text-[#6e6e73]">A small group can remain on Trello Free while it fits within one Workspace's collaborator and board limits. Asana Personal is narrower by user count, but gives a two-person team several project views in the free tier. Compare paid plans when you need more seats, richer reporting or workflow controls; do not migrate solely because another product has a longer feature list.</p>
+          <p className="mt-5 text-sm leading-6 text-[#6e6e73]">Official plan details checked October 17, 2026: <a className="underline" href="https://trello.com/en-US/pricing">Trello pricing</a>, <a className="underline" href="https://asana.com/pricing">Asana pricing</a> and <a className="underline" href="https://help.asana.com/s/article/asana-personal-plan-details?language=en_US">Asana Personal plan details</a>. Prices and terms can change; no hands-on product benchmark is claimed.</p>
         </div>
       </section>
     </ComparisonArticle>

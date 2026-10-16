@@ -12,11 +12,11 @@ export default function Page() {
     <ComparisonArticle
       title="Mailchimp vs Brevo"
       slug="mailchimp-vs-brevo"
-      intro="Mailchimp and Brevo both support email marketing, but businesses should compare how they bill for audience or sending volume and which communication channels their campaigns require. The right choice depends on the list you manage and the messages you actually send."
-      pricingNote="Do not compare a monthly headline price without matching the billing unit. Check contact counts, email-send allowances, SMS or other channel costs, automation access, overage rules and whether unsubscribed contacts count toward billing."
+      intro="Mailchimp's current free marketing plan is capped at 250 contacts and 500 sends per month (250 per day); Brevo Free stores up to 100,000 contacts but limits sending to 300 emails per day. That makes the central trade-off clear: audience storage versus daily sending capacity. Official plan details checked against provider sources on October 17, 2026."
+      pricingNote="Mailchimp counts subscribed, unsubscribed and non-subscribed contacts toward its contact total; its Free plan is limited to one audience and one seat. Brevo Free has one seat and 300 daily sends, with unused sends not rolling over. Model your real subscriber base and peak campaign size; regional prices, add-ons and paid tiers can change."
       tools={[
-        { name: "Mailchimp", bestFor: "Teams that want to evaluate a broad email campaign and marketing-tool ecosystem.", freeOption: "Check current plan availability, audience limits, send caps and which automation or reporting features require payment.", tradeoff: "Costs and available features depend on the audience and plan; model your likely list growth and campaign cadence before choosing.", url: "https://mailchimp.com/" },
-        { name: "Brevo", bestFor: "Businesses evaluating email alongside other customer communication channels in one provider.", freeOption: "Verify current daily or monthly sending caps, contact rules, automation access and the separate cost of additional channels.", tradeoff: "A broader channel mix can be useful, but confirm that the channels you need are supported in your region and fit your consent process.", url: "https://www.brevo.com/" },
+        { name: "Mailchimp", bestFor: "Teams that want a broad email campaign and marketing-tool ecosystem and have a modest early-stage list.", freeOption: "Free: up to 250 contacts, 500 monthly sends and 250 sends/day; one audience and one seat.", tradeoff: "Unsubscribed and non-subscribed contacts still count toward the contact cap, and the small send allowance can constrain regular newsletters.", url: "https://mailchimp.com/" },
+        { name: "Brevo", bestFor: "Businesses with larger stored contact lists that send smaller batches or use several customer communication channels.", freeOption: "Free: up to 100,000 stored contacts and 300 sends/day; sends do not roll over, and free email includes Brevo branding.", tradeoff: "A campaign to more than 300 recipients is delivered in daily batches; SMS and other channel costs are separate and region-dependent.", url: "https://www.brevo.com/" },
       ]}
       bottomLine="Choose based on your campaign economics and workflow. If the main need is a regular newsletter and a simple welcome sequence, compare editor usability and the cost at your expected list size. If you also plan to coordinate other customer messages, test that end-to-end workflow and include every channel's cost before deciding."
     >
@@ -48,6 +48,9 @@ export default function Page() {
               </ul>
             </div>
           </div>
+          <h2 className="mt-12 text-2xl font-bold tracking-tight text-[#1d1d1f]">The free-plan limits change the choice</h2>
+          <p className="mt-3 max-w-3xl text-base leading-7 text-[#6e6e73]">For a 1,000-person newsletter, neither free tier delivers one full campaign in a single day: Mailchimp's contact cap is lower, while Brevo would require sending in daily batches of up to 300. Compare the paid plan needed to send on your intended schedule, and confirm the live bill before importing a list.</p>
+          <p className="mt-5 text-sm leading-6 text-[#6e6e73]">Official plan details checked October 17, 2026: <a className="underline" href="https://mailchimp.com/help/about-mailchimp-pricing-plans/">Mailchimp pricing and contact rules</a>, <a className="underline" href="https://mailchimp.com/pricing/marketing/">Mailchimp pricing</a>, <a className="underline" href="https://help.brevo.com/hc/en-us/articles/208589409-About-Brevo-s-pricing-plans">Brevo plan details</a> and <a className="underline" href="https://help.brevo.com/hc/en-us/articles/208580669-FAQs-What-are-the-limits-of-the-Free-plan">Brevo Free limits</a>. This is desk research, not a deliverability test.</p>
         </div>
       </section>
     </ComparisonArticle>

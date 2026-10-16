@@ -12,11 +12,11 @@ export default function Page() {
     <ComparisonArticle
       title="Mailchimp vs MailerLite"
       slug="mailchimp-vs-mailerlite"
-      intro="Both platforms can support email marketing, but the best fit depends on the way you collect subscribers, design campaigns and automate follow-ups. Choose around the work you send every month—not the number of features shown on a pricing page."
-      pricingNote="Email platforms may calculate cost using different subscriber, contact or sending limits. Before comparing plans, check how unsubscribed contacts are counted, what happens when your audience grows, and whether automation, landing pages and support are included."
+      intro="Both Mailchimp and MailerLite currently cap their free plans at 250 contacts/subscribers, but their send allowances differ: Mailchimp lists 500 sends per month (250 per day), while MailerLite's updated Free plan lists 2,500 monthly emails. MailerLite reduced its free subscriber cap from 500 to 250 on June 16, 2026. Verify whether an older account is on legacy terms. Official details checked October 17, 2026."
+      pricingNote="Mailchimp counts subscribed, unsubscribed and non-subscribed contacts toward the Free contact cap; MailerLite's updated Free plan caps active subscribers at 250 and monthly email sends at 2,500. Compare automation, branding, user seats and cost at your expected list size; regional pricing and legacy accounts may differ."
       tools={[
-        { name: "Mailchimp", bestFor: "Businesses that want to evaluate a broad email-marketing ecosystem and related campaign tools.", freeOption: "Verify current free-plan availability, contact limits, send limits and feature restrictions with Mailchimp.", tradeoff: "The plan that supports your audience and automation needs may differ from the entry-level offer; model your likely growth before choosing.", url: "https://mailchimp.com/" },
-        { name: "MailerLite", bestFor: "Freelancers and smaller businesses prioritizing a focused campaign, signup-form and email-automation workflow.", freeOption: "Check current subscriber and sending caps, branding rules, and which automation features require an upgrade.", tradeoff: "Confirm that its available integrations, reporting and workflow options cover the next stage of your marketing plan.", url: "https://www.mailerlite.com/" },
+        { name: "Mailchimp", bestFor: "Businesses that want a broad marketing ecosystem and need to compare it with an existing audience and tool stack.", freeOption: "Free: up to 250 contacts and 500 sends/month (250/day), with one seat and one audience.", tradeoff: "Unsubscribed and non-subscribed contacts count toward the free contact cap; model contact growth and paid tier costs carefully.", url: "https://mailchimp.com/" },
+        { name: "MailerLite", bestFor: "Freelancers and small businesses prioritizing a focused newsletter, forms and email-automation workflow.", freeOption: "Updated Free plan: up to 250 active subscribers and 2,500 monthly emails; two seats and up to three automations per its June 2026 update.", tradeoff: "The new limit is lower than the prior 500-subscriber/12,000-email offer; legacy accounts may have different terms. Verify account tier before migrating.", url: "https://www.mailerlite.com/" },
       ]}
       bottomLine="Choose by the campaign you will actually run. If you mainly send a regular newsletter and a short welcome sequence, prioritize a straightforward editor and predictable audience pricing. If your marketing relies on several connected campaigns or a wider tool ecosystem, test those exact integrations and automation paths before committing."
     >
@@ -55,6 +55,7 @@ export default function Page() {
             engaged subscribers. Do not move an old list and immediately send to everyone; a new
             tool cannot fix poor list hygiene or a lack of permission to email.
           </p>
+          <p className="mt-5 text-sm leading-6 text-[#667085]">Official plan details checked October 17, 2026: <a className="underline" href="https://mailchimp.com/help/about-mailchimp-pricing-plans/">Mailchimp pricing and contact rules</a>, <a className="underline" href="https://mailchimp.com/pricing/marketing/">Mailchimp pricing</a> and <a className="underline" href="https://www.mailerlite.com/help/free-plan-update-faq">MailerLite Free plan changes</a>. Pricing and account eligibility may change; this is a desk-based comparison, not a deliverability test.</p>
         </div>
       </section>
     </ComparisonArticle>
