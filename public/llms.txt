@@ -48,7 +48,6 @@
 - [Best CRM for Small Businesses](/best/crm-for-small-businesses) (Sales): Compare customer-management tools by team fit, pipeline visibility and everyday administration.
 - [Best Free CRM Software](/best/free-crm-software) (Sales): Understand the limits that matter in free CRM plans, including users, contacts and automation.
 - [Best CRM for Solopreneurs](/best/crm-for-solopreneurs) (Sales): A lightweight way to organize prospects, client notes and next actions when you work alone.
-- [Best Invoicing Software for Freelancers](/best/invoicing-for-freelancers) (Finance): Compare invoice creation, reminders, payment collection and client-friendly workflows.
 - [Best Free Invoicing Software](/best/free-invoicing-software) (Finance): Compare free invoice tools and check payment, client and monthly-document limits.
 - [Best Invoicing for Small Businesses](/best/invoicing-for-small-businesses) (Finance): Find an invoicing workflow that supports recurring bills, overdue follow-ups and bookkeeping.
 - [Best Accounting Software for Freelancers](/best/accounting-for-freelancers) (Finance): Compare expense tracking, tax-time organization and reports for independent workers.
