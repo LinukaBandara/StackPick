@@ -80,6 +80,11 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
     { href: "/best/trello-alternatives", title: "Trello alternatives" },
   ],
+  "mailchimp-alternatives": [
+    { href: "/best/email-marketing-software", title: "Email marketing software for small businesses" },
+    { href: "/best/mailchimp-vs-brevo", title: "Mailchimp vs Brevo" },
+    { href: "/best/mailchimp-vs-mailerlite", title: "Mailchimp vs MailerLite" },
+  ],
   "free-website-builders": [
     { href: "/best/website-builders", title: "Website builders for small businesses" },
     { href: "/best/website-builder-for-freelancers", title: "Website builders for freelancers" },
