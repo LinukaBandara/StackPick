@@ -5,7 +5,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best AI Coding Assistants for Developers (2026)",
   description:
-    "Compare AI coding assistants for React, TypeScript, Next.js and multi-file development. Learn which tools fit editor autocomplete, codebase tasks and terminal agents.",
+    "Compare AI coding assistants for React, TypeScript and Next.js by editor workflow, multi-file editing, terminal access, verification needs and usage limits.",
   alternates: { canonical: "/best/ai-coding-assistants" },
 };
 
@@ -14,8 +14,8 @@ export default function Page() {
     <ComparisonArticle
       title="Best AI Coding Assistants for Developers"
       slug="ai-coding-assistants"
-      intro="For freelancers and small development teams, the best AI coding assistant depends on the task: autocomplete while typing, understanding an unfamiliar repository, editing several files, or running a terminal-based coding task. We compare workflow fit and review burden rather than claiming a universal benchmark winner. Treat free access as a trial of your real stack—such as React, TypeScript, Next.js or .NET—not as proof that the same usage will remain free at project scale."
-      pricingNote="Free access may limit completions, premium model requests, agent tasks, context size, repository indexing or monthly usage. Check the exact IDE, model and agent features included, and whether API usage is billed separately from a subscription. For client repositories, review data controls and permissions, never paste secrets into prompts, and inspect diffs and commands before accepting changes. StackPick has not presented this shortlist as a controlled hands-on benchmark."
+      intro="The useful coding assistant is the one that fits your existing editor, repository, budget and review habits. Inline autocomplete, codebase-aware edits and terminal agents solve different problems, so compare them by the work you need to finish and the checks you can run afterward. This guide is a workflow-based shortlist, not a universal winner ranking. Treat free access as a trial of your real stack—not as proof that the same usage will remain free at project scale."
+      pricingNote="Free access may limit completions, premium model requests, agent tasks, context size, repository indexing or monthly usage. Verify current official plan terms and whether API usage is billed separately from a subscription. StackPick has not presented this shortlist as a controlled hands-on benchmark; treat vendor features as claims to verify in your own repository. For private or client code, review data controls and permissions, never paste secrets into prompts, and inspect diffs and commands before accepting changes."
       tools={[
         {
           name: "GitHub Copilot",
@@ -62,6 +62,19 @@ export default function Page() {
       ]}
       bottomLine="Choose by the work you need to finish, the editor you already use, the limits you can live with and how reliably you can review the changes. A free tier that covers your real workload can be a better fit than a more capable tool with a restrictive quota."
     >
+      <section className="bg-[#f5f5f7] py-16 sm:py-20">
+        <div className="sp-container">
+          <p className="sp-eyebrow">A practical selection guide</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Match the assistant to the task you repeat most.</h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            <div className="rounded-2xl border border-[#e4e7ec] bg-white p-6"><h3 className="font-semibold text-[#101828]">Fast inline completion</h3><p className="mt-2 text-sm leading-6 text-[#667085]">Prioritize editor support, language coverage, suggestion quality and how quickly you can reject or correct a suggestion.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-white p-6"><h3 className="font-semibold text-[#101828]">Changes across multiple files</h3><p className="mt-2 text-sm leading-6 text-[#667085]">Look for a reviewable diff, clear scope controls, respect for existing conventions and a reliable way to run tests.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-white p-6"><h3 className="font-semibold text-[#101828]">Terminal-based repository work</h3><p className="mt-2 text-sm leading-6 text-[#667085]">Check command permissions, checkpointing, test execution and whether you can inspect every file or command before it affects your project.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] bg-white p-6"><h3 className="font-semibold text-[#101828]">Private or client code</h3><p className="mt-2 text-sm leading-6 text-[#667085]">Review retention, training, organization controls, licensing and secret-handling policies before connecting a repository.</p></div>
+          </div>
+          <p className="mt-5 text-sm leading-6 text-[#667085]">Do not compare tools only by model names or promotional demos. Use the same repository task and acceptance criteria, then record correctness, manual repair time, test results and actual usage cost.</p>
+        </div>
+      </section>
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
           <p className="sp-eyebrow">Choose by workflow</p>
