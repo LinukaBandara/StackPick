@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 
 const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   "accounting-for-freelancers": [
-    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/accounting-software", title: "Accounting for small businesses" },
     { href: "/best/free-accounting-software", title: "Free accounting software" },
     { href: "/best/quickbooks-vs-freshbooks", title: "QuickBooks vs FreshBooks" },
   ],
@@ -23,12 +23,12 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
   ],
   "quickbooks-vs-xero": [
-    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/accounting-software", title: "Accounting for small businesses" },
     { href: "/best/free-accounting-software", title: "Free accounting software" },
     { href: "/best/track-business-expenses-without-spreadsheets", title: "Track business expenses" },
   ],
   "free-accounting-software": [
-    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/accounting-software", title: "Accounting for small businesses" },
     { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
     { href: "/best/free-invoicing-software", title: "Free invoicing software" },
     { href: "/best/track-business-expenses-without-spreadsheets", title: "Track expenses without spreadsheets" },
@@ -137,7 +137,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/automate-repetitive-small-business-tasks", title: "Automate repetitive tasks" },
   ],
   "track-business-expenses-without-spreadsheets": [
-    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/accounting-software", title: "Accounting for small businesses" },
     { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
     { href: "/best/free-accounting-software", title: "Free accounting software" },
   ],
