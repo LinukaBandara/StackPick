@@ -64,12 +64,46 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-bold tracking-tight text-[#1d1d1f] mb-2">Advertising</h2>
             <p>
-              StackPick does not currently serve display advertisements. If we introduce an
-              advertising service such as Google AdSense, that service may use cookies or similar
-              technologies to deliver, measure, or personalize advertisements, subject to applicable
-              law and the choices made available to visitors. Where required, appropriate consent
-              controls will be implemented before non-essential advertising technologies are used.
-              This policy will be updated before advertising is enabled.
+              StackPick does not currently serve display advertisements. If Google AdSense or another
+              advertising service is enabled, Google and other third-party vendors may use cookies,
+              web beacons, IP addresses, or similar identifiers to serve, measure, limit repetition
+              of, and, where enabled, personalize ads. Advertising cookies may be used based on a
+              visitor's previous visits to this site or other websites. The information processed
+              can include browser or device details, ad requests, and interactions with ads, subject
+              to the relevant provider's settings and policies.
+            </p>
+            <p>
+              Visitors can manage personalized advertising through{" "}
+              <a
+                href="https://adssettings.google.com/"
+                className="text-[#004bb5] font-medium hover:underline"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Google's Ads Settings
+              </a>
+              {" "}and may also review{" "}
+              <a
+                href="https://www.aboutads.info/choices/"
+                className="text-[#004bb5] font-medium hover:underline"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                industry opt-out choices
+              </a>
+              . These choices do not necessarily disable all advertising or non-personalized ads.
+              Where required by applicable law, StackPick will provide appropriate consent and
+              privacy controls before enabling advertising technologies that require them. For
+              information about Google's data practices, see{" "}
+              <a
+                href="https://policies.google.com/technologies/partner-sites"
+                className="text-[#004bb5] font-medium hover:underline"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                How Google uses information from sites or apps that use its services
+              </a>
+              .
             </p>
           </section>
           <section>
