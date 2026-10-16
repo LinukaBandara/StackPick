@@ -66,7 +66,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/freshbooks-vs-wave", title: "FreshBooks vs Wave" },
   ],
   "project-management-for-freelancers": [
-    { href: "/best/project-management-for-small-teams", title: "Project management for small teams" },
+    { href: "/best/project-management-software", title: "Project management for small teams" },
     { href: "/best/free-project-management-software", title: "Free project management software" },
     { href: "/best/manage-client-projects-without-full-time-team", title: "Manage client projects" },
   ],
@@ -76,14 +76,14 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/trello-vs-asana", title: "Trello vs Asana" },
   ],
   "free-project-management-software": [
-    { href: "/best/project-management-for-small-teams", title: "Project management for small teams" },
+    { href: "/best/project-management-software", title: "Project management for small teams" },
     { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
     { href: "/best/trello-alternatives", title: "Trello alternatives" },
   ],
   "free-website-builders": [
-    { href: "/best/website-builder-for-small-businesses", title: "Website builders for small businesses" },
+    { href: "/best/website-builders", title: "Website builders for small businesses" },
     { href: "/best/website-builder-for-freelancers", title: "Website builders for freelancers" },
-    { href: "/best/free-website-builders-no-coding", title: "Free no-code website builders" },
+    { href: "/best/free-website-builders", title: "Free no-code website builders" },
   ],
   "website-builder-for-small-businesses": [
     { href: "/best/free-website-builders", title: "Free website builders" },
@@ -92,7 +92,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "website-builder-for-freelancers": [
     { href: "/best/free-website-builders", title: "Free website builders" },
-    { href: "/best/website-builder-for-small-businesses", title: "Website builders for small businesses" },
+    { href: "/best/website-builders", title: "Website builders for small businesses" },
     { href: "/best/web-hosting", title: "Web hosting for small businesses" },
   ],
   "free-scheduling-software": [
