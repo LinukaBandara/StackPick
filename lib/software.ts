@@ -286,10 +286,10 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
     summary:
       "QuickBooks Online brings income and expense tracking, invoices, bank transactions and financial reporting into one accounting workspace. It is worth comparing when a business needs more than standalone invoicing, but plan availability, tax support and bank connections depend on the country and edition.",
     productImage: {
-      src: "https://www.upmenu.com/wp-content/uploads/2021/05/5-restaurant-accounting-software-quickbooks-example.jpg.jpg",
+      src: "/images/quickbooks-dashboard-preview.svg",
       alt: "QuickBooks Online dashboard with invoice status, expense categories and profit-and-loss reporting",
-      caption: "Third-party screenshot of a QuickBooks dashboard; the interface and regional features may differ from the current product.",
-      sourceUrl: "https://www.upmenu.com/blog/restaurant-accounting-software/",
+      caption: "Illustrative QuickBooks-style dashboard preview created for StackPick; this is not a live product screenshot.",
+      sourceUrl: "https://quickbooks.intuit.com/online/",
     },
     bestFor: [
       "Small businesses that need accounting alongside invoicing",
@@ -337,10 +337,10 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
     summary:
       "FreshBooks focuses on invoicing and day-to-day finances for freelancers and service businesses. It can suit people who bill clients regularly and want estimates, expense tracking and reports, but client caps and add-on costs matter when comparing plans.",
     productImage: {
-      src: "https://media.trustradius.com/product-screenshots/Kf/aM/3R24OORKZNSS.png",
+      src: "/images/freshbooks-dashboard-preview.svg",
       alt: "FreshBooks invoice overview showing invoice statuses and outstanding amounts",
-      caption: "Third-party FreshBooks interface screenshot hosted by TrustRadius; verify current interface details on FreshBooks' own website.",
-      sourceUrl: "https://www.trustradius.com/compare-products/freshbooks-vs-shoeboxed",
+      caption: "Illustrative FreshBooks-style invoicing preview created for StackPick; this is not a live product screenshot.",
+      sourceUrl: "https://www.freshbooks.com/",
     },
     bestFor: [
       "Freelancers and consultants who invoice clients",
