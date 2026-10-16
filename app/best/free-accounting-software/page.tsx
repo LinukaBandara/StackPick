@@ -68,7 +68,7 @@ export default function Page() {
               <p className="font-semibold">Best free invoicing software <span aria-hidden="true">↗</span></p>
               <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Check free invoice limits, payment fees and the difference between invoicing and full bookkeeping.</p>
             </a>
-            <a href="/best/invoicing-for-freelancers" className="group rounded-2xl border border-black/10 p-6 transition-colors hover:bg-[#f7f7f8]">
+            <a href="/best/invoicing-software" className="group rounded-2xl border border-black/10 p-6 transition-colors hover:bg-[#f7f7f8]">
               <p className="font-semibold">Invoicing software for freelancers <span aria-hidden="true">↗</span></p>
               <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Compare tools for client billing, recurring work and getting paid for services.</p>
             </a>
