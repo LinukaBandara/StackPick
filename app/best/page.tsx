@@ -57,7 +57,6 @@ const ARTICLES = [
   { href: "/best/crm-for-freelancers", title: "Best CRM for Freelancers", desc: "Track leads, client conversations and follow-ups without creating a heavy sales process.", category: "Sales" },
   { href: "/best/crm-for-small-businesses", title: "Best CRM for Small Businesses", desc: "Compare customer-management tools by team fit, pipeline visibility and everyday administration.", category: "Sales" },
   { href: "/best/free-crm-software", title: "Best Free CRM Software", desc: "Understand the limits that matter in free CRM plans, including users, contacts and automation.", category: "Sales" },
-  { href: "/best/crm-for-solopreneurs", title: "Best CRM for Solopreneurs", desc: "A lightweight way to organize prospects, client notes and next actions when you work alone.", category: "Sales" },
   { href: "/best/free-invoicing-software", title: "Best Free Invoicing Software", desc: "Compare free invoice tools and check payment, client and monthly-document limits.", category: "Finance" },
   { href: "/best/invoicing-for-small-businesses", title: "Best Invoicing for Small Businesses", desc: "Find an invoicing workflow that supports recurring bills, overdue follow-ups and bookkeeping.", category: "Finance" },
   { href: "/best/accounting-for-freelancers", title: "Best Accounting Software for Freelancers", desc: "Compare expense tracking, tax-time organization and reports for independent workers.", category: "Finance" },
