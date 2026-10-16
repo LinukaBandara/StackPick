@@ -19,7 +19,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "quickbooks-vs-freshbooks": [
     { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoice-clients-as-freelancer", title: "How to invoice freelance clients" },
     { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
   ],
   "quickbooks-vs-xero": [
@@ -54,13 +54,13 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/invoice-clients-as-freelancer", title: "How to invoice freelance clients" },
   ],
   "invoicing-for-small-businesses": [
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
     { href: "/best/free-invoicing-software", title: "Free invoicing software" },
     { href: "/best/quickbooks-vs-freshbooks", title: "QuickBooks vs FreshBooks" },
     { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
   ],
   "free-invoicing-software": [
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
     { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
     { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
     { href: "/best/freshbooks-vs-wave", title: "FreshBooks vs Wave" },
@@ -154,7 +154,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
 
   "invoicing-software": [
     { href: "/best/free-invoicing-software", title: "Best free invoicing software" },
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
     { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
   ],
   "crm-software": [
@@ -169,7 +169,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "esignature-software": [
     { href: "/best/contract-management-software", title: "Contract management software" },
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
     { href: "/best/crm-for-small-businesses", title: "CRM for small businesses" },
   ],
   "form-builders": [
@@ -204,7 +204,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "time-tracking-software": [
     { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
     { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
   ],
   "appointment-scheduling-software": [
