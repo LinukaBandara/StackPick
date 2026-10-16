@@ -53,7 +53,6 @@ const ROUTES = [
   "/best/project-management-for-freelancers",
   "/best/website-builder-for-freelancers",
   "/best/free-website-builders",
-  "/best/scheduling-for-small-businesses",
   "/best/free-scheduling-software",
   "/best/hubspot-vs-pipedrive",
   "/best/hubspot-vs-zoho-crm",
