@@ -85,7 +85,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/website-builder-for-freelancers", title: "Website builders for freelancers" },
     { href: "/best/free-website-builders", title: "Free no-code website builders" },
   ],
-  "website-builder-for-small-businesses": [
+  "website-builders": [
     { href: "/best/free-website-builders", title: "Free website builders" },
     { href: "/best/website-builder-for-freelancers", title: "Website builders for freelancers" },
     { href: "/best/web-hosting", title: "Web hosting for small businesses" },
