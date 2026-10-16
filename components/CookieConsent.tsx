@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 
 type Consent = { analytics: boolean; savedAt: string };
 const STORAGE_KEY = "stackpick-consent-v1";
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-6X9SEJMZDV";
+const GA_ID = "G-BV28TGDZ1B";
 
 function readConsent(): Consent | null {
   try {
