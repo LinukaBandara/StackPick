@@ -65,7 +65,6 @@ const ARTICLES = [
   { href: "/best/project-management-for-freelancers", title: "Best Project Management for Freelancers", desc: "Organize client work, deadlines and reviews while keeping administration manageable.", category: "Productivity" },
   { href: "/best/website-builder-for-freelancers", title: "Best Website Builder for Freelancers", desc: "Choose a portfolio or service-site builder based on launch speed, flexibility and upkeep.", category: "Marketing" },
   { href: "/best/free-website-builders", title: "Best Free Website Builders", desc: "Check branding, domain, storage and publishing restrictions before choosing a free builder.", category: "Marketing" },
-  { href: "/best/scheduling-for-small-businesses", title: "Best Scheduling Software for Small Businesses", desc: "Compare booking, reminders, staff calendars and client self-service for service businesses.", category: "Operations" },
   { href: "/best/free-scheduling-software", title: "Best Free Scheduling Software", desc: "Review free booking tools and verify calendar, appointment and notification limits.", category: "Operations" },
   { href: "/best/hubspot-vs-pipedrive", title: "HubSpot vs Pipedrive", desc: "Compare a broader customer platform with a sales-focused pipeline workflow.", category: "Sales" },
   { href: "/best/hubspot-vs-zoho-crm", title: "HubSpot vs Zoho CRM", desc: "Compare ease of adoption, customization and the systems your sales process needs.", category: "Sales" },
