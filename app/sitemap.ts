@@ -57,6 +57,7 @@ const ROUTES = [
   "/best/free-project-management-software",
   "/best/project-management-for-freelancers",
   "/best/project-management-for-small-teams",
+  "/best/how-to-choose-project-management-software",
   "/best/website-builder-for-freelancers",
   "/best/free-website-builders",
   "/best/free-website-builders-no-coding",
@@ -71,6 +72,7 @@ const ROUTES = [
   "/best/wave-vs-freshbooks-vs-quickbooks",
   "/best/trello-vs-asana",
   "/best/asana-vs-clickup",
+  "/best/trello-vs-asana-vs-clickup",
   "/best/clickup-vs-monday",
   "/best/notion-vs-clickup",
   "/best/calendly-vs-google-calendar",
@@ -92,6 +94,7 @@ const ROUTES = [
   "/best/free-project-management-without-credit-card",
   "/best/free-invoicing-without-credit-card",
   "/best/free-business-tools-for-freelancers",
+  "/best/freelancer-software-stack-5k-15k",
   "/best/free-plan-traps",
   "/best/how-to-choose-software-small-business",
   "/best/how-much-business-software-do-you-need",
@@ -140,6 +143,9 @@ const LAST_MODIFIED: Record<string, string> = {
   "/best/time-tracking-software": "2026-10-17",
   "/best/wave-vs-freshbooks-vs-quickbooks": "2026-10-17",
   "/best/hubspot-crm-free-plan": "2026-10-17",
+  "/best/trello-vs-asana-vs-clickup": "2026-10-17",
+  "/best/freelancer-software-stack-5k-15k": "2026-10-17",
+  "/best/how-to-choose-project-management-software": "2026-10-17",
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
