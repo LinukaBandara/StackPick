@@ -47,6 +47,7 @@ const ROUTES = [
   "/best/crm-for-solopreneurs",
   "/best/crm-for-small-businesses",
   "/best/free-crm-software",
+  "/best/hubspot-crm-free-plan",
   "/best/free-invoicing-software",
   "/best/invoicing-for-small-businesses",
   "/best/invoicing-for-freelancers",
@@ -67,6 +68,7 @@ const ROUTES = [
   "/best/quickbooks-vs-xero",
   "/best/quickbooks-vs-freshbooks",
   "/best/freshbooks-vs-wave",
+  "/best/wave-vs-freshbooks-vs-quickbooks",
   "/best/trello-vs-asana",
   "/best/asana-vs-clickup",
   "/best/clickup-vs-monday",
@@ -127,8 +129,6 @@ const ROUTES = [
   "/contact"
 ];
 
-// Keep lastModified tied to real editorial updates. Do not use the build date,
-// because deploying unrelated changes should not make every URL look freshly updated.
 const LAST_MODIFIED: Record<string, string> = {
   "/best/crm-for-freelancers": "2026-10-10",
   "/best/invoicing-software": "2026-10-10",
@@ -138,6 +138,8 @@ const LAST_MODIFIED: Record<string, string> = {
   "/best/email-marketing-software": "2026-10-14",
   "/best/free-plan-traps": "2026-10-17",
   "/best/time-tracking-software": "2026-10-17",
+  "/best/wave-vs-freshbooks-vs-quickbooks": "2026-10-17",
+  "/best/hubspot-crm-free-plan": "2026-10-17",
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
