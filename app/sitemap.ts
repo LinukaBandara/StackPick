@@ -90,6 +90,7 @@ const ROUTES = [
   "/best/free-project-management-without-credit-card",
   "/best/free-invoicing-without-credit-card",
   "/best/free-business-tools-for-freelancers",
+  "/best/free-plan-traps",
   "/best/how-to-choose-software-small-business",
   "/best/how-much-business-software-do-you-need",
   "/best/simple-small-business-software-stack",
@@ -135,6 +136,8 @@ const LAST_MODIFIED: Record<string, string> = {
   "/best/web-hosting": "2026-10-14",
   "/best/online-course-platforms": "2026-10-14",
   "/best/email-marketing-software": "2026-10-14",
+  "/best/free-plan-traps": "2026-10-17",
+  "/best/time-tracking-software": "2026-10-17",
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
