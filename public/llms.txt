@@ -51,10 +51,8 @@
 - [Best Invoicing for Small Businesses](/best/invoicing-for-small-businesses) (Finance): Find an invoicing workflow that supports recurring bills, overdue follow-ups and bookkeeping.
 - [Best Accounting Software for Freelancers](/best/accounting-for-freelancers) (Finance): Compare expense tracking, tax-time organization and reports for independent workers.
 - [Best Free Accounting Software](/best/free-accounting-software) (Finance): Understand what free accounting tools cover and when limits make a paid plan necessary.
-- [Best Project Management for Small Teams](/best/project-management-for-small-teams) (Productivity): Compare task ownership, deadlines and team visibility without enterprise-level overhead.
 - [Best Free Project Management Software](/best/free-project-management-software) (Productivity): Compare free task and project tools by seats, projects, views and collaboration limits.
 - [Best Project Management for Freelancers](/best/project-management-for-freelancers) (Productivity): Organize client work, deadlines and reviews while keeping administration manageable.
-- [Best Website Builder for Small Businesses](/best/website-builder-for-small-businesses) (Marketing): Compare site builders by design control, maintenance, commerce needs and ownership trade-offs.
 - [Best Website Builder for Freelancers](/best/website-builder-for-freelancers) (Marketing): Choose a portfolio or service-site builder based on launch speed, flexibility and upkeep.
 - [Best Free Website Builders](/best/free-website-builders) (Marketing): Check branding, domain, storage and publishing restrictions before choosing a free builder.
 - [Best Scheduling Software for Small Businesses](/best/scheduling-for-small-businesses) (Operations): Compare booking, reminders, staff calendars and client self-service for service businesses.
@@ -87,7 +85,6 @@
 - [Free CRM Without a Credit Card](/best/free-crm-without-credit-card) (Sales): Compare CRM trials and free plans while checking signup requirements and usage limits.
 - [Free Project Management Without a Credit Card](/best/free-project-management-without-credit-card) (Productivity): Find project tools with no-card signup options and verify the limits before adopting one.
 - [Free Invoicing Without a Credit Card](/best/free-invoicing-without-credit-card) (Finance): Review invoice tools with no-card signup options and check payment or document restrictions.
-- [Free Website Builders With No Coding](/best/free-website-builders-no-coding) (Marketing): Compare beginner-friendly builders and check free publishing, branding and domain limits.
 - [Free Business Tools for Freelancers](/best/free-business-tools-for-freelancers) (Productivity): Build a lean tool stack for client work, invoicing, scheduling and project organization.
 - [How to Choose Software for a Small Business](/best/how-to-choose-software-small-business) (Productivity): A practical framework for defining requirements, testing tools and avoiding unnecessary subscriptions.
 - [How Much Business Software Do You Need?](/best/how-much-business-software-do-you-need) (Productivity): Identify overlapping subscriptions and decide which tools genuinely improve your workflow.
