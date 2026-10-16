@@ -116,8 +116,8 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/web-hosting", title: "Web hosting for small businesses" },
   ],
   "free-scheduling-software": [
-    { href: "/best/appointment-scheduling-software", title: "Scheduling for small businesses" },
     { href: "/best/appointment-scheduling-software", title: "Appointment scheduling software" },
+    { href: "/best/employee-scheduling-software", title: "Employee scheduling software" },
     { href: "/best/calendly-vs-google-calendar", title: "Calendly vs Google Calendar" },
   ],
   "scheduling-for-small-businesses": [
@@ -174,7 +174,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
 
   "invoicing-software": [
     { href: "/best/free-invoicing-software", title: "Best free invoicing software" },
-    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
+    { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
     { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
   ],
   "crm-software": [
@@ -224,12 +224,12 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "time-tracking-software": [
     { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
-    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
+    { href: "/best/invoice-clients-as-freelancer", title: "How to invoice freelance clients" },
     { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
   ],
   "appointment-scheduling-software": [
     { href: "/best/free-scheduling-software", title: "Free scheduling software" },
-    { href: "/best/appointment-scheduling-software", title: "Scheduling for small businesses" },
+    { href: "/best/scheduling-for-small-businesses", title: "Scheduling for small businesses" },
     { href: "/best/form-builders", title: "Form builders for small business" },
   ],
   "n8n-vs-make-vs-zapier": [
