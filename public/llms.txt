@@ -55,7 +55,6 @@
 - [Best Project Management for Freelancers](/best/project-management-for-freelancers) (Productivity): Organize client work, deadlines and reviews while keeping administration manageable.
 - [Best Website Builder for Freelancers](/best/website-builder-for-freelancers) (Marketing): Choose a portfolio or service-site builder based on launch speed, flexibility and upkeep.
 - [Best Free Website Builders](/best/free-website-builders) (Marketing): Check branding, domain, storage and publishing restrictions before choosing a free builder.
-- [Best Scheduling Software for Small Businesses](/best/scheduling-for-small-businesses) (Operations): Compare booking, reminders, staff calendars and client self-service for service businesses.
 - [Best Free Scheduling Software](/best/free-scheduling-software) (Operations): Review free booking tools and verify calendar, appointment and notification limits.
 - [HubSpot vs Pipedrive](/best/hubspot-vs-pipedrive) (Sales): Compare a broader customer platform with a sales-focused pipeline workflow.
 - [HubSpot vs Zoho CRM](/best/hubspot-vs-zoho-crm) (Sales): Compare ease of adoption, customization and the systems your sales process needs.
