@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 
 const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   "accounting-for-freelancers": [
-    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/accounting-software", title: "Accounting for small businesses" },
     { href: "/best/free-accounting-software", title: "Free accounting software" },
     { href: "/best/quickbooks-vs-freshbooks", title: "QuickBooks vs FreshBooks" },
   ],
@@ -19,16 +19,16 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "quickbooks-vs-freshbooks": [
     { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoice-clients-as-freelancer", title: "How to invoice freelance clients" },
     { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
   ],
   "quickbooks-vs-xero": [
-    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/accounting-software", title: "Accounting for small businesses" },
     { href: "/best/free-accounting-software", title: "Free accounting software" },
     { href: "/best/track-business-expenses-without-spreadsheets", title: "Track business expenses" },
   ],
   "free-accounting-software": [
-    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/accounting-software", title: "Accounting for small businesses" },
     { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
     { href: "/best/free-invoicing-software", title: "Free invoicing software" },
     { href: "/best/track-business-expenses-without-spreadsheets", title: "Track expenses without spreadsheets" },
@@ -54,19 +54,19 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/invoice-clients-as-freelancer", title: "How to invoice freelance clients" },
   ],
   "invoicing-for-small-businesses": [
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
     { href: "/best/free-invoicing-software", title: "Free invoicing software" },
     { href: "/best/quickbooks-vs-freshbooks", title: "QuickBooks vs FreshBooks" },
     { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
   ],
   "free-invoicing-software": [
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
     { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
     { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
     { href: "/best/freshbooks-vs-wave", title: "FreshBooks vs Wave" },
   ],
   "project-management-for-freelancers": [
-    { href: "/best/project-management-for-small-teams", title: "Project management for small teams" },
+    { href: "/best/project-management-software", title: "Project management for small teams" },
     { href: "/best/free-project-management-software", title: "Free project management software" },
     { href: "/best/manage-client-projects-without-full-time-team", title: "Manage client projects" },
   ],
@@ -76,28 +76,48 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/trello-vs-asana", title: "Trello vs Asana" },
   ],
   "free-project-management-software": [
-    { href: "/best/project-management-for-small-teams", title: "Project management for small teams" },
+    { href: "/best/project-management-software", title: "Project management for small teams" },
     { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
     { href: "/best/trello-alternatives", title: "Trello alternatives" },
   ],
-  "free-website-builders": [
-    { href: "/best/website-builder-for-small-businesses", title: "Website builders for small businesses" },
-    { href: "/best/website-builder-for-freelancers", title: "Website builders for freelancers" },
-    { href: "/best/free-website-builders-no-coding", title: "Free no-code website builders" },
+  "email-marketing-software": [
+    { href: "/best/mailchimp-alternatives", title: "Mailchimp alternatives" },
+    { href: "/best/mailchimp-vs-brevo", title: "Mailchimp vs Brevo" },
+    { href: "/best/mailchimp-vs-mailerlite", title: "Mailchimp vs MailerLite" },
   ],
-  "website-builder-for-small-businesses": [
+  "mailchimp-vs-brevo": [
+    { href: "/best/email-marketing-software", title: "Email marketing software" },
+    { href: "/best/mailchimp-alternatives", title: "Mailchimp alternatives" },
+    { href: "/best/mailchimp-vs-mailerlite", title: "Mailchimp vs MailerLite" },
+  ],
+  "mailchimp-vs-mailerlite": [
+    { href: "/best/email-marketing-software", title: "Email marketing software" },
+    { href: "/best/mailchimp-alternatives", title: "Mailchimp alternatives" },
+    { href: "/best/mailchimp-vs-brevo", title: "Mailchimp vs Brevo" },
+  ],
+  "mailchimp-alternatives": [
+    { href: "/best/email-marketing-software", title: "Email marketing software for small businesses" },
+    { href: "/best/mailchimp-vs-brevo", title: "Mailchimp vs Brevo" },
+    { href: "/best/mailchimp-vs-mailerlite", title: "Mailchimp vs MailerLite" },
+  ],
+  "free-website-builders": [
+    { href: "/best/website-builders", title: "Website builders for small businesses" },
+    { href: "/best/website-builder-for-freelancers", title: "Website builders for freelancers" },
+    { href: "/best/web-hosting", title: "Web hosting for small businesses" },
+  ],
+  "website-builders": [
     { href: "/best/free-website-builders", title: "Free website builders" },
     { href: "/best/website-builder-for-freelancers", title: "Website builders for freelancers" },
     { href: "/best/web-hosting", title: "Web hosting for small businesses" },
   ],
   "website-builder-for-freelancers": [
     { href: "/best/free-website-builders", title: "Free website builders" },
-    { href: "/best/website-builder-for-small-businesses", title: "Website builders for small businesses" },
+    { href: "/best/website-builders", title: "Website builders for small businesses" },
     { href: "/best/web-hosting", title: "Web hosting for small businesses" },
   ],
   "free-scheduling-software": [
-    { href: "/best/scheduling-for-small-businesses", title: "Scheduling for small businesses" },
     { href: "/best/appointment-scheduling-software", title: "Appointment scheduling software" },
+    { href: "/best/employee-scheduling-software", title: "Employee scheduling software" },
     { href: "/best/calendly-vs-google-calendar", title: "Calendly vs Google Calendar" },
   ],
   "scheduling-for-small-businesses": [
@@ -137,7 +157,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/automate-repetitive-small-business-tasks", title: "Automate repetitive tasks" },
   ],
   "track-business-expenses-without-spreadsheets": [
-    { href: "/best/accounting-for-small-businesses", title: "Accounting for small businesses" },
+    { href: "/best/accounting-software", title: "Accounting for small businesses" },
     { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
     { href: "/best/free-accounting-software", title: "Free accounting software" },
   ],
@@ -154,7 +174,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
 
   "invoicing-software": [
     { href: "/best/free-invoicing-software", title: "Best free invoicing software" },
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-for-small-businesses", title: "Invoicing for small businesses" },
     { href: "/best/zoho-invoice-vs-wave", title: "Zoho Invoice vs Wave" },
   ],
   "crm-software": [
@@ -169,7 +189,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "esignature-software": [
     { href: "/best/contract-management-software", title: "Contract management software" },
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
     { href: "/best/crm-for-small-businesses", title: "CRM for small businesses" },
   ],
   "form-builders": [
@@ -204,7 +224,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "time-tracking-software": [
     { href: "/best/invoicing-software", title: "Invoicing software for freelancers" },
-    { href: "/best/invoicing-for-freelancers", title: "Invoicing for freelancers" },
+    { href: "/best/invoice-clients-as-freelancer", title: "How to invoice freelance clients" },
     { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
   ],
   "appointment-scheduling-software": [

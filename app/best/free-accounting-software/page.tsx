@@ -60,7 +60,7 @@ export default function Page() {
           <h3 className="mt-12 text-2xl font-semibold tracking-tight">Related StackPick guides</h3>
           <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">Accounting software is only one part of the workflow. Use these guides to compare invoicing and expense capture before choosing a tool or moving your records.</p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <a href="/best/accounting-for-small-businesses" className="group rounded-2xl border border-black/10 p-6 transition-colors hover:bg-[#f7f7f8]">
+            <a href="/best/accounting-software" className="group rounded-2xl border border-black/10 p-6 transition-colors hover:bg-[#f7f7f8]">
               <p className="font-semibold">Accounting software for small businesses <span aria-hidden="true">↗</span></p>
               <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Compare cloud accounting, accountant collaboration and month-end workflows as your business grows.</p>
             </a>
@@ -68,7 +68,7 @@ export default function Page() {
               <p className="font-semibold">Best free invoicing software <span aria-hidden="true">↗</span></p>
               <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Check free invoice limits, payment fees and the difference between invoicing and full bookkeeping.</p>
             </a>
-            <a href="/best/invoicing-for-freelancers" className="group rounded-2xl border border-black/10 p-6 transition-colors hover:bg-[#f7f7f8]">
+            <a href="/best/invoicing-software" className="group rounded-2xl border border-black/10 p-6 transition-colors hover:bg-[#f7f7f8]">
               <p className="font-semibold">Invoicing software for freelancers <span aria-hidden="true">↗</span></p>
               <p className="mt-2 text-sm leading-6 text-[#6e6e73]">Compare tools for client billing, recurring work and getting paid for services.</p>
             </a>

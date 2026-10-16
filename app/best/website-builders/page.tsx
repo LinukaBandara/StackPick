@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Website Builder for Small Business (2026)",
   description:
-    "An honest comparison of Squarespace, Wix, Shopify, and Webflow - which one to pick depending on whether you're selling products, running a service business, or need full design control.",
+    "Compare website builders for small businesses by site type, selling needs, design control, publishing limits and the cost of launching a real website.",
   alternates: { canonical: "/best/website-builders" },
 };
 
@@ -13,54 +13,61 @@ export default function Page() {
     <ComparisonArticle
       title="Best Website Builder for Small Business"
       slug="website-builders"
-      intro="The real trade-off is launch speed versus long-term control - and watch renewal pricing specifically, since several of these builders quote a low intro rate that jumps significantly once the first term ends."
-      pricingNote="Intro pricing and renewal rates are two different numbers for almost every builder below, and both change often. Check the vendor page for both before committing to annual billing."
+      intro="Start with the job the website must do. A local service business usually needs clear service pages, contact or booking forms and trustworthy mobile presentation; an online store needs product management, checkout and order handling. The best choice is the one that supports those tasks without making routine updates unnecessarily difficult."
+      pricingNote="Plans, introductory offers, renewal prices and included features can change by country and billing term. Check the provider's current pricing and publishing terms before paying. A free editor or trial is not necessarily a live site with a custom domain, usable forms or all the features your business needs."
       tools={[
         {
           name: "Squarespace",
-          bestFor: "Service businesses and creators who want a polished site with minimal tweaking",
-          freeOption: "No free tier - 14-day trial only, and you can't publish on the free trial.",
+          bestFor: "Service businesses and creators who value cohesive templates and a polished presentation",
+          freeOption: "Check the current trial and publishing conditions; do not assume a trial site can stay live on a custom domain without a paid plan.",
           tradeoff:
-            "Templates look professional out of the box with less design effort than Wix requires, but customization headroom is lower - you're working within Squarespace's design language, not overriding it.",
-          url: "https://www.squarespace.com/",
+            "A template-led workflow can reduce design decisions for a brochure or service site, but compare layout flexibility and the editing experience before committing to a template.",
+          url: "https://www.squarespace.com/pricing",
         },
         {
           name: "Wix",
-          bestFor: "Beginners who want a genuine free tier and maximum flexibility",
-          freeOption: "Free-forever tier available (with Wix branding on the site).",
+          bestFor: "Small businesses that want a visual editor with a broad set of built-in business features",
+          freeOption: "A free published option may be useful for a draft; confirm the current platform branding, site address and upgrade requirements before treating it as a business launch.",
           tradeoff:
-            "The openness and app marketplace are real advantages, but that flexibility means default pages need more deliberate design effort to look as polished as a default Squarespace site.",
-          url: "https://www.wix.com/",
+            "The flexible editor and app ecosystem can cover varied business needs, but extra options can mean more setup and maintenance. Test the exact form, booking or store workflow you plan to use.",
+          url: "https://www.wix.com/plans",
         },
         {
           name: "Shopify",
-          bestFor: "Businesses actually selling physical or digital products",
-          freeOption: "No free tier - trial period only.",
+          bestFor: "Businesses whose website is primarily an online store",
+          freeOption: "Review the current trial and introductory offer; check what the selected plan costs after the offer ends.",
           tradeoff:
-            "Purpose-built for e-commerce and it shows - inventory, checkout, and shipping are all first-class. Overkill and unnecessarily expensive if you're not actually running a store.",
-          url: "https://www.shopify.com/",
+            "Product, checkout and order workflows are central to the platform, making it a natural shortlist candidate for retail. For a simple service or information site without a store, its commerce-focused features may be more than you need.",
+          url: "https://www.shopify.com/pricing",
         },
         {
           name: "Webflow",
-          bestFor: "Designers and agencies who want pixel-level control",
-          freeOption: "Free tier available for a starter site.",
+          bestFor: "Design-conscious businesses and designers who need detailed layout control",
+          freeOption: "Separate free workspace or staging access from production hosting; verify the current site plan, custom-domain and CMS limits before launch.",
           tradeoff:
-            "Generates genuinely clean code and gives real design control most builders don't - but it has the steepest learning curve here by far. Not the pick if you just want to get a business site live fast.",
-          url: "https://webflow.com/",
+            "It offers granular visual design controls, but requires more learning than a simple template-led setup. Check how easily the person responsible can update content after launch.",
+          url: "https://webflow.com/pricing",
         },
       ]}
-      bottomLine="Selling products? Shopify, don't fight it with a general-purpose builder. Want a polished service-business site with the least effort? Squarespace. Want it free to start and don't mind spending more design time? Wix. A designer who wants real control over every pixel? Webflow - but budget real time to learn it."
+      bottomLine="For a service business that wants a polished site without extensive design work, start by comparing Squarespace and Wix. If product listings, checkout and order management are core requirements, evaluate Shopify first. If custom layout control is a priority and someone can manage the extra learning curve, include Webflow. These are starting points, not universal rankings: verify the current plan and test the actual workflow before paying."
     >
       <section className="bg-white">
         <div className="sp-container py-10">
-          <h2 className="text-2xl font-semibold">Test the builder with the page you actually need</h2>
-          <p className="mt-3 text-slate-600">A template demo can make every builder look good. Instead, build one representative page: your homepage, a contact form, one mobile layout, and the main conversion action. Then check how much editing is needed before it looks credible.</p>
+          <h2 className="text-2xl font-semibold">Run a practical launch test before choosing</h2>
+          <p className="mt-3 text-slate-600">
+            Build the same representative page in each shortlisted builder rather than judging only the template gallery. Use your real business task—such as receiving an enquiry, taking a booking or completing a test order—and check the live publishing requirements.
+          </p>
           <ul className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
-            <li><strong>Mobile:</strong> Make sure the same page still works at a phone width.</li>
-            <li><strong>Editing:</strong> Time how long it takes to change a headline, image and section.</li>
-            <li><strong>Conversion:</strong> Test your actual form, booking flow or checkout.</li>
-            <li><strong>Exit:</strong> Check what happens to your domain, content and data if you switch later.</li>
+            <li><strong>Mobile:</strong> Check the page at phone width and make sure key actions remain easy to use.</li>
+            <li><strong>Editing:</strong> Time how long it takes to change a headline, image, service or product.</li>
+            <li><strong>Conversion:</strong> Submit a test enquiry or booking, or walk through the store checkout where relevant.</li>
+            <li><strong>Real launch cost:</strong> Include the required plan, custom domain, essential apps and renewal price.</li>
+            <li><strong>Search basics:</strong> Confirm that you can set page titles, descriptions and useful image alternative text.</li>
+            <li><strong>Exit plan:</strong> Check what content and customer data can be exported if you switch platforms later.</li>
           </ul>
+          <p className="mt-5 text-sm text-slate-500">
+            This guide is a desk-based comparison of product positioning and published plan information, not a claim that every platform was independently tested. Features and pricing can change; confirm details with each provider before purchasing.
+          </p>
         </div>
       </section>
     </ComparisonArticle>
