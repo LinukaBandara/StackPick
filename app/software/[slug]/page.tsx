@@ -75,6 +75,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
                 src={software.productImage.src}
                 alt={software.productImage.alt}
                 caption={software.productImage.caption}
+                fallbackHref={software.officialUrl}
                 className="w-full"
               />
             </div>
