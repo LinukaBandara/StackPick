@@ -52,3 +52,16 @@ For all updates: use official product/pricing documentation first, record verifi
 - Refreshed `/best/hubspot-vs-pipedrive` with current US pricing and the key Pipedrive feature gate: Lite excludes email sync and automations, which are included from Growth. Added 3-seat annual cost examples for Lite ($504) and Growth ($1,404) to prevent comparing HubSpot Free only against a tier that lacks required workflow features.
 - Confirmed HubSpot's free-tool limits (2 users/1,000 contacts), Pipedrive's 14-day trial, and current tier names/prices against official sources. Updated the source list and explicitly identified the article as a desk-based comparison without a product benchmark.
 - `npm run build` passed; `npm run check:links` passed (137 files); `npm run lint` passed with two existing image warnings and zero errors. No deployment or account-side verification occurred.
+
+
+## Finder and affiliate-product content batch — 2026-10-17
+
+- Added `/software-finder`: interactive need, budget, business-type and priority filters that route readers to existing product profiles and relevant category guides. Budget filtering treats a permanent free plan separately from a time-limited trial; displayed pricing text is only a rough filter, not a live quote.
+- Added `/how-we-verify`: editorial standards for official sources, dated plan facts, separating desk research from hands-on testing, trade-offs and commercial disclosure.
+- Added `/best/jotform-pricing`: Starter/paid plan limits, annual-billing caveat, submission-cap decision guidance, official sources and links back to the existing form-builder comparison.
+- Added `/best/systeme-io-pricing`: free-tier limits, monthly pricing selector, annual-billing caveat, all-in-one fit/not-fit guidance and links back to existing email/course platform comparisons.
+- Added all four routes to the sitemap with the actual editorial date and added navigation/footer/internal links.
+- Created `docs/stackpick-1000-content-plan.md` with exactly 1,000 candidate ideas across 100 software clusters and 10 editorial angles per cluster. It is a validated-research backlog, not a plan to publish 1,000 URLs without checking intent overlap and usefulness.
+- Updated `docs/stackpick-affiliate-tracker.md` with public official-term research for Jotform and Systeme.io. Neither program is marked as applied or approved. Sri Lankan payout eligibility remains unverified and must be confirmed before relying on either program.
+- Primary-source checks for this batch: Jotform pricing and affiliate pages; Systeme.io pricing and affiliate agreement. Price and program terms can change; the pages link to current official sources and instruct readers to confirm live terms.
+- Validation completed in this tool session: fetched all four new page files back from the target branch; confirmed header/footer links and sitemap entries; counted exactly 1,000 idea rows in the roadmap. A local Next.js build, lint and link-check have **not** been run in this session, and nothing has been deployed.
