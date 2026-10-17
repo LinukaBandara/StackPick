@@ -22,7 +22,7 @@ const sources = [
 ];
 
 const costRows = [
-  { name: "HubSpot Free tools", rate: "$0", five: "$0", fifteen: "$0", note: "Official page lists up to 2 users and 1,000 contacts; fifteen users do not fit this free allowance." },
+  { name: "HubSpot Free tools", rate: "$0", five: "Not eligible", fifteen: "Not eligible", note: "Official page lists up to 2 users and 1,000 contacts; a team of five or fifteen needs a different plan or product." },
   { name: "Zoho CRM Standard", rate: "From $14/user/month", five: "$70/month", fifteen: "$210/month", note: "Illustrative seat arithmetic at the displayed starting rate; confirm billing term, region and checkout price." },
   { name: "Salesforce Starter Suite", rate: "$25/user/month", five: "$125/month", fifteen: "$375/month", note: "Official page lists USD $25 per user/month, billed monthly or annually. Confirm the selected term and included features." },
   { name: "Salesforce Pro Suite", rate: "$100/user/month", five: "$500/month", fifteen: "$1,500/month", note: "Official page lists USD $100 per user/month billed annually; the monthly equivalents are planning arithmetic, not a monthly-billing offer." },
