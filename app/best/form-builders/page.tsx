@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
@@ -42,6 +43,16 @@ export default function Page() {
         },
       ]}
       bottomLine="Free internal survey or RSVP, especially inside Google Workspace? Google Forms - don't overthink it. Marketing lead-capture form where design and completion rate drive revenue? Typeform. Need payments, HIPAA compliance, or genuinely complex conditional logic? Jotform, and accept the more crowded editor as the trade-off."
-    />
+    >
+      <section className="bg-white">
+        <div className="sp-container pb-12 sm:pb-16">
+          <div className="rounded-[24px] border border-[#d2d2d7] bg-[#f5f5f7] p-6 sm:p-8">
+            <h2 className="text-xl font-semibold text-[#1d1d1f]">Is Jotform&apos;s free plan enough?</h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-[#6e6e73]">The Starter plan has monthly submission and active-form caps. Check the exact limits and paid-plan billing basis before directing a live campaign to a form.</p>
+            <Link href="/best/jotform-pricing" className="mt-4 inline-flex text-sm font-semibold text-[#001D39] underline underline-offset-4">Read Jotform pricing and free-plan limits →</Link>
+          </div>
+        </div>
+      </section>
+    </ComparisonArticle>
   );
 }
