@@ -19,7 +19,7 @@ export default function MultiCurrencyInvoicingPage() {
         {
           name: "QuickBooks Online",
           bestFor: "Small businesses that need foreign-currency invoices and accounting in the same ledger",
-          freeOption: "No permanent free accounting plan. The US Essentials plan is listed at $31/month before promotional offers; multicurrency is available in Essentials, Plus and Advanced, not Simple Start.",
+          freeOption: "No permanent free accounting plan. The US Essentials plan is listed at $85/month at standard pricing (promotions may apply); multicurrency is available in Essentials, Plus and Advanced, not Simple Start.",
           tradeoff: "Once multicurrency is enabled, QuickBooks says it cannot be turned off because the currency-conversion information becomes part of the accounting records. Confirm your plan and discuss the irreversible setting with your accountant before switching it on.",
           url: "https://quickbooks.intuit.com/pricing/",
         },
@@ -89,7 +89,7 @@ export default function MultiCurrencyInvoicingPage() {
               </thead>
               <tbody>
                 {[
-                  ["QuickBooks Online", "$31/mo Essentials standard list price", "Multicurrency is not in Simple Start; turning it on cannot be reversed."],
+                  ["QuickBooks Online", "$85/mo Essentials standard list price", "Multicurrency is not in Simple Start; turning it on cannot be reversed."],
                   ["Xero", "$97/mo Established standard price after promo", "Multi-currency is listed in Established, not the lower US plans."],
                   ["Zoho Books", "Paid plans from $20/mo monthly", "Which plan includes multi-currency; the free plan is not guaranteed to include it."],
                   ["FreshBooks", "$23/mo Lite standard price; up to 5 clients", "Per-client currency workflow, client cap and accounting treatment."],
