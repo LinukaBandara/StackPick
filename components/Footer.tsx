@@ -12,6 +12,8 @@ function StackPickMark() {
 }
 
 const EXPLORE_LINKS = [
+  { href: "/software-finder", label: "Software finder" },
+  { href: "/how-we-verify", label: "How we verify" },
   { href: "/best/invoicing-software", label: "Invoicing software" },
   { href: "/best/crm-software", label: "CRM software" },
   { href: "/best/project-management-software", label: "Project management" },
