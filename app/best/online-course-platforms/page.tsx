@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
@@ -58,6 +59,16 @@ export default function Page() {
         },
       ]}
       bottomLine="Launching your first course and want a straightforward setup? Compare Teachable. Want customization and a course-focused platform? Thinkific. Prioritizing interactive learning and branded course delivery? Evaluate LearnWorlds. Want an established all-in-one suite? Kajabi. Starting on a tighter budget and combining funnels, email and digital products? Evaluate Systeme.io's current plan limits against your actual workflow before choosing."
-    />
+    >
+      <section className="bg-white">
+        <div className="sp-container pb-12 sm:pb-16">
+          <div className="rounded-[24px] border border-[#d2d2d7] bg-[#f5f5f7] p-6 sm:p-8">
+            <h2 className="text-xl font-semibold text-[#1d1d1f]">Check Systeme.io&apos;s plan limits before moving your course</h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-[#6e6e73]">The all-in-one bundle may be useful for a new creator, but contact, funnel, automation and course limits can affect the workflow. Compare the live billing options and test your checkout before migrating.</p>
+            <Link href="/best/systeme-io-pricing" className="mt-4 inline-flex text-sm font-semibold text-[#001D39] underline underline-offset-4">Read Systeme.io pricing and free-plan limits →</Link>
+          </div>
+        </div>
+      </section>
+    </ComparisonArticle>
   );
 }
