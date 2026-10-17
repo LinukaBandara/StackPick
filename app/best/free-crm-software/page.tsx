@@ -13,7 +13,7 @@ export default function FreeCrmSoftwarePage() {
       title="Best Free CRM Software"
       slug="free-crm-software"
       intro="A free CRM is only useful if it stays useful after the first week. We look beyond the word 'free' and focus on whether a freelancer or small team can actually capture contacts, manage deals, follow up and keep their data without immediately needing a card."
-      pricingNote="Plan limits were checked against official provider pages on October 14, 2026. A permanent free plan is different from a time-limited trial, and some providers cap users, contacts, storage or advanced features. Confirm current terms before migrating customer records."
+      pricingNote="Plan limits were checked against official provider pages on October 18, 2026. A permanent free plan is different from a time-limited trial, and some providers cap users, contacts, storage or advanced features. Confirm current terms before migrating customer records."
       tools={[
         { name: "HubSpot CRM", bestFor: "A conventional CRM for contact and deal management", freeOption: "HubSpot lists free tools at $0 for up to 2 users and 1,000 contacts, with no expiration date. The provider also lists up to 1 million records across other standard object types per account.", tradeoff: "The free tier is a strong starting point, but advanced automation and features from other HubSpot products may require an upgrade. Verify each must-have feature instead of assuming all HubSpot functionality is free.", url: "https://www.hubspot.com/pricing/crm" },
         { name: "Zoho CRM", bestFor: "Small teams that need a traditional CRM with follow-up reminders", freeOption: "Zoho CRM lists a Free Edition that is free forever for up to 3 users. Published limits include up to 10 custom email templates, up to 10 free data exports and 5,000 API credits per rolling 24-hour window; individual API operations may consume different amounts of credits.", tradeoff: "The free edition includes useful core sales tools, but certain email integrations, mass emailing and more advanced capabilities require paid editions. Check the official edition comparison before choosing it.", url: "https://www.zoho.com/en-us/crm/zohocrm-pricing.html" },
@@ -27,8 +27,44 @@ export default function FreeCrmSoftwarePage() {
         <p className="sp-eyebrow">Free means different things</p>
         <h2 className="sp-title mt-4 max-w-4xl">Check the limits that arrive after you build the habit.</h2>
         <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">The important question is what happens when your contacts, users, storage or automation needs grow. Check data export, integrations, branding, upgrade requirements and whether a trial ends before migrating your real records.</p>
+        <section className="mt-12">
+          <p className="sp-eyebrow">Choose by team size</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Which free CRM fits your actual workflow?</h2>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">
+            There is no single free plan that is best for every team. Start with the number of people who need individual access, then check contact and record caps, the features you need each week, and how you would export your data if you leave.
+          </p>
+          <div className="mt-6 overflow-x-auto rounded-2xl border border-[#e4e7ec]">
+            <table className="w-full min-w-[680px] text-left text-sm">
+              <thead className="bg-[#f5f5f7]"><tr>
+                <th className="p-4 font-semibold text-[#1d1d1f]">Your situation</th>
+                <th className="p-4 font-semibold text-[#1d1d1f]">First options to compare</th>
+                <th className="p-4 font-semibold text-[#1d1d1f]">Check before committing</th>
+              </tr></thead>
+              <tbody className="divide-y divide-[#e4e7ec]">
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Solo freelancer</td><td className="p-4 text-[#424245]">HubSpot Free or Notion as a DIY tracker</td><td className="p-4 text-[#6e6e73]">Contact cap, follow-up reminders, and whether you want a real sales pipeline or a self-built database.</td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Two-person team</td><td className="p-4 text-[#424245]">HubSpot Free or Bitrix24 Free</td><td className="p-4 text-[#6e6e73]">HubSpot's 2-user and 1,000-contact limits; Bitrix24 storage, feature gates and inactivity policy.</td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Three-person team</td><td className="p-4 text-[#424245]">Zoho CRM Free or Freshsales, subject to current eligibility</td><td className="p-4 text-[#6e6e73]">Confirm the provider's current user allowance and whether required email, automation and reporting features are included.</td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Four or more users</td><td className="p-4 text-[#424245]">Compare paid CRM tiers and flat-rate bundles</td><td className="p-4 text-[#6e6e73]">Calculate the full team price, not the single-user headline. See our <a className="font-semibold text-[#001D39] underline underline-offset-4" href="/best/crm-software-pricing">CRM software pricing guide</a>.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-xs leading-5 text-[#6e6e73]">
+            This is a shortlist for further evaluation, not a claim that every option is feature-equivalent. Provider eligibility and limits can change; confirm them on the linked official plan pages before importing customer data.
+          </p>
+        </section>
+
+        <section className="mt-12 rounded-2xl border border-[#e4e7ec] p-6 sm:p-8">
+          <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f]">When a free CRM is the wrong choice</h2>
+          <ul className="mt-5 space-y-3 text-sm leading-6 text-[#6e6e73]">
+            <li><strong className="text-[#1d1d1f]">Your whole team needs access.</strong> If the free plan cannot cover every staff member who must update records, compare the actual paid total before migrating.</li>
+            <li><strong className="text-[#1d1d1f]">You depend on automation or reporting.</strong> Check feature availability at the edition level; a free account may capture leads but not support the workflow you want to automate.</li>
+            <li><strong className="text-[#1d1d1f]">You cannot risk losing access to your data.</strong> Confirm export formats, record ownership, backup options, inactivity rules and whether a downgrade removes data or features.</li>
+            <li><strong className="text-[#1d1d1f]">You need a regulated or tightly controlled workflow.</strong> Review access controls, audit trails, data-processing terms and the security requirements that apply to your organization.</li>
+          </ul>
+        </section>
+
         <h3 className="mt-12 text-2xl font-semibold tracking-tight">Official plan pages checked</h3>
-        <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">The plan details below reflect published provider information checked on October 14, 2026. Feature availability can vary by product, region and plan, so confirm the current terms before depending on a limit.</p>
+        <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">The plan details below reflect published provider information checked on October 18, 2026. Feature availability can vary by product, region and plan, so confirm the current terms before depending on a limit.</p>
         <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
           <li><a className="underline underline-offset-4" href="https://www.hubspot.com/pricing/crm" target="_blank" rel="noreferrer">HubSpot official pricing</a> — free users, contacts and record limits.</li>
           <li><a className="underline underline-offset-4" href="https://www.zoho.com/en-us/crm/zohocrm-pricing.html" target="_blank" rel="noreferrer">Zoho CRM official pricing</a> — Free Edition limits.</li>
