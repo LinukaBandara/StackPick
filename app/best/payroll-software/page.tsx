@@ -50,6 +50,7 @@ export default function Page() {
         },
       ]}
       bottomLine="Already on QuickBooks for accounting? Use its payroll add-on before anything else - the integration alone is worth it. Want the most complete, modern experience and can afford it? Gusto. Multi-state team? OnPay's flat multi-state pricing likely saves money. Tight budget, simple needs? Patriot Software."
+    >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
           <p className="sp-eyebrow">US payroll cost check · October 18, 2026</p>
