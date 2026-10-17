@@ -65,3 +65,15 @@ For all updates: use official product/pricing documentation first, record verifi
 - Updated `docs/stackpick-affiliate-tracker.md` with public official-term research for Jotform and Systeme.io. Neither program is marked as applied or approved. Sri Lankan payout eligibility remains unverified and must be confirmed before relying on either program.
 - Primary-source checks for this batch: Jotform pricing and affiliate pages; Systeme.io pricing and affiliate agreement. Price and program terms can change; the pages link to current official sources and instruct readers to confirm live terms.
 - Validation completed in this tool session: fetched all four new page files back from the target branch; confirmed header/footer links and sitemap entries; counted exactly 1,000 idea rows in the roadmap. A local Next.js build, lint and link-check have **not** been run in this session, and nothing has been deployed.
+
+
+## Additional affiliate-readiness content batch — 2026-10-17
+
+- Added `/best/hubspot-crm-pricing`: HubSpot free-plan seats/contact limits, paid-feature gates, upgrade criteria, official pricing source and links to existing CRM comparisons.
+- Added `/best/freshbooks-pricing`: standard US list-price snapshot, billable-client caps, archived-client caveat, add-ons, promotional-price distinction and links to existing invoicing comparisons.
+- Added `/best/webflow-pricing`: distinguishes Site plans from Workspace plans and calls out annual billing, ecommerce fees, add-ons and migration/plan-change caveats.
+- Added all three routes to `app/sitemap.ts` with an editorial last-modified date and surfaced the pages in the `/best` directory.
+- Reviewed public primary sources for this batch: HubSpot CRM pricing/free-tool limits; FreshBooks pricing and 2026 price-change FAQ; Webflow pricing and its 2026 plan-change documentation. Source links are on each page.
+- Added Webflow's published affiliate-program summary to `docs/stackpick-affiliate-tracker.md`. It remains **not confirmed applied or approved**; Sri Lankan eligibility and payout support are unverified.
+- Validation in this tool session: GitHub writes succeeded for all three pages, sitemap and directory; the tracker update succeeded. A local Next.js build, lint and internal-link check have **not** been run here, and nothing has been deployed. Run those checks before merge/deploy.
+- Next product-specific candidates from the 1,000-idea backlog: MailerLite pricing/free-plan limits, Brevo pricing and email-credit limits, ClickUp pricing/guest limits, monday.com pricing/seat minimums, and Kinsta hosting pricing/overage terms. Validate each against official current sources and sitemap overlap before creating URLs.
