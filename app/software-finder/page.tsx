@@ -40,11 +40,10 @@ export default function SoftwareFinderPage() {
     const mappedNeed = NEED_MAP[profile.category] ?? "Operations";
     const matchesNeed = need === "Any" || mappedNeed === need;
     const pricingText = profile.freePlan + " " + profile.pricingSummary;
-    const looksFree = /free|\$0|no cost|trial/i.test(pricingText);
     const hasPermanentFreePlan = /permanent free|free plan|free tier|free forever|free access|no time limit/i.test(pricingText) && !/no permanent free|no free plan/i.test(pricingText);
     const matchesBudget = budget === "Any" ||
       (budget === "Free-first" && hasPermanentFreePlan) ||
-      (budget === "Under $25/user/month" && (looksFree || /\$([0-9]|1[0-9]|2[0-4])(\.|\s|\/)/i.test(pricingText))) ||
+      (budget === "Under $25/user/month" && (hasPermanentFreePlan || /\$([0-9]|1[0-9]|2[0-4])(\.|\s|\/)/i.test(pricingText))) ||
       (budget === "$25+ / user / month" && /\$([2-9][5-9]|[3-9][0-9]|[1-9][0-9]{2,})/i.test(pricingText));
     return matchesNeed && matchesBudget;
   }).map((profile) => {
