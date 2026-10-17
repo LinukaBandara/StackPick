@@ -133,6 +133,10 @@ const ROUTES = [
 // Keep lastModified tied to real editorial updates. Do not use the build date,
 // because deploying unrelated changes should not make every URL look freshly updated.
 const LAST_MODIFIED: Record<string, string> = {
+  "/software-finder": "2026-10-17",
+  "/how-we-verify": "2026-10-17",
+  "/best/jotform-pricing": "2026-10-17",
+  "/best/systeme-io-pricing": "2026-10-17",
   "/best/crm-for-freelancers": "2026-10-10",
   "/best/invoicing-software": "2026-10-10",
   "/best/ai-meeting-assistants": "2026-10-09",
