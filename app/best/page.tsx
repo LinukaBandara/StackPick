@@ -23,14 +23,17 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   { href: "/best/invoicing-software", title: "Best Invoicing Software for Freelancers", desc: "Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks", category: "Finance" },
+  { href: "/best/freshbooks-pricing", title: "FreshBooks Pricing and Client Limits", desc: "Compare plan caps, add-ons, promotional prices and renewal costs.", category: "Finance" },
   { href: "/best/accounting-software", title: "Best Accounting Software for Small Business", desc: "Xero, QuickBooks, Wave, Zoho Books", category: "Finance" },
   { href: "/best/payroll-software", title: "Best Payroll Software for Small Business", desc: "Gusto, QuickBooks Payroll, OnPay, Patriot Software", category: "People" },
   { href: "/best/expense-management-software", title: "Best Expense Management Software for Small Business", desc: "Expensify, Ramp, Zoho Expense", category: "Finance" },
   { href: "/best/crm-software", title: "Best CRM Software for Freelancers & Small Teams", desc: "HubSpot, Pipedrive, Zoho CRM, Notion", category: "Sales" },
+  { href: "/best/hubspot-crm-pricing", title: "HubSpot CRM Pricing and Free Plan Limits", desc: "Understand free seats, contact limits, paid feature gates and upgrade triggers.", category: "Sales" },
   { href: "/best/email-marketing-software", title: "Best Email Marketing Software for Small Business", desc: "Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit, Systeme.io, GetResponse", category: "Marketing" },
   { href: "/best/social-media-scheduling", title: "Best Social Media Scheduling Tool for Small Business", desc: "Buffer, Hootsuite, Later", category: "Marketing" },
   { href: "/best/project-management-software", title: "Best Project Management Software for Small Teams", desc: "Trello, Asana, ClickUp, monday.com", category: "Productivity" },
   { href: "/best/website-builders", title: "Best Website Builder for Small Business", desc: "Squarespace, Wix, Shopify, Webflow", category: "Marketing" },
+  { href: "/best/webflow-pricing", title: "Webflow Pricing: Site vs Workspace Plans", desc: "Separate hosting, publishing, collaboration and ecommerce costs.", category: "Marketing" },
   { href: "/best/appointment-scheduling-software", title: "Best Appointment Scheduling Software for Small Business", desc: "Calendly, Acuity Scheduling, Cal.com", category: "Operations" },
   { href: "/best/form-builders", title: "Best Form Builder for Small Business", desc: "Google Forms, Typeform, Jotform", category: "Productivity" },
   { href: "/best/cloud-storage", title: "Best Cloud Storage for Small Business Teams", desc: "Google Drive, Dropbox, Microsoft OneDrive", category: "Security" },
