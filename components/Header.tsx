@@ -27,6 +27,7 @@ export default function Header() {
           <span>StackPick</span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+          <Link href="/software-finder" className="text-xs font-semibold text-[#001D39] transition-colors hover:underline">Find software</Link>
           <Link href="/software" className="text-xs font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">
             Software
           </Link>
@@ -68,7 +69,8 @@ export default function Header() {
               <Link href="/categories" className="sp-mobile-nav-link">Categories <span>Explore by need</span></Link>
               <Link href="/comparisons" className="sp-mobile-nav-link">Comparisons <span>Compare tools side by side</span></Link>
               <Link href="/guides" className="sp-mobile-nav-link">Guides <span>Practical buying advice</span></Link>
-              <Link href="/best#directory-search" className="sp-mobile-nav-link">Search software <span>Find a tool</span></Link>
+              <Link href="/software-finder" className="sp-mobile-nav-link">Software finder <span>Get a tailored shortlist</span></Link>
+              <Link href="/best#directory-search" className="sp-mobile-nav-link">Search comparisons <span>Find a guide</span></Link>
               <Link href="/best" className="mt-1 flex min-h-11 items-center justify-center rounded-xl bg-[#001D39] px-4 text-sm font-semibold text-white">Browse all software</Link>
             </nav>
           </details>
