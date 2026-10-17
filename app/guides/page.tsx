@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 
 const GUIDES = [
   { title: "Best Invoicing Software for Freelancers", desc: "Compare invoice creation, reminders, payment collection, and client workflows.", href: "/best/invoicing-software", category: "Finance" },
+  { title: "Best Multi-Currency Invoicing Software", desc: "Compare foreign-currency invoices, exchange rates, payment collection and accounting trade-offs.", href: "/best/multi-currency-invoicing", category: "Finance" },
   { title: "Best Free CRM Software", desc: "Check contact, user, and automation limits before committing to a free plan.", href: "/best/free-crm-software", category: "Sales" },
   { title: "CRM Software Pricing for Small Teams", desc: "Compare published per-seat rates, five- and fifteen-user costs, and upgrade traps.", href: "/best/crm-software-pricing", category: "Sales" },
   { title: "Best Project Management for Small Teams", desc: "Find a practical way to coordinate tasks, owners, and deadlines.", href: "/best/project-management-software", category: "Productivity" },
