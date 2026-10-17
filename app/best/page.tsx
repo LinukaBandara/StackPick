@@ -29,6 +29,7 @@ const ARTICLES = [
   { href: "/best/expense-management-software", title: "Best Expense Management Software for Small Business", desc: "Expensify, Ramp, Zoho Expense", category: "Finance" },
   { href: "/best/crm-software", title: "Best CRM Software for Freelancers & Small Teams", desc: "HubSpot, Pipedrive, Zoho CRM, Notion", category: "Sales" },
   { href: "/best/hubspot-crm-pricing", title: "HubSpot CRM Pricing and Free Plan Limits", desc: "Understand free seats, contact limits, paid feature gates and upgrade triggers.", category: "Sales" },
+  { href: "/best/crm-software-pricing", title: "CRM Software Pricing for Small Teams", desc: "Compare published per-seat costs, team-size scenarios and common upgrade traps.", category: "Sales" },
   { href: "/best/email-marketing-software", title: "Best Email Marketing Software for Small Business", desc: "Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit, Systeme.io, GetResponse", category: "Marketing" },
   { href: "/best/brevo-pricing", title: "Brevo Pricing and Free Plan Limits", desc: "Daily email sends, contact storage, paid volume tiers and branding costs.", category: "Marketing" },
   { href: "/best/mailerlite-pricing", title: "MailerLite Pricing and 2026 Free Plan Changes", desc: "250-subscriber cap, monthly sends, automation limits and paid tiers.", category: "Marketing" },
