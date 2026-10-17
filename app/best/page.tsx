@@ -26,6 +26,7 @@ const ARTICLES = [
   { href: "/best/multi-currency-invoicing", title: "Best Multi-Currency Invoicing Software", desc: "Compare foreign-currency invoices, exchange rates, payment collection and accounting trade-offs.", category: "Finance" },
   { href: "/best/accounting-software", title: "Best Accounting Software for Small Business", desc: "Xero, QuickBooks, Wave, Zoho Books", category: "Finance" },
   { href: "/best/payroll-software", title: "Best Payroll Software for Small Business", desc: "Gusto, QuickBooks Payroll, OnPay, Patriot Software", category: "People" },
+  { href: "/best/payroll-software-for-5-employees", title: "Payroll Software Cost for 5 Employees", desc: "Calculate published monthly payroll prices for a five-person US team and compare plan restrictions.", category: "People" },
   { href: "/best/expense-management-software", title: "Best Expense Management Software for Small Business", desc: "Expensify, Ramp, Zoho Expense", category: "Finance" },
   { href: "/best/crm-software", title: "Best CRM Software for Freelancers & Small Teams", desc: "HubSpot, Pipedrive, Zoho CRM, Notion", category: "Sales" },
   { href: "/best/crm-software-pricing", title: "CRM Software Pricing for Small Teams", desc: "Compare published per-seat costs, team-size scenarios and common upgrade traps.", category: "Sales" },
