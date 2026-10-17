@@ -27,6 +27,7 @@ const ARTICLES = [
   { href: "/best/payroll-software", title: "Best Payroll Software for Small Business", desc: "Gusto, QuickBooks Payroll, OnPay, Patriot Software", category: "People" },
   { href: "/best/expense-management-software", title: "Best Expense Management Software for Small Business", desc: "Expensify, Ramp, Zoho Expense", category: "Finance" },
   { href: "/best/crm-software", title: "Best CRM Software for Freelancers & Small Teams", desc: "HubSpot, Pipedrive, Zoho CRM, Notion", category: "Sales" },
+  { href: "/best/crm-software-pricing", title: "CRM Software Pricing for Small Teams", desc: "Compare published per-seat costs, team-size scenarios and common upgrade traps.", category: "Sales" },
   { href: "/best/email-marketing-software", title: "Best Email Marketing Software for Small Business", desc: "Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit, Systeme.io, GetResponse", category: "Marketing" },
   { href: "/best/social-media-scheduling", title: "Best Social Media Scheduling Tool for Small Business", desc: "Buffer, Hootsuite, Later", category: "Marketing" },
   { href: "/best/project-management-software", title: "Best Project Management Software for Small Teams", desc: "Trello, Asana, ClickUp, monday.com", category: "Productivity" },

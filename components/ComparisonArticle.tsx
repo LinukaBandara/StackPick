@@ -181,6 +181,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/crm-for-freelancers", title: "CRM for freelancers" },
     { href: "/best/crm-for-small-businesses", title: "CRM for small businesses" },
     { href: "/best/free-crm-software", title: "Best free CRM software" },
+    { href: "/best/crm-software-pricing", title: "CRM software pricing for small teams" },
   ],
   "password-managers": [
     { href: "/best/business-vpn", title: "Business VPNs for remote teams" },

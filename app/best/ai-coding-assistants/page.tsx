@@ -100,6 +100,36 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="bg-white py-16 sm:py-20">
+        <div className="sp-container">
+          <p className="sp-eyebrow">Price and usage limits · Checked October 18, 2026</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Compare the bill and the quota—not just the free label.</h2>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
+            AI coding products may separate autocomplete, chat, agent actions and premium-model usage into different allowances. A subscription price is not necessarily an unlimited-agent price, and API usage may be billed separately. The links below go to provider-owned pages so readers can confirm current plan terms for their region before paying.
+          </p>
+          <div className="mt-7 overflow-x-auto rounded-2xl border border-[#e4e7ec]">
+            <table className="w-full min-w-[620px] text-left text-sm">
+              <thead className="bg-[#f5f5f7]"><tr>
+                <th className="p-4 font-semibold text-[#1d1d1f]">Tool</th>
+                <th className="p-4 font-semibold text-[#1d1d1f]">What to verify</th>
+                <th className="p-4 font-semibold text-[#1d1d1f]">Official source</th>
+              </tr></thead>
+              <tbody className="divide-y divide-[#e4e7ec]">
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">GitHub Copilot</td><td className="p-4 text-[#6e6e73]">Free completion allowance, premium requests/credits, and which agent features are included. The official page currently lists Free at $0 and Pro at $10 per user/month.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">Plans and pricing →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Cursor</td><td className="p-4 text-[#6e6e73]">Included agent/chat usage, model availability, and what happens after the quota is reached.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://cursor.com/pricing" target="_blank" rel="noopener noreferrer">Official pricing →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Claude Code</td><td className="p-4 text-[#6e6e73]">Eligible Claude subscription, usage limits, and the separate API billing model.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://www.anthropic.com/pricing" target="_blank" rel="noopener noreferrer">Official pricing →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">OpenAI Codex</td><td className="p-4 text-[#6e6e73]">Current plan eligibility, task limits, and whether the chosen workflow is included in your subscription.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://openai.com/codex/" target="_blank" rel="noopener noreferrer">Product and access →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Windsurf</td><td className="p-4 text-[#6e6e73]">Current plan name, prompt/agent allowances and included model options.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://windsurf.com/pricing" target="_blank" rel="noopener noreferrer">Official pricing →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Gemini Code Assist</td><td className="p-4 text-[#6e6e73]">Individual eligibility, daily quotas, supported IDEs and regional terms.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://codeassist.google/" target="_blank" rel="noopener noreferrer">Official product page →</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-xs leading-5 text-[#6e6e73]">
+            Prices and quotas can change, and access can vary by country, plan and account eligibility. Only the GitHub Copilot figures above are quoted here; other products are linked to their official pages rather than given unverified price claims.
+          </p>
+        </div>
+      </section>
+
       <section className="bg-[#f5f5f7] py-16 sm:py-20">
         <div className="sp-container">
           <p className="sp-eyebrow">A repeatable evaluation</p>
