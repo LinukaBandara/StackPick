@@ -15,6 +15,8 @@ const EXPLORE_LINKS = [
   { href: "/software-finder", label: "Software finder" },
   { href: "/how-we-verify", label: "How we verify" },
   { href: "/best/invoicing-software", label: "Invoicing software" },
+  { href: "/best/jotform-pricing", label: "Jotform pricing guide" },
+  { href: "/best/systeme-io-pricing", label: "Systeme.io pricing guide" },
   { href: "/best/crm-software", label: "CRM software" },
   { href: "/best/project-management-software", label: "Project management" },
   { href: "/best/time-tracking-software", label: "Time tracking" },
