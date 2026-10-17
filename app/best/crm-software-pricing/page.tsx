@@ -124,7 +124,6 @@ export default function CrmSoftwarePricingPage() {
           <div className="mt-5 flex flex-wrap gap-4 text-sm font-semibold text-[#001D39]">
             <Link className="underline underline-offset-4" href="/best/free-crm-software">Best free CRM software</Link>
             <Link className="underline underline-offset-4" href="/best/crm-software">CRM software for freelancers and small teams</Link>
-            <Link className="underline underline-offset-4" href="/best/hubspot-crm-pricing">HubSpot CRM pricing and limits</Link>
             <Link className="underline underline-offset-4" href="/best/hubspot-vs-pipedrive">HubSpot vs Pipedrive</Link>
             <Link className="underline underline-offset-4" href="/best/hubspot-vs-zoho-crm">HubSpot vs Zoho CRM</Link>
           </div>
