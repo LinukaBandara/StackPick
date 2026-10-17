@@ -77,3 +77,16 @@ For all updates: use official product/pricing documentation first, record verifi
 - Added Webflow's published affiliate-program summary to `docs/stackpick-affiliate-tracker.md`. It remains **not confirmed applied or approved**; Sri Lankan eligibility and payout support are unverified.
 - Validation in this tool session: GitHub writes succeeded for all three pages, sitemap and directory; the tracker update succeeded. A local Next.js build, lint and internal-link check have **not** been run here, and nothing has been deployed. Run those checks before merge/deploy.
 - Next product-specific candidates from the 1,000-idea backlog: MailerLite pricing/free-plan limits, Brevo pricing and email-credit limits, ClickUp pricing/guest limits, monday.com pricing/seat minimums, and Kinsta hosting pricing/overage terms. Validate each against official current sources and sitemap overlap before creating URLs.
+
+
+## Keyword-research implementation update — 2026-10-17
+
+This batch is grounded in the existing SEO strategy and international research documents, not generic topic brainstorming.
+
+- Added `/best/brevo-pricing` and `/best/mailerlite-pricing` as product-specific commercial-investigation pages. These map to the roadmap's P0 email-marketing product cluster and help readers compare the exact constraints that trigger a paid plan.
+- The Brevo page uses official documentation for the Free plan's 300 daily sends, up to 100,000 stored contacts, and Starter/Standard starting prices; it explains why contact capacity is not the same as sending capacity.
+- The MailerLite page reflects the official June 16, 2026 free-plan update: 250 active subscribers, 2,500 monthly emails, two seats, and feature caps. This is important because older third-party articles may still describe the previous free allowance.
+- Added both pages to the sitemap and `/best` directory.
+- Research-led priority context remains: US published snapshots in `seo-keyword-strategy-2026-q3.md` list CRM software at 90,500 searches / $35.78 CPC (6 July 2026), accounting software for small business at 27,100 / $58.43 (7 July 2026), payroll software for small business at 9,900 / $108.97 (6 July 2026), help desk software at 5,400 / $95.84 (8 May 2026), and inventory management software at 5,400 (September 2026 report). These are third-party estimates, not StackPick GSC data or an AdSense revenue forecast.
+- Existing content should be strengthened before creating near-duplicate URLs. The research memo's tutoring-business software idea remains a separate candidate after checking the current route inventory and available affiliate programs; broad AI coding comparisons remain deprioritized unless new evidence demonstrates a distinct intent gap.
+- Quality gate: GitHub file writes succeeded and were fetched back. Local build, lint, route resolution, source-link checks and deployment have not been run in this session.
