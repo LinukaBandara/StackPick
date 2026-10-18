@@ -45,6 +45,7 @@ const ARTICLES = [
   { href: "/best/help-desk-software", title: "Best Help Desk Software for Small Business", desc: "Help Scout, Freshdesk, Zoho Desk, Gorgias", category: "Operations" },
   { href: "/best/esignature-software", title: "Best E-Signature Software for Small Business", desc: "DocuSign, PandaDoc, Dropbox Sign, SignWell", category: "Operations" },
   { href: "/best/time-tracking-software", title: "Best Time Tracking Software for Freelancers & Small Teams", desc: "Toggl Track, Clockify, Harvest, Hubstaff", category: "Productivity" },
+  { href: "/best/time-tracking-software-pricing", title: "Time Tracking Software Pricing", desc: "Compare Clockify, Toggl Track and Harvest seat costs, free limits and usage fees.", category: "Productivity" },
   { href: "/best/web-hosting", title: "Best Web Hosting for Small Business", desc: "Hostinger, SiteGround, Bluehost, Cloudways, Kinsta", category: "Infrastructure" },
   { href: "/best/business-phone-voip", title: "Best Business Phone System (VoIP) for Small Business", desc: "Nextiva, RingCentral, Ooma, Grasshopper", category: "Operations" },
   { href: "/best/live-chat-software", title: "Best Live Chat Software for Small Business Websites", desc: "Tidio, Crisp, Intercom, Tawk.to", category: "Sales" },
