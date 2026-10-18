@@ -138,7 +138,6 @@ export default function ReceiptScanningSoftwarePricingPage() {
             <div className="mt-4 flex flex-wrap gap-x-5 gap-y-3 text-sm">
               <a href="/best/expense-management-software" className="text-[#004bb5] underline underline-offset-4">Expense management software</a>
               <a href="/best/accounting-software" className="text-[#004bb5] underline underline-offset-4">Best accounting software</a>
-              <a href="/best/accounting-software-cost" className="text-[#004bb5] underline underline-offset-4">Accounting software pricing</a>
               <a href="/best/track-business-expenses-without-spreadsheets" className="text-[#004bb5] underline underline-offset-4">Track expenses without spreadsheets</a>
             </div>
           </div>
