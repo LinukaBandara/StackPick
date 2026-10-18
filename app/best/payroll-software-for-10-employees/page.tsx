@@ -161,7 +161,6 @@ export default function PayrollForTenEmployeesPage() {
             <h3 className="text-lg font-semibold">Related StackPick guides</h3>
             <div className="mt-4 flex flex-wrap gap-x-5 gap-y-3 text-sm">
               <a href="/best/payroll-software" className="text-[#004bb5] underline underline-offset-4">Best payroll software for small business</a>
-              <a href="/best/payroll-software" className="text-[#004bb5] underline underline-offset-4">Best payroll software for small business</a>
               <a href="/best/accounting-software" className="text-[#004bb5] underline underline-offset-4">Best accounting software</a>
             </div>
           </div>
