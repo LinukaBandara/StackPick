@@ -140,7 +140,6 @@ export default function InvoicingSoftwareSmallBusinessPage() {
               <a href="/best/invoicing-software" className="text-[#004bb5] underline underline-offset-4">Best invoicing software for freelancers</a>
               <a href="/best/multi-currency-invoicing" className="text-[#004bb5] underline underline-offset-4">Multi-currency invoicing software</a>
               <a href="/best/accounting-software" className="text-[#004bb5] underline underline-offset-4">Best accounting software</a>
-              <a href="/best/accounting-software-cost" className="text-[#004bb5] underline underline-offset-4">Accounting software costs</a>
             </div>
           </div>
         </div>
