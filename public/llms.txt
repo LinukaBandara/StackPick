@@ -15,6 +15,7 @@
 - [Best Invoicing Software for Freelancers](/best/invoicing-software) (Finance): Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks
 - [Best Multi-Currency Invoicing Software](/best/multi-currency-invoicing) (Finance): QuickBooks Online, Xero, Zoho Books, FreshBooks, Stripe Invoicing
 - [Best Accounting Software for Small Business](/best/accounting-software) (Finance): Xero, QuickBooks, Wave, Zoho Books
+- [Best Accounting Software for Contractors](/best/accounting-software-for-contractors) (Finance): Compare job costing, project profitability, estimates and construction-specific accounting requirements.
 - [Best Payroll Software for Small Business](/best/payroll-software) (People): Gusto, QuickBooks Payroll, OnPay, Patriot Software
 - [Best Expense Management Software for Small Business](/best/expense-management-software) (Finance): Expensify, Ramp, Zoho Expense
 - [Best CRM Software for Freelancers & Small Teams](/best/crm-software) (Sales): HubSpot, Pipedrive, Zoho CRM, Notion
