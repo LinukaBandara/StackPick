@@ -15,6 +15,7 @@ const ROUTES = [
   "/best/accounting-software",
   "/best/payroll-software",
   "/best/expense-management-software",
+  "/best/receipt-scanning-software-pricing",
   "/best/crm-software",
   "/best/crm-software-pricing",
   "/best/email-marketing-software",
@@ -131,6 +132,7 @@ const ROUTES = [
 // Keep lastModified tied to real editorial updates. Do not use the build date,
 // because deploying unrelated changes should not make every URL look freshly updated.
 const LAST_MODIFIED: Record<string, string> = {
+  "/best/receipt-scanning-software-pricing": "2026-10-18",
   "/best/crm-for-freelancers": "2026-10-10",
   "/best/invoicing-software": "2026-10-10",
   "/best/multi-currency-invoicing": "2026-10-18",
