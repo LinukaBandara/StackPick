@@ -36,6 +36,7 @@
 - [Best Help Desk Software for Small Business](/best/help-desk-software) (Operations): Help Scout, Freshdesk, Zoho Desk, Gorgias
 - [Best E-Signature Software for Small Business](/best/esignature-software) (Operations): DocuSign, PandaDoc, Dropbox Sign, SignWell
 - [Best Time Tracking Software for Freelancers & Small Teams](/best/time-tracking-software) (Productivity): Toggl Track, Clockify, Harvest, Hubstaff
+- [Time Tracking Software Pricing](/best/time-tracking-software-pricing) (Productivity): Compare Clockify, Toggl Track and Harvest seat costs, free-plan limits and usage charges.
 - [Best Web Hosting for Small Business](/best/web-hosting) (Infrastructure): Hostinger, SiteGround, Bluehost, Cloudways
 - [Best Business Phone System (VoIP) for Small Business](/best/business-phone-voip) (Operations): Nextiva, RingCentral, Ooma, Grasshopper
 - [Best Live Chat Software for Small Business Websites](/best/live-chat-software) (Sales): Tidio, Crisp, Intercom, Tawk.to
