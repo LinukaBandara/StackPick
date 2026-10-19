@@ -109,6 +109,7 @@
 - [ChatGPT vs Claude for Freelancers](/best/chatgpt-vs-claude-for-freelancers) (Productivity): Compare general-purpose AI assistants for proposals, long briefs, free usage limits and client-safe workflows.
 - [AI Writing Tools for Small Businesses](/best/ai-writing-tools-small-businesses) (Marketing): Compare drafting and editing workflows while keeping fact-checking and human review in place.
 - [AI Meeting Assistants](/best/ai-meeting-assistants) (Productivity): Evaluate meeting notes, summaries, consent, integrations and how recordings are handled.
+- [AI Meeting Assistant Pricing](/best/ai-meeting-assistant-pricing) (Productivity): Compare Otter, Fireflies and Fathom pricing, free plan caps, team costs and privacy considerations.
 - [AI Meeting Assistant Pricing](/best/ai-meeting-assistant-pricing) (Productivity): Compare Fathom, Fireflies, Otter and Granola prices, free-plan limits, recording capture and privacy controls.
 - [AI Customer Support Tools](/best/ai-customer-support-tools) (Operations): Compare support automation by handoff quality, knowledge sources and escalation controls.
 - [AI Productivity Tools for Freelancers](/best/ai-productivity-tools-freelancers) (Productivity): Identify useful automations for planning and admin while checking output quality and privacy.
