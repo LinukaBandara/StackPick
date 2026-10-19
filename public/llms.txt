@@ -37,6 +37,7 @@
 - [Best Web Hosting for Small Business](/best/web-hosting) (Infrastructure): Hostinger, SiteGround, Bluehost, Cloudways
 - [Best Business Phone System (VoIP) for Small Business](/best/business-phone-voip) (Operations): Nextiva, RingCentral, Ooma, Grasshopper
 - [Best Live Chat Software for Small Business Websites](/best/live-chat-software) (Sales): Tidio, Crisp, Intercom, Tawk.to
+- [Live Chat Software Pricing](/best/live-chat-software-pricing) (Sales): Compare Tidio, Intercom and tawk.to pricing, conversation quotas, seats, AI outcome charges and branding costs.
 - [Best Antivirus & Endpoint Security for Small Business](/best/antivirus-endpoint-security) (Security): Bitdefender GravityZone, Microsoft Defender for Endpoint, Norton Small Business, CrowdStrike
 - [Best HR Software for Small Business](/best/hr-software) (People): BambooHR, Gusto, Rippling, Deel
 - [Best Survey & Customer Feedback (NPS) Software for Small Business](/best/survey-nps-software) (Marketing): SurveyMonkey, Delighted, Zoho Survey
