@@ -115,6 +115,7 @@ const ROUTES = [
   "/best/chatgpt-vs-claude-for-freelancers",
   "/best/ai-writing-tools-small-businesses",
   "/best/ai-meeting-assistants",
+  "/best/ai-meeting-assistant-pricing",
   "/best/ai-customer-support-tools",
   "/best/ai-productivity-tools-freelancers",
   "/best/ai-tools-marketing-small-businesses",
