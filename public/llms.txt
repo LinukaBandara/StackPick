@@ -19,6 +19,7 @@
 - [Best Expense Management Software for Small Business](/best/expense-management-software) (Finance): Expensify, Ramp, Zoho Expense
 - [Best CRM Software for Freelancers & Small Teams](/best/crm-software) (Sales): HubSpot, Pipedrive, Zoho CRM, Notion
 - [Best Email Marketing Software for Small Business](/best/email-marketing-software) (Marketing): Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit
+- [Email Marketing Software Pricing](/best/email-marketing-software-pricing) (Marketing): Compare Mailchimp, Brevo, MailerLite and Kit pricing, contact and send limits, free tiers and automation costs.
 - [Best Social Media Scheduling Tool for Small Business](/best/social-media-scheduling) (Marketing): Buffer, Hootsuite, Later
 - [Best Project Management Software for Small Teams](/best/project-management-software) (Productivity): Trello, Asana, ClickUp, monday.com
 - [Best Website Builder for Small Business](/best/website-builders) (Marketing): Squarespace, Wix, Shopify, Webflow
