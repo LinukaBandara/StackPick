@@ -34,6 +34,7 @@ const ARTICLES = [
   { href: "/best/project-management-software", title: "Best Project Management Software for Small Teams", desc: "Trello, Asana, ClickUp, monday.com", category: "Productivity" },
   { href: "/best/website-builders", title: "Best Website Builder for Small Business", desc: "Squarespace, Wix, Shopify, Webflow", category: "Marketing" },
   { href: "/best/appointment-scheduling-software", title: "Best Appointment Scheduling Software for Small Business", desc: "Calendly, Acuity Scheduling, Cal.com", category: "Operations" },
+  { href: "/best/appointment-scheduling-software-pricing", title: "Appointment Scheduling Software Pricing", desc: "Compare per-user and per-calendar costs, free plans, reminders and team scheduling.", category: "Operations" },
   { href: "/best/form-builders", title: "Best Form Builder for Small Business", desc: "Google Forms, Typeform, Jotform", category: "Productivity" },
   { href: "/best/cloud-storage", title: "Best Cloud Storage for Small Business Teams", desc: "Google Drive, Dropbox, Microsoft OneDrive", category: "Security" },
   { href: "/best/inventory-management-software", title: "Best Inventory Management Software for Small Business", desc: "Zoho Inventory, Sortly, Square for Retail, inFlow", category: "Operations" },
