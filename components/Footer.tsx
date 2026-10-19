@@ -20,6 +20,7 @@ const EXPLORE_LINKS = [
 
 const COMPANY_LINKS = [
   { href: "/about", label: "About StackPick" },
+  { href: "/how-we-verify", label: "How we verify" },
   { href: "/contact", label: "Contact" },
   { href: "/affiliate-disclosure", label: "Affiliate disclosure" },
   { href: "/privacy", label: "Privacy" },
@@ -66,15 +67,15 @@ export default function Footer() {
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
             <CookieSettingsButton />
             <p>
-            Made by{" "}
-            <a
-              href="https://ark-ii.studio/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#1d1d1f] hover:text-[#001D39] font-medium transition-colors"
-            >
-              ARK II Studio
-            </a>
+              Made by{" "}
+              <a
+                href="https://ark-ii.studio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#1d1d1f] hover:text-[#001D39] font-medium transition-colors"
+              >
+                ARK II Studio
+              </a>
             </p>
           </div>
         </div>
