@@ -22,6 +22,7 @@
 - [Best Social Media Scheduling Tool for Small Business](/best/social-media-scheduling) (Marketing): Buffer, Hootsuite, Later
 - [Best Project Management Software for Small Teams](/best/project-management-software) (Productivity): Trello, Asana, ClickUp, monday.com
 - [Best Website Builder for Small Business](/best/website-builders) (Marketing): Squarespace, Wix, Shopify, Webflow
+- [Website Builder Pricing](/best/website-builder-pricing) (Marketing): Compare Wix, Squarespace, Shopify and Webflow prices, annual commitments, CMS and ecommerce plan limits.
 - [Best Appointment Scheduling Software for Small Business](/best/appointment-scheduling-software) (Operations): Calendly, Acuity Scheduling, Cal.com
 - [Best Form Builder for Small Business](/best/form-builders) (Productivity): Google Forms, Typeform, Jotform
 - [Best Cloud Storage for Small Business Teams](/best/cloud-storage) (Security): Google Drive, Dropbox, Microsoft OneDrive

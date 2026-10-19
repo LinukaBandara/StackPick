@@ -21,6 +21,7 @@ const ROUTES = [
   "/best/social-media-scheduling",
   "/best/project-management-software",
   "/best/website-builders",
+  "/best/website-builder-pricing",
   "/best/website-builder-for-small-businesses",
   "/best/appointment-scheduling-software",
   "/best/form-builders",
