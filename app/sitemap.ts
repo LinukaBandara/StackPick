@@ -17,6 +17,7 @@ const ROUTES = [
   "/best/expense-management-software",
   "/best/crm-software",
   "/best/crm-software-pricing",
+  "/best/live-chat-software-pricing",
   "/best/email-marketing-software",
   "/best/social-media-scheduling",
   "/best/project-management-software",
