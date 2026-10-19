@@ -23,6 +23,7 @@ const GUIDES = [
   { title: "n8n Workflow Examples", desc: "Practical automation patterns to help decide what is worth connecting.", href: "/best/n8n-workflow-examples", category: "Automation" },
   { title: "Developer Tools for GitHub Workflows", desc: "Compare tools that support everyday repository and collaboration work.", href: "/best/github-tools-for-developers", category: "Development" },
   { title: "Best Accounting Software for Small Business", desc: "Compare bookkeeping, bank reconciliation, reports, and accountant access.", href: "/best/accounting-software", category: "Finance" },
+  { title: "Best Accounting Software for Contractors", desc: "Evaluate job costing, estimates, labor and material costs, progress billing and specialist construction needs.", href: "/best/accounting-software-for-contractors", category: "Finance" },
   { title: "Best Help Desk Software for Small Business", desc: "Compare ticketing, automation, team limits, and support workflows.", href: "/best/help-desk-software", category: "Operations" },
 ];
 
