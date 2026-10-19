@@ -86,9 +86,8 @@ export default function Page() {
           <h2 className="text-xl font-semibold">Related StackPick guides</h2>
           <ul className="mt-4 space-y-2 text-[#001D39]">
             <li><Link className="underline" href="/best/email-marketing-software">Best email marketing software for small business</Link></li>
-            <li><Link className="underline" href="/best/business-email-hosting-pricing">Business email hosting pricing</Link></li>
             <li><Link className="underline" href="/best/crm-software-pricing">CRM software pricing</Link></li>
-            <li><Link className="underline" href="/best/website-builder-pricing">Website builder pricing</Link></li>
+            <li><Link className="underline" href="/best/website-builders">Best website builders</Link></li>
           </ul>
         </section>
         <p className="mt-8 text-xs leading-relaxed text-[#6e6e73]">Editorial comparison of official vendor pricing checked October 19, 2026. Prices and plan packaging can change; verify your contact count, sending allowance, billing term and renewal price on the official pricing page before purchase.</p>
