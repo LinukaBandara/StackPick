@@ -84,7 +84,7 @@ export default function Page() {
           <h2 className="text-xl font-semibold">Related StackPick guides</h2>
           <ul className="mt-4 space-y-2 text-[#001D39]">
             <li><Link className="underline" href="/best/form-builders">Best form builder guide</Link></li>
-            <li><Link className="underline" href="/best/appointment-scheduling-software"href="/best/appointment-scheduling-software">Appointment scheduling software</Link></li>
+            <li><Link className="underline" href="/best/appointment-scheduling-software">Appointment scheduling software</Link></li>
             <li><Link className="underline" href="/best/crm-software-pricing">CRM software pricing</Link></li>
           </ul>
         </section>
