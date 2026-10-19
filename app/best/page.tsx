@@ -25,6 +25,7 @@ const ARTICLES = [
   { href: "/best/invoicing-software", title: "Best Invoicing Software for Freelancers", desc: "Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks", category: "Finance" },
   { href: "/best/multi-currency-invoicing", title: "Best Multi-Currency Invoicing Software", desc: "Compare foreign-currency invoices, exchange rates, payment collection and accounting trade-offs.", category: "Finance" },
   { href: "/best/accounting-software", title: "Best Accounting Software for Small Business", desc: "Xero, QuickBooks, Wave, Zoho Books", category: "Finance" },
+  { href: "/best/accounting-software-cost", title: "Small-Business Accounting Software Cost", desc: "Compare standard monthly list prices, free-plan limits and common upgrade triggers.", category: "Finance" },
   { href: "/best/payroll-software", title: "Best Payroll Software for Small Business", desc: "Gusto, QuickBooks Payroll, OnPay, Patriot Software", category: "People" },
   { href: "/best/expense-management-software", title: "Best Expense Management Software for Small Business", desc: "Expensify, Ramp, Zoho Expense", category: "Finance" },
   { href: "/best/crm-software", title: "Best CRM Software for Freelancers & Small Teams", desc: "HubSpot, Pipedrive, Zoho CRM, Notion", category: "Sales" },
