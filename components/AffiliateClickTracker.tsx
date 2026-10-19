@@ -19,17 +19,15 @@ declare global {
  *
  * GA4 is injected by CookieConsent only after analytics consent, so this
  * component does not load analytics or store its own tracking identifiers.
- * Mark a link with data-affiliate="true" (and rel="sponsored nofollow"
- * where appropriate) only after the affiliate relationship is active.
+ * Mark a link with data-affiliate="true" only after the affiliate relationship
+ * is active. A rel="sponsored" attribute alone is not enough to track a link.
  */
 export default function AffiliateClickTracker() {
   useEffect(() => {
     function handleClick(event: MouseEvent) {
       if (!(event.target instanceof Element)) return;
 
-      const link = event.target.closest<HTMLAnchorElement>(
-        'a[data-affiliate="true"], a[rel~="sponsored"]'
-      );
+      const link = event.target.closest<HTMLAnchorElement>('a[data-affiliate="true"]');
       if (!link || !link.href) return;
 
       let destination: URL;
