@@ -11,6 +11,7 @@ const ROUTES = [
   "/guides",
   "/software",
   "/best/invoicing-software",
+  "/best/invoice-payment-processing-fees",
   "/best/multi-currency-invoicing",
   "/best/accounting-software",
   "/best/payroll-software",
@@ -136,6 +137,7 @@ const ROUTES = [
 const LAST_MODIFIED: Record<string, string> = {
   "/best/crm-for-freelancers": "2026-10-10",
   "/best/invoicing-software": "2026-10-10",
+  "/best/invoice-payment-processing-fees": "2026-10-18",
   "/best/multi-currency-invoicing": "2026-10-18",
   "/best/ai-meeting-assistants": "2026-10-09",
   "/best/web-hosting": "2026-10-14",
