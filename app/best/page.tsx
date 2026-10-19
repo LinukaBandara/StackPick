@@ -48,6 +48,7 @@ const ARTICLES = [
   { href: "/best/web-hosting", title: "Best Web Hosting for Small Business", desc: "Hostinger, SiteGround, Bluehost, Cloudways, Kinsta", category: "Infrastructure" },
   { href: "/best/business-phone-voip", title: "Best Business Phone System (VoIP) for Small Business", desc: "Nextiva, RingCentral, Ooma, Grasshopper", category: "Operations" },
   { href: "/best/live-chat-software", title: "Best Live Chat Software for Small Business Websites", desc: "Tidio, Crisp, Intercom, Tawk.to", category: "Sales" },
+  { href: "/best/live-chat-software-pricing", title: "Live Chat Software Pricing", desc: "Compare free chat widgets, conversation quotas, agent seats and AI outcome fees.", category: "Sales" },
   { href: "/best/antivirus-endpoint-security", title: "Best Antivirus & Endpoint Security for Small Business", desc: "Bitdefender GravityZone, Microsoft Defender for Endpoint, Norton Small Business, CrowdStrike", category: "Security" },
   { href: "/best/hr-software", title: "Best HR Software for Small Business", desc: "BambooHR, Gusto, Rippling, Deel", category: "People" },
   { href: "/best/survey-nps-software", title: "Best Survey & Customer Feedback (NPS) Software for Small Business", desc: "SurveyMonkey, Delighted, Zoho Survey", category: "Marketing" },
