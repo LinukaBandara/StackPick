@@ -24,6 +24,7 @@ const ROUTES = [
   "/best/website-builder-for-small-businesses",
   "/best/appointment-scheduling-software",
   "/best/form-builders",
+  "/best/online-form-builder-pricing",
   "/best/cloud-storage",
   "/best/inventory-management-software",
   "/best/pos-systems",

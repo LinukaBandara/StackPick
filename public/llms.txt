@@ -24,6 +24,7 @@
 - [Best Website Builder for Small Business](/best/website-builders) (Marketing): Squarespace, Wix, Shopify, Webflow
 - [Best Appointment Scheduling Software for Small Business](/best/appointment-scheduling-software) (Operations): Calendly, Acuity Scheduling, Cal.com
 - [Best Form Builder for Small Business](/best/form-builders) (Productivity): Google Forms, Typeform, Jotform
+- [Online Form Builder Pricing](/best/online-form-builder-pricing) (Productivity): Compare Typeform, Jotform and Fillout prices, response limits, branding and team seats.
 - [Best Cloud Storage for Small Business Teams](/best/cloud-storage) (Security): Google Drive, Dropbox, Microsoft OneDrive
 - [Best Inventory Management Software for Small Business](/best/inventory-management-software) (Operations): Zoho Inventory, Sortly, Square for Retail, inFlow
 - [Best POS System for Small Business](/best/pos-systems) (Finance): Square, Toast, Clover, Shopify POS
