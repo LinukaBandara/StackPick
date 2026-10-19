@@ -83,8 +83,8 @@ export default function Page() {
         <section className="mt-12 rounded-2xl bg-[#f5f5f7] p-6 sm:p-8">
           <h2 className="text-xl font-semibold">Related StackPick guides</h2>
           <ul className="mt-4 space-y-2 text-[#001D39]">
-            <li><Link className="underline" href="/best/email-marketing-software">Email marketing software</Link></li>
-            <li><Link className="underline" href="/best/appointment-scheduling-software">Appointment scheduling software</Link></li>
+            <li><Link className="underline" href="/best/form-builders">Best form builder guide</Link></li>
+            <li><Link className="underline" href="/best/appointment-scheduling-software"href="/best/appointment-scheduling-software">Appointment scheduling software</Link></li>
             <li><Link className="underline" href="/best/crm-software-pricing">CRM software pricing</Link></li>
           </ul>
         </section>
