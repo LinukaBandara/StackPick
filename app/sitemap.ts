@@ -37,6 +37,7 @@ const ROUTES = [
   "/best/web-hosting",
   "/best/business-phone-voip",
   "/best/live-chat-software",
+  "/best/live-chat-software-pricing",
   "/best/antivirus-endpoint-security",
   "/best/hr-software",
   "/best/survey-nps-software",
