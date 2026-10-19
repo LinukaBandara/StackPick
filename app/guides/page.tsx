@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 };
 
 const GUIDES = [
+  { title: "Live Chat Software Pricing", desc: "Compare Tidio, Crisp, Zoho SalesIQ and Intercom, including AI usage fees and seat limits.", href: "/best/live-chat-software-pricing", category: "Customer Support" },
   { title: "Best Invoicing Software for Freelancers", desc: "Compare invoice creation, reminders, payment collection, and client workflows.", href: "/best/invoicing-software", category: "Finance" },
   { title: "Best Multi-Currency Invoicing Software", desc: "Compare foreign-currency invoices, exchange rates, payment collection and accounting trade-offs.", href: "/best/multi-currency-invoicing", category: "Finance" },
   { title: "Best Free CRM Software", desc: "Check contact, user, and automation limits before committing to a free plan.", href: "/best/free-crm-software", category: "Sales" },
