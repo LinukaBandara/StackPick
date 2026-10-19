@@ -49,6 +49,7 @@
 - [Best Applicant Tracking System (ATS) for Small Business](/best/applicant-tracking-software) (People): Breezy HR, Zoho Recruit, Workable, Greenhouse
 - [Best Employee Scheduling Software for Small Business](/best/employee-scheduling-software) (People): When I Work, Deputy, Connecteam, 7shifts
 - [Best Business Email Hosting for Small Business](/best/business-email-hosting) (Infrastructure): Google Workspace, Microsoft 365, Zoho Mail, Proton Mail
+- [Business Email Hosting Pricing](/best/business-email-hosting-pricing) (Infrastructure): Compare published mailbox costs, annual commitments, storage and productivity-suite bundles.
 - [Best CRM for Freelancers](/best/crm-for-freelancers) (Sales): Track leads, client conversations and follow-ups without creating a heavy sales process.
 - [Best CRM for Small Businesses](/best/crm-for-small-businesses) (Sales): Compare customer-management tools by team fit, pipeline visibility and everyday administration.
 - [Best Free CRM Software](/best/free-crm-software) (Sales): Understand the limits that matter in free CRM plans, including users, contacts and automation.
