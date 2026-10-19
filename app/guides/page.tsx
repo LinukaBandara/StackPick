@@ -22,6 +22,7 @@ const GUIDES = [
   { title: "Developer Tools for GitHub Workflows", desc: "Compare tools that support everyday repository and collaboration work.", href: "/best/github-tools-for-developers", category: "Development" },
   { title: "Best Accounting Software for Small Business", desc: "Compare bookkeeping, bank reconciliation, reports, and accountant access.", href: "/best/accounting-software", category: "Finance" },
   { title: "Best Help Desk Software for Small Business", desc: "Compare ticketing, automation, team limits, and support workflows.", href: "/best/help-desk-software", category: "Operations" },
+  { title: "Live Chat Software Pricing", desc: "Compare free widgets, agent seats, billable conversations and AI support charges.", href: "/best/live-chat-software-pricing", category: "Sales" },
 ];
 
 export default function GuidesPage() {
