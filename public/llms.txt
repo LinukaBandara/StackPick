@@ -35,6 +35,7 @@
 - [Best Password Manager for Business Teams](/best/password-managers) (Security): 1Password, Bitwarden, Keeper, NordPass
 - [Best Help Desk Software for Small Business](/best/help-desk-software) (Operations): Help Scout, Freshdesk, Zoho Desk, Gorgias
 - [Best E-Signature Software for Small Business](/best/esignature-software) (Operations): DocuSign, PandaDoc, Dropbox Sign, SignWell
+- [E-Signature Software Pricing](/best/esignature-software-pricing) (Operations): Compare DocuSign, Dropbox Sign, PandaDoc and SignWell pricing, document caps and sender-seat costs.
 - [Best Time Tracking Software for Freelancers & Small Teams](/best/time-tracking-software) (Productivity): Toggl Track, Clockify, Harvest, Hubstaff
 - [Best Web Hosting for Small Business](/best/web-hosting) (Infrastructure): Hostinger, SiteGround, Bluehost, Cloudways
 - [Best Business Phone System (VoIP) for Small Business](/best/business-phone-voip) (Operations): Nextiva, RingCentral, Ooma, Grasshopper
