@@ -14,6 +14,7 @@ const GUIDES = [
   { title: "CRM Software Pricing for Small Teams", desc: "Compare published per-seat rates, five- and fifteen-user costs, and upgrade traps.", href: "/best/crm-software-pricing", category: "Sales" },
   { title: "Best Project Management for Small Teams", desc: "Find a practical way to coordinate tasks, owners, and deadlines.", href: "/best/project-management-software", category: "Productivity" },
   { title: "Best Free Website Builders", desc: "Understand branding, domain, storage, and publishing restrictions.", href: "/best/free-website-builders", category: "Marketing" },
+  { title: "Email Marketing Software Pricing", desc: "Compare Mailchimp, Brevo, MailerLite and Kit pricing by subscribers, sends and automation needs.", href: "/best/email-marketing-software-pricing", category: "Marketing" },
   { title: "Best Scheduling Software for Small Businesses", desc: "Compare bookings, reminders, staff calendars, and client self-service.", href: "/best/appointment-scheduling-software", category: "Operations" },
   { title: "Best Business VPN for Remote Teams", desc: "Compare secure access options for distributed teams and small businesses.", href: "/best/business-vpn", category: "Security" },
   { title: "Best AI Coding Assistants", desc: "Compare coding assistants by workflow, IDE fit, and practical limitations.", href: "/best/ai-coding-assistants", category: "Development" },
