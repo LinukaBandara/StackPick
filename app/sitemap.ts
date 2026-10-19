@@ -23,6 +23,7 @@ const ROUTES = [
   "/best/website-builders",
   "/best/website-builder-for-small-businesses",
   "/best/appointment-scheduling-software",
+  "/best/appointment-scheduling-software-pricing",
   "/best/form-builders",
   "/best/online-form-builder-pricing",
   "/best/cloud-storage",

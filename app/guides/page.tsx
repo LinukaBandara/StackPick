@@ -17,6 +17,7 @@ const GUIDES = [
   { title: "Best Free Website Builders", desc: "Understand branding, domain, storage, and publishing restrictions.", href: "/best/free-website-builders", category: "Marketing" },
   { title: "Online Form Builder Pricing", desc: "Compare Typeform, Jotform and Fillout pricing, response allowances and branding limits.", href: "/best/online-form-builder-pricing", category: "Productivity" },
   { title: "Best Scheduling Software for Small Businesses", desc: "Compare bookings, reminders, staff calendars, and client self-service.", href: "/best/appointment-scheduling-software", category: "Operations" },
+  { title: "Appointment Scheduling Software Pricing", desc: "Compare Calendly, Acuity and Cal.com pricing, plan limits and team costs.", href: "/best/appointment-scheduling-software-pricing", category: "Operations" },
   { title: "Best Business VPN for Remote Teams", desc: "Compare secure access options for distributed teams and small businesses.", href: "/best/business-vpn", category: "Security" },
   { title: "Best AI Coding Assistants", desc: "Compare coding assistants by workflow, IDE fit, and practical limitations.", href: "/best/ai-coding-assistants", category: "Development" },
   { title: "AI Tools for React and Next.js", desc: "Explore developer tools that fit common React and Next.js workflows.", href: "/best/ai-tools-react-nextjs", category: "Development" },
