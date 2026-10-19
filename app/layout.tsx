@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackNavigation from "@/components/BackNavigation";
 import CookieConsent from "@/components/CookieConsent";
+import AffiliateClickTracker from "@/components/AffiliateClickTracker";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.tech";
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <BackNavigation />
         <main id="main">{children}</main>
         <Footer />
+        <AffiliateClickTracker />
         <CookieConsent />
       </body>
     </html>
