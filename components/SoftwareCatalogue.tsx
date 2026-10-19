@@ -84,6 +84,7 @@ export default function SoftwareCatalogue({ software }: Props) {
               <ProductScreenshot
                 src={item.productImage.src}
                 alt={item.productImage.alt}
+                fallbackHref={item.officialUrl}
                 className="border-b border-black/[0.06]"
               />
               <div className="flex flex-1 flex-col p-5 sm:p-6">
