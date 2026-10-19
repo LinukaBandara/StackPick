@@ -84,7 +84,6 @@ export default function Page() {
           <ul className="mt-4 space-y-2 text-[#001D39]">
             <li><Link className="underline" href="/best/website-builders">Best website builders for small business</Link></li>
             <li><Link className="underline" href="/best/free-website-builders">Best free website builders</Link></li>
-            <li><Link className="underline" href="/best/business-email-hosting-pricing">Business email hosting pricing</Link></li>
           </ul>
         </section>
         <p className="mt-8 text-xs leading-relaxed text-[#6e6e73]">Editorial comparison of published US prices checked October 19, 2026. Prices and feature packaging change; confirm current billing, renewal price, country availability and plan limits on the official vendor pricing pages before purchase.</p>
