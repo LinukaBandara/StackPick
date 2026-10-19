@@ -120,6 +120,8 @@ const ARTICLES = [
   { href: "/best/chatgpt-vs-claude-for-freelancers", title: "ChatGPT vs Claude for Freelancers", desc: "Compare the assistants on proposal writing, long briefs, free usage and review effort.", category: "Productivity" },
   { href: "/best/ai-writing-tools-small-businesses", title: "AI Writing Tools for Small Businesses", desc: "Compare drafting and editing workflows while keeping fact-checking and human review in place.", category: "Marketing" },
   { href: "/best/ai-meeting-assistants", title: "AI Meeting Assistants", desc: "Evaluate meeting notes, summaries, consent, integrations and how recordings are handled.", category: "Productivity" },
+  { href: "/best/ai-meeting-assistant-pricing", title: "AI Meeting Assistant Pricing", desc: "Compare Otter, Fireflies and Fathom pricing, free plan caps and team costs.", category: "Productivity" },
+  { href: "/best/ai-meeting-assistant-pricing", title: "AI Meeting Assistant Pricing", desc: "Compare free limits, transcription caps, team seats and privacy controls.", category: "Productivity" },
   { href: "/best/ai-customer-support-tools", title: "AI Customer Support Tools", desc: "Compare support automation by handoff quality, knowledge sources and escalation controls.", category: "Operations" },
   { href: "/best/ai-productivity-tools-freelancers", title: "AI Productivity Tools for Freelancers", desc: "Identify useful automations for planning and admin while checking output quality and privacy.", category: "Productivity" },
   { href: "/best/ai-tools-marketing-small-businesses", title: "AI Marketing Tools for Small Businesses", desc: "Compare AI-assisted campaign workflows with brand review, accuracy and approval steps.", category: "Marketing" },
