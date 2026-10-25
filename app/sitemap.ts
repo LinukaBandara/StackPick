@@ -27,6 +27,7 @@ const ROUTES = [
   "/best/mailerlite-pricing",
   "/best/social-media-scheduling",
   "/best/project-management-software",
+  "/best/monday-com-pricing",
   "/best/website-builders",
   "/best/website-builder-for-small-businesses",
   "/best/appointment-scheduling-software",
@@ -140,6 +141,7 @@ const ROUTES = [
 // because deploying unrelated changes should not make every URL look freshly updated.
 const LAST_MODIFIED: Record<string, string> = {
   "/software-finder": "2026-10-17",
+  "/best/monday-com-pricing": "2026-10-25",
   "/how-we-verify": "2026-10-17",
   "/best/jotform-pricing": "2026-10-17",
   "/best/systeme-io-pricing": "2026-10-17",
