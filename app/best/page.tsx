@@ -35,6 +35,7 @@ const ARTICLES = [
   { href: "/best/mailerlite-pricing", title: "MailerLite Pricing and 2026 Free Plan Changes", desc: "250-subscriber cap, monthly sends, automation limits and paid tiers.", category: "Marketing" },
   { href: "/best/social-media-scheduling", title: "Best Social Media Scheduling Tool for Small Business", desc: "Buffer, Hootsuite, Later", category: "Marketing" },
   { href: "/best/project-management-software", title: "Best Project Management Software for Small Teams", desc: "Trello, Asana, ClickUp, monday.com", category: "Productivity" },
+  { href: "/best/monday-com-pricing", title: "monday.com Pricing and Seat Bundle Limits", desc: "Understand free-plan caps, seat bundles, billing cycles and upgrade triggers.", category: "Productivity" },
   { href: "/best/website-builders", title: "Best Website Builder for Small Business", desc: "Squarespace, Wix, Shopify, Webflow", category: "Marketing" },
   { href: "/best/webflow-pricing", title: "Webflow Pricing: Site vs Workspace Plans", desc: "Separate hosting, publishing, collaboration and ecommerce costs.", category: "Marketing" },
   { href: "/best/appointment-scheduling-software", title: "Best Appointment Scheduling Software for Small Business", desc: "Calendly, Acuity Scheduling, Cal.com", category: "Operations" },
