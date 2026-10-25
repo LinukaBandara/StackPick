@@ -39,6 +39,7 @@ const ARTICLES = [
   { href: "/best/website-builders", title: "Best Website Builder for Small Business", desc: "Squarespace, Wix, Shopify, Webflow", category: "Marketing" },
   { href: "/best/webflow-pricing", title: "Webflow Pricing: Site vs Workspace Plans", desc: "Separate hosting, publishing, collaboration and ecommerce costs.", category: "Marketing" },
   { href: "/best/appointment-scheduling-software", title: "Best Appointment Scheduling Software for Small Business", desc: "Calendly, Acuity Scheduling, Cal.com", category: "Operations" },
+  { href: "/best/jotform-alternatives", title: "Best Jotform Alternatives", desc: "Compare form builders by response limits, design, integrations and workflow.", category: "Forms" },
   { href: "/best/form-builders", title: "Best Form Builder for Small Business", desc: "Google Forms, Typeform, Jotform", category: "Productivity" },
   { href: "/best/cloud-storage", title: "Best Cloud Storage for Small Business Teams", desc: "Google Drive, Dropbox, Microsoft OneDrive", category: "Security" },
   { href: "/best/inventory-management-software", title: "Best Inventory Management Software for Small Business", desc: "Zoho Inventory, Sortly, Square for Retail, inFlow", category: "Operations" },
