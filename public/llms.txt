@@ -3,6 +3,8 @@
 > Independent, practical software guides for freelancers and small businesses. We focus on fit, workflow, limitations and trade-offs rather than feature counts alone. Vendor links currently go directly to the vendors; StackPick does not currently earn affiliate commissions from those links. Google Analytics is configured. Display ads are not currently served.
 
 ## Start here
+- [Software Finder](/software-finder): narrow software options by job, budget preference and business type.
+- [How StackPick Verifies Software Information](/how-we-verify): editorial standards for sources, plan facts, testing claims and affiliate disclosures.
 - [StackPick homepage](/): overview of the publication and its approach.
 - [All software guides](/best): searchable, category-filtered directory of software comparisons and practical guides.
 - [About StackPick](/about): editorial approach and scope.
@@ -20,6 +22,7 @@
 - [Best Email Marketing Software for Small Business](/best/email-marketing-software) (Marketing): Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit
 - [Best Social Media Scheduling Tool for Small Business](/best/social-media-scheduling) (Marketing): Buffer, Hootsuite, Later
 - [Best Project Management Software for Small Teams](/best/project-management-software) (Productivity): Trello, Asana, ClickUp, monday.com
+- [monday.com Pricing and Seat Bundle Limits](/best/monday-com-pricing) (Productivity): Understand the free-plan caps, paid seat bundles, billing cycles and product-specific plan differences.
 - [Best Website Builder for Small Business](/best/website-builders) (Marketing): Squarespace, Wix, Shopify, Webflow
 - [Best Appointment Scheduling Software for Small Business](/best/appointment-scheduling-software) (Operations): Calendly, Acuity Scheduling, Cal.com
 - [Best Form Builder for Small Business](/best/form-builders) (Productivity): Google Forms, Typeform, Jotform
