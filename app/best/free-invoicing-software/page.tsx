@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
+import SoftwareLogo from "@/components/SoftwareLogo";
 
 export const metadata: Metadata = {
   title: "Best Free Invoicing Software in 2026",
@@ -7,6 +9,13 @@ export const metadata: Metadata = {
     "Compare free invoicing software for US freelancers and small businesses. Client limits, payment processing fees, recurring billing, exports and upgrade gates.",
   alternates: { canonical: "/best/free-invoicing-software" },
 };
+
+const INVOICE_PROFILES = [
+  { name: "Wave", url: "https://www.waveapps.com/", href: "/software/wave", note: "Free invoicing plus basic bookkeeping for eligible US businesses" },
+  { name: "Zoho Invoice", url: "https://www.zoho.com/us/invoice/", href: "https://www.zoho.com/us/invoice/", note: "Dedicated free invoicing workflow for freelancers" },
+  { name: "Invoice Ninja", url: "https://invoiceninja.com/", href: "https://invoiceninja.com/", note: "Flexible invoicing with free and self-hosted options" },
+  { name: "Square Invoices", url: "https://squareup.com/us/en/invoices", href: "https://squareup.com/us/en/invoices", note: "Unlimited free invoices tied to Square payments" },
+];
 
 export default function FreeInvoicingSoftwarePage() {
   return (
@@ -104,6 +113,32 @@ export default function FreeInvoicingSoftwarePage() {
           <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">
             Create one realistic invoice instead of judging a product from its marketing page. Add a line item, tax or discount if relevant, payment instructions and a client note. Preview it on a phone and inspect the payment flow. This exposes editing speed, professional output, required fields and free-tier limits that feature lists can hide.
           </p>
+
+          <div className="mt-10 rounded-[24px] border border-black/10 bg-[#f5f5f7] p-6 sm:p-8">
+            <p className="sp-eyebrow">Product profiles</p>
+            <h2 className="mt-3 text-xl font-semibold tracking-tight text-[#1d1d1f]">See the tools before you choose.</h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">
+              Open a dedicated profile for plan details, strengths, trade-offs and official pricing.
+            </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {INVOICE_PROFILES.map((profile) => (
+                <Link
+                  key={profile.name}
+                  href={profile.href}
+                  className="group rounded-2xl border border-black/10 bg-white p-4 transition hover:border-[#001D39]/35 hover:shadow-sm"
+                >
+                  <div className="flex items-center gap-3">
+                    <SoftwareLogo name={profile.name} url={profile.url} size="small" />
+                    <span className="text-sm font-semibold text-[#1d1d1f]">{profile.name}</span>
+                  </div>
+                  <p className="mt-3 text-xs leading-5 text-[#6e6e73]">{profile.note}</p>
+                  <span className="mt-4 inline-flex text-xs font-semibold text-[#001D39] group-hover:underline">
+                    View profile →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
 
           <h3 className="mt-12 text-2xl font-semibold tracking-tight">
             Official pricing and plan sources
