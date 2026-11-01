@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ComparisonArticle from "@/components/ComparisonArticle";
+import SoftwareLogo from "@/components/SoftwareLogo";
 
 export const metadata: Metadata = {
   title: "Best Free Project Management Software (2026)",
@@ -7,6 +9,13 @@ export const metadata: Metadata = {
     "Compare free project-management options for freelancers and small teams. Real limits on seats, projects, views, automation and when a paid plan becomes necessary.",
   alternates: { canonical: "/best/free-project-management-software" },
 };
+
+const FREE_PM_PROFILES = [
+  { name: "Trello", url: "https://trello.com/", href: "/software/trello", note: "Visual boards with a usable free tier" },
+  { name: "ClickUp", url: "https://clickup.com/", href: "https://clickup.com/", note: "Broad free workspace with multiple views" },
+  { name: "Asana", url: "https://asana.com/", href: "https://asana.com/", note: "Structured tasks for small free teams" },
+  { name: "Notion", url: "https://www.notion.com/", href: "https://www.notion.com/", note: "Docs plus task databases for solo users" },
+];
 
 export default function Page() {
   return (
@@ -100,6 +109,32 @@ export default function Page() {
           <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">
             Upgrade when a specific limitation is costing you time or putting delivery at risk — not because a feature list looks longer. Common triggers: you need more collaborators than the free plan allows, you rely on a view or automation that is locked, or you cannot reliably export your data.
           </p>
+
+          <div className="mt-10 rounded-[24px] border border-black/10 bg-[#f5f5f7] p-6 sm:p-8">
+            <p className="sp-eyebrow">Product profiles</p>
+            <h2 className="mt-3 text-xl font-semibold tracking-tight text-[#1d1d1f]">See the tools before you choose.</h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">
+              Open a dedicated profile for plan details, strengths, trade-offs and official pricing.
+            </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {FREE_PM_PROFILES.map((profile) => (
+                <Link
+                  key={profile.name}
+                  href={profile.href}
+                  className="group rounded-2xl border border-black/10 bg-white p-4 transition hover:border-[#001D39]/35 hover:shadow-sm"
+                >
+                  <div className="flex items-center gap-3">
+                    <SoftwareLogo name={profile.name} url={profile.url} size="small" />
+                    <span className="text-sm font-semibold text-[#1d1d1f]">{profile.name}</span>
+                  </div>
+                  <p className="mt-3 text-xs leading-5 text-[#6e6e73]">{profile.note}</p>
+                  <span className="mt-4 inline-flex text-xs font-semibold text-[#001D39] group-hover:underline">
+                    View profile →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </ComparisonArticle>
