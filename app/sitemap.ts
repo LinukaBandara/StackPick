@@ -120,7 +120,6 @@ const ROUTES = [
   "/best/ai-writing-tools-small-businesses",
   "/best/ai-meeting-assistants",
   "/best/ai-meeting-assistant-pricing",
-  "/best/ai-meeting-assistant-pricing",
   "/best/ai-customer-support-tools",
   "/best/ai-productivity-tools-freelancers",
   "/best/ai-tools-marketing-small-businesses",
@@ -149,12 +148,17 @@ const LAST_MODIFIED: Record<string, string> = {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [...new Set([...ROUTES, ...SOFTWARE_PROFILES.map((profile) => "/software/" + profile.slug)])];
-  return routes.map((path) => ({
-    url: `${SITE_URL}${path}`,
-    ...(LAST_MODIFIED[path]
-      ? { lastModified: new Date(`${LAST_MODIFIED[path]}T00:00:00.000Z`) }
-      : {}),
-    changeFrequency: "monthly",
-    priority: path === "/" ? 1 : path === "/best" ? 0.9 : 0.7,
-  }));
+  return routes.map((path) => {
+    const softwareProfile = SOFTWARE_PROFILES.find((profile) => path === `/software/${profile.slug}`);
+    return {
+      url: `${SITE_URL}${path}`,
+      ...(softwareProfile?.reviewedOn
+        ? { lastModified: new Date(softwareProfile.reviewedOn) }
+        : LAST_MODIFIED[path]
+          ? { lastModified: new Date(`${LAST_MODIFIED[path]}T00:00:00.000Z`) }
+          : {}),
+      changeFrequency: "monthly",
+      priority: path === "/" ? 1 : path === "/best" ? 0.9 : 0.7,
+    };
+  });
 }
