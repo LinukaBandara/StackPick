@@ -38,7 +38,6 @@ export default function SoftwareCatalogue({ software }: Props) {
   const filters = [
     { id: "all", label: "All software" },
     { id: "free", label: "Free option" },
-    ...categories.map((category) => ({ id: `category:${category}`, label: category })),
   ];
 
   return (
@@ -70,6 +69,18 @@ export default function SoftwareCatalogue({ software }: Props) {
               {item.label}
             </button>
           ))}
+          <label htmlFor="software-category-filter" className="sr-only">Filter by category</label>
+          <select
+            id="software-category-filter"
+            value={filter.startsWith("category:") ? filter : "all-categories"}
+            onChange={(event) => setFilter(event.target.value === "all-categories" ? "all" : event.target.value)}
+            className="min-w-0 max-w-full rounded-full border border-[#d2d2d7] bg-white px-4 py-2 text-xs font-semibold text-[#4b5563] outline-none transition focus:border-[#001D39] focus:ring-2 focus:ring-[#001D39]/10"
+          >
+            <option value="all-categories">Choose a category</option>
+            {categories.map((category) => (
+              <option key={category} value={`category:${category}`}>{category}</option>
+            ))}
+          </select>
           <span className="ml-auto px-1 text-xs text-[#6e6e73]">{filtered.length} {filtered.length === 1 ? "profile" : "profiles"}</span>
         </div>
       </div>
