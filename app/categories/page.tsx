@@ -8,16 +8,16 @@ export const metadata: Metadata = {
 };
 
 const CATEGORIES = [
-  { name: "Finance", number: "01", description: "Keep the numbers clear, from first invoice to month-end reporting.", examples: "Accounting · Invoicing · Expenses", href: "/best?category=Finance", count: "03 areas" },
-  { name: "Sales", number: "02", description: "Build stronger customer relationships and more predictable pipelines.", examples: "CRM · Live chat · Sales pipelines", href: "/best?category=Sales", count: "03 areas" },
-  { name: "Productivity", number: "03", description: "Bring projects, people, and everyday work into focus.", examples: "Project management · Time tracking · Meetings", href: "/best?category=Productivity", count: "03 areas" },
-  { name: "Operations", number: "04", description: "Make the moving parts of a small business work together.", examples: "Scheduling · Inventory · Support", href: "/best?category=Operations", count: "03 areas" },
-  { name: "Security", number: "05", description: "Protect company accounts, devices, and important information.", examples: "VPN · Password managers · Backup", href: "/best?category=Security", count: "03 areas" },
-  { name: "Marketing", number: "06", description: "Reach the right audience and build a more useful online presence.", examples: "Email · Websites · Social scheduling", href: "/best?category=Marketing", count: "03 areas" },
-  { name: "People", number: "07", description: "Support the people behind the work, from hiring to payroll.", examples: "Payroll · HR · Employee scheduling", href: "/best?category=People", count: "03 areas" },
-  { name: "Infrastructure", number: "08", description: "Choose dependable foundations for your business systems.", examples: "Hosting · Business email", href: "/best?category=Infrastructure", count: "02 areas" },
-  { name: "Development", number: "09", description: "Build, ship, and maintain software with a workflow that fits.", examples: "AI coding · GitHub · DevOps", href: "/best?category=Development", count: "03 areas" },
-  { name: "Automation", number: "10", description: "Connect the tools you already use and reduce repetitive work.", examples: "Workflow automation · AI agents", href: "/best?category=Automation", count: "02 areas" },
+  { name: "Finance", number: "01", description: "Keep the numbers clear, from first invoice to month-end reporting.", examples: "Accounting · Invoicing · Expenses", href: "/best?category=Finance" },
+  { name: "Sales", number: "02", description: "Build stronger customer relationships and more predictable pipelines.", examples: "CRM · Live chat · Sales pipelines", href: "/best?category=Sales" },
+  { name: "Productivity", number: "03", description: "Bring projects, people, and everyday work into focus.", examples: "Project management · Time tracking · Meetings", href: "/best?category=Productivity" },
+  { name: "Operations", number: "04", description: "Make the moving parts of a small business work together.", examples: "Scheduling · Inventory · Support", href: "/best?category=Operations" },
+  { name: "Security", number: "05", description: "Protect company accounts, devices, and important information.", examples: "VPN · Password managers · Backup", href: "/best?category=Security" },
+  { name: "Marketing", number: "06", description: "Reach the right audience and build a more useful online presence.", examples: "Email · Websites · Social scheduling", href: "/best?category=Marketing" },
+  { name: "People", number: "07", description: "Support the people behind the work, from hiring to payroll.", examples: "Payroll · HR · Employee scheduling", href: "/best?category=People" },
+  { name: "Infrastructure", number: "08", description: "Choose dependable foundations for your business systems.", examples: "Hosting · Business email", href: "/best?category=Infrastructure" },
+  { name: "Development", number: "09", description: "Build, ship, and maintain software with a workflow that fits.", examples: "AI coding · GitHub · DevOps", href: "/best?category=Development" },
+  { name: "Automation", number: "10", description: "Connect the tools you already use and reduce repetitive work.", examples: "Workflow automation · AI agents", href: "/best?category=Automation" },
 ];
 
 const POPULAR = [
@@ -74,7 +74,6 @@ export default function CategoriesPage() {
             <Link key={category.name} href={category.href} className="group flex min-h-[230px] flex-col rounded-[24px] border border-[#d2d2d7] bg-white p-6 transition-all duration-200 hover:-translate-y-1 hover:border-[#9aabba] hover:shadow-[0_18px_44px_rgba(0,29,57,0.08)] sm:p-7">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-semibold tracking-[0.14em] text-[#929299]">{category.number} / 10</span>
-                <span className="rounded-full bg-[#f5f5f7] px-3 py-1 text-[11px] font-medium text-[#6e6e73]">{category.count}</span>
               </div>
               <h3 className="mt-7 text-[21px] font-semibold tracking-[-0.035em] text-[#1d1d1f]">{category.name}</h3>
               <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{category.description}</p>
