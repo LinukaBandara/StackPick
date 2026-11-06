@@ -63,7 +63,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#1d1d1f]">{software.summary}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={software.officialUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#001D39] px-5 text-sm font-semibold text-white transition-opacity hover:opacity-90">Visit official website <ExternalArrow /></a>
-            <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm font-semibold text-[#001D39] transition-colors hover:bg-[#f9fafb]">Check official pricing <ArrowUpRight aria-hidden="true" className="ml-2 h-4 w-4" strokeWidth={2.2} /></a>
+            <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm font-semibold text-[#001D39] transition-colors hover:bg-[#f9fafb]">Check official pricing <ExternalArrow /></a>
           </div>
           <p className="mt-5 text-xs text-[#6e6e73]">Profile checked {software.reviewedOn}. Pricing and features can change; confirm details with the vendor.</p>
         </div>
