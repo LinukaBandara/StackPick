@@ -125,32 +125,36 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
             <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-semibold text-[#001D39] hover:underline">Verify pricing on the official site ↗</a>
           </section>
 
-          <section className="mt-12">
-            <h2 className="sp-title">Related StackPick comparisons</h2>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              {software.comparisons.map((item) => (
-                <Link key={item.href} href={item.href} className="rounded-2xl border border-black/10 p-5 transition-colors hover:border-[#001D39]/40">
-                  <span className="text-sm font-semibold text-[#1d1d1f]">{item.title}</span>
-                  <span className="mt-2 block text-sm text-[#001D39]">Read comparison →</span>
-                </Link>
-              ))}
-            </div>
-          </section>
+          {software.comparisons.length > 0 && (
+            <section className="mt-12">
+              <h2 className="sp-title">Related StackPick comparisons</h2>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                {software.comparisons.map((item) => (
+                  <Link key={item.href} href={item.href} className="rounded-2xl border border-black/10 p-5 transition-colors hover:border-[#001D39]/40">
+                    <span className="text-sm font-semibold text-[#1d1d1f]">{item.title}</span>
+                    <span className="mt-2 block text-sm text-[#001D39]">Read comparison →</span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
-          <section className="mt-12">
-            <h2 className="sp-title">Alternatives to explore</h2>
-            <div className="mt-5 space-y-3">
-              {software.alternatives.map((item) => (
-                <div key={item.name} className="rounded-2xl border border-black/10 p-5 sm:flex sm:items-start sm:justify-between sm:gap-6">
-                  <div>
-                    <h3 className="font-semibold text-[#1d1d1f]">{item.name}</h3>
-                    <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{item.reason}</p>
+          {software.alternatives.length > 0 && (
+            <section className="mt-12">
+              <h2 className="sp-title">Alternatives to explore</h2>
+              <div className="mt-5 space-y-3">
+                {software.alternatives.map((item) => (
+                  <div key={item.name} className="rounded-2xl border border-black/10 p-5 sm:flex sm:items-start sm:justify-between sm:gap-6">
+                    <div>
+                      <h3 className="font-semibold text-[#1d1d1f]">{item.name}</h3>
+                      <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{item.reason}</p>
+                    </div>
+                    <Link href={item.href} className="mt-3 inline-flex shrink-0 text-sm font-semibold text-[#001D39] hover:underline sm:mt-0">View profile →</Link>
                   </div>
-                  <Link href={item.href} className="mt-3 inline-flex shrink-0 text-sm font-semibold text-[#001D39] hover:underline sm:mt-0">View profile →</Link>
-                </div>
-              ))}
-            </div>
-          </section>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
 
         <aside className="h-fit rounded-[24px] border border-black/10 p-6 lg:sticky lg:top-24">
