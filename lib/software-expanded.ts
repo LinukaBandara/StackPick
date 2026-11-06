@@ -279,22 +279,6 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   }),
 
   profile({
-    slug: "hubspot-crm",
-    name: "HubSpot CRM",
-    category: "CRM & Sales",
-    tagline: "A customer platform for managing contacts, deals and sales activity.",
-    summary: "HubSpot's Smart CRM gives businesses a shared contact and company database with deal pipelines, activity tracking and connected marketing and service tools. The free tools are useful for a small team, but contact, record and seat limits should be checked before building a larger sales process around them.",
-    officialUrl: "https://www.hubspot.com/products/crm",
-    pricingUrl: "https://www.hubspot.com/pricing/crm",
-    freePlan: "Yes. HubSpot's Free tools are listed at $0 for up to two users and include up to 1,000 contacts. Other standard object records are also limited, and feature availability differs across the free products.",
-    pricingSummary: "HubSpot currently advertises limited-time Starter discounts for new customers, while its standard seat pricing and product-specific hubs differ. The CRM pricing page displays promotional and regular rates; check billing period, seats, contact limits and any onboarding charges before comparing totals.",
-    bestFor: ["Small businesses organising contacts and sales opportunities", "Teams wanting CRM records connected to marketing and support tools", "Businesses that may expand into a broader customer platform"],
-    features: ["Contact and company records", "Deal pipelines and activity tracking", "Meeting scheduling and email tools", "Connections to marketing and customer service hubs"],
-    strengths: ["Free entry point for small teams", "Combines CRM records with adjacent customer tools", "Broad integration ecosystem"],
-    tradeoffs: ["Free plan is limited to two users and 1,000 contacts", "Advanced automation and reporting require paid hubs", "Costs can rise with seats, contacts, onboarding and separate products"],
-    comparisons: [{ title: "ActiveCampaign vs HubSpot", href: "/best/activecampaign-vs-hubspot" }],
-  }),
-  profile({
     slug: "activecampaign",
     name: "ActiveCampaign",
     category: "Email Marketing & Automation",
