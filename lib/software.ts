@@ -283,7 +283,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
   {
     slug: "quickbooks",
     name: "QuickBooks Online",
-    category: "Accounting & Invoicing",
+    category: "Accounting & Finance",
     tagline: "Small-business accounting with invoicing, bank connections and financial reports.",
     summary:
       "QuickBooks Online brings income and expense tracking, invoices, bank transactions and financial reporting into one accounting workspace. It is worth comparing when a business needs more than standalone invoicing, but plan availability, tax support and bank connections depend on the country and edition.",
