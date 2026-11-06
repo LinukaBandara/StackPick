@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 function StackPickMark() {
@@ -27,25 +27,11 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
 
-  useEffect(() => {
-    if (!menuOpen) return;
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") closeMenu();
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      document.body.style.overflow = previousOverflow;
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [menuOpen]);
-
   const items = [
-    { href: "/software", title: "Software", description: "Explore individual tools", type: "software" as const, number: "01" },
-    { href: "/categories", title: "Categories", description: "Browse by what you need", type: "categories" as const, number: "02" },
-    { href: "/comparisons", title: "Comparisons", description: "See how tools measure up", type: "comparisons" as const, number: "03" },
-    { href: "/guides", title: "Guides", description: "Make a more confident choice", type: "guides" as const, number: "04" },
+    { href: "/software", title: "Software", description: "Explore individual tools", type: "software" as const },
+    { href: "/categories", title: "Categories", description: "Find tools by your needs", type: "categories" as const },
+    { href: "/comparisons", title: "Comparisons", description: "Compare tools side by side", type: "comparisons" as const },
+    { href: "/guides", title: "Guides", description: "Make a confident decision", type: "guides" as const },
   ];
 
   return (
@@ -88,42 +74,29 @@ export default function Header() {
 
             {menuOpen && (
               <>
-                <button type="button" aria-label="Close navigation menu" onClick={closeMenu} className="fixed inset-0 z-40 cursor-default bg-[#061525]/45 backdrop-blur-[3px]" />
-                <nav id="stackpick-mobile-navigation" aria-label="Mobile primary" className="fixed bottom-0 right-0 top-0 z-[55] flex w-[min(88vw,410px)] flex-col overflow-y-auto border-l border-white/10 bg-[#fbfcfd] shadow-[-24px_0_80px_rgba(0,12,28,0.24)]">
-                  <div className="flex items-center justify-between border-b border-[#e8edf2] px-6 py-5">
-                    <div className="flex items-center gap-2.5">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#001D39]"><span className="block h-4 w-4 rounded-[4px] border-2 border-white/90" /></span>
-                      <span className="text-base font-semibold tracking-[-0.03em] text-[#102236]">StackPick</span>
-                    </div>
-                    <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#8995a2]">Menu</span>
+                <button type="button" aria-label="Close navigation menu" onClick={closeMenu} className="fixed inset-0 z-40 cursor-default bg-[#00101f]/20 backdrop-blur-[2px]" />
+                <nav id="stackpick-mobile-navigation" aria-label="Mobile primary" className="absolute right-0 top-[3.65rem] z-50 w-[min(92vw,380px)] overflow-hidden rounded-[26px] border border-black/[0.08] bg-white shadow-[0_24px_70px_rgba(0,20,42,0.22)]">
+                  <div className="bg-[#001D39] px-6 pb-5 pt-6 text-white">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/55">Explore StackPick</p>
+                    <h2 className="mt-2 text-[25px] font-semibold leading-tight tracking-[-0.04em]">Find the right tools.<br />Make better decisions.</h2>
+                    <p className="mt-2 text-xs leading-relaxed text-white/65">Independent software research, comparisons and practical advice.</p>
                   </div>
-
-                  <div className="px-6 pb-5 pt-8">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#7d8a98]">Explore</p>
-                    <h2 className="mt-3 max-w-[290px] text-[30px] font-semibold leading-[1.08] tracking-[-0.055em] text-[#102236]">Make your next software choice a smarter one.</h2>
-                    <p className="mt-3 max-w-[290px] text-sm leading-relaxed text-[#697786]">Research, compare and choose the tools that move your work forward.</p>
-                  </div>
-
-                  <div className="mx-5 border-t border-[#e7ebef]">
+                  <div className="grid grid-cols-2 gap-2 p-3">
                     {items.map((item) => (
-                      <Link key={item.href} href={item.href} onClick={closeMenu} className="group flex items-center gap-4 border-b border-[#e7ebef] py-5 transition-colors hover:bg-[#f2f6f9]">
-                        <span className="w-6 shrink-0 text-[10px] font-semibold tabular-nums text-[#9aa5af]">{item.number}</span>
-                        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#eaf0f5] text-[#001D39] transition-colors group-hover:bg-[#001D39] group-hover:text-white"><MenuIcon type={item.type} /></span>
-                        <span className="min-w-0 flex-1">
-                          <span className="block text-[15px] font-semibold tracking-[-0.02em] text-[#15283b]">{item.title}</span>
-                          <span className="mt-1 block text-xs text-[#7b8793]">{item.description}</span>
+                      <Link key={item.href} href={item.href} onClick={closeMenu} className="group flex min-h-[116px] flex-col justify-between rounded-2xl border border-[#e8e9eb] bg-white p-4 transition-all duration-200 hover:border-[#b9c8d6] hover:bg-[#f6f9fc] active:scale-[0.98]">
+                        <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#edf2f7] text-[#001D39] transition-colors group-hover:bg-[#001D39] group-hover:text-white">
+                          <MenuIcon type={item.type} />
                         </span>
-                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" className="h-4 w-4 shrink-0 text-[#9aa5af] transition-transform group-hover:translate-x-1 group-hover:text-[#001D39]"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6 6 6-6 6" /></svg>
+                        <span className="mt-3 block">
+                          <span className="block text-sm font-semibold tracking-[-0.02em] text-[#17212b]">{item.title}</span>
+                          <span className="mt-1 block text-[10px] leading-snug text-[#737b84]">{item.description}</span>
+                        </span>
                       </Link>
                     ))}
                   </div>
-
-                  <div className="mt-auto px-6 pb-7 pt-8">
-                    <div className="rounded-2xl bg-[#001D39] px-5 py-4 text-white">
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/55">StackPick</p>
-                      <p className="mt-2 text-sm font-medium tracking-[-0.01em]">Design · Develop · Decide</p>
-                      <p className="mt-1 text-xs text-white/60">Find tools that fit the way you work.</p>
-                    </div>
+                  <div className="flex items-center justify-between border-t border-[#eef0f2] px-5 py-3">
+                    <span className="text-[10px] font-medium tracking-wide text-[#858b92]">DESIGN · DEVELOP · DECIDE</span>
+                    <span className="text-[10px] font-semibold text-[#001D39]">STACKPICK</span>
                   </div>
                 </nav>
               </>
