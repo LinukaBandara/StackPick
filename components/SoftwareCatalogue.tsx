@@ -42,6 +42,7 @@ export default function SoftwareCatalogue({ software }: Props) {
           freeText.includes("free tier") ||
           freeText.includes("free plan") ||
           freeText.includes("free account") ||
+          freeText.includes("free tools") ||
           freeText.includes("free forever"));
       const matchesFilter =
         filter === "all" ||
