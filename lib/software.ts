@@ -1,3 +1,5 @@
+import { EXPANDED_SOFTWARE_PROFILES } from "@/lib/software-expanded";
+
 export type SoftwareProfile = {
   slug: string;
   name: string;
@@ -482,6 +484,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
     ],
     reviewedOn: "October 14, 2026",
   },
+  ...EXPANDED_SOFTWARE_PROFILES,
 ];
 
 export function getSoftwareProfile(slug: string) {
