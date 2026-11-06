@@ -107,76 +107,102 @@ const ROW2_CATEGORIES = [
 export default function HomePage() {
   return (
     <>
-      {/* 1. Hero Section */}
-      <section className="sp-hero-section bg-white">
-        <div className="sp-container flex min-h-[600px] flex-col items-center justify-center py-16 text-center sm:min-h-[680px] sm:py-24">
-          <p className="sp-eyebrow">Software, without the noise.</p>
-          <h1 className="sp-display mt-6 max-w-5xl">
-            Find the right tool.<br />
-            Not the loudest one.
-          </h1>
-          <p className="sp-body-large mt-7 max-w-2xl">
-            StackPick compares software for freelancers and small businesses, pricing,
-            limits, strengths, trade-offs, and the details that actually change a decision.
-          </p>
-          <form action="/best#directory-search" method="get" className="mt-9 flex w-full max-w-2xl flex-col gap-3 rounded-[22px] border border-[#d2d2d7] bg-white p-2 shadow-[0_12px_40px_rgba(0,29,57,0.08)] sm:flex-row sm:items-center">
-            <label htmlFor="software-search" className="sr-only">Search software comparisons</label>
-            <div className="flex min-w-0 flex-1 items-center gap-3 px-3">
-              <svg aria-hidden="true" className="h-5 w-5 shrink-0 text-[#6e6e73]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <input id="software-search" name="q" type="search" placeholder="What software are you looking for?" className="h-12 min-w-0 w-full bg-transparent text-sm text-[#1d1d1f] outline-none placeholder:text-[#86868b]" />
+      {/* Premium software discovery hero */}
+      <section className="sp-hero-v2 relative overflow-hidden bg-[#f5f7fa]">
+        <div className="sp-container relative z-10 grid min-h-[650px] items-center gap-12 py-16 sm:py-20 lg:min-h-[720px] lg:grid-cols-[1.02fr_0.98fr] lg:gap-8 lg:py-24">
+          <div className="mx-auto w-full max-w-[620px] text-center lg:mx-0 lg:text-left">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#001D39]/10 bg-white/80 px-3.5 py-2 text-[11px] font-semibold tracking-[0.12em] text-[#34516b] shadow-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#2d82bd]" />
+              INDEPENDENT SOFTWARE RESEARCH
             </div>
-            <button type="submit" className="sp-button-primary shrink-0">Find software <span aria-hidden="true">→</span></button>
-          </form>
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-xs text-[#6e6e73]">
-            <span className="mr-1">Popular:</span>
-            <Link href="/best?q=CRM#directory-search" className="rounded-full border border-[#d2d2d7] px-3 py-1.5 transition hover:border-[#001D39] hover:text-[#001D39]">CRM</Link>
-            <Link href="/best?q=invoicing#directory-search" className="rounded-full border border-[#d2d2d7] px-3 py-1.5 transition hover:border-[#001D39] hover:text-[#001D39]">Invoicing</Link>
-            <Link href="/best?q=project%20management#directory-search" className="rounded-full border border-[#d2d2d7] px-3 py-1.5 transition hover:border-[#001D39] hover:text-[#001D39]">Project management</Link>
-            <Link href="/best?q=AI#directory-search" className="rounded-full border border-[#d2d2d7] px-3 py-1.5 transition hover:border-[#001D39] hover:text-[#001D39]">AI tools</Link>
-          </div>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <Link href="/best" className="sp-button-secondary">Browse all comparisons</Link>
-            <Link href="/about" className="inline-flex items-center px-3 py-2 text-sm font-medium text-[#6e6e73] transition hover:text-[#001D39]">How StackPick works</Link>
+            <h1 className="sp-hero-v2-title mt-7 text-balance text-[clamp(3.1rem,6.2vw,5.8rem)] font-semibold leading-[0.98] tracking-[-0.065em] text-[#071d33]">
+              Better tools.<br />
+              <span className="text-[#47718f]">Clearer choices.</span>
+            </h1>
+            <p className="mx-auto mt-7 max-w-[540px] text-base leading-7 text-[#536577] sm:text-lg sm:leading-8 lg:mx-0">
+              Find software that fits the way you work. Compare real costs, free-plan limits and the trade-offs that matter before you commit.
+            </p>
+            <form action="/best#directory-search" method="get" className="mx-auto mt-9 flex w-full max-w-[560px] flex-col gap-2 rounded-2xl border border-[#d6e0e8] bg-white p-2 shadow-[0_18px_50px_rgba(0,29,57,0.10)] sm:flex-row sm:items-center lg:mx-0">
+              <label htmlFor="software-search" className="sr-only">Search software comparisons</label>
+              <div className="flex min-w-0 flex-1 items-center gap-3 px-3">
+                <svg aria-hidden="true" className="h-5 w-5 shrink-0 text-[#6d8294]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input id="software-search" name="q" type="search" placeholder="Search CRM, invoicing, project tools..." className="h-12 min-w-0 w-full bg-transparent text-sm text-[#102b43] outline-none placeholder:text-[#8b9aaa]" />
+              </div>
+              <button type="submit" className="sp-hero-v2-submit inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-[#001D39] px-6 text-sm font-semibold text-white transition hover:bg-[#0b3558]">
+                Explore tools <span aria-hidden="true">↗</span>
+              </button>
+            </form>
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-2 text-xs text-[#657789] lg:justify-start">
+              <span className="mr-1 font-medium">Popular searches</span>
+              <Link href="/best?q=CRM#directory-search" className="rounded-full border border-[#d3dee7] bg-white/70 px-3 py-1.5 transition hover:border-[#7896ad] hover:text-[#001D39]">CRM</Link>
+              <Link href="/best?q=invoicing#directory-search" className="rounded-full border border-[#d3dee7] bg-white/70 px-3 py-1.5 transition hover:border-[#7896ad] hover:text-[#001D39]">Invoicing</Link>
+              <Link href="/best?q=project%20management#directory-search" className="rounded-full border border-[#d3dee7] bg-white/70 px-3 py-1.5 transition hover:border-[#7896ad] hover:text-[#001D39]">Project management</Link>
+            </div>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-5 text-xs font-medium text-[#536577] lg:justify-start">
+              <Link href="/how-we-verify" className="inline-flex items-center gap-2 transition hover:text-[#001D39]"><span className="text-[#2c789f]">✓</span> Clear comparison criteria</Link>
+              <Link href="/best" className="inline-flex items-center gap-2 transition hover:text-[#001D39]"><span className="text-[#2c789f]">✓</span> Browse all categories</Link>
+            </div>
           </div>
 
-          {/* 3 Steps Container */}
-          <div className="mt-16 w-full max-w-4xl rounded-[32px] bg-[#f5f5f7] px-6 py-10 sm:px-12 sm:py-12">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#6e6e73]">
-              A better way to choose
-            </p>
-            <div className="mt-8 grid gap-8 text-left sm:grid-cols-3">
-              <div>
-                <p className="text-sm font-semibold text-[#001D39]">01</p>
-                <h2 className="mt-2 text-base font-semibold tracking-tight text-[#1d1d1f]">
-                  Start with the job
-                </h2>
-                <p className="mt-2 text-xs leading-5 text-[#6e6e73]">
-                  What are you actually trying to get done?
-                </p>
+          <div className="sp-hero-visual relative mx-auto flex w-full max-w-[590px] items-center justify-center py-5 lg:py-0" aria-label="Illustration of software categories and comparison insights">
+            <div className="sp-hero-orbit sp-hero-orbit-one" />
+            <div className="sp-hero-orbit sp-hero-orbit-two" />
+            <div className="sp-hero-glow" />
+            <div className="sp-hero-dashboard relative z-10 w-full max-w-[440px] overflow-hidden rounded-[28px] border border-white/15 bg-[#061f38] p-5 text-white shadow-[0_35px_90px_rgba(0,29,57,0.30)] sm:p-7">
+              <div className="flex items-center justify-between border-b border-white/10 pb-5">
+                <div className="flex items-center gap-2.5">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-[10px] bg-white/10">
+                    <svg viewBox="0 0 32 32" className="h-5 w-5" aria-hidden="true"><g fill="currentColor"><rect x="3" y="5" width="26" height="6" rx="3"/><rect x="3" y="14" width="20" height="6" rx="3" opacity=".72"/><rect x="3" y="23" width="14" height="5" rx="2.5" opacity=".48"/></g></svg>
+                  </span>
+                  <span className="text-sm font-semibold tracking-tight">StackPick <span className="font-normal text-white/45">/ Discover</span></span>
+                </div>
+                <span className="rounded-full border border-[#8fc7d8]/25 bg-[#8fc7d8]/10 px-2.5 py-1 text-[9px] font-semibold tracking-[0.12em] text-[#a8d9e7]">RESEARCH VIEW</span>
               </div>
-              <div>
-                <p className="text-sm font-semibold text-[#001D39]">02</p>
-                <h2 className="mt-2 text-base font-semibold tracking-tight text-[#1d1d1f]">
-                  Compare the trade-offs
-                </h2>
-                <p className="mt-2 text-xs leading-5 text-[#6e6e73]">
-                  What does the free plan really include? What will become a problem later?
-                </p>
+              <div className="pt-6">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#8fb1c9]">Your workflow, mapped</p>
+                <h2 className="mt-2 text-[25px] font-semibold leading-tight tracking-[-0.045em] sm:text-[29px]">Find your best-fit<br />software stack.</h2>
+                <p className="mt-2 max-w-[300px] text-xs leading-5 text-[#b4c5d3]">A clearer view of features, pricing and what each plan leaves out.</p>
               </div>
-              <div>
-                <p className="text-sm font-semibold text-[#001D39]">03</p>
-                <h2 className="mt-2 text-base font-semibold tracking-tight text-[#1d1d1f]">
-                  Choose with context
-                </h2>
-                <p className="mt-2 text-xs leading-5 text-[#6e6e73]">
-                  The best tool is the one that fits your workflow - not the one with the longest feature list.
-                </p>
+              <div className="mt-6 grid grid-cols-2 gap-3">
+                <div className="sp-hero-tool-card">
+                  <span className="sp-hero-tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M16 20v-1.5a4.5 4.5 0 0 0-4.5-4.5h-3A4.5 4.5 0 0 0 4 18.5V20M10 10a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM17 11h4m-2-2v4"/></svg></span>
+                  <span><strong>CRM</strong><small>Know your customers</small></span>
+                </div>
+                <div className="sp-hero-tool-card">
+                  <span className="sp-hero-tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M8 14h8M8 17h6"/></svg></span>
+                  <span><strong>Invoicing</strong><small>Get paid on time</small></span>
+                </div>
+                <div className="sp-hero-tool-card">
+                  <span className="sp-hero-tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4m8-4v4M3 9h18M8 13h3m-3 3h7"/></svg></span>
+                  <span><strong>Projects</strong><small>Keep work moving</small></span>
+                </div>
+                <div className="sp-hero-tool-card">
+                  <span className="sp-hero-tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M4 19V5m0 14h17M8 15l3-4 3 2 5-7"/></svg></span>
+                  <span><strong>Analytics</strong><small>See what is working</small></span>
+                </div>
+              </div>
+              <div className="mt-5 rounded-2xl border border-white/10 bg-white/[0.055] p-4">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="text-xs font-semibold text-white/90">What matters in a comparison</span>
+                  <span className="text-[9px] font-medium uppercase tracking-wider text-[#9dc9d9]">The details</span>
+                </div>
+                <div className="mt-4 grid grid-cols-3 gap-2">
+                  <div><div className="h-1 rounded-full bg-[#80b6c9]"/><p className="mt-2 text-[10px] text-[#c3d0da]">Real pricing</p></div>
+                  <div><div className="h-1 rounded-full bg-[#80b6c9]/75"/><p className="mt-2 text-[10px] text-[#c3d0da]">Plan limits</p></div>
+                  <div><div className="h-1 rounded-full bg-[#80b6c9]/50"/><p className="mt-2 text-[10px] text-[#c3d0da]">Trade-offs</p></div>
+                </div>
+              </div>
+              <div className="mt-5 flex items-center justify-between text-[10px] text-[#91a9ba]">
+                <span>Independent research. Practical decisions.</span><span className="text-[#a8d9e7]">01 / 03</span>
               </div>
             </div>
+            <div className="sp-hero-float sp-hero-float-top"><span className="sp-hero-float-dot"/> Pricing, made clearer</div>
+            <div className="sp-hero-float sp-hero-float-bottom"><span className="sp-hero-float-check">✓</span> Compare the real trade-offs</div>
           </div>
         </div>
+        <div className="sp-hero-bottomline"><span>Less noise.</span><span className="h-px w-10 bg-[#9eb3c4]"/><span>More useful decisions.</span></div>
       </section>
 
       {/* Popular software profiles */}
