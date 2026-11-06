@@ -238,6 +238,166 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
     { href: "/best/ai-automation-tools-small-businesses", title: "AI automation tools for small business" },
     { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
   ],
+  "stripe-vs-lemonsqueezy": [
+    { href: "/best/stripe-vs-paddle", title: "Stripe vs Paddle" },
+    { href: "/best/wise-business-vs-revolut-business", title: "Wise Business vs Revolut Business" },
+    { href: "/best/accounting-software", title: "Best Accounting Software" },
+  ],
+  "stripe-vs-paddle": [
+    { href: "/best/stripe-vs-lemonsqueezy", title: "Stripe vs Lemon Squeezy" },
+    { href: "/best/wise-business-vs-revolut-business", title: "Wise Business vs Revolut Business" },
+    { href: "/best/multi-currency-invoicing", title: "Best Multi-Currency Invoicing Software" },
+  ],
+  "ramp-vs-brex": [
+    { href: "/best/expense-management-software", title: "Best Expense Management Software" },
+    { href: "/best/bill-com-alternatives", title: "Best BILL Alternatives" },
+    { href: "/best/mercury-vs-relay", title: "Mercury vs Relay" },
+  ],
+  "gusto-vs-rippling": [
+    { href: "/best/payroll-software", title: "Best Payroll Software" },
+    { href: "/best/deel-vs-remote", title: "Deel vs Remote" },
+    { href: "/best/hr-software", title: "Best HR Software" },
+  ],
+  "deel-vs-remote": [
+    { href: "/best/gusto-vs-rippling", title: "Gusto vs Rippling" },
+    { href: "/best/payroll-software", title: "Best Payroll Software" },
+    { href: "/best/wise-business-vs-revolut-business", title: "Wise Business vs Revolut Business" },
+  ],
+  "xero-vs-wave": [
+    { href: "/best/quickbooks-vs-xero", title: "QuickBooks vs Xero" },
+    { href: "/best/freshbooks-vs-wave", title: "FreshBooks vs Wave" },
+    { href: "/best/accounting-for-freelancers", title: "Accounting for Freelancers" },
+  ],
+  "mercury-vs-relay": [
+    { href: "/best/ramp-vs-brex", title: "Ramp vs Brex" },
+    { href: "/best/wise-business-vs-revolut-business", title: "Wise Business vs Revolut Business" },
+    { href: "/best/expense-management-software", title: "Expense Management Software" },
+  ],
+  "bill-com-alternatives": [
+    { href: "/best/ramp-vs-brex", title: "Ramp vs Brex" },
+    { href: "/best/invoicing-for-small-businesses", title: "Invoicing for Small Businesses" },
+    { href: "/best/accounting-software", title: "Best Accounting Software" },
+  ],
+  "wise-business-vs-revolut-business": [
+    { href: "/best/multi-currency-invoicing", title: "Multi-Currency Invoicing" },
+    { href: "/best/mercury-vs-relay", title: "Mercury vs Relay" },
+    { href: "/best/stripe-vs-lemonsqueezy", title: "Stripe vs Lemon Squeezy" },
+  ],
+  "quickbooks-online-vs-quickbooks-desktop": [
+    { href: "/best/quickbooks-vs-xero", title: "QuickBooks vs Xero" },
+    { href: "/best/quickbooks-alternatives", title: "QuickBooks Alternatives" },
+    { href: "/best/accounting-software", title: "Accounting Software for Small Business" },
+  ],
+  "cursor-vs-github-copilot": [
+    { href: "/best/cursor-vs-claude-code", title: "Cursor vs Claude Code" },
+    { href: "/best/ai-coding-assistants", title: "Best AI Coding Assistants" },
+    { href: "/best/v0-vs-cursor", title: "v0 vs Cursor" },
+  ],
+  "cursor-vs-claude-code": [
+    { href: "/best/cursor-vs-github-copilot", title: "Cursor vs GitHub Copilot" },
+    { href: "/best/ai-tools-react-nextjs", title: "AI Tools for React and Next.js" },
+    { href: "/best/v0-vs-cursor", title: "v0 vs Cursor" },
+  ],
+  "linear-vs-jira": [
+    { href: "/best/project-management-software", title: "Best Project Management Software" },
+    { href: "/best/asana-vs-clickup", title: "Asana vs ClickUp" },
+    { href: "/best/notion-vs-clickup", title: "Notion vs ClickUp" },
+  ],
+  "supabase-vs-firebase": [
+    { href: "/best/neon-vs-supabase", title: "Neon vs Supabase" },
+    { href: "/best/clerk-vs-auth0", title: "Clerk vs Auth0" },
+    { href: "/best/ai-tools-react-nextjs", title: "AI Tools for React and Next.js" },
+  ],
+  "neon-vs-supabase": [
+    { href: "/best/supabase-vs-firebase", title: "Supabase vs Firebase" },
+    { href: "/best/clerk-vs-auth0", title: "Clerk vs Auth0" },
+    { href: "/best/ai-tools-react-nextjs", title: "AI Tools for React and Next.js" },
+  ],
+  "postman-vs-insomnia": [
+    { href: "/best/devops-tools-small-teams", title: "DevOps Tools for Small Teams" },
+    { href: "/best/docker-vs-podman", title: "Docker vs Podman" },
+    { href: "/best/github-tools-for-developers", title: "GitHub Tools for Developers" },
+  ],
+  "clerk-vs-auth0": [
+    { href: "/best/supabase-vs-firebase", title: "Supabase vs Firebase" },
+    { href: "/best/neon-vs-supabase", title: "Neon vs Supabase" },
+    { href: "/best/resend-vs-sendgrid", title: "Resend vs SendGrid" },
+  ],
+  "resend-vs-sendgrid": [
+    { href: "/best/clerk-vs-auth0", title: "Clerk vs Auth0" },
+    { href: "/best/email-marketing-software", title: "Email Marketing Software" },
+    { href: "/best/ai-tools-react-nextjs", title: "AI Tools for React and Next.js" },
+  ],
+  "sentry-vs-datadog": [
+    { href: "/best/devops-tools-small-teams", title: "DevOps Tools for Small Teams" },
+    { href: "/best/docker-vs-podman", title: "Docker vs Podman" },
+    { href: "/best/ai-tools-react-nextjs", title: "AI Tools for React and Next.js" },
+  ],
+  "v0-vs-cursor": [
+    { href: "/best/cursor-vs-github-copilot", title: "Cursor vs GitHub Copilot" },
+    { href: "/best/ai-tools-react-nextjs", title: "AI Tools for React and Next.js" },
+    { href: "/best/website-builders", title: "Best Website Builders" },
+  ],
+  "replit-vs-github-codespaces": [
+    { href: "/best/cursor-vs-github-copilot", title: "Cursor vs GitHub Copilot" },
+    { href: "/best/github-tools-for-developers", title: "GitHub Tools for Developers" },
+    { href: "/best/docker-vs-podman", title: "Docker vs Podman" },
+  ],
+  "docker-vs-podman": [
+    { href: "/best/replit-vs-github-codespaces", title: "Replit vs GitHub Codespaces" },
+    { href: "/best/postman-vs-insomnia", title: "Postman vs Insomnia" },
+    { href: "/best/devops-tools-small-teams", title: "DevOps Tools for Small Teams" },
+  ],
+  "apollo-io-vs-zoominfo": [
+    { href: "/best/crm-software", title: "Best CRM Software" },
+    { href: "/best/attio-vs-hubspot", title: "Attio vs HubSpot" },
+    { href: "/best/close-vs-pipedrive", title: "Close vs Pipedrive" },
+  ],
+  "attio-vs-hubspot": [
+    { href: "/best/hubspot-vs-pipedrive", title: "HubSpot vs Pipedrive" },
+    { href: "/best/close-vs-pipedrive", title: "Close vs Pipedrive" },
+    { href: "/best/apollo-io-vs-zoominfo", title: "Apollo.io vs ZoomInfo" },
+  ],
+  "close-vs-pipedrive": [
+    { href: "/best/attio-vs-hubspot", title: "Attio vs HubSpot" },
+    { href: "/best/pipedrive-vs-zoho-crm", title: "Pipedrive vs Zoho CRM" },
+    { href: "/best/crm-for-small-businesses", title: "CRM for Small Businesses" },
+  ],
+  "activecampaign-vs-hubspot": [
+    { href: "/best/email-marketing-software", title: "Email Marketing Software" },
+    { href: "/best/mailchimp-vs-brevo", title: "Mailchimp vs Brevo" },
+    { href: "/best/kit-vs-mailerlite", title: "Kit vs MailerLite" },
+  ],
+  "kit-vs-mailerlite": [
+    { href: "/best/email-marketing-software", title: "Email Marketing Software" },
+    { href: "/best/mailchimp-vs-mailerlite", title: "Mailchimp vs MailerLite" },
+    { href: "/best/activecampaign-vs-hubspot", title: "ActiveCampaign vs HubSpot" },
+  ],
+  "semrush-vs-ahrefs": [
+    { href: "/best/ai-tools-marketing-small-businesses", title: "AI Tools for Marketing" },
+    { href: "/best/website-builders", title: "Best Website Builders" },
+    { href: "/best/framer-vs-webflow", title: "Framer vs Webflow" },
+  ],
+  "intercom-vs-help-scout": [
+    { href: "/best/help-desk-software", title: "Best Help Desk Software" },
+    { href: "/best/gorgias-vs-zendesk", title: "Gorgias vs Zendesk" },
+    { href: "/best/ai-customer-support-tools", title: "AI Customer Support Tools" },
+  ],
+  "gorgias-vs-zendesk": [
+    { href: "/best/help-desk-software", title: "Best Help Desk Software" },
+    { href: "/best/intercom-vs-help-scout", title: "Intercom vs Help Scout" },
+    { href: "/best/live-chat-software", title: "Best Live Chat Software" },
+  ],
+  "framer-vs-webflow": [
+    { href: "/best/website-builders", title: "Best Website Builders" },
+    { href: "/best/ghost-vs-wordpress", title: "Ghost vs WordPress" },
+    { href: "/best/v0-vs-cursor", title: "v0 vs Cursor" },
+  ],
+  "ghost-vs-wordpress": [
+    { href: "/best/website-builders", title: "Best Website Builders" },
+    { href: "/best/framer-vs-webflow", title: "Framer vs Webflow" },
+    { href: "/best/kit-vs-mailerlite", title: "Kit vs MailerLite" },
+  ],
 };
 
 export interface ComparisonTool {
