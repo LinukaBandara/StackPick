@@ -22,7 +22,7 @@ const COMPARISONS = [
   { title: "Mailchimp vs Brevo", desc: "Compare email marketing workflows, pricing models, and audience needs.", href: "/best/mailchimp-vs-brevo", category: "Marketing", tag: "Email" },
 ];
 
-const GROUPS = ["All", "Sales", "Finance", "Productivity", "Operations", "Marketing"];
+const GROUPS = [{ label: "All", href: "/best" }, { label: "Sales", href: "/best?category=Sales" }, { label: "Finance", href: "/best?category=Finance" }, { label: "Productivity", href: "/best?category=Productivity" }, { label: "Operations", href: "/best?category=Operations" }, { label: "Marketing", href: "/best?category=Marketing" }];
 
 export default function ComparisonsPage() {
   return (
@@ -48,7 +48,7 @@ export default function ComparisonsPage() {
           <Link href="/best" className="text-sm font-semibold text-[#001D39] hover:underline">Browse every software guide →</Link>
         </div>
         <div className="mt-8 flex flex-wrap gap-2">
-          {GROUPS.map((group) => <span key={group} className={group === "All" ? "rounded-full bg-[#001D39] px-4 py-2 text-xs font-semibold text-white" : "rounded-full border border-[#d2d2d7] bg-white px-4 py-2 text-xs font-medium text-[#6e6e73]"}>{group}</span>)}
+          {GROUPS.map((group) => <Link key={group.label} href={group.href} className={group.label === "All" ? "rounded-full bg-[#001D39] px-4 py-2 text-xs font-semibold text-white transition hover:bg-[#163b5b]" : "rounded-full border border-[#d2d2d7] bg-white px-4 py-2 text-xs font-medium text-[#6e6e73] transition hover:border-[#001D39] hover:text-[#001D39]"}>{group.label}</Link>)}
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {COMPARISONS.map((item, index) => (
