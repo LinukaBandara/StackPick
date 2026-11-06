@@ -33,10 +33,16 @@ export default function SoftwareCatalogue({ software }: Props) {
         item.tagline.toLowerCase().includes(normalized) ||
         item.summary.toLowerCase().includes(normalized);
       const freeText = item.freePlan.toLowerCase();
+      const explicitlyNoFreePlan =
+        /no permanent free|does not offer a permanent free|does not advertise a permanent free|no standard free/i.test(freeText);
       const hasFreeOption =
-        freeText.includes("yes") ||
-        freeText.includes("free edition") ||
-        freeText.includes("free tier");
+        !explicitlyNoFreePlan &&
+        (freeText.includes("yes") ||
+          freeText.includes("free edition") ||
+          freeText.includes("free tier") ||
+          freeText.includes("free plan") ||
+          freeText.includes("free account") ||
+          freeText.includes("free forever"));
       const matchesFilter =
         filter === "all" ||
         (filter === "free" && hasFreeOption) ||
