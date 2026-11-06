@@ -29,7 +29,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
   {
     slug: "hubspot-crm",
     name: "HubSpot CRM",
-    category: "Sales",
+    category: "CRM & Sales",
     tagline: "A broad CRM starting point with a permanent free tier.",
     summary:
       "HubSpot CRM brings contact records, deal pipelines and sales activity into one workspace. It can suit freelancers and small teams that need a clear place to track enquiries before they invest in a larger sales or marketing stack.",
@@ -79,7 +79,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
   {
     slug: "pipedrive",
     name: "Pipedrive",
-    category: "Sales",
+    category: "CRM & Sales",
     tagline: "A sales-focused CRM built around deals and pipeline stages.",
     summary:
       "Pipedrive is designed to help salespeople keep leads, deals and next actions visible as opportunities move through a pipeline. It is worth evaluating when the main job is managing a repeatable sales process rather than running an all-in-one marketing platform.",
@@ -129,7 +129,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
   {
     slug: "zoho-crm",
     name: "Zoho CRM",
-    category: "Sales",
+    category: "CRM & Sales",
     tagline: "A configurable CRM that connects with a wider business software suite.",
     summary:
       "Zoho CRM helps businesses organise customer records, sales activities and deal stages. It is particularly worth shortlisting if your business already uses Zoho products or wants to evaluate a CRM alongside accounting, invoicing, support and other operational tools.",
@@ -180,7 +180,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
   {
     slug: "wave",
     name: "Wave",
-    category: "Accounting & Invoicing",
+    category: "Accounting & Finance",
     tagline: "Straightforward bookkeeping and invoicing for eligible small businesses.",
     summary:
       "Wave combines invoicing, estimates and basic bookkeeping in one workspace. It is worth considering for solo operators and small businesses that want to send invoices and keep financial records together without starting with a monthly software subscription.",
@@ -231,7 +231,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
   {
     slug: "trello",
     name: "Trello",
-    category: "Project Management",
+    category: "Project & Work Management",
     tagline: "A visual Kanban board for organising tasks and lightweight team workflows.",
     summary:
       "Trello organises work into boards, lists and cards, making task status easy to understand at a glance. It is a strong candidate for personal planning and small teams that prefer a simple visual workflow over a more structured project-management system.",
@@ -334,7 +334,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
   {
     slug: "freshbooks",
     name: "FreshBooks",
-    category: "Accounting & Invoicing",
+    category: "Accounting & Finance",
     tagline: "Client invoicing, expense tracking and accounting tools for service businesses.",
     summary:
       "FreshBooks focuses on invoicing and day-to-day finances for freelancers and service businesses. It can suit people who bill clients regularly and want estimates, expense tracking and reports, but client caps and add-on costs matter when comparing plans.",
@@ -385,7 +385,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
   {
     slug: "asana",
     name: "Asana",
-    category: "Project Management",
+    category: "Project & Work Management",
     tagline: "Structured project and task management for people and growing teams.",
     summary:
       "Asana helps teams organise tasks into projects, assign ownership and track progress through list, board and calendar views. Its free Personal plan can work for an individual or a two-person collaboration, while larger teams may need a paid tier for expanded administration and planning features.",
@@ -436,7 +436,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
   {
     slug: "clickup",
     name: "ClickUp",
-    category: "Project Management",
+    category: "Project & Work Management",
     tagline: "A configurable work hub for tasks, docs and team project views.",
     summary:
       "ClickUp brings tasks, documents and several project views into one workspace. Its Free Forever plan makes it worth testing, but the free plan has storage and feature-use limits, and the number of available options can mean more setup than a lightweight board tool.",
