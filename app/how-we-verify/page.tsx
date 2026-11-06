@@ -17,12 +17,12 @@ const STEPS = [
   {
     title: "2. Separate price from total cost",
     body:
-      "We distinguish advertised starting prices from the plan or add-ons a small business may actually need. Where relevant, we note billing cadence, per-seat charges, usage caps, onboarding costs, and whether taxes or payment processing are separate.",
+      "We distinguish standard list prices from introductory promotions and separate monthly billing from annual commitments. We note the country or currency used for a quoted price, per-seat charges, usage caps, add-ons, taxes and payment-processing fees where they materially affect total cost. A price shown for one region should not be assumed to apply worldwide.",
   },
   {
     title: "3. Explain free-plan limits precisely",
     body:
-      "A free plan is not automatically suitable for every workflow. We look for limits such as users, contacts, projects, storage, automation runs, branding, exports, and access to support. If a limit or current price cannot be confirmed from available public information, we say so rather than inventing a number.",
+      "A permanent free plan is different from a time-limited trial or a free account with restricted tools. We identify which one the provider actually offers and look for limits such as users, contacts, projects, storage, automation runs, branding, exports and support. If a limit or current price cannot be confirmed from available public information, we say so rather than inventing a number.",
   },
   {
     title: "4. Compare tools against a real job",
@@ -32,7 +32,7 @@ const STEPS = [
   {
     title: "5. Make evidence and uncertainty visible",
     body:
-      "Software plans change. Readers should use the linked provider pages to confirm current terms before buying or migrating. Unless an article explicitly describes a hands-on test, it should be read as desk research, not as a claim that StackPick independently tested every product.",
+      "Software plans change. Product profiles display an editorial review date and link directly to the provider’s official website and pricing information. Readers should confirm current terms before buying or migrating. Unless a page explicitly describes a hands-on test, it should be read as desk research, not as a claim that StackPick independently tested every product. Product images are linked to their stated sources; attribution does not imply that every third-party image is owned by StackPick or that every screenshot shows the latest interface.",
   },
   {
     title: "6. Correct material errors",
@@ -75,7 +75,7 @@ export default function HowWeVerifyPage() {
             Our goal is to explain trade-offs, including when a product is not a good fit.
           </p>
           <p className="mt-4 text-sm leading-6 text-[#6e6e73]">
-            Last updated: October 19, 2026. To report a correction, visit our{" "}
+            Last updated: November 7, 2026. To report a correction, visit our{" "}
             <Link href="/contact" className="font-medium text-[#001D39] underline underline-offset-4">
               contact page
             </Link>.
