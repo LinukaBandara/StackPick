@@ -66,7 +66,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
             <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="sp-eyebrow">Inside the product</p>
-                <h2 className="sp-title mt-3">A look at the interface.</h2>
+                <h2 className="sp-title mt-3">{software.productImage.caption.startsWith("Official product icon") ? "Product identity." : "A look at the interface."}</h2>
               </div>
               <a href={software.productImage.sourceUrl} target="_blank" rel="noreferrer" className="text-sm font-semibold text-[#001D39] hover:underline">View image source ↗</a>
             </div>
@@ -80,7 +80,9 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
               />
             </div>
             <p className="mt-3 text-xs leading-5 text-[#6e6e73]">
-              Product imagery is credited to the vendor or linked source. Screenshots may be older or vary by plan and region. StackPick is an independent guide, not the software provider.
+              {software.productImage.caption.startsWith("Official product icon")
+                ? "This profile currently uses the product icon rather than a product-interface screenshot. StackPick is an independent guide, not the software provider."
+                : "Product imagery is credited to the linked source. Screenshots may be older or vary by plan and region. StackPick is an independent guide, not the software provider."}
             </p>
           </section>
 
