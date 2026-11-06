@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import SoftwareLogo from "@/components/SoftwareLogo";
 import ProductScreenshot from "@/components/ProductScreenshot";
@@ -11,6 +11,17 @@ type Props = { software: SoftwareProfile[] };
 export default function SoftwareCatalogue({ software }: Props) {
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState("all");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const requestedCategory = params.get("category");
+    const requestedQuery = params.get("q");
+    if (requestedCategory && software.some((item) => item.category.toLowerCase() === requestedCategory.toLowerCase())) {
+      const match = software.find((item) => item.category.toLowerCase() === requestedCategory.toLowerCase());
+      if (match) setFilter(`category:${match.category}`);
+    }
+    if (requestedQuery) setQuery(requestedQuery);
+  }, [software]);
 
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase();
