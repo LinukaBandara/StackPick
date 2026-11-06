@@ -70,7 +70,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "vercel",
     name: "Vercel",
-    category: "Developer Tools & Hosting",
+    category: "Developer Tools",
     tagline: "A deployment platform for frontend applications and web projects.",
     summary: "Vercel connects Git repositories to preview and production deployments, with infrastructure features for modern web applications. It is especially relevant to teams building with Next.js, but commercial usage and resource limits should be checked before relying on the free tier.",
     productImage: {
@@ -91,7 +91,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "supabase",
     name: "Supabase",
-    category: "Developer Tools & Databases",
+    category: "Developer Tools",
     tagline: "A hosted Postgres backend with authentication, storage and APIs.",
     summary: "Supabase packages a managed PostgreSQL database with authentication, file storage, generated APIs and realtime capabilities. It can accelerate application backends, although free projects pause after inactivity and production workloads need a realistic usage and backup plan.",
     productImage: {
@@ -113,7 +113,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "neon",
     name: "Neon",
-    category: "Developer Tools & Databases",
+    category: "Developer Tools",
     tagline: "Serverless Postgres with branching and scale-to-zero compute.",
     summary: "Neon provides managed PostgreSQL designed for serverless applications and development workflows. Database branching can help teams create isolated environments, while scale-to-zero compute can reduce idle resource usage. Check current quotas and compute behaviour against your workload.",
     productImage: {
@@ -135,7 +135,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "firebase",
     name: "Firebase",
-    category: "Developer Tools & Databases",
+    category: "Developer Tools",
     tagline: "Google's app development platform for data, authentication and hosting.",
     summary: "Firebase provides app development services including Firestore, Authentication, Hosting, Cloud Functions and analytics integrations. It can be convenient for mobile and web applications, but different products have separate quotas and billing models.",
     productImage: {
@@ -157,7 +157,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "notion",
     name: "Notion",
-    category: "Productivity & Collaboration",
+    category: "Project & Work Management",
     tagline: "A flexible workspace for notes, documents, knowledge bases and projects.",
     summary: "Notion combines documents, databases, wikis and lightweight project tracking in a flexible workspace. It can work well for personal knowledge management and small-team documentation, though complex workflows may require careful database design and paid collaboration features.",
     productImage: {
@@ -179,7 +179,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "slack",
     name: "Slack",
-    category: "Communication",
+    category: "Communication & Support",
     tagline: "Team messaging organised around channels, conversations and integrations.",
     summary: "Slack gives teams a shared place for channel-based messaging, direct messages, file sharing and app notifications. It is useful when conversations need to be organised by project or function, but free-plan message history and feature limits should be checked.",
     productImage: {
@@ -200,7 +200,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "canva",
     name: "Canva",
-    category: "Design & Content",
+    category: "Design & Creative",
     tagline: "A browser-based design tool for marketing graphics and everyday content.",
     summary: "Canva helps individuals and teams create presentations, social posts, documents and marketing assets using templates and a drag-and-drop editor. It is accessible for non-designers, while advanced brand controls, premium assets and team features depend on the plan.",
     productImage: {
@@ -237,7 +237,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "resend",
     name: "Resend",
-    category: "Email & Developer Tools",
+    category: "Developer Tools",
     tagline: "An email API designed for product and transactional email.",
     summary: "Resend gives developers an API and developer-focused tools for sending transactional and product emails. It is worth evaluating for authentication messages, receipts and application notifications, with deliverability, domain setup and monthly sending limits checked before launch.",
     productImage: {
@@ -260,7 +260,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "linear",
     name: "Linear",
-    category: "Project Management & Developer Tools",
+    category: "Project & Work Management",
     tagline: "Issue tracking and project planning for product and engineering teams.",
     summary: "Linear combines issue tracking, cycles, projects and team workflows in a fast interface aimed at product and engineering organisations. Its current Free plan includes unlimited members but limits teams and issue volume, so growing teams should compare those caps with their workflow.",
     productImage: {
@@ -302,7 +302,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "webflow",
     name: "Webflow",
-    category: "Website Builders",
+    category: "Website & Ecommerce",
     tagline: "Visual website design, CMS and hosting in one platform.",
     summary: "Webflow combines a visual site designer with content management and managed hosting. It is useful for marketing sites and content-led business websites, but publishing to a custom domain requires a paid Site plan and Workspace pricing is separate from Site pricing.",
     productImage: {
@@ -323,7 +323,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "postman",
     name: "Postman",
-    category: "API Development",
+    category: "Developer Tools",
     tagline: "Design, test and collaborate on APIs throughout development.",
     summary: "Postman provides an API client and workspace for sending requests, organising collections, documenting APIs and testing service behaviour. Its plan structure changed in March 2026, so older comparisons that refer to Basic or Professional for new customers may be out of date.",
     productImage: {
@@ -344,7 +344,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "pipedream",
     name: "Pipedream",
-    category: "Automation & Integrations",
+    category: "Developer Tools",
     tagline: "Connect APIs and automate workflows with code or prebuilt steps.",
     summary: "Pipedream is an integration platform for connecting APIs, events and application workflows. Developers can build and test integrations on its free plan, while production deployment and usage are paid; this distinction is important when estimating the cost of a live automation.",
     productImage: {
@@ -366,7 +366,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "activecampaign",
     name: "ActiveCampaign",
-    category: "Email Marketing & Automation",
+    category: "CRM & Sales",
     tagline: "Email marketing, customer journeys and sales automation.",
     summary: "ActiveCampaign combines email campaigns, marketing automation, segmentation and sales-related workflows. It is suited to businesses that need more than occasional newsletters, but pricing is contact-based and the right plan depends on list size, users and the automation capabilities required.",
     productImage: {
@@ -388,7 +388,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "clerk",
     name: "Clerk",
-    category: "Developer Tools & Authentication",
+    category: "Developer Tools",
     tagline: "Authentication and user management components for web applications.",
     summary: "Clerk provides sign-up, sign-in, user profiles, session management and organisation features through hosted components and developer SDKs. It can speed up authentication work in modern web apps, but pricing is tied to usage and advanced organisation or security features may require paid plans.",
     productImage: {
@@ -409,7 +409,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "sentry",
     name: "Sentry",
-    category: "Developer Tools & Monitoring",
+    category: "Developer Tools",
     tagline: "Application error tracking and performance monitoring.",
     summary: "Sentry helps engineering teams detect, investigate and prioritise application errors and performance issues. It captures stack traces and context from supported platforms, helping developers find problems that are difficult to reproduce locally. Event volume and retention are important cost factors.",
     productImage: {
@@ -430,7 +430,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "figma",
     name: "Figma",
-    category: "Design & Collaboration",
+    category: "Design & Creative",
     tagline: "Collaborative interface design, prototyping and design systems.",
     summary: "Figma is a browser-based design platform used for interface design, interactive prototypes and shared design systems. It helps product teams work together around the same files, while editor-seat types, collaboration permissions and AI allowances should be reviewed when choosing a paid workspace.",
     productImage: {
@@ -452,7 +452,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "make",
     name: "Make",
-    category: "Automation",
+    category: "Developer Tools",
     tagline: "Visual no-code automation for connecting apps and building workflows.",
     summary: "Make lets users connect applications through visual scenarios built from modules, routers and filters. It suits people who want to automate multi-step processes without writing much code, but each module action consumes credits, so workflow design and usage forecasting matter.",
     productImage: {
@@ -473,7 +473,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "framer",
     name: "Framer",
-    category: "Website Design & Hosting",
+    category: "Website & Ecommerce",
     tagline: "A visual website builder for designing, publishing and managing modern sites.",
     summary: "Framer combines a visual canvas, responsive website design, CMS and managed hosting. It is useful for portfolios, landing pages and marketing sites where visual iteration matters, although site limits, bandwidth, CMS capacity and editor seats vary by plan.",
     productImage: {
@@ -494,7 +494,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "miro",
     name: "Miro",
-    category: "Whiteboarding & Collaboration",
+    category: "Project & Work Management",
     tagline: "A collaborative visual workspace for workshops, diagrams and planning.",
     summary: "Miro gives teams a shared canvas for brainstorming, workshops, diagrams, roadmaps and structured collaboration. It works well for visual thinking across distributed teams, but the Free plan limits the number of editable boards and paid pricing is charged per member.",
     productImage: {
@@ -515,7 +515,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "airtable",
     name: "Airtable",
-    category: "Databases & Work Management",
+    category: "Project & Work Management",
     tagline: "A low-code platform for building collaborative databases and workflows.",
     summary: "Airtable combines spreadsheet-like editing with linked records, views, forms and automations. It is useful for teams building lightweight operational systems, content calendars and project trackers, but record, automation and API limits need checking as data grows.",
     productImage: {
@@ -536,7 +536,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "monday",
     name: "monday.com",
-    category: "Project Management & Work Management",
+    category: "Project & Work Management",
     tagline: "A visual work platform for managing projects, processes and team activity.",
     summary: "monday.com uses configurable boards, columns and automations to help teams coordinate projects and recurring work. It is approachable for non-technical teams, but plan tiers, minimum seat bundles and automation quotas should be included in any cost comparison.",
     productImage: {
@@ -578,7 +578,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "grammarly",
     name: "Grammarly",
-    category: "Writing & Productivity",
+    category: "Business Productivity",
     tagline: "Writing assistance for grammar, clarity, tone and generative AI tasks.",
     summary: "Grammarly provides writing suggestions across supported apps and websites, helping individuals and teams improve correctness, clarity and tone. Its Free plan covers essential corrections, while Pro adds broader rewrites and more AI prompt capacity.",
     productImage: {
@@ -599,7 +599,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "wordpress-com",
     name: "WordPress.com",
-    category: "Website Builders & Hosting",
+    category: "Website & Ecommerce",
     tagline: "Managed WordPress hosting and website publishing for creators and businesses.",
     summary: "WordPress.com combines managed hosting with the WordPress publishing system, themes and site-management tools. It is distinct from installing the open-source WordPress software on a separate hosting provider; plan restrictions and plugin availability should be checked before choosing.",
     productImage: {
@@ -620,7 +620,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "shopify",
     name: "Shopify",
-    category: "Ecommerce",
+    category: "Website & Ecommerce",
     tagline: "An ecommerce platform for building an online store and managing sales.",
     summary: "Shopify brings storefront design, product catalogues, checkout, order management and sales channels into one hosted commerce platform. It is built for merchants who want an integrated store system, but subscription fees, payment processing and third-party transaction charges all affect total cost.",
     productImage: {
@@ -641,7 +641,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "loom",
     name: "Loom",
-    category: "Video Messaging & Collaboration",
+    category: "Communication & Support",
     tagline: "Screen and camera recording for asynchronous video communication.",
     summary: "Loom lets people record their screen, camera or both and share a video link instead of scheduling another meeting. It is useful for walkthroughs, feedback and async updates, while recording length, video counts, editing and AI features vary by plan.",
     productImage: {
@@ -705,7 +705,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "calendly",
     name: "Calendly",
-    category: "Scheduling",
+    category: "Business Productivity",
     tagline: "Automated appointment scheduling that reduces back-and-forth emails.",
     summary: "Calendly lets people share booking links, define availability and connect calendars so invitees can schedule meetings without email coordination. It is useful for consultants, sales teams and service businesses, although event types, team routing and integrations depend on the plan.",
     productImage: {
@@ -726,7 +726,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "mailchimp",
     name: "Mailchimp",
-    category: "Email Marketing",
+    category: "Marketing & SEO",
     tagline: "Email campaigns and marketing automation for growing audiences.",
     summary: "Mailchimp provides email campaign design, audience management, forms, segmentation and marketing automation. It is widely used by small businesses and ecommerce teams, but contact limits, send allowances and audience-based pricing make list hygiene important.",
     productImage: {
@@ -747,7 +747,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "brevo",
     name: "Brevo",
-    category: "Email Marketing & CRM",
+    category: "Marketing & SEO",
     tagline: "Multichannel customer communication for email, SMS and sales workflows.",
     summary: "Brevo combines email campaigns, transactional messaging, SMS, WhatsApp, basic CRM and marketing automation. It can suit small businesses that want several communication channels in one platform, but daily send limits, contact tiers and add-ons should be considered.",
     productImage: {
@@ -768,7 +768,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "typeform",
     name: "Typeform",
-    category: "Forms & Surveys",
+    category: "Business Productivity",
     tagline: "Interactive forms and surveys designed around one question at a time.",
     summary: "Typeform creates conversational forms, surveys, quizzes and lead-capture experiences. Its presentation can help improve engagement for some audiences, but response allowances and advanced integrations are important cost considerations.",
     productImage: {
@@ -789,7 +789,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "intercom",
     name: "Intercom",
-    category: "Customer Support",
+    category: "Communication & Support",
     tagline: "Customer messaging, shared inbox and AI-assisted support.",
     summary: "Intercom combines a customer-facing Messenger, shared inbox, ticketing, help centre and automation with its Fin AI Agent. It is designed for teams that want to manage customer conversations across channels, but seat subscriptions and AI outcome charges make total cost usage-dependent.",
     productImage: {
@@ -810,7 +810,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "zendesk",
     name: "Zendesk",
-    category: "Customer Support",
+    category: "Communication & Support",
     tagline: "Customer service software for ticketing, messaging and support operations.",
     summary: "Zendesk helps support teams manage customer requests through tickets, messaging, help centres and reporting. It is suited to organisations with established service processes, but the distinction between Support and Suite plans and AI usage should be included in a cost comparison.",
     productImage: {
@@ -831,7 +831,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "helpscout",
     name: "Help Scout",
-    category: "Customer Support",
+    category: "Communication & Support",
     tagline: "A shared inbox and help centre for human-centred customer support.",
     summary: "Help Scout gives small support teams a shared inbox, customer profiles, saved replies and a website help widget. It focuses on straightforward email-based support and customer communication, with team size, inbox count and reporting history varying by plan.",
     productImage: {
@@ -852,7 +852,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "semrush",
     name: "Semrush",
-    category: "SEO & Marketing",
+    category: "Marketing & SEO",
     tagline: "An SEO and digital marketing toolkit for research and competitor analysis.",
     summary: "Semrush provides keyword research, site auditing, rank tracking, backlink analysis and competitor research tools. It is useful for SEO professionals and marketing teams, but subscription costs and project or keyword limits should be matched to the scale of the work.",
     productImage: {
@@ -873,7 +873,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "ahrefs",
     name: "Ahrefs",
-    category: "SEO & Marketing",
+    category: "Marketing & SEO",
     tagline: "SEO research tools for backlinks, keywords, content and site health.",
     summary: "Ahrefs provides backlink research, keyword discovery, site auditing, rank tracking and competitive analysis. It is commonly used by SEO specialists and publishers, but project, user, crawl-credit and historical-data allowances differ by subscription.",
     productImage: {
@@ -894,7 +894,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "xero",
     name: "Xero",
-    category: "Accounting",
+    category: "Accounting & Finance",
     tagline: "Cloud accounting for invoicing, bank reconciliation and small-business reporting.",
     summary: "Xero provides online accounting tools for invoicing, bills, bank reconciliation, cash-flow forecasting and financial reporting. Its plan features and prices vary by country, so businesses should compare local invoice, bill and add-on limits rather than relying on a global price.",
     productImage: {
