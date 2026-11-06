@@ -15,6 +15,7 @@ type Entry = {
   strengths: string[];
   tradeoffs: string[];
   comparisons?: { title: string; href: string }[];
+  productImage?: { src: string; alt: string; caption: string; sourceUrl: string };
 };
 
 function profile(entry: Entry): SoftwareProfile {
@@ -24,7 +25,7 @@ function profile(entry: Entry): SoftwareProfile {
     category: entry.category,
     tagline: entry.tagline,
     summary: entry.summary,
-    productImage: {
+    productImage: entry.productImage ?? {
       src: `https://www.google.com/s2/favicons?domain=${new URL(entry.officialUrl).hostname}&sz=256`,
       alt: `${entry.name} official product icon`,
       caption: "Official product icon. Visit the vendor website for current interface screenshots and demonstrations.",
@@ -346,6 +347,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Automation",
     tagline: "Visual no-code automation for connecting apps and building workflows.",
     summary: "Make lets users connect applications through visual scenarios built from modules, routers and filters. It suits people who want to automate multi-step processes without writing much code, but each module action consumes credits, so workflow design and usage forecasting matter.",
+    productImage: {
+      src: "https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/07f49d69-eb73-48e3-98d8-5f4e5fd28c6a.webp?auto=format&q=50",
+      alt: "Make visual automation canvas showing connected app modules, routes and workflow steps",
+      caption: "Make scenario-builder screenshot hosted by Capterra; interface details may change.",
+      sourceUrl: "https://www.capterra.co.uk/software/154278/integromat",
+    },
     officialUrl: "https://www.make.com/",
     pricingUrl: "https://www.make.com/en/pricing",
     freePlan: "Yes. The Free plan includes up to 1,000 credits per month, a visual workflow builder, 3,500+ apps, routers and filters. Runs have a 15-minute minimum interval.",
@@ -361,6 +368,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Website Design & Hosting",
     tagline: "A visual website builder for designing, publishing and managing modern sites.",
     summary: "Framer combines a visual canvas, responsive website design, CMS and managed hosting. It is useful for portfolios, landing pages and marketing sites where visual iteration matters, although site limits, bandwidth, CMS capacity and editor seats vary by plan.",
+    productImage: {
+      src: "https://framerusercontent.com/assets/ZPFYreb4W4IgBV4kIDoT0X6Hr7I.jpg",
+      alt: "Framer visual website editor with a responsive page open on its design canvas",
+      caption: "Framer design-interface screenshot from its official design page.",
+      sourceUrl: "https://www.framer.com/design/",
+    },
     officialUrl: "https://www.framer.com/",
     pricingUrl: "https://www.framer.com/pricing/",
     freePlan: "Yes. Framer offers a Free plan for trying the editor and publishing to a Framer domain. A custom domain and production-site capabilities require a paid site plan.",
@@ -376,6 +389,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Whiteboarding & Collaboration",
     tagline: "A collaborative visual workspace for workshops, diagrams and planning.",
     summary: "Miro gives teams a shared canvas for brainstorming, workshops, diagrams, roadmaps and structured collaboration. It works well for visual thinking across distributed teams, but the Free plan limits the number of editable boards and paid pricing is charged per member.",
+    productImage: {
+      src: "https://media.tekpon.com/2024/07/Miro-whiteboard-for-team-meetings.webp",
+      alt: "Miro collaborative whiteboard with project plan, sticky notes and participant cursors",
+      caption: "Miro whiteboard interface screenshot published by Tekpon; layout may reflect an earlier version.",
+      sourceUrl: "https://tekpon.com/insights/what-is-miro/",
+    },
     officialUrl: "https://miro.com/",
     pricingUrl: "https://miro.com/pricing/",
     freePlan: "Yes. The Free plan is $0 and includes three editable boards, templates, core canvas formats and 250+ integrations. Some AI and advanced collaboration features are limited by plan.",
@@ -391,6 +410,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Databases & Work Management",
     tagline: "A low-code platform for building collaborative databases and workflows.",
     summary: "Airtable combines spreadsheet-like editing with linked records, views, forms and automations. It is useful for teams building lightweight operational systems, content calendars and project trackers, but record, automation and API limits need checking as data grows.",
+    productImage: {
+      src: "https://blog.airtable.com/content/images/size/w1000/2022/07/base-insights-example.png",
+      alt: "Airtable base with structured records, status labels and a base-insights dashboard",
+      caption: "Airtable product-interface screenshot from the Airtable blog.",
+      sourceUrl: "https://blog.airtable.com/admins-and-creators-scale-with-airtable/",
+    },
     officialUrl: "https://www.airtable.com/",
     pricingUrl: "https://airtable.com/pricing",
     freePlan: "Yes. Airtable offers a Free plan for individuals and small teams with lightweight needs. Record, attachment, automation and API limits apply, and some advanced controls require paid plans.",
@@ -406,6 +431,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Project Management & Work Management",
     tagline: "A visual work platform for managing projects, processes and team activity.",
     summary: "monday.com uses configurable boards, columns and automations to help teams coordinate projects and recurring work. It is approachable for non-technical teams, but plan tiers, minimum seat bundles and automation quotas should be included in any cost comparison.",
+    productImage: {
+      src: "https://support.monday.com/hc/article_attachments/5513710435474/image_9__3_.png",
+      alt: "monday.com work-management board with grouped roadmap items, statuses and dates",
+      caption: "monday.com board screenshot from its official Support Center.",
+      sourceUrl: "https://support.monday.com/hc/en-us/articles/360009695080-How-to-share-a-board-view-publicly",
+    },
     officialUrl: "https://monday.com/",
     pricingUrl: "https://monday.com/pricing",
     freePlan: "Yes. The Free work-management plan is $0 for up to two seats and includes up to three boards, three docs and a selection of templates. It is intended for individuals and very small teams.",
@@ -421,6 +452,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Automation",
     tagline: "Connect apps and automate repetitive work without maintaining custom integrations.",
     summary: "Zapier connects thousands of applications through automated workflows called Zaps. It is a convenient option for common business integrations and quick automations, but task allowances, multi-step workflows and premium app access affect the plan required.",
+    productImage: {
+      src: "https://images.ctfassets.net/lzny33ho1g45/26KUdmoZyzlBdVhBg3ykiA/4d731d567413ca95c290679002b61f67/relay-vs-zapier-image3.jpg",
+      alt: "Zapier workflow editor showing a trigger, app action and conditional paths",
+      caption: "Zapier workflow-editor screenshot from the Zapier blog.",
+      sourceUrl: "https://zapier.com/blog/relay-vs-zapier/",
+    },
     officialUrl: "https://zapier.com/",
     pricingUrl: "https://zapier.com/pricing",
     freePlan: "Yes. Zapier Free includes 100 tasks per month and supports unlimited two-step Zaps. Task limits apply when successful action steps run.",
@@ -436,6 +473,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Writing & Productivity",
     tagline: "Writing assistance for grammar, clarity, tone and generative AI tasks.",
     summary: "Grammarly provides writing suggestions across supported apps and websites, helping individuals and teams improve correctness, clarity and tone. Its Free plan covers essential corrections, while Pro adds broader rewrites and more AI prompt capacity.",
+    productImage: {
+      src: "https://onei.ai/_next/image?q=75&url=https%3A%2F%2Fcdn.onei.ai%2Fapp-screenshots%2FGrammarly_app.grammarly.com_0.png&w=1920",
+      alt: "Grammarly web editor with writing suggestions and a review sidebar",
+      caption: "Grammarly editor screenshot hosted by Onei AI; not supplied directly by Grammarly.",
+      sourceUrl: "https://onei.ai/apps/app.grammarly.com",
+    },
     officialUrl: "https://www.grammarly.com/",
     pricingUrl: "https://www.grammarly.com/plans",
     freePlan: "Yes. Grammarly Free is $0 and includes writing correctness suggestions, tone detection and 100 AI prompts per month. Features and availability can differ for eligible users and teams.",
@@ -451,6 +494,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Website Builders & Hosting",
     tagline: "Managed WordPress hosting and website publishing for creators and businesses.",
     summary: "WordPress.com combines managed hosting with the WordPress publishing system, themes and site-management tools. It is distinct from installing the open-source WordPress software on a separate hosting provider; plan restrictions and plugin availability should be checked before choosing.",
+    productImage: {
+      src: "https://learn.wordpress.org/files/2022/03/site-editor-default-screen.jpg",
+      alt: "WordPress Site Editor with template navigation and a selected site-title block",
+      caption: "WordPress Site Editor screenshot from the official Learn WordPress site.",
+      sourceUrl: "https://learn.wordpress.org/lesson-plan/how-to-add-and-remove-logo-and-site-icon-in-site-editor/",
+    },
     officialUrl: "https://wordpress.com/",
     pricingUrl: "https://wordpress.com/pricing/",
     freePlan: "Yes. WordPress.com offers a free plan with hosting, unlimited pages and posts, unlimited users, basic stats and 1 GB of media storage. Free sites use a WordPress.com address and display WordPress.com ads.",
@@ -466,6 +515,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Ecommerce",
     tagline: "An ecommerce platform for building an online store and managing sales.",
     summary: "Shopify brings storefront design, product catalogues, checkout, order management and sales channels into one hosted commerce platform. It is built for merchants who want an integrated store system, but subscription fees, payment processing and third-party transaction charges all affect total cost.",
+    productImage: {
+      src: "https://www.datocms-assets.com/138661/1743089588-shopify.png",
+      alt: "Shopify admin product dashboard showing product records, inventory and sales-channel columns",
+      caption: "Shopify admin screenshot reproduced in a UX article by Yummygum.",
+      sourceUrl: "https://yummygum.com/blog/how-does-user-experience-design-decrease-churn-for-your-platform",
+    },
     officialUrl: "https://www.shopify.com/",
     pricingUrl: "https://www.shopify.com/pricing",
     freePlan: "Shopify does not offer a permanent free plan for a full online store. It advertises a three-day free trial, followed by a promotional $1/month period for three months on eligible offers; standard subscription and payment fees then apply.",
@@ -481,6 +536,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Video Messaging & Collaboration",
     tagline: "Screen and camera recording for asynchronous video communication.",
     summary: "Loom lets people record their screen, camera or both and share a video link instead of scheduling another meeting. It is useful for walkthroughs, feedback and async updates, while recording length, video counts, editing and AI features vary by plan.",
+    productImage: {
+      src: "https://static.icecreamapps.com/storage/uploads/webp-jpg/loom.webp",
+      alt: "Loom video library with a recording preview, playback control and video reactions",
+      caption: "Loom library screenshot published by Icecream Apps; the interface may be from an earlier release.",
+      sourceUrl: "https://icecreamapps.com/learn/GIF-recorder.html",
+    },
     officialUrl: "https://www.loom.com/",
     pricingUrl: "https://www.loom.com/pricing",
     freePlan: "Yes. Starter is $0 and includes up to 25 videos per person, five-minute screen recordings and up to 50 workspace members. Unlimited screenshots and basic sharing are included.",
