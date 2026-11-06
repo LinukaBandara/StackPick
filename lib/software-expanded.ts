@@ -41,7 +41,7 @@ function profile(entry: Entry): SoftwareProfile {
     pricingUrl: entry.pricingUrl,
     comparisons: entry.comparisons ?? [],
     alternatives: [],
-    reviewedOn: "November 7, 2026",
+    reviewedOn: "Editorial verification pending",
   };
 }
 
