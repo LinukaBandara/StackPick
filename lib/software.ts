@@ -61,9 +61,9 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       "Check user, contact and feature limits against your actual workflow before committing",
     ],
     pricingSummary:
-      "HubSpot publishes free tools at $0 per month for up to 2 users and 1,000 contacts, with no time limit. Paid options and promotional pricing vary by product and billing terms; verify the current official pricing page before budgeting.",
+      "The US pricing page lists Free at $0 for up to 2 users and 1,000 contacts, with no time limit. Starter is normally $20 per seat/month; a limited new-customer offer is shown at $7 per seat/month with annual payment or $10 month-to-month. Discounts and product bundles can change.",
     freePlan:
-      "Yes. HubSpot's official CRM information describes a no-expiry free tier for up to 2 users and 1,000 contacts. Feature availability and other record limits apply.",
+      "Yes. HubSpot Free tools are available indefinitely for up to 2 users and 1,000 contacts. Other standard object types have a 1,000-record limit per account; advanced features and higher limits require paid products.",
     officialUrl: "https://www.hubspot.com/products/crm",
     pricingUrl: "https://www.hubspot.com/pricing/crm",
     comparisons: [
@@ -74,7 +74,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       { name: "Pipedrive", href: "/software/pipedrive", reason: "For a sales-first pipeline and paid per-seat plans." },
       { name: "Zoho CRM", href: "/software/zoho-crm", reason: "For teams looking for a configurable CRM within a broader business suite." },
     ],
-    reviewedOn: "October 14, 2026",
+    reviewedOn: "November 7, 2026",
   },
   {
     slug: "pipedrive",
@@ -111,9 +111,9 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       "Confirm which email, automation, reporting and AI features are included in the plan you choose",
     ],
     pricingSummary:
-      "Pipedrive offers a 14-day free trial. Its official pricing page listed Lite at US$14 per seat per month when billed annually at the time of review. Pricing and plan names can change, so confirm the current terms directly.",
+      "The official US pricing page lists Lite at $14, Growth at $39, Premium at $59 and Ultimate at $79 per seat/month when billed annually. The displayed annual commitments are $168, $468, $708 and $948 per seat respectively. Monthly billing costs more.",
     freePlan:
-      "No permanent free plan is advertised on the official pricing page; a 14-day trial is available. Confirm whether a payment method is required in your region and at sign-up.",
+      "No permanent free plan is advertised. Pipedrive offers a 14-day free trial with no credit card required, according to its official pricing page.",
     officialUrl: "https://www.pipedrive.com/",
     pricingUrl: "https://www.pipedrive.com/en/pricing",
     comparisons: [
@@ -124,7 +124,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       { name: "HubSpot CRM", href: "/software/hubspot-crm", reason: "For a permanent free starting point and broader connected tools." },
       { name: "Zoho CRM", href: "/software/zoho-crm", reason: "For more configuration and links to other Zoho business apps." },
     ],
-    reviewedOn: "October 14, 2026",
+    reviewedOn: "November 7, 2026",
   },
   {
     slug: "zoho-crm",
@@ -161,9 +161,9 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       "Check the current free-edition eligibility, user limits and regional pricing on Zoho's official site",
     ],
     pricingSummary:
-      "Zoho publishes multiple CRM editions, including a free edition in supported circumstances and paid per-user plans. Pricing varies by edition and billing term; use the official pricing page for the current price in your region.",
+      "Zoho CRM's US pricing page lists a Free edition at $0 forever for up to 3 users. Paid editions are priced per user and vary by edition and billing term; use the official pricing page for the current regional quote.",
     freePlan:
-      "A free edition is advertised, but eligibility, user limits and included features can vary. Verify the current terms on the official pricing page before planning around it.",
+      "Yes. The US Free edition is advertised as free forever for up to 3 users. It includes core contact and deal management, follow-up reminders, tasks, meetings, calls, standard reports and limited automation; feature and usage limits apply.",
     officialUrl: "https://www.zoho.com/crm/",
     pricingUrl: "https://www.zoho.com/crm/zohocrm-pricing.html",
     comparisons: [
@@ -174,7 +174,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       { name: "HubSpot CRM", href: "/software/hubspot-crm", reason: "For a straightforward free starting point and connected customer tools." },
       { name: "Pipedrive", href: "/software/pipedrive", reason: "For teams that want a focused, pipeline-first sales workflow." },
     ],
-    reviewedOn: "October 14, 2026",
+    reviewedOn: "November 7, 2026",
   },
 
   {
@@ -212,9 +212,9 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       "Confirm local eligibility and tax/accounting requirements before relying on it",
     ],
     pricingSummary:
-      "Wave advertises a Starter plan at $0 and a Pro plan with additional automation. Its official pricing page lists Pro at US$19 per month or US$190 per year for the displayed US pricing; promotions, taxes, eligibility and payment fees can vary. Confirm current terms directly.",
+      "Wave's US pricing page lists Starter at $0 and Pro at US$19/month or US$190/year. Pro adds automated bank imports, transaction categorisation, receipt capture and payment-reminder automation. Payment processing, payroll and optional receipt services can add fees; availability is regional.",
     freePlan:
-      "Yes. The Starter plan is advertised at $0 and includes estimates, invoices and bookkeeping records. Bank transaction automation, receipt features and payment processing have separate plan, add-on or transaction-fee conditions.",
+      "Yes. Starter is a permanent $0 plan with estimates, invoices, bills and bookkeeping records. Online payment processing carries transaction fees; automated bank imports and other Pro features require an upgrade.",
     officialUrl: "https://www.waveapps.com/accounting",
     pricingUrl: "https://www.waveapps.com/pricing",
     comparisons: [
@@ -226,7 +226,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       { name: "FreshBooks", href: "/best/freshbooks-vs-wave", reason: "Compare the invoicing workflow and paid-plan trade-offs." },
       { name: "Zoho Invoice", href: "/best/zoho-invoice-vs-wave", reason: "Compare another invoicing option before choosing a workflow." },
     ],
-    reviewedOn: "October 14, 2026",
+    reviewedOn: "November 7, 2026",
   },
   {
     slug: "trello",
@@ -263,9 +263,9 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       "Complex projects may need more structure than a basic board provides",
     ],
     pricingSummary:
-      "Trello's official pricing page lists a Free plan at $0 for up to 10 collaborators per Workspace. Standard is listed at US$5 per user per month when billed annually (US$6 monthly); check the official page for current terms and regional pricing.",
+      "Trello's official US pricing page lists Free at $0, Standard at US$5 per user/month billed annually (US$6 monthly), Premium at US$10 annually (US$12.50 monthly), and Enterprise at US$17.50 per user/month billed annually. Enterprise pricing is based on annual billing.",
     freePlan:
-      "Yes. The Free plan includes unlimited cards, up to 10 boards per Workspace and up to 10 collaborators per Workspace. Attachment size and monthly automation runs are limited.",
+      "Yes. Free supports up to 10 collaborators and 10 boards per Workspace, unlimited cards and Power-Ups, 10 MB per-file uploads, and 250 Workspace command runs per month.",
     officialUrl: "https://trello.com/",
     pricingUrl: "https://trello.com/en/pricing",
     comparisons: [
@@ -277,7 +277,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       { name: "Asana", href: "/best/trello-vs-asana", reason: "Compare a more structured task and project workflow with Trello's visual boards." },
       { name: "ClickUp", href: "/best/free-project-management-software", reason: "Explore a broader feature set in a project-management shortlist." },
     ],
-    reviewedOn: "October 14, 2026",
+    reviewedOn: "November 7, 2026",
   },
 
   {
@@ -315,9 +315,9 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       "Advanced automation, users and reporting can require paid plans",
     ],
     pricingSummary:
-      "QuickBooks' US pricing page currently advertises a $0 Free plan and paid subscriptions, but promotional rates and plan details change. Availability, tax support, bank connections and pricing differ by country; check the official regional page before choosing.",
+      "QuickBooks pricing is country-specific. The US site now advertises QuickBooks Free at $0/month for one user, alongside paid subscriptions and a 30-day trial. The Singapore pricing page instead lists paid plans, with Simple Start shown at S$31/month before promotional discounts. Always select the buyer's country before quoting a price.",
     freePlan:
-      "Yes, the US pricing page lists a $0 plan with one user, no accountant access, up to two invoices per month (subject to payment eligibility) and one connected bank. Do not assume this plan is available in every country.",
+      "A permanent $0 QuickBooks Free plan is advertised on the US site only in the sources checked. It is limited to one user, no accountant access, two invoices per month, two receipt uploads per month, one bank connection and one estimate per month. The Singapore pricing page advertises a 30-day trial rather than this US free tier.",
     officialUrl: "https://quickbooks.intuit.com/online/",
     pricingUrl: "https://quickbooks.intuit.com/pricing/",
     comparisons: [
@@ -329,7 +329,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       { name: "FreshBooks", href: "/best/quickbooks-vs-freshbooks", reason: "Compare a freelancer-friendly invoicing workflow with broader accounting features." },
       { name: "Wave", href: "/software/wave", reason: "Compare a simpler free starting point for basic bookkeeping and invoicing." },
     ],
-    reviewedOn: "October 14, 2026",
+    reviewedOn: "November 7, 2026",
   },
   {
     slug: "freshbooks",
@@ -366,9 +366,9 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       "Team members, payroll and advanced payments can cost extra",
     ],
     pricingSummary:
-      "FreshBooks' US pricing page lists Lite at a standard $23/month, Plus at $43/month and Premium at $70/month before applicable discounts; annual billing offers a 10% discount according to its pricing FAQ. Promotional offers change, so verify current terms directly.",
+      "FreshBooks' US pricing page shows standard monthly list prices of US$23 for Lite, US$43 for Plus and US$70 for Premium. A temporary 80%-off promotion is currently displayed for the first four months; annual billing offers an additional discount. Team members, advanced payments and payroll can cost extra.",
     freePlan:
-      "No permanent free plan is advertised. FreshBooks offers a 30-day free trial; after the trial, a paid plan is required to continue using the service.",
+      "No permanent free plan is advertised. FreshBooks offers a 30-day free trial. The current promotional prices are temporary introductory offers, not the standard ongoing subscription price.",
     officialUrl: "https://www.freshbooks.com/",
     pricingUrl: "https://www.freshbooks.com/pricing",
     comparisons: [
@@ -380,7 +380,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       { name: "QuickBooks Online", href: "/best/quickbooks-vs-freshbooks", reason: "Compare broader accounting workflows and region-specific plan availability." },
       { name: "Wave", href: "/best/freshbooks-vs-wave", reason: "Consider Wave if a permanent $0 starting plan is a priority and it supports your region." },
     ],
-    reviewedOn: "October 14, 2026",
+    reviewedOn: "November 7, 2026",
   },
   {
     slug: "asana",
@@ -417,9 +417,9 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       "Paid subscriptions start at a minimum of two seats, according to Asana's help documentation",
     ],
     pricingSummary:
-      "Asana's official US pricing page lists Personal at $0, Starter at $10.99 per user/month billed annually ($13.49 monthly), and Advanced at $24.99 per user/month billed annually ($30.49 monthly). Pricing and plan packaging may vary by region.",
+      "Asana's US pricing page lists Personal at $0, Starter at US$10.99 per user/month billed annually (US$13.49 monthly), and Advanced at US$24.99 annually (US$30.49 monthly). Enterprise pricing is custom. Regional prices and AI usage charges may differ.",
     freePlan:
-      "Yes. Personal is free forever for up to two users and includes unlimited tasks and projects, list/board/calendar views, and 100+ integrations. Some advanced planning and administrative features are paid.",
+      "Yes. Personal is free forever for up to 2 users and includes unlimited tasks and projects, list, board and calendar views, and 100+ integrations. Advanced planning, administration and team features require paid plans.",
     officialUrl: "https://asana.com/",
     pricingUrl: "https://asana.com/pricing",
     comparisons: [
@@ -431,7 +431,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       { name: "Trello", href: "/best/trello-vs-asana", reason: "Compare a simpler visual Kanban board with Asana's structured project workflow." },
       { name: "ClickUp", href: "/best/asana-vs-clickup", reason: "Compare a broader configurable work hub with Asana's project-management focus." },
     ],
-    reviewedOn: "October 14, 2026",
+    reviewedOn: "November 7, 2026",
   },
   {
     slug: "clickup",
@@ -468,9 +468,9 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       "The broad feature set can add complexity for teams needing only a simple board",
     ],
     pricingSummary:
-      "ClickUp's official pricing page lists Free Forever at $0, Unlimited at $7 per user/month billed annually ($10 monthly), and Business at $12 per user/month billed annually ($19 monthly). Pricing and packaging can change; confirm current terms directly.",
+      "ClickUp's pricing page currently displays Free Forever at $0, Unlimited at a promotional US$9 per user/month billed annually (regular price shown as US$12), and Business at US$17 (regular US$25) billed annually. Monthly prices and promotions differ; confirm the live checkout price before purchase.",
     freePlan:
-      "Yes. Free Forever includes unlimited tasks, unlimited free-plan members, collaborative docs and Kanban boards, with 60 MB storage and other feature-use limits.",
+      "Yes. Free Forever includes unlimited tasks and free-plan members, collaborative Docs, Kanban boards and 60 MB storage. Some features have usage limits or require a paid plan.",
     officialUrl: "https://clickup.com/",
     pricingUrl: "https://clickup.com/pricing",
     comparisons: [
@@ -482,7 +482,7 @@ export const SOFTWARE_PROFILES: SoftwareProfile[] = [
       { name: "Asana", href: "/best/asana-vs-clickup", reason: "Compare a structured project-management approach with ClickUp's broad workspace." },
       { name: "Trello", href: "/best/trello-vs-asana", reason: "Consider a simpler board-first approach for lightweight workflows." },
     ],
-    reviewedOn: "October 14, 2026",
+    reviewedOn: "November 7, 2026",
   },
   ...EXPANDED_SOFTWARE_PROFILES,
 ];
