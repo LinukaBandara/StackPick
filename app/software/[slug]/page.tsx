@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowUpRight } from "lucide-react";
 import SoftwareLogo from "@/components/SoftwareLogo";
 import ProductScreenshot from "@/components/ProductScreenshot";
 import { getSoftwareProfile, SOFTWARE_PROFILES } from "@/lib/software";
 
 type PageProps = { params: Promise<{ slug: string }> };
+
+function ExternalArrow() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="ml-2 h-4 w-4" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M7 17 17 7" />
+      <path d="M8 7h9v9" />
+    </svg>
+  );
+}
 
 export function generateStaticParams() {
   return SOFTWARE_PROFILES.map((software) => ({ slug: software.slug }));
@@ -54,7 +62,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
           <p className="mt-5 max-w-3xl text-xl leading-8 text-[#6e6e73]">{software.tagline}</p>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#1d1d1f]">{software.summary}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={software.officialUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#001D39] px-5 text-sm font-semibold text-white transition-opacity hover:opacity-90">Visit official website <ArrowUpRight aria-hidden="true" className="ml-2 h-4 w-4" strokeWidth={2.2} /></a>
+            <a href={software.officialUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#001D39] px-5 text-sm font-semibold text-white transition-opacity hover:opacity-90">Visit official website <ExternalArrow /></a>
             <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm font-semibold text-[#001D39] transition-colors hover:bg-[#f9fafb]">Check official pricing <ArrowUpRight aria-hidden="true" className="ml-2 h-4 w-4" strokeWidth={2.2} /></a>
           </div>
           <p className="mt-5 text-xs text-[#6e6e73]">Profile checked {software.reviewedOn}. Pricing and features can change; confirm details with the vendor.</p>
@@ -125,7 +133,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
               <p className="text-xs font-semibold uppercase tracking-wide text-[#6e6e73]">Free-plan check</p>
               <p className="mt-2 text-sm leading-6 text-[#1d1d1f]">{software.freePlan}</p>
             </div>
-            <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-semibold text-[#001D39] hover:underline">Verify pricing on the official site <ArrowUpRight aria-hidden="true" className="ml-1 h-4 w-4" strokeWidth={2.2} /></a>
+            <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-semibold text-[#001D39] hover:underline">Verify pricing on the official site <ExternalArrow /></a>
           </section>
 
           {software.comparisons.length > 0 && (
