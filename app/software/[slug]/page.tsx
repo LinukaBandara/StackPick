@@ -65,7 +65,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
             <a href={software.officialUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#001D39] px-5 text-sm font-semibold text-white transition-opacity hover:opacity-90">Visit official website <ExternalArrow /></a>
             <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm font-semibold text-[#001D39] transition-colors hover:bg-[#f9fafb]">Check official pricing <ExternalArrow /></a>
           </div>
-          <p className="mt-5 text-xs text-[#6e6e73]">Profile checked {software.reviewedOn}. Pricing and features can change; confirm details with the vendor.</p>
+          <p className="mt-5 text-xs text-[#6e6e73]">Editorial review: {software.reviewedOn}. Pricing and features can change; confirm details with the vendor.</p>
         </div>
       </section>
 
