@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/[0.08] bg-white/85 backdrop-blur-xl">
       <div className="sp-container flex h-16 items-center justify-between gap-5">
-        <Link href="/" onClick={closeMenu} className="flex items-center gap-2.5 text-lg font-semibold tracking-[-0.025em] text-[#1d1d1f]" aria-label="StackPick home">
+        <Link href="/#hero" onClick={closeMenu} className="flex items-center gap-2.5 text-lg font-semibold tracking-[-0.025em] text-[#1d1d1f]" aria-label="StackPick home">
           <StackPickMark />
           <span>StackPick</span>
         </Link>
