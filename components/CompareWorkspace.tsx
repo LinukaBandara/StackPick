@@ -98,7 +98,7 @@ export default function CompareWorkspace({ initialProfiles, allProfiles }: Props
               </label>
             </div>
 
-            <div className="mt-4 grid gap-3" style={{ gridTemplateColumns: `repeat(${selected.length}, minmax(0, 1fr))` }}>
+            <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {selected.map((item) => (
                 <article key={item.slug} className="min-w-0 rounded-[22px] border border-[#d2d2d7] bg-[#f5f5f7] p-4 sm:p-6">
                   <div className="flex items-center gap-3">
