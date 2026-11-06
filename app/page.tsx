@@ -108,7 +108,7 @@ export default function HomePage() {
   return (
     <>
       {/* 1. Hero Section */}
-      <section className="sp-hero-section bg-white">
+      <section id="hero" className="sp-hero-section scroll-mt-16 bg-white">
         <div className="sp-container flex min-h-[600px] flex-col items-center justify-center py-16 text-center sm:min-h-[680px] sm:py-24">
           <p className="sp-eyebrow">Software, without the noise.</p>
           <h1 className="sp-display mt-6 max-w-5xl">
