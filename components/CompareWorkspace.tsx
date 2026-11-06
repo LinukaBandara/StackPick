@@ -31,7 +31,7 @@ export default function CompareWorkspace({ initialProfiles, allProfiles }: Props
     } catch {}
     const params = new URLSearchParams();
     if (selected.length) params.set("tools", selected.map((item) => item.slug).join(","));
-    window.history.replaceState(null, "", params.size ? \`/compare?\${params.toString()}\` : "/compare");
+    window.history.replaceState(null, "", params.size ? `/compare?${params.toString()}` : "/compare");
   }, [selected]);
 
   const rows = useMemo(() => ROWS.map((row) => {
@@ -69,7 +69,7 @@ export default function CompareWorkspace({ initialProfiles, allProfiles }: Props
         <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-[22px] border border-black/[0.08] bg-[#f5f5f7] p-5 sm:p-6">
           <div>
             <p className="text-sm font-semibold text-[#1d1d1f]">{selected.length} of 3 tools selected</p>
-            <p className="mt-1 text-xs leading-5 text-[#6e6e73]">{selected.length >= 2 ? \`\${differenceCount} of \${rows.length} comparison areas contain differences.\` : "Choose at least two tools to compare."}</p>
+            <p className="mt-1 text-xs leading-5 text-[#6e6e73]">{selected.length >= 2 ? `${differenceCount} of ${rows.length} comparison areas contain differences.` : "Choose at least two tools to compare."}</p>
           </div>
           <div className="flex w-full flex-wrap gap-2 sm:w-auto">
             <label className="sr-only" htmlFor="compare-add-tool">Add another tool</label>
@@ -98,7 +98,7 @@ export default function CompareWorkspace({ initialProfiles, allProfiles }: Props
               </label>
             </div>
 
-            <div className="mt-4 grid gap-3" style={{ gridTemplateColumns: \`repeat(\${selected.length}, minmax(0, 1fr))\` }}>
+            <div className="mt-4 grid gap-3" style={{ gridTemplateColumns: `repeat(${selected.length}, minmax(0, 1fr))` }}>
               {selected.map((item) => (
                 <article key={item.slug} className="min-w-0 rounded-[22px] border border-[#d2d2d7] bg-[#f5f5f7] p-4 sm:p-6">
                   <div className="flex items-center gap-3">
@@ -110,7 +110,7 @@ export default function CompareWorkspace({ initialProfiles, allProfiles }: Props
                   </div>
                   <p className="mt-3 text-xs leading-5 text-[#6e6e73]">{item.tagline}</p>
                   <div className="mt-4 flex flex-wrap gap-3">
-                    <Link href={\`/software/\${item.slug}\`} className="text-xs font-semibold text-[#001D39] hover:underline">Full profile ↗</Link>
+                    <Link href={`/software/${item.slug}`} className="text-xs font-semibold text-[#001D39] hover:underline">Full profile ↗</Link>
                     <a href={item.pricingUrl} target="_blank" rel="noreferrer" className="text-xs font-semibold text-[#6e6e73] hover:text-[#001D39] hover:underline">Official pricing ↗</a>
                   </div>
                   <button type="button" onClick={() => removeProfile(item.slug)} className="mt-5 border-t border-black/[0.08] pt-3 text-xs font-semibold text-[#6e6e73] hover:text-[#001D39]">Remove from comparison −</button>
