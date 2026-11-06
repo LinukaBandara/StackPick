@@ -6,7 +6,7 @@ import { SOFTWARE_PROFILES } from "@/lib/software";
 export const metadata: Metadata = {
   title: "Software Catalogue",
   description:
-    "Explore practical software profiles for small businesses and freelancers, with plan notes, strengths, trade-offs, genuine product previews and related comparisons.",
+    "Explore independent software profiles for small businesses and freelancers, with pricing notes, free-plan limits, product previews, strengths, trade-offs and related comparisons.",
   alternates: { canonical: "/software" },
 };
 
@@ -14,15 +14,15 @@ export default function SoftwareCataloguePage() {
   return (
     <section className="bg-white">
       <div className="sp-container py-16 sm:py-24">
-        <p className="sp-eyebrow">The catalogue</p>
+        <p className="sp-eyebrow">The catalogue · {SOFTWARE_PROFILES.length} profiles</p>
         <h1 className="sp-display mt-4 max-w-4xl">Know the tool before you choose it.</h1>
         <p className="sp-body-large mt-6 max-w-2xl">
-          Explore the tools themselves: what their interfaces look like, who they suit, what their plans include,
-          and where the trade-offs begin. We start with software already covered in StackPick comparisons.
+          Explore the tools themselves: what they do, who they suit, what their plans include,
+          and where the trade-offs begin. Every profile links to the provider's official website and pricing information.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-2 text-xs text-[#6e6e73]">
-          <span className="rounded-full border border-black/10 px-3 py-1.5">Product screenshots with source links</span>
+          <span className="rounded-full border border-black/10 px-3 py-1.5">Product previews and source links</span>
           <span className="rounded-full border border-black/10 px-3 py-1.5">Free-plan checks</span>
           <span className="rounded-full border border-black/10 px-3 py-1.5">Official pricing links</span>
         </div>
