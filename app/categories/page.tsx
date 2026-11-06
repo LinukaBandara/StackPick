@@ -79,7 +79,11 @@ export default function CategoriesPage() {
               <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{category.description}</p>
               <div className="mt-auto flex items-end justify-between gap-3 pt-6">
                 <span className="text-xs leading-5 text-[#929299]">{category.examples}</span>
-                <span aria-hidden="true" className="shrink-0 text-lg text-[#001D39] transition-transform group-hover:translate-x-1">↗</span>
+                <span aria-hidden="true" className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#d2d2d7] text-[#001D39] transition-all duration-200 group-hover:border-[#001D39] group-hover:bg-[#001D39] group-hover:text-white">
+                  <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5">
+                    <path d="M3.75 10h12.5M10 3.75 16.25 10 10 16.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
               </div>
             </Link>
           ))}
