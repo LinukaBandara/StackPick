@@ -27,11 +27,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const software = getSoftwareProfile(slug);
   if (!software) return {};
   return {
-    title: `${software.name} Review: Pricing, Fit & Trade-offs`,
+    title: `${software.name}: Pricing, Plans & Fit`,
     description: `${software.tagline} Read StackPick's practical profile covering use cases, free-plan details, strengths, trade-offs and alternatives.`,
     alternates: { canonical: `/software/${software.slug}` },
     openGraph: {
-      title: `${software.name}: Pricing, Fit & Trade-offs`,
+      title: `${software.name}: Pricing, Plans & Fit`,
       description: software.tagline,
       url: `/software/${software.slug}`,
       type: "article",
