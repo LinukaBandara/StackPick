@@ -7,6 +7,8 @@ import { getSoftwareProfile, SOFTWARE_PROFILES } from "@/lib/software";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.tech";
+
 function ExternalArrow() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="ml-2 h-4 w-4" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -48,9 +50,22 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
   const { slug } = await params;
   const software = getSoftwareProfile(slug);
   if (!software) notFound();
+  const relatedSoftware = SOFTWARE_PROFILES
+    .filter((item) => item.category === software.category && item.slug !== software.slug)
+    .slice(0, 4);
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Software", item: `${SITE_URL}/software` },
+      { "@type": "ListItem", position: 3, name: software.name, item: `${SITE_URL}/software/${software.slug}` },
+    ],
+  };
 
   return (
     <article className="bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <section className="border-b border-black/[0.08] bg-[#f5f5f7]">
         <div className="sp-container py-14 sm:py-20">
           <Link href="/software" className="text-sm font-medium text-[#001D39] hover:underline">← All software profiles</Link>
@@ -150,6 +165,22 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
             </section>
           )}
 
+          {relatedSoftware.length > 0 && (
+            <section className="mt-12">
+              <h2 className="sp-title">More {software.category} software</h2>
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">Explore other tools in this category and compare their plan limits, workflows and trade-offs.</p>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                {relatedSoftware.map((item) => (
+                  <Link key={item.slug} href={`/software/${item.slug}`} className="rounded-2xl border border-black/10 p-5 transition-colors hover:border-[#001D39]/40">
+                    <span className="text-sm font-semibold text-[#1d1d1f]">{item.name}</span>
+                    <span className="mt-2 block text-sm leading-6 text-[#6e6e73]">{item.tagline}</span>
+                    <span className="mt-3 block text-sm font-semibold text-[#001D39]">View profile →</span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
           {software.alternatives.length > 0 && (
             <section className="mt-12">
               <h2 className="sp-title">Alternatives to explore</h2>
@@ -177,12 +208,12 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
             </div>
           </div>
           <p className="mt-4 text-sm leading-6 text-[#6e6e73]">
-            {software.category === "Sales"
+            {software.category === "CRM & Sales"
               ? "Before choosing, try the same task in each shortlisted CRM: add a contact, record an interaction, schedule the next action, find the record later and export your data."
               : "Before choosing, test a typical workflow in each shortlisted tool, check the plan limits, verify required integrations and confirm you can export your data."}
           </p>
-          <Link href={software.category === "Sales" ? "/best/crm-software" : "/software"} className="mt-5 inline-flex text-sm font-semibold text-[#001D39] hover:underline">
-            {software.category === "Sales" ? "Compare CRM options →" : "Explore all software →"}
+          <Link href={software.category === "CRM & Sales" ? "/best/crm-software" : `/software?category=${encodeURIComponent(software.category)}`} className="mt-5 inline-flex text-sm font-semibold text-[#001D39] hover:underline">
+            {software.category === "CRM & Sales" ? "Compare CRM options →" : `Explore ${software.category} →`}
           </Link>
           <div className="mt-6 border-t border-black/10 pt-5">
             <p className="text-xs font-semibold uppercase tracking-wide text-[#6e6e73]">Official sources</p>
