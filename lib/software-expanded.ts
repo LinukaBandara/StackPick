@@ -52,6 +52,12 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
     category: "Developer Tools",
     tagline: "Code hosting, collaboration and automation for software teams.",
     summary: "GitHub hosts Git repositories and brings pull requests, issues, code review and development automation into one platform. It is useful for solo developers and teams that want their source code, review process and project discussions connected.",
+    productImage: {
+      src: "https://github.blog/wp-content/uploads/2026/10/image-1.jpg?resize=2064%2C1096",
+      alt: "GitHub personal dashboard showing active agent sessions, pull requests, recent changelog updates and repository navigation",
+      caption: "GitHub dashboard screenshot from the official October 2026 product update.",
+      sourceUrl: "https://github.blog/changelog/2026-10-01-new-dashboard-experience-now-the-default/",
+    },
     officialUrl: "https://github.com/",
     pricingUrl: "https://github.com/pricing",
     freePlan: "Yes. GitHub Free is listed at $0 and includes unlimited public and private repositories, issues and projects, Dependabot security updates, and a monthly GitHub Actions allowance. Some collaboration and security controls require paid plans.",
