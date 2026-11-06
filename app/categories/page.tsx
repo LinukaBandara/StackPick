@@ -4,35 +4,30 @@ import { SOFTWARE_PROFILES } from "@/lib/software";
 
 export const metadata: Metadata = {
   title: "Software Categories",
-  description: "Explore software by business function. Browse verified product profiles, pricing details and practical comparisons.",
+  description: "Explore software by business function, with independent product profiles, official pricing links and practical comparisons.",
   alternates: { canonical: "/categories" },
 };
 
 const CATEGORY_DETAILS: Record<string, { description: string; examples: string }> = {
-  "Accounting & Invoicing": { description: "Compare tools for bookkeeping, invoicing, expenses and financial workflows.", examples: "Accounting · Invoicing · Expenses" },
-  "Sales": { description: "Explore CRMs and tools for managing leads, customer relationships and sales pipelines.", examples: "CRM · Lead management · Sales pipelines" },
-  "Project Management": { description: "Find tools for planning projects, assigning work and tracking team progress.", examples: "Tasks · Kanban · Project planning" },
-  "Productivity & Collaboration": { description: "Organise documents, knowledge, communication and everyday team work.", examples: "Docs · Knowledge bases · Team collaboration" },
-  "Developer Tools": { description: "Explore tools for building, deploying, testing and maintaining software.", examples: "Code hosting · APIs · Development" },
-  "Developer Tools & Hosting": { description: "Compare hosting and deployment platforms for modern web applications.", examples: "Hosting · Deployment · Infrastructure" },
-  "Developer Tools & Databases": { description: "Find managed databases and backend services for application development.", examples: "Postgres · Backend · Database" },
-  "Communication": { description: "Discover team messaging and communication platforms.", examples: "Messaging · Channels · Team chat" },
-  "Design & Content": { description: "Explore tools for creating graphics, presentations and marketing content.", examples: "Design · Templates · Content" },
-  "Payments": { description: "Compare payment infrastructure and online payment processing tools.", examples: "Payments · Checkout · Billing" },
+  "CRM & Sales": { description: "Organise leads, customer relationships, sales pipelines and marketing-led customer journeys.", examples: "CRM · Leads · Sales pipelines" },
+  "Accounting & Finance": { description: "Compare tools for bookkeeping, invoicing, cash flow and day-to-day business finances.", examples: "Accounting · Invoicing · Cash flow" },
+  "Project & Work Management": { description: "Plan projects, coordinate teams, organise knowledge and track work from one workspace.", examples: "Projects · Tasks · Collaboration" },
+  "Developer Tools": { description: "Build, deploy, test and maintain applications with developer-focused platforms.", examples: "Code · Hosting · APIs · Automation" },
+  "Design & Creative": { description: "Create visual assets, product designs and collaborative design systems.", examples: "Graphic design · UI/UX · Prototyping" },
+  "Website & Ecommerce": { description: "Build websites, publish content and run online stores.", examples: "Website builders · CMS · Online stores" },
+  "Marketing & SEO": { description: "Reach audiences, run campaigns and improve search visibility.", examples: "Email marketing · SEO · Analytics" },
+  "Communication & Support": { description: "Coordinate team conversations and manage customer support across channels.", examples: "Team chat · Video · Help desks" },
+  "Business Productivity": { description: "Handle everyday business work, scheduling, writing and information collection.", examples: "Office suites · Scheduling · Forms" },
+  "Payments": { description: "Accept online payments and integrate payment processing into products and services.", examples: "Checkout · Payment APIs · Billing" },
 };
 
-const categories = Array.from(new Set(SOFTWARE_PROFILES.map((item) => item.category)))
-  .sort((a, b) => a.localeCompare(b))
+const categories = Object.keys(CATEGORY_DETAILS)
   .map((name) => ({
     name,
     count: SOFTWARE_PROFILES.filter((item) => item.category === name).length,
-    ...(
-      CATEGORY_DETAILS[name] ?? {
-        description: `Explore software products and tools for ${name.toLowerCase()} workflows.`,
-        examples: name,
-      }
-    ),
-  }));
+    ...CATEGORY_DETAILS[name],
+  }))
+  .filter((category) => category.count > 0);
 
 export default function CategoriesPage() {
   return (
