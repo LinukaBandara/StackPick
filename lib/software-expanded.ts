@@ -557,7 +557,7 @@ export const EXPANDED_SOFTWARE_PROFILES: SoftwareProfile[] = [
   profile({
     slug: "zapier",
     name: "Zapier",
-    category: "Automation",
+    category: "Business Productivity",
     tagline: "Connect apps and automate repetitive work without maintaining custom integrations.",
     summary: "Zapier connects thousands of applications through automated workflows called Zaps. It is a convenient option for common business integrations and quick automations, but task allowances, multi-step workflows and premium app access affect the plan required.",
     productImage: {
