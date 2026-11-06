@@ -69,6 +69,16 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
     setCurrentPage(1);
   }, [activeCategory, searchQuery]);
 
+  function changePage(nextPage: number) {
+    setCurrentPage(nextPage);
+    requestAnimationFrame(() => {
+      document.getElementById("directory-results")?.scrollIntoView({
+        behavior: "auto",
+        block: "start",
+      });
+    });
+  }
+
   const pageCount = Math.max(1, Math.ceil(filteredArticles.length / pageSize));
   const pageStart = (currentPage - 1) * pageSize;
   const visibleArticles = filteredArticles.slice(pageStart, pageStart + pageSize);
@@ -129,7 +139,7 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
       </div>
 
       {/* Grid of Results */}
-      <div id="directory-results" className="scroll-mt-24">
+      <div id="directory-results" className="scroll-mt-32">
       {filteredArticles.length > 0 ? (
         <div className="grid gap-5 sm:grid-cols-2">
           {visibleArticles.map((a, index) => (
@@ -182,8 +192,8 @@ export default function BestDirectory({ articles }: BestDirectoryProps) {
         <nav className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-black/[0.08] pt-6 sm:flex-row" aria-label="Comparison guide pagination">
           <p className="text-xs text-[#6e6e73]">Page {currentPage} of {pageCount}</p>
           <div className="flex items-center gap-2">
-            <button type="button" onClick={() => setCurrentPage((page) => Math.max(1, page - 1))} disabled={currentPage === 1} className="min-h-10 rounded-full border border-[#d2d2d7] px-4 py-2 text-sm font-medium text-[#1d1d1f] transition hover:bg-[#f5f5f7] disabled:cursor-not-allowed disabled:opacity-50">Previous</button>
-            <button type="button" onClick={() => setCurrentPage((page) => Math.min(pageCount, page + 1))} disabled={currentPage === pageCount} className="min-h-10 rounded-full bg-[#001D39] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#123b5d] disabled:cursor-not-allowed disabled:opacity-50">Next</button>
+            <button type="button" onClick={() => changePage(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="min-h-10 rounded-full border border-[#d2d2d7] px-4 py-2 text-sm font-medium text-[#1d1d1f] transition hover:bg-[#f5f5f7] disabled:cursor-not-allowed disabled:opacity-50">Previous</button>
+            <button type="button" onClick={() => changePage(Math.min(pageCount, currentPage + 1))} disabled={currentPage === pageCount} className="min-h-10 rounded-full bg-[#001D39] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#123b5d] disabled:cursor-not-allowed disabled:opacity-50">Next</button>
           </div>
         </nav>
       )}
