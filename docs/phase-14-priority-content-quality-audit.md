@@ -566,3 +566,33 @@ Primary sources checked:
 This is a first source-backed refresh, not a guarantee that every vendor offer is identical at every regional checkout. The Otter page displays multiple annual/monthly promotional price presentations; the article directs readers to verify the actual checkout. Regional currency, tax, account eligibility and local recording/consent obligations still require reader-specific confirmation.
 
 **Commits:** pricing guide `bbf8221`; general meeting-assistants guide `100b972`; review-date correction `7a0cf00`. These GitHub source edits have not been validated by a local build, lint, typecheck or CI run.
+
+
+## Second article-edit batch — AI coding assistants (7 November 2026)
+
+Updated:
+- `app/best/ai-coding-assistants/page.tsx`
+- `app/best/ai-tools-react-nextjs/page.tsx`
+
+Changes:
+- Updated the AI coding assistant pricing review date to November 7, 2026 and added a direct quick answer.
+- Corrected GitHub Copilot's Free allowance to 2,000 completions/month and clarified that chat/agent interactions consume AI credits while paid-plan completions are unlimited. The article links to the official plans page.
+- Added current Claude Code access context: Claude Pro is US$20/month; Max tiers are US$100 and US$200/month; Claude chat and Claude Code share plan usage, while Console API usage is separately billed.
+- Clarified that Codex is included across ChatGPT plans, including Free/Go, but Codex Cloud is not available on Free/Go and API-key usage is billed separately.
+- Updated the Windsurf entry to **Devin Desktop (formerly Windsurf)** and refreshed its official product link and current public Free/Pro/Max references.
+- Replaced the individual Gemini Code Assist recommendation with **Google Antigravity**. Google's consumer Gemini Code Assist IDE/CLI access ended on June 18, 2026 and users were directed to migrate to Antigravity; business Standard/Enterprise editions remain separate.
+- Updated the Cursor source link and clarified that current plan names, usage pools and third-party model billing must be checked rather than repeating legacy plan figures.
+- Added Antigravity to the React/Next.js workflow guide, with a quick answer and a November 7, 2026 plan-check note.
+
+Primary sources checked:
+- GitHub Copilot plans and AI credits: https://github.com/features/copilot/plans
+- Claude Code plan access and shared usage: https://support.anthropic.com/en/articles/11145838-using-claude-code-with-your-max-plan
+- Codex plans and access: https://chatgpt.com/codex/pricing/ and https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan
+- Cursor pricing: https://prod.cursor.com/en-US/pricing
+- Devin Desktop (formerly Windsurf): https://devin.ai/desktop
+- Antigravity individual plans: https://www.antigravity.google/pricing
+- Google transition notice: https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/
+
+**Commits:** AI coding assistants `84628d2`; React/Next.js guide `3e6257c`.
+
+This is a first source-backed refresh. Cursor plan pages and product packaging are changing; confirm exact usage and billing at checkout. Google's former Gemini Code Assist individual experience should not be recommended as a current consumer workflow; use Antigravity instead. No local build, lint, typecheck or CI run has passed for these edits.
