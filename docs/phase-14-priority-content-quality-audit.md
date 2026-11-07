@@ -1677,3 +1677,13 @@ The earlier CI diagnosis is now backed by the actual job log:
 - The SEO/content workflow passed its route/sitemap, internal-link and content-inventory steps on its recorded successful run. This does not replace the separate lint and production build.
 
 Next validation gate: obtain a fresh successful CI run on the fixed branch head; require lint and production build to pass, then review the moderate development-only advisories and remaining image warnings. Vercel deployment remains blocked by its build-rate limit.
+
+
+## Release gate update — 8 November 2026
+
+- GitHub Actions StackPick CI run **#579** (`42406963756`) completed successfully on commit `e80527fc7b5df378567c8fef20a3bec3924e916b`.
+- Confirmed successful steps: locked dependency installation, production dependency audit, development dependency advisory report, internal-link check, ESLint, and Next.js production build.
+- This resolves the two unterminated pricing-note strings and proves the current branch head builds in GitHub Actions. It does not prove a Vercel production deployment or live-browser QA.
+- Branch topology clarification: the current working branch is the head of open draft PR **#99**, whose intended base is `growth/phase-11-commercial-growth`. Comparing those two refs reports **344 commits ahead, 0 behind**. The earlier comparison against `main` (538 ahead / 1 behind) is not the correct measure for this stacked PR. Do not merge this PR directly to `main` or rebase it onto `main`; preserve the stacked PR chain and review PR #99 against its declared base.
+- The separate SEO/content audit workflow remains its own gate; it runs route/sitemap integrity, internal-link checks and the content inventory. The current CI success should not be misreported as a fresh execution of that separate workflow.
+- Next: confirm the separate SEO/content workflow results on the current branch head; then perform the manual technical SEO review (canonical/metadata/schema/crawl controls and production Search Console/Bing evidence). Vercel deployment remains blocked by the build-rate limit.
