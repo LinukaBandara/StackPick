@@ -24,6 +24,7 @@ Improve StackPick's organic search performance and its chances of being accurate
 - `scripts/audit-seo-routes.mjs`: added route and sitemap integrity checks.
 - `package.json`: added the `audit:seo` script.
 - `app/robots.ts`: explicitly disallowed private admin paths in each AI crawler group.\n- `lib/guides.ts`: extracted the single 109-entry guide catalogue shared by both directory pages.\n- `app/guides/page.tsx`: replaced the 19-item curated subset with a server-rendered index of all 109 guides.\n- `app/best/page.tsx`: now imports the shared guide catalogue.\n- `scripts/audit-seo-routes.mjs`: now audits the shared catalogue and verifies every guide destination is also in the static sitemap.
+- `.github/workflows/phase-5-content-audit.yml`: now runs the route audit, internal-link check and content inventory on pushes to `main`/this working branch and pull requests targeting `main`, then uploads the CSV audit artifact.
 
 ## Local validation required
 
@@ -37,7 +38,7 @@ npm run lint
 npm run build
 ```
 
-Record the actual output. Do not mark the phase complete until the route audit and all existing checks pass, and any route exceptions are understood. The GitHub file edits have not been run through local Node, ESLint or Next.js build validation yet. Vercel deployment is currently unavailable due to the user's deployment limit, so continue with offline/source-level work until the limit resets.
+Record the actual output. Do not mark the phase complete until the route audit and all existing checks pass, and any route exceptions are understood. The GitHub file edits have not been run through local Node, ESLint or Next.js build validation yet. The expanded GitHub Actions workflow has been committed, but no workflow run has appeared for the latest commit at the time of this note; do not treat CI as passed. Vercel deployment is currently unavailable due to the user's deployment limit, so continue with offline/source-level work until the limit resets.
 
 ## GEO/AEO answer-format improvements — 7 November 2026
 
