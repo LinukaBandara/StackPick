@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 };
 
 const ACCOUNTING_PROFILES = [
-  { name: "Wave", url: "https://www.waveapps.com/", href: "/software/wave", note: "Free basic bookkeeping and invoicing for eligible businesses" },
-  { name: "FreshBooks", url: "https://www.freshbooks.com/", href: "/software/freshbooks", note: "Service freelancers billing by time or project" },
-  { name: "QuickBooks Online", url: "https://quickbooks.intuit.com/", href: "/software/quickbooks", note: "Fuller accounting when accountant compatibility matters" },
-  { name: "Zoho Books", url: "https://www.zoho.com/books/", href: "https://www.zoho.com/books/", note: "Connected books for teams already in Zoho" },
+  { name: "Wave", url: "https://www.waveapps.com/pricing/", href: "/software/wave", note: "Free basic bookkeeping and invoicing for eligible businesses" },
+  { name: "FreshBooks", url: "https://www.freshbooks.com/pricing", href: "/software/freshbooks", note: "Service freelancers billing by time or project" },
+  { name: "QuickBooks Online", url: "https://quickbooks.intuit.com/pricing/", href: "/software/quickbooks", note: "Fuller accounting when accountant compatibility matters" },
+  { name: "Zoho Books", url: "https://www.zoho.com/us/books/pricing/", href: "https://www.zoho.com/books/", note: "Connected books for teams already in Zoho" },
 ];
 
 export default function Page() {
@@ -22,8 +22,10 @@ export default function Page() {
     <ComparisonArticle
       title="Best Accounting Software for Freelancers"
       slug="accounting-for-freelancers"
+      reviewedOn="2026-11-07"
       intro="Freelancer accounting is mainly about keeping business income, expenses and tax records understandable without turning admin into a second job. The right choice depends on whether you need simple invoice-and-expense tracking, time-based billing, or a system your accountant already knows. Start by checking local tax requirements and how easily you can export clean records."
-      pricingNote="Plans, bank feeds, payment features and tax support vary by country. Confirm current pricing, regional availability, free-plan limits and accountant access before moving your records. Free invoice creation does not always mean free payment processing or full bookkeeping features."
+      quickAnswer="For a US or Canada-based freelancer who only needs basic invoicing and bookkeeping, Wave Starter is worth checking first if the business is eligible. FreshBooks suits time-based client billing; QuickBooks suits broader bookkeeping and accountant workflows; Zoho Books is worth checking when its local edition and eligibility rules fit. A free plan in one country is not automatically available in another." 
+      pricingNote="US plan and regional eligibility details checked November 7, 2026. Wave account creation is limited to businesses based in the US and Canada. FreshBooks has a 30-day no-card trial, then paid plans with billable-client limits. QuickBooks US Free is limited to 1 user, no accountant access, 2 invoices/month and 1 connected bank; Simple Start is paid. Zoho Books US Free supports 1 user plus 1 accountant, up to 1,000 invoices and 1,000 expenses/year, and is subject to a US$50,000 annual-revenue threshold. Country editions, bank feeds, payment gateways, taxes and accountant access vary; verify local terms before importing records."
       tools={[
         {
           name: "Wave",
