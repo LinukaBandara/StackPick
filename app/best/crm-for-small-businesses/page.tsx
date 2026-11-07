@@ -22,8 +22,10 @@ export default function CrmForSmallBusinessesPage() {
     <ComparisonArticle
       title="Best CRM for Small Businesses"
       slug="crm-for-small-businesses"
+      reviewedOn="2026-11-07"
       intro="A small business CRM has one job first: make sure opportunities and customer conversations do not disappear between people, inboxes and spreadsheets. We compare tools around that reality — setup effort, team handoffs, free access and the point where costs start to matter — rather than ranking the platform with the longest feature list."
-      pricingNote="Free-plan details were checked against official provider pages in late October 2026. HubSpot lists free tools for up to 2 users and 1,000 contacts; Zoho CRM and Freshsales each list a free option for up to 3 users; Pipedrive offers a 14-day trial rather than a permanent free plan. Confirm the exact features and limits on the provider’s pricing page before importing customer data, because plans can change."
+      quickAnswer="For a team of one or two, HubSpot Free is a practical first test if its 1,000-contact limit is enough. Zoho CRM and Freshsales both publish free plans for up to three users. Pipedrive is a paid CRM with a 14-day trial, so budget for seats after testing. Compare the exact free features, team size and local billing terms before importing customer data."
+      pricingNote="Free-plan limits and trial status were rechecked against official provider pages on 7 November 2026. The pricing pages referenced here display US-dollar prices; currency, tax, payment methods and paid-plan prices vary by billing country. HubSpot Free supports up to 2 users and 1,000 contacts; Zoho CRM Free and Freshsales Free each support up to 3 users; Pipedrive offers a 14-day trial, not a permanent free plan. Confirm local terms and feature availability before importing customer data."
       tools={[
         {
           name: "HubSpot CRM",
