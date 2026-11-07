@@ -2,7 +2,7 @@
 
 **Working branch:** `growth/adsense-journey-readiness`  
 **Started:** 7 November 2026  
-**Status:** Initial technical cleanup committed; local validation and Search Console evidence still required.
+**Status:** Technical cleanup and a crawlable full guide index committed; local validation and Search Console evidence still required.
 
 ## Objective
 
@@ -16,14 +16,14 @@ Improve StackPick's organic search performance and its chances of being accurate
 4. **A manual sitemap already exists.** `app/sitemap.ts` maintains a static route list and appends software profile routes. The generated output deduplicates the final route array, but the new audit checks the static list and route existence.
 5. **Core site metadata and basic structured data already exist.** `app/layout.tsx` defines site-wide metadata and WebSite/Organization JSON-LD. Do not add schema merely to chase AI visibility; structured data must accurately describe visible page content.
 6. **An editorial heuristic audit already exists.** `scripts/audit-content-quality.mjs` flags pages for human review. Its word counts and pattern checks are not quality scores and must not be used alone to noindex, delete or redirect articles.
-7. **Market selection is currently a browsing preference.** `/markets?market=...` changes the selected market; it is not a set of unique country landing pages. Do not index thin query-parameter variants or create near-duplicate country pages without distinct local evidence.
+7. **Market selection is currently a browsing preference.** `/markets?market=...` changes the selected market; it is not a set of unique country landing pages. Do not index thin query-parameter variants or create near-duplicate country pages without distinct local evidence.\n8. **The interactive `/best` directory exposed only its current 12-card page in the initial HTML.** Its pagination is client-side buttons rather than crawlable page links. The new `/guides` page now renders all 109 catalogue entries as ordinary server-rendered links, and all 109 guide destinations were confirmed in the static sitemap. This improves internal discovery without relying on crawlers to click JavaScript controls.
 
 ## Changes committed in this phase
 
 - `app/best/page.tsx`: removed one duplicate AI Meeting Assistant Pricing directory entry.
 - `scripts/audit-seo-routes.mjs`: added route and sitemap integrity checks.
 - `package.json`: added the `audit:seo` script.
-- `app/robots.ts`: explicitly disallowed private admin paths in each AI crawler group.
+- `app/robots.ts`: explicitly disallowed private admin paths in each AI crawler group.\n- `lib/guides.ts`: extracted the single 109-entry guide catalogue shared by both directory pages.\n- `app/guides/page.tsx`: replaced the 19-item curated subset with a server-rendered index of all 109 guides.\n- `app/best/page.tsx`: now imports the shared guide catalogue.\n- `scripts/audit-seo-routes.mjs`: now audits the shared catalogue and verifies every guide destination is also in the static sitemap.
 
 ## Local validation required
 
@@ -37,7 +37,7 @@ npm run lint
 npm run build
 ```
 
-Record the actual output. Do not mark the phase complete until the route audit and all existing checks pass, and any route exceptions are understood.
+Record the actual output. Do not mark the phase complete until the route audit and all existing checks pass, and any route exceptions are understood. The GitHub file edits have not been run through local Node, ESLint or Next.js build validation yet.
 
 ## Next work sequence
 
