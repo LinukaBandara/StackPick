@@ -72,7 +72,7 @@ function analyse(file) {
   const hasDatedReview = Boolean(reviewedOn) || /(?:reviewed|verified|checked)[^\n]{0,120}\b(?:20\d{2}|January|February|March|April|May|June|July|August|September|October|November|December)\b/i.test(source);
   const hasQuickAnswer = /\bquickAnswer\s*=|\bquick answer\b/i.test(source);
   const hasPricingNote = /\bpricingNote\s*=/.test(source);
-  const hasCountryCaveat = /\b(?:country-specific|country eligibility|availability varies by country|regional availability|by country|country-specific terms|billing country|country of billing|local market|local currency|currency varies)\b/i.test(source);
+  const hasCountryCaveat = /\b(?:country-specific|country eligibility|availability varies by country|regional availability|by country|country-specific terms|US-specific|US pricing|US-dollar|US-facing|US market|US-only|US/Canada|US and Canada|US or Canada|billing country|country of billing|local market|local currency|currency varies)\b/i.test(source);
   const hasTestingDisclosure = /\b(?:desk research|desk-based|not a hands-on|not tested in a live|not hands-on product testing)\b/i.test(source);
   const flags = [];
   if (!title) flags.push("missing-title");
