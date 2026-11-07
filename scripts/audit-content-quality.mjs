@@ -69,7 +69,7 @@ function analyse(file) {
   const externalSources = new Set([...source.matchAll(/https?:\/\/[^"\x27\s)]+/g)].map((match) => match[0].replace(/[),.;]+$/, ""))).size;
   const toolEntries = (source.match(/\bname\s*:/g) ?? []).length;
   const reviewedOn = source.match(/(?:reviewed|verified|checked)(?:On|\s+(?:on|date))?\s*[:=]\s*["'`]([^"'`]+)["'`]/i)?.[1] ?? "";
-  const hasQuickAnswer = /\bquickAnswer\s*=/.test(source);
+  const hasQuickAnswer = /\bquickAnswer\s*=|\bquick answer\b/i.test(source);
   const hasPricingNote = /\bpricingNote\s*=/.test(source);
   const hasCountryCaveat = /\b(?:country-specific|country eligibility|availability varies by country|regional availability|by country|country-specific terms|billing country|country of billing|local market|local currency|currency varies)\b/i.test(source);
   const hasTestingDisclosure = /\b(?:desk research|desk-based|not a hands-on|not tested in a live|not hands-on product testing)\b/i.test(source);
