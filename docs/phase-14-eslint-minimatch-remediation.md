@@ -9,7 +9,7 @@
 - `eslint`: `8.57.1`
 - `eslint-config-next`: `15.5.27`
 - Legacy `.eslintrc.json` configuration; no `eslint.config.mjs` yet.
-- The application currently passes ESLint and production build in GitHub Actions.
+- Earlier notes overstated the current validation state. The latest observed CI run on 7 November 2026 failed at ESLint because two guide files contained unterminated `pricingNote` string literals; the production build was skipped. The separate SEO/content workflow passed. Those two source errors have now been fixed, and a rerun is pending; do not claim lint/build success until its result is inspected.
 - Production dependency audit reports **0 vulnerabilities**.
 - Full audit reports **6 moderate development-dependency advisories** from one resolved `minimatch@10.2.6` copy under `@typescript-eslint/typescript-estree@8.70.1`.
 
@@ -27,7 +27,7 @@ The upstream `typescript-eslint` issue confirms that `typescript-estree` current
 
 ## Safe remediation strategy
 
-1. **Migrate the Next.js lint setup coherently.** Next.js 16 removed `next lint` and recommends the ESLint CLI with flat config. Align `eslint-config-next` with the installed Next 16 release and move from ESLint 8/legacy config to a compatible ESLint 9/flat-config setup. Preserve the current rules and ignore behavior; do not silently weaken lint rules.
+1. **Do not force an unnecessary major-version migration.** Next.js 16 removed `next lint` and recommends the ESLint CLI. However, the Next.js 16 upgrade guide explicitly says an existing project that does not use `eslint-config-next@16` may keep its compatible ESLint version; `eslint-config-next@16` requires ESLint 9 or later. This repository currently uses ESLint 8.57.1 with `eslint-config-next@15.5.27` and the legacy config. Keep this compatible pair unless the actual lint run demonstrates a config incompatibility. A flat-config/ESLint 9 migration can be scheduled separately and must preserve current rules.
 2. **Use a scoped override only if compatibility tests pass.** Candidate npm override:
    ```json
    {
