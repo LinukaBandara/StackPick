@@ -14,7 +14,7 @@ export default function EmailMarketingSoftwarePage() {
       title="Best Email Marketing Software for Small Business"
       slug="email-marketing-software"
       intro="The right email platform depends heavily on what drives your cost: contact-list size, sending frequency, automation depth or creator-focused publishing. We compare practical fit and pricing model instead of ranking the platform with the longest feature list."
-      quickAnswer="For a very small list, Mailchimp’s free plan is limited to 250 contacts and 500 monthly sends. For a large stored list with low daily volume, Brevo’s free plan can be a better fit: it allows up to 100,000 stored contacts but only 300 sends per day. Choose MailerLite for a simpler newsletter workflow, Kit for creator publishing, or ActiveCampaign when advanced automation justifies a paid platform. Compare the exact plan available in your billing country before migrating."
+      quickAnswer="For a small general newsletter, compare MailerLite (250 active subscribers and 2,500 monthly emails) with Mailchimp (250 contacts and 500 monthly sends). For a creator audience, Kit’s free tier supports up to 10,000 subscribers, but visual automations and email sequences require a paid plan. Systeme.io offers a broader free business toolkit for up to 2,000 contacts, while GetResponse’s free tier is smaller at 500 contacts and 2,500 monthly newsletters. Brevo suits large stored lists with low daily volume. Treat ActiveCampaign as a paid automation platform with a limited 14-day trial, not a permanent free plan. Limits and eligibility can change; check your billing country before migrating."
       pricingNote="Plan details checked 7 November 2026 against vendor documentation. Mailchimp and Brevo limits below are the published free-plan limits reviewed for this guide; vendors can change eligibility, features and prices. Prices, taxes, currencies and payment options may vary by billing country. Confirm the live terms for your country before importing a list or committing to a paid tier. List size is only half the equation — sending frequency and automation needs often determine the real cost."
       tools={[
         {
@@ -39,46 +39,46 @@ export default function EmailMarketingSoftwarePage() {
           name: "MailerLite",
           bestFor: "Beginners who want a simple platform and an accessible entry plan",
           freeOption:
-            "A free plan is available within current subscriber and feature limits. Confirm exact caps before importing your list.",
+            "MailerLite’s Free plan, updated on 16 June 2026, supports up to 250 active subscribers and 2,500 emails per month. It also limits active use to 3 automations, 3 forms, 1 landing page, 1 website (up to 5 pages) and 1 digital product. If you exceed a limit, sending or related actions can be paused until you reduce usage or upgrade.",
           tradeoff:
             "Easy to start with. Advanced automation and reporting needs can push you toward paid tiers as the operation becomes more sophisticated.",
-          url: "https://www.mailerlite.com/",
+          url: "https://www.mailerlite.com/help/free-plan-update-faq",
         },
         {
           name: "ActiveCampaign",
           bestFor: "Businesses that need serious behavior-based automation",
           freeOption:
-            "No permanent free tier for ongoing use. Confirm current trial and paid plan pricing.",
+            "ActiveCampaign offers a 14-day trial with up to 100 contacts and 100 emails sent. The vendor says trial accounts are not charged unless you manually upgrade. Treat it as a limited trial, not a permanent free plan; paid pricing depends on contact count and plan.",
           tradeoff:
             "Powerful branching workflows and behavioral triggers come with a higher price floor and learning curve than beginner-focused email tools. Worth it when basic tools stop being enough.",
-          url: "https://www.activecampaign.com/",
+          url: "https://www.activecampaign.com/about/faq",
         },
         {
           name: "Kit",
           bestFor: "Solo creators and newsletter writers",
           freeOption:
-            "A free plan is available within current subscriber and feature limits. Confirm exact terms on the official site.",
+            "Kit’s Free plan supports up to 10,000 subscribers and unlimited email broadcasts. It includes tagging and segmentation, forms and landing pages, but not visual automations or automated email sequences; those are paid Creator-plan features. Kit states that its plans have no email-send limits.",
           tradeoff:
             "Designed around creators and publishing rather than broad B2B or e-commerce marketing workflows. Its focus can be an advantage or a limitation depending on the business.",
-          url: "https://kit.com/",
+          url: "https://kit.com/pricing",
         },
         {
           name: "Systeme.io",
           bestFor: "Solo businesses that want email campaigns alongside simple sales funnels and digital-product delivery",
           freeOption:
-            "A free plan is advertised. Verify current email, contact, funnel and automation limits before choosing it as your main tool.",
+            "The permanent Free plan supports up to 2,000 contacts and unlimited email sends, but its feature allowances are much tighter than the paid plans: up to 3 sales funnels, 1 blog, 1 course, 1 affiliate program, 1 custom domain, 1 automation rule and 1 email campaign. The vendor says no credit card is required.",
           tradeoff:
             "Combining email, funnels and digital-product tools can reduce the number of subscriptions a new business needs. Dedicated email platforms can offer more depth for complex segmentation or large-scale campaigns.",
-          url: "https://systeme.io/",
+          url: "https://systeme.io/pricing/",
         },
         {
           name: "GetResponse",
           bestFor: "Small businesses and creators that want email campaigns, automation and landing pages in one platform",
           freeOption:
-            "A free plan may be available with feature and audience limits. Verify the current plan details before migrating.",
+            "GetResponse offers a permanent Free account for up to 500 contacts and 2,500 newsletters per month, plus one landing page. A 14-day premium-feature period is included; after it ends, premium features are removed unless you upgrade. The paid Starter plan is shown from US$19/month on the current US pricing page, with list-size and billing options affecting the price.",
           tradeoff:
             "Combines email marketing with landing pages and automation features, which can reduce tool switching. Compare contact-based pricing and automation depth at your expected list size.",
-          url: "https://www.getresponse.com/",
+          url: "https://www.getresponse.com/help/can-i-try-getresponse-before-i-buy.html",
         },
       ]}
       bottomLine="Large list, infrequent sends? Check Brevo’s volume-oriented model first. Just starting and want simplicity? MailerLite. Need deep behavioral automation? ActiveCampaign once basic tools stop being enough. Writing a creator newsletter rather than running a traditional business list? Kit is purpose-built for that. Want email plus simple funnels and digital products in one place? Compare Systeme.io and GetResponse against your workflow, contact count and total subscription cost. Always model cost at your real list size and send frequency before committing."
