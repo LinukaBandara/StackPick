@@ -384,3 +384,12 @@ For application snapshot `09b2db25`:
 2. Resolve the 6 moderate dev-dependency advisories with a coordinated ESLint/TypeScript parser migration.
 3. Apply P2 editorial standards to pages only when substantively editing them; no mass boilerplate.
 4. After Vercel quota resets, deploy the validated branch and run coverage, sitemap, canonical, indexing and query-overlap checks.
+
+
+## Dependency remediation plan recorded
+
+Created `docs/phase-14-eslint-minimatch-remediation.md`.
+
+The six moderate development-only audit findings resolve to `minimatch@10.2.6` under `@typescript-eslint/typescript-estree@8.70.1`; the upstream advisory is fixed at 11.0.1, but the upstream typescript-eslint issue was still open when reviewed. The plan is to migrate Next 16 to ESLint 9 + flat config and test a **scoped** minimatch 11 override for typescript-estree only. A global override is explicitly rejected because other dependencies still rely on minimatch 3.x.
+
+No dependency or lockfile changes were committed: this environment cannot run npm or regenerate the lockfile, and hand-editing lock metadata would be unsafe. The application has already passed lint/build; production audit remains 0 vulnerabilities.
