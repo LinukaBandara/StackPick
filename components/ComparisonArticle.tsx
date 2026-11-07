@@ -230,13 +230,285 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "appointment-scheduling-software": [
     { href: "/best/free-scheduling-software", title: "Free scheduling software" },
-    { href: "/best/scheduling-for-small-businesses", title: "Scheduling for small businesses" },
+    { href: "/best/employee-scheduling-software", title: "Employee scheduling software" },
     { href: "/best/form-builders", title: "Form builders for small business" },
   ],
   "n8n-vs-make-vs-zapier": [
     { href: "/best/automate-repetitive-small-business-tasks", title: "Automate repetitive small-business tasks" },
     { href: "/best/ai-automation-tools-small-businesses", title: "AI automation tools for small business" },
     { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
+  ],
+
+  "web-hosting": [
+    { href: "/best/website-builders", title: "Website builders for small business" },
+    { href: "/best/business-email-hosting", title: "Business email hosting" },
+    { href: "/best/cloud-backup-software", title: "Cloud backup software" },
+  ],
+  "employee-scheduling-software": [
+    { href: "/best/hr-software", title: "HR software for small business" },
+    { href: "/best/payroll-software", title: "Payroll software" },
+    { href: "/best/appointment-scheduling-software", title: "Appointment scheduling" },
+  ],
+  "hr-software": [
+    { href: "/best/payroll-software", title: "Payroll software" },
+    { href: "/best/employee-scheduling-software", title: "Employee scheduling" },
+    { href: "/best/applicant-tracking-software", title: "Applicant tracking systems" },
+  ],
+  "expense-management-software": [
+    { href: "/best/expense-management-software-pricing", title: "Expense management pricing" },
+    { href: "/best/track-business-expenses-without-spreadsheets", title: "Track business expenses" },
+    { href: "/best/accounting-software", title: "Accounting software" },
+  ],
+  "online-course-platforms": [
+    { href: "/best/email-marketing-software", title: "Email marketing software" },
+    { href: "/best/website-builders", title: "Website builders" },
+    { href: "/best/form-builders", title: "Online form builders" },
+  ],
+  "contract-management-software": [
+    { href: "/best/esignature-software", title: "E-signature software" },
+    { href: "/best/crm-software", title: "CRM software" },
+    { href: "/best/invoicing-software", title: "Invoicing software" },
+  ],
+  "business-vpn": [
+    { href: "/best/password-managers", title: "Business password managers" },
+    { href: "/best/antivirus-endpoint-security", title: "Endpoint security" },
+    { href: "/best/cloud-storage", title: "Cloud storage" },
+  ],
+  "pos-systems": [
+    { href: "/best/inventory-management-software", title: "Inventory management" },
+    { href: "/best/accounting-software", title: "Accounting software" },
+    { href: "/best/invoicing-software", title: "Invoicing software" },
+  ],
+  "applicant-tracking-software": [
+    { href: "/best/hr-software", title: "HR software" },
+    { href: "/best/employee-scheduling-software", title: "Employee scheduling" },
+    { href: "/best/payroll-software", title: "Payroll software" },
+  ],
+  "cloud-backup-software": [
+    { href: "/best/cloud-storage", title: "Cloud storage" },
+    { href: "/best/antivirus-endpoint-security", title: "Endpoint security" },
+    { href: "/best/business-vpn", title: "Business VPNs" },
+  ],
+  "survey-nps-software": [
+    { href: "/best/form-builders", title: "Form builders" },
+    { href: "/best/email-marketing-software", title: "Email marketing" },
+    { href: "/best/crm-software", title: "CRM software" },
+  ],
+  "calendly-alternatives": [
+    { href: "/best/appointment-scheduling-software", title: "Appointment scheduling" },
+    { href: "/best/appointment-scheduling-software-pricing", title: "Scheduling software pricing" },
+    { href: "/best/calendly-vs-google-calendar", title: "Calendly vs Google Calendar" },
+  ],
+  "freshbooks-alternatives": [
+    { href: "/best/accounting-software", title: "Accounting software" },
+    { href: "/best/invoicing-software", title: "Invoicing software" },
+    { href: "/best/quickbooks-vs-freshbooks", title: "QuickBooks vs FreshBooks" },
+  ],
+  "quickbooks-alternatives": [
+    { href: "/best/accounting-software", title: "Accounting software" },
+    { href: "/best/free-accounting-software", title: "Free accounting software" },
+    { href: "/best/quickbooks-vs-xero", title: "QuickBooks vs Xero" },
+  ],
+  "asana-alternatives": [
+    { href: "/best/project-management-software", title: "Project management software" },
+    { href: "/best/trello-vs-asana", title: "Trello vs Asana" },
+    { href: "/best/asana-vs-clickup", title: "Asana vs ClickUp" },
+  ],
+  "trello-alternatives": [
+    { href: "/best/project-management-software", title: "Project management software" },
+    { href: "/best/trello-vs-asana", title: "Trello vs Asana" },
+    { href: "/best/free-project-management-software", title: "Free project management" },
+  ],
+  "salesforce-alternatives-small-businesses": [
+    { href: "/best/crm-software", title: "CRM software" },
+    { href: "/best/hubspot-alternatives-small-businesses", title: "HubSpot alternatives" },
+    { href: "/best/crm-software-pricing", title: "CRM software pricing" },
+  ],
+  "notion-alternatives-small-businesses": [
+    { href: "/best/notion-vs-clickup", title: "Notion vs ClickUp" },
+    { href: "/best/project-management-software", title: "Project management software" },
+    { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
+  ],
+  "slack-alternatives-small-teams": [
+    { href: "/best/video-conferencing", title: "Video conferencing" },
+    { href: "/best/project-management-software", title: "Project management software" },
+    { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
+  ],
+  "ai-tools-marketing-small-businesses": [
+    { href: "/best/ai-writing-tools-small-businesses", title: "AI writing tools" },
+    { href: "/best/social-media-scheduling", title: "Social media scheduling" },
+    { href: "/best/email-marketing-software", title: "Email marketing software" },
+  ],
+  "invoice-clients-as-freelancer": [
+    { href: "/best/invoicing-software", title: "Invoicing software" },
+    { href: "/best/free-invoicing-software", title: "Free invoicing software" },
+    { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
+  ],
+  "manage-customer-leads-as-freelancer": [
+    { href: "/best/crm-for-freelancers", title: "CRM for freelancers" },
+    { href: "/best/free-crm-software", title: "Free CRM software" },
+    { href: "/best/crm-software-pricing", title: "CRM software pricing" },
+  ],
+  "free-vs-paid-business-software": [
+    { href: "/best/how-to-choose-software-small-business", title: "How to choose software" },
+    { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
+    { href: "/best/free-business-tools-for-freelancers", title: "Free business tools" },
+  ],
+  "manage-client-projects-without-full-time-team": [
+    { href: "/best/project-management-for-freelancers", title: "Project management for freelancers" },
+    { href: "/best/free-project-management-software", title: "Free project management" },
+    { href: "/best/trello-vs-asana", title: "Trello vs Asana" },
+  ],
+  "calendly-vs-google-calendar": [
+    { href: "/best/appointment-scheduling-software", title: "Appointment scheduling" },
+    { href: "/best/appointment-scheduling-software-pricing", title: "Scheduling software pricing" },
+    { href: "/best/calendly-alternatives", title: "Calendly alternatives" },
+  ],
+  "notion-vs-clickup": [
+    { href: "/best/notion-alternatives-small-businesses", title: "Notion alternatives" },
+    { href: "/best/project-management-software", title: "Project management software" },
+    { href: "/best/clickup-vs-monday", title: "ClickUp vs monday.com" },
+  ],
+  "canva-vs-adobe-express": [
+    { href: "/best/social-media-scheduling", title: "Social media scheduling" },
+    { href: "/best/ai-tools-marketing-small-businesses", title: "AI tools for marketing" },
+    { href: "/best/website-builders", title: "Website builders" },
+  ],
+
+  "accounting-software": [
+    { href: "/best/free-accounting-software", title: "Free accounting software" },
+    { href: "/best/invoicing-software", title: "Invoicing software" },
+    { href: "/best/freshbooks-alternatives", title: "FreshBooks alternatives" },
+  ],
+  "ai-customer-support-tools": [
+    { href: "/best/help-desk-software", title: "Help desk software" },
+    { href: "/best/live-chat-software", title: "Live chat software" },
+    { href: "/best/ai-tools-business-content", title: "AI tools for business content" },
+  ],
+  "antivirus-endpoint-security": [
+    { href: "/best/business-vpn", title: "Business VPNs" },
+    { href: "/best/password-managers", title: "Password managers" },
+    { href: "/best/cloud-backup-software", title: "Cloud backup software" },
+  ],
+  "asana-vs-clickup": [
+    { href: "/best/asana-alternatives", title: "Asana alternatives" },
+    { href: "/best/project-management-software", title: "Project management software" },
+    { href: "/best/notion-vs-clickup", title: "Notion vs ClickUp" },
+  ],
+  "business-email-hosting": [
+    { href: "/best/business-phone-voip", title: "Business phone and VoIP" },
+    { href: "/best/video-conferencing", title: "Video conferencing" },
+    { href: "/best/crm-software", title: "CRM software" },
+  ],
+  "business-phone-voip": [
+    { href: "/best/business-email-hosting", title: "Business email hosting" },
+    { href: "/best/video-conferencing", title: "Video conferencing" },
+    { href: "/best/crm-software", title: "CRM software" },
+  ],
+  "clickup-vs-monday": [
+    { href: "/best/asana-vs-clickup", title: "Asana vs ClickUp" },
+    { href: "/best/notion-vs-clickup", title: "Notion vs ClickUp" },
+    { href: "/best/project-management-software", title: "Project management software" },
+  ],
+  "cloud-storage": [
+    { href: "/best/cloud-backup-software", title: "Cloud backup software" },
+    { href: "/best/password-managers", title: "Password managers" },
+    { href: "/best/business-vpn", title: "Business VPNs" },
+  ],
+  "expense-management-software-pricing": [
+    { href: "/best/expense-management-software", title: "Expense management software" },
+    { href: "/best/accounting-software", title: "Accounting software" },
+    { href: "/best/track-business-expenses-without-spreadsheets", title: "Track business expenses" },
+  ],
+  "free-business-tools-for-freelancers": [
+    { href: "/best/free-vs-paid-business-software", title: "Free vs paid business software" },
+    { href: "/best/simple-small-business-software-stack", title: "Build a simple software stack" },
+    { href: "/best/free-crm-software", title: "Free CRM software" },
+  ],
+  "free-crm-without-credit-card": [
+    { href: "/best/free-crm-software", title: "Free CRM software" },
+    { href: "/best/crm-for-freelancers", title: "CRM for freelancers" },
+    { href: "/best/crm-software-pricing", title: "CRM software pricing" },
+  ],
+  "free-invoicing-without-credit-card": [
+    { href: "/best/free-invoicing-software", title: "Free invoicing software" },
+    { href: "/best/invoicing-software", title: "Invoicing software" },
+    { href: "/best/accounting-for-freelancers", title: "Accounting for freelancers" },
+  ],
+  "free-project-management-without-credit-card": [
+    { href: "/best/free-project-management-software", title: "Free project management software" },
+    { href: "/best/project-management-software", title: "Project management software" },
+    { href: "/best/trello-vs-asana", title: "Trello vs Asana" },
+  ],
+  "freshbooks-vs-wave": [
+    { href: "/best/freshbooks-alternatives", title: "FreshBooks alternatives" },
+    { href: "/best/free-accounting-software", title: "Free accounting software" },
+    { href: "/best/accounting-software", title: "Accounting software" },
+  ],
+  "help-desk-software": [
+    { href: "/best/live-chat-software", title: "Live chat software" },
+    { href: "/best/ai-customer-support-tools", title: "AI customer support tools" },
+    { href: "/best/crm-software", title: "CRM software" },
+  ],
+  "hubspot-alternatives-small-businesses": [
+    { href: "/best/salesforce-alternatives-small-businesses", title: "Salesforce alternatives" },
+    { href: "/best/crm-software", title: "CRM software" },
+    { href: "/best/hubspot-vs-pipedrive", title: "HubSpot vs Pipedrive" },
+  ],
+  "hubspot-vs-pipedrive": [
+    { href: "/best/hubspot-alternatives-small-businesses", title: "HubSpot alternatives" },
+    { href: "/best/crm-software", title: "CRM software" },
+    { href: "/best/pipedrive-vs-zoho-crm", title: "Pipedrive vs Zoho CRM" },
+  ],
+  "hubspot-vs-zoho-crm": [
+    { href: "/best/hubspot-alternatives-small-businesses", title: "HubSpot alternatives" },
+    { href: "/best/crm-software", title: "CRM software" },
+    { href: "/best/pipedrive-vs-zoho-crm", title: "Pipedrive vs Zoho CRM" },
+  ],
+  "inventory-management-software": [
+    { href: "/best/pos-systems", title: "POS systems" },
+    { href: "/best/accounting-software", title: "Accounting software" },
+    { href: "/best/expense-management-software", title: "Expense management" },
+  ],
+  "live-chat-software": [
+    { href: "/best/help-desk-software", title: "Help desk software" },
+    { href: "/best/ai-customer-support-tools", title: "AI customer support tools" },
+    { href: "/best/crm-software", title: "CRM software" },
+  ],
+  "payroll-software": [
+    { href: "/best/hr-software", title: "HR software" },
+    { href: "/best/employee-scheduling-software", title: "Employee scheduling" },
+    { href: "/best/accounting-software", title: "Accounting software" },
+  ],
+  "pipedrive-vs-zoho-crm": [
+    { href: "/best/crm-software", title: "CRM software" },
+    { href: "/best/hubspot-vs-pipedrive", title: "HubSpot vs Pipedrive" },
+    { href: "/best/hubspot-vs-zoho-crm", title: "HubSpot vs Zoho CRM" },
+  ],
+  "social-media-scheduling": [
+    { href: "/best/ai-tools-marketing-small-businesses", title: "AI tools for marketing" },
+    { href: "/best/email-marketing-software", title: "Email marketing software" },
+    { href: "/best/canva-vs-adobe-express", title: "Canva vs Adobe Express" },
+  ],
+  "time-tracking-software-pricing": [
+    { href: "/best/time-tracking-software", title: "Time tracking software" },
+    { href: "/best/invoicing-software", title: "Invoicing software" },
+    { href: "/best/project-management-software", title: "Project management software" },
+  ],
+  "trello-vs-asana": [
+    { href: "/best/trello-alternatives", title: "Trello alternatives" },
+    { href: "/best/asana-alternatives", title: "Asana alternatives" },
+    { href: "/best/project-management-software", title: "Project management software" },
+  ],
+  "video-conferencing": [
+    { href: "/best/slack-alternatives-small-teams", title: "Slack alternatives" },
+    { href: "/best/business-phone-voip", title: "Business phone and VoIP" },
+    { href: "/best/project-management-software", title: "Project management software" },
+  ],
+  "zoho-invoice-vs-wave": [
+    { href: "/best/free-accounting-software", title: "Free accounting software" },
+    { href: "/best/accounting-software", title: "Accounting software" },
+    { href: "/best/invoicing-software", title: "Invoicing software" },
   ],
 };
 
