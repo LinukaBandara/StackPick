@@ -13,7 +13,7 @@ export default function Page() {
       title="Best HubSpot Alternatives for Small Businesses"
       slug="hubspot-alternatives-small-businesses"
       intro="HubSpot is not the right fit for every team. You may want a different workflow, a smaller feature set, more users on a free plan or a CRM that fits a wider business workspace. These alternatives solve different problems, so compare them against the reason you are considering a switch."
-      pricingNote="Official provider plan pages checked on October 14, 2026. Zoho CRM and Freshsales list free plans for up to 3 users; Bitrix24 currently positions its free plan for 1–2 users; Pipedrive provides a 14-day trial rather than a permanent free plan. Verify current terms and migration options before moving real customer data."
+      pricingNote="Official provider plan pages checked on November 7, 2026. Bitrix24's pricing table shows Free for 1–2 users, while the same page FAQ says the free plan supports unlimited users; this conflict is flagged rather than treated as a settled limit. Zoho CRM and Freshsales list free plans for up to 3 users; Bitrix24 currently positions its free plan for 1–2 users; Pipedrive provides a 14-day trial rather than a permanent free plan. Verify current terms and migration options before moving real customer data."
       tools={[
         {
           name: "Zoho CRM",
@@ -39,8 +39,8 @@ export default function Page() {
         {
           name: "Bitrix24",
           bestFor: "Very small teams wanting basic CRM plus tasks and collaboration",
-          freeOption: "Bitrix24's official pricing page currently lists its Free plan as 100% free for 1–2 users with 5 GB storage, basic contacts and deals, tasks, calendars, chat and video calls.",
-          tradeoff: "It bundles collaboration features alongside CRM, which may be useful if you will actually use them. The current free-plan user limit is restrictive for a growing team, and some tools require a paid plan.",
+          freeOption: "Bitrix24's current pricing comparison table shows Free for 1–2 users with 5 GB storage, basic contacts and deals, tasks, calendars, chat and video calls. Its same-page FAQ instead says unlimited users, so confirm the actual limit with the provider before relying on the table.",
+          tradeoff: "It bundles collaboration features alongside CRM, which may be useful if you will actually use them. The pricing table's user limit would restrict a growing team, but the provider's FAQ conflicts with that table. Confirm the actual user cap and which tools require a paid plan.",
           url: "https://www.bitrix24.com/prices/",
         },
       ]}
@@ -51,7 +51,7 @@ export default function Page() {
         <h2 className="sp-title mt-4 max-w-4xl">Test the reason you're switching.</h2>
         <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">Identify the specific frustration, reproduce it in the current tool, then test each alternative against the same workflow. Check migration, integrations, limits and the first paid feature you would need. A longer feature list is not proof that a tool is a better fit.</p>
         <h3 className="mt-12 text-2xl font-semibold tracking-tight">Official pricing sources</h3>
-        <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">The plan details above reflect published provider information checked on October 14, 2026. We have not represented these as hands-on product test results; verify the current feature matrix before moving your data.</p>
+        <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">Research method: desk review of official provider pricing pages checked November 7, 2026; StackPick has not conducted a controlled hands-on CRM comparison. Verify current feature matrices, registration terms and export options before moving customer data.</p>
         <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
           <li><a className="underline underline-offset-4" href="https://www.zoho.com/en-us/crm/zohocrm-pricing.html" target="_blank" rel="noreferrer">Zoho CRM official pricing</a> — free users and included features.</li>
           <li><a className="underline underline-offset-4" href="https://www.pipedrive.com/en/pricing" target="_blank" rel="noreferrer">Pipedrive official pricing</a> — trial and paid plans.</li>
