@@ -137,12 +137,15 @@ const ROUTES = [
 // because deploying unrelated changes should not make every URL look freshly updated.
 const LAST_MODIFIED: Record<string, string> = {
   "/best/crm-for-freelancers": "2026-10-10",
-  "/best/invoicing-software": "2026-10-10",
+  "/best/crm-software": "2026-11-07",
+  "/best/invoicing-software": "2026-11-07",
+  "/best/accounting-software": "2026-11-07",
+  "/best/website-builders": "2026-11-07",
   "/best/multi-currency-invoicing": "2026-10-18",
   "/best/ai-meeting-assistants": "2026-10-09",
   "/best/web-hosting": "2026-10-14",
   "/best/online-course-platforms": "2026-10-14",
-  "/best/email-marketing-software": "2026-10-14",
+  "/best/email-marketing-software": "2026-11-07",
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
