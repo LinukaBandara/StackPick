@@ -8,7 +8,7 @@ import CookieConsent from "@/components/CookieConsent";
 import AffiliateClickTracker from "@/components/AffiliateClickTracker";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.tech";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.stackpick.tech";
 const ADSENSE_CLIENT_ID = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || "ca-pub-3937927075789582";
 
 export const metadata: Metadata = {
