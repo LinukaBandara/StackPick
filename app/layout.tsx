@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import { headers } from "next/headers";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -51,10 +53,25 @@ const organizationJsonLd = {
     "An independent software comparison publication. Vendor links currently go directly to providers; StackPick does not currently earn affiliate commissions.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const requestHeaders = await headers();
+  const nonce = requestHeaders.get("x-nonce") ?? undefined;
+  // Keep AdSense disabled until the Google GDPR message is published and tested.
+  const adsenseEnabled = process.env.NEXT_PUBLIC_ADSENSE_ENABLED === "true";
+
   return (
     <html lang="en" className={inter.variable}>
       <head>
+        {adsenseEnabled && (
+          <Script
+            id="google-adsense"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3937927075789582"
+            strategy="beforeInteractive"
+            nonce={nonce}
+            crossOrigin="anonymous"
+          />
+        )}
         <meta name="impact-site-verification" content="8c133419-5f0c-490c-8b97-821b88a36fae" />
       </head>
       <body className="font-sans bg-white text-ink antialiased">
