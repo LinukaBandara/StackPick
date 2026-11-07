@@ -13,36 +13,38 @@ export default function Page() {
     <ComparisonArticle
       title="Best AI Customer Support Tools"
       slug="ai-customer-support-tools"
+      reviewedOn="2026-11-07"
       intro="AI support tools can draft replies, answer routine questions from approved content or assist an existing help desk. The right choice depends on where customer conversations happen, how complex your policies are and whether the system can hand off account-specific or uncertain requests safely. Start with one repeatable support queue rather than trying to automate every conversation."
-      pricingNote="AI features, resolution-based charges, usage limits and bundled plans change frequently. Verify the current provider pricing and contract terms before estimating total cost. Check whether charges depend on conversations, automated resolutions, seats or add-ons, and test the workflow using representative questions before connecting customer records."
+      quickAnswer="For a support team already using Intercom or Zendesk, compare the AI agent inside that help desk first. Intercom Fin charges per outcome; Zendesk uses automated-resolution allowances and overages. Tidio is a smaller website-chat option with a one-time free Lyro quota, while Gorgias fits ecommerce teams and bills by tickets plus successful AI automation outcomes."
+      pricingNote="Provider pricing and usage rules checked November 7, 2026. Intercom Fin is US$0.99 per outcome, in addition to Intercom seat costs when using the full platform; Zendesk uses automated-resolution allowances with committed and pay-as-you-go overage rates. Tidio's free Lyro allowance is a one-time 50 conversations, not a monthly free quota. Gorgias bills for helpdesk tickets and may add an AI automation fee when the AI resolves a ticket without human handoff. These units are not directly comparable; confirm local currency, taxes, plan tier and exact billing definition before estimating cost."
       tools={[
         {
           name: "Intercom Fin",
           bestFor: "Teams that want AI answers within a customer-support platform",
-          freeOption: "Check current provider terms and how AI resolutions are billed.",
+          freeOption: "All Intercom plans include Fin access; Fin is billed at US$0.99 per outcome. Full Intercom plans also have per-seat subscription charges. Using Fin with an existing helpdesk has no seat fee, but a minimum monthly commitment may apply.",
           tradeoff: "Answer quality depends on maintained support content, clear escalation rules and fit with your existing support workflow.",
-          url: "https://www.intercom.com/fin",
+          url: "https://www.intercom.com/pricing",
         },
         {
           name: "Zendesk AI",
           bestFor: "Businesses already using Zendesk for tickets and help-desk operations",
-          freeOption: "Check which AI features are included in your current plan and which require an add-on.",
+          freeOption: "The US pricing page lists Suite Team at US$55/agent/month billed annually and includes AI agents, with 5 automated resolutions per agent/month; extra committed resolutions are US$1.50 and pay-as-you-go resolutions US$2.00 on the published page. Verify your plan's included allowance.",
           tradeoff: "The total setup and cost depend on your Zendesk plan, configuration and the AI capabilities you actually enable.",
-          url: "https://www.zendesk.com/ai/",
+          url: "https://www.zendesk.com/pricing/",
         },
         {
           name: "Tidio",
           bestFor: "Smaller businesses exploring website chat and AI-assisted conversations",
-          freeOption: "Verify current conversation allowances, AI usage and feature availability on the official pricing page.",
+          freeOption: "The Free plan lists 50 human billable conversations/month and a one-time 50 Lyro AI conversation allowance. The AI quota does not reset monthly unless you purchase a paid Lyro package; paid quotas range from 50 to 1,000 conversations/month.",
           tradeoff: "Plan limits and automation capabilities may matter as chat volume grows; test the real workload before committing.",
-          url: "https://www.tidio.com/",
+          url: "https://www.tidio.com/pricing/",
         },
         {
           name: "Gorgias",
           bestFor: "Ecommerce teams that want customer support connected to store workflows",
           freeOption: "Check current pricing, ticket or usage allowances and AI-specific charges.",
           tradeoff: "It is most relevant when ecommerce integrations are central to support; a general service business may not need that setup.",
-          url: "https://www.gorgias.com/",
+          url: "https://www.gorgias.com/pricing",
         },
       ]}
       bottomLine="Choose by the channel your customers already use and the work the tool can safely resolve. A useful pilot should reduce repeat effort without increasing incorrect answers, repeat contacts or customer frustration. Keep a clear route to a person, and verify the current plan and billing model before choosing."
