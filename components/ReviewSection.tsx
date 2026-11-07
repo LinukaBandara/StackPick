@@ -59,6 +59,12 @@ export default function ReviewSection({ softwareSlug, softwareName }: { software
     }
   }
 
+  async function signOut() {
+    await fetch("/api/auth/session", { method: "DELETE" });
+    setSignedIn(false);
+    setMessage("You are signed out.");
+  }
+
   return (
     <section id="user-reviews" className="mt-16 border-t border-black/[0.08] pt-12">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -93,7 +99,7 @@ export default function ReviewSection({ softwareSlug, softwareName }: { software
         <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">Share your experience</h3>
         {signedIn ? (
           <>
-            <p className="mt-2 text-sm leading-6 text-[#6e6e73]">One review per account for this product. Keep it specific, fair and based on your own experience.</p>
+            <div className="flex flex-wrap items-center justify-between gap-3"><p className="text-sm leading-6 text-[#6e6e73]">One review per account for this product. Keep it specific, fair and based on your own experience.</p><button type="button" onClick={signOut} className="text-xs font-semibold text-[#001D39] underline underline-offset-4">Sign out</button></div>
             <form onSubmit={submit} className="mt-6 grid gap-4 sm:grid-cols-2">
               <div>
                 <label htmlFor={`review-name-${softwareSlug}`} className="mb-2 block text-sm font-medium text-[#1d1d1f]">Display name</label>
