@@ -43,7 +43,7 @@ export async function GET() {
   if ("error" in context) return context.error;
   const response = await fetch(`${context.url}/rest/v1/affiliate_partners?select=*&order=updated_at.desc`, { headers: context.headers, cache: "no-store" });
   if (!response.ok) return NextResponse.json({ error: "Could not load affiliate partners. Apply the Phase 6 affiliate operations migration first." }, { status: 502 });
-  return NextResponse.json({ partners: await response.json() });
+  return NextResponse.json({ partners: await response.json(), softwareProfiles: SOFTWARE_PROFILES.map(({ slug, name }) => ({ slug, name })) });
 }
 
 export async function POST(request: NextRequest) {
