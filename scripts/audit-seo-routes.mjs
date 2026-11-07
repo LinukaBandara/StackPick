@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const APP_DIR = path.join(process.cwd(), "app");
-const BEST_DIRECTORY = path.join(APP_DIR, "best", "page.tsx");
+const GUIDE_CATALOGUE = path.join(process.cwd(), "lib", "guides.ts");
 const SITEMAP_FILE = path.join(APP_DIR, "sitemap.ts");
 
 function collectPageFiles(directory) {
@@ -39,7 +39,7 @@ function duplicates(values) {
 }
 
 const errors = [];
-const directorySource = fs.readFileSync(BEST_DIRECTORY, "utf8");
+const directorySource = fs.readFileSync(GUIDE_CATALOGUE, "utf8");
 const directoryHrefs = [...directorySource.matchAll(/href\s*:\s*["'](\/[^"']+)["']/g)].map((match) => match[1]);
 for (const route of duplicates(directoryHrefs)) errors.push("Duplicate /best directory entry: " + route);
 for (const route of directoryHrefs) {
@@ -53,6 +53,10 @@ if (!routesBlock) {
 } else {
   const sitemapRoutes = [...routesBlock[1].matchAll(/["'](\/[^"']*)["']/g)].map((match) => match[1]);
   for (const route of duplicates(sitemapRoutes)) errors.push("Duplicate sitemap route: " + route);
+  const sitemapRouteSet = new Set(sitemapRoutes);
+  for (const route of directoryHrefs) {
+    if (!sitemapRouteSet.has(route)) errors.push("Guide directory destination missing from sitemap: " + route);
+  }
   for (const route of sitemapRoutes) {
     if (!routeExists(route)) errors.push("Sitemap route has no matching App Router page: " + route);
   }
@@ -63,5 +67,5 @@ if (errors.length) {
   for (const error of errors) console.error("- " + error);
   process.exitCode = 1;
 } else {
-  console.log("SEO route audit passed: " + directoryHrefs.length + " directory links and static sitemap routes resolve; no duplicate entries found.");
+  console.log("SEO route audit passed: " + directoryHrefs.length + " guide links and static sitemap routes resolve; guide links are present in the sitemap and no duplicates were found.");
 }
