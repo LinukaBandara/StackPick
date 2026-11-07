@@ -82,6 +82,9 @@ function analyse(file) {
   if (!/pricing|price|cost|free plan|free tier/i.test(source)) flags.push("no-pricing-or-free-plan-context");
   if (!/trade.?off|limitation|limit|drawback|not ideal|who should not/i.test(source)) flags.push("no-obvious-trade-off-language");
   if (!/related|alternatives|comparison/i.test(source)) flags.push("no-obvious-topic-cluster-links");
+  if (!hasQuickAnswer) flags.push("missing-quick-answer");
+  if (hasPricingNote && !reviewedOn) flags.push("pricing-without-checked-date");
+  if (hasPricingNote && !hasCountryCaveat) flags.push("pricing-without-country-caveat");
 
   return {
     route, file: relative, pageType, redirectTo: "", title, description, sourceWordCount, h1Count, h2Count, h3Count,
@@ -115,4 +118,11 @@ for (const row of flagged.slice(0, 20)) console.log(`- ${row.route}: ${row.flags
 if (flagged.length > 20) console.log(`- …and ${flagged.length - 20} more. Open the CSV for the complete list.`);
 console.log(`Scanned ${contentPages.length} guide/comparison articles, ${redirects.length} permanent redirects and ${directories.length} directory page(s).`);
 console.log(`${flagged.length} content pages have one or more heuristic review flags.`);
+const missingQuickAnswer = contentPages.filter((row) => !row.hasQuickAnswer);
+const pricingWithoutDate = contentPages.filter((row) => row.hasPricingNote && !row.reviewedOn);
+const pricingWithoutRegion = contentPages.filter((row) => row.hasPricingNote && !row.hasCountryCaveat);
 console.log(`Editorial signals present: ${contentPages.filter((row) => row.hasQuickAnswer).length} quick answers, ${contentPages.filter((row) => row.hasPricingNote).length} pricing notes, ${contentPages.filter((row) => row.hasCountryCaveat).length} country/region caveats and ${contentPages.filter((row) => row.hasTestingDisclosure).length} testing-method disclosures.`);
+console.log(`Review prompts: ${missingQuickAnswer.length} pages without a detectable quick answer, ${pricingWithoutDate.length} pricing pages without a detectable checked date, and ${pricingWithoutRegion.length} pricing pages without a detectable country/region caveat.`);
+for (const [label, group] of [["Missing quick answer", missingQuickAnswer], ["Pricing without checked date", pricingWithoutDate], ["Pricing without region caveat", pricingWithoutRegion]]) {
+  if (group.length) console.log(`${label}: ${group.slice(0, 15).map((row) => row.route).join(", ")}${group.length > 15 ? ", …" : ""}`);
+}
