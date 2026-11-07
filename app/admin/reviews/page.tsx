@@ -75,7 +75,7 @@ export default function AdminReviewsPage() {
             <h1 className="sp-title mt-3 text-[#1d1d1f]">Review moderation.</h1>
             <p className="mt-3 text-sm leading-6 text-[#6e6e73]">Approve genuine, relevant reviews before they appear on public software profiles.</p>
           </div>
-          <div className="flex flex-wrap gap-2"><Link href="/admin/affiliate-operations" className="min-h-10 rounded-full border border-black/15 bg-white px-4 py-2.5 text-sm font-semibold text-[#001D39]">Affiliate operations</Link><button type="button" onClick={() => void load()} disabled={loading} className="min-h-10 rounded-full border border-black/15 bg-white px-4 text-sm font-semibold text-[#001D39] disabled:opacity-50">Refresh queue</button></div>
+          <div className="flex flex-wrap gap-2"><Link href="/admin/vendors" className="min-h-10 rounded-full border border-black/15 bg-white px-4 py-2.5 text-sm font-semibold text-[#001D39]">Vendor requests</Link><Link href="/admin/affiliate-operations" className="min-h-10 rounded-full border border-black/15 bg-white px-4 py-2.5 text-sm font-semibold text-[#001D39]">Affiliate operations</Link><button type="button" onClick={() => void load()} disabled={loading} className="min-h-10 rounded-full border border-black/15 bg-white px-4 text-sm font-semibold text-[#001D39] disabled:opacity-50">Refresh queue</button></div>
         </div>
 
         {error && <div role="alert" className="mt-7 rounded-2xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">{error}</div>}

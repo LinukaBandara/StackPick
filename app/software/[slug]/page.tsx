@@ -86,7 +86,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
             <p className="text-xs text-[#6e6e73]">Last editorial review: {software.reviewedOn}. Vendor pricing and features can change; confirm current terms before buying.</p>
             <p className="text-xs leading-5 text-[#6e6e73]">Research basis: desk research using public product and pricing information. This profile is not a claim of hands-on testing.</p>
             <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold text-[#001D39]">
-              <Link href="/review-policy" className="hover:underline">Our review policy</Link>
+              <Link href={`/for-vendors/portal?software=${software.slug}`} className="hover:underline">Represent this product</Link>\n              <Link href="/review-policy" className="hover:underline">Our review policy</Link>
               <Link href="/how-we-verify" className="hover:underline">How we verify</Link>
               <Link href="/report-an-issue" className="hover:underline">Report an issue</Link>
             </div>

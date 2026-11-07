@@ -29,7 +29,7 @@ export default function SoftwareCataloguePage() {
 
         <SoftwareCatalogue software={SOFTWARE_PROFILES} />
 
-        <div className="mt-14 rounded-[24px] border border-black/10 bg-[#f5f5f7] p-7 sm:p-9">
+        <div className="mt-14 rounded-[24px] border border-black/10 bg-[#001D39] p-7 text-white sm:p-9"><p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/60">For software teams</p><h2 className="mt-3 text-xl font-semibold tracking-tight">Represent a product in our catalogue?</h2><p className="mt-3 max-w-2xl text-sm leading-6 text-white/75">Request a profile claim or suggest a product for independent editorial consideration.</p><Link href="/for-vendors" className="mt-5 inline-flex text-sm font-semibold text-white underline underline-offset-4">Explore the vendor programme →</Link></div>\n\n        <div className="mt-6 rounded-[24px] border border-black/10 bg-[#f5f5f7] p-7 sm:p-9">
           <h2 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">Still comparing your options?</h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">
             A profile explains one product; a comparison helps you choose between alternatives for a real task.
