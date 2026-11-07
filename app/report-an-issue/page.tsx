@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ReportIssueForm from "@/components/ReportIssueForm";
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function ReportAnIssuePage() {
         <ReportIssueForm />
         <p className="mt-8 border-t border-black/[0.08] pt-6 text-sm leading-6 text-[#6e6e73]">
           We review correction requests against available evidence. For details about our
-          process, read the <a href="/review-policy" className="font-medium text-[#001D39] underline underline-offset-4">editorial review policy</a>.
+          process, read the <Link href="/review-policy" className="font-medium text-[#001D39] underline underline-offset-4">editorial review policy</Link>.
         </p>
       </div>
     </div>
