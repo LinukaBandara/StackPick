@@ -12,6 +12,7 @@ export default function Page() {
     <ComparisonArticle
       title="Zoho Invoice vs Wave"
       slug="zoho-invoice-vs-wave"
+      quickAnswer="Choose Zoho Invoice if you mainly need invoicing, recurring billing and reminders, and its country edition supports your business. Choose Wave if your business is based in the US or Canada and you also want simple bookkeeping. Compare payment-processing fees and country eligibility before choosing; the two free plans are not interchangeable."
       intro="Zoho Invoice and Wave are not like-for-like products: Zoho Invoice focuses on billing, while Wave also offers bookkeeping. Zoho's US Invoice edition is free with usage caps; Wave Starter is free, but Wave is available only to businesses based in the US or Canada. Compare the job you need done, your country, and the paid features or payment fees before choosing. Provider details checked October 17, 2026."
       pricingNote="US price and plan snapshot checked October 17, 2026: Zoho Invoice is $0 for up to 2 users, 3 projects and 500 invoices/year. Wave Starter is $0; Wave Pro is $19/month or $190/year per business. Online payment processing is optional and has transaction fees. Prices and availability can vary by country and change over time."
       tools={[
