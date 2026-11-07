@@ -234,3 +234,19 @@ Important corrections:
 Exact provider sources and plan caveats are recorded in the audit document. No live migrations or hands-on product tests were performed; no build/lint/typecheck/CI has passed.
 
 **Next:** P1 batch 3 — strengthen freelancer invoicing, client-project, CRM lead-management, simple software-stack and software-selection guides.
+
+
+### P1 batch 3 — freelancer and software-selection guides improved
+
+Updated:
+- `app/best/invoice-clients-as-freelancer/page.tsx`
+- `app/best/manage-client-projects-without-full-time-team/page.tsx`
+- `app/best/manage-customer-leads-as-freelancer/page.tsx`
+- `app/best/simple-small-business-software-stack/page.tsx`
+- `app/best/how-to-choose-software-small-business/page.tsx`
+
+The guides now have current plan limits, direct official pricing links and country-specific caveats. Invoicing distinguishes FreshBooks' no-card trial from a permanent free plan, QuickBooks Free's very limited invoice/bank allowance and Zoho Invoice's US Free limits. Lead management now uses HubSpot's exact record caps and Pipedrive's current trial/plan terms. The small-business stack separates Zoho products, and the software buying scorecard now includes privacy/security and data portability.
+
+Exact sources are in the audit document. No live signups or product tests were run; no build/lint/typecheck/CI has passed.
+
+**Next:** P1 batch 4 — strengthen AI roundups and marketing/content guides, then inspect overlap before consolidating anything.
