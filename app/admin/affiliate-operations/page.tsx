@@ -26,6 +26,13 @@ const emptyPartner: PartnerForm = {
 const inputClass = "mt-1 w-full rounded-xl border border-[#d2d2d7] bg-white px-3 py-2.5 text-sm text-[#1d1d1f] outline-none focus:border-[#001D39]";
 const labelClass = "block text-xs font-semibold text-[#4b5563]";
 const statuses = ["prospect", "applied", "approved", "active", "paused", "rejected"] as const;
+function verificationIsCurrent(date: string | null) {
+  if (!date) return false;
+  const verified = Date.parse(`${date}T00:00:00.000Z`);
+  const today = new Date(); today.setUTCHours(0, 0, 0, 0);
+  const ageDays = Math.floor((today.getTime() - verified) / 86400000);
+  return ageDays >= 0 && ageDays <= 90;
+}
 
 export default function AffiliateOperationsPage() {
   const [partners, setPartners] = useState<Partner[]>([]);
@@ -103,7 +110,8 @@ export default function AffiliateOperationsPage() {
     finally { setBusy(false); }
   }
 
-  const activeCount = partners.filter((p) => p.status === "active").length;
+  const activeCount = partners.filter((p) => p.status === "active" && verificationIsCurrent(p.last_verified_at)).length;
+  const overdueCount = partners.filter((p) => p.status === "active" && !verificationIsCurrent(p.last_verified_at)).length;
   const pendingCount = partners.filter((p) => ["prospect", "applied", "approved"].includes(p.status)).length;
   const commissionByCurrency = records.reduce<Record<string, number>>((totals, row) => { totals[row.currency] = (totals[row.currency] || 0) + Number(row.confirmed_commission || 0); return totals; }, {});
 
@@ -119,10 +127,12 @@ export default function AffiliateOperationsPage() {
         {notice && <div role="status" className="mt-7 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-800">{notice}</div>}
 
         <div className="mt-8 grid gap-3 sm:grid-cols-3">
-          <div className="rounded-2xl border border-black/[0.07] bg-white p-5"><p className="text-xs text-[#6e6e73]">Active verified partners</p><p className="mt-2 text-3xl font-semibold tabular-nums text-[#001D39]">{activeCount}</p></div>
+          <div className="rounded-2xl border border-black/[0.07] bg-white p-5"><p className="text-xs text-[#6e6e73]">Active · verified within 90 days</p><p className="mt-2 text-3xl font-semibold tabular-nums text-[#001D39]">{activeCount}</p></div>
           <div className="rounded-2xl border border-black/[0.07] bg-white p-5"><p className="text-xs text-[#6e6e73]">Prospect / application pipeline</p><p className="mt-2 text-3xl font-semibold tabular-nums text-[#001D39]">{pendingCount}</p></div>
           <div className="rounded-2xl border border-black/[0.07] bg-white p-5"><p className="text-xs text-[#6e6e73]">Recorded confirmed commissions</p><p className="mt-2 text-xl font-semibold tabular-nums text-[#001D39]">{Object.entries(commissionByCurrency).map(([currency, amount]) => currency+" "+amount.toLocaleString(undefined, { maximumFractionDigits: 2 })).join(" · ") || "—"}</p><p className="mt-1 text-xs text-[#86868b]">Grouped by currency; no artificial exchange-rate conversion.</p></div>
         </div>
+
+        {overdueCount > 0 && <p role="alert" className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">{overdueCount} active programme(s) have an overdue or missing link-verification date. Recheck each tracking URL and update its verification date before continuing to promote it.</p>}
 
         <section className="mt-9 rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
           <div className="flex flex-wrap items-center justify-between gap-3"><div><p className="sp-eyebrow">Partner register</p><h2 className="mt-2 text-xl font-semibold text-[#1d1d1f]">{editingId ? "Edit programme" : "Add a programme"}</h2></div>{editingId && <button type="button" onClick={() => { setEditingId(""); setForm(emptyPartner); }} className="text-sm font-semibold text-[#001D39] underline">Cancel edit</button>}</div>
@@ -140,13 +150,13 @@ export default function AffiliateOperationsPage() {
             <label className={labelClass}>Last tracking-link verification<input type="date" value={form.last_verified_at || ""} onChange={e=>setForm({...form,last_verified_at:e.target.value})} className={inputClass}/></label>
             <label className={labelClass+" sm:col-span-2 lg:col-span-3"}>Affiliate disclosure shown beside the link<textarea required={form.status==="active"} rows={2} value={form.disclosure || ""} onChange={e=>setForm({...form,disclosure:e.target.value})} placeholder="StackPick may earn a commission if you sign up through this link." className={inputClass}/></label>
             <label className={labelClass+" sm:col-span-2 lg:col-span-3"}>Private notes<textarea rows={3} value={form.notes || ""} onChange={e=>setForm({...form,notes:e.target.value})} className={inputClass}/></label>
-            <div className="sm:col-span-2 lg:col-span-3 flex flex-wrap items-center justify-between gap-3 border-t border-black/[0.07] pt-4"><p className="max-w-2xl text-xs leading-5 text-[#6e6e73]">Active status requires HTTPS tracking URL, approval date, verification date and disclosure. Saving here does not publish or activate the link on the public site.</p><button disabled={busy} className="min-h-11 rounded-full bg-[#001D39] px-6 text-sm font-semibold text-white disabled:opacity-50">{busy ? "Saving…" : editingId ? "Save changes" : "Add programme"}</button></div>
+            <div className="sm:col-span-2 lg:col-span-3 flex flex-wrap items-center justify-between gap-3 border-t border-black/[0.07] pt-4"><p className="max-w-2xl text-xs leading-5 text-[#6e6e73]">Active status requires HTTPS tracking URL, approval date, a verification date within 90 days and disclosure. Saving here does not publish or activate the link on the public site.</p><button disabled={busy} className="min-h-11 rounded-full bg-[#001D39] px-6 text-sm font-semibold text-white disabled:opacity-50">{busy ? "Saving…" : editingId ? "Save changes" : "Add programme"}</button></div>
           </form>
         </section>
 
         <section className="mt-9">
           <div className="flex items-end justify-between gap-3"><div><p className="sp-eyebrow">Programme pipeline</p><h2 className="mt-2 text-xl font-semibold text-[#1d1d1f]">Partners and verification</h2></div><span className="text-xs text-[#6e6e73]">{partners.length} records</span></div>
-          {loading ? <p className="mt-5 rounded-2xl bg-white p-6 text-sm text-[#6e6e73]">Loading partners…</p> : partners.length===0 ? <p className="mt-5 rounded-2xl bg-white p-6 text-sm text-[#6e6e73]">No programmes recorded yet. Add the programmes already applied to; do not record an application as approved.</p> : <div className="mt-5 space-y-3">{partners.map(p=><article key={p.id} className="rounded-2xl border border-black/[0.07] bg-white p-5"><div className="flex flex-wrap items-start justify-between gap-3"><div><p className="text-xs font-semibold uppercase tracking-wide text-[#6e6e73]">{p.software_slug}</p><h3 className="mt-1 text-base font-semibold text-[#1d1d1f]">{p.programme_name}</h3><p className="mt-1 text-xs text-[#6e6e73]">{p.commission_summary || "Commission terms not recorded"}{p.cookie_window_days !== null ? " · "+p.cookie_window_days+"-day cookie" : ""}</p></div><span className="rounded-full bg-[#f5f5f7] px-3 py-1 text-xs font-semibold capitalize text-[#4b5563]">{p.status}</span></div><div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-black/[0.06] pt-3 text-xs text-[#6e6e73]"><span>Last verified: {p.last_verified_at || "Not verified"} · Updated {new Date(p.updated_at).toLocaleDateString()}</span><button type="button" onClick={()=>startEdit(p)} className="font-semibold text-[#001D39] underline underline-offset-4">Edit programme</button></div></article>)}</div>}
+          {loading ? <p className="mt-5 rounded-2xl bg-white p-6 text-sm text-[#6e6e73]">Loading partners…</p> : partners.length===0 ? <p className="mt-5 rounded-2xl bg-white p-6 text-sm text-[#6e6e73]">No programmes recorded yet. Add the programmes already applied to; do not record an application as approved.</p> : <div className="mt-5 space-y-3">{partners.map(p=><article key={p.id} className="rounded-2xl border border-black/[0.07] bg-white p-5"><div className="flex flex-wrap items-start justify-between gap-3"><div><p className="text-xs font-semibold uppercase tracking-wide text-[#6e6e73]">{p.software_slug}</p><h3 className="mt-1 text-base font-semibold text-[#1d1d1f]">{p.programme_name}</h3><p className="mt-1 text-xs text-[#6e6e73]">{p.commission_summary || "Commission terms not recorded"}{p.cookie_window_days !== null ? " · "+p.cookie_window_days+"-day cookie" : ""}</p></div><div className="flex flex-wrap gap-2"><span className="rounded-full bg-[#f5f5f7] px-3 py-1 text-xs font-semibold capitalize text-[#4b5563]">{p.status}</span>{p.status === "active" && !verificationIsCurrent(p.last_verified_at) && <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-800">Verification overdue</span>}</div></div><div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-black/[0.06] pt-3 text-xs text-[#6e6e73]"><span>Last verified: {p.last_verified_at || "Not verified"} · Updated {new Date(p.updated_at).toLocaleDateString()}</span><button type="button" onClick={()=>startEdit(p)} className="font-semibold text-[#001D39] underline underline-offset-4">Edit programme</button></div></article>)}</div>}
         </section>
 
         <section className="mt-10 rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
