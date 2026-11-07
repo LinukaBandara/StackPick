@@ -1581,3 +1581,24 @@ Updated `app/best/clickup-vs-monday/page.tsx` — commit `37990ae`: added the fo
 - `app/best/accounting-for-freelancers/page.tsx` — commit `eae28bb`. Added a formal review date, quick answer and current US/Canada eligibility details for Wave, FreshBooks, QuickBooks Free and Zoho Books US Free; replaced generic homepages with direct plan/pricing links.
 
 The Expensify change was cross-checked against the main expense-management and expense-pricing pages so the same free-plan features are described consistently across the cluster. No live expense or accounting workflow test is claimed.
+
+
+
+## Progress snapshot — continued batch execution (7 November 2026)
+
+This pass continued beyond the initial free project-management/invoicing cluster rather than stopping after one small batch.
+
+**Content work:** more than 30 guide pages have received source-backed corrections or editorial consistency updates across free-plan limits, no-card claims, pricing/seat minimums, regional eligibility, migration/backup, expense management, payroll, password management, AI customer support, business email, hosting, video conferencing, time tracking and alternatives pages. The original 109/109 first-pass screening remains complete. Each batch above records its changed files, commit and primary sources.
+
+**P0 fact-risk status:** the main scoped corrections are now addressed in CRM/free-plan claims, project-management/invoicing limits, accounting/free-plan regional eligibility, Expensify's free-vs-paid features, payroll state pricing, Ramp/Wave eligibility, Carbonite storage, Gorgias usage billing and the reviewed comparison-price clusters. This does not mean every claim on all 109 pages has been independently re-tested; the audit remains a desk-source/editorial review.
+
+**Additional pages screened and retained where no material correction was established:** HR software, endpoint security, business VPN, business phone/VoIP, POS, inventory, survey/NPS and cloud storage already had dated source checks, plan limits, regional caveats and/or a research-method disclosure in the current branch. Their presence in the initial thin-page queue should not be interpreted as a requirement to inflate their word count.
+
+**Release/technical state at this snapshot:**
+- Branch `growth/adsense-journey-readiness` is 456 commits ahead of `main` and 1 behind; it is diverged. Do not merge/rebase blindly.
+- Latest content/audit commit `4cc398c1649fbc6dc6ff809ed21b14e86bb312c4` has a Vercel status failure whose target says build-rate limit reached.
+- No local build, lint, type-check, SEO audit, internal-link audit or content audit has been run in this environment. GitHub network access was not resolvable from the execution container.
+- Next.js 16.4.2 is paired with eslint-config-next 15.5.27, ESLint 8.57.1 and a legacy .eslintrc.json; align the lint toolchain and regenerate the lockfile from a clean environment before validation.
+- No deployment or AdSense approval is claimed.
+
+**Remaining execution order:** (1) reconcile the one-commit main/branch divergence deliberately; (2) align Next 16/ESLint dependencies and run clean install; (3) run `audit:seo`, `check:links`, `audit:content`, lint and production build, fixing actual failures; (4) inspect current Search Console/Bing evidence and complete the remaining P1 consolidation decisions; (5) deploy only after the Vercel build quota permits and the checks pass.
