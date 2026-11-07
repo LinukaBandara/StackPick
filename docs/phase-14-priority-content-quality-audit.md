@@ -393,3 +393,39 @@ The script summary now reports counts for these signals. They are inventory fiel
 5. **Maintain/refresh:** `hubspot-vs-pipedrive`, `quickbooks-vs-xero`, `freshbooks-vs-wave` — preserve stronger structure while refreshing vendor-specific and regional claims.
 
 **Scope note:** No article was rewritten, no URL was removed, and no index/noindex/redirect decision was made from this screening alone. All flagged claims require page-level follow-up before publication changes.
+
+
+## Batch 7 — guides 61–70 (7 November 2026)
+
+**Progress:** 70 of 109 guides screened (64.2%); 39 remain. This remains an editorial/source triage, not a final verification of every claim. Word counts are approximate TSX-source token counts, not rendered article word counts. URL counts are not a quality score. No article pages were changed in this batch.
+
+| # | Guide | Initial triage |
+|---:|---|---|
+| 61 | `calendly-vs-google-calendar` | About 636 source words, two homepage URLs, quick answer and country caveat present, but no dated review or methodology disclosure. Official Google documentation confirms appointment-schedule features depend on account/subscription type: personal accounts and Workspace Business Starter get one booking page; additional capabilities vary by subscription. Replace generic plan language with an explicit account-tier comparison. |
+| 62 | `mailchimp-vs-brevo` | About 847 source words, six distinct source URLs, dated pricing and desk-research disclosure. Add regional/currency caveat and a quick answer; verify audience/contact counting, email send caps and overage rules directly from current vendor documentation. |
+| 63 | `mailchimp-vs-mailerlite` | About 831 source words, five distinct URLs, dated pricing and desk-research disclosure. Needs a regional caveat and quick answer; verify active-subscriber definitions, monthly send caps, automation limits and migration implications. |
+| 64 | `zoho-invoice-vs-wave` | About 1,148 source words, seven distinct URLs, dated pricing, country caveat and desk-research disclosure. Stronger structure; preserve the distinction between invoicing and bookkeeping, and make country/payment eligibility prominent. |
+| 65 | `canva-vs-adobe-express` | About 706 source words and only two homepage URLs. Quick answer and pricing note exist, but there is no dated review, official pricing evidence, country caveat or methodology disclosure. High-priority expansion: current Canva plan names and pricing have changed; compare official plan feature matrices, AI allowances and commercial-use terms rather than relying on homepage links. |
+| 66 | `hubspot-alternatives-small-businesses` | About 923 source words and four distinct official pricing URLs. Pricing note is dated October 14, 2026, but there is no explicit quick answer, methodology disclosure or country caveat. Refresh plan limits and prices; the Zoho/Pipedrive/Freshsales/Bitrix24 claims are specific enough to require direct current plan evidence. |
+| 67 | `salesforce-alternatives-small-businesses` | About 925 source words and four vendor homepages, but no dated review or methodology disclosure. Country caveat exists. High-priority evidence expansion: replace homepage-only citations with exact pricing, feature and migration documentation, and clarify when an alternative cannot reproduce custom objects, automation or permission models. |
+| 68 | `quickbooks-alternatives` | About 1,069 source words, four vendor homepages, country caveat and pricing note, but no dated review or methodology disclosure. Add current official pricing/feature links, dated checks and explicit country coverage for tax, bank feeds, payroll and payments. |
+| 69 | `freshbooks-alternatives` | About 983 source words, four vendor homepages, country caveat and pricing note, but no dated review or methodology disclosure. Add direct official pricing/feature links and dated verification; compare client limits, accounting depth, tax and payment availability by country. |
+| 70 | `calendly-alternatives` | About 1,029 source words, four vendor homepages, country caveat and pricing note, but no dated review or methodology disclosure. Add official pricing/feature sources and a dated review; distinguish scheduling, payment, staff routing and booking-page capabilities by plan and region. |
+
+### Primary-source checks recorded for this batch
+
+- Google's official appointment-schedule comparison says a personal Google Account or Workspace Business Starter can create one booking page. Multiple schedules, automatic reminders and other capabilities vary by eligible Google One/Workspace subscription; payments and co-host features have additional account requirements. This should replace broad statements that simply say "Google Calendar scheduling is free": https://support.google.com/calendar/answer/16287038?hl=en
+- Canva's current official pricing page shows a changed plan lineup: Free, Pro and Business. The page currently lists Free at US$0/year, Pro at US$144/year and Business at US$250/year per person (displayed USD; taxes may apply). It also describes different storage and AI allowances. Do not copy these USD figures as global prices; recheck the live region and billing cadence before publishing: https://www.canva.com/pricing/
+- HubSpot's current official Customer Platform pricing page shows Free for up to 2 users and Starter displayed from US$7/seat/month on a promotional/new-customer offer, with a higher regular displayed price. Pricing is in USD and subject to tax. Avoid treating a temporary promotional rate as the standard ongoing price or applying it universally across regions: https://www.hubspot.com/pricing/suite?tier=starter
+- Calendly's official help documentation updated September 4, 2026 says meeting limits are available on all plans, while feature availability can vary by plan, account creation date and add-ons. Event-type documentation updated August 20, 2026 distinguishes group events, collective events and round-robin scheduling by plan. These are useful feature-level sources, but not substitutes for a full current pricing matrix: https://calendly.com/help/how-to-set-meeting-limits and https://calendly.com/help/event-types-overview
+
+### Batch 7 priority queue
+
+1. **High:** `canva-vs-adobe-express` — current plan lineup/pricing and feature claims need primary sources and a dated comparison.
+2. **High:** `salesforce-alternatives-small-businesses` — homepage-only evidence is insufficient for specific alternative and migration recommendations.
+3. **High:** `hubspot-alternatives-small-businesses` — recheck dated free-plan/user limits and country-specific paid pricing.
+4. **Medium-high:** `calendly-vs-google-calendar` — clarify Google account-tier restrictions with official documentation.
+5. **Medium:** `quickbooks-alternatives`, `freshbooks-alternatives`, `calendly-alternatives` — replace homepage-only links with dated, plan-level sources.
+6. **Maintain/refresh:** `mailchimp-vs-brevo`, `mailchimp-vs-mailerlite`, `zoho-invoice-vs-wave` — preserve the stronger source foundations while verifying exact plan limits and regional eligibility.
+
+**Scope note:** No article was rewritten, no URL was removed, and no index/noindex/redirect decision was made from this screening alone. All vendor limits, prices and eligibility claims require page-level follow-up before publication changes.
