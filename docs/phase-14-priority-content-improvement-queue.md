@@ -250,3 +250,20 @@ The guides now have current plan limits, direct official pricing links and count
 Exact sources are in the audit document. No live signups or product tests were run; no build/lint/typecheck/CI has passed.
 
 **Next:** P1 batch 4 — strengthen AI roundups and marketing/content guides, then inspect overlap before consolidating anything.
+
+
+### P1 batch 4 — six AI/content roundups improved
+
+Updated:
+- `app/best/ai-tools-small-businesses/page.tsx`
+- `app/best/ai-writing-tools-small-businesses/page.tsx`
+- `app/best/ai-productivity-tools-freelancers/page.tsx`
+- `app/best/ai-tools-business-content/page.tsx`
+- `app/best/free-ai-tools-small-businesses/page.tsx`
+- `app/best/ai-tools-marketing-small-businesses/page.tsx`
+
+The pages now separate general assistants, writing/editing, freelance productivity, multi-format business content, genuinely free tiers and marketing execution. Added current plan limits, direct vendor pricing/help sources, quick answers, review dates and privacy/licensing caveats. Key verified details include Grammarly Free's 100 AI prompts/month, Notion AI's limited complimentary trial, Perplexity Free's 3 Pro searches/day and 1 Research query/month, Zapier Free's 100 tasks/month, Canva's plan-specific pooled AI allowances, Adobe Express Free's limited generative credits, and Jasper's card-required 7-day trial.
+
+Exact plan terms and source links are recorded in the audit document. These are desk-researched guides, not controlled content or campaign tests. No build/lint/typecheck/CI has passed.
+
+**Next:** P1 batch 5 — audit and improve developer AI, marketing and content overlap; then run a first technical validation pass if the local environment can be safely accessed.
