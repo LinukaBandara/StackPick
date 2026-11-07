@@ -48,7 +48,8 @@ function analyse(file) {
     return { route, file: relative, pageType: "redirect", redirectTo, title: "", description: "", sourceWordCount: 0, h1Count: 0, h2Count: 0, h3Count: 0, internalLinks: 0, externalSources: 0, toolEntries: 0, reviewedOn: "", flags: "redirect-excluded-from-content-review", comparisonText: "" };
   }
   const pageType = slug ? "content" : "directory";
-  const sourceWordCount = countWords(withoutImports);
+  const comparisonProps = source.match(/<ComparisonArticle[\\s\\S]*?>/)?.[0] ?? "";
+  const sourceWordCount = countWords(withoutImports) + countWords(comparisonProps);
   const usesComparisonTemplate = source.includes("@/components/ComparisonArticle");
   const h1Count = source.split("<h1").length - 1 + (usesComparisonTemplate ? 1 : 0);
   const h2Count = source.split("<h2").length - 1 + (usesComparisonTemplate ? 3 : 0);
