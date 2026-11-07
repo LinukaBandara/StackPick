@@ -1624,3 +1624,41 @@ This mirrors the source change without merging or rebasing the 457-commit diverg
 - No deployment was attempted; Vercel quota remains the constraint.
 
 Advisory source: https://github.com/advisories/GHSA-g3hv-75wg-m249 (fixed in 11.0.1). Current local-checkout commands for the scoped override are retained in `docs/phase-14-eslint-minimatch-remediation.md`; regenerate the lockfile using npm and run all checks before committing it.
+
+
+## Latest verified status — 7 November 2026
+
+This section supersedes older progress snapshots above where they conflict.
+
+### Content quality inventory
+
+GitHub Actions run `42396555114` passed on commit `7f14c839cc333431e43e130aa28b2612ddfb63d1`.
+
+- Scanned 109 guide/comparison articles, 7 permanent redirects and 1 directory page.
+- 0 pages had heuristic review flags.
+- 109/109 pages had a detectable quick answer.
+- 105/109 pages had a pricing note; the other four are not treated as missing-price failures by the current audit.
+- 109/109 pages had a detectable country/region caveat.
+- 109/109 pages had a visible research-method disclosure.
+- 0 pricing pages were missing a detectable checked date.
+
+The inventory is heuristic, not an editorial verdict or proof that every price, limit, legal statement or product claim is correct. Every material claim still needs a source check. The CSV report was uploaded as the `stackpick-content-audit` artifact (artifact ID `13583598330`, 14-day retention).
+
+### Latest full validation
+
+GitHub Actions run `42396560311` passed on the same commit.
+
+- Locked dependency installation: passed.
+- Production dependency audit: 0 vulnerabilities.
+- Internal-link check: passed.
+- ESLint: passed.
+- Next.js production build: passed; TypeScript completed and all 208 static pages generated.
+- Full development dependency audit still reports 6 moderate findings under `@typescript-eslint/typescript-estree` via `minimatch@10.2.6`. These are development-tool findings; do not apply a global minimatch override. The scoped `11.0.1` override still needs a generated lockfile and a clean install/build validation.
+
+### Pull request base and ancestry correction
+
+PR #99 is open and remains a draft. Its actual base is `growth/phase-11-commercial-growth`, not `main`. The latest compare reports the working branch 342 commits ahead and 0 behind that PR base; GitHub reports `mergeable=true` and `mergeable_state=unstable`. The earlier comparison against `main` is not a blocker for this PR. Do not merge or rebase `main` merely to resolve that unrelated comparison.
+
+### Deployment
+
+No deployment was attempted. The Vercel build quota remains the deployment constraint. AdSense crawler detection, live Search Console validation and post-deploy checks remain outstanding; passing repository CI does not prove AdSense approval.
