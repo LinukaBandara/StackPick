@@ -62,11 +62,11 @@ if (!routesBlock) {
   }
 
   // Editorial last-modified dates must point to real sitemap routes and use valid ISO dates.
-  const modifiedBlock = sitemapSource.match(/const LAST_MODIFIED\\s*:\\s*Record<string,\\s*string>\\s*=\\s*\\{([\\s\\S]*?)\\};/);
+  const modifiedBlock = sitemapSource.match(/const LAST_MODIFIED\s*:\s*Record<string,\s*string>\s*=\s*\{([\s\S]*?)\};/);
   if (!modifiedBlock) {
     errors.push("Could not find the LAST_MODIFIED map in app/sitemap.ts.");
   } else {
-    const entries = [...modifiedBlock[1].matchAll(/["'](\\/[^"']+)["']\\s*:\\s*["'](\\d{4}-\\d{2}-\\d{2})["']/g)]
+    const entries = [...modifiedBlock[1].matchAll(/["'](\/[^"']+)["']\s*:\s*["'](\d{4}-\d{2}-\d{2})["']/g)]
       .map((match) => ({ route: match[1], date: match[2] }));
     for (const route of duplicates(entries.map((entry) => entry.route))) {
       errors.push("Duplicate LAST_MODIFIED entry: " + route);
@@ -79,8 +79,7 @@ if (!routesBlock) {
       if (!routeExists(route)) errors.push("LAST_MODIFIED route has no matching App Router page: " + route);
       if (!sitemapRouteSet.has(route)) errors.push("LAST_MODIFIED route is missing from the static sitemap: " + route);
     }
-  }
-}
+  }}
 
 if (errors.length) {
   console.error("SEO route audit failed:");
