@@ -25,7 +25,7 @@ export default function Page() {
         <p className="sp-eyebrow">Software pricing · Updated October 19, 2026</p>
         <h1 className="sp-display mt-4 max-w-4xl">Appointment scheduling software pricing: compare the cost of bookings</h1>
         <p className="sp-eyebrow mt-6">Quick answer</p>
-        <p className="sp-body-large mt-6 max-w-3xl">A solo consultant, a sales team and a salon with several staff calendars need different booking features. This comparison separates per-user meeting schedulers from appointment-business platforms that price by account and calendar capacity. Compare the real workflow you need—reminders, payments, team routing, staff calendars and branding—rather than choosing by the starting price alone.</p>
+        <p className="sp-body-large mt-6 max-w-3xl">For a solo booking link, start with Calendly Free if one event type and one calendar are enough, or compare Cal.com Individual if you need more event types and calendar connections. Teams needing round-robin routing should compare Calendly Teams with Cal.com Teams. Service businesses that sell appointments, packages or payments should compare Acuity by calendar count. The figures below are US pricing references; local currency, taxes, feature availability and checkout terms vary by country.</p>
 
         <section className="mt-10 overflow-x-auto rounded-2xl border border-[#d2d2d7]">
           <table className="w-full min-w-[850px] border-collapse text-left text-sm">
