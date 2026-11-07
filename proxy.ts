@@ -30,7 +30,9 @@ export function proxy(request: NextRequest) {
   const response = NextResponse.next({
     request: { headers: requestHeaders },
   });
-  response.headers.set("Content-Security-Policy", csp);
+  // Roll out in report-only mode first: capture violations without blocking
+  // existing inline JSON-LD or third-party scripts. Enforce after auditing.
+  response.headers.set("Content-Security-Policy-Report-Only", csp);
   return response;
 }
 
