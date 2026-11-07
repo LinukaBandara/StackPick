@@ -23,7 +23,7 @@ export default function Page() {
           bestFor: "Businesses wanting the most complete feature set and the largest template library",
           freeOption: "Free Basic: 1 user, unlimited surveys, up to 10 questions and 25 viewable responses per survey; no credit card required. Paid tiers add logic, exports, CRM integrations and more response capacity.",
           tradeoff:
-            "The largest, most mature platform in this category with built-in CSAT/NPS/CES tracking and real-time CRM sync (Salesforce, HubSpot) - genuinely the safest default if you're not sure what you need yet. Pricing climbs meaningfully at the tiers with deeper analytics and logic.",
+            "Offers a broad survey feature set and a large template library, with paid tiers adding logic, exports, reporting and integrations. Confirm which NPS trend and CRM-sync features are included in the plan you would actually buy.",
           url: "https://www.surveymonkey.com/product/free-vs-paid-plans/",
         },
         {
@@ -39,11 +39,17 @@ export default function Page() {
           bestFor: "Budget-conscious teams, especially already using other Zoho products",
           freeOption: "Free plan: 1 user, 10 questions and 100 responses per survey. US Basic is US$7.42/month billed annually; higher tiers add branding, logic, integrations and analysis.",
           tradeoff:
-            "The cheapest genuinely capable option here, with NPS and CSAT tracking included and clean integration if you're already on Zoho CRM or Zoho Desk. Template library and advanced logic options are noticeably thinner than SurveyMonkey's.",
+            "The lowest listed paid entry price in this comparison, with NPS and CSAT question types and integrations for teams already using Zoho products. Check the response cap, user limit and which reporting/logic features are gated by higher plans.",
           url: "https://www.zoho.com/survey/pricing.html",
         },
       ]}
       bottomLine="Choose SurveyMonkey when broad survey creation and its paid analysis/export ecosystem matter; Delighted when a simple ongoing CX/NPS program is the priority; and Zoho Survey when its response caps and existing Zoho integrations fit. For a valid NPS program, use the same 0–10 likelihood-to-recommend question over time, calculate promoters (9–10) minus detractors (0–6), track response rate and segment results carefully. Do not treat one small response sample as a representative customer verdict."
-    />
+    >
+      <section className="rounded-2xl bg-[#f5f5f7] p-6">
+        <h2 className="text-xl font-semibold text-[#101828]">Run a repeatable NPS program</h2>
+        <p className="mt-3 text-sm leading-6 text-[#667085]">Use a consistent 0–10 likelihood-to-recommend question, keep timing and audience rules stable, and report the response rate alongside the score. Promoters score 9–10; passives 7–8; detractors 0–6. NPS is the percentage of promoters minus the percentage of detractors, not an average rating. Segment results carefully and avoid treating a small or biased sample as a representative customer verdict.</p>
+        <p className="mt-4 text-xs leading-5 text-[#667085]">Research method: desk review of official pricing and help pages checked November 7, 2026. This is not a hands-on survey delivery or statistical benchmark; confirm response caps and overage rules in the account before launching a recurring program.</p>
+      </section>
+    </ComparisonArticle>
   );
 }
