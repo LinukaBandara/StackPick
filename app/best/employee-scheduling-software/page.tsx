@@ -21,7 +21,7 @@ export default function Page() {
         {
           name: "When I Work",
           bestFor: "Small teams wanting simple, low-cost scheduling",
-          freeOption: "No permanent free tier, but among the lowest per-user pricing in this category.",
+          freeOption: "No permanent free tier; the 14-day trial requires no card. Essentials starts at US$2.50/user/month, Pro at $5 and Premium at $8.",
           tradeoff:
             "Consistently praised for an intuitive interface - auto-assign, color-coded schedules, easy shift swaps - that needs minimal training to use. Scheduling sophistication (AI-driven auto-scheduling, overtime forecasting) is lighter than Deputy's for more complex staffing needs.",
           url: "https://wheniwork.com/pricing",
