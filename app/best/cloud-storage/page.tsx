@@ -86,7 +86,7 @@ export default function Page() {
               </tbody>
             </table>
           </div>
-          <p className="mt-5 text-xs leading-5 text-[#667085]">Research method: desk review of official business pricing and storage documentation checked November 7, 2026. This is not a live collaboration or restore benchmark. Test external sharing, version history, deleted-file recovery and a full data export before moving client files; sync is not an independent backup strategy.</p>
+          <p className="mt-5 text-xs leading-5 text-[#667085]">Research method: desk review of official business pricing and storage documentation checked November 7, 2026. StackPick has not performed hands-on product testing or a controlled collaboration/restore benchmark. Test external sharing, version history, deleted-file recovery and a full data export before moving client files; sync is not an independent backup strategy.</p>
         </div>
       </section>
     </ComparisonArticle>
