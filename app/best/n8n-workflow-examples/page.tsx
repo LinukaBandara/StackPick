@@ -13,8 +13,10 @@ export default function Page() {
     <ComparisonArticle
       title="Practical n8n Workflow Examples for Small Teams"
       slug="n8n-workflow-examples"
+      reviewedOn="2026-11-07"
       intro="A useful workflow does more than connect two apps. It validates incoming data, avoids duplicate actions, handles service failures and gives a person a way to recover when automation stops. These blueprints are starting designs to adapt and test—not imported workflows claimed to have been run by StackPick."
-      pricingNote="Node names, integrations and authentication options can change between n8n versions and provider APIs. Verify the current node documentation, use a test workspace first and check your hosting and execution limits before enabling a workflow for live records."
+      quickAnswer="For lead intake, start with a Webhook/Form Trigger, validate fields, look up a deduplication key, then create or update a CRM record. For support triage, redact unnecessary personal data, validate a constrained AI label and send uncertain cases to a human. For reporting, check source freshness before calculating totals. Treat these as untested blueprints until you run them in your own n8n version and test account."
+      pricingNote="Node names, integrations and authentication options can change between n8n versions and provider APIs. n8n Cloud bills by workflow executions, not by the number of nodes in a run; self-hosted deployments have separate infrastructure, update and security costs. Verify node documentation, API limits, hosting and execution limits before enabling live records. Documentation checked November 7, 2026."
       tools={[
         { name: "Lead intake and deduplication", bestFor: "Collecting website form submissions and routing valid leads into a CRM", freeOption: "Can be built with n8n plus the form, email and CRM services you already use; each connected service has its own limits.", tradeoff: "Requires a stable unique identifier, validation rules and a defined owner for records that fail.", url: "https://docs.n8n.io/" },
         { name: "Support request triage", bestFor: "Classifying incoming requests and assigning a suggested queue for human review", freeOption: "A deterministic keyword or rules-based first version may avoid paid AI usage; LLM calls can add separate costs.", tradeoff: "AI classifications can be wrong; never let an unreviewed model make high-impact account or refund decisions.", url: "https://docs.n8n.io/" },
@@ -49,6 +51,7 @@ export default function Page() {
         <h2 className="sp-title mt-3">Test the failure paths.</h2>
         <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-7 text-[#424245]">
           <li>Send the same input twice and verify it does not trigger duplicate side effects.</li>
+          <li>Confirm each node's input/output shape and the target API's current rate limits.</li>
           <li>Simulate a timeout, invalid response, rate limit and expired credential.</li>
           <li>Confirm retries are bounded and do not resend emails or repeat payments unexpectedly.</li>
           <li>Use least-privilege credentials and a separate test account.</li>
@@ -62,7 +65,16 @@ export default function Page() {
       <section className="rounded-3xl border border-[#e4e7ec] p-6 sm:p-9">
         <p className="sp-eyebrow">Primary documentation</p>
         <h2 className="sp-title mt-3">Verify implementation details in n8n's own docs.</h2>
+        <p className="mt-4 max-w-3xl text-sm leading-6 text-[#6e6e73]">Example node sequence for a lead: Webhook or Form Trigger → Edit Fields (normalize) → IF (validate) → CRM Search → IF (duplicate?) → Create/Update → notify owner. Configure an Error Trigger workflow for alerting and recovery. For scheduled reporting: Schedule Trigger → HTTP Request nodes → freshness/response checks → Aggregate or Code → email summary. Node labels and options vary by n8n version and connected service.</p>
         <div className="mt-5 grid gap-3 sm:grid-cols-2">
+          <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank" rel="noreferrer" className="rounded-2xl border border-[#e4e7ec] p-5">
+            <strong className="text-sm text-[#1d1d1f]">Webhook node ↗</strong>
+            <span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Configure webhook triggers and test/prod endpoints.</span>
+          </a>
+          <a href="https://docs.n8n.io/flow-logic/error-handling/" target="_blank" rel="noreferrer" className="rounded-2xl border border-[#e4e7ec] p-5">
+            <strong className="text-sm text-[#1d1d1f]">Error handling ↗</strong>
+            <span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Build error workflows and notify an owner when an execution fails.</span>
+          </a>
           <a href="https://docs.n8n.io/hosting/securing/security-audit/" target="_blank" rel="noreferrer" className="rounded-2xl border border-[#e4e7ec] p-5">
             <strong className="text-sm text-[#1d1d1f]">n8n security audit ↗</strong>
             <span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Review instance security findings, exposed webhooks, credentials and risky nodes.</span>
