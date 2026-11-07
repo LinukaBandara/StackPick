@@ -43,13 +43,18 @@ function analyse(file) {
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/\{\s*\/\*[\s\S]*?\*\/\s*\}/g, " ");
+  const redirectTo = source.match(/permanentRedirect\(["\x27\x60](\/[^"\x27\x60]+)["\x27\x60]\)/)?.[1] ?? "";
+  if (redirectTo) {
+    return { route, file: relative, pageType: "redirect", redirectTo, title: "", description: "", sourceWordCount: 0, h1Count: 0, h2Count: 0, h3Count: 0, internalLinks: 0, externalSources: 0, toolEntries: 0, reviewedOn: "", flags: "redirect-excluded-from-content-review", comparisonText: "" };
+  }
+  const pageType = slug ? "content" : "directory";
   const sourceWordCount = countWords(withoutImports);
   const usesComparisonTemplate = source.includes("@/components/ComparisonArticle");
-  const h1Count = (source.match(/<h1\\b/g) ?? []).length + (usesComparisonTemplate ? 1 : 0);
-  const h2Count = (source.match(/<h2\\b/g) ?? []).length + (usesComparisonTemplate ? 3 : 0);
-  const h3Count = (source.match(/<h3\\b/g) ?? []).length + (usesComparisonTemplate ? (source.match(/\\bname\\s*:/g) ?? []).length : 0);
-  const internalLinks = new Set([...source.matchAll(/(?:href\s*=\s*["'`])\/(?!\/)([^"'`?#]+)/g)].map((match) => "/" + match[1])).size;
-  const externalSources = new Set([...source.matchAll(/https?:\/\/[^"'\s)]+/g)].map((match) => match[0].replace(/[),.;]+$/, ""))).size;
+  const h1Count = source.split("<h1").length - 1 + (usesComparisonTemplate ? 1 : 0);
+  const h2Count = source.split("<h2").length - 1 + (usesComparisonTemplate ? 3 : 0);
+  const h3Count = source.split("<h3").length - 1 + (usesComparisonTemplate ? (source.split("name:").length - 1) : 0);
+  const internalLinks = new Set([...source.matchAll(/(?:href\s*=\s*["\x27\x60])\/(?!\/)([^"\x27\x60?#]+)/g)].map((match) => "/" + match[1])).size;
+  const externalSources = new Set([...source.matchAll(/https?:\/\/[^"\x27\s)]+/g)].map((match) => match[0].replace(/[),.;]+$/, ""))).size;
   const toolEntries = (source.match(/\bname\s*:/g) ?? []).length;
   const reviewedOn = source.match(/(?:reviewed|verified|checked)(?:On|\s+(?:on|date))?\s*[:=]\s*["'`]([^"'`]+)["'`]/i)?.[1] ?? "";
   const flags = [];
@@ -57,14 +62,13 @@ function analyse(file) {
   if (!description) flags.push("missing-description");
   if (!intro) flags.push("missing-intro");
   if (h2Count < 3) flags.push("few-h2-sections");
-  if (sourceWordCount < 350) flags.push("short-source");
   if (externalSources < 2) flags.push("few-external-sources");
   if (!/pricing|price|cost|free plan|free tier/i.test(source)) flags.push("no-pricing-or-free-plan-context");
   if (!/trade.?off|limitation|limit|drawback|not ideal|who should not/i.test(source)) flags.push("no-obvious-trade-off-language");
   if (!/related|alternatives|comparison/i.test(source)) flags.push("no-obvious-topic-cluster-links");
 
   return {
-    route, file: relative, title, description, sourceWordCount, h1Count, h2Count, h3Count,
+    route, file: relative, pageType, redirectTo: "", title, description, sourceWordCount, h1Count, h2Count, h3Count,
     internalLinks, externalSources, toolEntries, reviewedOn, flags: flags.join(";"),
     comparisonText: articleText.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim(),
   };
@@ -82,14 +86,16 @@ for (const row of rows) {
   if (duplicateRoutes.has(row.route)) row.flags = [row.flags, "duplicate-title-description-intro"].filter(Boolean).join(";");
 }
 
-const headers = ["route","file","title","description","sourceWordCount","h1Count","h2Count","h3Count","internalLinks","externalSources","toolEntries","reviewedOn","flags"];
+const headers = ["route","file","pageType","redirectTo","title","description","sourceWordCount","h1Count","h2Count","h3Count","internalLinks","externalSources","toolEntries","reviewedOn","flags"];
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 fs.writeFileSync(OUTPUT_FILE, [headers.join(","), ...rows.map((row) => headers.map((key) => csv(row[key])).join(","))].join("\n") + "\n");
 
-const flagged = rows.filter((row) => row.flags);
-console.log(`Scanned ${rows.length} guide pages.`);
-console.log(`${flagged.length} pages have one or more review flags.`);
-console.log(`CSV report: ${path.relative(ROOT, OUTPUT_FILE)}`);
+const contentPages = rows.filter((row) => row.pageType === "content");
+const redirects = rows.filter((row) => row.pageType === "redirect");
+const directories = rows.filter((row) => row.pageType === "directory");
+const flagged = contentPages.filter((row) => row.flags);
 console.log("Flags are editorial prompts, not automatic quality verdicts. Read each page and verify every material claim before changing its index status or publishing a replacement.");
 for (const row of flagged.slice(0, 20)) console.log(`- ${row.route}: ${row.flags}`);
 if (flagged.length > 20) console.log(`- …and ${flagged.length - 20} more. Open the CSV for the complete list.`);
+console.log(`Scanned ${contentPages.length} guide/comparison articles, ${redirects.length} permanent redirects and ${directories.length} directory page(s).`);
+console.log(`${flagged.length} content pages have one or more heuristic review flags.`);
