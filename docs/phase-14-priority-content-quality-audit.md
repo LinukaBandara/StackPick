@@ -1213,3 +1213,21 @@ Updated `app/best/free-crm-software/page.tsx` in commit `69662e4`:
 Primary evidence: HubSpot's official pricing page states Free is $0 for up to two users, requires no credit card, allows 1,000 contacts and limits each other standard object type to 1,000 records per account: https://www.hubspot.com/pricing/crm?selectedPackage=free. The official technical limits catalogue separately documents other product-specific association limits; those must not be confused with the Free CRM record cap: https://legal.hubspot.com/hubspot-product-and-services-catalog/technical-limits.
 
 **Validation:** source edit committed through GitHub. No local build, lint, type-check, CI or deployment was run for this single-page change.
+
+
+### P0 CRM cluster — follow-up corrections (7 November 2026)
+
+Three related CRM guides were updated after checking current official plan pages:
+
+- `app/best/free-crm-software/page.tsx` — commit `2b29113`. Corrected the HubSpot Free cap in the previous commit and now flags Bitrix24's contradictory published user-limit statements: its pricing comparison table says 1–2 users, while the same page FAQ says unlimited users. The article no longer presents the cap as settled and tells readers to confirm it with the provider.
+- `app/best/hubspot-alternatives-small-businesses/page.tsx` — commit `995e47d`. Refreshed the source-check date to 7 November 2026, clarified the Bitrix24 conflict, and added an explicit desk-review/no-controlled-test disclosure.
+- `app/best/free-crm-without-credit-card/page.tsx` — commit `4b3fa56`. Added the Bitrix24 user-limit conflict and retained the caution that its public pages do not explicitly establish that the ongoing Free plan requires no card.
+
+Current primary sources checked:
+- HubSpot Free: up to 2 users, no credit card, 1,000 contacts and 1,000 records per other standard object type per account: https://www.hubspot.com/pricing/crm?selectedPackage=free
+- Zoho CRM Free: up to 3 users, no credit card; its US pricing page lists up to 10 custom email templates and 10 free data exports: https://www.zoho.com/en-us/crm/zohocrm-pricing.html?price=FREE
+- Freshsales current comparison: Free at $0 for up to 3 users; Growth starts at US$9/user/month billed annually on the displayed USD page: https://www.freshworks.com/crm/pricing-compare/
+- Pipedrive current pricing: 14-day trial, no credit card required; the page displays Lite at US$14/seat/month billed annually: https://www.pipedrive.com/en/pricing
+- Bitrix24 current pricing: pricing table shows Free for 1–2 users and 5 GB, but its same-page FAQ says unlimited users. This internal conflict is deliberately surfaced rather than resolved by guesswork: https://www.bitrix24.com/prices/
+
+**Validation:** source edits committed through GitHub. No local build, lint, type-check, CI or deployment was run for these edits.
