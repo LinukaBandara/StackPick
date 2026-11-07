@@ -852,3 +852,58 @@ Primary sources:
 **Commits:** DevOps `374b1ed` and Railway wording correction `a0cbc24`; agent frameworks `6f27b0e`; n8n examples `6e73792` and method `de5112a`; expense tracking `7fb7bfb`; migration guide `ca70fe5`.
 
 No local build, lint, typecheck or CI run has passed for these edits. All plan data is time- and region-sensitive; no live integrations or data migrations were executed.
+
+
+## P1 article-edit batch 3 — freelancer delivery and small-business selection (7 November 2026)
+
+Updated:
+- `app/best/invoice-clients-as-freelancer/page.tsx`
+- `app/best/manage-client-projects-without-full-time-team/page.tsx`
+- `app/best/manage-customer-leads-as-freelancer/page.tsx`
+- `app/best/simple-small-business-software-stack/page.tsx`
+- `app/best/how-to-choose-software-small-business/page.tsx`
+
+### Freelancer invoicing
+- Added a November 7 review date and current regional plan context.
+- FreshBooks: 30-day no-card trial (not permanent free), US Lite 5 billable clients and Plus 50.
+- QuickBooks Free: US plan, 1 user, 2 invoices/month and 1 bank connection, with QuickBooks Payments eligibility exception.
+- Zoho Invoice US Free: 2 users, 3 projects, 500 invoices/year.
+- Wave: eligible US/Canada businesses only; payment processing and payouts are separate.
+
+### Client project management
+- Added a quick answer and date.
+- Trello Free: 10 collaborators, 10 boards, unlimited cards and 250 Workspace command runs/month.
+- ClickUp Free: 60 MB storage, unlimited tasks/subtasks and unlimited free members.
+- Notion Free: no time limit/card requirement for individual use, with team collaboration limits.
+- Teamwork now links to its pricing page and explicitly asks readers to check project/user/client access limits rather than assuming free client portals.
+
+### Freelance lead management
+- Added exact HubSpot Free and Zoho CRM Free user/record limits, current Pipedrive trial and annual US plan prices, and Trello's actual board limits.
+- Replaced generic product homepages with direct pricing/plan pages.
+
+### Simple software stack
+- Added a quick answer and date.
+- Clarified that Zoho CRM, Books, Invoice and Expense are distinct products with different plan limits; the guide no longer implies one generic Zoho free tier covers an entire business suite.
+- Added specific plan limits and direct official links for HubSpot, Notion, Trello and Zoho CRM.
+
+### How to choose software
+- Added a quick answer and a November 7 plan/buying-criteria note.
+- Added privacy/security as a distinct scorecard criterion alongside workflow fit, total cost, adoption and exit/data portability.
+- Updated vendor plan links and precise free-tier limits to avoid generic homepage-only references.
+
+Primary sources:
+- FreshBooks pricing/trial: https://www.freshbooks.com/pricing
+- QuickBooks Free: https://quickbooks.intuit.com/online/free/
+- Zoho Invoice US: https://www.zoho.com/us/invoice/pricing/
+- Wave eligibility/pricing: https://www.waveapps.com/pricing
+- HubSpot Free CRM: https://www.hubspot.com/pricing/crm?selectedPackage=free
+- Zoho CRM Free: https://www.zoho.com/en-us/crm/zohocrm-pricing.html?price=FREE
+- Trello pricing: https://trello.com/en/pricing
+- ClickUp pricing: https://clickup.com/pricing
+- Notion Free/team limits: https://www.notion.com/teams
+- Pipedrive pricing: https://www.pipedrive.com/en/pricing
+- Teamwork pricing: https://www.teamwork.com/pricing/
+
+**Commits:** invoicing `946df8d`; client projects `cb9091a`; freelance leads `425efa0`; simple stack `b445eb9`; buying scorecard `27e5c8d` and privacy row `ae25a3b`.
+
+No local build, lint, typecheck or CI run has passed for these edits. These are desk-researched recommendations, not live trials or product tests.
