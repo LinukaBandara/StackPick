@@ -7,7 +7,7 @@ on:
       - content/phase-5-seo-growth
   pull_request:
     branches:
-      - content/phase-5-seo-growth
+      - trust/reviews-foundation
 
 permissions:
   contents: read
