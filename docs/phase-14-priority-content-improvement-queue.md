@@ -149,3 +149,18 @@ The comparison now distinguishes n8n workflow executions, Make credits and Zapie
 The source audit records the exact provider references. The Zapier Next Gen change is future-dated and needs a post-December 1 recheck. No build/lint/typecheck/CI has passed.
 
 **Next:** P0 item 4 — verify permanent free vs trial, card requirement, caps and country eligibility across the four free/no-card guides.
+
+
+### P0 item 4: Free/no-card guide claims — first refresh completed
+
+Updated four pages:
+- `app/best/free-crm-without-credit-card/page.tsx`
+- `app/best/free-project-management-without-credit-card/page.tsx`
+- `app/best/free-invoicing-without-credit-card/page.tsx`
+- `app/best/free-business-tools-for-freelancers/page.tsx`
+
+The pages now distinguish vendors that explicitly advertise no-card permanent free tiers (HubSpot CRM, Zoho CRM, Asana Personal, ClickUp Free, Notion individual Free and Invoice Ninja) from vendors whose public pricing pages do not explicitly confirm the card requirement. Current user/contact/board/task/storage limits and Wave's US/Canada-only eligibility are stated. Each page has a quick answer and November 7, 2026 source note.
+
+Source links and limits are recorded in the audit document. Do not interpret these edits as a completed live signup test for every provider or every region. No build/lint/typecheck/CI has passed.
+
+**Next:** P0 item 5 — finish outstanding source checks across the five core commercial guides; P0 item 6 — verify comparison claims that have known stale-plan or limit risks.
