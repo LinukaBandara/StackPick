@@ -9,27 +9,27 @@ This tracks the six workstreams required before another AdSense review and befor
 
 ## 1. Complete the 109-guide quality audit
 
-**Status: inventory and first editorial pass complete; manual verification remains.**
+**Status: inventory, first editorial pass and eight-page primary-source checks complete; final route reconciliation and editorial sign-off remain.**
 
 - Phase 5 inventory counted 109 guide/comparison routes, seven permanent redirects and the /best directory route.
 - Seven redirect routes were removed from the sitemap.
 - The related-guide map contains 100 topic clusters and 304 contextual links; every article route has at least two declared internal links.
 - Eight priority pages were flagged for additional manual review: invoice clients as a freelancer; manage customer leads as a freelancer; free vs paid business software; manage client projects without a full-time team; AI marketing tools for small businesses; Calendly vs Google Calendar; Notion vs ClickUp; Canva vs Adobe Express.
-- The first expansion pass has already added task-specific workflows and trade-offs to these pages. Do not treat the source-word heuristic as a quality verdict.
+- The first expansion pass has already added task-specific workflows and trade-offs to these pages. A second evidence pass now adds official plan facts and direct provider references to each of the eight flagged guides through a shared, page-specific evidence panel. Do not treat the source-word heuristic as a quality verdict.
 - The live /best directory currently reports 110 guides while the Phase 5 branch inventory reports 109. Re-run the route inventory after the full PR stack is reconciled and explain the difference before declaring the audit final.
 
 **Remaining gate:** manually verify the eight priority pages against their primary vendor sources, confirm that each page answers a distinct intent, and record keep/improve/consolidate decisions. Do not remove or redirect URLs based only on length or traffic.
 
 ## 2. Improve original comparisons, pricing evidence and practical analysis
 
-**Status: foundational improvements exist; evidence refresh is still required.**
+**Status: foundational improvements and an eight-guide primary-source evidence pass are now in the branch; a broader editorial review is still required.**
 
 - Keep comparisons task-led: state who each tool suits, who should not choose it, the practical constraint and switching cost.
 - Prefer official pricing pages, plan documentation, help centres and terms over third-party summaries.
 - Record market, currency, billing interval, standard price versus promotion, per-seat charges, usage caps, add-ons, taxes and payment fees when material.
 - Do not quote temporary promotional prices as standard prices.
 - Do not claim hands-on testing, customer outcomes, purchases or support interactions unless they actually occurred. Desk research must be labelled honestly.
-- For the eight priority pages, attach a source URL and checked date to every material changing claim. If an exact price or limit cannot be verified, keep uncertainty visible rather than guessing.
+- The eight priority pages now show current official plan limits and direct provider references, checked 7 November 2026. Recheck each provider before the next material article update. If an exact price or limit cannot be verified, keep uncertainty visible rather than guessing.
 
 ## 3. Strengthen author credibility and editorial transparency
 
