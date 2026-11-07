@@ -24,6 +24,7 @@ export default function Page() {
       <article className="sp-container py-14 sm:py-20">
         <p className="sp-eyebrow">Software pricing · Updated October 19, 2026</p>
         <h1 className="sp-display mt-4 max-w-4xl">Appointment scheduling software pricing: compare the cost of bookings</h1>
+        <p className="sp-eyebrow mt-6">Quick answer</p>
         <p className="sp-body-large mt-6 max-w-3xl">A solo consultant, a sales team and a salon with several staff calendars need different booking features. This comparison separates per-user meeting schedulers from appointment-business platforms that price by account and calendar capacity. Compare the real workflow you need—reminders, payments, team routing, staff calendars and branding—rather than choosing by the starting price alone.</p>
 
         <section className="mt-10 overflow-x-auto rounded-2xl border border-[#d2d2d7]">
