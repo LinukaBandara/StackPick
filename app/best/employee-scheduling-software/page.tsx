@@ -35,6 +35,20 @@ export default function Page() {
           url: "https://www.deputy.com/pricing",
         },
         {
+          name: "Homebase",
+          bestFor: "Single-location hourly teams that want a free starting point for scheduling and basic time tracking",
+          freeOption: "Basic is $0 per location/month for one location and up to 10 employees; no credit card required. Essentials starts at US$30/location/month.",
+          tradeoff: "Useful for a small US location, but the 10-employee free cap and single-location restriction matter; payroll is a separate add-on.",
+          url: "https://www.joinhomebase.com/pricing",
+        },
+        {
+          name: "Sling",
+          bestFor: "Small teams that need basic shift scheduling and team communication at no subscription cost",
+          freeOption: "Free supports up to 30 users and includes scheduling/communication; time tracking and labor-cost features require paid plans. Premium is US$2/user/month, Business US$4.",
+          tradeoff: "A generous scheduling entry tier, but its free plan is not a complete time-and-attendance or labor-cost system.",
+          url: "https://getsling.com/pricing",
+        },
+        {
           name: "Connecteam",
           bestFor: "Deskless and frontline teams wanting scheduling, time tracking, and team messaging together",
           freeOption: "Free for small teams up to 10 users; verify which scheduling, time-clock, GPS, messaging and reporting features are included before relying on it.",
