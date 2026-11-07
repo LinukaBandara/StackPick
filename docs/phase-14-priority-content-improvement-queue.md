@@ -267,3 +267,12 @@ The pages now separate general assistants, writing/editing, freelance productivi
 Exact plan terms and source links are recorded in the audit document. These are desk-researched guides, not controlled content or campaign tests. No build/lint/typecheck/CI has passed.
 
 **Next:** P1 batch 5 — audit and improve developer AI, marketing and content overlap; then run a first technical validation pass if the local environment can be safely accessed.
+
+
+### P1 batch 5 — developer platform guide and AI consolidation triage
+
+Updated `app/best/github-tools-for-developers/page.tsx` with current GitHub Actions Free limits, a quick answer, review date, primary docs for protected branches/secrets/Dependabot/billing and clearer distinction between hosting platforms and complementary CLI/hooks.
+
+Created `docs/phase-14-ai-content-intent-map.md` to map 17 AI pages by search intent and internal-link role. **No merges or noindex actions are recommended now.** The pages have distinct potential intents; actual cannibalization can only be judged after Search Console query/page data is available. The document lists the data needed before consolidating.
+
+No build/lint/typecheck/CI or live Search Console query analysis has passed.
