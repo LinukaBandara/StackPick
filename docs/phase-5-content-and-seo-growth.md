@@ -85,7 +85,8 @@ The first successful repository audit found:
 - **7 permanent-redirect routes**, removed from the XML sitemap
 - **1 main `/best` directory page**
 - The audit script passed syntax validation and generated its CSV report in GitHub Actions.
-- The heuristic scanner currently reports no metadata/structure flags. This is not a quality certification and does not verify the factual accuracy or originality of any article.
+- The heuristic scanner currently reports no metadata/structure flags. The link audit finds no article route without internal links. This is not a quality certification and does not verify the factual accuracy or originality of any article.
+- The related-guide map now contains **100 topic clusters and 304 contextual links**; the audit confirms every article route has at least two internal links. This checks declared links, not whether every link is the best editorial choice.
 - Eight articles remain in the manual content-review queue because their estimated page-specific source copy is comparatively short: `invoice-clients-as-freelancer`, `manage-customer-leads-as-freelancer`, `free-vs-paid-business-software`, `manage-client-projects-without-full-time-team`, `ai-tools-marketing-small-businesses`, `calendly-vs-google-calendar`, `notion-vs-clickup` and `canva-vs-adobe-express`. Their shared article-template content is not included as unique editorial depth; review these pages manually before making any index or consolidation decision.
 
 The first editorial expansion batch improves eight alternatives/workflow pages and adds contextual related-guide links across additional topic clusters. The next batch should be selected using Search Console query/page performance, then checked against current primary sources.
