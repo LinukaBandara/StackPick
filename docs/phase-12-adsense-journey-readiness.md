@@ -49,7 +49,7 @@ This tracks the six workstreams required before another AdSense review and befor
 - English remains the canonical editorial language. Do not publish query-string market variants as separate SEO pages, and do not add hreflang until complete reviewed translations and canonical locale routes exist.
 - Build country-specific pages only when there is distinct search intent and genuinely different local evidence: local pricing, supported payment methods, taxes, availability, data residency or plan restrictions.
 - Use Search Console country/page/query exports to identify actual demand before choosing regional topics. Do not create thin “best software in [country]” pages by swapping country names.
-- Import separate GA4 country reports for US, GB, CA, AU and NZ using the same exact 30-day date range. The new private Journey tracker groups only matching date windows and shows when the country total is incomplete.
+- Import separate GA4 country reports for US, GB, CA, AU and NZ using the same exact 30-day date range. These are StackPick's target markets; do not assume they are an exhaustive definition of Journey's premium regions.
 
 ## 5. Prepare StackPick for another Google AdSense review
 
@@ -66,13 +66,14 @@ This tracks the six workstreams required before another AdSense review and befor
 
 **Status: country-level GA4 reporting support added in this branch; actual eligibility is not yet verified.**
 
-Journey's published minimum includes at least 1,000 premium sessions over a 30-day period, a connected GA4 account, original brand-safe content, an engaged audience and frequently updated content. Its team also reviews traffic quality and audience composition.
+Journey's published minimum includes at least 1,000 premium sessions over a 30-day period, a connected GA4 account, original brand-safe content, an engaged audience and frequently updated content. Journey evaluates traffic quality and audience composition; its own evaluation determines which sessions qualify as premium.
 
-- The new private route /admin/analytics/journey accepts one GA4 country total at a time for US, GB, CA, AU and NZ.
+- The new private route /admin/analytics/journey accepts one GA4 country total at a time for US, GB, CA, AU and NZ, StackPick's priority target markets.
 - Each import requires the same exact 30-day inclusive date range, a country code, an aggregated session count and optional GA4 report URL.
 - Country rows are stored separately from property-wide totals and grouped by their exact date window. Missing markets are called out; partial totals are not represented as complete.
+- This dashboard is a planning indicator, not Journey's official premium-session calculation or an approval guarantee.
 - Import actual GA4 reports; no sample, demo or inferred sessions are included.
-- Before applying, confirm GA4 is connected to the correct production property, the full 30-day Tier 1 total reaches the threshold, traffic is genuine, and content and engagement criteria are met.
+- Before applying, confirm GA4 is connected to the correct production property, Journey's own premium-session count reaches the threshold, traffic is genuine, and content and engagement criteria are met.
 
 ## Official requirements references
 
