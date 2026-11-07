@@ -146,6 +146,9 @@ const LAST_MODIFIED: Record<string, string> = {
   "/best/web-hosting": "2026-10-14",
   "/best/online-course-platforms": "2026-10-14",
   "/best/email-marketing-software": "2026-11-07",
+  "/best/cloud-storage": "2026-11-07",
+  "/best/track-business-expenses-without-spreadsheets": "2026-11-07",
+  "/best/free-project-management-software": "2026-11-07",
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
