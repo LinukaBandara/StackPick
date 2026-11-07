@@ -13,45 +13,46 @@ export default function Page() {
     <ComparisonArticle
       title="Best E-Signature Software for Freelancers and Small Business"
       slug="esignature-software"
+      reviewedOn="2026-11-07"
       quickAnswer="Choose DocuSign when counterparties expect a widely recognised signing platform or you need broad integrations. PandaDoc fits teams that combine proposals, quotes and signatures. Dropbox Sign is a simpler signing workflow, while SignWell is worth comparing for small teams focused on value. Check monthly envelope limits, templates, sender seats and audit-trail access before paying."
       intro="Freelancers usually need a repeatable way to send a proposal or contract, collect a signature, and keep a record of what was signed. Small teams may also need templates, reminders, multiple senders, integrations and a clear audit trail. The key distinction is whether you only need signing or a full proposal/document workflow that includes signing."
-      pricingNote="Free tiers can limit monthly signature requests (envelopes), reusable templates, number of senders, branding or integrations. A trial is not a permanent free plan. Before choosing, check the current monthly envelope or document cap, template allowance, signer authentication options, audit-trail availability, and whether pricing is per user or per document. Limits and offers change — verify on the official pages."
+      pricingNote="Official US-facing plan pages checked 7 November 2026. DocuSign Personal includes 5 envelopes/month; Standard lists 100 envelopes per user/year. Dropbox Sign Free allows up to 3 signature requests/month, with a separate 30-day paid-feature trial. PandaDoc Free allows 5 documents/month; Starter is listed at US$19/seat/month billed annually. SignWell Free allows 3 documents/month for one sender and one template; its Light plan includes unlimited documents. These are USD references; taxes, billing currency, promotions, legal requirements and feature availability can vary by country. Check the exact document volume, sender count, templates and audit-trail needs before switching. Sources: https://www.docusign.com/products/electronic-signature; https://sign.dropbox.com/products/dropbox-sign/pricing; https://www.pandadoc.com/pricing/; https://www.signwell.com/pricing/.
       tools={[
         {
           name: "DocuSign",
           bestFor: "When counterparties expect a widely recognized name and you need deep integrations",
           freeOption:
-            "A free tier exists with a low monthly envelope limit. Higher volume, advanced features and broader team use require paid plans. Exact free limits should be confirmed on the current pricing page.",
+            "Personal includes 5 envelopes per month; Standard lists 100 envelopes per user per year. Paid tiers and limits depend on the sender workflow.",
           tradeoff:
             "Strongest brand recognition and the deepest integration ecosystem. You are partly paying for the name and for enterprise-grade reliability. Lower tiers can feel restrictive on volume.",
-          url: "https://www.docusign.com/",
+          url: "https://www.docusign.com/products/electronic-signature",
         },
         {
           name: "PandaDoc",
           bestFor: "Sales and freelance workflows that are more about proposals and quotes than pure contract signing",
           freeOption:
-            "Free e-signature-only plan is available. Full document creation, pricing tables, templates and tracking features generally require a paid plan.",
+            "Free includes up to 5 documents per month. Starter adds unlimited document uploads and e-signatures at a published annual-billing price; advanced proposal and team workflows are on higher tiers.",
           tradeoff:
             "It is really a document and proposal builder that also signs. View tracking and pricing tables are useful for sales, but it can be overkill if you only need signatures.",
-          url: "https://www.pandadoc.com/",
+          url: "https://www.pandadoc.com/pricing/",
         },
         {
           name: "Dropbox Sign",
           bestFor: "Teams that want the simplest, lowest-friction signing flow and nothing more",
           freeOption:
-            "Free tier is available with limited monthly sends. Confirm current free allowance on the official site before relying on it for regular client work.",
+            "Free allows up to 3 signature requests per month; a separate 30-day trial unlocks paid features. Paid Essentials and Standard plans add higher-volume individual and team workflows.",
           tradeoff:
             "Minimal learning curve for both sender and signer. Signers often do not need an account. It is primarily a signing tool, not a proposal or document editor.",
-          url: "https://www.dropbox.com/sign",
+          url: "https://sign.dropbox.com/products/dropbox-sign/pricing",
         },
         {
           name: "SignWell",
           bestFor: "Small teams and freelancers optimizing for value over brand name recognition",
           freeOption:
-            "Free tier is available. Paid plans are generally positioned as strong value, with higher document volume at lower cost than the big-name alternatives.",
+            "Free includes 3 documents per month, one sender and one template. The Light plan includes unlimited documents for one sender; additional senders cost extra.",
           tradeoff:
             "Good price-to-feature ratio for straightforward signing needs. The trade-off is less brand recognition than DocuSign if that matters to the people receiving your documents.",
-          url: "https://www.signwell.com/",
+          url: "https://www.signwell.com/pricing/",
         },
       ]}
       bottomLine="Need the most recognized name for external counterparties or heavy integrations? Start with DocuSign. Building proposals and quotes as much as collecting signatures? Look at PandaDoc. Just need something signed quickly with minimal friction? Dropbox Sign is a strong simple option. Small team or freelancer focused on value? Compare SignWell. Always test one real document end-to-end (send → sign → download audit trail) before committing."
