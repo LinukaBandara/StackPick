@@ -1364,3 +1364,21 @@ Primary sources:
 - CrowdStrike Falcon Go: https://www.crowdstrike.com/en-us/pricing/falcon-go/
 
 **Validation:** for application snapshot `09b2db25`, StackPick CI run `42390619073` passed npm install, production dependency audit, internal links, ESLint and production build. SEO/content audit run `42390615819` passed script syntax, route/sitemap integrity, internal links and content inventory generation. Production dependency audit: 0 vulnerabilities; 6 moderate development-dependency advisories remain. No deployment was attempted.
+
+
+
+### P0 project-management comparison pricing follow-up (7 November 2026)
+
+Three comparison pages were checked against current primary pricing/help sources and corrected or confirmed:
+
+- `app/best/clickup-vs-monday/page.tsx` — updated during this pass; the quick answer and pricing note now distinguish ClickUp Core's displayed US$9/user/month annual promotional rate from its listed regular US$12 rate. monday Work Management Basic is US$9/seat/month annually with a 3-seat minimum, or US$27/month at the displayed starting rate before tax.
+- `app/best/asana-vs-clickup/page.tsx` — current page now states Asana paid subscriptions start at 2 seats, and distinguishes ClickUp Core's displayed US$9 annual promotion from the regular US$12 rate. Asana Starter is displayed at US$10.99/user/month annually or US$13.49 monthly.
+- `app/best/notion-vs-clickup/page.tsx` — commit `a01253b`. Corrected the Notion Free team-workspace qualification: a single-person workspace has unlimited blocks, but a Free workspace with multiple members is limited to 1,000 blocks; Free uploads are capped at 5 MB/file. The page now states the ClickUp Core promotional-vs-regular price distinction.
+
+Primary sources:
+- ClickUp pricing: https://clickup.com/pricing
+- monday Work Management pricing and Free-plan limits: https://monday.com/pricing and https://support.monday.com/hc/en-us/articles/360010487220-Understanding-the-Free-Plan
+- Asana pricing and paid seat minimum: https://asana.com/pricing and https://help.asana.com/s/article/asana-subscriptions-and-pricing
+- Notion pricing and block limits: https://www.notion.com/pricing and https://www.notion.com/help/understanding-block-usage
+
+The ClickUp vs monday and Asana vs ClickUp pages already contained the other current free-tier facts and source dates from the preceding update; this pass tightened paid-price basis and minimum-seat math rather than rewriting their methodology. No product was hands-on tested. No build, lint, type-check, CI or deployment was run for this comparison follow-up.
