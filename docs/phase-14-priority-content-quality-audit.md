@@ -243,3 +243,36 @@ The script summary now reports counts for these signals. They are inventory fiel
 - No article content was rewritten in this audit batch; this step records findings before edits to avoid conflating audit and remediation.
 
 **Important limitation:** source word counts are rough TSX-source counts, not rendered article word counts. External URL counts do not establish source quality. A linked vendor homepage is not equivalent to a citation supporting a specific pricing or feature claim. Remaining batches must inspect actual content and verify material claims, not merely satisfy numerical thresholds.
+
+
+## 109-guide editorial audit — batch 2 of 11 (7 November 2026)
+
+**Scope:** catalogue routes 11–20 in `lib/guides.ts`. All ten page sources were screened; four received a direct full-source content read. Official vendor pricing pages were checked for the scheduling-pricing guide. This remains editorial triage, not final claim-by-claim sign-off.
+
+| Guide | Initial finding | Audit disposition |
+|---|---|---|
+| `/best/project-management-software` | 1,212 source words; four distinct external URLs but links resolve to provider homepages; pricing note present; no clear checked date, country caveat or research-method disclosure. | **Improve evidence and scope**; cite plan/pricing or feature documentation for material comparisons and clarify regional pricing/availability. |
+| `/best/website-builders` | 1,204 source words; quick answer, pricing note and country caveat present; links go directly to official pricing pages. No visible current review date or clear method disclosure. | **Recheck current plan claims and disclose method**; good source-link structure to build on. |
+| `/best/appointment-scheduling-software` | 895 source words; only three distinct vendor homepage links; pricing note present, but no clear review date, regional caveat or method disclosure. | **Expand evidence**; link to current pricing/help pages and distinguish personal meeting schedulers from service-business booking systems. |
+| `/best/appointment-scheduling-software-pricing` | 1,454 source words; detailed Calendly, Cal.com and Acuity price/feature table; direct pricing-page links; checked date says 19 October 2026. No explicit country caveat or method disclosure. | **High-priority freshness and regional review**; official pricing pages checked in this audit show Cal.com Individual remains free for one user, Teams at US$12/user/month yearly, Organizations at US$28/user/month yearly; Acuity shows Starter US$16 yearly / US$20 monthly, Standard US$27 / US$34, Premium US$49 / US$61. Calendly billing terms should be rechecked on its own pricing page; don't infer all details from secondary aggregators. |
+| `/best/form-builders` | 973 source words; three distinct vendor homepage links; pricing note present; no visible review date, country caveat or method disclosure. | **Improve concrete comparison evidence**; source current response/submission caps, branding, integrations and export restrictions from official plan documentation. |
+| `/best/online-form-builder-pricing` | 1,646 source words; direct pricing links to Fillout, Jotform and Typeform; checked date is present in page source, but pricing note/country caveat/method disclosure signals are absent. | **Verify plan arithmetic and scope**; include region, billing term, response limits, seat assumptions and tax caveats in the visible pricing context. |
+| `/best/cloud-storage` | 793 source words; three provider homepage links; pricing note present, but no visible review date, country caveat or method disclosure. | **Expand decision-useful details**; compare storage quotas, sharing, version history, recovery, admin controls and regional price terms using official documentation. |
+| `/best/inventory-management-software` | 650 source words; four provider links, mostly homepages; pricing note present; one practical stock-movement test section. No quick answer, review date, country caveat or method disclosure. | **High-priority expansion**; verify order/warehouse/user caps, channel integrations, multi-location support, export and country-specific payment/POS eligibility. |
+| `/best/pos-systems` | 513 source words; four provider links, mostly homepages; no dedicated H2/H3 sections; no quick answer, visible review date, country caveat or method disclosure. Copy makes strong claims about processing economics and Toast contract terms without visible supporting citations. | **High-priority rewrite/research**; compare full processing costs, hardware, contracts, chargebacks, offline mode and supported countries. Claims about contract lengths/termination and processing rates require direct official terms and current regional context. |
+| `/best/online-course-platforms` | 647 source words; five provider homepage links; pricing note present; no quick answer, visible review date, country caveat or method disclosure. Some statements about transaction fees and free tiers are broad and need plan-level evidence. | **High-priority expansion**; verify course/student limits, transaction fees, payment gateway availability, payouts, taxes, migration/export and plan-specific features. |
+
+### Batch 2 verification notes
+
+- Cal.com official pricing page: Individual is free for one user with unlimited links/calendars; Teams is listed at US$12 per user/month on yearly billing; Organizations at US$28 per user/month on yearly billing. <https://cal.com/pricing>
+- Acuity official pricing page: Starter US$16/month annual or US$20 monthly; Standard US$27 annual or US$34 monthly; Premium US$49 annual or US$61 monthly. It lists 1, 6 and 36 calendars respectively and states there is no permanent free plan, only a 7-day trial. <https://www.acuityscheduling.com/pricing/>
+- Acuity's help documentation says plan/tax handling can vary and identifies tax guidance for the US, Canada, UK, EU and Australia. <https://help.acuityscheduling.com/hc/en-us/articles/47293738502413-Acuity-Scheduling-plans-and-payment-methods>
+- Calendly's billing help (updated 21 September 2026) confirms seats are billed even when unfilled and plan access may vary by account/add-ons. This is relevant to per-seat cost explanations; confirm the exact current plan rates separately. <https://calendly.com/help/billing-overview>
+
+### Batch 2 status
+
+- 20 of 109 catalogue routes screened (18.3%).
+- Four pages directly read in full: appointment scheduling pricing, inventory management, POS systems and online course platforms.
+- Highest-priority remediation candidates now include POS, inventory, course platforms and appointment-pricing freshness.
+- No article was changed, removed, noindexed or redirected based on word count alone.
+- Source word counts are rough TSX-source counts, not rendered article word counts. External URL counts are not a proxy for source quality; a vendor homepage does not substantiate a specific price or feature claim.
