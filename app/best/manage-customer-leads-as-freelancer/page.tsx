@@ -13,6 +13,7 @@ export default function Page() {
       title="How to Manage Customer Leads as a Freelancer"
       slug="manage-customer-leads-as-freelancer"
       intro="Freelancers often lose opportunities because enquiries are spread across email, social messages, calls and spreadsheets. A lightweight lead process makes every prospect visible, records what they need and gives you a clear next action—without turning sales administration into a second job."
+      quickAnswer="Start with one lead list and a small pipeline: new enquiry, qualified, proposal sent, follow-up due, won or closed. A spreadsheet is enough for a low volume; move to a CRM when multiple channels, reminders, shared ownership or repeatable follow-up become difficult to manage manually."
       pricingNote="A spreadsheet or simple board may be enough for a small enquiry volume. A CRM becomes more useful when you need shared access, reminders, email history, multiple pipelines, reporting or integrations. Check contact, automation, user and data-export limits on the exact plan."
       tools={[
         { name: "HubSpot", bestFor: "Freelancers who want contact records, deal stages and activity history in a CRM", freeOption: "Check current free-tool limits, included seats and feature gates.", tradeoff: "It can provide room to grow, but the wider platform may add complexity if you only need a small enquiry tracker.", url: "https://www.hubspot.com/" },
