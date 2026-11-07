@@ -5,6 +5,9 @@ const ROOT = process.cwd();
 const BEST_DIR = path.join(ROOT, "app", "best");
 const OUTPUT_DIR = path.join(ROOT, "artifacts");
 const OUTPUT_FILE = path.join(OUTPUT_DIR, "phase-5-content-audit.csv");
+const COMPARISON_SOURCE = fs.existsSync(path.join(ROOT, "components", "ComparisonArticle.tsx"))
+  ? fs.readFileSync(path.join(ROOT, "components", "ComparisonArticle.tsx"), "utf8")
+  : "";
 
 function collectPages(directory) {
   if (!fs.existsSync(directory)) return [];
@@ -56,7 +59,12 @@ function analyse(file) {
   const h1Count = source.split("<h1").length - 1 + (usesComparisonTemplate ? 1 : 0);
   const h2Count = source.split("<h2").length - 1 + (usesComparisonTemplate ? 3 : 0);
   const h3Count = source.split("<h3").length - 1 + (usesComparisonTemplate ? (source.split("name:").length - 1) : 0);
-  const internalLinks = new Set([...source.matchAll(/(?:href\s*=\s*["\x27\x60])\/(?!\/)([^"\x27\x60?#]+)/g)].map((match) => "/" + match[1])).size;
+  const relatedStart = COMPARISON_SOURCE.indexOf(`"${slug}": [`);
+  const relatedEnd = relatedStart >= 0 ? COMPARISON_SOURCE.indexOf("],", relatedStart) : -1;
+  const sharedRelatedLinks = relatedStart >= 0 && relatedEnd > relatedStart
+    ? (COMPARISON_SOURCE.slice(relatedStart, relatedEnd).match(/href:/g) ?? []).length
+    : 0;
+  const internalLinks = new Set([...source.matchAll(/(?:href\\s*=\\s*["\\x27\\x60])\\/(?!\\/)([^"\\x27\\x60?#]+)/g)].map((match) => "/" + match[1])).size + sharedRelatedLinks;
   const externalSources = new Set([...source.matchAll(/https?:\/\/[^"\x27\s)]+/g)].map((match) => match[0].replace(/[),.;]+$/, ""))).size;
   const toolEntries = (source.match(/\bname\s*:/g) ?? []).length;
   const reviewedOn = source.match(/(?:reviewed|verified|checked)(?:On|\s+(?:on|date))?\s*[:=]\s*["'`]([^"'`]+)["'`]/i)?.[1] ?? "";
