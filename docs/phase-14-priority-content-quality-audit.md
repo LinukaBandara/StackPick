@@ -1322,3 +1322,45 @@ Updated five pages after checking current official vendor pricing/help pages. Th
 - Square US Invoices: https://squareup.com/us/en/invoices/pricing
 
 **Acceptance note:** the edits correct claims and add market/plan qualifications; they do not claim that the products were signed up for or tested hands-on. No consolidation, redirect, canonical, noindex or deployment change was made. No build, lint, type-check or CI run was performed for this batch.
+
+
+### Inventory-driven batch 3 — cloud storage, social scheduling and endpoint security (7 November 2026)
+
+Updated:
+- `app/best/cloud-storage/page.tsx` — commit `ad50e45`
+- `app/best/social-media-scheduling/page.tsx` — commit `d2c995f`
+- `app/best/antivirus-endpoint-security/page.tsx` — commits `5558b08`, `1e758bf`, `cbf1306`, `09b2db2`
+
+**Cloud storage**
+- Added US business storage tiers: Google Workspace Starter/Standard/Plus at US$7/$14/$22 per user/month annually, with 30 GB/2 TB/5 TB pooled storage per user.
+- Microsoft 365 Business Basic now lists US$7/user/month annually with 1 TB OneDrive per user.
+- Dropbox Standard/Advanced now list US$15/$24 per user/month annually with 3 TB/15 TB team storage and different recovery windows.
+- Personal free allowances are distinguished from managed team storage: Google 15 GB shared across Drive/Gmail/Photos, OneDrive 5 GB and Dropbox 2 GB.
+- Added explicit warning that sync is not an independent backup strategy and a desk-research/no-hands-on-testing disclosure.
+
+**Social media scheduling**
+- Buffer Free: 3 channels, 10 scheduled posts per channel and 1 user; Essentials US$5/channel/month annual, Team US$10/channel/month annual.
+- Hootsuite Standard: up to 10 social accounts, unlimited scheduled posts and no-card trial; current checkout price must be confirmed by region/billing.
+- Later Free/Starter/Growth limits are now specific: Free has limited scheduling and one Access Group; Starter 1 user/1 Social Set/30 posts per profile/month; Growth 2 users/2 Social Sets/180 posts per profile/month and approvals.
+- Added direct official pricing/help links and a clear no-live-publishing-benchmark disclosure.
+
+**Endpoint security**
+- Corrected the Microsoft product name and licensing: Microsoft 365 Business Premium includes **Defender for Business**, not a generic Defender for Endpoint P1/P2 license. Defender for Business is US$3/user/month standalone and supports up to 300 users/5 devices per user; Business Premium is US$22/user/month and includes it.
+- Bitdefender GravityZone Small Business Security is described as device-count priced (1–100 endpoints) with a free trial and separate add-ons, not a generic flat-price product.
+- Norton US first-year prices and higher renewal prices are shown alongside employee/device caps and payment-method-required trial.
+- CrowdStrike is named Falcon Go for the SMB entry tier: US$59.99/device/year or $7.99 monthly, maximum 100 devices; Pro/Enterprise annual prices also added.
+- Added device coverage, alert response, renewal and incident-handling checks; explicitly stated no hands-on product test, malware benchmark or penetration test was performed.
+
+Primary sources:
+- Google Workspace pricing/storage: https://workspace.google.com/pricing
+- OneDrive Business pricing: https://www.microsoft.com/en-us/microsoft-365/onedrive/onedrive-business-plans-and-pricing
+- Dropbox business plans: https://www.dropbox.com/business/plans-comparison
+- Buffer pricing: https://buffer.com/pricing
+- Hootsuite Standard: https://www.hootsuite.com/plans/standard
+- Later plan limits: https://help.later.com/hc/en-us/articles/360059362253-Choose-a-Later-Social-Plan
+- Microsoft Defender for Business/Business Premium pricing: https://www.microsoft.com/en-us/security/small-medium-business/pricing
+- Bitdefender GravityZone Small Business Security: https://www.bitdefender.com/en-us/business/products/gravityzone-small-business-security
+- Norton Small Business US: https://us.norton.com/products/small-business
+- CrowdStrike Falcon Go: https://www.crowdstrike.com/en-us/pricing/falcon-go/
+
+**Validation:** for application snapshot `09b2db25`, StackPick CI run `42390619073` passed npm install, production dependency audit, internal links, ESLint and production build. SEO/content audit run `42390615819` passed script syntax, route/sitemap integrity, internal links and content inventory generation. Production dependency audit: 0 vulnerabilities; 6 moderate development-dependency advisories remain. No deployment was attempted.
