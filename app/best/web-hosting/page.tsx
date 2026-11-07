@@ -15,7 +15,7 @@ export default function Page() {
       slug="web-hosting"
       reviewedOn="2026-11-07"
       intro="The number that matters most isn't the price you see advertised - it's the renewal price after your first term ends. Nearly every host in this category runs a low introductory rate for 12-48 months, then renews at a meaningfully higher price. Budget for the renewal rate from day one, not the teaser."
-      pricingNote="Provider plan pages checked November 7, 2026. This is a shortlist, not a fixed-price ranking: introductory term, renewal price, billing length, data-center region, backups, migration, CDN, email, storage, visit/CPU limits, overage and support differ by plan. Compare the same workload and contract length, then confirm taxes, currency and renewal price at checkout. Sources: Hostinger https://www.hostinger.com/web-hosting; SiteGround https://www.siteground.com/web-hosting.htm; Bluehost https://www.bluehost.com/hosting/shared; Cloudways https://www.cloudways.com/en/pricing.php; Kinsta https://kinsta.com/wordpress-hosting/pricing/.
+      pricingNote="Provider plan pages checked November 7, 2026. This is a shortlist, not a fixed-price ranking: introductory term, renewal price, billing length, data-center region, backups, migration, CDN, email, storage, visit/CPU limits, overage and support differ by plan. Compare the same workload and contract length, then confirm taxes, currency and renewal price at checkout. Sources: Hostinger https://www.hostinger.com/web-hosting; SiteGround https://www.siteground.com/web-hosting.htm; Bluehost https://www.bluehost.com/hosting/shared; Cloudways https://www.cloudways.com/en/pricing.php; Kinsta https://kinsta.com/wordpress-hosting/pricing/."
       tools={[
         {
           name: "Hostinger",
