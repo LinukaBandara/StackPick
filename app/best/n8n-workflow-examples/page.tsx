@@ -59,6 +59,20 @@ export default function Page() {
           <Link href="/best/llm-tools-for-developers" className="rounded-2xl border border-[#e4e7ec] p-5"><strong>LLM tools for developers</strong><span className="mt-2 block text-sm text-[#6e6e73]">Understand model cost and evaluation basics.</span></Link>
         </div>
       </section>
+      <section className="rounded-3xl border border-[#e4e7ec] p-6 sm:p-9">
+        <p className="sp-eyebrow">Primary documentation</p>
+        <h2 className="sp-title mt-3">Verify implementation details in n8n's own docs.</h2>
+        <div className="mt-5 grid gap-3 sm:grid-cols-2">
+          <a href="https://docs.n8n.io/hosting/securing/security-audit/" target="_blank" rel="noreferrer" className="rounded-2xl border border-[#e4e7ec] p-5">
+            <strong className="text-sm text-[#1d1d1f]">n8n security audit ↗</strong>
+            <span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Review instance security findings, exposed webhooks, credentials and risky nodes.</span>
+          </a>
+          <a href="https://docs.n8n.io/workflows/executions/all-executions/" target="_blank" rel="noreferrer" className="rounded-2xl border border-[#e4e7ec] p-5">
+            <strong className="text-sm text-[#1d1d1f]">Execution history and retries ↗</strong>
+            <span className="mt-2 block text-sm leading-6 text-[#6e6e73]">Check execution status and understand the available retry paths after a failure.</span>
+          </a>
+        </div>
+      </section>
     </ComparisonArticle>
   );
 }

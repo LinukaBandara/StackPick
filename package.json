@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "check:links": "node scripts/check-internal-links.mjs"
+    "check:links": "node scripts/check-internal-links.mjs",
+    "audit:content": "node scripts/audit-content-quality.mjs"
   },
   "dependencies": {
     "next": "16.4.2",

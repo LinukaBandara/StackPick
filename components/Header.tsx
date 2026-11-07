@@ -13,8 +13,9 @@ function StackPickMark() {
   );
 }
 
-function MenuIcon({ type }: { type: "software" | "categories" | "comparisons" | "guides" }) {
+function MenuIcon({ type }: { type: "finder" | "software" | "categories" | "comparisons" | "guides" }) {
   const paths = {
+    finder: <><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 4 4M8 10.5h5M10.5 8v5" /></>,
     software: <><rect x="4" y="4" width="6" height="6" rx="1.5" /><rect x="14" y="4" width="6" height="6" rx="1.5" /><rect x="4" y="14" width="6" height="6" rx="1.5" /><rect x="14" y="14" width="6" height="6" rx="1.5" /></>,
     categories: <><path d="M4 6h16M4 12h10M4 18h13" /><circle cx="18" cy="12" r="2" /><circle cx="20" cy="18" r="2" /></>,
     comparisons: <><path d="M4 7h16M4 17h16M8 4 4 7l4 3M16 14l4 3-4 3" /></>,
@@ -28,6 +29,7 @@ export default function Header() {
   const closeMenu = () => setMenuOpen(false);
 
   const items = [
+    { href: "/software-finder", title: "Software Finder", description: "Get a tailored shortlist", type: "finder" as const },
     { href: "/software", title: "Software", description: "Explore individual tools", type: "software" as const },
     { href: "/categories", title: "Categories", description: "Find tools by your needs", type: "categories" as const },
     { href: "/comparisons", title: "Comparisons", description: "Compare tools side by side", type: "comparisons" as const },
@@ -43,6 +45,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+          <Link href="/software-finder" className="text-sm font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">Find software</Link>
           <Link href="/software" className="text-sm font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">Software</Link>
           <Link href="/categories" className="text-sm font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">Categories</Link>
           <Link href="/comparisons" className="text-sm font-medium text-[#1d1d1f] transition-colors hover:text-[#001D39]">Comparisons</Link>
