@@ -1141,3 +1141,62 @@ For code snapshot `a2039072`, StackPick CI run `42389860220` passed `npm ci`, pr
 6. **Search performance:** after content changes are published, verify sitemap and canonical behavior, then review Search Console indexing, queries and page-level performance. Deployment remains blocked by the current Vercel quota; no deployment or live-site verification is claimed here.
 
 **Audit limitation:** batches 1–10 were a source/editorial triage based on repository page source and selected direct reads/official-source spot checks. The next ranked queue must not describe every individual price, feature or claim as verified. A complete claim-by-claim review requires opening each target article and checking each material claim against current primary evidence.
+
+
+## Phase 14 — Consolidated 109-guide action queue (7 November 2026)
+
+This queue consolidates the first-pass findings from batches 1–10. Priority reflects the likely harm of stale or unsupported claims and the work needed to make the page genuinely useful; it is **not** an AdSense approval score or a search-ranking prediction. The batch scans are triage signals, not completed claim-by-claim verification. All article edits must preserve useful existing content, retain URLs unless a deliberate evidence-based consolidation is approved, and add no invented testing claims.
+
+### P0 — Correct material factual, pricing, eligibility and safety risks first
+
+1. **Free CRM and CRM limits:** `free-crm-software`, `free-crm-without-credit-card`, `crm-software`, `hubspot-alternatives-small-businesses`, `hubspot-vs-zoho-crm`, `pipedrive-vs-zoho-crm`. The prior 1-million-record HubSpot claim was materially wrong; the core CRM guide has since been corrected, but every related free-CRM and alternatives page needs a consistency check. Verify user/contact/record caps, free-vs-trial status, seat minimums, API quotas and country-specific paid pricing.
+2. **Free plans, trials and payment eligibility:** `free-invoicing-software`, `free-invoicing-without-credit-card`, `free-project-management-software`, `free-project-management-without-credit-card`, `free-scheduling-software`, `free-website-builders`, `online-course-platforms`, `free-accounting-software`, `free-ai-tools-small-businesses`. Separate permanent free tiers from trials/promotions; verify card requirements, limits, payment processor availability and country eligibility. Preserve the US/Canada-only Wave availability caveat where applicable.
+3. **Pricing/feature discrepancies already identified:** `clickup-vs-monday`, `asana-vs-clickup`, `notion-vs-clickup`, `canva-vs-adobe-express`, `ai-coding-assistants`, `ai-meeting-assistant-pricing`, `ai-customer-support-tools`, `chatgpt-vs-claude-for-freelancers`, `n8n-vs-make-vs-zapier`. Recheck plan names, seat minimums, quotas, model/agent allowances, monthly vs annual billing, usage-based fees and the actual definition of each billable unit. Correct only after checking current primary sources.
+4. **Regulatory, licensing and regional risk:** `payroll-software`, `hr-software`, `applicant-tracking-software`, `antivirus-endpoint-security`, `business-vpn`, `business-phone-voip`, `pos-systems`, `accounting-software`, `employee-scheduling-software`. State market scope explicitly; verify supported countries, worker/payroll/tax assumptions, security-plan scope, payment processing and legal/compliance boundaries. Avoid presenting software as a compliance guarantee.
+5. **Recovery and operational risk:** `cloud-backup-software`, `switch-business-software-without-losing-data`, `automate-repetitive-small-business-tasks`, `ai-automation-tools-small-businesses`, `n8n-workflow-examples`. Verify backup/restore and export claims, retry/error behavior, data retention, execution limits, integration availability and self-hosting responsibilities. Distinguish an illustrative workflow from a workflow actually tested end to end.
+
+### P1 — Substantive content improvements after P0 corrections
+
+1. **Thin/underdeveloped category guides:** `survey-nps-software`, `cloud-backup-software`, `employee-scheduling-software`, `pos-systems`, `inventory-management-software`, `contract-management-software`, `business-vpn`, `social-media-scheduling`, `cloud-storage`, `expense-management-software`, `business-phone-voip`, `automate-repetitive-small-business-tasks`. Add original selection criteria, realistic use cases, decision tables and direct sources. Do not expand by padding word count.
+2. **Homepage-only alternatives pages:** `salesforce-alternatives-small-businesses`, `quickbooks-alternatives`, `freshbooks-alternatives`, `calendly-alternatives`, `mailchimp-alternatives`, `slack-alternatives-small-teams`, `trello-alternatives`, `asana-alternatives`, `notion-alternatives-small-businesses`. Add exact pricing/help/migration/security sources and explain which user or workflow each alternative fits. A list of brand names is not a meaningful alternative analysis.
+3. **Generic small-business/freelancer workflows:** `how-much-business-software-do-you-need`, `simple-small-business-software-stack`, `manage-customer-leads-as-freelancer`, `manage-client-projects-without-full-time-team`, `free-vs-paid-business-software`, `free-business-tools-for-freelancers`, `how-to-choose-software-small-business`. Keep the vendor-neutral value, add practical examples and cost/decision criteria, and disclose when the content is desk research rather than product testing.
+4. **Developer/AI workflow guides:** `ai-tools-react-nextjs`, `llm-tools-for-developers`, `github-tools-for-developers`, `devops-tools-small-teams`, `ai-agent-frameworks`, `ai-tools-small-businesses`, `ai-tools-freelancers`, `ai-writing-tools-small-businesses`, `ai-productivity-tools-freelancers`, `ai-tools-marketing-small-businesses`, `ai-tools-business-content`. Keep current primary-source links; make the selection/evaluation method visible, distinguish subscription/API/usage billing and add regional caveats where prices or eligibility vary.
+5. **Comparison guides needing deeper migration and total-cost analysis:** `trello-vs-asana`, `hubspot-vs-pipedrive`, `quickbooks-vs-xero`, `quickbooks-vs-freshbooks`, `freshbooks-vs-wave`, `mailchimp-vs-brevo`, `mailchimp-vs-mailerlite`, `zoho-invoice-vs-wave`, `calendly-vs-google-calendar`. Preserve stronger existing structures but make the decision criteria, plan-level evidence and regional caveats explicit.
+
+### P2 — Editorial consistency and discoverability pass
+
+- Add or verify a concise quick answer where it genuinely helps the reader; do not insert repetitive boilerplate into every page.
+- Add an accurate reviewed date only after a meaningful source check. Dates must not be advanced just because a file was edited.
+- State the comparison market/currency and annual/monthly billing basis at the point where prices appear.
+- Put primary evidence beside material plan, feature, limit and eligibility claims; a vendor homepage alone is insufficient for a precise claim.
+- Use a consistent methodology disclosure: what was reviewed, when, whether products were hands-on tested, and what was not tested.
+- Add useful internal links to genuinely related guides; do not create repetitive cross-link blocks solely to increase link counts.
+- Keep recommendations conditional and include trade-offs, upgrade triggers, portability and exit considerations.
+
+### Consolidation candidates — investigate overlap; do not merge automatically
+
+| Cluster | Candidate pages | Required decision test |
+|---|---|---|
+| CRM free-plan intent | `free-crm-software`, `free-crm-without-credit-card`, `crm-software` | Determine whether “no credit card” is a distinct search intent with verified provider differences, or whether one page duplicates the same free-tier comparison. |
+| Project management free intent | `free-project-management-software`, `free-project-management-without-credit-card`, `project-management-software` | Compare query intent, unique limits, audience and existing search performance before choosing separate pages or a canonical consolidation. |
+| Invoicing free intent | `free-invoicing-software`, `free-invoicing-without-credit-card`, `invoicing-software` | Preserve distinct regional/payment eligibility value only if it is real and evidence-backed; otherwise combine overlapping free-plan explanations. |
+| General AI tools | `ai-tools-small-businesses`, `free-ai-tools-small-businesses`, `ai-tools-business-content`, `ai-productivity-tools-freelancers` | Keep distinct audience/task intent; avoid near-identical vendor lists with only title changes. |
+| Automation tools | `automate-repetitive-small-business-tasks`, `ai-automation-tools-small-businesses`, `n8n-vs-make-vs-zapier`, `n8n-workflow-examples` | Separate conceptual workflow guidance, platform comparison, AI-specific use cases and executable examples; consolidate only where actual page content overlaps. |
+| Meeting assistants | `ai-meeting-assistants`, `ai-meeting-assistant-pricing` | Keep the broad workflow shortlist separate from a genuinely maintained plan-by-plan pricing table; ensure the latter adds enough unique value to justify a separate URL. |
+| Alternatives vs core category | Alternatives pages across CRM, invoicing, project management, scheduling and email marketing | Keep only if alternatives intent, vendor coverage and migration decision value are distinct from the corresponding category guide. |
+
+**Consolidation rule:** inspect rendered content, query intent, internal links, canonical/indexing state and Search Console performance after deployment. Do not merge based on title similarity or source word count alone. If merging is justified, preserve the strongest URL, migrate unique useful content, update internal links and implement a relevant redirect only after review.
+
+### Execution sequence and acceptance gates
+
+**Phase A — P0 fact audit.** Work through one cluster at a time. For each page, record the material claims, official source URL, date checked, market/currency, billing basis and whether the claim is confirmed, qualified or removed. Do not mark a page “verified” while material claims remain unchecked.
+
+**Phase B — P1 editorial upgrades.** Improve original decision value, direct evidence, examples, tables and migration/total-cost guidance. Retain accurate content and do not pad pages to hit a word target.
+
+**Phase C — P2 consistency.** Review dates, quick answers, methodology disclosures, country notes, internal links and metadata only after substantive claims are correct.
+
+**Phase D — consolidation decisions.** Compare actual page content and search intent; make no index/noindex/redirect changes until evidence supports them.
+
+**Phase E — technical and release validation.** Run the existing SEO route/sitemap audit, internal-link check and content inventory; then lint, type-check, production build and CI on the final edited commit. Record exact commit/run results. No deployment or live Search Console verification is implied by this queue.
+
+**AdSense readiness is not guaranteed by completing this queue.** The aim is to make every retained page accurate, original, transparent, useful and technically sound. Google makes the approval decision independently.
