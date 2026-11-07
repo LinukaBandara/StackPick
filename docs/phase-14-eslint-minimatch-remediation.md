@@ -9,9 +9,9 @@
 - `eslint`: `8.57.1`
 - `eslint-config-next`: `15.5.27`
 - Legacy `.eslintrc.json` configuration; no `eslint.config.mjs` yet.
-- Earlier notes overstated the current validation state. The latest observed CI run on 7 November 2026 failed at ESLint because two guide files contained unterminated `pricingNote` string literals; the production build was skipped. The separate SEO/content workflow passed. Those two source errors have now been fixed, and a rerun is pending; do not claim lint/build success until its result is inspected.
+- The two malformed `pricingNote` string literals in `free-accounting-software` and `web-hosting` were fixed. GitHub Actions run `42393583462` on commit `3bc2c04a` passed dependency installation, production dependency audit, internal-link checks, ESLint and the production build. The build compiled, completed TypeScript and generated all 208 static pages. SEO/content runs `42393581088` and `42393577753` also passed. A later shared-image-component cleanup is under fresh CI validation; see the phase-14 content audit for its commit/run IDs.
 - Production dependency audit reports **0 vulnerabilities**.
-- Full audit reports **6 moderate development-dependency advisories** from one resolved `minimatch@10.2.6` copy under `@typescript-eslint/typescript-estree@8.70.1`.
+- Full audit reports **6 moderate development-dependency advisories** from one resolved `minimatch@10.2.6` copy under `@typescript-eslint/typescript-estree@8.70.1`. Production dependency audit reports **0 vulnerabilities**.
 
 ## Advisory
 
@@ -45,7 +45,7 @@ The upstream `typescript-eslint` issue confirms that `typescript-estree` current
 
 ## Why no dependency change was committed here
 
-The repository connector can edit GitHub files but cannot execute `npm install` or regenerate a trustworthy lockfile. The available shell environment has no network access to clone the repository. Manually changing `package-lock.json` would risk an invalid integrity hash, dependency graph or install state. The current application remains lint/build-clean; the six moderate findings are development-only and are explicitly tracked until a reproducible local lockfile update can be tested.
+The repository connector can edit GitHub files but cannot execute `npm install` or regenerate a trustworthy lockfile. The available shell environment has no network access to clone the repository. Manually changing `package-lock.json` would risk an invalid integrity hash, dependency graph or install state. The application passed lint and production build in CI on commit `3bc2c04a`. The six moderate findings are development-only, and remain explicitly tracked until a reproducible scoped lockfile update is tested. Do not describe the full dependency tree as clean.
 
 ## PowerShell commands for the local checkout
 
@@ -58,7 +58,10 @@ git pull --ff-only origin growth/adsense-journey-readiness
 npm ls eslint eslint-config-next @typescript-eslint/typescript-estree minimatch
 npm audit
 
-# After aligning ESLint 9 + eslint-config-next 16 and adding the scoped override:
+# Apply the scoped override only after reviewing the advisory and compatibility notes.
+npm pkg set 'overrides.@typescript-eslint/typescript-estree.minimatch=11.0.1'
+
+# Regenerate the lockfile using npm; do not edit package-lock.json by hand.
 npm install
 npm ls minimatch
 npm audit
