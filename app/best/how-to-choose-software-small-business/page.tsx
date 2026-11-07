@@ -40,6 +40,7 @@ export default function Page() {
                 <tr className="border-b border-black/10"><td className="p-5 font-medium">Workflow fit</td><td className="p-5 text-[#6e6e73]">Can it complete the core task end to end?</td><td className="p-5 text-[#6e6e73]">A test using a realistic example</td></tr>
                 <tr className="border-b border-black/10"><td className="p-5 font-medium">Total cost</td><td className="p-5 text-[#6e6e73]">What will seats, add-ons and setup cost?</td><td className="p-5 text-[#6e6e73]">First-year estimate, not just monthly price</td></tr>
                 <tr className="border-b border-black/10"><td className="p-5 font-medium">Adoption</td><td className="p-5 text-[#6e6e73]">Will the people doing the work update it?</td><td className="p-5 text-[#6e6e73]">A short trial with actual users</td></tr>
+                <tr className="border-b border-black/10"><td className="p-5 font-medium">Privacy and security</td><td className="p-5 text-[#6e6e73]">Who can access the records, how are they retained, and do the controls meet your needs?</td><td className="p-5 text-[#6e6e73]">Review roles, retention, security documentation and data-processing terms</td></tr>
                 <tr><td className="p-5 font-medium">Exit and risk</td><td className="p-5 text-[#6e6e73]">Can you export records and control access?</td><td className="p-5 text-[#6e6e73]">Test export, permissions and cancellation</td></tr>
               </tbody>
             </table>
