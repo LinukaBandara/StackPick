@@ -1413,3 +1413,22 @@ Four pages corrected against provider-owned pages and documentation. This is a d
 - `app/best/payroll-software/page.tsx` — added a 7 November 2026 review date and refreshed official US pricing. Gusto Simple is US$49/month + US$6/person; Plus US$80 + US$12/person. QuickBooks Workforce Payroll + Simple Start is US$88/month + US$6.50/employee before the displayed introductory discount, clearly labelled as a payroll/accounting bundle. Patriot Full Service is US$37/month + US$5/worker paid for one state; each additional state is US$12/month. The cost-check date in the visible table was updated. Sources: https://gusto.com/product/pricing, https://quickbooks.intuit.com/payroll/pricing/, https://help.patriotsoftware.com/en/articles/15414151-what-is-the-price-of-the-software.
 
 The edits avoid presenting US payroll, tax, or labor-law products as global solutions. No legal/tax advice, compliance certification, live backup restore, or live expense/scheduling workflow test is claimed. No build, lint, type-check, CI or deployment was run for this batch.
+
+
+
+### P0 security-software and password-manager plan correction (7 November 2026)
+
+Updated `app/best/password-managers/page.tsx` — commit `18a34f3`:
+- Refreshed the stale late-October source date to 7 November 2026 and added an explicit reviewed date.
+- Bitwarden's current US annual pricing: Premium US$19.80/year, Teams US$4/user/month and Enterprise US$6/user/month. The article now distinguishes individual Free from managed team plans.
+- 1Password's current business page: Teams Starter Pack US$2.49/user/month billed yearly, 10-user minimum and 20-user maximum; Business US$8.99/user/month, one-user minimum. Both advertise 14-day trials without a credit card.
+- NordPass business plan structure corrected: Teams is sold as a 10-user pack; Business and Enterprise have a 5-user minimum. Its official page offers a 14-day trial without a card; live checkout pricing depends on billing term/discount, so the article no longer uses an unsupported static per-user price range.
+- Keeper's current business page distinguishes Business Starter (5–10 seats) and Business (minimum 5 seats); the article no longer repeats an unverified generic US$2–4 range and directs readers to localized pricing.
+
+Primary sources:
+- Bitwarden: https://bitwarden.com/pricing/business/
+- 1Password: https://1password.com/pricing/business
+- NordPass: https://nordpass.com/plans/business/
+- Keeper: https://www.keepersecurity.com/business.html
+
+The security and VPN guides were screened in this batch but were not changed because the source evidence available here did not establish a specific material correction. No password-manager security audit, cryptographic assessment, or hands-on recovery/offboarding test is claimed. No build, lint, type-check, CI or deployment was run.
