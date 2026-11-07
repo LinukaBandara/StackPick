@@ -3,7 +3,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 
 export const metadata: Metadata = {
   title: "Best Invoicing Software for Small Businesses (2026)",
-  description: "A practical invoicing comparison for small businesses that need repeatable billing, payment tracking and records without turning invoicing into accounting admin.",
+  description: "Compare Zoho Invoice, Wave, FreshBooks and QuickBooks by real plan limits, payment fees, client billing and accounting needs for small businesses.",
   alternates: { canonical: "/best/invoicing-for-small-businesses" },
 };
 
@@ -12,16 +12,41 @@ export default function Page() {
     <ComparisonArticle
       title="Best Invoicing Software for Small Businesses"
       slug="invoicing-for-small-businesses"
-      quickAnswer="Start with the simplest invoicing workflow that covers recurring bills, payment tracking, reminders and clean exports. If you also need bookkeeping, bank reconciliation or accountant access, compare a broader accounting platform instead of paying for separate tools. Check payment processing, tax support and country eligibility before moving live invoices."
-      intro="A practical invoicing comparison for small businesses that need repeatable billing, payment tracking and records without turning invoicing into accounting admin."
-      pricingNote="Software plans change. Verify current pricing, user limits, regional availability and included features before making a business decision."
+      reviewedOn="2026-11-08"
+      quickAnswer="For invoice-only work, start with Zoho Invoice's free plan and check its 2-user, 3-project and 500-invoice annual limits. Wave Starter is another $0 option for eligible US and Canadian businesses, but online payments carry processing fees. Choose FreshBooks for client billing and service workflows, or QuickBooks when invoices need to sit inside a broader bookkeeping system."
+      intro="A small business needs more than a PDF invoice: it needs a repeatable way to quote, bill, follow up, record payments and hand clean records to whoever handles the books. The best fit depends on invoice volume, client count, payment methods and whether invoicing should connect to accounting."
+      pricingNote="US pricing and plan details checked against official vendor pages on November 8, 2026. Zoho Invoice is free with limits of 2 users, 3 projects and 500 invoices/year. Wave Starter is $0; Wave Pro is $19/month or $190/year. FreshBooks lists Lite at $23/month for 5 billable clients, Plus at $43/month for 50 and Premium at $70/month for unlimited clients. QuickBooks Online Simple Start lists at $38/month before temporary introductory offers. USD list-price references are before tax; payment-processing fees, regional eligibility, promotions and checkout prices can change. Wave is available to eligible businesses in the US and Canada; confirm local availability before moving live invoices."
       tools={[
-        { name: "Zoho Invoice", bestFor: "Dedicated invoicing", freeOption: "Zoho describes Invoice as a free invoicing product; verify the current country-specific terms.", tradeoff: "A dedicated invoicing workflow may be enough when you do not need full accounting, but confirm country support, payment options and the current plan terms.", url: "https://www.zoho.com/invoice/" },
-        { name: "Wave", bestFor: "Invoicing plus bookkeeping", freeOption: "Wave Starter has no monthly subscription fee; payment processing and some services cost extra.", tradeoff: "Combining invoicing with bookkeeping can reduce tool switching in supported regions, but payment processing and regional service limits affect the real cost.", url: "https://www.waveapps.com/" },
-        { name: "FreshBooks", bestFor: "Service billing and time", freeOption: "30-day trial; ongoing use requires a paid plan.", tradeoff: "Useful to evaluate for service billing, estimates and time-based work, but check client limits, payment fees and the subscription tier needed for your process.", url: "https://www.freshbooks.com/" },
-        { name: "QuickBooks", bestFor: "Invoicing inside accounting", freeOption: "Paid plans; introductory promotions and displayed prices can change.", tradeoff: "Makes sense if invoices should feed directly into the accounting records your business already uses, but it may be more system than needed for invoice-only work.", url: "https://quickbooks.intuit.com/" },
+        {
+          name: "Zoho Invoice",
+          bestFor: "Small businesses that need dedicated invoicing without a monthly subscription",
+          freeOption: "US edition is $0 and allows up to 2 users, 3 projects and 500 invoices per year. It includes recurring invoices, payment reminders, quotes and a customer portal.",
+          tradeoff: "The free allowance is useful for modest invoice volume, but the annual invoice cap, user limit and country-specific product terms matter as the business grows.",
+          url: "https://www.zoho.com/us/invoice/pricing/",
+        },
+        {
+          name: "Wave",
+          bestFor: "Eligible US and Canadian businesses that want invoicing alongside basic bookkeeping",
+          freeOption: "Starter is $0 with unlimited estimates, invoices, bills and bookkeeping records. Pro is US$19/month or US$190/year and adds bank imports, receipt capture, categorization and automated late reminders.",
+          tradeoff: "The free subscription does not make online payments free: US card processing on Starter is listed at 2.9% + $0.60 for Visa, Mastercard and Discover, or 3.4% + $0.60 for Amex. Regional eligibility is limited.",
+          url: "https://www.waveapps.com/pricing",
+        },
+        {
+          name: "FreshBooks",
+          bestFor: "Service businesses that bill clients, track time and need estimates or recurring invoices",
+          freeOption: "30-day trial; regular US list prices are Lite US$23/month for 5 billable clients, Plus US$43/month for 50 and Premium US$70/month for unlimited clients.",
+          tradeoff: "Client limits include active and archived clients, and extra team members or Advanced Payments can add cost. Compare the regular renewal price rather than a temporary introductory promotion.",
+          url: "https://www.freshbooks.com/pricing",
+        },
+        {
+          name: "QuickBooks Online",
+          bestFor: "Businesses that want invoices connected to bookkeeping, bank feeds and accountant workflows",
+          freeOption: "Simple Start lists at US$38/month before temporary introductory offers. It includes estimates, invoices, sales receipts, expense tracking and accounting reports.",
+          tradeoff: "It is a broader accounting subscription rather than a lightweight invoice-only tool. Check the regular renewal price, user access and whether the accounting features justify the higher monthly cost.",
+          url: "https://quickbooks.intuit.com/subscription/",
+        },
       ]}
-      bottomLine="The best choice depends on the workflow you actually need to run every week. Start with the smallest system that solves the current problem, then check its limits and exit options before committing."
+      bottomLine="Start with the least expensive tool that covers your real weekly workflow, not the longest feature list. Before migrating, test estimates, recurring invoices, partial payments, reminders and exports with sample records, then confirm payment fees and country support."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
@@ -35,13 +60,20 @@ export default function Page() {
             <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Getting paid</p><p className="mt-2 text-sm leading-6 text-[#667085]">Confirm supported payment methods, processing fees and client payment experience.</p></div>
             <div className="rounded-2xl border border-[#e4e7ec] bg-[#f7f8fc] p-6"><p className="font-semibold text-[#101828]">Bookkeeping handoff</p><p className="mt-2 text-sm leading-6 text-[#667085]">Check exports and whether invoice data reaches the accounting workflow you use.</p></div>
           </div>
-          <h3 className="mt-12 text-2xl font-semibold tracking-tight">Official plan sources checked</h3>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">Provider information checked October 14, 2026. This is a desk-based comparison, not a claim that every product was tested in a live account. Prices, payment eligibility and tax features may vary by country; check the live plan page before subscribing.</p>
+          <h3 className="mt-12 text-2xl font-semibold tracking-tight">Which type of invoicing tool should you choose?</h3>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-2xl border border-[#e4e7ec] p-5"><p className="font-semibold text-[#101828]">Invoice-only operation</p><p className="mt-2 text-sm leading-6 text-[#667085]">Start with Zoho Invoice if its annual invoice and user limits cover your workload. You may not need a full accounting subscription.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] p-5"><p className="font-semibold text-[#101828]">Invoices plus bookkeeping</p><p className="mt-2 text-sm leading-6 text-[#667085]">Consider Wave in an eligible country or QuickBooks if bank reconciliation, reporting and accountant access are part of the same process.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] p-5"><p className="font-semibold text-[#101828]">Client and time-based billing</p><p className="mt-2 text-sm leading-6 text-[#667085]">Compare FreshBooks when estimates, tracked time, retainers and client limits affect how you bill for services.</p></div>
+            <div className="rounded-2xl border border-[#e4e7ec] p-5"><p className="font-semibold text-[#101828]">Payment-heavy workflow</p><p className="mt-2 text-sm leading-6 text-[#667085]">Calculate processing fees against your typical invoice value and payment mix. A free monthly plan can still cost more per transaction.</p></div>
+          </div>
+          <h3 className="mt-12 text-2xl font-semibold tracking-tight">Official plan sources checked November 8, 2026</h3>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">This is a desk-based comparison of published US plan information, not a claim that every product was tested in a live account. Prices and eligibility may vary by country; check the live plan page and checkout terms before subscribing.</p>
           <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
-            <li><a className="underline underline-offset-4" href="https://www.zoho.com/us/invoice/pricing/" target="_blank" rel="noreferrer">Zoho Invoice US pricing</a> — included invoicing features and current terms.</li>
-            <li><a className="underline underline-offset-4" href="https://support.waveapps.com/hc/en-us/articles/208621296-Is-Wave-free" target="_blank" rel="noreferrer">Wave free-plan explanation</a> — what is free versus paid.</li>
-            <li><a className="underline underline-offset-4" href="https://www.freshbooks.com/pricing" target="_blank" rel="noreferrer">FreshBooks pricing</a> — trial, client limits and plan tiers.</li>
-            <li><a className="underline underline-offset-4" href="https://quickbooks.intuit.com/pricing/" target="_blank" rel="noreferrer">QuickBooks Online pricing</a> — current plan features and promotions.</li>
+            <li><a className="underline underline-offset-4" href="https://www.zoho.com/us/invoice/pricing/" target="_blank" rel="noreferrer">Zoho Invoice US pricing</a> — free-plan users, projects and invoice allowance.</li>
+            <li><a className="underline underline-offset-4" href="https://www.waveapps.com/pricing" target="_blank" rel="noreferrer">Wave pricing</a> and <a className="underline underline-offset-4" href="https://www.waveapps.com/p/accept-online-payments" target="_blank" rel="noreferrer">payment processing fees</a> — Starter, Pro and card-payment costs.</li>
+            <li><a className="underline underline-offset-4" href="https://www.freshbooks.com/pricing" target="_blank" rel="noreferrer">FreshBooks pricing</a> — regular plan prices and billable-client limits.</li>
+            <li><a className="underline underline-offset-4" href="https://quickbooks.intuit.com/subscription/" target="_blank" rel="noreferrer">QuickBooks Online subscriptions</a> — plan pricing and included accounting workflows.</li>
           </ul>
         </div>
       </section>
