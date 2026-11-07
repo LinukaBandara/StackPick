@@ -12,6 +12,7 @@ export default function Page() {
     <ComparisonArticle
       title="Best Free Accounting Software"
       slug="free-accounting-software"
+      quickAnswer="For eligible US and Canadian businesses, Wave Starter has no monthly subscription fee. Zoho Books US Free is more structured but limited to one user plus one accountant, 1,000 invoices and 1,000 expenses per year, and a US$50,000 annual-revenue threshold. GnuCash and Manager desktop editions avoid a cloud subscription but require you to manage files, backups and accountant handoffs. Check country eligibility before choosing."
       reviewedOn="2026-11-07"
       intro="Free accounting software compared for freelancers and small businesses, with attention to what remains free once real bookkeeping begins."
       pricingNote="US plan and eligibility details checked November 7, 2026. Wave account creation is limited to businesses located in the United States and Canada; its Starter subscription has no monthly fee, but payment processing and some add-ons cost extra. Zoho Books US Free supports 1 user plus 1 accountant, up to 1,000 invoices and 1,000 expenses per year, and remains free only while annual revenue is within the stated US$50,000 threshold. These limits and eligibility rules are specific to the US edition; other country editions may have different products, caps, taxes and bank-feed support. GnuCash and Manager desktop editions avoid a cloud subscription but require the business to manage local files, backups and access."
