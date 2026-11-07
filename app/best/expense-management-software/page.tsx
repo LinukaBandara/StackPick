@@ -23,7 +23,7 @@ export default function Page() {
           bestFor: "Small teams that want straightforward expense reporting and reimbursement",
           freeOption: "Personal Free includes unlimited SmartScans, mileage tracking, manual expenses and CSV export. A paid workspace is required for categories/tags, reimbursements, approvals, accounting integrations and corporate-card controls.",
           tradeoff:
-            "The receipt-scanning SmartScan feature and straightforward reimbursement flow are genuinely well-reviewed and quick to set up. It's a subscription cost with no corporate-card offset, so at a real headcount it can cost more per month than a card-based free alternative - the trade-off is not needing to route company spend through a specific card provider.",
+            "Personal Free is aimed at an individual tracking their own expenses; team approvals, reimbursements, accounting integrations and card controls require a paid workspace. That distinction matters more than comparing its $0 entry label with a corporate-card platform: a freelancer may not need team controls, while an employer usually does.",
           url: "https://www.expensify.com/pricing",
         },
         {
@@ -43,7 +43,7 @@ export default function Page() {
           url: "https://www.zoho.com/us/expense/pricing/",
         },
       ]}
-      bottomLine="Solo freelancer: Expensify Personal Free is a useful receipt/mileage/export tool, but not a full team expense system. Small team: compare Zoho Expense's 3-user Free plan with its paid scan and policy limits. Eligible US company: consider Ramp only after confirming corporate eligibility and card underwriting. Test export quality before handing records to a bookkeeper."
+      bottomLine="Solo freelancer: Expensify Personal Free is a useful receipt/mileage/export tool, but not a full team expense system. Small team: compare Zoho Expense's 3-user US Free plan with its paid scan and policy limits. Eligible US company: consider Ramp only after confirming corporate eligibility and card underwriting. These are US-market plan references, not a global shortlist; verify local tax, reimbursement and accounting requirements. Test export quality before handing records to a bookkeeper."
     />
   );
 }
