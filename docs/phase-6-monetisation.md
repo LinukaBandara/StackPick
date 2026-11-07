@@ -116,7 +116,7 @@ The workspace includes:
 
 - A partner register with the exact software profile, programme name, application/approval state, official programme and terms URLs, private tracking URL, commission summary, cookie window, disclosure, application/approval dates, last link-verification date and private notes.
 - Server-side validation against the existing software catalogue. URL fields must use HTTPS.
-- An activation guard: a record cannot be marked active without a tracking URL, approval date, recent verification date and disclosure. **The register does not publish or activate affiliate links on public pages.** Public destinations remain controlled by the reviewed `lib/affiliate.ts` allow-list; a human must separately verify and add an approved destination there.
+- An activation guard: a record cannot be marked active without a tracking URL, approval date, verification date within the last 90 days and disclosure. The dashboard flags active records whose verification is missing or overdue. **The register does not publish or activate affiliate links on public pages.** Public destinations remain controlled by the reviewed `lib/affiliate.ts` allow-list; a human must separately verify and add an approved destination there.
 - A monthly reconciliation ledger for outbound clicks, conversions, reversals and confirmed commission, with source notes. Re-entering a partner/month updates that month's record rather than duplicating it.
 - Commission totals are grouped by currency. No exchange rates or estimated conversions are invented.
 
