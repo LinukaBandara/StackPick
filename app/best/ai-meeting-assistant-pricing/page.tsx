@@ -11,13 +11,14 @@ const plans = [
   { name: "Fathom Free", price: "$0", billing: "Free forever", fit: "Individuals who want meeting recordings, transcripts and summaries without a subscription", limits: "Advanced summaries and team-wide controls are limited by plan; check current feature allowances.", url: "https://www.fathom.ai/pricing" },
   { name: "Fathom Premium", price: "$16/user/mo", billing: "Annual billing; $20 monthly", fit: "Individuals needing advanced summaries, action items and a custom meeting bot", limits: "Team collaboration and shared workflows are on team plans.", url: "https://www.fathom.ai/pricing" },
   { name: "Fathom Team", price: "$15/user/mo", billing: "Annual billing; $19 monthly; 2-user minimum", fit: "Small teams that need shared recordings, comments and collaboration", limits: "Business tier adds CRM field sync, deal views and coaching features.", url: "https://www.fathom.ai/pricing" },
+  { name: "Fathom Business", price: "$25/user/mo", billing: "Annual billing; $34 monthly; 2-user minimum", fit: "Teams needing CRM field sync, deal views and coaching metrics", limits: "Enterprise adds SSO/SCIM, organization-wide controls and custom retention.", url: "https://www.fathom.ai/pricing" },
   { name: "Fireflies Free", price: "$0", billing: "Free forever", fit: "Testing transcription and basic AI notes", limits: "400 minutes of storage per team and limited AI summaries/credits; storage is not the same as monthly transcription allowance.", url: "https://fireflies.ai/pricing" },
   { name: "Fireflies Pro", price: "$10/seat/mo", billing: "Billed annually; $18 monthly", fit: "Individuals or small teams needing unlimited transcription, summaries and integrations", limits: "8,000 minutes of storage per seat; Business adds unlimited storage and team analytics.", url: "https://fireflies.ai/pricing" },
   { name: "Fireflies Business", price: "$19/seat/mo", billing: "Billed annually; $29 monthly", fit: "Teams needing conversation intelligence, analytics and expanded storage", limits: "Enterprise security, SSO/SCIM and advanced governance require Enterprise.", url: "https://fireflies.ai/pricing" },
   { name: "Otter Basic", price: "$0", billing: "Free forever", fit: "Occasional meetings and live transcription", limits: "300 transcription minutes/month, 30 minutes per conversation and 3 lifetime audio/video imports.", url: "https://otter.ai/pricing-new" },
-  { name: "Otter Pro", price: "$8.33/user/mo", billing: "Annual-billing equivalent; verify current checkout price", fit: "Individuals needing more transcription minutes, longer meetings and exports", limits: "1,200 in-app recording minutes/month, up to 90 minutes per meeting and 10 file imports/month.", url: "https://otter.ai/pricing-new" },
-  { name: "Otter Business", price: "$20/user/mo", billing: "Annual-billing equivalent shown on vendor page; verify checkout", fit: "Teams needing longer meetings, more transcription capacity and admin controls", limits: "6,000 transcription minutes and up to 4 hours per meeting on published plan comparison.", url: "https://otter.ai/pricing-new" },
-  { name: "Granola Basic", price: "$0/user/mo", billing: "Free", fit: "Individuals trying device-audio capture and AI notes without a meeting bot", limits: "Limited meeting history; advanced integrations and full history require Business.", url: "https://www.granola.ai/pricing" },
+  { name: "Otter Pro", price: "$8.33/user/mo", billing: "Annual-billing display; monthly list price $16.99; check checkout offers", fit: "Individuals needing more transcription minutes, longer meetings and exports", limits: "1,200 in-app recording minutes/month, up to 90 minutes per meeting, 10 monthly file imports and unlimited storage.", url: "https://otter.ai/pricing" },
+  { name: "Otter Business", price: "$19.99/user/mo", billing: "Annual-billing display; monthly list price $30; promotions may apply", fit: "Teams needing custom AI workflows, longer meetings and admin controls", limits: "Up to 4 hours per meeting, unlimited in-app meetings/recordings and enhanced admin features; verify imported-file limits.", url: "https://otter.ai/pricing" },
+  { name: "Granola Basic", price: "$0/user/mo", billing: "Free", fit: "Individuals trying device-audio capture and AI notes without a meeting bot", limits: "30 days of meeting history; advanced integrations and unlimited history require Business.", url: "https://www.granola.ai/pricing" },
   { name: "Granola Business", price: "$14/user/mo", billing: "Monthly per-user price", fit: "Individuals and small teams needing full history, integrations, API and MCP access", limits: "Enterprise adds SSO, organization-wide admin controls and retention policies.", url: "https://www.granola.ai/pricing" },
 ];
 
@@ -25,9 +26,9 @@ export default function Page() {
   return (
     <main className="bg-white">
       <article className="sp-container py-14 sm:py-20">
-        <p className="sp-eyebrow">Software pricing · Updated October 19, 2026</p>
+        <p className="sp-eyebrow">Software pricing · Checked November 7, 2026</p>
         <h1 className="sp-display mt-4 max-w-4xl">AI meeting assistant pricing: what do notes and transcripts really cost?</h1>
-        <p className="sp-body-large mt-6 max-w-3xl">AI meeting assistants differ in how they capture calls, limit free usage, store recordings and share notes with a team. This guide compares published US pricing for Fathom, Fireflies.ai, Otter.ai and Granola. A free plan may be enough for one person, while searchable archives, CRM automation, team analytics and organization-wide controls can move the cost up quickly.</p>
+        <p className="sp-body-large mt-6 max-w-3xl">For an individual, start with a free tier only if its history, summary and transcription limits cover your real meeting volume. For teams, compare the full seat cost and the features that matter: shared search, CRM sync, admin controls and retention. This guide compares the providers’ publicly displayed US-dollar plan information for Fathom, Fireflies.ai, Otter.ai and Granola; billing currency, tax, offers and eligibility can differ by country.</p>
 
         <section className="mt-10 overflow-x-auto rounded-2xl border border-[#d2d2d7]">
           <table className="w-full min-w-[900px] border-collapse text-left text-sm">
@@ -35,7 +36,12 @@ export default function Page() {
             <tbody>{plans.map((p) => <tr key={p.name} className="border-t border-[#d2d2d7] align-top"><td className="p-4"><a className="font-semibold text-[#001D39] underline" href={p.url} target="_blank" rel="noreferrer">{p.name}</a><p className="mt-2 text-[#6e6e73]">{p.billing}</p></td><td className="p-4 whitespace-nowrap">{p.price}</td><td className="p-4">{p.fit}</td><td className="p-4">{p.limits}</td></tr>)}</tbody>
           </table>
         </section>
-        <p className="mt-4 text-sm leading-relaxed text-[#6e6e73]">Official vendor pricing pages checked October 19, 2026. Some vendors show an annual-billing monthly equivalent beside a higher monthly rate; Otter's displayed annual figures can vary by offer and region. Check the final checkout total, tax, seat minimums and current feature limits before purchasing.</p>
+        <p className="mt-4 text-sm leading-relaxed text-[#6e6e73]">Official vendor pricing pages checked November 7, 2026. Prices shown are public US-dollar references, not quotes for every country. Where a provider displays annual-billing equivalents and monthly rates, the billing term is stated in the table; promotions and checkout offers can change. Confirm currency, tax, seat minimums, imported-file allowances and current feature limits before purchasing.</p>
+
+        <section className="mt-12 max-w-3xl">
+          <h2 className="text-2xl font-semibold tracking-tight">How this comparison was prepared</h2>
+          <p className="mt-4 leading-relaxed text-[#424245]">This is desk research based on the providers’ public pricing pages and help documentation checked November 7, 2026. StackPick has not independently benchmarked transcription accuracy or tested every plan in a controlled trial. Feature labels and quotas are vendor-published claims; verify them in your own account before relying on them for client or business records.</p>
+        </section>
 
         <section className="mt-12 max-w-3xl">
           <h2 className="text-2xl font-semibold tracking-tight">Compare the capture method before the price</h2>
@@ -75,7 +81,7 @@ export default function Page() {
             <li><Link className="underline" href="/best/crm-software-pricing">CRM software pricing</Link></li>
           </ul>
         </section>
-        <p className="mt-8 text-xs leading-relaxed text-[#6e6e73]">Editorial comparison of public US pricing checked October 19, 2026. Vendor plans and limits change; verify the current official pricing and data-handling terms before uploading or recording sensitive meetings.</p>
+        <p className="mt-8 text-xs leading-relaxed text-[#6e6e73]">Editorial comparison of publicly displayed US-dollar pricing checked November 7, 2026. Annual-billing equivalents, monthly rates, promotional prices and country-specific taxes are not interchangeable. Vendor plans and limits change; verify current terms and applicable recording/consent rules before using the service.</p>
       </article>
     </main>
   );
