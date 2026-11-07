@@ -202,3 +202,16 @@ A read-only source check of the current branch found:
 - 10 `LAST_MODIFIED` entries, all valid calendar dates and all present in the static sitemap.
 
 This check parsed the fetched GitHub source in memory. It did not execute `scripts/audit-seo-routes.mjs`, resolve every route against the full App Router tree, run Node syntax checks, or render the generated sitemap.
+
+
+## Content audit signal inventory — 7 November 2026
+
+Extended `scripts/audit-content-quality.mjs` so its CSV inventory records four additional editorial signals for each non-redirect page:
+- whether the page supplies a visible `quickAnswer` prop;
+- whether it supplies a `pricingNote` prop;
+- whether source text contains an explicit country/region caveat;
+- whether source text discloses desk research or the absence of hands-on testing.
+
+The script summary now reports counts for these signals. They are inventory fields, not quality scores: a page may not need a pricing note, and a text match does not prove that a regional caveat or testing disclosure is accurate or sufficiently prominent. Review the actual page and vendor evidence before making editorial or indexing decisions. Existing heuristic flags remain review prompts only.
+
+**Validation status:** source was updated through GitHub and should be syntax-checked and run locally with `npm run audit:content` after pulling the branch. No script execution, CSV generation, build, lint, typecheck or CI pass is claimed in this environment.
