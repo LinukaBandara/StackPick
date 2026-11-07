@@ -17,7 +17,7 @@ export default function VendorActionLink({
   const href = partner?.url || officialUrl;
 
   return (
-    <>
+    <div className="flex flex-col items-start">
       <a
         href={href}
         target="_blank"
@@ -32,6 +32,6 @@ export default function VendorActionLink({
           Affiliate link: {partner.disclosure}
         </p>
       )}
-    </>
+    </div>
   );
 }
