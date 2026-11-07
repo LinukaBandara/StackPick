@@ -16,7 +16,7 @@ export default function Page() {
       reviewedOn="2026-11-07"
       intro="AI support tools can draft replies, answer routine questions from approved content or assist an existing help desk. The right choice depends on where customer conversations happen, how complex your policies are and whether the system can hand off account-specific or uncertain requests safely. Start with one repeatable support queue rather than trying to automate every conversation."
       quickAnswer="For a support team already using Intercom or Zendesk, compare the AI agent inside that help desk first. Intercom Fin charges per outcome; Zendesk uses automated-resolution allowances and overages. Tidio is a smaller website-chat option with a one-time free Lyro quota, while Gorgias fits ecommerce teams and bills by tickets plus successful AI automation outcomes."
-      pricingNote="Provider pricing and usage rules checked November 7, 2026. Intercom Fin is US$0.99 per outcome, in addition to Intercom seat costs when using the full platform; Zendesk uses automated-resolution allowances with committed and pay-as-you-go overage rates. Tidio's free Lyro allowance is a one-time 50 conversations, not a monthly free quota. Gorgias bills for helpdesk tickets and may add an AI automation fee when the AI resolves a ticket without human handoff. These units are not directly comparable; confirm local currency, taxes, plan tier and exact billing definition before estimating cost."
+      pricingNote="Provider pricing and usage rules checked November 7, 2026. Intercom Fin is US$0.99 per outcome, in addition to Intercom seat costs when using the full platform; Zendesk uses automated-resolution allowances with committed and pay-as-you-go overage rates. Tidio's free Lyro allowance is a one-time 50 conversations, not a monthly free quota. Gorgias bills by helpdesk ticket volume rather than agent seats, then adds a separate outcome-based AI fee when its AI Agent fully resolves a conversation without human handoff. Its current public information lists US$1.00 per automated interaction on monthly billing or US$0.90 on annual billing, with plan-dependent included allowances and US$1.50 overage per interaction. These units are not directly comparable; confirm local currency, taxes, ticket allowance and account-specific terms before estimating cost."
       tools={[
         {
           name: "Intercom Fin",
@@ -42,9 +42,9 @@ export default function Page() {
         {
           name: "Gorgias",
           bestFor: "Ecommerce teams that want customer support connected to store workflows",
-          freeOption: "Check current pricing, ticket or usage allowances and AI-specific charges.",
+          freeOption: "Gorgias Helpdesk is priced by monthly ticket volume, not per agent. AI Agent is an additional outcome-based charge: the vendor lists US$1.00 per automated interaction on monthly billing or US$0.90 on annual billing, with included monthly interaction allowances depending on plan and US$1.50 per additional interaction. A ticket can incur both a helpdesk ticket fee and an AI automation fee if AI resolves it without human intervention. Check the live tier and usage dashboard for the exact total.",
           tradeoff: "It is most relevant when ecommerce integrations are central to support; a general service business may not need that setup.",
-          url: "https://www.gorgias.com/pricing",
+          url: "https://helpcenter.gorgias.com/en-US/how-youre-billed-for-using-gorgias", 
         },
       ]}
       bottomLine="Choose by the channel your customers already use and the work the tool can safely resolve. A useful pilot should reduce repeat effort without increasing incorrect answers, repeat contacts or customer frustration. Keep a clear route to a person, and verify the current plan and billing model before choosing."
