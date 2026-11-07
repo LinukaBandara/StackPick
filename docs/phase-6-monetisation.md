@@ -36,6 +36,22 @@ Both events depend on the existing cookie-consent flow: GA4 is loaded only after
 
 Configure `affiliate_click` as a key event only after validating that consent settings and event collection work as intended. Do not treat clicks as confirmed purchases or commissions. Reconcile revenue against each programme's own dashboard and attribution window.
 
+### GA4 setup and validation checklist
+
+After the preview build is available and the correct GA4 property is configured:
+
+1. Open **GA4 → Admin → Data display → Custom definitions**.
+2. Create event-scoped custom dimensions for `software_slug` and `vendor_action`. The event parameters are sent automatically; custom definitions make them available in standard reports and explorations.
+3. Open **DebugView** in the same GA4 property.
+4. In a fresh browser session, choose **Accept all** in StackPick's cookie banner. Open a software profile and click the main vendor website action. Confirm one `vendor_outbound_click` event with `vendor_action=website` and the expected `software_slug`.
+5. Click the official pricing action. Confirm `vendor_action=pricing` and the same software slug.
+6. In a separate fresh session, reject optional analytics cookies. Repeat both clicks and confirm no GA4 events are received.
+7. Repeat after changing consent in privacy settings to confirm the stored choice takes effect.
+8. Do not expect an `affiliate_click` event until a verified partner URL is configured for that exact profile.
+
+DebugView testing should use a preview deployment and a test browser. Do not click production links repeatedly just to create test data. If DebugView remains empty, first verify the preview's GA4 property ID, consent state, browser extensions and network requests; do not weaken consent controls to make events appear.
+
+
 Useful reporting dimensions:
 - Software profile / guide page
 - Vendor and programme
