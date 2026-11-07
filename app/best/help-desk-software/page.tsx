@@ -13,45 +13,46 @@ export default function Page() {
     <ComparisonArticle
       title="Best Help Desk Software for Small Business"
       slug="help-desk-software"
+      reviewedOn="2026-11-07"
       quickAnswer="A shared inbox may be enough for low-volume support. Compare Freshdesk and Zoho Desk when you need ticket assignment, status tracking and basic reporting. Help Scout is worth testing for a customer-friendly shared-inbox workflow; Gorgias is most relevant to ecommerce teams that need order context. Price the exact number of agents and channels you will use."
       intro="A solo operator or 2–5 person team usually needs a dependable place to receive customer questions, assign ownership, find previous conversations and avoid duplicate replies. A shared inbox may be enough for low volume. A help desk becomes more useful when requests need categories, assignment rules, saved replies, service-level targets or reporting. Choose based on the support workflow you actually run — not on enterprise features you will never configure."
-      pricingNote="Verify the current free agent cap, ticket or contact limits, shared inbox access, channels, automation, reporting, saved replies and data export. Some providers offer a temporary trial rather than a permanent free tier, and AI features may have separate limits or charges. Calculate the price for your actual agent count and confirm what happens to ticket history if you downgrade or leave."
+      pricingNote="Official provider pricing/help pages checked 7 November 2026. Help Scout Free supports up to 5 users, one inbox and 100 contacts/month; paid Standard starts at US$25/user/month billed annually. Zoho Desk Free includes 3 user licences; Express starts at US$7/agent/month billed annually, with local taxes extra. Freshdesk’s Free Program is limited to 2 agents and is not the same as an unrestricted permanent free tier; Growth starts at US$19/agent/month billed annually. Gorgias uses ticket-volume pricing rather than a simple per-agent model, with additional charges possible for AI Agent, Voice and SMS. These are USD references; currency, taxes, billing options, free-program eligibility and product availability can vary by country. Sources: https://www.helpscout.com/pricing/; https://www.zoho.com/desk/pricing.html; https://www.freshworks.com/freshdesk/pricing/; https://helpcenter.gorgias.com/en-US/how-youre-billed-for-using-gorgias-199385."
       tools={[
         {
           name: "Help Scout",
           bestFor: "Small, mostly-email teams who want something that does not feel like traditional ticketing software",
           freeOption:
-            "Free plan is available for a small number of users. Confirm current agent and feature limits on the official pricing page. Paid plans unlock more advanced collaboration and reporting.",
+            "Free supports up to 5 users, one inbox and 100 contacts per month. Standard adds multiple inboxes, live chat/SMS and workflows; check per-user pricing and inbox add-ons.",
           tradeoff:
             "Deliberately built to feel like a normal shared inbox rather than a heavy ticketing system. Customers often receive replies that feel personal. The trade-off is fewer heavy-duty automation and reporting features than tools built for larger support teams.",
-          url: "https://www.helpscout.com/",
+          url: "https://www.helpscout.com/pricing/",
         },
         {
           name: "Freshdesk",
           bestFor: "Growing teams that want room to scale without switching tools later",
           freeOption:
-            "Free plan covers a real number of agents with functional ticketing (confirm current agent and feature limits). It is one of the more usable free tiers in this category.",
+            "Freshdesk’s Free Program is limited to 2 agents and is offered under specific account/eligibility conditions; it is not the same as an unrestricted permanent free plan. Growth is the first listed paid tier.",
           tradeoff:
             "Clear upgrade path as automation and reporting needs grow. The interface leans more toward traditional ticketing than Help Scout’s shared-inbox feel.",
-          url: "https://freshdesk.com/",
+          url: "https://www.freshworks.com/freshdesk/pricing/",
         },
         {
           name: "Zoho Desk",
           bestFor: "Cost-conscious teams already using other Zoho products",
           freeOption:
-            "Free plan is available for very small teams. Confirm current agent limits and which features are restricted to paid editions.",
+            "Free Edition includes 3 user licences. Paid Express adds more channels and workflows; local taxes are added to the published price.",
           tradeoff:
             "Often one of the more affordable paid tiers with a real feature set, and it connects smoothly with Zoho CRM and Zoho Books if you are already in that ecosystem. The interface can have a steeper learning curve for first-time users than Help Scout.",
-          url: "https://www.zoho.com/desk/",
+          url: "https://www.zoho.com/desk/pricing.html",
         },
         {
           name: "Gorgias",
           bestFor: "Shopify and e-commerce stores that need order context inside support conversations",
           freeOption:
-            "No meaningful permanent free tier for ongoing use. Paid plans start at relatively accessible levels for e-commerce support teams. Confirm current pricing and ticket volume limits.",
+            "Pricing is based on monthly billable ticket volume rather than the number of agents; AI Agent, Voice and SMS can add usage charges. Check the ticket allowance and overage price for your actual store volume.",
           tradeoff:
             "Pulls order data, refunds and subscription details directly into the support conversation — a real time-saver for e-commerce that general-purpose help desks cannot match. It is not built for non-e-commerce support.",
-          url: "https://www.gorgias.com/",
+          url: "https://www.gorgias.com/pricing",
         },
       ]}
       bottomLine="For low-volume email support, prioritize a shared inbox your team will actually use consistently. If you need assignment, ticket states and basic reporting, compare the current Freshdesk and Zoho Desk plans against your real agent count. Help Scout is worth evaluating when a customer-friendly shared-inbox experience is central. Gorgias is most relevant when store-order context is essential to e-commerce support. Always run a sample ticket through intake → assignment → reply → close → search before moving live customer history."
