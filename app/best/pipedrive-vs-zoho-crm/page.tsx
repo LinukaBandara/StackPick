@@ -12,6 +12,7 @@ export default function Page() {
     <ComparisonArticle
       title="Pipedrive vs Zoho CRM"
       slug="pipedrive-vs-zoho-crm"
+      quickAnswer="Choose Pipedrive if your team wants a clear, sales-first pipeline and is comfortable paying per seat after the trial. Choose Zoho CRM if you need a free edition for up to three users or more configurable CRM processes. Pipedrive is simpler to navigate; Zoho offers more flexibility but can require more setup."
       intro="Pipedrive is built around helping salespeople move deals through a pipeline; Zoho CRM offers a broader set of ways to configure customer records and sales processes. The right choice depends on how much structure and customization your team will actually maintain."
       pricingNote="US plan pages checked October 17, 2026. Zoho CRM has a free edition for up to 3 users. Pipedrive offers a 14-day trial, then charges per seat: Lite is listed at $14/seat/month and Growth at $39/seat/month when billed annually. Pipedrive Growth is the first tier with email sync and automations; confirm Zoho's current edition limits and Pipedrive's annual checkout total before choosing."
       tools={[
