@@ -26,6 +26,8 @@ const COMPANY_LINKS = [
   { href: "/how-we-verify", label: "How we verify" },
   { href: "/review-policy", label: "Review policy" },
   { href: "/report-an-issue", label: "Report an issue" },
+  { href: "/for-vendors", label: "For software vendors" },
+  { href: "/partnerships", label: "Partnerships" },
   { href: "/contact", label: "Contact" },
   { href: "/affiliate-disclosure", label: "Affiliate disclosure" },
   { href: "/privacy", label: "Privacy" },
