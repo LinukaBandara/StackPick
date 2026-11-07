@@ -9,7 +9,7 @@ const EVIDENCE: Record<string, Evidence> = {
   "invoice-clients-as-freelancer": {
     heading: "Plan limits that can change the invoicing choice",
     facts: [
-      "FreshBooks currently lists 5 billable clients on Lite, 50 on Plus, and unlimited clients on Premium and Select. Compare standard list pricing rather than temporary promotional prices.",
+      "FreshBooks currently lists 5 billable clients on Lite, 50 on Plus, and unlimited clients on Premium. Compare standard list pricing rather than temporary promotional prices.",
       "Wave publishes payment fees and payout timing for the United States and Canada. Do not assume the same payment-processing availability in other countries.",
       "The linked Zoho Invoice free offer is specifically for Indian businesses; its page lists up to 2 users, 3 projects and 500 invoices per year. Do not generalize those terms to every country.",
     ],
