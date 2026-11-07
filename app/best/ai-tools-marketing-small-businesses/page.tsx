@@ -13,6 +13,7 @@ export default function Page() {
       title="Best AI Tools for Marketing Small Businesses"
       slug="ai-tools-marketing-small-businesses"
       intro="Small businesses can use AI to speed up campaign planning, draft content, create visual assets and organize customer follow-up. The useful stack is not the one with the most AI features; it is the smallest set of tools that improves a real marketing workflow while keeping claims, brand voice and customer data under human control."
+      quickAnswer="Use AI tools to accelerate drafts, campaign ideas and first-pass creative work—not to publish unchecked claims. Pick tools around the assets and channels you actually use, then review factual accuracy, brand voice, image rights, customer data handling and the time needed for editing."
       pricingNote="AI models, generation credits, seats, commercial-use terms, data controls and feature access change frequently. Check the exact plan and terms for your region. Do not upload confidential customer data or rely on generated factual claims without checking the provider's data handling and output."
       tools={[
         { name: "Canva", bestFor: "Producing social graphics, campaign visuals and reusable brand assets", freeOption: "Check current free-plan access to templates, AI credits, brand controls and export options.", tradeoff: "It can reduce design turnaround, but templates and generated visuals still need brand review, licensing checks and accessibility checks.", url: "https://www.canva.com/" },
