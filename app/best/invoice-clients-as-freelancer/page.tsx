@@ -13,6 +13,7 @@ export default function Page() {
       title="How to Invoice Clients as a Freelancer"
       slug="invoice-clients-as-freelancer"
       intro="A good invoice does more than request money. It records the agreed work, explains when payment is due and gives the client everything needed to pay without another email. Build a repeatable process before choosing an invoicing app."
+      quickAnswer="A reliable freelance invoicing process starts with a clear scope, itemised charges, invoice number, issue date, due date, currency and payment instructions. Choose software only after checking the payment methods your clients can use, the records your accountant needs and the plan limits you may outgrow."
       pricingNote="Compare the complete workflow rather than the invoice template alone: recurring invoices, payment methods, reminders, expense records, tax settings, client limits and export access may depend on the product and plan. Verify current provider terms and local requirements."
       tools={[
         { name: "FreshBooks", bestFor: "Freelancers who want invoicing connected to time tracking and client records", freeOption: "Check current trial, plan and client limits in your country.", tradeoff: "A broader service-business workflow can be useful, but may cost more than a freelancer who only sends occasional invoices needs.", url: "https://www.freshbooks.com/" },
