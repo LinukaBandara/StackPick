@@ -61,7 +61,7 @@ export default function Page() {
           <li>Confirm who receives alerts, investigates incidents and can isolate a device.</li>
           <li>Review renewal pricing, device/user caps, retention and local support before signing.</li>
         </ul>
-        <p className="mt-4 text-xs leading-5 text-[#667085]">Research method: desk review of official endpoint-security pricing and product documentation checked November 7, 2026. No malware-detection benchmark or penetration test is claimed; compare current independent test methodologies and obtain qualified security advice for regulated environments.</p>
+        <p className="mt-4 text-xs leading-5 text-[#667085]">Research method: desk review of official endpoint-security pricing and product documentation checked November 7, 2026. StackPick has not performed hands-on product testing, a malware-detection benchmark or a penetration test; compare current independent test methodologies and obtain qualified security advice for regulated environments.</p>
       </section>
     </ComparisonArticle>
   );
