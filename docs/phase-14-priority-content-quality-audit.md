@@ -783,3 +783,72 @@ Primary sources:
 **Commits:** AI customer support `12d7070` and methodology `a7bfd28`; ChatGPT vs Claude `83d2855`; freelancer AI tools `3079b12`; developer LLM tools `3a88334`.
 
 No local build, lint, typecheck or CI run has passed for these edits. This is an evidence and editorial update, not a controlled product test; prices and usage terms are region- and account-dependent.
+
+
+## P1 article-edit batch 2 — DevOps, agent frameworks, n8n blueprints, expenses and migration (7 November 2026)
+
+Updated:
+- `app/best/devops-tools-small-teams/page.tsx`
+- `app/best/ai-agent-frameworks/page.tsx`
+- `app/best/n8n-workflow-examples/page.tsx`
+- `app/best/track-business-expenses-without-spreadsheets/page.tsx`
+- `app/best/switch-business-software-without-losing-data/page.tsx`
+
+### DevOps tools
+- Added a quick answer, November 7 plan date and research-method disclosure.
+- GitHub Actions Free now lists 2,000 standard-runner minutes/month and 500 MB artifact storage for private repositories; standard runners are free for public repositories.
+- Vercel Hobby is explicitly restricted to personal/non-commercial use; commercial production deployments require Pro/Enterprise.
+- Railway's temporary trial, Free allowance and paid Hobby/Pro minimum-usage credits are distinguished.
+- Sentry Developer is described as a one-user free tier and the shift from legacy transaction counts to span-based tracing is noted.
+- Better Stack Free's monitor, exceptions, replay, logs/traces and metrics quotas are summarized from the current public page.
+
+### AI agent frameworks
+- Added a quick answer, November 7 review date and method disclosure.
+- Replaced the AutoGen recommendation with **Microsoft Agent Framework**. Microsoft's AutoGen repository is now archived/no longer maintained; Microsoft recommends Agent Framework for new projects.
+- OpenAI Agents SDK is linked to the current SDK docs for tools, handoffs, guardrails, human approvals and tracing.
+- LangGraph is linked to persistence/checkpoint documentation; Vercel AI SDK is linked to the current SDK docs.
+- Added a reminder to prefer deterministic workflows when the process is already defined.
+
+### n8n workflow examples
+- Added a quick answer, dated documentation note and explicit statement that the examples are conceptual and have not been run/imported by StackPick.
+- Added concrete node-level sequences for lead intake and weekly reporting, plus direct links to webhook, error-handling, security-audit and execution-history documentation.
+- Clarified that n8n Cloud billing is per workflow execution, not per node, and that self-hosting adds infrastructure/update/security responsibilities.
+
+### Expense tracking without spreadsheets
+- Added a quick answer, date and source-backed plan details.
+- Zoho Expense Free: up to 3 users, 20 receipt scans per user/month and 5 GB receipt storage.
+- Expensify personal Free: unlimited SmartScans, mileage and CSV export; paid workspace required for categories/tags, reimbursements, accounting integrations and card features.
+- QuickBooks Free: 2 receipt captures/month and 1 connected bank, in addition to the limited invoice/user terms.
+- Zoho Books US Free: 1 user plus 1 accountant, 1,000 expenses/year, 50 receipt autoscans/month and US$50,000 annual-revenue threshold.
+
+### Switching business software without losing data
+- Added a quick answer, November 7 review date and an explicit migration-method disclosure.
+- HubSpot: exports record properties and associations; activities can require separate exports/API; export links expire after 30 days.
+- Notion: workspace export supports HTML/Markdown, CSV databases and uploaded files, but is not an instant restore and omits inaccessible private pages.
+- Trello: board JSON is available to board members; CSV is a Premium Workspace feature and omits comments/nested data; workspace exports can include attachments.
+- Zoho CRM: module exports support CSV/XLSX and there is a separate complete backup path; backup availability varies by data center/edition.
+- Added a visible checklist of data that CSV exports may not preserve.
+
+Primary sources:
+- GitHub Actions billing: https://docs.github.com/en/billing/concepts/product-billing/github-actions
+- Vercel Hobby and commercial-use rules: https://vercel.com/docs/plans/hobby and https://vercel.com/docs/limits/fair-use-guidelines
+- Railway pricing: https://railway.com/pricing
+- Sentry Developer plan change: https://www.sentry.help/en/articles/16738709-changes-to-legacy-developer-plans-september-2026
+- Better Stack pricing: https://betterstack.com/pricing
+- Microsoft Agent Framework and AutoGen status: https://learn.microsoft.com/en-us/agent-framework/overview/ and https://github.com/microsoft/autogen
+- OpenAI Agents SDK guardrails/tracing: https://developers.openai.com/api/docs/guides/agents/sdk and https://developers.openai.com/api/docs/guides/agents/guardrails-approvals
+- LangGraph persistence: https://docs.langchain.com/oss/python/langgraph/persistence
+- Vercel AI SDK: https://ai-sdk.dev/docs
+- n8n webhooks/error handling/security: https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/ and https://docs.n8n.io/flow-logic/error-handling/ and https://docs.n8n.io/hosting/securing/security-audit/
+- Zoho Expense: https://www.zoho.com/us/expense/pricing/
+- Expensify free features/pricing: https://help.expensify.com/articles/new-expensify/getting-started/Free-Features-in-Expensify and https://www.expensify.com/pricing
+- QuickBooks Free: https://quickbooks.intuit.com/online/free/
+- Zoho Books US: https://www.zoho.com/us/books/pricing/
+- HubSpot export: https://knowledge.hubspot.com/import-and-export/export-records
+- Notion export: https://www.notion.com/help/workspace-settings
+- Trello export: https://support.atlassian.com/trello/docs/exporting-data-from-trello/
+- Zoho CRM export: https://help.zoho.com/portal/en/kb/crm/data-administration/export-data/articles/export-crm-data
+
+**Commits:** DevOps `374b1ed` and Railway wording correction `a0cbc24`; agent frameworks `6f27b0e`; n8n examples `6e73792` and method `de5112a`; expense tracking `7fb7bfb`; migration guide `ca70fe5`.
+
+No local build, lint, typecheck or CI run has passed for these edits. All plan data is time- and region-sensitive; no live integrations or data migrations were executed.
