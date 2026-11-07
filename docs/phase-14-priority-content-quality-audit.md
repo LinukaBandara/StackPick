@@ -535,3 +535,34 @@ The script summary now reports counts for these signals. They are inventory fiel
 ### Completion of the 109-guide screening
 
 All 109 guides have now received an initial editorial/source screen across ten batches. This is not a final fact-check, a full rendered-content review, a Search Console performance analysis or an AdSense approval guarantee. The next deliverable should be a consolidated, ranked action queue with four outcomes: **keep**, **improve**, **consolidate**, and **investigate**. Prioritize demonstrable factual risk, weak source support, overlapping intent and missing decision value—not word count alone. Do not bulk-delete or noindex low-word-count pages. After the queue is agreed, begin article-level revisions in controlled groups and run the project's available validation scripts before any deployment.
+
+
+## First article-edit batch after the 109-guide audit — AI meeting assistants (7 November 2026)
+
+Updated two related guides using current provider pricing/help pages:
+
+- `app/best/ai-meeting-assistant-pricing/page.tsx`
+  - Replaced the October 19 review date with November 7, 2026.
+  - Added Fathom Business to the plan table and refreshed Fathom's current displayed annual/monthly prices and two-seat minimums.
+  - Rechecked Fireflies Free, Pro and Business storage/AI-credit distinctions and current displayed prices; preserved the difference between transcription and retained storage.
+  - Refreshed Otter Pro and Business price/billing descriptions and linked to the current official pricing page; retained explicit caution that checkout offers may vary.
+  - Made Granola Basic's 30-day history limit explicit and retained Business/Enterprise feature distinctions.
+  - Added a visible desk-research disclosure: the comparison is based on provider pages and is not a controlled transcription-accuracy benchmark.
+  - Clarified that prices are public US-dollar references, not global quotes; annual equivalents, monthly rates, promotions and taxes are not interchangeable.
+- `app/best/ai-meeting-assistants/page.tsx`
+  - Added a concise quick answer.
+  - Updated the plan/help review date to November 7, 2026.
+  - Clarified Fireflies' 400-minute storage allowance as labelled on the pricing page and distinguished it from transcription volume.
+  - Updated Granola Basic history from generic "limited history" to the vendor-published 30 days.
+  - Retained the explicit desk-research/no-independent-benchmark methodology statement.
+
+Primary sources checked:
+- Fathom pricing: https://www.fathom.ai/pricing
+- Fireflies pricing: https://fireflies.ai/pricing
+- Fireflies billing/AI credits: https://guide.fireflies.ai/articles/9606045468
+- Otter pricing: https://otter.ai/pricing
+- Granola pricing: https://www.granola.ai/pricing
+
+This is a first source-backed refresh, not a guarantee that every vendor offer is identical at every regional checkout. The Otter page displays multiple annual/monthly promotional price presentations; the article directs readers to verify the actual checkout. Regional currency, tax, account eligibility and local recording/consent obligations still require reader-specific confirmation.
+
+**Commits:** pricing guide `bbf8221`; general meeting-assistants guide `100b972`; review-date correction `7a0cf00`. These GitHub source edits have not been validated by a local build, lint, typecheck or CI run.
