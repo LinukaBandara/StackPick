@@ -9,6 +9,7 @@ import AffiliateClickTracker from "@/components/AffiliateClickTracker";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.tech";
+const ADSENSE_CLIENT_ID = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || "ca-pub-3937927075789582";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -57,6 +58,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.variable}>
       <head>
         <meta name="impact-site-verification" content="8c133419-5f0c-490c-8b97-821b88a36fae" />
+        {ADSENSE_CLIENT_ID && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+            crossOrigin="anonymous"
+          />
+        )}
       </head>
       <body className="font-sans bg-white text-ink antialiased">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
