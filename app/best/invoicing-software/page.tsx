@@ -15,6 +15,7 @@ export default function InvoicingSoftwarePage() {
       slug="invoicing-software"
       reviewedOn="2026-11-07"
       intro="For a US freelancer, the right invoicing tool should make it easy to send a professional invoice, remind clients about overdue balances, accept the payment methods clients prefer, and export clean records for bookkeeping. A free plan can be enough when invoices are simple; recurring billing, time tracking, accounting reports or higher card-payment volume can change the calculation. This comparison separates free invoice creation from the cost of getting paid."
+      quickAnswer="For unlimited free invoicing, compare Wave Starter (US/Canada businesses only) with Invoice Ninja Free (up to 5 clients). Zoho Invoice's US Free plan allows up to 500 invoices/year and 2 users. QuickBooks Free is much more limited at 2 invoices/month and 1 connected bank; FreshBooks is a paid product after its 30-day no-card trial."
       pricingNote="US plan and fee references checked 7 November 2026; these are not global offers. Wave account eligibility is limited to businesses located in the US and Canada. Payment gateways, card rates, payout currencies, tax handling and local invoice rules vary by business country. Confirm the exact product edition and payment processor terms shown for your country before moving live client billing. A software subscription fee and a payment-processing fee are separate costs."
       tools={[
         {
@@ -27,9 +28,9 @@ export default function InvoicingSoftwarePage() {
         {
           name: "Zoho Invoice",
           bestFor: "Early-stage freelancers with a small client list",
-          freeOption: "Zoho Invoice is presented as a free invoicing product on its US site and supports recurring invoices, payment reminders, expenses, projects and online-payment integrations. Its public landing page does not clearly state a single numerical cap, so confirm any account-specific limits and supported payment gateways during signup rather than assuming unlimited use.",
-          tradeoff: "The invoice software is free, but card or bank-payment processing fees may still apply through the gateway you connect. Check the gateway's pricing, country support and payout timing separately; those costs are not set by the Zoho Invoice subscription.",
-          url: "https://www.zoho.com/invoice/",
+          freeOption: "Zoho Invoice's US Free plan supports up to 2 users, 3 projects and 500 invoices per year, with recurring invoices, payment reminders, expenses and online-payment integrations. It includes Zoho branding; the provider says account data may be deleted after more than 180 days of inactivity, so export or sign in regularly.",
+          tradeoff: "The invoicing software is free in the referenced US edition, but card or bank-payment processing fees may still apply through the gateway you connect. Check the gateway's pricing, country support and payout timing separately; those costs are not set by the Zoho Invoice subscription.",
+          url: "https://www.zoho.com/us/invoice/pricing/",
         },
         {
           name: "Invoice Ninja",
@@ -48,9 +49,9 @@ export default function InvoicingSoftwarePage() {
         {
           name: "QuickBooks",
           bestFor: "Freelancers who also need bookkeeping and tax-oriented accounting",
-          freeOption: "QuickBooks now lists a $0 Free plan in the US. It allows up to 2 invoices per month, one connected bank and one user, with no accountant access. A separate 30-day trial provides access to a paid plan; don't confuse the two offers.",
-          tradeoff: "The Free plan can cover very low-volume billing, but two invoices per month is restrictive for active freelancers. QuickBooks also offers a 30-day paid-plan trial; verify which plan and billing terms you're selecting before checkout.",
-          url: "https://quickbooks.intuit.com/",
+          freeOption: "QuickBooks US Free is $0 and the official signup page says no credit card is required. It includes 1 user, no accountant access, up to 2 invoices per month and 1 connected bank. The provider notes an exception for eligible users who enable QuickBooks Payments; check those conditions before relying on a higher invoice allowance. A separate 30-day paid-plan trial is a different offer.",
+          tradeoff: "The Free plan can cover very low-volume billing, but two invoices per month is restrictive for active freelancers. Confirm whether your account qualifies for the QuickBooks Payments exception and do not confuse the permanent Free plan with a 30-day paid-plan trial.",
+          url: "https://quickbooks.intuit.com/pricing/",
         },
       ]}
       bottomLine="Need unlimited invoices with no subscription? Start with Wave's $0 Starter plan if your business is eligible, or compare Invoice Ninja's free plan if five clients is enough. Zoho Invoice is another free option for recurring billing and reminders, but confirm any account-specific limits and payment-gateway fees. QuickBooks Free is worth a look for very low volume, but its two-invoice monthly cap is tight. FreshBooks is a paid product after its 30-day trial and is best justified when its accounting workflow saves enough time."
