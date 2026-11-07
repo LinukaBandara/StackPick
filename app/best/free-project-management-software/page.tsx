@@ -22,6 +22,7 @@ export default function Page() {
     <ComparisonArticle
       title="Best Free Project Management Software"
       slug="free-project-management-software"
+      quickAnswer="For simple boards and small projects, Trello Free is a strong starting point. Asana Personal is limited to two users, while ClickUp Free offers unlimited free members but only 60 MB of storage. monday.com Free is limited to two seats, three boards and 200 items. Compare the limits that affect your actual workflow—especially files, seats and automation—before migrating."
       intro="A free project management tool is only useful if it stays usable after the first week. Freelancers and small teams should focus on real limits — seats, projects, views, automation, storage and export — rather than feature lists. This comparison helps you see where the free plan starts to become restrictive."
       pricingNote="Free-plan limits checked November 7, 2026 against official US-facing pricing and help pages. These are plan snapshots, not guarantees of identical pricing or feature availability in every country. A permanent free plan is different from a time-limited trial. Before importing active projects, test the exact number of projects, collaborators, file storage, reminders and views you need. Sources: Trello https://trello.com/en/pricing; ClickUp https://clickup.com/pricing; Asana https://asana.com/pricing; monday.com https://monday.com/pricing and https://support.monday.com/hc/en-us/articles/360010487220-Understanding-the-Free-Plan."
       tools={[
