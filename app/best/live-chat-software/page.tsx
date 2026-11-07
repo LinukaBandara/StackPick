@@ -13,6 +13,7 @@ export default function Page() {
     <ComparisonArticle
       title="Best Live Chat Software for Small Business Websites"
       slug="live-chat-software"
+      quickAnswer="Start with Tidio for a straightforward live-chat setup and basic AI support. Choose Crisp if you want a predictable shared inbox and team workflow. Tawk.to can provide a no-subscription starting point, while Intercom is better suited to teams with enough support volume and budget to justify usage-based AI charges. Test mobile and offline handling before launch."
       intro="Live chat for small websites has split into two tiers: simpler tools with relatively predictable pricing (Tidio, Crisp, Tawk.to) and AI-first platforms that often charge per resolved conversation on top of seat costs (Intercom). For most small sites, predictable pricing and a tool the team will actually answer usually matter more than the most advanced AI deflection."
       pricingNote="Confirm current free-tier limits (seats, conversations, AI replies, branding) on the official pricing pages. Some tools charge per AI resolution or conversation on top of seats, which can make the monthly bill hard to predict when chat volume rises. Always test the widget on mobile and check what happens when no agent is online."
       tools={[
