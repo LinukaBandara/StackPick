@@ -198,3 +198,18 @@ The monday 200-item Free cap is now supported by its current official help artic
 Exact sources and country caveats are in the audit document. No local build/lint/typecheck/CI has passed.
 
 **Next:** Begin P1 work — improve evidence and decision value on the weaker guides, starting with AI customer support, ChatGPT vs Claude for freelancers, AI tools for freelancers and LLM tools for developers.
+
+
+## P1 batch 1 — first four evidence/decision-value improvements completed
+
+Updated:
+- `app/best/ai-customer-support-tools/page.tsx`
+- `app/best/chatgpt-vs-claude-for-freelancers/page.tsx`
+- `app/best/ai-tools-freelancers/page.tsx`
+- `app/best/llm-tools-for-developers/page.tsx`
+
+The customer-support guide now distinguishes Intercom outcome charges, Zendesk automated-resolution allowances, Tidio's one-time free Lyro quota and Gorgias ticket + automation fees. The ChatGPT/Claude guide has current consumer plan context and separates API billing. The freelancer AI guide now has direct plan sources and a cost-per-finished-deliverable method. The developer LLM guide now distinguishes hosted APIs, local inference, model discovery and observability, with token/tool/caching billing factors and an evaluation checklist.
+
+The audit document records exact official sources and limitations. These remain desk-research guides, not hands-on benchmarks. No build/lint/typecheck/CI has passed.
+
+**Next:** P1 batch 2 — improve DevOps tools, AI agent frameworks, n8n examples, expense tracking and software migration.
