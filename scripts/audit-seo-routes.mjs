@@ -79,7 +79,8 @@ if (!routesBlock) {
       if (!routeExists(route)) errors.push("LAST_MODIFIED route has no matching App Router page: " + route);
       if (!sitemapRouteSet.has(route)) errors.push("LAST_MODIFIED route is missing from the static sitemap: " + route);
     }
-  }}
+  }
+}
 
 if (errors.length) {
   console.error("SEO route audit failed:");
