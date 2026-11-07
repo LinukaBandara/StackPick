@@ -105,3 +105,17 @@ Primary-source checks:
 - Brevo plan documentation: https://help.brevo.com/hc/en-us/articles/208589409-About-Brevo-s-pricing-plans — recheck at publication and before future updates; the guide records the published Free-plan limits noted above.
 
 Remaining quality work: verify current MailerLite, Kit, Systeme.io, GetResponse and ActiveCampaign plan claims from their own documentation; distinguish permanent free plans from trials; check country-specific pricing and availability rather than treating USD plan pages as universal. This guide has not been locally built, linted or deployed as part of this edit.
+
+### Email marketing guide — second vendor-source pass (7 November 2026)
+
+Updated `app/best/email-marketing-software/page.tsx` with vendor-specific permanent-free versus trial distinctions, revised the short answer, and linked each updated card to a relevant official pricing/help page.
+
+- **MailerLite:** Free plan is capped at 250 active subscribers and 2,500 emails per month. Its June 16, 2026 update also limits Free usage to 3 automations, 3 forms, 1 landing page, 1 website (up to 5 pages) and 1 digital product. The vendor warns that exceeding limits can restrict sending and other actions. Source: https://www.mailerlite.com/help/free-plan-update-faq
+- **Kit:** Free supports up to 10,000 subscribers and unlimited broadcasts; visual automations and automated sequences are paid features. Source: https://kit.com/pricing
+- **Systeme.io:** Free plan supports up to 2,000 contacts and unlimited email sends, but only 1 automation rule and 1 email campaign, alongside limited funnel/site/course allowances. The vendor says no credit card is required. Source: https://systeme.io/pricing/
+- **GetResponse:** Forever Free supports up to 500 contacts, 2,500 newsletters/month and 1 landing page. Premium features are trial access for the first 14 days and are removed afterward unless upgraded. Sources: https://www.getresponse.com/help/can-i-try-getresponse-before-i-buy.html and https://www.getresponse.com/pricing
+- **ActiveCampaign:** Its FAQ describes a 14-day trial capped at 100 contacts and 100 sent emails; no charge is made unless the customer manually upgrades. This is a trial, not a permanent free plan. Source: https://www.activecampaign.com/about/faq
+
+The page avoids presenting US-dollar pricing as universal. The GetResponse pricing page currently displays US-dollar paid-plan prices; those should be labeled by market if quoted in a future revision. MailerLite says it accepts EUR and USD and selects currency based on billing address; actual payment/tax treatment can vary. No country-by-country payment eligibility claim has been added.
+
+**Remaining editorial checks:** compare the paid-plan minimum price for equivalent list sizes (not merely each vendor's smallest headline price), confirm regional availability and taxes at checkout, and review list hygiene/consent requirements before adding deliverability claims. No local build, lint, CI, deployment or live Search Console verification was run for this edit.
