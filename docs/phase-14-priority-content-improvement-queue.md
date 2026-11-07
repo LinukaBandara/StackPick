@@ -136,3 +136,16 @@ The guide now reflects Copilot's 2,000 Free completions/month and AI-credit bill
 Sources and details are recorded in the audit document. This is a source-backed first pass, not a hands-on tool benchmark or a guarantee of identical regional checkout terms. No build/lint/typecheck/CI has passed.
 
 **Next:** P0 item 3 — reconcile n8n, Make and Zapier billing units and usage examples.
+
+
+### P0 item 3: Automation billing models — first refresh completed
+
+Updated:
+- `app/best/n8n-vs-make-vs-zapier/page.tsx`
+- `app/best/ai-automation-tools-small-businesses/page.tsx`
+
+The comparison now distinguishes n8n workflow executions, Make credits and Zapier Classic Zap tasks; adds current Free-tier reference allowances, a dated note and a quick answer; and explains Zapier's announced December 1, 2026 Next Gen Zaps/SDK task changes. The AI automation guide has a dated plan note, current Zapier/Make free limits and direct pricing links.
+
+The source audit records the exact provider references. The Zapier Next Gen change is future-dated and needs a post-December 1 recheck. No build/lint/typecheck/CI has passed.
+
+**Next:** P0 item 4 — verify permanent free vs trial, card requirement, caps and country eligibility across the four free/no-card guides.
