@@ -13,10 +13,10 @@ export default function Page() {
     <ComparisonArticle
       title="Best Cloud Storage for Small Business Teams"
       slug="cloud-storage"
-      reviewedOn="2026-11-07"
+      reviewedOn="2026-11-08"
       intro="For a small business, cloud storage is not just a gigabyte comparison. Choose around the tools your team already pays for, how often you share files with clients, who can access sensitive folders, and how reliably you can restore deleted or overwritten work. Google Drive and OneDrive are especially compelling inside their existing productivity suites. Dropbox can still be worth evaluating when external file sharing and large creative files are central to the workflow."
       quickAnswer="If you already use Google Workspace, Drive Starter includes 30 GB pooled storage per user and Standard 2 TB; Microsoft 365 Business Basic includes 1 TB OneDrive per user. Dropbox Standard starts at 3 TB pooled team storage for US$15/user/month billed annually; Advanced starts at 15 TB for US$24. Personal free tiers (Google 15 GB, OneDrive 5 GB, Dropbox 2 GB) are not managed business workspaces."
-      pricingNote="US plan details checked November 7, 2026. Google Workspace Starter/Standard/Plus are US$7/$14/$22 per user/month on annual billing and include 30 GB/2 TB/5 TB pooled storage per user. Microsoft 365 Business Basic is US$7/user/month annually with 1 TB OneDrive per user. Dropbox Standard is US$15/user/month annually with 3 TB pooled team storage; Advanced is US$24/user/month with 15 TB. Personal free allowances are Google 15 GB shared across Drive/Gmail/Photos, OneDrive 5 GB and Dropbox 2 GB. Prices exclude tax; storage, recovery windows, seat minimums and local currency vary by country."
+      pricingNote="US plan details checked November 8, 2026. Google Workspace Starter/Standard/Plus are US$7/$14/$22 per user/month on annual billing and include 30 GB/2 TB/5 TB pooled storage per user; introductory discounts may temporarily reduce the checkout price. Microsoft 365 Business Basic with Teams is US$7/user/month on annual billing and includes 1 TB OneDrive per user; the no-Teams version is listed at US$5.40/user/month annually. Dropbox Standard is US$15/user/month annually, starts with 3 TB shared team storage and includes 180-day file recovery; Advanced is US$24/user/month, requires at least 3 users, starts with 15 TB shared storage and includes one-year file recovery. Personal free allowances are Google 15 GB shared across Drive/Gmail/Photos, OneDrive 5 GB and Dropbox 2 GB. Prices exclude tax; storage, recovery windows, seat minimums and local currency vary by country."
       tools={[
         {
           name: "Google Drive",
@@ -31,7 +31,7 @@ export default function Page() {
           name: "Microsoft OneDrive",
           bestFor: "Teams already using Microsoft 365 (Word, Excel, Teams)",
           freeOption:
-            "OneDrive Free includes 5 GB. Microsoft 365 Business Basic is US$7/user/month annually and includes 1 TB OneDrive storage per user; higher Microsoft 365 plans also include 1 TB per user.",
+            "OneDrive Free includes 5 GB. Microsoft 365 Business Basic with Teams is US$7/user/month on annual billing and includes 1 TB OneDrive per user; the no-Teams version is listed at US$5.40/user/month annually. Business Basic provides web and mobile Office apps rather than the desktop Office apps included with higher plans.",
           tradeoff:
             "Deep Teams and SharePoint integration make it the obvious choice if you are already paying for Microsoft 365. Real-time co-editing works best within Word/Excel/PowerPoint.",
           url: "https://www.microsoft.com/en-us/microsoft-365/onedrive/onedrive-business-plans-and-pricing",
@@ -40,7 +40,7 @@ export default function Page() {
           name: "Dropbox",
           bestFor: "Creative teams handling large media files and frequent external collaboration",
           freeOption:
-            "Dropbox Basic includes 2 GB. Standard is US$15/user/month annually with 3 TB team storage; Advanced is $24/user/month with 15 TB and a one-year file recovery history.",
+            "Dropbox Basic includes 2 GB. Standard is US$15/user/month annually, starts with 3 TB shared team storage and includes 180-day file recovery. Advanced is US$24/user/month, requires at least 3 users, starts with 15 TB shared team storage and includes one-year file recovery.",
           tradeoff:
             "Still strong on sync speed and handling large files, and its external-sharing experience is often smoother for sending big files outside the organization. You are paying for a dedicated storage tool on top of whatever productivity suite you already have.",
           url: "https://www.dropbox.com/business/plans-comparison",
