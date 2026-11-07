@@ -13,6 +13,7 @@ export default function Page() {
     <ComparisonArticle
       title="Best Website Builders for Freelancers"
       slug="website-builder-for-freelancers"
+      quickAnswer="For a visual portfolio, prototype the same case study in Framer and Squarespace. Choose Wix if you need more built-in service-business features, and Webflow if custom layout control is central to the project. Before paying, test a custom-domain launch, mobile layout, enquiry form delivery, SEO fields and how a client will update the site."
       intro="A freelancer site needs to do more than look polished: it should show credible work, explain the service, answer common client questions and make it easy to enquire. Choose a builder around the portfolio you need to maintain and the way you expect clients to contact you—not the number of templates in its gallery."
       pricingNote="Plan features, publishing limits and renewal prices change. Review the official pricing and publishing terms before committing. A design or staging plan is not necessarily the same as a live site with a custom domain, working forms or CMS features."
       tools={[
