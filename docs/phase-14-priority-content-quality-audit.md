@@ -215,3 +215,31 @@ Extended `scripts/audit-content-quality.mjs` so its CSV inventory records four a
 The script summary now reports counts for these signals. They are inventory fields, not quality scores: a page may not need a pricing note, and a text match does not prove that a regional caveat or testing disclosure is accurate or sufficiently prominent. Review the actual page and vendor evidence before making editorial or indexing decisions. Existing heuristic flags remain review prompts only.
 
 **Validation status:** source was updated through GitHub and should be syntax-checked and run locally with `npm run audit:content` after pulling the branch. No script execution, CSV generation, build, lint, typecheck or CI pass is claimed in this environment.
+
+
+## 109-guide editorial audit — batch 1 of 11 (7 November 2026)
+
+**Scope:** first 10 catalogue routes in `lib/guides.ts`. Each route source was fetched from the working branch and screened for source length, linked external domains, quick-answer/pricing/review-date signals, regional caveats and method disclosures. Three pages also received a direct content read. These are editorial triage findings, not a completed verification of every vendor claim.
+
+| Guide | Initial finding | Audit disposition |
+|---|---|---|
+| `/best/invoicing-software` | 1,397 source words; 8 external URLs; pricing note and visible review date present; no clear desk-research/testing-method disclosure. | **Improve disclosure**; verify pricing claims and regional scope before sign-off. |
+| `/best/multi-currency-invoicing` | 1,954 words; 9 external URLs; pricing note and country caveat present; no visible review date or clear method disclosure. | **Review freshness and method**; verify supported currencies, conversion/settlement fees and country availability against provider documentation. |
+| `/best/accounting-software` | 1,414 words; 10 external URLs; quick answer, pricing note, review date, regional caveat and method disclosure present. | **Lower initial priority**; still verify the cited plan terms and source dates during final claim review. |
+| `/best/payroll-software` | 1,171 words; 7 external URLs; pricing note present, but no clear country/region caveat, review date or method disclosure. | **Regional accuracy priority**; payroll is jurisdiction-dependent, so eligibility and country coverage need explicit primary-source checks. |
+| `/best/expense-management-software` | 548 source words; only 3 external URLs; no dedicated H2/H3 sections; no specific named plan limits or source links beyond provider homepages. The copy includes subjective assertions such as “well-reviewed” without visible supporting evidence. | **High-priority rewrite/research**; add useful workflow comparison, specific verified limits, official pricing/help sources, regional eligibility and evidence for any evaluative claims. Do not pad to a word target. |
+| `/best/expense-management-software-pricing` | 1,585 words; 5 external URLs; pricing note present. | **Verify numbers and scope**; inspect price dates, billing periods, seat assumptions, fees and country context against official pricing pages. |
+| `/best/crm-software` | 1,422 words; 8 external URLs; quick answer, pricing note, review date and country caveat present. | **Lower initial priority**; check that review date and method disclosure are visible and all plan-limit claims remain current. |
+| `/best/crm-software-pricing` | 1,482 words; 3 official pricing URLs; includes a useful seat-cost table and desk-research disclosure. Pricing is explicitly US/USD but labeled checked 18 October 2026, not the current audit date. | **High-priority price refresh**; re-check HubSpot, Zoho and Salesforce US rates/terms, confirm annual vs monthly billing, and update the checked date only after re-verification. |
+| `/best/email-marketing-software` | 1,431 words; 7 external URLs; quick answer, pricing note and review date present. | **Lower initial priority**; verify free-tier limits and confirm regional caveats/method disclosure are sufficiently clear. |
+| `/best/social-media-scheduling` | 763 source words; 3 external URLs, all pointing to provider homepages; plan limits are described vaguely (“small number”, “limited number”) without actual numbers or direct pricing citations. | **High-priority research expansion**; verify Buffer, Hootsuite and Later plan limits, formats and country availability from current official pricing/help pages; add direct source links and concrete decision guidance. |
+
+### Batch 1 status
+
+- 10 of 109 catalogue routes screened (9.2%).
+- 3 pages directly read in full: expense tracking, social scheduling and CRM pricing.
+- Highest-priority follow-up pages identified: expense tracking, CRM pricing and social scheduling.
+- No guide was noindexed, removed or redirected based on automated word counts.
+- No article content was rewritten in this audit batch; this step records findings before edits to avoid conflating audit and remediation.
+
+**Important limitation:** source word counts are rough TSX-source counts, not rendered article word counts. External URL counts do not establish source quality. A linked vendor homepage is not equivalent to a citation supporting a specific pricing or feature claim. Remaining batches must inspect actual content and verify material claims, not merely satisfy numerical thresholds.
