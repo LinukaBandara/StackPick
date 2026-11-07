@@ -119,3 +119,28 @@ Updated `app/best/email-marketing-software/page.tsx` with vendor-specific perman
 The page avoids presenting US-dollar pricing as universal. The GetResponse pricing page currently displays US-dollar paid-plan prices; those should be labeled by market if quoted in a future revision. MailerLite says it accepts EUR and USD and selects currency based on billing address; actual payment/tax treatment can vary. No country-by-country payment eligibility claim has been added.
 
 **Remaining editorial checks:** compare the paid-plan minimum price for equivalent list sizes (not merely each vendor's smallest headline price), confirm regional availability and taxes at checkout, and review list hygiene/consent requirements before adding deliverability claims. No local build, lint, CI, deployment or live Search Console verification was run for this edit.
+
+## Batch update — website builders, invoicing and CRM (7 November 2026)
+
+Three related guide edits were made together rather than treating each as a separate mini-task.
+
+### Website builders
+Updated `app/best/website-builders/page.tsx` with a quick answer, a US/annual-billing reference-price note and more specific plan requirements:
+- Squarespace: US annual-billing display shows Basic at US$19/month and Core at US$29/month. Basic lists a 2% online-store transaction fee; Core lists 0%. Eligible annual website subscriptions include one year of a custom domain.
+- Wix: US Core is listed at US$29/month billed annually and is the lowest plan in the referenced comparison that accepts payments. Wix explicitly says currency/prices vary by location and taxes depend on billing address.
+- Shopify: US Basic is listed at US$29/month billed annually; the US comparison lists a 2% third-party transaction fee when using an external payment provider.
+- Webflow: Starter staging is free but limited to two static pages and a webflow.io address. Basic is US$15/month billed yearly for a custom domain; Ecommerce Standard is US$29/month billed yearly, 500 items and a 2% transaction fee. Workspace and site plans are distinct.
+Primary sources: https://www.squarespace.com/pricing ; https://www.wix.com/plans ; https://www.shopify.com/pricing ; https://webflow.com/pricing
+
+### Invoicing
+Updated `app/best/invoicing-software/page.tsx` to date the plan references 7 November 2026 and clearly state that the fees and offers are US-market references, not universal availability. Wave eligibility and local payment gateway/payout constraints are called out. Invoice Ninja's current published plan page confirms Free at up to five clients with unlimited invoices and Pro at US$14/month on monthly billing:
+https://invoiceninja.com/pricing-plans/
+
+### CRM source-code correction
+Fixed the missing closing quote after the CRM page's `quickAnswer` prop in `app/best/crm-software/page.tsx`. The prior source had the following `pricingNote` text accidentally absorbed into the JSX string, which would have caused a compile error. The text is now properly separated. This correction has been committed but not yet confirmed by a local build.
+
+### Remaining work / release caveats
+- Website-builder prices are US reference figures, not Sri Lankan, UK, Canadian or Australian quotes. Do not publish them as globally applicable.
+- Verify payment processor availability, local taxes, domain renewal, app costs and actual checkout totals for each target country before expanding country-specific recommendations.
+- Compare realistic annual total costs with the same site requirements before calling one platform cheaper.
+- This batch was committed through GitHub source editing only. No local build, lint, typecheck, CI run, deployment or live Search Console validation was performed.
