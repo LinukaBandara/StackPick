@@ -1,0 +1,35 @@
+name: Phase 5 content audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - content/phase-5-seo-growth
+  pull_request:
+    branches:
+      - content/phase-5-seo-growth
+
+permissions:
+  contents: read
+
+jobs:
+  content-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: Check audit script syntax
+        run: node --check scripts/audit-content-quality.mjs
+      - name: Generate content inventory
+        run: npm run audit:content
+      - name: Upload content audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase-5-content-audit
+          path: artifacts/phase-5-content-audit.csv
+          if-no-files-found: error
+          retention-days: 14
