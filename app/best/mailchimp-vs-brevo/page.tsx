@@ -12,6 +12,7 @@ export default function Page() {
     <ComparisonArticle
       title="Mailchimp vs Brevo"
       slug="mailchimp-vs-brevo"
+      quickAnswer="Choose Mailchimp if your list is small and its 500 monthly sends and familiar campaign workflow are enough. Choose Brevo if you need to store a much larger contact list but send relatively few campaigns, because its Free plan has a 300-email daily cap. Compare actual sends, automation and the paid cost at your expected volume."
       intro="Mailchimp's current free marketing plan is capped at 250 contacts and 500 sends per month (250 per day); Brevo Free stores up to 100,000 contacts but limits sending to 300 emails per day. That makes the central trade-off clear: audience storage versus daily sending capacity. Official plan details checked against provider sources on October 17, 2026."
       pricingNote="Mailchimp counts subscribed, unsubscribed and non-subscribed contacts toward its contact total; its Free plan is limited to one audience and one seat. Brevo Free has one seat and 300 daily sends, with unused sends not rolling over. Model your real subscriber base and peak campaign size; regional prices, add-ons and paid tiers can change."
       tools={[
