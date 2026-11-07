@@ -1,11 +1,11 @@
 export const MARKETS = [
   { code: "US", name: "United States", currency: "USD", locale: "en-US", language: "English", pricingNote: "US vendor pricing may be displayed in USD when the source explicitly publishes a US price." },
   { code: "GB", name: "United Kingdom", currency: "GBP", locale: "en-GB", language: "English", pricingNote: "UK pricing must be sourced from the provider's UK page or checkout." },
-  { code: "CA", name: "Canada", currency: "CAD", locale: "en-CA", language: "Canadian pricing must be sourced from the provider's Canadian page or checkout." },
-  { code: "AU", name: "Australia", currency: "AUD", locale: "en-AU", language: "Australian pricing must be sourced from the provider's Australian page or checkout." },
-  { code: "LK", name: "Sri Lanka", currency: "LKR", locale: "en-LK", language: "Confirm Sri Lankan availability, payment methods and taxes with the provider." },
-  { code: "IN", name: "India", currency: "INR", locale: "en-IN", language: "Indian pricing must be sourced from the provider's India page or checkout." },
-  { code: "SG", name: "Singapore", currency: "SGD", locale: "en-SG", language: "Singapore pricing must be sourced from the provider's Singapore page or checkout." },
+  { code: "CA", name: "Canada", currency: "CAD", locale: "en-CA", language: "English", pricingNote: "Canadian pricing must be sourced from the provider's Canadian page or checkout." },
+  { code: "AU", name: "Australia", currency: "AUD", locale: "en-AU", language: "English", pricingNote: "Australian pricing must be sourced from the provider's Australian page or checkout." },
+  { code: "LK", name: "Sri Lanka", currency: "LKR", locale: "en-LK", language: "English", pricingNote: "Confirm Sri Lankan availability, payment methods and taxes with the provider." },
+  { code: "IN", name: "India", currency: "INR", locale: "en-IN", language: "English", pricingNote: "Indian pricing must be sourced from the provider's India page or checkout." },
+  { code: "SG", name: "Singapore", currency: "SGD", locale: "en-SG", language: "English", pricingNote: "Singapore pricing must be sourced from the provider's Singapore page or checkout." },
 ] as const;
 
 export type MarketCode = (typeof MARKETS)[number]["code"];
