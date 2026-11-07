@@ -39,7 +39,7 @@ export default function Page() {
           name: "Bitrix24",
           bestFor: "Trying contact tracking alongside team collaboration",
           freeOption:
-            "The current pricing page lists a Free plan for 1–2 users with 5 GB storage; its help page describes the free plan as the default account state. The public pages reviewed do not explicitly confirm a no-card requirement, so check registration.",
+            "The current pricing comparison table lists a Free plan for 1–2 users with 5 GB storage, but its FAQ says the free plan supports unlimited users. Treat the user limit as unresolved and confirm it with the provider. The public pages reviewed do not explicitly confirm a no-card requirement for the ongoing Free plan, so check registration.",
           tradeoff:
             "Combines several workspace functions, which can be useful for a team but excessive if you only need a clean lead list.",
           url: "https://www.bitrix24.com/prices/",
