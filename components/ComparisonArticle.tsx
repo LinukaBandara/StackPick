@@ -610,10 +610,11 @@ export default function ComparisonArticle({
               <p className="mt-2 text-sm sm:text-base leading-relaxed text-[#1d1d1f]">{quickAnswer}</p>
             </div>
           )}
-          <p className="mt-5 text-xs text-[#86868b]">Independent research · Verify current pricing with each provider</p>
+          <p className="mt-5 text-xs text-[#86868b]">Independent desk research · Verify current pricing with each provider</p>
+          <p className="mt-2 text-xs text-[#86868b]">Research method: public-source desk research; no hands-on product testing unless explicitly stated.</p>
           {reviewedOn && (
             <p className="mt-2 text-xs text-[#86868b]">
-              Reviewed by StackPick Editorial · {new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${reviewedOn}T00:00:00.000Z`))} · Desk research, not a hands-on product test
+              Reviewed by StackPick Editorial · {new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${reviewedOn}T00:00:00.000Z`))}
             </p>
           )}
         </div>
