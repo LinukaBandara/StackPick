@@ -180,3 +180,14 @@ Extended `scripts/audit-seo-routes.mjs` to validate every `LAST_MODIFIED` entry:
 The existing route audit still checks guide-directory duplicates, missing App Router pages, sitemap duplicates and guide links omitted from the sitemap. The workflow's existing Node syntax-check step will cover this script on its next run.
 
 **Validation status:** source edits were fetched back from GitHub and inspected. The audit script has not yet been executed locally or in GitHub Actions; do not call this a passing test. The Next.js build, ESLint, TypeScript check and deployment also remain outstanding.
+
+## Visible editorial attribution and structured review dates — 7 November 2026
+
+Updated `components/ComparisonArticle.tsx` to accept an optional `reviewedOn` date. When a page supplies that date, the shared template now:
+- displays a visible “Reviewed by StackPick Editorial” line with a human-readable date;
+- explicitly identifies the assessment as desk research, not a hands-on product test;
+- emits the same date as `dateModified` in the Article JSON-LD.
+
+The five priority guides (invoicing, accounting, CRM, email marketing and website builders) now pass `reviewedOn="2026-11-07"`. Other guides do not inherit a fabricated review date. The existing Organization author remains StackPick Editorial; no individual reviewer identity or credential has been invented.
+
+The component and all five page props were fetched back from GitHub and checked for the expected date/byline/schema strings. This is source verification only: the Next.js build, JSON-LD rendering, hydration, accessibility and CI still need runtime validation.
