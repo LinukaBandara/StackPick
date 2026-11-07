@@ -13,6 +13,7 @@ export default function Page() {
     <ComparisonArticle
       title="Best Accounting Software for Small Business"
       slug="accounting-software"
+      reviewedOn="2026-11-07"
       intro="Start with the person who prepares your accounts: a platform they already support can make month-end and tax-time handoffs simpler. Then compare the work your business actually does—customer invoices, supplier bills, bank reconciliation, expense review and management reports. Local bank feeds, tax rules, payroll coverage and data export can matter more than a long feature list."
       quickAnswer="There is no universal best accounting platform. If your accountant already works in QuickBooks or Xero, start there and compare local bank feeds, tax and payroll support. Zoho Books can be a strong low-cost option, but its free-plan limits and revenue threshold vary by country. Wave is only available to eligible US and Canadian businesses. Choose GnuCash if you prefer desktop software and can manage backups and accountant handoffs."
       pricingNote="Provider plan details and regional availability were checked against official sources on 7 November 2026. Prices, included seats, free-plan eligibility and tax features vary by country. Confirm current subscription costs, bank-feed availability, local tax and payroll support, accountant access and export options before moving live records. US prices and limits are not global offers."
