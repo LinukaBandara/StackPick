@@ -213,3 +213,24 @@ The customer-support guide now distinguishes Intercom outcome charges, Zendesk a
 The audit document records exact official sources and limitations. These remain desk-research guides, not hands-on benchmarks. No build/lint/typecheck/CI has passed.
 
 **Next:** P1 batch 2 — improve DevOps tools, AI agent frameworks, n8n examples, expense tracking and software migration.
+
+
+### P1 batch 2 — next five operational guides improved
+
+Updated:
+- `app/best/devops-tools-small-teams/page.tsx`
+- `app/best/ai-agent-frameworks/page.tsx`
+- `app/best/n8n-workflow-examples/page.tsx`
+- `app/best/track-business-expenses-without-spreadsheets/page.tsx`
+- `app/best/switch-business-software-without-losing-data/page.tsx`
+
+Important corrections:
+- Vercel Hobby is non-commercial/personal only; the DevOps guide now says commercial deployments require Pro/Enterprise.
+- Microsoft AutoGen is archived and no longer maintained; the AI agent framework guide now recommends Microsoft Agent Framework for new Microsoft-stack projects.
+- n8n examples now include actual node-level blueprints and direct docs, while retaining the explicit statement that they have not been run/imported by StackPick.
+- Expense guide now distinguishes receipt scans from stored receipts and lists current free-tier limits for Zoho Expense, Expensify, QuickBooks and Zoho Books.
+- Migration guide now documents the important export gaps in HubSpot, Notion, Trello and Zoho CRM.
+
+Exact provider sources and plan caveats are recorded in the audit document. No live migrations or hands-on product tests were performed; no build/lint/typecheck/CI has passed.
+
+**Next:** P1 batch 3 — strengthen freelancer invoicing, client-project, CRM lead-management, simple software-stack and software-selection guides.
