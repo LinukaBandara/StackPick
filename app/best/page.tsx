@@ -47,6 +47,7 @@ const ARTICLES = [
   { href: "/best/password-managers", title: "Best Password Manager for Business Teams", desc: "1Password, Bitwarden, Keeper, NordPass", category: "Security" },
   { href: "/best/help-desk-software", title: "Best Help Desk Software for Small Business", desc: "Help Scout, Freshdesk, Zoho Desk, Gorgias", category: "Operations" },
   { href: "/best/esignature-software", title: "Best E-Signature Software for Small Business", desc: "DocuSign, PandaDoc, Dropbox Sign, SignWell", category: "Operations" },
+  { href: "/best/esignature-software-pricing", title: "E-Signature Software Pricing", desc: "Compare published prices, document caps, sender seats and signing workflow costs.", category: "Operations" },
   { href: "/best/time-tracking-software", title: "Best Time Tracking Software for Freelancers & Small Teams", desc: "Toggl Track, Clockify, Harvest, Hubstaff", category: "Productivity" },
   { href: "/best/time-tracking-software-pricing", title: "Time Tracking Software Pricing", desc: "Compare Clockify, Toggl Track and Harvest seat costs, free limits and usage fees.", category: "Productivity" },
   { href: "/best/web-hosting", title: "Best Web Hosting for Small Business", desc: "Hostinger, SiteGround, Bluehost, Cloudways, Kinsta", category: "Infrastructure" },
