@@ -68,8 +68,10 @@ function analyse(file) {
   const internalLinks = localHrefCount + sharedRelatedLinks;
   const externalSources = new Set([...source.matchAll(/https?:\/\/[^"\x27\s)]+/g)].map((match) => match[0].replace(/[),.;]+$/, ""))).size;
   const toolEntries = (source.match(/\bname\s*:/g) ?? []).length;
-  const reviewedOn = source.match(/(?:reviewed|verified|checked)(?:On|\s+(?:on|date))?\s*[:=]\s*["'`]([^"'`]+)["'`]/i)?.[1] ?? "";
-  const hasDatedReview = Boolean(reviewedOn) || /(?:reviewed|verified|checked)[^\n]{0,120}\b(?:20\d{2}|January|February|March|April|May|June|July|August|September|October|November|December)\b/i.test(source);
+  const structuredReviewDate = source.match(/(?:reviewed|verified|checked)(?:On|\s+(?:on|date))?\s*[:=]\s*["'`]([^"'`]+)["'`]/i)?.[1] ?? "";
+  const proseReviewDate = source.match(/\b(?:reviewed|verified|checked)\b[^\n]{0,100}?\b((?:20\d{2}-\d{2}-\d{2}|(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}))\b/i)?.[1] ?? "";
+  const reviewedOn = structuredReviewDate || proseReviewDate;
+  const hasDatedReview = Boolean(reviewedOn);
   const hasQuickAnswer = /\bquickAnswer\s*=|\bquick answer\b/i.test(source);
   const hasPricingNote = /\bpricingNote\s*=/.test(source);
   const hasCountryCaveat = /\b(?:country-specific|country eligibility|availability varies by country|regional availability|regional pricing|regional prices|regional plans|regional currency|pricing varies by country|prices vary by country|prices vary by region|vary by region|by region and account|for your region|for your country|region and negotiated|by plan and country|local taxes|taxes extra|taxes are added|prices exclude applicable tax|data-center region|local data-protection|data residency|jurisdiction|provider region|and country|US plan reference|US-registered|US business bank|US operations|US-only|by country|country-specific terms|US-specific|US pricing|US-dollar|US-facing|US market|US-only|US\/Canada|US and Canada|US or Canada|billing country|country of billing|local market|local currency|currency varies)\b/i.test(source);
