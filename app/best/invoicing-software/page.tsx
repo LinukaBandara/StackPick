@@ -42,7 +42,7 @@ export default function InvoicingSoftwarePage() {
         {
           name: "FreshBooks",
           bestFor: "Freelancers who want a polished client experience and time tracking",
-          freeOption: "FreshBooks offers a 30-day free trial, not a permanent free plan. Its US pricing page lists Lite for up to 5 billable clients and Plus for up to 50; the page currently shows promotional prices alongside standard list prices (Lite $23/month and Plus $43/month on the monthly view). Active and archived clients count toward the limit. Rechecked 7 November 2026. Confirm the billing view and offer at checkout. Source: https://www.freshbooks.com/pricing.",
+          freeOption: "FreshBooks offers a 30-day free trial with no credit card required, not a permanent free plan. Its US pricing page lists Lite for up to 5 billable clients and Plus for up to 50; the page currently shows promotional prices alongside standard list prices (Lite $23/month and Plus $43/month on the monthly view). Active and archived clients count toward the limit. Rechecked 7 November 2026. Confirm the billing view and offer at checkout. Source: https://www.freshbooks.com/pricing.",
           tradeoff: "It suits freelancers who also want expense tracking, estimates and accounting reports, but check the standard renewal price after any introductory offer. If you invoice more than five clients, Lite's client cap may force an upgrade.",
           url: "https://www.freshbooks.com/pricing",
         },
