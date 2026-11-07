@@ -229,7 +229,7 @@ export default function SoftwareCatalogue({ software }: Props) {
                   </div>
                   <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pt-5">
                     <Link href={`/software/${item.slug}`} className="text-sm font-semibold text-[#001D39] hover:underline">Read profile <span aria-hidden="true">→</span></Link>
-                    <a href={item.pricingUrl} target="_blank" rel="noreferrer" className="text-xs font-medium text-[#6e6e73] underline-offset-4 hover:text-[#001D39] hover:underline">Official pricing ↗</a>
+                    <a href={item.pricingUrl} target="_blank" rel="noreferrer" data-vendor-outbound="true" data-software-slug={item.slug} data-vendor-action="pricing" className="text-xs font-medium text-[#6e6e73] underline-offset-4 hover:text-[#001D39] hover:underline">Official pricing ↗</a>
                   </div>
                   <label className={`mt-5 flex cursor-pointer items-center gap-2 border-t border-black/[0.07] pt-4 text-xs font-semibold ${disabled ? "cursor-not-allowed text-[#9ca3af]" : "text-[#4b5563]"}`}>
                     <input type="checkbox" checked={checked} disabled={disabled} onChange={() => toggleCompare(item.slug)} className="h-4 w-4 rounded border-[#9ca3af] accent-[#001D39]" />
