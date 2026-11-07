@@ -85,6 +85,7 @@ export default function Page() {
           </a>
         </div>
       </section>
+      <p className="mx-auto max-w-3xl text-xs leading-5 text-[#6e6e73]">Research method: desk review of n8n documentation checked November 7, 2026. These are conceptual blueprints, not workflows imported or executed by StackPick. Run each one with non-sensitive sample data, confirm the exact node/API versions and test retries, duplicates and credential failures before production.</p>
     </ComparisonArticle>
   );
 }
