@@ -26,6 +26,17 @@ jobs:
           npm audit --audit-level=high || echo '::warning::Full dependency audit reports development-tool advisories; review the audit output. Production dependencies are checked separately above.'
       - name: Check internal links
         run: npm run check:links
+      - name: Audit SEO routes and sitemap
+        run: npm run audit:seo
+      - name: Generate editorial content audit
+        run: npm run audit:content
+      - name: Upload editorial audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stackpick-content-quality-audit
+          path: artifacts/phase-5-content-audit.csv
+          if-no-files-found: warn
       - name: Lint
         run: npm run lint
       - name: Production build
