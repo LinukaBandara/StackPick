@@ -12,6 +12,7 @@ export default function Page() {
     <ComparisonArticle
       title="Mailchimp vs MailerLite"
       slug="mailchimp-vs-mailerlite"
+      quickAnswer="For a small newsletter, MailerLite’s Free plan offers a higher monthly send allowance than Mailchimp’s current Free plan: 2,500 versus 500, with both capped at 250 subscribers or contacts. Compare the automation and branding limits as well as the subscriber cap, and check whether an older MailerLite account has legacy terms."
       intro="Both Mailchimp and MailerLite currently cap their free plans at 250 contacts/subscribers, but their send allowances differ: Mailchimp lists 500 sends per month (250 per day), while MailerLite's updated Free plan lists 2,500 monthly emails. MailerLite reduced its free subscriber cap from 500 to 250 on June 16, 2026. Verify whether an older account is on legacy terms. Official details checked October 17, 2026."
       pricingNote="Mailchimp counts subscribed, unsubscribed and non-subscribed contacts toward the Free contact cap; MailerLite's updated Free plan caps active subscribers at 250 and monthly email sends at 2,500. Compare automation, branding, user seats and cost at your expected list size; regional pricing and legacy accounts may differ."
       tools={[
