@@ -1612,3 +1612,15 @@ The single commit on `main` not yet in the working branch was inspected: `f7913e
 - `app/layout.tsx` — commit `bd3a020`
 
 This mirrors the source change without merging or rebasing the 457-commit divergent branch. The AdSense client ID is a public publisher identifier, not a secret. The script insertion has not been validated by a live AdSense crawler or a production deployment; Search Console/AdSense detection must still be checked after a permitted deploy.
+
+
+## CI recovery and remaining technical work — 7 November 2026
+
+- The source-level lint failures in `free-accounting-software` and `web-hosting` were corrected. GitHub Actions run `42393583462` (commit `3bc2c04a`) passed the full StackPick CI workflow, including dependency install, production dependency audit, internal-link check, ESLint and production build. The Next.js build compiled, completed TypeScript, and generated all 208 static pages.
+- The SEO/content workflow also passed on commits `3bc2c04a` and `a3e18fbc`, including sitemap/route checks and content inventory.
+- Replaced raw `<img>` elements with `next/image` components in `components/ProductScreenshot.tsx` and `components/SoftwareLogo.tsx` (commits `e9212571`, `da672f90`). Both remain `unoptimized` because preview/logo sources are dynamic third-party URLs and are not currently constrained to a configured remote-image host allowlist. This removes the raw-img lint warning while preserving the existing display and fallback behavior; it does not claim Next's image optimization/CDN is active for these URLs. New CI runs for these commits are pending final confirmation.
+- The full dependency audit still reports six moderate development-only findings from `minimatch@10.2.6` under `@typescript-eslint/typescript-estree@8.70.1`. Production dependency audit reports zero vulnerabilities. GitHub Advisory `GHSA-g3hv-75wg-m249` fixes this issue in `minimatch@11.0.1`. Do not globally override minimatch: other tools use legacy 3.x. A scoped override under `@typescript-eslint/typescript-estree` is the candidate, but it requires a generated npm lockfile and a clean install/build test; no lockfile was hand-edited.
+- PR #99 remains open and draft; GitHub reports mergeable=true with mergeable_state=unstable while checks are running. It currently contains 271 commits and 117 changed files. Do not mark ready for review or merge until the final checks, dependency remediation decision, and one-commit main divergence are reconciled.
+- No deployment was attempted; Vercel quota remains the constraint.
+
+Advisory source: https://github.com/advisories/GHSA-g3hv-75wg-m249 (fixed in 11.0.1). Current local-checkout commands for the scoped override are retained in `docs/phase-14-eslint-minimatch-remediation.md`; regenerate the lockfile using npm and run all checks before committing it.
