@@ -8,7 +8,7 @@ Create a clear, credible path for relevant software publishers to contact StackP
 
 - Public, indexable `/partnerships` page describing the audience and the commercial enquiry route.
 - Clear distinction between free profile corrections/claims and a potential commercial proposal.
-- Direct email enquiry with a prefilled subject and structured prompts; no new personal-data collection endpoint.
+- Direct email enquiry with a prefilled subject and structured prompts, reusing the address already published on `/contact`; no new personal-data collection endpoint.
 - Explicit safeguards: no payment for organic ranking, reviews, favourable verdicts or removal of legitimate criticism.
 - Any future paid placement must be clearly labelled as sponsored and visually distinct from independent recommendations.
 - No rate card, audience promise, sponsorship inventory, payment integration or commercial agreement is represented as currently available.
@@ -24,7 +24,7 @@ Create a clear, credible path for relevant software publishers to contact StackP
 
 ## Validation and release
 
-- The page uses the existing published contact email; it does not add a form or store new personal information.
+- The page uses the same public mailbox as `/contact`; the address is verified against the existing contact page. It does not add a form or store new personal information.
 - Metadata canonical is `/partnerships`; route is added to sitemap.
 - Review the diff, run lint, internal-link checks and production build in CI before considering merge.
 - This PR is stacked on Phase 10. No production merge or deployment is performed by this change.
