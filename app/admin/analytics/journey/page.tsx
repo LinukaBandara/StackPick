@@ -68,21 +68,19 @@ export default function JourneyReadinessPage() {
   }
 
   return <main className="min-h-[75vh] bg-[#f5f5f7] px-4 py-12"><div className="mx-auto max-w-4xl">
-    <Link href="/admin/analytics" className="text-sm font-semibold text-[#001D39] underline">← Analytics overview</Link>
-    <p className="sp-eyebrow mt-8">Private workspace · Journey readiness</p>
-    <h1 className="sp-title mt-3 text-[#1d1d1f]">Premium-market sessions.</h1>
-    <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">Track matching 30-day GA4 sessions from the US, UK, Canada, Australia and New Zealand. This tracker does not guarantee application acceptance.</p>
+    <p className="sp-eyebrow">Private workspace · Journey readiness</p>
+    <h1 className="sp-title mt-3 text-[#1d1d1f]">Priority-market sessions.</h1>
+    <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">Track matching 30-day GA4 sessions from the US, UK, Canada, Australia and New Zealand as a planning view. Journey's own evaluation determines which sessions count as premium; this dashboard is not an eligibility calculation or approval guarantee.</p>
     {error && <p role="alert" className="mt-5 rounded-xl bg-red-50 p-4 text-sm text-red-700">{error}</p>}
     {message && <p role="status" className="mt-5 rounded-xl bg-emerald-50 p-4 text-sm text-emerald-800">{message}</p>}
     <section className="mt-7 rounded-3xl border border-black/[0.07] bg-white p-6">
-      <p className="sp-eyebrow">Journey by Mediavine · 1,000 sessions over 30 days</p>
-      <h2 className="mt-2 text-3xl font-semibold text-[#001D39]">{fmt(total)} / 1,000</h2>
+      <p className="sp-eyebrow">Priority-market GA4 sessions · same 30-day window</p>
+      <h2 className="mt-2 text-3xl font-semibold text-[#001D39]">{fmt(total)} sessions</h2>
       <p className="mt-1 text-sm text-[#6e6e73]">{current ? current.start + " – " + current.end : "No matching GA4 reports imported"}</p>
-      <div className="mt-4 h-3 overflow-hidden rounded-full bg-[#e5e7eb]"><div className="h-full bg-[#001D39]" style={{ width: Math.min(100, total / 10) + "%" }} /></div>
       <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
         {markets.map((m) => { const row = current?.rows.find((r) => r.country_code === m.code); return <div key={m.code} className="rounded-xl bg-[#f5f5f7] p-3"><p className="text-xs text-[#6e6e73]">{m.name}</p><p className="mt-2 text-lg font-semibold">{row ? fmt(row.sessions || 0) : "—"}</p></div>; })}
       </div>
-      <p className="mt-4 text-xs text-[#86868b]">{missing.length ? "Partial total. Missing: " + missing.map((m) => m.code).join(", ") + "." : "All five market reports use the same date range."} Journey also reviews content originality, brand safety, engagement, traffic quality and publishing activity.</p>
+      <p className="mt-4 text-xs leading-5 text-[#86868b]">{missing.length ? "Partial target-market total. Missing: " + missing.map((m) => m.code).join(", ") + "." : "All five target-market reports use the same date range."} Journey's published minimum is 1,000 premium sessions over 30 days. These five markets are StackPick's target cohort, not a substitute for Journey's own premium-session classification. Confirm the GA4 property, report filters and timezone.</p>
     </section>
     <section className="mt-7 rounded-3xl border border-black/[0.07] bg-white p-6">
       <h2 className="text-xl font-semibold">Import a GA4 country report</h2>
