@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import SoftwareLogo from "@/components/SoftwareLogo";
 import ProductScreenshot from "@/components/ProductScreenshot";
 import { getSoftwareProfile, SOFTWARE_PROFILES } from "@/lib/software";
+import ReviewSection from "@/components/ReviewSection";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -205,6 +206,8 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
               </div>
             </section>
           )}
+
+          <ReviewSection softwareSlug={software.slug} softwareName={software.name} />
         </div>
 
         <aside className="h-fit rounded-[24px] border border-black/10 p-6 lg:sticky lg:top-24">
