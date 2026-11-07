@@ -88,7 +88,9 @@ export default function ReviewPolicyPage() {
         <section className="mt-12 border-t border-black/[0.08] pt-8">
           <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f]">User reviews and commercial relationships</h2>
           <div className="mt-5 space-y-4 text-sm leading-7 text-[#6e6e73]">
-            <p>StackPick does not currently publish a public user-rating system on software profiles. We will not present invented testimonials, anonymous star averages or unverified customer quotes as genuine reviews. If user reviews are introduced, the collection, moderation, verification and conflict-of-interest rules will be published before they go live.</p>
+            <p>Signed-in users with a confirmed email address may submit one review per software product. New submissions remain pending until a moderator checks them. Only approved reviews appear on profiles or contribute to the public rating average. A submitted rating is a reader's account of their experience, not an independent product test performed by StackPick.</p>
+            <p>We may reject or remove reviews that are fabricated, promotional, abusive, off-topic, disclose private information or appear to manipulate ratings. We do not sell approval, suppress legitimate criticism in exchange for payment or describe an account as a verified purchaser unless a separate purchase-verification process is introduced and clearly explained. Reviewers may use a display name; the account email is not shown publicly.</p>
+            <p>Each account may submit one review per product. Reviews are moderated before publication. A public rating average is calculated only from approved reviews; it is not shown when no approved reviews exist.</p>
             <p>Vendor access, free accounts, sponsorships or affiliate relationships must not determine an editorial conclusion. Any material commercial relationship will be disclosed on the relevant pages and in our <Link href="/affiliate-disclosure" className="font-medium text-[#001D39] underline underline-offset-4">affiliate disclosure</Link>.</p>
           </div>
         </section>
