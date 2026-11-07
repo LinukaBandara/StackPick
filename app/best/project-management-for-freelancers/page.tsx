@@ -13,35 +13,36 @@ export default function Page() {
     <ComparisonArticle
       title="Best Project Management Software for Freelancers"
       slug="project-management-for-freelancers"
+      reviewedOn="2026-11-07"
       quickAnswer="Use Trello for a simple client-stage board, Asana when deadlines and milestones need more structure, ClickUp when custom views solve a real coordination problem, and Notion when project notes and documentation matter as much as tasks. If you have only one or two active projects, a calendar and short task list may be enough. Choose the lightest workflow you will maintain."
       intro="Freelancers need a different kind of project view from a department manager. The key questions are whether you can see every client's next action, track feedback and approvals, protect delivery dates, and find the final files later. A shared board or a structured workspace may be enough; a heavyweight workflow can become unpaid admin."
-      pricingNote="Free-plan limits, paid features and renewal prices change. The official product pages linked below are the source to confirm current limits. Before importing active client work, test the exact number of projects, collaborators, file storage, reminders and views you need."
+      pricingNote="Free-plan snapshots checked 7 November 2026 against official provider pricing/help pages. Trello Free allows up to 10 collaborators and 10 boards per Workspace, with 250 command runs/month; Asana Personal supports 2 users with unlimited tasks and projects; ClickUp Free Forever supports unlimited members but only 60 MB of attachment storage; Notion Free allows unlimited blocks for one person, but limits uploads to 5 MB per file and collaborative workspaces can hit a 1,000-block cap. These are US-facing plan references; paid prices, currency, taxes, promotions and availability can vary by country. Confirm your local checkout and test project, guest, storage and export limits before moving client work. Sources: https://trello.com/en/pricing; https://asana.com/pricing; https://clickup.com/pricing; https://www.notion.com/pricing; https://www.notion.com/help/understanding-block-usage."
       tools={[
         {
           name: "Trello",
           bestFor: "Freelancers who think in simple stages such as Brief, In progress, Client review and Done",
-          freeOption: "Check current limits for boards, collaborators, automation and workspace features on Trello's pricing page.",
+          freeOption: "Up to 10 collaborators and 10 boards per Workspace, with 250 command runs per month; confirm the current attachment-size and automation limits.",
           tradeoff: "A board is quick to explain to a client and easy to keep current. Separate boards can make it harder to see competing deadlines across clients, and complex dependencies or workload reporting may need another approach.",
           url: "https://trello.com/pricing",
         },
         {
           name: "Asana",
           bestFor: "Freelancers managing milestones, due dates and structured deliverables",
-          freeOption: "Confirm current personal and small-team plan limits, including project views, collaborators and reporting.",
+          freeOption: "Asana Personal is free for up to 2 users with unlimited tasks and projects; team reporting, timeline and advanced workflow features require paid plans.",
           tradeoff: "Tasks and milestones can make ownership and deadlines clear, especially when a client or contractor joins the workflow. Check whether the views and collaboration controls you need are available before building your process around them.",
           url: "https://asana.com/pricing",
         },
         {
           name: "ClickUp",
           bestFor: "Freelancers who need custom fields or several views for different client workflows",
-          freeOption: "Check current storage, view, automation and feature limits, then run a sample project before migrating.",
+          freeOption: "Free Forever supports unlimited members but has a 60 MB attachment-storage allowance and usage caps on some advanced views.",
           tradeoff: "The flexibility can bring tasks and documentation together, but an over-customized workspace creates maintenance work. Start with one status flow and add fields only when they help you make a real decision.",
           url: "https://clickup.com/pricing",
         },
         {
           name: "Notion",
           bestFor: "Freelancers who want project tasks beside briefs, meeting notes and client knowledge",
-          freeOption: "Review the current plan's file, collaboration and workspace limits, especially if clients need access.",
+          freeOption: "Free is generous for one person, with unlimited individual blocks and 5 MB per file; multi-member workspaces have a 1,000-block limit and guest restrictions.",
           tradeoff: "Keeping a brief, decisions and task database together can reduce context switching. You may need to build and maintain your own reminders, dependencies and status views rather than expecting a dedicated project-management workflow by default.",
           url: "https://www.notion.com/pricing",
         },
