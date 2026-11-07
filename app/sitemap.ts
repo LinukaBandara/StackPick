@@ -141,7 +141,7 @@ const LAST_MODIFIED: Record<string, string> = {
   "/best/invoicing-software": "2026-11-07",
   "/best/accounting-software": "2026-11-07",
   "/best/website-builders": "2026-11-07",
-  "/best/multi-currency-invoicing": "2026-10-18",
+  "/best/multi-currency-invoicing": "2026-11-08",
   "/best/ai-meeting-assistants": "2026-10-09",
   "/best/web-hosting": "2026-10-14",
   "/best/online-course-platforms": "2026-10-14",
@@ -161,6 +161,10 @@ const LAST_MODIFIED: Record<string, string> = {
   "/best/hubspot-vs-pipedrive": "2026-11-08",
   "/best/ai-meeting-assistant-pricing": "2026-11-08",
   "/best/mailchimp-alternatives": "2026-11-08",
+  "/best/mailchimp-vs-brevo": "2026-11-08",
+  "/best/invoicing-for-small-businesses": "2026-11-08",
+  "/best/pipedrive-vs-zoho-crm": "2026-11-08",
+  "/best/zoho-invoice-vs-wave": "2026-11-08",
   "/best/esignature-software": "2026-11-08",
 };
 
