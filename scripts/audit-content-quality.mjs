@@ -44,9 +44,10 @@ function analyse(file) {
     .replace(/<[^>]+>/g, " ")
     .replace(/\{\s*\/\*[\s\S]*?\*\/\s*\}/g, " ");
   const sourceWordCount = countWords(withoutImports);
-  const h1Count = (source.match(/<h1\b/g) ?? []).length;
-  const h2Count = (source.match(/<h2\b/g) ?? []).length;
-  const h3Count = (source.match(/<h3\b/g) ?? []).length;
+  const usesComparisonTemplate = source.includes("@/components/ComparisonArticle");
+  const h1Count = (source.match(/<h1\\b/g) ?? []).length + (usesComparisonTemplate ? 1 : 0);
+  const h2Count = (source.match(/<h2\\b/g) ?? []).length + (usesComparisonTemplate ? 3 : 0);
+  const h3Count = (source.match(/<h3\\b/g) ?? []).length + (usesComparisonTemplate ? (source.match(/\\bname\\s*:/g) ?? []).length : 0);
   const internalLinks = new Set([...source.matchAll(/(?:href\s*=\s*["'`])\/(?!\/)([^"'`?#]+)/g)].map((match) => "/" + match[1])).size;
   const externalSources = new Set([...source.matchAll(/https?:\/\/[^"'\s)]+/g)].map((match) => match[0].replace(/[),.;]+$/, ""))).size;
   const toolEntries = (source.match(/\bname\s*:/g) ?? []).length;
