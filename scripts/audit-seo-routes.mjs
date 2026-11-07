@@ -1,8 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const ROOT = process.cwd();
-const APP_DIR = path.join(ROOT, "app");
+const APP_DIR = path.join(process.cwd(), "app");
 const BEST_DIRECTORY = path.join(APP_DIR, "best", "page.tsx");
 const SITEMAP_FILE = path.join(APP_DIR, "sitemap.ts");
 
@@ -17,19 +16,18 @@ function collectPageFiles(directory) {
 
 function toRoutePattern(file) {
   const relative = path.relative(APP_DIR, path.dirname(file)).split(path.sep).filter(Boolean);
-  const segments = relative.filter((segment) => !/^\\(.*\\)$/.test(segment)).map((segment) => {
-    if (/^\\[\\.\\.\\..+\\]$/.test(segment)) return ".+";
-    if (/^\\[\\[\\.\\.\\..+\\]\\]$/.test(segment)) return ".*";
-    if (/^\\[.+\\]$/.test(segment)) return "[^/]+";
-    return segment.replace(/[.*+?^\${}()|[\\]\\\\]/g, "\\\\$&");
+  const segments = relative.filter((segment) => !/^\(.*\)$/.test(segment)).map((segment) => {
+    if (segment.startsWith("[...") && segment.endsWith("]")) return ".+";
+    if (segment.startsWith("[[...") && segment.endsWith("]]")) return ".*";
+    if (segment.startsWith("[") && segment.endsWith("]")) return "[^/]+";
+    return segment;
   });
   return new RegExp("^/" + segments.join("/") + "/?$");
 }
 
-const routePatterns = collectPageFiles(APP_DIR).map((file) => ({ file, pattern: toRoutePattern(file) }));
-function routeExists(route) {
-  return routePatterns.some(({ pattern }) => pattern.test(route));
-}
+const routePatterns = collectPageFiles(APP_DIR).map((file) => toRoutePattern(file));
+const routeExists = (route) => routePatterns.some((pattern) => pattern.test(route));
+
 function duplicates(values) {
   const seen = new Set();
   const repeated = new Set();
@@ -42,18 +40,18 @@ function duplicates(values) {
 
 const errors = [];
 const directorySource = fs.readFileSync(BEST_DIRECTORY, "utf8");
-const directoryHrefs = [...directorySource.matchAll(/href\\s*:\\s*["'](\\/[^"']+)["']/g)].map((match) => match[1]);
+const directoryHrefs = [...directorySource.matchAll(/href\s*:\s*["'](\/[^"']+)["']/g)].map((match) => match[1]);
 for (const route of duplicates(directoryHrefs)) errors.push("Duplicate /best directory entry: " + route);
 for (const route of directoryHrefs) {
   if (!routeExists(route)) errors.push("/best directory destination has no matching App Router page: " + route);
 }
 
 const sitemapSource = fs.readFileSync(SITEMAP_FILE, "utf8");
-const routesBlock = sitemapSource.match(/const ROUTES\\s*=\\s*\\[([\\s\\S]*?)\\];/);
+const routesBlock = sitemapSource.match(/const ROUTES\s*=\s*\[([\s\S]*?)\];/);
 if (!routesBlock) {
   errors.push("Could not find the static ROUTES array in app/sitemap.ts.");
 } else {
-  const sitemapRoutes = [...routesBlock[1].matchAll(/["'](\\/[^"']*)["']/g)].map((match) => match[1]);
+  const sitemapRoutes = [...routesBlock[1].matchAll(/["'](\/[^"']*)["']/g)].map((match) => match[1]);
   for (const route of duplicates(sitemapRoutes)) errors.push("Duplicate sitemap route: " + route);
   for (const route of sitemapRoutes) {
     if (!routeExists(route)) errors.push("Sitemap route has no matching App Router page: " + route);
