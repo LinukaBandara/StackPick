@@ -90,7 +90,7 @@ export function recommendSoftware(
   preferences: FinderPreferences,
 ) {
   const ranked = profiles
-    .filter((profile) => preferences.goal === "any" || GOALS[preferences.goal].test.test(searchable(profile)))
+    .filter((profile) => preferences.goal === "any" || GOALS[preferences.goal].test(searchable(profile)))
     .filter((profile) => preferences.budget !== "free" || hasPermanentFreePlan(profile))
     .map((profile) => {
       const text = searchable(profile);
