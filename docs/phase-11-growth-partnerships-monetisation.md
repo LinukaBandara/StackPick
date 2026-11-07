@@ -27,4 +27,4 @@ Create a clear, credible path for relevant software publishers to contact StackP
 - The page uses the same public mailbox as `/contact`; the address is verified against the existing contact page. It does not add a form or store new personal information.
 - Metadata canonical is `/partnerships`; route is added to sitemap.
 - Review the diff, run lint, internal-link checks and production build in CI before considering merge.
-- This PR is stacked on Phase 10. No production merge or deployment is performed by this change.
+- The final release pull request carries the validated Phase 5–11 stack on top of the current production baseline. Production promotion follows the full-stack CI result and a successful deployment check.
