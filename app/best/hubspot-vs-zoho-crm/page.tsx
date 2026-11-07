@@ -13,7 +13,7 @@ export default function Page() {
       title="HubSpot vs Zoho CRM"
       slug="hubspot-vs-zoho-crm"
       intro="For a very small team, the free-plan comparison is concrete: HubSpot allows 2 users and 1,000 contacts, while Zoho CRM Free supports up to 3 users and includes limited workflow automation. HubSpot offers a broader connected product ecosystem; Zoho CRM gives teams more configuration choices. US plan details checked November 7, 2026."
-      quickAnswer="HubSpot Free suits up to 2 users and 1,000 contacts; each other standard object type is limited to 1,000 records, not 1 million. Zoho CRM Free supports up to 3 users and has its own edition limits. Choose HubSpot for a broader connected ecosystem, or Zoho when configurable CRM workflows and the Zoho suite are a better fit."
+      quickAnswer="HubSpot Free suits up to 2 users and 1,000 contacts; each other standard object type is limited to 1,000 records per account. Zoho CRM Free supports up to 3 users and has its own edition limits. Choose HubSpot for a broader connected ecosystem, or Zoho when configurable CRM workflows and the Zoho suite are a better fit."
       pricingNote="US free-plan details checked November 7, 2026. HubSpot Free has no time limit and supports up to 2 users and 1,000 contacts; each other standard object type is limited to 1,000 records per account. Zoho CRM Free supports up to 3 users; its US page lists up to 10 custom email templates and 10 free data exports. Confirm country-specific terms and the exact paid feature gate before importing customer data."
       tools={[
         { name: "HubSpot", bestFor: "Small teams that want a simple CRM starting point connected to sales and marketing products", freeOption: "HubSpot Free tools allow up to 2 users and 1,000 contacts with no time limit; each other standard object type is limited to 1,000 records per account. The free tools are lite versions of some paid products.", tradeoff: "A third user or more than 1,000 contacts means evaluating a paid product. Advanced automation or bundled marketing/service features can change the total cost, so verify the exact tier for the process you need.", url: "https://www.hubspot.com/pricing/crm" },
@@ -46,7 +46,7 @@ export default function Page() {
             </table>
           </div>
           <h3 className="mt-12 text-2xl font-semibold tracking-tight">Official plan sources checked</h3>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">US plan pages checked October 17, 2026. This is a desk-based comparison, not a hands-on product test. Free-tier limits and features can change; check the live pages before migrating customer data.</p>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">US plan pages checked November 7, 2026. This is a desk-based comparison, not a hands-on product test. Free-tier limits and features can change; check the live pages before migrating customer data.</p>
           <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
             <li><a className="underline underline-offset-4" href="https://www.hubspot.com/pricing/crm" target="_blank" rel="noreferrer">HubSpot official CRM pricing</a> — users, contacts and free-tool limitations.</li>
             <li><a className="underline underline-offset-4" href="https://www.zoho.com/en-us/crm/zohocrm-pricing.html" target="_blank" rel="noreferrer">Zoho CRM US pricing and edition limits</a> — features included in the free edition.</li>
