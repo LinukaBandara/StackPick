@@ -11,6 +11,7 @@ const ROUTES = [
   "/guides",
   "/software",
   "/software-finder",
+  "/markets",
   "/for-vendors",
   "/best/invoicing-software",
   "/best/multi-currency-invoicing",
