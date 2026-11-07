@@ -12,6 +12,7 @@ export default function Page() {
     <ComparisonArticle
       title="FreshBooks vs Wave"
       slug="freshbooks-vs-wave"
+      quickAnswer="Wave is the lower-subscription-cost option only if your business is based in the US or Canada and its simpler workflow fits. FreshBooks is a paid product, but its time tracking, estimates and client-facing features may justify the monthly fee for service businesses. Compare billable-client limits and payment-processing fees, not just the subscription price."
       reviewedOn="2026-11-07"
       intro="For freelancers comparing FreshBooks and Wave, geography is the first filter: Wave serves businesses based in the US and Canada. FreshBooks charges by plan and billable-client limit; Wave Starter has no subscription fee, while its Pro plan adds bookkeeping automation for a monthly or annual fee. The US pricing and product details below were checked November 7, 2026."
       pricingNote="US price snapshot checked November 7, 2026, before tax: FreshBooks lists standard monthly prices of US$23 for Lite (5 billable clients), US$43 for Plus (50 clients) and US$70 for Premium (unlimited clients); temporary introductory offers may reduce the first months but do not change the standard renewal price. Wave Starter is US$0; Wave Pro is US$19/month or US$190/year per business. Wave Pro's reduced card-processing fee applies to the first 10 cumulative transactions per monthly subscription period, then standard per-transaction fees apply. Wave account eligibility is limited to businesses based in the US and Canada."
