@@ -20,6 +20,7 @@ export default function Page() {
     <ComparisonArticle
       title="Time Tracking Software Pricing: What Freelancers and Teams Pay"
       slug="time-tracking-software-pricing"
+      quickAnswer="If you only need a timer, start with a free plan and avoid paying for features you will not use. Compare Clockify for approvals and team controls, Toggl Track for reporting and planning, and Harvest when time tracking should feed client invoices. For Harvest, include any usage-based charges in the quote rather than comparing only the starting seat price."
       intro="Time tracking tools can look inexpensive until you need approvals, billable rates, project budgets or client invoices. This guide compares published US prices for three popular options and calculates the seat-based portion of a five- or ten-person team's bill. The important distinction is whether the subscription is just a timer, a reporting workspace, or a billing workflow—and whether the vendor charges for usage beyond seats."
       pricingNote="Prices checked against official vendor pages on October 18, 2026. USD, before tax. Annual prices are monthly equivalents paid upfront for a year. Prices and plan limits can change by region and account. Harvest's paid prices are starting rates and additional usage-based fees may apply for projects, clients, tasks and invoices; its public pricing page does not list all overage amounts."
       tools={[
