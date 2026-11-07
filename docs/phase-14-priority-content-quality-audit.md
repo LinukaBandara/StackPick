@@ -1432,3 +1432,16 @@ Primary sources:
 - Keeper: https://www.keepersecurity.com/business.html
 
 The security and VPN guides were screened in this batch but were not changed because the source evidence available here did not establish a specific material correction. No password-manager security audit, cryptographic assessment, or hands-on recovery/offboarding test is claimed. No build, lint, type-check, CI or deployment was run.
+
+
+
+### Regional free-accounting eligibility correction (7 November 2026)
+
+Updated `app/best/free-accounting-software/page.tsx` — commit `d44abd3`:
+- Added a formal reviewed date and replaced the stale 14 October check date with 7 November 2026.
+- Added a specific US-edition pricing/eligibility note: Wave account creation is for businesses in the US and Canada; Zoho Books US Free is for one user plus one accountant, capped at 1,000 invoices and 1,000 expenses/year, and subject to the stated US$50,000 annual-revenue threshold.
+- Clarified that country editions can differ and that desktop accounting still carries backup/access/maintenance responsibilities.
+
+Sources: Wave account eligibility https://support.waveapps.com/hc/en-us/articles/32449161224852-Create-a-Wave-account; Wave free vs paid https://support.waveapps.com/hc/en-us/articles/208621296-Is-Wave-free; Zoho Books US pricing https://www.zoho.com/us/books/pricing/.
+
+The comparison was not presented as tax advice or a live accounting workflow test. No build, lint, type-check, CI or deployment was run.
