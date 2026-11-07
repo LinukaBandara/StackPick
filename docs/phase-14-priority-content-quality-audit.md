@@ -701,3 +701,37 @@ Primary sources checked:
 **Commits:** invoicing guide `7b38802` and FreshBooks trial clarification `ea9d65d`; accounting guide `156e7ad`.
 
 This review does not make US pricing or eligibility global. QuickBooks Free's two-invoice limit and payment exception should be checked at signup; Zoho Books' US revenue threshold is country-specific. No local build, lint, typecheck or CI run has passed for these edits.
+
+
+## Sixth article-edit batch — comparison plan and limit corrections (7 November 2026)
+
+Updated five comparison guides:
+- `app/best/clickup-vs-monday/page.tsx`
+- `app/best/hubspot-vs-zoho-crm/page.tsx`
+- `app/best/hubspot-vs-pipedrive/page.tsx`
+- `app/best/quickbooks-vs-xero/page.tsx`
+- `app/best/quickbooks-vs-freshbooks/page.tsx`
+
+### Corrections and refreshes
+
+- **ClickUp vs monday.com:** the 200-item Free cap is substantiated by monday's official help page (last modified November 1, 2026), alongside 2 seats, 3 boards, 500 MB storage, no guests/viewers and no automations/integrations. The current pricing page lists 3 Docs. ClickUp's first paid plan is now **Core** at US$9/user/month billed yearly (not the older Unlimited name/$7 figure); ClickUp Free still lists 60 MB, unlimited tasks and unlimited free members. monday Basic is US$9/seat/month billed yearly and paid plans require at least 3 seats. The article's old 200-item claim was not removed: it is now linked to direct current official evidence.
+- **HubSpot vs Zoho CRM:** corrected HubSpot's other-standard-object limit from the erroneous 1-million figure to **1,000 records per other standard object type per account**. Added a quick answer and November 7 review date. Zoho's US Free tier remains up to 3 users, with 10 custom email templates and 10 free data exports as stated on its pricing page.
+- **HubSpot vs Pipedrive:** corrected the same HubSpot 1,000-record cap; refreshed Pipedrive Lite/Growth/Premium/Ultimate plan names and US annual prices (US$14/39/59/79 per seat/month), and retained the 14-day no-card trial. Clarified that Lite excludes full email sync/automations and Growth is the first tier with them. Added quick answer and current review date.
+- **QuickBooks vs Xero:** refreshed the US pricing check date and quick answer. QuickBooks Free is shown as $0 with one user, no accountant access, two invoices/month and one bank connection, with a QuickBooks Payments eligibility exception. Xero US list prices remain Early $27, Growing $59 and Established $97/month before tax; the current page also displays an introductory offer for the first three months, so the article distinguishes list from promotional pricing.
+- **QuickBooks vs FreshBooks:** refreshed the US plan date and added a quick answer. Clarified QuickBooks Free limits and its potential payment exception; FreshBooks' 30-day trial requires no credit card but is not a permanent free plan. Retained Lite (5 clients), Plus (50) and Premium (unlimited) at the current US monthly list prices before tax, with promotional offers called out separately.
+
+Primary sources:
+- monday Work Management pricing: https://monday.com/pricing
+- monday Free-plan limits (200 items, 2 seats, 3 boards, no guests/automation/integrations): https://support.monday.com/hc/en-us/articles/360010487220-Understanding-the-Free-Plan
+- ClickUp pricing/Core: https://clickup.com/pricing
+- HubSpot Free limits: https://www.hubspot.com/pricing/crm?selectedPackage=free
+- Zoho CRM Free: https://www.zoho.com/en-us/crm/zohocrm-pricing.html?price=FREE
+- Pipedrive current pricing: https://www.pipedrive.com/en/pricing
+- Pipedrive plan names/billing: https://support.pipedrive.com/en/article/how-does-pricing-work-in-pipedrive
+- QuickBooks Free and invoice exception: https://onboard.app.intuit.com/qbo-ecosystem-signup/signup?bc=OBI-LL1&locale=en-US&offerId=undefined&offerType=trial
+- Xero US pricing: https://www.xero.com/us/pricing-plans/
+- FreshBooks US pricing/trial/client caps: https://www.freshbooks.com/pricing
+
+**Commits:** ClickUp/monday `d513f5a`; HubSpot/Zoho `41cc3c6` and correction `9fa0a36`; HubSpot/Pipedrive `150c25b`; QuickBooks/Xero `c77e99b`; QuickBooks/FreshBooks `61d70e0`.
+
+This is a source-backed plan refresh, not a hands-on benchmark. All prices are US reference prices and must not be presented as global quotes. No local build, lint, typecheck or CI run has passed for these edits.
