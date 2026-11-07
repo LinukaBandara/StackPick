@@ -23,13 +23,13 @@ export default function FreeInvoicingSoftwarePage() {
       title="Best Free Invoicing Software"
       slug="free-invoicing-software"
       intro="For US freelancers and small businesses, free invoicing software is useful only if the free workflow covers the invoices you actually send. Compare invoice and client limits, recurring billing, reminders, payment collection, exports and country eligibility. This page separates a genuinely usable free workflow from tools that waive the monthly fee but still charge for payment processing or gate important features."
-      pricingNote="Provider plan details checked in late October 2026. Free invoice creation does not necessarily mean free payment collection. Verify regional eligibility, client or invoice limits, processing fees, recurring billing, exports and data access before moving your business records. Payment processor fees are separate from the software subscription."
+      pricingNote="US-facing free-plan details checked November 7, 2026. Zoho Invoice's US plan lists 2 users, 3 projects and 500 invoices/year; Invoice Ninja Free allows 5 clients with unlimited invoices and explicitly requires no card; Wave is available to businesses in the US and Canada; Square's cited Free invoicing plan has no monthly subscription but payment-processing fees apply. These are not global offers. Verify regional eligibility, processor fees, tax handling, exports and local terms before moving live records. Sources: https://www.zoho.com/us/invoice/pricing/; https://invoiceninja.com/pricing-plans/; https://support.waveapps.com/hc/en-us/articles/32449161224852-Create-a-Wave-account; https://squareup.com/us/en/invoices/pricing."
       tools={[
         {
           name: "Zoho Invoice",
           bestFor: "Freelancers who mainly need invoices, clients, recurring billing and payment records",
           freeOption:
-            "Zoho’s US page describes Zoho Invoice as a $0 invoicing product. It includes invoice creation, estimates, recurring invoices, reminders and expense tracking. Confirm current country-specific terms and any usage limits before relying on it for live client billing.",
+            "Zoho Invoice's US Free plan supports up to 2 users, 3 projects and 500 invoices per year, with estimates, recurring invoices, reminders and expense tracking. Payment-gateway charges are separate. This is a US-edition reference; confirm the plan and limits for your country.",
           tradeoff:
             "Designed for invoicing rather than being a complete replacement for every accounting or CRM workflow. Available features and limits can differ by country, so check the US terms carefully.",
           url: "https://www.zoho.com/us/invoice/pricing/",
@@ -38,7 +38,7 @@ export default function FreeInvoicingSoftwarePage() {
           name: "Wave",
           bestFor: "US small businesses that want invoicing plus basic bookkeeping on a free plan",
           freeOption:
-            "Wave’s Starter plan is free and includes basic accounting and invoicing. Online card payments, receipt scanning and payroll may require paid services or separate processing fees. Confirm US eligibility before building your billing workflow around it.",
+            "Wave Starter has no monthly subscription fee for eligible businesses in the US and Canada and includes invoicing plus basic accounting. Online payment processing and optional add-ons can still cost extra. Do not assume Wave account availability outside those two countries.",
           tradeoff:
             "Useful when you also want simple bookkeeping. Wave’s service availability is region-specific. The free plan does not include every Pro workflow feature.",
           url: "https://support.waveapps.com/hc/en-us/articles/208621296-Is-Wave-free",
@@ -47,7 +47,7 @@ export default function FreeInvoicingSoftwarePage() {
           name: "Invoice Ninja",
           bestFor: "Users who value flexible invoice workflows, control or self-hosting options",
           freeOption:
-            "Invoice Ninja offers a free plan. Confirm the current client, invoice and feature limits on its official pricing page before selecting it. Self-hosting is available for those who want more control.",
+            "Invoice Ninja Free is $0 forever, requires no credit card, and includes up to 5 clients with unlimited invoices. The current pricing page lists Ninja Pro at US$14/month on monthly billing (or US$140/year); prices and payment options may vary by region.",
           tradeoff:
             "Flexibility can require more setup than a freelancer who only needs to send a few simple invoices. The hosted free plan is typically capped on clients.",
           url: "https://invoiceninja.com/",
@@ -56,7 +56,7 @@ export default function FreeInvoicingSoftwarePage() {
           name: "Square Invoices",
           bestFor: "US businesses that want to create invoices and collect payments through Square",
           freeOption:
-            "Square’s Free plan has no monthly subscription fee and includes unlimited invoices, estimates, contracts and customers. Payment processing fees apply when clients pay online. Confirm current rates and eligibility.",
+            "Square Invoices Free has no monthly subscription fee in the US; payment processing fees apply when clients pay online. Square's invoicing and merchant services are country-specific, so verify business eligibility and current processing rates before choosing it.",
           tradeoff:
             "Most useful when Square’s payment methods and merchant services fit your business. Eligibility and payment features are region-dependent. Advanced features may require a paid plan.",
           url: "https://squareup.com/us/en/invoices/pricing",
