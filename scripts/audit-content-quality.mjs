@@ -37,7 +37,7 @@ function analyse(file) {
   const withoutImports = source
     .replace(/^import\s[\s\S]*?;\s*$/gm, " ")
     .replace(/\/\*[\s\S]*?\*\//g, " ")
-    .replace(/\/\/.*$/gm, " ")
+    .replace(/^\s*\/\/.*$/gm, " ")
     .replace(/className\s*=\s*["'`][^"'`]*["'`]/g, " ")
     .replace(/style\s*=\s*\{[^}]*\}/g, " ")
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
@@ -60,7 +60,7 @@ function analyse(file) {
   const flags = [];
   if (!title) flags.push("missing-title");
   if (!description) flags.push("missing-description");
-  if (usesComparisonTemplate && !intro) flags.push("missing-intro");
+  if (usesComparisonTemplate && !(source.includes("intro=") || source.includes("intro ="))) flags.push("missing-intro");
   if (h2Count < 3) flags.push("few-h2-sections");
   if (externalSources < 2) flags.push("few-external-sources");
   if (!/pricing|price|cost|free plan|free tier/i.test(source)) flags.push("no-pricing-or-free-plan-context");
