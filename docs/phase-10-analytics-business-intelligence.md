@@ -16,7 +16,7 @@
 - Dimensions support a full-property snapshot (`*`), a page path, a category and/or a software profile slug.
 - Each record can include a source report URL and notes describing the date range, filters, geography or device scope.
 - The month/source/dimension key upserts, so re-importing a corrected report updates the matching record.
-- The dashboard presents the latest full-property snapshot per source, and a ledger of imported dimensions.
+- The dashboard presents the latest full-property snapshot per source, a page-level content leaderboard with derived CTR, a category-level search-demand view, and a ledger of imported dimensions.\n- Segment views only use the matching reporting month and explicit wildcard dimensions; they are not mixed into full-property totals.
 
 ### Existing commercial reporting
 - The analytics workspace links to the existing affiliate operations ledger.
