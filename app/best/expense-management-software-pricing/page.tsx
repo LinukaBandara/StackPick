@@ -21,6 +21,7 @@ export default function Page() {
     <ComparisonArticle
       title="Expense Management Software Pricing: What Small Teams Actually Pay"
       slug="expense-management-software-pricing"
+      quickAnswer="For a very small team, check Zoho Expense Free first. Compare Expensify against the exact reimbursement, approval and accounting integrations you need. Ramp can be attractive at no software subscription cost, but only if your business meets its US eligibility rules and is comfortable using its card and spend-management ecosystem. Calculate the cost for your actual team size."
       intro="Expense software can be priced per member, per active user, as part of an accounting subscription, or at no software charge for eligible card-based businesses. Comparing the headline price alone can mislead: receipt-scanning quotas, approval features, card requirements, and eligibility may matter more than the monthly total. This guide models common US small-team costs using published standard prices, not temporary promotional offers."
       pricingNote="Prices and plan details checked against the linked official vendor pages on November 7, 2026. US dollars, before tax. Prices can vary by billing term, account, region and promotions; confirm the checkout price and included features before subscribing. Ramp's $0 plan is not a universally available standalone receipt app: business eligibility and a corporate-spend workflow matter."
       tools={[
