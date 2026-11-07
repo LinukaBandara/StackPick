@@ -1015,3 +1015,23 @@ GitHub Actions was checked after the article edits began.
 - Production build was skipped because lint failed.
 
 Fresh PR CI and SEO/content-audit workflows have been triggered for the fix commit `be87d18` and were still running at the time of this note. **Do not treat them as passed until their final conclusions are checked.** No deployment was attempted.
+
+
+## Final validation result for the current content-edit snapshot (7 November 2026)
+
+GitHub Actions completed successfully for commit `35e86257`:
+
+- `StackPick CI` run **42389030406** — success.
+  - `npm ci` — passed.
+  - Production dependency audit — passed; 0 production vulnerabilities reported.
+  - Full dependency audit — reported 6 moderate development-dependency advisories (minimatch through the ESLint TypeScript parser dependency chain).
+  - Internal-link check — passed; 186 source files, no missing internal destinations.
+  - ESLint — passed.
+  - Production build — passed.
+- `SEO and content quality checks` run **42389026310** — success.
+  - Audit script syntax — passed.
+  - SEO route/sitemap integrity audit — passed.
+  - Internal-link check — passed.
+  - Content-quality inventory generation — passed and report artifact uploaded.
+
+The duplicate `quickAnswer` prop was removed in `be87d18`; subsequent content changes were included in the successful `35e86257` validation snapshot. The two prior `<img>` lint notices did not block the final lint run. No deployment was attempted; Vercel quota remains a separate constraint. Search Console query/indexing checks remain pending until a deployment/data window is available.
