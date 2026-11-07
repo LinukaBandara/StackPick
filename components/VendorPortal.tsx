@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { SOFTWARE_PROFILES } from "@/lib/software";
 
@@ -47,7 +47,7 @@ export default function VendorPortal() {
   const set = (key: keyof typeof initial, value: string) => setForm((current) => ({ ...current, [key]: value }));
   const selectedSoftware = useMemo(() => SOFTWARE_PROFILES.find((p) => p.slug === form.software_slug), [form.software_slug]);
 
-  async function submit(event: React.FormEvent<HTMLFormElement>) {
+  async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault(); setSaving(true); setError(""); setNotice("");
     try {
       const response = await fetch("/api/vendor/submissions", {
