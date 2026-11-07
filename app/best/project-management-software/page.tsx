@@ -23,13 +23,13 @@ export default function Page() {
       title="Best Project Management Software for Small Teams"
       slug="project-management-software"
       intro="Worth saying up front: the tool matters less than whether one person owns keeping it updated. A lot of small teams do not need dedicated project management software at all — a shared doc and a weekly call can cover it under about five people. When you do need a tool, choose based on how your team actually works, not on the longest feature list."
-      pricingNote="Per-seat pricing and free-tier limits change often. Confirm current user, project, view and automation limits on the official pricing pages before migrating active work. Live pricing pages are the source of truth rather than numbers that go stale."
+      pricingNote="Free-plan details checked November 7, 2026 against official pricing and help pages. Trello Free allows up to 10 collaborators and 10 boards per Workspace; Asana Personal is limited to 2 users; ClickUp Free Forever allows unlimited free members but has 60 MB storage; monday.com Work Management Free is limited to 2 seats, 3 boards and 200 items. US-facing paid prices and annual-billing terms are not global quotes. Sources: https://trello.com/en/pricing; https://asana.com/pricing; https://clickup.com/pricing; https://monday.com/pricing and https://support.monday.com/hc/en-us/articles/360010487220-Understanding-the-Free-Plan."
       tools={[
         {
           name: "Trello",
           bestFor: "Very small teams who want simple, visual task tracking with almost no learning curve",
           freeOption:
-            "Generous free plan is available. Confirm current board, collaborator, automation and workspace limits against the number of projects you manage.",
+            "Free: up to 10 collaborators and 10 boards per Workspace, unlimited cards, 250 Workspace command runs/month and 10 MB per attachment.",
           tradeoff:
             "Simplicity is the whole appeal. That also means limited reporting, dependencies and workload views once a team’s needs grow past basic boards.",
           url: "https://trello.com/",
@@ -38,7 +38,7 @@ export default function Page() {
           name: "Asana",
           bestFor: "Teams of roughly 5+ who want a reliable, well-documented option",
           freeOption:
-            "Free plan covers small teams with core task management. Confirm current collaborator, project view and reporting limits.",
+            "Personal is free forever for up to 2 users, with unlimited tasks and projects and List, Board and Calendar views. Timeline/Gantt, reporting dashboards and broader team seats require a paid plan.",
           tradeoff:
             "Considered a safe, well-documented default. More advanced timeline and workload views often require higher tiers that larger teams tend to want.",
           url: "https://asana.com/",
@@ -47,7 +47,7 @@ export default function Page() {
           name: "ClickUp",
           bestFor: "Teams that want one workspace covering tasks, docs and dashboards",
           freeOption:
-            "Free plan is unusually feature-rich compared with many competitors. Build a sample project and test storage, views and automation limits before moving active work.",
+            "Free Forever is $0 with unlimited free members and tasks, but only 60 MB storage, up to 5 Spaces and 1 Form. Advanced features such as Custom Fields and Gantt charts are trial-limited; Core is displayed at US$9/user/month billed annually on the US-facing pricing page.",
           tradeoff:
             "The breadth is both the draw and the catch. ClickUp can do almost everything, which also means a real setup investment before it feels organized rather than overwhelming.",
           url: "https://clickup.com/",
@@ -56,7 +56,7 @@ export default function Page() {
           name: "monday.com",
           bestFor: "Client-facing teams juggling multiple moving parts and workflow automation",
           freeOption:
-            "No meaningful permanent free tier for real team use. Confirm current trial and paid plan pricing.",
+            "Work Management has a permanent $0 Free plan for up to 2 seats, 3 boards and 3 Docs; its official support page also lists a 200-item account cap and 500 MB storage, with no automations or integrations. Paid plans start at a 3-seat minimum; the US-facing page displays Basic at US$9/seat/month billed annually.",
           tradeoff:
             "Strong at workflow automation and visual customization. It is priced and positioned above the others here — worth it mainly if you are running client work with real complexity, not a simple task list.",
           url: "https://monday.com/",
