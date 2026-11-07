@@ -111,3 +111,18 @@ The next technical step is a coordinated ESLint/Next 16 toolchain alignment and 
 - Current branch comparison: `growth/adsense-journey-readiness` is 460 commits ahead of `main` and 1 commit behind it. The one main-only commit was reviewed and its AdSense verification script change was mirrored in source, but the branch histories remain diverged. Keep the existing PR base and history under review; do not merge/rebase blindly.
 
 Official Next.js guidance: https://nextjs.org/docs/app/api-reference/config/eslint and https://nextjs.org/docs/app/guides/upgrading/version-16.
+
+
+## AdSense / CSP compatibility finding — 8 November 2026
+
+A source review found a material integration conflict:
+
+- `app/layout.tsx` injects the AdSense loader from `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js`.
+- `next.config.js` sends a Content-Security-Policy whose `script-src` currently permits only `'self'`, `'unsafe-inline'` and `https://www.googletagmanager.com`. It does not permit the AdSense loader host. Therefore a browser enforcing this response header can block the AdSense script even though the script tag is present in the HTML.
+- Google AdSense's current CSP guidance says it supports strict nonce-based CSP and warns that the advertising domains change over time; a fixed allowlist can become stale. Google also recommends testing with report-only before enforcement. Source: https://support.google.com/adsense/answer/16283098
+- Next.js 16 uses the `proxy.ts` convention (renamed from middleware). Its nonce approach requires generating a per-request nonce and forwarding CSP through the request so Next can attach it to framework scripts. Next.js documents that nonce CSP requires dynamic rendering. Source: https://nextjs.org/docs/app/guides/content-security-policy (and https://nextjs.org/docs/app/getting-started/proxy)
+- The current build successfully generated 208 static pages. Converting every public route to request-time rendering solely to support an AdSense nonce could sacrifice static prerendering and CDN efficiency.
+
+**Decision: do not add a superficial AdSense hostname to the current allowlist and call the integration fixed.** Before live ad serving, design and test a route-scoped or otherwise compatible strict-CSP approach, measure its effect on static generation, and verify the AdSense script plus all Next.js scripts under the resulting policy. Until that is implemented, treat AdSense code presence as a verification marker only; do not claim ads are operational. Keep the current CSP security header in place rather than removing it as a shortcut.
+
+This is a source-level finding. A browser CSP violation report has not yet been captured from the live production response.
