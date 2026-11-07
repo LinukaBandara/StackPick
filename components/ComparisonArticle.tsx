@@ -523,6 +523,7 @@ export interface ComparisonTool {
 export interface ComparisonArticleProps {
   title: string;
   slug: string;
+  reviewedOn?: string;
   intro: string;
   quickAnswer?: string;
   pricingNote?: string;
@@ -534,6 +535,7 @@ export interface ComparisonArticleProps {
 export default function ComparisonArticle({
   title,
   slug,
+  reviewedOn,
   intro,
   quickAnswer,
   pricingNote,
@@ -551,6 +553,7 @@ export default function ComparisonArticle({
         headline: title,
         description: intro,
         url: `${siteUrl}/best/${slug}`,
+        ...(reviewedOn ? { dateModified: `${reviewedOn}T00:00:00+00:00` } : {}),
         author: { "@type": "Organization", name: "StackPick Editorial", url: siteUrl },
         publisher: { "@type": "Organization", name: "StackPick", url: siteUrl },
         isAccessibleForFree: true,
@@ -608,6 +611,11 @@ export default function ComparisonArticle({
             </div>
           )}
           <p className="mt-5 text-xs text-[#86868b]">Independent research · Verify current pricing with each provider</p>
+          {reviewedOn && (
+            <p className="mt-2 text-xs text-[#86868b]">
+              Reviewed by StackPick Editorial · {new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${reviewedOn}T00:00:00.000Z`))} · Desk research, not a hands-on product test
+            </p>
+          )}
         </div>
       </header>
 
