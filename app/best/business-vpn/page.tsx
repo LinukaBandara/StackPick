@@ -45,7 +45,7 @@ export default function Page() {
         {
           name: "Cloudflare Zero Trust",
           bestFor: "Budget-conscious teams already in Cloudflare's ecosystem",
-          freeOption: "Zero Trust Free is $0 for up to 50 users, with up to 24 hours of standard log retention; Pay-as-you-go is US$7/user/month and offers longer log retention/support."
+          freeOption: "Zero Trust Free is $0 for up to 50 users, with up to 24 hours of standard log retention; Pay-as-you-go is US$7/user/month and offers longer log retention/support.",
           tradeoff:
             "Its free tier can be attractive for small teams, but the product sits inside Cloudflare's broader security platform. Teams unfamiliar with that ecosystem should budget time for setup and policy learning.",
           url: "https://www.cloudflare.com/plans/zero-trust-services/",
