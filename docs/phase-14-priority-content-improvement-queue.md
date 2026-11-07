@@ -164,3 +164,21 @@ The pages now distinguish vendors that explicitly advertise no-card permanent fr
 Source links and limits are recorded in the audit document. Do not interpret these edits as a completed live signup test for every provider or every region. No build/lint/typecheck/CI has passed.
 
 **Next:** P0 item 5 — finish outstanding source checks across the five core commercial guides; P0 item 6 — verify comparison claims that have known stale-plan or limit risks.
+
+
+### P0 item 5: Core commercial guides — source check completed
+
+Reviewed:
+- `app/best/invoicing-software/page.tsx`
+- `app/best/accounting-software/page.tsx`
+- `app/best/crm-software/page.tsx`
+- `app/best/email-marketing-software/page.tsx`
+- `app/best/website-builders/page.tsx`
+
+Updated invoicing and accounting:
+- Invoicing now has a quick answer, Zoho Invoice's 2-user/3-project/500-invoice annual US Free limits, QuickBooks Free's 2-invoice/month and 1-bank/1-user limits, FreshBooks' no-card 30-day trial distinction, and current provider source links.
+- Accounting now correctly lists QuickBooks Online Free as a limited US free plan rather than saying no permanent free accounting plan exists. The page states its 2 invoices/month, 1 bank connection, 1 user and no accountant access, with the provider's QuickBooks Payments exception.
+
+CRM, email marketing and website builder pages already had dated plan-specific comparisons, primary-source links and country/currency caveats; these were reviewed and retained without unnecessary rewrites. The audit document records the exact source checks and remaining regional caveats.
+
+**Next:** P0 item 6 — recheck comparison pages with known stale plan names, caps or unsupported limits.
