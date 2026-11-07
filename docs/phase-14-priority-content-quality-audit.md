@@ -907,3 +907,71 @@ Primary sources:
 **Commits:** invoicing `946df8d`; client projects `cb9091a`; freelance leads `425efa0`; simple stack `b445eb9`; buying scorecard `27e5c8d` and privacy row `ae25a3b`.
 
 No local build, lint, typecheck or CI run has passed for these edits. These are desk-researched recommendations, not live trials or product tests.
+
+
+## P1 article-edit batch 4 — AI roundups and marketing/content guides (7 November 2026)
+
+Updated:
+- `app/best/ai-tools-small-businesses/page.tsx`
+- `app/best/ai-writing-tools-small-businesses/page.tsx`
+- `app/best/ai-productivity-tools-freelancers/page.tsx`
+- `app/best/ai-tools-business-content/page.tsx`
+- `app/best/free-ai-tools-small-businesses/page.tsx`
+- `app/best/ai-tools-marketing-small-businesses/page.tsx`
+
+### General AI tools for small businesses
+- Added a quick answer, review date and desk-research method statement.
+- Clarified consumer vs business plans for ChatGPT, Claude, Gemini and Microsoft Copilot; added direct plan links.
+- Stated that personal/consumer free access is not automatically covered by business data protection, admin or connected-workspace terms.
+
+### AI writing tools for small businesses
+- Added a quick answer, review date and same-brief/no-controlled-benchmark method.
+- Grammarly Free is stated as 100 AI prompts/month; Pro as 2,000 prompts/member/month and US$12/month annual equivalent (US$30 monthly).
+- Jasper Pro is stated as US$59/seat/month annual billing or US$69 monthly; the 7-day trial requires a card and rolls into a paid plan unless cancelled.
+- Copy.ai Chat is US$24/month annual equivalent or US$29 monthly for 5 seats; Growth includes 20,000 workflow credits/month. Credit use varies by workflow.
+- Claude plan and API/consumer distinction clarified.
+
+### AI productivity tools for freelancers
+- Added a quick answer and November 7 plan review.
+- Notion AI complimentary usage is clarified as a limited trial on Free/Plus, not ongoing unlimited AI access; after trial usage, Business/Enterprise is required to continue.
+- Perplexity Free is stated as basic searches, 3 Pro searches/day and 1 Research query/month.
+- Zapier Free is stated as 100 tasks/month and two-step Zaps; ChatGPT limits remain feature-specific.
+- Updated links to official pricing/help pages.
+
+### AI tools for business content
+- Added a quick answer, date and desk-research/no-benchmark disclosure to distinguish multi-format content production from the dedicated writing guide.
+- Canva US Free is $0 with limited AI; Pro US$144/year; Business US$250/year/person, with shared monthly AI allowances that vary by plan and tool.
+- Jasper Pro and Claude plan context updated; direct pricing pages added.
+- Emphasized asset rights, licensing, approval and brand consistency.
+
+### Free AI tools for small businesses
+- Added a quick answer, date and privacy/method disclosure.
+- Clarified that ChatGPT, Claude, Gemini and Microsoft Copilot consumer free tiers have feature/account/region limits and are not equivalent to business licenses or business data controls.
+
+### AI tools for marketing small businesses
+- Added current US plan references and direct pricing pages.
+- Canva Free is US$0 with limited AI; Pro US$144/year; Business US$250/year/person.
+- Adobe Express Free is US$0, no card required, with limited generative credits; Premium US$9.99/month in the US.
+- Jasper Pro is US$59/seat/month annually or US$69 monthly, with a card-required 7-day trial.
+- HubSpot Free CRM is explicitly separated from paid marketing automation/AI features.
+
+Primary sources:
+- ChatGPT plans: https://chatgpt.com/pricing/
+- Claude plans: https://claude.com/pricing
+- Google AI plans: https://one.google.com/about/google-ai-plans/
+- Microsoft 365 Copilot: https://www.microsoft.com/en-us/microsoft-365-copilot/pricing
+- Grammarly plans: https://www.grammarly.com/plans
+- Grammarly Pro pricing details: https://support.grammarly.com/hc/en-us/articles/115000090011-How-much-does-Grammarly-Pro-cost
+- Jasper plans and trial: https://www.jasper.ai/pricing and https://help.jasper.ai/hc/en-us/articles/18618674196891-Free-Trial
+- Copy.ai plans/credits: https://www.copy.ai/prices
+- Notion AI complimentary responses: https://www.notion.com/help/complimentary-ai-responses
+- Perplexity plans: https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you
+- Zapier pricing: https://zapier.com/pricing
+- Canva plans and AI allowances: https://www.canva.com/pricing/
+- Adobe Express plans: https://www.adobe.com/express/
+- Adobe generative credit details: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+- HubSpot Free CRM: https://www.hubspot.com/pricing/crm?selectedPackage=free
+
+**Commits:** general AI `e78c13e`; writing `01bc452`; productivity `f78f8c5`; business content `1b6ec52`; free AI `729c6b8`; marketing `6d4d6aa`.
+
+No local build, lint, typecheck or CI run has passed for these edits. The guides remain desk-researched and do not claim a controlled model, content-quality or campaign-performance benchmark. Prices are US references and can vary by region.
