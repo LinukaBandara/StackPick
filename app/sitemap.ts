@@ -128,6 +128,8 @@ const ROUTES = [
   "/best/free-ai-tools-small-businesses",
   "/about",
   "/how-we-verify",
+  "/review-policy",
+  "/report-an-issue",
   "/affiliate-disclosure",
   "/privacy",
   "/terms",
