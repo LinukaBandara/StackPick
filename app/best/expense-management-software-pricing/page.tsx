@@ -22,7 +22,7 @@ export default function Page() {
       title="Expense Management Software Pricing: What Small Teams Actually Pay"
       slug="expense-management-software-pricing"
       intro="Expense software can be priced per member, per active user, as part of an accounting subscription, or at no software charge for eligible card-based businesses. Comparing the headline price alone can mislead: receipt-scanning quotas, approval features, card requirements, and eligibility may matter more than the monthly total. This guide models common US small-team costs using published standard prices, not temporary promotional offers."
-      pricingNote="Prices and plan details checked against the linked official vendor pages on October 18, 2026. US dollars, before tax. Prices can vary by billing term, account, region and promotions; confirm the checkout price and included features before subscribing. Ramp's $0 plan is not a universally available standalone receipt app: business eligibility and a corporate-spend workflow matter."
+      pricingNote="Prices and plan details checked against the linked official vendor pages on November 7, 2026. US dollars, before tax. Prices can vary by billing term, account, region and promotions; confirm the checkout price and included features before subscribing. Ramp's $0 plan is not a universally available standalone receipt app: business eligibility and a corporate-spend workflow matter."
       tools={[
         {
           name: "Zoho Expense",
@@ -35,7 +35,7 @@ export default function Page() {
         {
           name: "Expensify",
           bestFor: "Teams that want expense reports, reimbursements and accounting integrations",
-          freeOption: "Free individual use is available, but some business workflows require a paid workspace plan.",
+          freeOption: "Submit is free and includes receipt scanning, mileage tracking, expense reports, categories/tags and personal-card import. Collect is US$5 per unique member/month and adds reimbursements, corporate-card management, approvals and QuickBooks/Xero integrations.",
           tradeoff:
             "Collect is listed at $5 per member/month. Five members model to $25/month and ten to $50/month at that rate, before any qualifying discounts or card-related pricing. Control has custom pricing, so obtain a quote if you need advanced controls or integrations rather than assuming the $5 tier includes them.",
           url: "https://www.expensify.com/pricing",
@@ -61,7 +61,7 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-14 sm:py-18">
-          <p className="sp-eyebrow">US price snapshot · October 18, 2026</p>
+          <p className="sp-eyebrow">US price snapshot · November 7, 2026</p>
           <h2 className="sp-title mt-4 max-w-4xl">Compare the monthly bill, not just the starting price.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
             The examples below use published standard prices. Zoho annual prices are monthly
@@ -110,7 +110,7 @@ export default function Page() {
             ))}
           </ul>
           <p className="mt-6 max-w-3xl text-xs leading-5 text-[#6e6e73]">
-            Editorial note: prices were checked on October 18, 2026. StackPick compares published
+            Editorial note: prices were checked on November 7, 2026. StackPick compares published
             product information and calculated scenarios; it does not claim hands-on testing.
             Recheck official terms before purchase because plan limits and prices can change.
           </p>
