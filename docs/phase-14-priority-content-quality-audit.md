@@ -429,3 +429,38 @@ The script summary now reports counts for these signals. They are inventory fiel
 6. **Maintain/refresh:** `mailchimp-vs-brevo`, `mailchimp-vs-mailerlite`, `zoho-invoice-vs-wave` — preserve the stronger source foundations while verifying exact plan limits and regional eligibility.
 
 **Scope note:** No article was rewritten, no URL was removed, and no index/noindex/redirect decision was made from this screening alone. All vendor limits, prices and eligibility claims require page-level follow-up before publication changes.
+
+
+## Batch 8 — guides 71–80 (7 November 2026)
+
+**Progress:** 80 of 109 guides screened (73.4%); 29 remain. This is an editorial/source triage, not a final verification of every claim. Word counts are approximate TSX-source token counts, not rendered article word counts. URL counts are not a quality score. No article pages were changed in this batch.
+
+| # | Guide | Initial triage |
+|---:|---|---|
+| 71 | `mailchimp-alternatives` | About 842 source words, four vendor homepages, pricing note and desk-research disclosure. No dated check, quick answer or country caveat. Replace homepage-only citations with current official pricing/plan documentation; compare subscriber definitions, send limits, automation, migration and deliverability features. |
+| 72 | `slack-alternatives-small-teams` | About 726 source words, four vendor homepages, no dated review, methodology or country caveat. High-priority evidence expansion: compare message history, external guests, retention/export, admin/security, integrations and seat pricing from official sources. |
+| 73 | `trello-alternatives` | About 714 source words, four vendor homepages, no dated review, methodology or country caveat. Add a quick answer and direct plan links; distinguish board/card migration from dependencies, workload, reporting and automation needs. |
+| 74 | `asana-alternatives` | About 829 source words, four vendor homepages, no dated review, methodology or country caveat. Improve with official pricing/feature sources and a migration checklist that covers projects, owners, dependencies, attachments, permissions and history. |
+| 75 | `notion-alternatives-small-businesses` | About 749 source words, four vendor homepages, no dated review, methodology or country caveat. Strengthen the decision framework by separating wiki/documentation, project execution and relational data needs; cite exact current plan limits. |
+| 76 | `free-crm-without-credit-card` | About 744 source words, four vendor homepages, no dated review, methodology or country caveat. High-priority claim audit: distinguish a permanent free plan from a trial, clarify payment-card requirements at signup, and verify user/contact/record caps directly. |
+| 77 | `free-project-management-without-credit-card` | About 837 source words, four vendor homepages, no dated review, methodology or country caveat. Verify which products offer a genuinely ongoing free tier without card details; separate free plans from time-limited trials and note workspace/member/storage limits. |
+| 78 | `free-invoicing-without-credit-card` | About 744 source words, four vendor homepages and country caveat, but no dated review or methodology disclosure. Replace homepages with official eligibility/pricing and payment-fee sources; make Wave/Square geographic eligibility and processor availability explicit. |
+| 79 | `free-business-tools-for-freelancers` | About 795 source words, four vendor homepages, no dated review, methodology or country caveat. High-priority expansion: show a realistic workflow stack and total cost, avoid implying all free tiers are globally available, and verify each plan's actual limits. |
+| 80 | `how-to-choose-software-small-business` | About 721 source words, four vendor homepages, no dated review, methodology or country caveat. This is an evergreen decision guide but needs a more useful vendor-neutral scoring framework, privacy/data portability/security checklist, and a clearer distinction between editorial guidance and hands-on testing. |
+
+### Primary-source checks recorded for this batch
+
+- monday.com's current official Work Management pricing page lists Free at $0 for up to 2 seats, 3 boards and 3 Docs; the Basic plan is shown at US$9/seat/month billed annually in the current displayed USD region, and paid plan minimums start at 3 seats. The page states final price is determined by billing country. It does not substantiate an item cap on the Free plan; the 200-item figure in the older comparison should not be repeated as a current Free-plan limit without a primary source: https://monday.com/pricing
+- ClickUp's current official pricing page names the first paid plan **Core** (not the older Unlimited name) and currently displays it at US$9/user/month billed yearly; Free Forever includes 60 MB storage, unlimited tasks/subtasks and unlimited free members. Treat displayed USD as regional and recheck billing country: https://clickup.com/pricing
+- Asana's current official comparison article (published within the last week when checked) displays Personal free for 2 users and Starter at US$10.99/seat/month. It is a useful current cross-check, but the dedicated pricing page and checkout region should be used before publishing exact prices: https://asana.com/resources/best-project-management-software
+- monday.com's official plan page is product-specific: Work Management, CRM, Service and Dev have separate plans/limits. Do not copy limits from monday Work Management into monday CRM or another monday product.
+
+### Batch 8 priority queue
+
+1. **High:** `free-crm-without-credit-card`, `free-project-management-without-credit-card`, `free-business-tools-for-freelancers` — verify permanent free vs trial, card requirement, plan caps and country eligibility.
+2. **High:** `slack-alternatives-small-teams` — message history, retention/export, guest access and security need official evidence.
+3. **Medium-high:** `mailchimp-alternatives`, `trello-alternatives`, `asana-alternatives`, `notion-alternatives-small-businesses` — replace homepage-only sources with current plan-level evidence and migration guidance.
+4. **Medium:** `free-invoicing-without-credit-card` — strengthen geographic availability, processor and fee evidence.
+5. **Maintain/expand:** `how-to-choose-software-small-business` — make the framework actionable, neutral and explicit about how StackPick evaluates tools.
+
+**Scope note:** No article was rewritten, no URL was removed, and no index/noindex/redirect decision was made from this screening alone. All plan, card-requirement and country-eligibility claims require page-level follow-up before publication changes.
