@@ -122,7 +122,7 @@ The workspace includes:
 
 ### Database and access controls
 
-Migration: `supabase/migrations/20261107060000_create_affiliate_operations.sql`.
+Migration: `supabase/migrations/20261107054121_create_affiliate_operations.sql`.
 
 - `affiliate_partners` stores programme and tracking details.
 - `affiliate_performance` stores manually reconciled monthly performance.
