@@ -100,3 +100,14 @@ The working branch was inspected through GitHub source files; local commands cou
 - The latest audited content commit `39037609863b37a4637d98e2e4bf2c9d8a1394ae` reports a Vercel status failure whose target says the build-rate limit has been reached. This is a deployment quota failure, not evidence of a source build failure. No successful Vercel deployment or completed local build/lint/CI is claimed.
 
 The next technical step is a coordinated ESLint/Next 16 toolchain alignment and clean-install validation, followed by the SEO/link/content audits. Keep the deployment blocked until the Vercel quota allows a new build.
+
+
+## CI diagnosis and corrected toolchain assessment — 7 November 2026
+
+- GitHub Actions run `42391795943` on commit `30d5755e` passed the SEO/content workflow: npm ci, audit-script syntax checks, route/sitemap audit, internal-link audit and content inventory all succeeded.
+- GitHub Actions run `42391800943` on the same commit failed in the separate CI workflow at ESLint. The actual errors were malformed unterminated `pricingNote` string literals in `app/best/free-accounting-software/page.tsx` (line 19) and `app/best/web-hosting/page.tsx` (line 21). Dependency installation and production dependency audit succeeded; production audit reported zero vulnerabilities. Six moderate development-dependency findings remain in the nested minimatch dependency chain. The build step was skipped because lint failed.
+- Fixed both missing closing quotes in commits `34c00a63` and `3bc2c04a`. New GitHub Actions runs were queued/in progress for those commits; their final results must be checked before calling the fix verified.
+- Corrected the earlier toolchain diagnosis: the Next.js 16 upgrade guidance says `eslint-config-next@16` requires ESLint 9+, but an existing setup that does not use `eslint-config-next@16` may keep its compatible ESLint version. Therefore Next 16 + `eslint-config-next@15.5.27` + ESLint 8 is not automatically a version mismatch. Do not upgrade ESLint or rewrite the config solely to make major versions match. Reassess only if the existing config itself fails after source syntax is fixed.
+- Current branch comparison: `growth/adsense-journey-readiness` is 460 commits ahead of `main` and 1 commit behind it. The one main-only commit was reviewed and its AdSense verification script change was mirrored in source, but the branch histories remain diverged. Keep the existing PR base and history under review; do not merge/rebase blindly.
+
+Official Next.js guidance: https://nextjs.org/docs/app/api-reference/config/eslint and https://nextjs.org/docs/app/guides/upgrading/version-16.
