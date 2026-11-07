@@ -675,6 +675,8 @@ export default function ComparisonArticle({
                       href={tool.url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      data-vendor-outbound="true"
+                      data-vendor-action="comparison-website"
                       className="inline-flex rounded-full bg-[#004bb5] px-3.5 py-1.5 text-xs font-semibold text-white transition hover:bg-[#00388c]"
                     >
                       Official site ↗
@@ -715,6 +717,8 @@ export default function ComparisonArticle({
                     href={tool.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-vendor-outbound="true"
+                    data-vendor-action="comparison-website"
                     className="inline-flex items-center justify-center rounded-full bg-[#004bb5] px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-[#00388c] shrink-0"
                   >
                     Open official site ↗

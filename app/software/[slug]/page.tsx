@@ -80,7 +80,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#1d1d1f]">{software.summary}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <VendorActionLink softwareSlug={software.slug} officialUrl={software.officialUrl} className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#001D39] px-5 text-sm font-semibold text-white transition-opacity hover:opacity-90">Visit official website <ExternalArrow /></VendorActionLink>
-            <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm font-semibold text-[#001D39] transition-colors hover:bg-[#f9fafb]">Check official pricing <ExternalArrow /></a>
+            <a href={software.pricingUrl} target="_blank" rel="noreferrer" data-vendor-outbound="true" data-software-slug={software.slug} data-vendor-action="pricing" className="inline-flex min-h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm font-semibold text-[#001D39] transition-colors hover:bg-[#f9fafb]">Check official pricing <ExternalArrow /></a>
           </div>
           <div className="mt-5 space-y-2">
             <p className="text-xs text-[#6e6e73]">Last editorial review: {software.reviewedOn}. Vendor pricing and features can change; confirm current terms before buying.</p>
@@ -158,7 +158,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
               <p className="text-xs font-semibold uppercase tracking-wide text-[#6e6e73]">Free-plan check</p>
               <p className="mt-2 text-sm leading-6 text-[#1d1d1f]">{software.freePlan}</p>
             </div>
-            <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-semibold text-[#001D39] hover:underline">Verify pricing on the official site <ExternalArrow /></a>
+            <a href={software.pricingUrl} target="_blank" rel="noreferrer" data-vendor-outbound="true" data-software-slug={software.slug} data-vendor-action="pricing" className="mt-5 inline-flex text-sm font-semibold text-[#001D39] hover:underline">Verify pricing on the official site <ExternalArrow /></a>
           </section>
 
           {software.comparisons.length > 0 && (
@@ -229,8 +229,8 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
           </Link>
           <div className="mt-6 border-t border-black/10 pt-5">
             <p className="text-xs font-semibold uppercase tracking-wide text-[#6e6e73]">Official sources</p>
-            <a href={software.officialUrl} target="_blank" rel="noreferrer" className="mt-3 block break-words text-sm text-[#001D39] underline underline-offset-4">Product website</a>
-            <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="mt-3 block break-words text-sm text-[#001D39] underline underline-offset-4">Pricing & plan details</a>
+            <a href={software.officialUrl} target="_blank" rel="noreferrer" data-vendor-outbound="true" data-software-slug={software.slug} data-vendor-action="website" className="mt-3 block break-words text-sm text-[#001D39] underline underline-offset-4">Product website</a>
+            <a href={software.pricingUrl} target="_blank" rel="noreferrer" data-vendor-outbound="true" data-software-slug={software.slug} data-vendor-action="pricing" className="mt-3 block break-words text-sm text-[#001D39] underline underline-offset-4">Pricing & plan details</a>
           </div>
         </aside>
       </section>
