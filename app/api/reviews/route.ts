@@ -44,6 +44,7 @@ export async function POST(request: NextRequest) {
     });
     if (!userResponse.ok) return NextResponse.json({ error: "Your session has expired. Sign in again." }, { status: 401 });
     const user = await userResponse.json();
+    if (!user.email_confirmed_at) return NextResponse.json({ error: "Confirm your email address before submitting a review." }, { status: 403 });
     const input = await request.json();
     const slug = typeof input.softwareSlug === "string" ? input.softwareSlug : "";
     const reviewerName = typeof input.reviewerName === "string" ? input.reviewerName.trim() : "";
