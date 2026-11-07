@@ -136,8 +136,8 @@ const ROUTES = [
 // Keep lastModified tied to real editorial updates. Do not use the build date,
 // because deploying unrelated changes should not make every URL look freshly updated.
 const LAST_MODIFIED: Record<string, string> = {
-  "/best/crm-for-freelancers": "2026-10-10",
-  "/best/crm-software": "2026-11-07",
+  "/best/crm-for-freelancers": "2026-11-08",
+  "/best/crm-software": "2026-11-08",
   "/best/invoicing-software": "2026-11-07",
   "/best/accounting-software": "2026-11-07",
   "/best/website-builders": "2026-11-07",
@@ -145,14 +145,12 @@ const LAST_MODIFIED: Record<string, string> = {
   "/best/ai-meeting-assistants": "2026-10-09",
   "/best/web-hosting": "2026-10-14",
   "/best/online-course-platforms": "2026-10-14",
-  "/best/email-marketing-software": "2026-11-07",
-  "/best/cloud-storage": "2026-11-07",
-  "/best/track-business-expenses-without-spreadsheets": "2026-11-07",
-  "/best/free-project-management-software": "2026-11-07",
-  "/best/crm-software": "2026-11-08",
+  "/best/email-marketing-software": "2026-11-08",
+  "/best/cloud-storage": "2026-11-08",
+  "/best/track-business-expenses-without-spreadsheets": "2026-11-08",
+  "/best/free-project-management-software": "2026-11-08",
   "/best/free-crm-software": "2026-11-08",
   "/best/crm-for-small-businesses": "2026-11-08",
-  "/best/crm-for-freelancers": "2026-11-08",
   "/best/online-form-builder-pricing": "2026-11-08",
   "/best/freshbooks-vs-wave": "2026-11-08",
   "/best/quickbooks-vs-freshbooks": "2026-11-08",
@@ -163,10 +161,7 @@ const LAST_MODIFIED: Record<string, string> = {
   "/best/hubspot-vs-pipedrive": "2026-11-08",
   "/best/ai-meeting-assistant-pricing": "2026-11-08",
   "/best/mailchimp-alternatives": "2026-11-08",
-  "/best/email-marketing-software": "2026-11-08",
   "/best/esignature-software": "2026-11-08",
-  "/best/cloud-storage": "2026-11-08",
-  "/best/track-business-expenses-without-spreadsheets": "2026-11-08",
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
