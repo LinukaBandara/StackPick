@@ -71,7 +71,7 @@ function analyse(file) {
   const reviewedOn = source.match(/(?:reviewed|verified|checked)(?:On|\s+(?:on|date))?\s*[:=]\s*["'`]([^"'`]+)["'`]/i)?.[1] ?? "";
   const hasQuickAnswer = /\bquickAnswer\s*=/.test(source);
   const hasPricingNote = /\bpricingNote\s*=/.test(source);
-  const hasCountryCaveat = /\b(?:country-specific|country eligibility|availability varies by country|regional availability|by country|country-specific terms|local market|currency varies)\b/i.test(source);
+  const hasCountryCaveat = /\b(?:country-specific|country eligibility|availability varies by country|regional availability|by country|country-specific terms|billing country|country of billing|local market|local currency|currency varies)\b/i.test(source);
   const hasTestingDisclosure = /\b(?:desk research|desk-based|not a hands-on|not tested in a live|not hands-on product testing)\b/i.test(source);
   const flags = [];
   if (!title) flags.push("missing-title");
