@@ -85,3 +85,18 @@ Google's current guidance says its generative Search features build on core Sear
 ## Release status
 
 These changes are on the working branch only. They have not been merged or deployed. No live Search Console or Bing exports were available during this initial code pass, so no ranking or traffic improvements are claimed.
+
+
+
+## Technical release blockers confirmed during the 7 November 2026 content pass
+
+The working branch was inspected through GitHub source files; local commands could not be run because the execution environment could not resolve GitHub/network access.
+
+- `package.json` pins Next.js `16.4.2`, React `19.3.1`, ESLint `^8.57.0` and `eslint-config-next` `15.5.27`.
+- `package-lock.json` is lockfileVersion 3 and resolves ESLint `8.57.1`, eslint-config-next `15.5.27`, Next `16.4.2` and TypeScript `5.9.3`.
+- The repository has a legacy `.eslintrc.json`; no `eslint.config.mjs` was found. This is a framework/linter major-version mismatch that must be reconciled against the supported Next 16 lint configuration before treating lint results as authoritative.
+- Do not change only `package.json` or hand-edit lockfile package versions. Regenerate the lockfile with the intended supported ESLint/config versions, then run `npm ci`, `npm run lint`, `npm run audit:seo`, `npm run check:links`, `npm run audit:content` and `npm run build` from a clean checkout.
+- The working branch `growth/adsense-journey-readiness` is 435 commits ahead of `main` and 1 commit behind it at the time of comparison. Do not merge or rebase blindly; inspect the single new main commit and resolve the branch divergence deliberately.
+- The latest audited content commit `39037609863b37a4637d98e2e4bf2c9d8a1394ae` reports a Vercel status failure whose target says the build-rate limit has been reached. This is a deployment quota failure, not evidence of a source build failure. No successful Vercel deployment or completed local build/lint/CI is claimed.
+
+The next technical step is a coordinated ESLint/Next 16 toolchain alignment and clean-install validation, followed by the SEO/link/content audits. Keep the deployment blocked until the Vercel quota allows a new build.
