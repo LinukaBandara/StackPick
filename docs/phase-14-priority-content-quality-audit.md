@@ -82,3 +82,16 @@ Before these pages are treated as ready for a public content-quality review:
 - [ ] Page-level content review completed by a human; automated audit is supplementary.
 
 **Status:** source review completed for the five listed guides. The CRM guide was subsequently updated with current vendor-published limits and direct source URLs in commit `3a1ad52`. FreshBooks pricing and client caps were rechecked and the invoicing guide updated in commit `ffcb735`. This remains desk research, not hands-on testing. No local build, typecheck, CI run, deployment or Search Console validation is claimed.
+
+
+## Accounting guide follow-up — 7 November 2026
+
+- [x] Added a visible quick answer that makes the recommendation conditional on the accountant's workflow, country support and bookkeeping handoff rather than declaring one universal winner.
+- [x] Added a dated research note and made explicit that US prices and free-plan limits are not global offers.
+- [x] Replaced the broad Zoho Books free-plan statement with the US-specific limits published by Zoho: one user plus one accountant, up to 1,000 invoices and 1,000 expenses annually, and a US$50,000 annual-revenue threshold. The article directs readers to check their own country edition.
+- [x] Tightened Wave eligibility using Wave's own account-creation guidance: businesses must be located in the US or Canada. The guide no longer implies the free plan is a global option.
+- [x] Updated the official links to point directly to Zoho US pricing, Wave eligibility and Xero US pricing, with the Xero link clearly labeled as US-specific.
+- [ ] Verify QuickBooks, Xero and FreshBooks regional availability and plan terms country by country before adding more numeric claims.
+- [ ] Add a specific Sri Lanka availability and local-accountant workflow note only after official provider evidence is found; do not assume US/UK/Australia product terms apply in Sri Lanka.
+
+**Commit:** `e5c5785` (accounting guide update). This is editorial desk research based on vendor-published information, not hands-on product testing or accounting advice.
