@@ -191,3 +191,14 @@ Updated `components/ComparisonArticle.tsx` to accept an optional `reviewedOn` da
 The five priority guides (invoicing, accounting, CRM, email marketing and website builders) now pass `reviewedOn="2026-11-07"`. Other guides do not inherit a fabricated review date. The existing Organization author remains StackPick Editorial; no individual reviewer identity or credential has been invented.
 
 The component and all five page props were fetched back from GitHub and checked for the expected date/byline/schema strings. This is source verification only: the Next.js build, JSON-LD rendering, hydration, accessibility and CI still need runtime validation.
+
+### Source-level integrity spot-check
+
+A read-only source check of the current branch found:
+- 109 guide catalogue entries and 109 unique guide routes;
+- no duplicate guide hrefs;
+- 127 static sitemap routes;
+- no guide catalogue route missing from the static sitemap;
+- 10 `LAST_MODIFIED` entries, all valid calendar dates and all present in the static sitemap.
+
+This check parsed the fetched GitHub source in memory. It did not execute `scripts/audit-seo-routes.mjs`, resolve every route against the full App Router tree, run Node syntax checks, or render the generated sitemap.
