@@ -13,14 +13,15 @@ export default function Page() {
     <ComparisonArticle
       title="Best Password Managers for Freelancers and Small Business"
       slug="password-managers"
+      reviewedOn="2026-11-07"
       intro="A solo freelancer mainly needs secure storage of unique passwords across client accounts and tools. A small team also needs controlled sharing, simple onboarding and offboarding, recovery options, and a clear view of who can access what. This comparison separates individual free plans from paid business plans so a low personal price is not mistaken for a team-ready solution."
-      pricingNote="Plan details were checked against official provider pages in late October 2026. Free individual plans are not the same as business plans. Shared vaults, admin policies, access reports and employee management usually require paid seats. Before rollout, confirm current seat minimums, trial length, recovery options, export format and whether pricing requires annual billing."
+      pricingNote="US-facing plan details checked November 7, 2026 against official provider pricing pages. Bitwarden Premium is US$19.80/year; Bitwarden Teams is US$4/user/month and Enterprise US$6/user/month on annual billing. 1Password Teams Starter Pack is US$2.49/user/month annually with a 10-user minimum (up to 20); Business is US$8.99/user/month with a 1-user minimum. NordPass Teams is sold as a 10-user pack; Business and Enterprise have a 5-user minimum, with checkout pricing dependent on billing term/discount. Keeper publishes localized business pricing and trial options; confirm the displayed currency and seat minimum in your region. Free individual plans are not substitutes for managed business plans. Confirm recovery, export, offboarding and annual renewal terms before rollout."
       tools={[
         {
           name: "Bitwarden",
           bestFor: "Freelancers and budget-conscious or technical teams who want a strong free plan or open-source option",
           freeOption:
-            "Bitwarden offers a permanent free plan for individuals with unlimited passwords and unlimited devices. Free sharing is limited to one other user (two users total) and a small number of collections. Premium is approximately $19.80 per year and adds a built-in authenticator, file attachments, emergency access and security reports. Teams and Enterprise plans are available for organizations.",
+            "Bitwarden offers a permanent free individual plan with unlimited passwords and devices; free sharing is limited to one other user. Premium is US$19.80/year on the current US annual price and adds an integrated authenticator, file attachments, emergency access and security reports. Teams is US$4/user/month and Enterprise US$6/user/month on annual billing.",
           tradeoff:
             "The free plan is genuinely useful for solo freelancers. The interface and admin tools are more utilitarian than 1Password, which can matter when less technical people need to use the product daily.",
           url: "https://bitwarden.com/",
@@ -29,7 +30,7 @@ export default function Page() {
           name: "1Password Business",
           bestFor: "Mixed technical and non-technical teams that want the smoothest onboarding and polished apps",
           freeOption:
-            "1Password has no permanent free plan. It offers a 14-day free trial. Business plans start with a Teams Starter Pack (flat rate for up to 10 members) and a per-user Business plan. Individual and Families plans are available separately for personal use.",
+            "1Password has no permanent free business plan. Teams Starter Pack is US$2.49/user/month billed yearly, requires 10 users and supports up to 20; Business is US$8.99/user/month billed yearly with a 1-user minimum. Both list a 14-day trial with no credit card required. Individual and Families plans are separate personal products.",
           tradeoff:
             "It is generally the most polished experience and reduces friction for mixed teams. The trade-off is higher per-seat cost than Bitwarden or NordPass for comparable team features.",
           url: "https://1password.com/business",
@@ -38,7 +39,7 @@ export default function Page() {
           name: "NordPass Business",
           bestFor: "Small teams that want a simple, fast rollout with lower seat cost",
           freeOption:
-            "NordPass has a free individual plan limited to one active device at a time. Business plans start at roughly $3.59–$3.99 per user per month (billed annually, minimum seats apply) and include an admin panel, sharing and company-wide settings. A short business trial is usually available.",
+            "NordPass has a free individual plan limited to one active device at a time. NordPass Teams is sold as a 10-user pack; Business and Enterprise start at 5 users. The vendor offers a 14-day business trial with no credit card required, while the checkout price depends on plan and billing term. Business adds group-based sharing, password-health and breach monitoring; Enterprise adds identity-provider provisioning and SIEM integrations.",
           tradeoff:
             "It is quick to deploy and competitively priced for small teams. The feature set is shallower than 1Password or Keeper once needs become more complex (advanced policies, deeper integrations, or heavy compliance).",
           url: "https://nordpass.com/business/",
@@ -47,7 +48,7 @@ export default function Page() {
           name: "Keeper Business",
           bestFor: "Teams that need stronger governance, audit controls or compliance features",
           freeOption:
-            "Keeper does not offer a permanent free business plan. Business Starter and Business plans are available (typically starting around $2–$4 per user per month when billed annually, with seat minimums). Enterprise features such as advanced SSO and provisioning are quote-based. Many business users receive a free Family plan for personal use.",
+            "Keeper does not offer a permanent free business plan. Business Starter lists a 5–10-seat range and Business requires at least 5 seats; Enterprise adds provisioning and SSO integrations. The current page displays localized pricing, so confirm the amount, currency, tax and annual-billing basis shown for your country. Business plans include a free Family plan for each team member.",
           tradeoff:
             "It provides granular policy and audit capabilities useful for regulated or more formal environments. Those controls can be unnecessary overhead for a very small team without compliance requirements.",
           url: "https://www.keepersecurity.com/business.html",
