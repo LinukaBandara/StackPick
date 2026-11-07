@@ -32,7 +32,7 @@ export default function EmailMarketingSoftwarePage() {
             "Brevo’s official plan documentation currently lists its Free plan with up to 100,000 stored contacts but only 300 email sends per day; marketing automation is limited to up to 2,000 contacts. Stored contacts are not the same as send capacity, so this can suit a large, lightly contacted list but not a high-frequency newsletter. Recheck the live terms before signup.",
           tradeoff:
             "A volume-oriented pricing model can work well for large lists that do not send constantly. Frequent campaigns can change the cost calculation, so model your actual send volume.",
-          url: "https://www.brevo.com/",
+          url: "https://help.brevo.com/hc/en-us/articles/208589409-About-Brevo-s-pricing-plans",
         },
         {
           name: "MailerLite",
