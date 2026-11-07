@@ -13,8 +13,9 @@ export default function Page() {
     <ComparisonArticle
       title="Best Payroll Software for Small Business"
       slug="payroll-software"
+      reviewedOn="2026-11-07"
       intro="If you already use QuickBooks or Xero for accounting, check their built-in payroll add-on before shopping standalone tools - avoiding double-entry between two systems is worth more than a marginally better feature list elsewhere."
-      pricingNote="This guide focuses on US payroll. Providers commonly charge a monthly base plus a per-employee fee; promotions, tax-filing coverage, state support and add-ons can change the total. Verify the regular renewal price and exact services included directly with the vendor."
+      pricingNote="US plan prices checked November 7, 2026 against provider-owned pricing pages. Gusto Simple is US$49/month + US$6/person and includes tax filings/payments for one state; Plus is US$80 + US$12/person and includes multi-state payroll. QuickBooks Workforce Payroll + Simple Start is US$88/month + US$6.50/employee before the current introductory discount; this is a payroll-and-accounting bundle, not a standalone payroll quote. Patriot Full Service is US$37/month + US$5/worker paid for one state; each additional state is US$12/month. These are US-only references, before tax and optional add-ons. Verify state coverage, worker billing rules, renewal pricing and included filings before buying."
       tools={[
         {
           name: "Gusto",
@@ -53,7 +54,7 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">US payroll cost check · October 18, 2026</p>
+          <p className="sp-eyebrow">US payroll cost check · November 7, 2026</p>
           <h2 className="sp-title mt-4 max-w-4xl">Compare the regular bill, including tax filing.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
             These are published list prices shown on the providers' US pages at review time, before applicable taxes and optional add-ons. QuickBooks currently promotes a discount for the first three months; the regular price is shown here so the ongoing cost is easier to compare.
@@ -69,7 +70,7 @@ export default function Page() {
               <tbody className="divide-y divide-[#e4e7ec]">
                 <tr><td className="p-4 font-medium text-[#1d1d1f]">Gusto Simple</td><td className="p-4 text-[#424245]">$49/month + $6/person/month</td><td className="p-4 text-[#6e6e73]">Tax filings and payments listed as included; state tax registration can be an add-on.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://gusto.com/product/pricing" target="_blank" rel="noopener noreferrer">Gusto pricing →</a></td></tr>
                 <tr><td className="p-4 font-medium text-[#1d1d1f]">QuickBooks Workforce Payroll + Simple Start</td><td className="p-4 text-[#424245]">$88/month + $6.50/employee/month before the advertised introductory discount</td><td className="p-4 text-[#6e6e73]">The listed bundle includes full-service payroll and basic accounting; compare the bundle with your existing subscription.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://quickbooks.intuit.com/payroll/pricing/" target="_blank" rel="noopener noreferrer">QuickBooks pricing →</a></td></tr>
-                <tr><td className="p-4 font-medium text-[#1d1d1f]">Patriot Full Service Payroll</td><td className="p-4 text-[#424245]">$37/month + $5/worker/month at list price</td><td className="p-4 text-[#6e6e73]">Includes federal, state and local payroll tax filings; an additional-state filing fee may apply.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://www.patriotsoftware.com/pricing/" target="_blank" rel="noopener noreferrer">Patriot pricing →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Patriot Full Service Payroll</td><td className="p-4 text-[#424245]">$37/month + $5/worker paid/month for one state; each additional state is $12/month</td><td className="p-4 text-[#6e6e73]">Includes federal, state and local payroll tax filings in one state; each additional state costs US$12/month.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://www.patriotsoftware.com/pricing/" target="_blank" rel="noopener noreferrer">Patriot pricing →</a></td></tr>
               </tbody>
             </table>
           </div>
