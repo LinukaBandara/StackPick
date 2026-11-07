@@ -356,3 +356,40 @@ The script summary now reports counts for these signals. They are inventory fiel
 - The free invoicing page is explicitly US-scoped, which should be preserved in its title/metadata and recommendations. Do not imply Wave or Square eligibility in countries where their merchant services are unavailable.
 - Free website builders and free scheduling software are particularly sensitive to account eligibility and plan changes. The next revision should link directly to the exact plan/licensing page rather than rely on vendor homepages.
 - No article pages were changed in this batch; only this audit record was updated.
+
+
+## Batch 6 — guides 51–60 (7 November 2026)
+
+**Progress:** 60 of 109 guides screened (55.0%); 49 remain. This is an editorial/source triage, not a final verification of every claim. Source word counts below are approximate TSX-source token counts, not rendered article word counts. URL counts are not a quality score. No article pages were changed in this batch.
+
+| # | Guide | Initial triage |
+|---:|---|---|
+| 51 | `hubspot-vs-pipedrive` | Stronger structure (about 1,584 source words), five distinct external source URLs, dated pricing note and useful workflow sections. Add explicit regional/currency caveat and methodology disclosure; re-check seat/feature gates at the actual checkout region. |
+| 52 | `hubspot-vs-zoho-crm` | About 1,210 source words, but only two distinct official pricing URLs. Has dated pricing and desk-research disclosure; add a quick answer, regional caveat, and deeper feature/limits evidence beyond headline free-tier comparison. |
+| 53 | `pipedrive-vs-zoho-crm` | About 1,072 source words, three distinct source URLs and useful workflow/migration sections. Dated pricing and methodology are present; regional caveat and clearer quick answer are missing. |
+| 54 | `quickbooks-vs-xero` | Stronger structure (about 1,701 source words), but relies on two vendor pricing URLs. Dated review, country caveat and desk-research disclosure are present. Verify country-specific accounting, tax, bank-feed and payroll availability rather than treating US pricing as global. |
+| 55 | `quickbooks-vs-freshbooks` | About 1,271 source words and two pricing URLs; dated pricing and desk-research disclosure present. Add country/availability caveats and stronger primary evidence for the workflow and plan limits. |
+| 56 | `freshbooks-vs-wave` | About 1,580 source words, six distinct URLs, dated pricing, country caveat and desk-research disclosure. Good source foundation; keep Wave eligibility and payment-processing availability explicit by country. |
+| 57 | `trello-vs-asana` | About 810 source words with five source URLs and specific plan-limit claims. Has a dated US pricing note, but no explicit methodology disclosure or broader country caveat. Recheck the current plan limits and distinguish Workspace collaborator limits from board membership. |
+| 58 | `asana-vs-clickup` | About 672 source words, only two homepage URLs, no dated review, no explicit methodology/country disclosure, and no quick answer. High-priority expansion: replace generic free-tier descriptions with official plan evidence and a dated, region-labelled comparison. |
+| 59 | `clickup-vs-monday` | About 821 source words and six URLs, with dated plan note and desk-research disclosure. The stated monday.com Free 200-item limit needs immediate re-verification: the current official pricing page clearly lists up to 2 seats, 3 boards and 3 Docs, but the retrieved current page does not substantiate a 200-item cap. Reassess the exact current free-plan limits and paid seat minimum before retaining the claim. |
+| 60 | `notion-vs-clickup` | About 644 source words, only two homepage URLs, and no dated review, explicit methodology disclosure or country caveat. Quick answer is present, but plan comparison is generic. High-priority expansion with official pricing/limits links and a dated, region-labelled comparison. |
+
+### Primary-source checks recorded for this batch
+
+- HubSpot's current official pricing page states Free is available for up to 2 users and 1,000 contacts, with 1,000 records across other standard object types per account. This is a critical cap to preserve accurately in any CRM comparison: https://www.hubspot.com/pricing/crm
+- Zoho CRM's official specifications page states the Free edition supports up to 3 users and 5,000 API credits per 24 hours: https://help.zoho.com/portal/en/kb/crm/crm-reference/introduction-to-zoho-crm/articles/specifications-zoho-crm
+- Trello's current official pricing page states Free supports up to 10 collaborators per Workspace and 10 boards per Workspace, with unlimited cards and 250 monthly Workspace command runs. Atlassian clarifies the collaborator limit applies at Workspace level: https://trello.com/en/pricing and https://support.atlassian.com/trello/docs/workspace-user-limit/
+- ClickUp's current official pricing page lists Free Forever with unlimited tasks and free members, 60 MB storage, and one form; the page now labels the first paid tier Core. Do not carry over older tier names or prices without a fresh check: https://clickup.com/pricing
+- Notion's current official pricing page lists Free at $0/member/month, Plus at $10/member/month and Business at $20/member/month in USD, with limits such as 5 MB uploads on Free and a block cap for multi-member Free workspaces. Treat these as displayed USD prices, not universal local prices: https://www.notion.com/pricing
+- monday.com's current official Work Management pricing page lists Free with up to 2 seats, 3 boards and 3 Docs; paid plan seat minimums and current prices should be verified at the selected billing region. The current retrieved page did not support the article's 200-item Free-plan claim, so that claim is flagged for investigation rather than declared false: https://monday.com/pricing
+
+### Batch 6 priority queue
+
+1. **High:** `asana-vs-clickup`, `notion-vs-clickup` — short, generic, and missing dated primary-source pricing/limit evidence.
+2. **High:** `clickup-vs-monday` — verify the monday.com Free item-cap claim and update tier names/seat assumptions against official sources.
+3. **Medium:** `trello-vs-asana` — refresh dated limits and add methodology/region disclosures.
+4. **Medium:** `hubspot-vs-zoho-crm`, `pipedrive-vs-zoho-crm`, `quickbooks-vs-freshbooks` — deepen primary-source support and add region-specific context.
+5. **Maintain/refresh:** `hubspot-vs-pipedrive`, `quickbooks-vs-xero`, `freshbooks-vs-wave` — preserve stronger structure while refreshing vendor-specific and regional claims.
+
+**Scope note:** No article was rewritten, no URL was removed, and no index/noindex/redirect decision was made from this screening alone. All flagged claims require page-level follow-up before publication changes.
