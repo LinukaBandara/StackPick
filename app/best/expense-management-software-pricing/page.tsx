@@ -21,9 +21,10 @@ export default function Page() {
     <ComparisonArticle
       title="Expense Management Software Pricing: What Small Teams Actually Pay"
       slug="expense-management-software-pricing"
+      reviewedOn="2026-11-08"
       quickAnswer="For a very small team, check Zoho Expense Free first. Compare Expensify against the exact reimbursement, approval and accounting integrations you need. Ramp can be attractive at no software subscription cost, but only if your business meets its US eligibility rules and is comfortable using its card and spend-management ecosystem. Calculate the cost for your actual team size."
       intro="Expense software can be priced per member, per active user, as part of an accounting subscription, or at no software charge for eligible card-based businesses. Comparing the headline price alone can mislead: receipt-scanning quotas, approval features, card requirements, and eligibility may matter more than the monthly total. This guide models common US small-team costs using published standard prices, not temporary promotional offers."
-      pricingNote="Prices and plan details checked against the linked official vendor pages on November 7, 2026. US dollars, before tax. Prices can vary by billing term, account, region and promotions; confirm the checkout price and included features before subscribing. Ramp's $0 plan is not a universally available standalone receipt app: business eligibility and a corporate-spend workflow matter."
+      pricingNote="Prices and plan details checked against the linked official vendor pages on November 8, 2026. US dollars, before tax. Prices can vary by billing term, account, region and promotions; confirm the checkout price and included features before subscribing. Ramp's $0 plan is not a universally available standalone receipt app: business eligibility and a corporate-spend workflow matter."
       tools={[
         {
           name: "Zoho Expense",
@@ -44,7 +45,7 @@ export default function Page() {
         {
           name: "Ramp",
           bestFor: "Eligible US businesses that want expenses connected to company cards and broader spend controls",
-          freeOption: "Ramp Free is listed at $0 per user/month.",
+          freeOption: "Ramp Free has no software subscription charge on its published pricing page; it is a corporate spend platform, not a per-user receipt-only subscription.",
           tradeoff:
             "A $0 software price does not mean every small business can sign up. Ramp's US eligibility guidance says applicants need a US-registered corporation, LLC or LP, a physical US address, at least $25,000 in a linked US business bank account, and most operations and corporate spending in the US. Treat this as a card-and-spend platform, not a universal free receipt app.",
           url: "https://ramp.com/pricing",
@@ -52,7 +53,7 @@ export default function Page() {
         {
           name: "QuickBooks Online",
           bestFor: "Businesses that need expense records inside their accounting workflow",
-          freeOption: "The US pricing page lists a Free option; verify its current expense features and limits before relying on it for business bookkeeping.",
+          freeOption: "QuickBooks Free is a separate $0 product for solo businesses, not a QuickBooks Online paid subscription tier. It allows one user, no accountant access, two invoices and two receipt captures per month, one estimate per month and one connected bank account. Simple Start is the paid QuickBooks Online plan.",
           tradeoff:
             "Simple Start is listed at a $38/month standard price, before any promotion. This is an accounting subscription rather than a dedicated expense-management seat price, so it may be poor value if you only need receipt capture. It can make sense when you also need the books, bank reconciliation and reports.",
           url: "https://quickbooks.intuit.com/pricing/",
@@ -62,7 +63,7 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-14 sm:py-18">
-          <p className="sp-eyebrow">US price snapshot · November 7, 2026</p>
+          <p className="sp-eyebrow">US price snapshot · November 8, 2026</p>
           <h2 className="sp-title mt-4 max-w-4xl">Compare the monthly bill, not just the starting price.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
             The examples below use published standard prices. Zoho annual prices are monthly
@@ -85,15 +86,17 @@ export default function Page() {
                 <tr><td className="p-4 font-medium">Zoho Expense Standard</td><td className="p-4">$4/user monthly, or $3 annual-billing equivalent</td><td className="p-4">$20 monthly / $15 annual equivalent</td><td className="p-4">$40 monthly / $30 annual equivalent</td><td className="p-4">200 AI scans/user/month on Standard</td></tr>
                 <tr><td className="p-4 font-medium">Zoho Expense Premium</td><td className="p-4">$6/user monthly, or $5 annual-billing equivalent</td><td className="p-4">$30 monthly / $25 annual equivalent</td><td className="p-4">$60 monthly / $50 annual equivalent</td><td className="p-4">1,000 AI scans/user/month on Premium</td></tr>
                 <tr><td className="p-4 font-medium">Expensify Collect</td><td className="p-4">$5/member/month</td><td className="p-4">$25</td><td className="p-4">$50</td><td className="p-4">Confirm workspace and member billing rules</td></tr>
-                <tr><td className="p-4 font-medium">Ramp Free</td><td className="p-4">$0/user/month</td><td className="p-4">$0 software price</td><td className="p-4">$0 software price</td><td className="p-4">US business eligibility and spend/card workflow apply</td></tr>
-                <tr><td className="p-4 font-medium">QuickBooks Online Simple Start</td><td className="p-4">$38/month standard price</td><td className="p-4">$38 accounting subscription</td><td className="p-4">$38 accounting subscription</td><td className="p-4">Not priced per expense user; plan is primarily for one user plus accountant access</td></tr>
+                <tr><td className="p-4 font-medium">Ramp Free</td><td className="p-4">$0 software subscription</td><td className="p-4">$0 subscription charge</td><td className="p-4">$0 subscription charge</td><td className="p-4">Not a per-user receipt-only tool; US business eligibility and card/spend workflow apply</td></tr>
+                <tr><td className="p-4 font-medium">QuickBooks Online Simple Start</td><td className="p-4">$38/month standard price</td><td className="p-4">$38 accounting subscription</td><td className="p-4">$38 accounting subscription</td><td className="p-4">One billable user plus access for 2 accountant firm users; not priced per expense user</td></tr>
               </tbody>
             </table>
           </div>
           <p className="mt-4 max-w-4xl text-xs leading-5 text-[#6e6e73]">
             Cost models are arithmetic based on the listed rates, not vendor quotes. QuickBooks
             pricing is not multiplied by headcount because it is a different product and pricing
-            model. Confirm the current seat allowance before comparing it with team expense tools.
+            model. QuickBooks Free is a separate solo-business product; Simple Start is one billable
+            user plus access for two accountant firm users. Confirm seat allowances before comparing
+            it with team expense tools.
           </p>
           <h3 className="mt-12 text-2xl font-semibold tracking-tight">What to verify before paying</h3>
           <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
@@ -111,7 +114,7 @@ export default function Page() {
             ))}
           </ul>
           <p className="mt-6 max-w-3xl text-xs leading-5 text-[#6e6e73]">
-            Editorial note: prices were checked on November 7, 2026. StackPick compares published
+            Editorial note: prices were checked on November 8, 2026. StackPick compares published
             product information and calculated scenarios; it does not claim hands-on testing.
             Recheck official terms before purchase because plan limits and prices can change.
           </p>
