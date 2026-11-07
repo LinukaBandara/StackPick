@@ -86,7 +86,7 @@ export default function Page() {
               </tbody>
             </table>
           </div>
-          <p className="mt-5 text-xs leading-5 text-[#667085]">Research method: desk review of official pricing and plan documentation checked November 7, 2026. This is not a live publishing benchmark; test each required network and format, because automatic publishing, notifications, audio/music, collaborator permissions and analytics availability differ by platform and plan.</p>
+          <p className="mt-5 text-xs leading-5 text-[#667085]">Research method: desk review of official pricing and plan documentation checked November 7, 2026. StackPick has not performed hands-on product testing or a controlled publishing benchmark; test each required network and format, because automatic publishing, notifications, audio/music, collaborator permissions and analytics availability differ by platform and plan.</p>
         </div>
       </section>
     </ComparisonArticle>
