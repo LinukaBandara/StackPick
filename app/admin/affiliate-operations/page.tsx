@@ -52,6 +52,7 @@ export default function AffiliateOperationsPage() {
       if (!partnerResponse.ok) throw new Error(partnerData.error || "Could not load partners.");
       if (!performanceResponse.ok) throw new Error(performanceData.error || "Could not load performance.");
       setPartners(partnerData.partners || []);
+      setSoftwareOptions(partnerData.softwareProfiles || []);
       setRecords(performanceData.records || []);
     } catch (err) { setError(err instanceof Error ? err.message : "Affiliate workspace unavailable."); }
     finally { setLoading(false); }
