@@ -60,6 +60,26 @@ if (!routesBlock) {
   for (const route of sitemapRoutes) {
     if (!routeExists(route)) errors.push("Sitemap route has no matching App Router page: " + route);
   }
+
+  // Editorial last-modified dates must point to real sitemap routes and use valid ISO dates.
+  const modifiedBlock = sitemapSource.match(/const LAST_MODIFIED\\s*:\\s*Record<string,\\s*string>\\s*=\\s*\\{([\\s\\S]*?)\\};/);
+  if (!modifiedBlock) {
+    errors.push("Could not find the LAST_MODIFIED map in app/sitemap.ts.");
+  } else {
+    const entries = [...modifiedBlock[1].matchAll(/["'](\\/[^"']+)["']\\s*:\\s*["'](\\d{4}-\\d{2}-\\d{2})["']/g)]
+      .map((match) => ({ route: match[1], date: match[2] }));
+    for (const route of duplicates(entries.map((entry) => entry.route))) {
+      errors.push("Duplicate LAST_MODIFIED entry: " + route);
+    }
+    for (const { route, date } of entries) {
+      const parsed = new Date(date + "T00:00:00.000Z");
+      if (Number.isNaN(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== date) {
+        errors.push("Invalid LAST_MODIFIED date for " + route + ": " + date);
+      }
+      if (!routeExists(route)) errors.push("LAST_MODIFIED route has no matching App Router page: " + route);
+      if (!sitemapRouteSet.has(route)) errors.push("LAST_MODIFIED route is missing from the static sitemap: " + route);
+    }
+  }
 }
 
 if (errors.length) {
