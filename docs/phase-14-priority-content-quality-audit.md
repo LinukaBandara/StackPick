@@ -1572,3 +1572,12 @@ These are US-facing public plan snapshots and desk research, not live calls, hos
 ### Project-management comparison source polish follow-up
 
 Updated `app/best/clickup-vs-monday/page.tsx` — commit `37990ae`: added the formal 7 November review date and replaced generic vendor homepage destinations with direct official pricing pages. The article's current plan limits, monday 200-item account cap, ClickUp 60 MB Free storage, ClickUp Core promotional-vs-regular price, and monday three-seat paid minimum were retained after review. No further content change was needed.
+
+
+
+### P0 expense-guide consistency and freelancer accounting regional update
+
+- `app/best/track-business-expenses-without-spreadsheets/page.tsx` — commit `4e466b9`. Corrected a stale Expensify description to match current free Submit features (receipt scanning, mileage, expense reports, categories/tags and personal-card import) and separated paid Collect features (reimbursements, company-card management, approvals and QuickBooks/Xero integrations).
+- `app/best/accounting-for-freelancers/page.tsx` — commit `eae28bb`. Added a formal review date, quick answer and current US/Canada eligibility details for Wave, FreshBooks, QuickBooks Free and Zoho Books US Free; replaced generic homepages with direct plan/pricing links.
+
+The Expensify change was cross-checked against the main expense-management and expense-pricing pages so the same free-plan features are described consistently across the cluster. No live expense or accounting workflow test is claimed.
