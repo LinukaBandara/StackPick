@@ -4,7 +4,7 @@ import ComparisonArticle from "@/components/ComparisonArticle";
 export const metadata: Metadata = {
   title: "Best Antivirus & Endpoint Security for Small Business (2026)",
   description:
-    "An honest comparison of Bitdefender GravityZone, Microsoft Defender for Endpoint, Norton Small Business, and CrowdStrike - matched to how much in-house IT expertise you actually have.",
+    "Compare Bitdefender GravityZone, Microsoft Defender for Business, Norton Small Business and CrowdStrike Falcon Go by device limits, endpoint detection, renewal pricing and the IT expertise needed to respond.",
   alternates: { canonical: "/best/antivirus-endpoint-security" },
 };
 
