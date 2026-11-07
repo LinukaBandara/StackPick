@@ -1035,3 +1035,57 @@ GitHub Actions completed successfully for commit `35e86257`:
   - Content-quality inventory generation — passed and report artifact uploaded.
 
 The duplicate `quickAnswer` prop was removed in `be87d18`; subsequent content changes were included in the successful `35e86257` validation snapshot. The two prior `<img>` lint notices did not block the final lint run. No deployment was attempted; Vercel quota remains a separate constraint. Search Console query/indexing checks remain pending until a deployment/data window is available.
+
+
+## Inventory-driven article batch — scheduling, POS, backup, VPN, web and form tools (7 November 2026)
+
+Updated 13 guides after reviewing the generated content inventory:
+- `app/best/asana-vs-clickup/page.tsx`
+- `app/best/contract-management-software/page.tsx`
+- `app/best/survey-nps-software/page.tsx`
+- `app/best/automate-repetitive-small-business-tasks/page.tsx`
+- `app/best/notion-vs-clickup/page.tsx`
+- `app/best/canva-vs-adobe-express/page.tsx`
+- `app/best/employee-scheduling-software/page.tsx`
+- `app/best/free-scheduling-software/page.tsx`
+- `app/best/pos-systems/page.tsx`
+- `app/best/cloud-backup-software/page.tsx`
+- `app/best/business-vpn/page.tsx`
+- `app/best/free-website-builders/page.tsx`
+- `app/best/online-form-builder-pricing/page.tsx`
+
+Key corrections and additions:
+- Asana vs ClickUp: current Personal/Starter and Free/Core plans, seat/storage/task limits and US annual prices.
+- Contract management: corrected unsupported "affordable CLM" framing; PandaDoc's official pricing/help pages disagree on its free document cap (5/month vs 60/year), so the page explicitly tells readers to verify in-account. Concord Essentials is US$499/month annual prepaid for 5 users; ContractSafe starts at US$450/month annual prepaid. Differentiated e-signature, proposal workflow, contract repository and full CLM.
+- Survey/NPS: SurveyMonkey Free 10 questions/25 viewable responses per survey; Delighted Free 25 responses/month; Zoho Survey Free 10 questions/100 responses per survey. Added NPS calculation and response-bias guidance.
+- Automation: updated Zapier/Make/n8n billing units and limits.
+- Notion vs ClickUp: current Notion Free/Plus/Business and ClickUp Free/Core terms.
+- Canva vs Adobe Express: US plan prices and AI-credit allowances; commercial asset rights highlighted.
+- Employee scheduling: added Homebase and Sling; clarified Homebase one-location/10-employee Free, Sling 30-user Free, When I Work no-card 14-day trial and current per-user tiers, and Deputy prices.
+- Free scheduling: current Calendly, Cal.com, Setmore, Zoho Bookings, Google Calendar and Microsoft Bookings limits and eligibility.
+- POS: corrected broad contract assumptions; Square rates are split by in-person, online and manually entered payments; Toast Starter Kit eligibility/processing/hardware and Shopify POS Pro location fees are distinguished; Clover remains reseller-quote dependent.
+- Cloud backup: corrected Carbonite business storage caps (250 GB/500 GB/500 GB rather than unlimited); updated Backblaze per-computer price and IDrive free/team storage; added restore testing.
+- Business VPN: Perimeter 81 is now identified as Check Point SASE; compared Twingate's 5-user/50-resource Free tier, Cloudflare's 50-user Free tier and NordLayer's 5-seat minimum; clarified VPN vs ZTNA vs SASE.
+- Free website builders: current Wix, WordPress.com, Framer and Webflow free-tier restrictions, including branding, storage, form, page and commercial-use constraints.
+- Online form builder pricing: refreshed November 7 date, Typeform base vs maximum response caps, Fillout/Jotform/Typeform plan comparison and annual upfront billing caveat.
+
+Primary sources are linked on each guide page and were checked against provider pricing/help pages on November 7, 2026.
+
+**Commits:** Asana/ClickUp `b78f5`; contract management `d129e`; NPS `2aa`; automation `2c4`; Notion/ClickUp `c11`; Canva/Adobe `ef4`; employee scheduling `a6e`, Homebase/Sling `8d0`, When I Work `d77`; free scheduling `d5b`; POS `a6e6ed9`; cloud backup `a3eb417`; business VPN `9ad37dd` and syntax fix `a203907`; free website builders `9fceaf7`; form pricing `e02b899`.
+
+### Updated inventory snapshot
+
+The SEO/content workflow for `a2039072` passed and generated artifact `13581291453` (109 content pages, 7 redirects). Scanner-detected missing fields:
+- Review-date component prop: 71/109
+- Quick-answer block: 55/109
+- Pricing-note prop: 4/109
+- Country caveat pattern: 69/109
+- Testing-disclosure pattern: 87/109
+
+These are source-scanner flags, not automatic content defects: custom templates may show review dates/quick answers elsewhere, and not every page needs a pricing note or country caveat. The inventory is used to prioritize, not to mass-insert boilerplate.
+
+Top remaining risk cluster by combined missing-evidence flags and low source-word count includes applicant tracking, HR software, expense management, business-software quantity, Notion alternatives, endpoint security, inventory management, business VoIP, social scheduling, and cloud storage.
+
+### Validation
+
+For code snapshot `a2039072`, StackPick CI run `42389860220` passed `npm ci`, production dependency audit, internal links, ESLint and production build. SEO/content run `42389855802` passed script syntax, route/sitemap audit, internal links and inventory generation. Production dependency audit reports 0 vulnerabilities; 6 moderate development-dependency advisories remain. No deployment was attempted.
