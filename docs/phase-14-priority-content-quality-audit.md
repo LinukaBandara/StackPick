@@ -1496,3 +1496,22 @@ Two additional alternatives pages received formal review dates, quick answers, d
 - `app/best/asana-alternatives/page.tsx` — commit `ccf2e46`. Added current US free-tier distinctions for ClickUp (60 MB storage, unlimited tasks/free members), Trello (10 collaborators/10 boards), monday Work Management (2 seats/3 boards/3 Docs) and Notion (solo vs multi-member block limits and 5 MB upload cap); replaced generic homepages with official pricing/help links.
 
 The following pages were screened and retained without further edits because they already had a 7 November review date, current plan limits, direct pricing sources and migration/selection guidance: `slack-alternatives-small-teams`, `trello-alternatives`, and `notion-alternatives-small-businesses`. No hands-on migration or usability benchmark is claimed. No build, lint, type-check, CI or deployment was run.
+
+
+
+### P0 expense-management plan correction (7 November 2026)
+
+Updated two expense-management pages after rechecking the current Expensify pricing page:
+
+- `app/best/expense-management-software/page.tsx` — commit `c3a7849`. Corrected the outdated “Personal Free” feature description. Expensify's current Submit plan is free and includes receipt scanning, mileage tracking, expense reports, categories/tags and personal-card import. Reimbursements, corporate-card management, approvals and QuickBooks/Xero integrations are listed under Collect at US$5 per unique member/month.
+- `app/best/expense-management-software-pricing/page.tsx` — commit `e6af893`. Updated the pricing check date from 18 October to 7 November 2026 and corrected the Expensify Free Submit/Collect distinction. The comparison's Zoho Expense quotas/prices, QuickBooks US$38 standard Simple Start price and Ramp US eligibility gate were rechecked against provider pages.
+
+Primary sources:
+- Expensify pricing and feature comparison: https://www.expensify.com/pricing
+- Expensify billing definitions and localized currencies: https://help.expensify.com/articles/new-expensify/billing-and-subscriptions/explore-plans-subscriptions-and-pricing/Understand-Expensify-Pricing
+- Zoho Expense US plan, user/scan limits and pricing: https://www.zoho.com/us/expense/pricing/
+- QuickBooks US pricing: https://quickbooks.intuit.com/pricing/
+- Ramp Free pricing: https://ramp.com/pricing
+- Ramp US qualification: https://support.ramp.com/applying-and-signing-up-for-ramp-us-based
+
+The Expensify correction matters because the old copy incorrectly placed categories/tags behind a paid workspace. The current vendor page places those features in free Submit, while approvals/reimbursements/card-management/accounting integrations are in paid Collect. No live expense workflow or reimbursement test is claimed. No build, lint, type-check, CI or deployment was run.
