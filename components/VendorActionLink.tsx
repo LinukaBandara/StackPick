@@ -23,6 +23,9 @@ export default function VendorActionLink({
         target="_blank"
         rel={partner ? "sponsored nofollow noopener noreferrer" : "noopener noreferrer"}
         className={className}
+        data-vendor-outbound="true"
+        data-software-slug={softwareSlug}
+        data-vendor-action="website"
         data-affiliate={partner ? "true" : undefined}
       >
         {children}
