@@ -13,8 +13,10 @@ export default function CrmForFreelancersPage() {
     <ComparisonArticle
       title="Best CRM for Freelancers"
       slug="crm-for-freelancers"
+      reviewedOn="2026-11-07"
       intro="A freelancer usually does not need a giant sales operation. You need to remember who contacted you, what you promised, when to follow up, and which leads are actually worth pursuing. We focus on that smaller job: low setup, useful free access, clear client tracking, and a sensible upgrade path."
-      pricingNote="Plan limits were checked against official provider pages on October 14, 2026. HubSpot currently lists free tools for up to 2 users and 1,000 contacts; Zoho CRM lists a free edition for up to 3 users. Pipedrive offers a time-limited trial rather than a permanent free plan. Notion’s free plan is generous for a solo workspace, but it is a DIY database rather than a dedicated sales CRM. Recheck provider terms before signing up, because feature limits and offers can change."
+      quickAnswer="For a solo freelancer, HubSpot Free is the simplest starting point if two users and 1,000 contacts are enough. Zoho CRM Free supports up to three users and adds core lead, deal and follow-up tools. Pipedrive is a 14-day trial, not a permanent free plan; Notion works as a DIY tracker but needs ongoing setup. Choose based on the number of people, follow-up workflow and features you actually need."
+      pricingNote="Core free-plan limits and trial status were rechecked against official provider pages on 7 November 2026. The HubSpot and Zoho pages used here display US-dollar pricing; currency, tax, payment methods and paid-plan prices can differ by billing country. HubSpot lists Free for up to 2 users and 1,000 contacts; Zoho CRM Free supports up to 3 users; Pipedrive offers a 14-day trial rather than a permanent free plan. Notion is a DIY database, not a dedicated sales CRM. Confirm the edition and checkout terms for your country before signing up."
       tools={[
         {
           name: "HubSpot CRM",
