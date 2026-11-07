@@ -4,7 +4,7 @@ This manual evidence pass covers the eight pages flagged by the Phase 5 content-
 
 | Guide | Editorial decision | Evidence added | Remaining manual check |
 |---|---|---|---|
-| Invoice clients as a freelancer | Keep and improve | FreshBooks client caps; Wave US/Canada payment fee and payout differences; Zoho Invoice India-only limits | Verify local tax/invoice requirements and supported payment gateways for each reader market |
+| Invoice clients as a freelancer | Keep and improve | FreshBooks Lite/Plus/Premium client caps; Wave US/Canada payment fee and payout differences; Zoho Invoice India-only limits | Verify local tax/invoice requirements and supported payment gateways for each reader market |
 | Manage customer leads as a freelancer | Keep and improve | HubSpot Free users/contact caps; Pipedrive plan/add-on structure; Trello collaborator/board/automation caps | Check whether each page tool is being described as a CRM or only as a lightweight pipeline |
 | Free vs paid business software | Keep and improve | HubSpot, Trello, Notion and ClickUp free-plan constraints | Make the decision depend on team size, storage, automation and export needs, not feature-count alone |
 | Manage client projects without a full-time team | Keep and improve | ClickUp storage/member/task limits; Trello workspace caps; Notion file/history/block limits | Add a realistic solo-owner workflow and explain when a spreadsheet or shared board is enough |
@@ -16,7 +16,7 @@ This manual evidence pass covers the eight pages flagged by the Phase 5 content-
 ## Evidence details and source URLs
 
 ### 1. Invoice clients as a freelancer
-- FreshBooks: Lite lists 5 billable clients, Plus 50, Premium and Select unlimited. Its page currently displays promotional offers alongside standard list prices; do not present the promotional price as the standard price. https://www.freshbooks.com/pricing
+- FreshBooks: Lite lists 5 billable clients, Plus 50 and Premium unlimited. Its page currently displays promotional offers alongside standard list prices; do not present the promotional price as the standard price. https://www.freshbooks.com/pricing
 - Wave: its payment fee and payout documentation distinguishes US and Canadian processing availability and timing. https://www.waveapps.com/pricing and https://support.waveapps.com/hc/en-us/articles/218323823-Online-payments-processing-fees-and-timelines
 - Zoho Invoice: the linked free plan page is specifically for Indian businesses and lists 2 users, 3 projects and 500 invoices per year. https://www.zoho.com/in/invoice/pricing/
 
