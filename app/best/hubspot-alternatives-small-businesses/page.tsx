@@ -12,6 +12,7 @@ export default function Page() {
     <ComparisonArticle
       title="Best HubSpot Alternatives for Small Businesses"
       slug="hubspot-alternatives-small-businesses"
+      quickAnswer="If HubSpot’s free user or contact limits are the problem, compare Zoho CRM and Freshsales, which publish free plans for up to three users. Choose Pipedrive when you want a focused sales pipeline and are ready for a paid per-seat plan. Treat Bitrix24’s free user limit as unresolved until the provider clarifies its conflicting pricing-page statements."
       intro="HubSpot is not the right fit for every team. You may want a different workflow, a smaller feature set, more users on a free plan or a CRM that fits a wider business workspace. These alternatives solve different problems, so compare them against the reason you are considering a switch."
       pricingNote="Official provider plan pages checked on November 7, 2026. Bitrix24's pricing table shows Free for 1–2 users, while the same page FAQ says the free plan supports unlimited users; this conflict is flagged rather than treated as a settled limit. Zoho CRM and Freshsales list free plans for up to 3 users; Bitrix24 currently positions its free plan for 1–2 users; Pipedrive provides a 14-day trial rather than a permanent free plan. Verify current terms and migration options before moving real customer data."
       tools={[
