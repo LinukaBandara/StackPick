@@ -21,14 +21,14 @@ Do not add guessed, shortened, or generic affiliate URLs. Do not label a link as
 
 ## Measurement
 
-Use GA4's `vendor_outbound_click` event to measure outbound intent on software profiles. It covers the primary vendor website action, official pricing actions and official-source links. Its parameters are:
+Use GA4's `vendor_outbound_click` event to measure outbound intent on software profiles. It covers the primary vendor website action and official pricing actions on software profiles, pricing actions in the software catalogue, and official-site actions in comparison guides. Its parameters are:
 
 - `link_url`
 - `link_domain`
 - `link_text`
 - `page_path`
 - `software_slug`
-- `vendor_action` (`website` or `pricing`)
+- `vendor_action` (`website`, `pricing` or `comparison-website`)
 
 When the destination is a verified affiliate link, the same click also emits the more specific `affiliate_click` event with the same parameters. Ordinary official vendor links never emit `affiliate_click`.
 
@@ -73,7 +73,7 @@ Useful reporting dimensions:
 ## Phase 6 delivery sequence
 
 1. Affiliate link registry and disclosure-aware vendor CTA — implemented.
-2. Consent-aware vendor outbound measurement — implemented for profile website and pricing links; affiliate clicks retain a separate event.
+2. Consent-aware vendor outbound measurement — implemented for software profile, catalogue pricing and comparison-guide vendor links; affiliate clicks retain a separate event.
 3. Build an approved-programme register and apply to suitable programmes — applications are outside this implementation branch.
 4. Add only verified links after approval.
 5. Validate GA4 event receipt in DebugView after analytics consent, then review clicks and confirmed revenue monthly.
