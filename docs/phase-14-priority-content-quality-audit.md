@@ -1537,3 +1537,32 @@ These were editorial consistency corrections; no vendor price or capability was 
 - `app/best/time-tracking-software/page.tsx` — commit `f02f959`. Added the 7 November review date, refreshed the official plan-check date, replaced generic product homepages with direct pricing pages, and removed an unsupported subjective claim about Clockify's usability in favor of a recommendation to test the actual workflow.
 
 The other inspected workflow guides—`how-much-business-software-do-you-need`, `simple-small-business-software-stack`, and `manage-client-projects-without-full-time-team`—already had dated plan snapshots, quick answers and practical decision criteria, so they were retained without redundant copy changes. No controlled time-tracking usability test is claimed. No build, lint, type-check, CI or deployment was run.
+
+
+
+### P1 hosting, business email and video-conferencing plan accuracy batch (7 November 2026)
+
+Three category guides received formal review dates, clearer plan/region distinctions and direct vendor plan sources:
+
+- `app/best/web-hosting/page.tsx` — commit `209210f`. Added a 7 November review date, explicit comparison factors for introductory vs renewal pricing, billing length, data-center region, backup, CDN, resources, overages and support; replaced generic homepages with provider pricing pages.
+- `app/best/business-email-hosting/page.tsx` — commit `e96e667`. Added a review date and clarified that Zoho Mail's limited free business tier is region/data-center dependent and may omit IMAP/POP/ActiveSync; Proton's free personal mailbox is not a custom-domain business plan. Replaced generic homepages with business pricing pages.
+- `app/best/video-conferencing/page.tsx` — commit `fe1e935`. Added a 7 November review date and verified US plan snapshots: Zoom Basic 100 participants/40 minutes, Pro US$14.16/user/month annually; Google Meet personal 100 participants/60-minute group calls, Workspace Starter/Standard/Plus US$7/$14/$22 with 100/150/500 participants; Teams Free 100 participants/60 minutes and Essentials US$4/user/month annually with 300 participants/30-hour meetings. Clarified Whereby's Meetings vs Embedded products and linked official sources.
+
+Primary sources:
+- Zoom pricing: https://zoom.us/pricing
+- Google Meet: https://workspace.google.com/products/meet/
+- Google Workspace pricing: https://workspace.google.com/pricing
+- Microsoft Teams Free: https://www.microsoft.com/en-us/microsoft-teams/free-video-conferencing/
+- Teams Essentials: https://www.microsoft.com/en-us/microsoft-teams/essentials
+- Whereby Meetings/Embedded pricing: https://whereby.com/information/pricing
+- Zoho Mail pricing: https://www.zoho.com/mail/zohomail-pricing.html
+- Proton Mail for Business: https://proton.me/business/mail/pricing
+- Google Workspace business pricing: https://workspace.google.com/pricing
+- Microsoft 365 business plans: https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products
+- Hostinger: https://www.hostinger.com/web-hosting
+- SiteGround: https://www.siteground.com/web-hosting.htm
+- Bluehost: https://www.bluehost.com/hosting/shared
+- Cloudways: https://www.cloudways.com/en/pricing.php
+- Kinsta: https://kinsta.com/wordpress-hosting/pricing/
+
+These are US-facing public plan snapshots and desk research, not live calls, hosting performance tests or mailbox migration tests. Local currency, taxes, promotions, feature eligibility and renewals may differ. No build, lint, type-check, CI or deployment was run.
