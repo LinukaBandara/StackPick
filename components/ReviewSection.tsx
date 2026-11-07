@@ -20,19 +20,19 @@ export default function ReviewSection({ softwareSlug, softwareName }: { software
   const [busy, setBusy] = useState(false);
 
   async function refresh() {
-    const [reviewsResponse, sessionResponse] = await Promise.all([
-      fetch(`/api/reviews?slug=${encodeURIComponent(softwareSlug)}`, { cache: "no-store" }),
-      fetch("/api/auth/session", { cache: "no-store" }),
-    ]);
-    if (reviewsResponse.ok) setData(await reviewsResponse.json());
+    const sessionResponse = await fetch("/api/auth/session", { cache: "no-store" });
     if (sessionResponse.ok) {
       const session = await sessionResponse.json() as SessionData;
       setSignedIn(Boolean(session.user));
       if (session.user?.displayName) setReviewerName(session.user.displayName);
     }
+    const reviewsResponse = await fetch(`/api/reviews?slug=${encodeURIComponent(softwareSlug)}`, { cache: "no-store" });
+    if (reviewsResponse.ok) setData(await reviewsResponse.json());
     setLoading(false);
   }
 
+  // refresh is recreated on render; the effect only needs to rerun when the product changes.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { void refresh(); }, [softwareSlug]);
 
   async function submit(event: FormEvent<HTMLFormElement>) {
