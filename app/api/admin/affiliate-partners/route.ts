@@ -21,11 +21,25 @@ function validate(input: Record<string, unknown>) {
   if (clean(input.tracking_url, 1000) && !trackingUrl) return { error: "Tracking URL must be a valid HTTPS URL." };
   if (clean(input.programme_url, 1000) && !programmeUrl) return { error: "Programme URL must be a valid HTTPS URL." };
   if (clean(input.terms_url, 1000) && !termsUrl) return { error: "Terms URL must be a valid HTTPS URL." };
-  const approvalDate = clean(input.approval_date, 10) || null;
-  const verifiedDate = clean(input.last_verified_at, 10) || null;
+  const dateValue = (value: unknown) => {
+    const raw = clean(value, 10);
+    if (!raw) return null;
+    const parsed = new Date(`${raw}T00:00:00.000Z`);
+    return /^\\d{4}-\\d{2}-\\d{2}$/.test(raw) && !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === raw ? raw : null;
+  };
+  const applicationDate = dateValue(input.application_date);
+  const approvalDate = dateValue(input.approval_date);
+  const verifiedDate = dateValue(input.last_verified_at);
+  if ((input.application_date && !applicationDate) || (input.approval_date && !approvalDate) || (input.last_verified_at && !verifiedDate)) return { error: "Enter valid application, approval and verification dates." };
   const disclosure = clean(input.disclosure, 500);
   if (status === "active" && (!trackingUrl || !approvalDate || !verifiedDate || disclosure.length < 10)) {
     return { error: "To activate a partner, add its HTTPS tracking URL, approval date, verification date and disclosure." };
+  }
+  if (status === "active" && verifiedDate) {
+    const verifiedAt = Date.parse(`${verifiedDate}T00:00:00.000Z`);
+    const today = new Date(); today.setUTCHours(0, 0, 0, 0);
+    const ageDays = Math.floor((today.getTime() - verifiedAt) / 86400000);
+    if (ageDays < 0 || ageDays > 90) return { error: "Recheck the tracking URL and enter a verification date within the last 90 days before activating." };
   }
   const cookieDays = input.cookie_window_days === "" || input.cookie_window_days == null ? null : Number(input.cookie_window_days);
   if (cookieDays !== null && (!Number.isInteger(cookieDays) || cookieDays < 0 || cookieDays > 3650)) return { error: "Cookie window must be 0–3650 days." };
@@ -33,7 +47,7 @@ function validate(input: Record<string, unknown>) {
     software_slug: softwareSlug, programme_name: programmeName, status,
     programme_url: programmeUrl, tracking_url: trackingUrl, terms_url: termsUrl,
     commission_summary: clean(input.commission_summary, 500),
-    cookie_window_days: cookieDays, disclosure, application_date: clean(input.application_date, 10) || null,
+    cookie_window_days: cookieDays, disclosure, application_date: applicationDate,
     approval_date: approvalDate, last_verified_at: verifiedDate, notes: clean(input.notes, 4000),
   } };
 }
