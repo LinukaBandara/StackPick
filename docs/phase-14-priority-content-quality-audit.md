@@ -1382,3 +1382,21 @@ Primary sources:
 - Notion pricing and block limits: https://www.notion.com/pricing and https://www.notion.com/help/understanding-block-usage
 
 The ClickUp vs monday and Asana vs ClickUp pages already contained the other current free-tier facts and source dates from the preceding update; this pass tightened paid-price basis and minimum-seat math rather than rewriting their methodology. No product was hands-on tested. No build, lint, type-check, CI or deployment was run for this comparison follow-up.
+
+
+
+### P0 AI customer-support billing clarification (7 November 2026)
+
+Updated `app/best/ai-customer-support-tools/page.tsx` — commit `ccaa472`:
+- Replaced the Gorgias placeholder pricing note with the vendor's current billing model: helpdesk is charged by ticket volume rather than agent seats; AI Agent adds an outcome-based charge when it resolves a conversation without human handoff.
+- Added the vendor-published public reference of US$1.00 per automated interaction on monthly billing or US$0.90 on annual billing, plan-dependent included allowances, and US$1.50 overage per interaction.
+- Clarified that a fully automated resolution may incur both a helpdesk ticket fee and an AI automation fee, so the two billing units must not be conflated.
+- Linked the article's Gorgias entry directly to the official billing explanation.
+
+Primary sources:
+- Gorgias billing definitions and fee triggers: https://helpcenter.gorgias.com/en-US/how-youre-billed-for-using-gorgias
+- Gorgias published plan/AI usage overview: https://www.gorgias.com/llm-info
+- Tidio free and Lyro quotas: https://www.tidio.com/pricing/ and https://help.tidio.com/hc/en-us/articles/13924459295900-The-Lyro-AI-agent-limit
+- Zendesk current public seat and automated-resolution pricing: https://www.zendesk.com/pricing/
+
+Tidio's existing one-time 50 Lyro conversation quota and separate 50 human-handled conversations/month wording was retained because the official pricing/help pages distinguish these two quotas. No controlled accuracy test or live account billing test is claimed. No build, lint, type-check, CI or deployment was run for this correction.
