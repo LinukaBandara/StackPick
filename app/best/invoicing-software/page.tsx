@@ -13,6 +13,7 @@ export default function InvoicingSoftwarePage() {
     <ComparisonArticle
       title="Best Invoicing Software for Freelancers"
       slug="invoicing-software"
+      reviewedOn="2026-11-07"
       intro="For a US freelancer, the right invoicing tool should make it easy to send a professional invoice, remind clients about overdue balances, accept the payment methods clients prefer, and export clean records for bookkeeping. A free plan can be enough when invoices are simple; recurring billing, time tracking, accounting reports or higher card-payment volume can change the calculation. This comparison separates free invoice creation from the cost of getting paid."
       pricingNote="US plan and fee references checked 7 November 2026; these are not global offers. Wave account eligibility is limited to businesses located in the US and Canada. Payment gateways, card rates, payout currencies, tax handling and local invoice rules vary by business country. Confirm the exact product edition and payment processor terms shown for your country before moving live client billing. A software subscription fee and a payment-processing fee are separate costs."
       tools={[
