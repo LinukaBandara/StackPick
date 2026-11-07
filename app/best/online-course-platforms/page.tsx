@@ -13,6 +13,7 @@ export default function Page() {
     <ComparisonArticle
       title="Best Online Course Platform for Creators & Small Business"
       slug="online-course-platforms"
+      quickAnswer="Choose Teachable for a straightforward course-selling setup, Thinkific for course-focused customization, and LearnWorlds when interactive learning and branded delivery matter. Kajabi suits creators who want an established all-in-one marketing and course suite. Systeme.io is worth comparing when budget and bundled funnels, email and digital products matter more than specialist course features. Include transaction fees in the total cost."
       intro="The core question isn't which platform has more features - it's whether you want a focused tool that sells courses well and leaves marketing to a separate stack, or an all-in-one platform that replaces your email tool, funnel builder, and website too. Picking the wrong philosophy means either paying for features you never touch, or duct-taping five tools together."
       pricingNote="Transaction fees are the hidden variable here - a platform with a lower monthly price can cost more overall once per-sale fees are factored in at real volume. Compare both the subscription and the transaction fee, not just one."
       tools={[
