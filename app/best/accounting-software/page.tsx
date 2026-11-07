@@ -15,15 +15,15 @@ export default function Page() {
       slug="accounting-software"
       reviewedOn="2026-11-07"
       intro="Start with the person who prepares your accounts: a platform they already support can make month-end and tax-time handoffs simpler. Then compare the work your business actually does—customer invoices, supplier bills, bank reconciliation, expense review and management reports. Local bank feeds, tax rules, payroll coverage and data export can matter more than a long feature list."
-      quickAnswer="There is no universal best accounting platform. If your accountant already works in QuickBooks or Xero, start there and compare local bank feeds, tax and payroll support. Zoho Books can be a strong low-cost option, but its free-plan limits and revenue threshold vary by country. Wave is only available to eligible US and Canadian businesses. Choose GnuCash if you prefer desktop software and can manage backups and accountant handoffs."
+      quickAnswer="There is no universal best accounting platform. QuickBooks Online now has a very limited US Free plan (2 invoices/month, 1 bank connection and 1 user); Xero has no permanent free tier. Zoho Books US Free allows 1 user plus 1 accountant and up to 1,000 invoices/expenses per year if annual revenue stays below US$50,000. Wave is only for eligible US and Canadian businesses. Choose around your accountant, local bank feeds, tax support and export needs."
       pricingNote="Provider plan details and regional availability were checked against official sources on 7 November 2026. Prices, included seats, free-plan eligibility and tax features vary by country. Confirm current subscription costs, bank-feed availability, local tax and payroll support, accountant access and export options before moving live records. US prices and limits are not global offers."
       tools={[
         {
           name: "QuickBooks Online",
           bestFor: "Small businesses whose accountant already uses QuickBooks, especially in the US",
-          freeOption: "No permanent free accounting plan; check the current trial and country-specific offer.",
-          tradeoff: "Its established accountant and bookkeeper ecosystem can simplify collaboration when your finance professional already works in it. Check plan limits, extra-user costs and local tax or payroll coverage before choosing.",
-          url: "https://quickbooks.intuit.com/",
+          freeOption: "QuickBooks Online Free is now listed at $0/month in the US and the official signup page says no credit card is required. It includes 1 user, no accountant access, 2 invoices/month and 1 connected bank. Eligible users who enable QuickBooks Payments may have an invoice-limit exception; confirm the terms. The paid-plan trial is a separate offer.",
+          tradeoff: "The new Free plan is too limited for many active businesses: two invoices monthly, one bank connection and no accountant access. Its established accountant/bookkeeper ecosystem can still simplify collaboration on paid plans when your finance professional already works in it. Check extra-user costs and local tax or payroll coverage.",
+          url: "https://quickbooks.intuit.com/pricing/",
         },
         {
           name: "Xero",
