@@ -13,6 +13,7 @@ export default function MultiCurrencyInvoicingPage() {
     <ComparisonArticle
       title="Best Multi-Currency Invoicing Software"
       slug="multi-currency-invoicing"
+      quickAnswer="If you need multi-currency bookkeeping and reconciliation, compare QuickBooks Online Essentials with Xero Established and ask your accountant which they support. Zoho Books may be a lower-cost fit if the edition in your country supports the currencies and accounting features you need. FreshBooks suits service businesses prioritising client billing; Stripe is a payment tool, not a full accounting replacement."
       intro="If clients pay in USD, EUR, GBP or another currency, the right tool should do more than print a different currency symbol. Check whether it remembers a currency for each customer, converts transactions into your accounting currency, records exchange-rate differences, supports your payment method and exports records your accountant can reconcile. This guide compares tools for US-based freelancers and small businesses billing international clients; country availability and features can differ."
       pricingNote="Official vendor pages were checked on October 18, 2026. Prices below are standard US list prices where clearly published, before tax, payment-processing charges and optional add-ons; introductory promotions can make the first months look much cheaper. Currency support can be plan- and country-specific, so confirm the exact plan and supported currency list before migrating live invoices."
       tools={[
