@@ -1445,3 +1445,29 @@ Updated `app/best/free-accounting-software/page.tsx` — commit `d44abd3`:
 Sources: Wave account eligibility https://support.waveapps.com/hc/en-us/articles/32449161224852-Create-a-Wave-account; Wave free vs paid https://support.waveapps.com/hc/en-us/articles/208621296-Is-Wave-free; Zoho Books US pricing https://www.zoho.com/us/books/pricing/.
 
 The comparison was not presented as tax advice or a live accounting workflow test. No build, lint, type-check, CI or deployment was run.
+
+
+
+### P1 alternatives-page source and regional-accuracy batch (7 November 2026)
+
+Four alternatives pages received dated review markers, decision-oriented quick answers, country/plan qualifications and direct vendor pricing/plan links:
+
+- `app/best/salesforce-alternatives-small-businesses/page.tsx` — commit `c26f569`. Added current US-facing free-plan comparison: HubSpot Free up to 2 users/1,000 contacts, Zoho CRM Free up to 3 users, Freshsales Free up to 3 users, and Pipedrive's 14-day trial vs no permanent free tier. Replaced generic vendor homepages with pricing pages.
+- `app/best/quickbooks-alternatives/page.tsx` — commit `123129e`. Added a US-specific Zoho Books Free eligibility summary (1 user + 1 accountant, 1,000 invoices and expenses/year, US$50,000 annual-revenue threshold) and Wave's US/Canada business-location restriction. Added direct pricing and eligibility sources for all alternatives.
+- `app/best/freshbooks-alternatives/page.tsx` — commit `91807e2`. Added regional decision guidance and the same Zoho Books/Wave eligibility caveats; replaced homepage-only links with pricing pages.
+- `app/best/calendly-alternatives/page.tsx` — commit `4279ca8`. Added a workflow-based short answer distinguishing personal/Workspace calendar booking from service-business scheduling; clarified Microsoft Bookings license eligibility and separate staff/calendar/payment/SMS limits; replaced generic homepages with official plan/help pages.
+
+Primary sources:
+- HubSpot Free: https://www.hubspot.com/pricing/crm?selectedPackage=free
+- Zoho CRM US: https://www.zoho.com/en-us/crm/zohocrm-pricing.html?price=FREE
+- Zoho CRM Free specifications: https://help.zoho.com/portal/en/kb/crm/crm-reference/introduction-to-zoho-crm/articles/specifications-zoho-crm
+- Zoho Books US: https://www.zoho.com/us/books/pricing/
+- Wave account eligibility: https://support.waveapps.com/hc/en-us/articles/32449161224852-Create-a-Wave-account
+- Pipedrive: https://www.pipedrive.com/en/pricing
+- Freshsales: https://www.freshworks.com/crm/pricing-compare/
+- Google appointment schedules: https://support.google.com/calendar/answer/10729749
+- Microsoft Bookings: https://www.microsoft.com/microsoft-365/business/scheduling-and-booking-app
+- Zoho Bookings: https://www.zoho.com/bookings/plan-comparison.html
+- SimplyBook.me: https://simplybook.me/en/pricing
+
+The accounting alternatives remain desk research, not tax advice or a live migration test. The booking comparison remains desk research, not a live booking/notification/payment test. No build, lint, type-check, CI or deployment was run.
