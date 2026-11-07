@@ -10,6 +10,7 @@ const ROUTES = [
   "/comparisons",
   "/guides",
   "/software",
+  "/for-vendors",
   "/best/invoicing-software",
   "/best/multi-currency-invoicing",
   "/best/accounting-software",
