@@ -24,13 +24,13 @@ export default function Page() {
       slug="free-project-management-software"
       quickAnswer="For simple boards and small projects, Trello Free is a strong starting point. Asana Personal is limited to two users, while ClickUp Free offers unlimited free members but only 60 MB of storage. monday.com Free is limited to two seats, three boards and 200 items. Compare the limits that affect your actual workflow—especially files, seats and automation—before migrating."
       intro="A free project management tool is only useful if it stays usable after the first week. Freelancers and small teams should focus on real limits — seats, projects, views, automation, storage and export — rather than feature lists. This comparison helps you see where the free plan starts to become restrictive."
-      pricingNote="Free-plan limits checked November 7, 2026 against official US-facing pricing and help pages. These are plan snapshots, not guarantees of identical pricing or feature availability in every country. A permanent free plan is different from a time-limited trial. Before importing active projects, test the exact number of projects, collaborators, file storage, reminders and views you need. Sources: Trello https://trello.com/en/pricing; ClickUp https://clickup.com/pricing; Asana https://asana.com/pricing; monday.com https://monday.com/pricing and https://support.monday.com/hc/en-us/articles/360010487220-Understanding-the-Free-Plan."
+      pricingNote="Free-plan limits checked November 8, 2026 against official US-facing pricing and help pages. These are plan snapshots, not guarantees of identical pricing or feature availability in every country. A permanent free plan is different from a time-limited trial. Before importing active projects, test the exact number of projects, collaborators, file storage, reminders and views you need. Sources: Trello https://trello.com/en/pricing; ClickUp https://clickup.com/pricing and https://help.clickup.com/hc/en-us/articles/42972527662359-New-plans-and-pricing-options; Asana https://asana.com/pricing and https://help.asana.com/s/article/asana-personal-plan-details; monday.com https://monday.com/pricing and https://support.monday.com/hc/en-us/articles/360010487220-Understanding-the-Free-Plan."
       tools={[
         {
           name: "Trello",
           bestFor: "Simple visual task tracking with clear stages",
           freeOption:
-            "Free: up to 10 collaborators and 10 boards per Workspace, unlimited cards, 250 Workspace command runs/month and a 10 MB per-file attachment limit. These are Workspace limits, not per-user allowances.",
+            "Free: up to 10 collaborators and 10 boards per Workspace, unlimited cards, 250 Workspace command runs/month and a 10 MB per-file attachment limit. Standard starts at US$5/user/month billed annually (US$6 monthly); Premium starts at US$10/user/month billed annually (US$12.50 monthly). These are Workspace limits, not per-user allowances.",
           tradeoff:
             "A visual board is quick to learn and easy to explain to clients. Separate boards can make it harder to see competing deadlines across clients, and complex dependencies or workload reporting may need another approach or a paid plan.",
           url: "https://trello.com/",
@@ -48,7 +48,7 @@ export default function Page() {
           name: "Asana",
           bestFor: "Structured projects, milestones and clear task ownership",
           freeOption:
-            "Personal is free forever for up to 2 users, with unlimited tasks and projects, List/Board/Calendar views and a 100 MB per-file limit. Starter is displayed at US$10.99/user/month billed annually on the US-facing page; paid seat minimums and local prices should be checked at checkout.",
+            "Personal is free forever for up to 2 users per project and team, with unlimited tasks and projects, List/Board/Calendar views, 100+ integrations and a 100 MB per-file limit. Starter is US$10.99/user/month billed annually or US$13.49 monthly; it removes the two-user cap and adds Timeline/Gantt, dashboards, forms and unlimited automations.",
           tradeoff:
             "Structured tasks and ownership can help a team coordinate. Check the current free-tier limits for collaborators, views, reporting and automation before building your process around them.",
           url: "https://asana.com/",
