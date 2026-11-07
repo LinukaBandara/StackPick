@@ -622,3 +622,48 @@ Primary sources:
 **Commits:** comparison guide `868ee80`; small-business AI automation guide `18ce294`.
 
 This is a source-backed editorial update, not a complete test of every billing edge case. The Zapier Next Gen change is future-dated relative to this check and must be rechecked after December 1, 2026. No local build, lint, typecheck or CI run has passed for these edits.
+
+
+## Fourth article-edit batch — free/no-card tools (7 November 2026)
+
+Updated four guides:
+- `app/best/free-crm-without-credit-card/page.tsx`
+- `app/best/free-project-management-without-credit-card/page.tsx`
+- `app/best/free-invoicing-without-credit-card/page.tsx`
+- `app/best/free-business-tools-for-freelancers/page.tsx`
+
+### Verified no-card claims
+- **HubSpot Free CRM:** provider explicitly says no credit card required, no expiry, up to 2 users and 1,000 contacts; the current free account also caps other standard object types at 1,000 records each.
+- **Zoho CRM Free:** the US pricing page explicitly says no credit card required and forever free for up to 3 users.
+- **Asana Personal:** official signup page explicitly says no credit card required; Personal is free forever for 2 users, with unlimited tasks/projects.
+- **ClickUp Free Forever:** official pricing page explicitly says no credit card required; includes unlimited tasks/subtasks and unlimited free members, with 60 MB storage.
+- **Notion Free:** Notion says no time limit or credit-card information for individual use; additional members are subject to collaboration limits.
+- **Invoice Ninja Free:** official pricing page explicitly says no credit card required; 5 clients and unlimited invoices.
+
+### Other free tiers — limits or regional caveats made clearer
+- **Trello Free:** up to 10 collaborators and 10 open boards per Workspace, unlimited cards and 250 Workspace command runs/month. The pricing page does not explicitly establish no-card registration, so the article directs readers to verify the live signup flow.
+- **Bitrix24 Free:** current public pricing page lists Free for 1–2 users and 5 GB storage; the guide does not make an unsupported no-card claim.
+- **Zoho Invoice:** the US edition is advertised as forever free, but the cited pricing page does not establish a universal card requirement or worldwide availability; the article says to verify local edition and signup.
+- **Wave:** account creation and invoicing are for businesses located in the US and Canada. It is not described as a global free invoicing option.
+- **Square Invoices:** the cited Free plan is US-specific, has no monthly subscription fee, and still charges payment-processing fees. The page does not establish no-card registration, so this remains a live-signup check.
+- **Calendly Free:** one event type, one calendar connection and one-on-one scheduling. The page does not explicitly confirm a no-card signup for every region.
+
+All four guides now have a dated November 7, 2026 plan note and a concise quick answer. The copy distinguishes verified no-card claims from free-plan claims where the card requirement was not explicit; it does not imply every listed vendor is guaranteed to accept no-card registration.
+
+Primary sources:
+- HubSpot Free CRM: https://www.hubspot.com/pricing/crm?selectedPackage=free
+- Zoho CRM Free: https://www.zoho.com/en-us/crm/zohocrm-pricing.html?price=FREE
+- Bitrix24 pricing/help: https://www.bitrix24.com/prices/ and https://helpdesk.bitrix24.com/open/25990955/
+- Trello pricing: https://trello.com/en/pricing
+- Asana pricing/signup: https://asana.com/pricing and https://asana.com/create-account
+- ClickUp pricing: https://clickup.com/pricing
+- Notion Free: https://www.notion.com/teams
+- Zoho Invoice: https://www.zoho.com/us/invoice/pricing/
+- Wave account eligibility: https://support.waveapps.com/hc/en-us/articles/32449161224852-Create-a-Wave-account
+- Invoice Ninja pricing: https://invoiceninja.com/pricing-plans/
+- Square Invoices pricing: https://squareup.com/us/en/invoices/pricing
+- Calendly pricing: https://calendly.com/pricing
+
+**Commits:** CRM `5dda1e8`; project management `4000405`; invoicing `6377659`; freelancer stack `c768c8c`.
+
+No local build, lint, typecheck or CI run has passed for these edits.
