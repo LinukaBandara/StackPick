@@ -16,14 +16,14 @@ export default function Page() {
       reviewedOn="2026-11-07"
       intro="This category is specifically for hourly and shift-based teams - retail, hospitality, healthcare, field services. If you're scheduling salaried office staff, you want a calendar tool or our appointment scheduling comparison instead, not this."
       quickAnswer="For a small US team, Homebase Basic is free for one location and up to 10 employees; Sling Free supports up to 30 users but does not include time tracking. When I Work starts at US$2.50/user/month and Deputy Lite at US$5/user/month. Compare location caps, payroll/POS integrations, labor-law rules and paid time tracking—not just the free label."
-      pricingNote="US plan details checked November 7, 2026. Homebase Basic is $0/location/month for one location and up to 10 employees; Essentials is $30/location/month. Sling Free is capped at 30 users; Premium is US$2/user/month and Business US$4 monthly (annual billing is lower). When I Work Essentials is US$2.50/user/month, Pro US$5 and Premium US$8; its 14-day trial requires no card. Deputy Lite is US$5/user/month, Core US$6.50 and Pro US$9. Prices exclude applicable taxes and can vary by country, location and billing cadence."
+      pricingNote="US plan details checked November 7, 2026. Homebase Basic is $0/location/month for one location and up to 10 employees; Essentials is US$30/location/month. Sling Free is capped at 30 users; Premium is US$2/user/month and Business US$4 monthly (annual billing may differ). When I Work has no permanent free plan; its 14-day trial requires no card, and published starting prices depend on location/schedule and billing terms. Deputy's US pricing lists Lite at US$5/user/month, Core at US$6.50 and Pro at US$9. Prices exclude applicable taxes and can vary by country, location and billing cadence. These are vendor-specific price units: per location is not directly comparable with per user."
       tools={[
         {
           name: "When I Work",
           bestFor: "Small teams wanting simple, low-cost scheduling",
           freeOption: "No permanent free tier; the 14-day trial requires no card. Essentials starts at US$2.50/user/month, Pro at $5 and Premium at $8.",
           tradeoff:
-            "Consistently praised for an intuitive interface - auto-assign, color-coded schedules, easy shift swaps - that needs minimal training to use. Scheduling sophistication (AI-driven auto-scheduling, overtime forecasting) is lighter than Deputy's for more complex staffing needs.",
+            "The product is positioned around shift scheduling, time and attendance, and team messaging. Compare the exact features available in the plan you would buy, including schedule templates, shift swaps, overtime alerts, time-clock functions and payroll integrations; do not assume all capabilities are included at the entry price.",
           url: "https://wheniwork.com/pricing",
         },
         {
@@ -31,7 +31,7 @@ export default function Page() {
           bestFor: "Businesses that need compliance tools alongside scheduling (fair workweek laws, overtime rules)",
           freeOption: "No free tier - low per-user starting price.",
           tradeoff:
-            "AI-assisted schedule creation and overtime forecasting genuinely help avoid compliance mistakes in jurisdictions with predictive scheduling or fair workweek laws - a real risk-reduction feature, not just convenience. That added sophistication carries a slightly steeper learning curve than When I Work's simpler interface.",
+            "Deputy offers workforce scheduling and labor-management features that may help managers see coverage and hours. These features do not guarantee compliance with predictive-scheduling, overtime, break or other labor laws; configure rules for the correct jurisdiction and have a qualified local reviewer validate them.",
           url: "https://www.deputy.com/pricing",
         },
         {
