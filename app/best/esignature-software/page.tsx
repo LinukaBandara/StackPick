@@ -13,16 +13,16 @@ export default function Page() {
     <ComparisonArticle
       title="Best E-Signature Software for Freelancers and Small Business"
       slug="esignature-software"
-      reviewedOn="2026-11-07"
+      reviewedOn="2026-11-08"
       quickAnswer="Choose DocuSign when counterparties expect a widely recognised signing platform or you need broad integrations. PandaDoc fits teams that combine proposals, quotes and signatures. Dropbox Sign is a simpler signing workflow, while SignWell is worth comparing for small teams focused on value. Check monthly envelope limits, templates, sender seats and audit-trail access before paying."
       intro="Freelancers usually need a repeatable way to send a proposal or contract, collect a signature, and keep a record of what was signed. Small teams may also need templates, reminders, multiple senders, integrations and a clear audit trail. The key distinction is whether you only need signing or a full proposal/document workflow that includes signing."
-      pricingNote="Official US-facing plan pages checked 7 November 2026. DocuSign Personal includes 5 envelopes/month; Standard lists 100 envelopes per user/year. Dropbox Sign Free allows up to 3 signature requests/month, with a separate 30-day paid-feature trial. PandaDoc Free allows 5 documents/month; Starter is listed at US$19/seat/month billed annually. SignWell Free allows 3 documents/month for one sender and one template; its Light plan includes unlimited documents. These are USD references; taxes, billing currency, promotions, legal requirements and feature availability can vary by country. Check the exact document volume, sender count, templates and audit-trail needs before switching. Sources: https://www.docusign.com/products/electronic-signature; https://sign.dropbox.com/products/dropbox-sign/pricing; https://www.pandadoc.com/pricing/; https://www.signwell.com/pricing/."
+      pricingNote="Official US-facing plan pages and help documentation checked 8 November 2026. DocuSign Personal is US$10/user/month billed annually (5 envelopes/month); Standard is US$25/user/month billed annually and allows 100 envelopes per user/year; Business Pro is US$40/user/month billed annually, also with 100 envelopes per user/year. Dropbox Sign Free allows 3 signature requests every 30 days; Essentials lists US$15/month, with a current displayed annual-billing promotion at US$10.05/month; Standard lists US$25/user/month, with a displayed annual-billing promotion at US$17.50/user/month. PandaDoc Free currently allows 5 documents/month on its pricing comparison; its help guide also describes a 60-documents/year allowance for older annual Free accounts, so check the account-specific limit. Starter is US$19/user/month billed annually (US$35 monthly). SignWell Free allows 3 documents/month for one sender; Light is US$12/month for one sender, with a 20% annual-billing discount. These are USD references; taxes, billing currency, promotions, legal requirements and feature availability can vary by country. Check the exact document volume, sender count, templates and audit-trail needs before switching. Sources: https://www.docusign.com/products/electronic-signature; https://sign.dropbox.com/products/dropbox-sign/pricing; https://www.pandadoc.com/pricing/; https://www.signwell.com/pricing/."
       tools={[
         {
           name: "DocuSign",
           bestFor: "When counterparties expect a widely recognized name and you need deep integrations",
           freeOption:
-            "Personal includes 5 envelopes per month; Standard lists 100 envelopes per user per year. Paid tiers and limits depend on the sender workflow.",
+            "Personal costs US$10/user/month billed annually and includes 5 envelopes per month. Standard is US$25/user/month billed annually with 100 envelopes per user/year; Business Pro is US$40/user/month billed annually and also lists 100 envelopes per user/year. Check the envelope definition and any add-on usage rules before estimating volume.",
           tradeoff:
             "Strongest brand recognition and the deepest integration ecosystem. You are partly paying for the name and for enterprise-grade reliability. Lower tiers can feel restrictive on volume.",
           url: "https://www.docusign.com/products/electronic-signature",
@@ -31,7 +31,7 @@ export default function Page() {
           name: "PandaDoc",
           bestFor: "Sales and freelance workflows that are more about proposals and quotes than pure contract signing",
           freeOption:
-            "Free includes up to 5 documents per month. Starter adds unlimited document uploads and e-signatures at a published annual-billing price; advanced proposal and team workflows are on higher tiers.",
+            "Free currently allows 5 documents/month on the pricing comparison. PandaDoc’s help guide also documents 60 sends/year for older annual Free accounts, so confirm which allowance your account receives. Starter is US$19/user/month billed annually or US$35 monthly; Business is US$49/user/month billed annually or US$65 monthly. Starter includes unlimited uploads and e-signatures, while advanced proposal workflows are on higher tiers.",
           tradeoff:
             "It is really a document and proposal builder that also signs. View tracking and pricing tables are useful for sales, but it can be overkill if you only need signatures.",
           url: "https://www.pandadoc.com/pricing/",
@@ -40,7 +40,7 @@ export default function Page() {
           name: "Dropbox Sign",
           bestFor: "Teams that want the simplest, lowest-friction signing flow and nothing more",
           freeOption:
-            "Free allows up to 3 signature requests per month; a separate 30-day trial unlocks paid features. Paid Essentials and Standard plans add higher-volume individual and team workflows.",
+            "Free allows 3 signature requests every 30 days, and self-signing is unlimited. Essentials lists US$15/month (US$180 billed yearly); the page currently displays an annual-billing offer of US$10.05/month. Standard lists US$25/user/month (starting at US$600 billed yearly for a two-user team), with a displayed offer of US$17.50/user/month. A separate 30-day trial is available; verify the renewal price at checkout.",
           tradeoff:
             "Minimal learning curve for both sender and signer. Signers often do not need an account. It is primarily a signing tool, not a proposal or document editor.",
           url: "https://sign.dropbox.com/products/dropbox-sign/pricing",
@@ -49,7 +49,7 @@ export default function Page() {
           name: "SignWell",
           bestFor: "Small teams and freelancers optimizing for value over brand name recognition",
           freeOption:
-            "Free includes 3 documents per month, one sender and one template. The Light plan includes unlimited documents for one sender; additional senders cost extra.",
+            "Free includes 3 documents per month for one sender. Light costs US$12/month for one sender and includes unlimited documents; annual billing advertises a 20% saving. Business is US$36/month for three senders. Check template and sender limits on the selected plan before subscribing.",
           tradeoff:
             "Good price-to-feature ratio for straightforward signing needs. The trade-off is less brand recognition than DocuSign if that matters to the people receiving your documents.",
           url: "https://www.signwell.com/pricing/",
