@@ -73,7 +73,7 @@ function analyse(file) {
   const hasQuickAnswer = /\bquickAnswer\s*=|\bquick answer\b/i.test(source);
   const hasPricingNote = /\bpricingNote\s*=/.test(source);
   const hasCountryCaveat = /\b(?:country-specific|country eligibility|availability varies by country|regional availability|regional pricing|regional prices|pricing varies by country|prices vary by country|prices vary by region|by country|country-specific terms|US-specific|US pricing|US-dollar|US-facing|US market|US-only|US\/Canada|US and Canada|US or Canada|billing country|country of billing|local market|local currency|currency varies)\b/i.test(source);
-  const hasTestingDisclosure = /\b(?:desk research|desk-based|not a hands-on|not tested in a live|not hands-on product testing)\b/i.test(source);
+  const hasTestingDisclosure = /\b(?:desk research|desk-based|not a hands-on|not tested in a live|not hands-on product testing)\b/i.test(source) || (usesComparisonTemplate && COMPARISON_SOURCE.includes("Research method: public-source desk research; no hands-on product testing unless explicitly stated."));
   const flags = [];
   if (!title) flags.push("missing-title");
   if (!description) flags.push("missing-description");
