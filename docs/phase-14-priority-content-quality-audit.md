@@ -1400,3 +1400,16 @@ Primary sources:
 - Zendesk current public seat and automated-resolution pricing: https://www.zendesk.com/pricing/
 
 Tidio's existing one-time 50 Lyro conversation quota and separate 50 human-handled conversations/month wording was retained because the official pricing/help pages distinguish these two quotas. No controlled accuracy test or live account billing test is claimed. No build, lint, type-check, CI or deployment was run for this correction.
+
+
+
+### P0 operational, regional and payroll fact-check batch (7 November 2026)
+
+Four pages corrected against provider-owned pages and documentation. This is a desk-source review, not hands-on product testing.
+
+- `app/best/cloud-backup-software/page.tsx` — removed the contradictory suggestion that Carbonite business backup offers unlimited storage. The current Carbonite US page lists 250 GB for Core and 500 GB for Power/Ultimate, additional 100 GB increments at US$99, and different computer/NAS/server coverage by tier. The article now tells readers to match capacity and device coverage to the workload. Sources: https://www.carbonite.com/professional/backup/ and Backblaze Business Computer Backup https://www.backblaze.com/cloud-backup/business.
+- `app/best/expense-management-software/page.tsx` — removed an unsupported “well-reviewed” statement about Expensify and sharpened the distinction between individual receipt tracking and paid team approvals/reimbursements. The bottom line now explicitly frames the listed plan limits as US-market references and warns that Ramp eligibility is restricted. Sources: https://www.expensify.com/pricing, https://ramp.com/pricing, https://www.zoho.com/us/expense/pricing/.
+- `app/best/employee-scheduling-software/page.tsx` — removed unsupported subjective praise and the implication that AI scheduling prevents legal compliance errors. The copy now states that scheduling software does not guarantee labor-law compliance and that plan billing units differ (per-user vs per-location). US-market scope remains explicit. Sources: https://wheniwork.com/pricing, https://www.deputy.com/pricing, https://www.joinhomebase.com/pricing, https://getsling.com/pricing.
+- `app/best/payroll-software/page.tsx` — added a 7 November 2026 review date and refreshed official US pricing. Gusto Simple is US$49/month + US$6/person; Plus US$80 + US$12/person. QuickBooks Workforce Payroll + Simple Start is US$88/month + US$6.50/employee before the displayed introductory discount, clearly labelled as a payroll/accounting bundle. Patriot Full Service is US$37/month + US$5/worker paid for one state; each additional state is US$12/month. The cost-check date in the visible table was updated. Sources: https://gusto.com/product/pricing, https://quickbooks.intuit.com/payroll/pricing/, https://help.patriotsoftware.com/en/articles/15414151-what-is-the-price-of-the-software.
+
+The edits avoid presenting US payroll, tax, or labor-law products as global solutions. No legal/tax advice, compliance certification, live backup restore, or live expense/scheduling workflow test is claimed. No build, lint, type-check, CI or deployment was run for this batch.
