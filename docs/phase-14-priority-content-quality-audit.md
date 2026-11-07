@@ -1002,3 +1002,16 @@ Primary sources:
 **Commits:** GitHub guide `ff271ca`; AI intent map `c06af58`.
 
 No live Search Console query overlap analysis has been run. The intent map is a content-purpose assessment, not evidence of actual ranking cannibalization. No build, lint, typecheck or CI run has passed for these edits.
+
+
+## CI validation observation and lint correction (7 November 2026)
+
+GitHub Actions was checked after the article edits began.
+
+- A completed `StackPick CI` run for commit `e7bf12b` completed dependency installation, the production dependency audit and internal-link check. The production dependency audit found **0 vulnerabilities**. The full dependency audit reported **6 moderate development-dependency advisories** (minimatch via the ESLint TypeScript parser chain).
+- The internal-link step passed: 186 source files checked, no missing internal destinations.
+- Lint failed on one duplicate JSX prop in `app/best/manage-client-projects-without-full-time-team/page.tsx` (two `quickAnswer` props). The duplicate was removed in commit `be87d18`.
+- The two warning-only `<img>` notices in `ProductScreenshot.tsx` and `SoftwareLogo.tsx` were pre-existing warnings and were not changed in this content batch.
+- Production build was skipped because lint failed.
+
+Fresh PR CI and SEO/content-audit workflows have been triggered for the fix commit `be87d18` and were still running at the time of this note. **Do not treat them as passed until their final conclusions are checked.** No deployment was attempted.
