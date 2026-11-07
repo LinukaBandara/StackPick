@@ -85,6 +85,7 @@ export default function Page() {
           <li>Estimate total cost using actual volume, plan requirements, setup effort and the time humans still spend reviewing or correcting replies.</li>
         </ol>
         <p className="mt-5 text-sm leading-6 text-[#667085]">Before connecting customer data, review retention, access controls, subprocessors and deletion options. Avoid sending unnecessary personal information to an AI service, and do not treat generated answers as proof that a customer request has been completed.</p>
+        <p className="mt-4 text-xs leading-5 text-[#667085]">Research method: desk review of provider pricing and billing documentation checked November 7, 2026. StackPick has not run a controlled accuracy benchmark across these platforms. Test the same approved question set in your own support environment before buying.</p>
       </section>
     </ComparisonArticle>
   );
