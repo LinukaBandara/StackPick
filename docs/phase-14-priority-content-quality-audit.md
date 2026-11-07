@@ -1294,3 +1294,31 @@ Primary sources:
 - Grasshopper: https://grasshopper.com/pricing
 
 **Validation:** StackPick CI run `42390182646` and SEO/content audit run `42390180465` passed for application snapshot `81d1e8a7`: npm install, production dependency audit, internal links, ESLint, production build, route/sitemap checks and content inventory. Production dependency audit: 0 vulnerabilities; 6 moderate development dependency advisories remain. Later concurrent CRM/doc commits are outside this validation snapshot and have their own runs in progress. No deployment was attempted.
+
+
+
+### P0 free project-management and invoicing cluster — correction pass (7 November 2026)
+
+Updated five pages after checking current official vendor pricing/help pages. This is a source-backed plan-limit correction pass, not hands-on product testing.
+
+**Project management**
+- `app/best/free-project-management-software/page.tsx` — commit `7f9688a`. Added dated plan snapshots: Trello Free up to 10 collaborators and 10 boards per Workspace, unlimited cards, 250 Workspace command runs/month and 10 MB per attachment; ClickUp Free Forever no-card, unlimited tasks/free members, 60 MB storage, 5 Spaces and 1 Form; Asana Personal up to 2 users with unlimited tasks/projects and 100 MB per file. Notion wording remains deliberately qualified where the exact current team-workspace allowance was not established in this pass.
+- `app/best/free-project-management-without-credit-card/page.tsx` — commit `0eaee30`. Removed unsupported assertions that Asana and Notion's cited pages guarantee no-card signup. ClickUp is now the only product in this comparison explicitly confirmed as no-card by its official pricing page; Trello, Asana and Notion remain free-plan candidates whose live signup flow must be checked.
+- `app/best/project-management-software/page.tsx` — commit `a4c7b01`. Corrected monday.com positioning: it does have a permanent Work Management Free plan (2 seats, 3 boards, 3 Docs); official support details its 200-item cap, 500 MB storage and lack of automations/integrations. Its paid plans start at a 3-seat minimum. Also refreshed Trello, Asana and ClickUp free-tier descriptions.
+
+**Invoicing**
+- `app/best/free-invoicing-software/page.tsx` — commit `af2ce92`. Replaced the stale late-October source date with 7 November 2026; added verified Zoho Invoice US limits (2 users, 3 projects, 500 invoices/year), Invoice Ninja Free (5 clients, unlimited invoices, no card), Wave US/Canada eligibility and Square US free-subscription/payment-fee distinction.
+- `app/best/free-invoicing-without-credit-card/page.tsx` — commit `538be70`. Kept Invoice Ninja as the only provider in this comparison whose official page explicitly confirms a no-card Free plan. Zoho's US free product page, Wave and Square do not establish a universal no-card signup guarantee in the evidence checked; article now tells readers to verify the live registration flow instead of implying certainty.
+- `app/best/invoicing-software/page.tsx` was reviewed against the existing 7 November 2026 plan snapshot and retained without a further edit in this pass; its US-only scope, Zoho/Invoice Ninja caps and FreshBooks trial-vs-paid distinction were already stated.
+
+**Official primary sources checked**
+- Trello Free: https://trello.com/en/pricing
+- ClickUp Free Forever: https://clickup.com/pricing
+- Asana Personal: https://asana.com/pricing and https://help.asana.com/s/article/asana-personal-plan-details
+- monday.com Work Management: https://monday.com/pricing and https://support.monday.com/hc/en-us/articles/360010487220-Understanding-the-Free-Plan
+- Zoho Invoice US: https://www.zoho.com/us/invoice/pricing/
+- Invoice Ninja: https://invoiceninja.com/pricing-plans/
+- Wave account eligibility: https://support.waveapps.com/hc/en-us/articles/32449161224852-Create-a-Wave-account
+- Square US Invoices: https://squareup.com/us/en/invoices/pricing
+
+**Acceptance note:** the edits correct claims and add market/plan qualifications; they do not claim that the products were signed up for or tested hands-on. No consolidation, redirect, canonical, noindex or deployment change was made. No build, lint, type-check or CI run was performed for this batch.
