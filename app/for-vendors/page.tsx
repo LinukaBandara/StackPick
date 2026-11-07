@@ -23,6 +23,7 @@ export default function ForVendorsPage() {
           <p className="sp-body-large mt-6 max-w-2xl">Represent a product listed on StackPick or suggest software for our editors to consider. Every request is reviewed; vendors do not receive automatic publishing or ranking privileges.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/for-vendors/portal" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#001D39] px-6 text-sm font-semibold text-white hover:opacity-90">Open vendor workspace <span className="ml-2" aria-hidden="true">↗</span></Link>
+            <Link href="/partnerships" className="inline-flex min-h-12 items-center justify-center rounded-full border border-black/15 bg-white px-6 text-sm font-semibold text-[#001D39]">Commercial partnerships</Link>
             <Link href="/software" className="inline-flex min-h-12 items-center justify-center rounded-full border border-black/15 bg-white px-6 text-sm font-semibold text-[#001D39]">Browse software</Link>
           </div>
         </div>
