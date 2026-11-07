@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SOFTWARE_PROFILES } from "@/lib/software";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stackpick.tech";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.stackpick.tech";
 
 const ROUTES = [
   "/",
