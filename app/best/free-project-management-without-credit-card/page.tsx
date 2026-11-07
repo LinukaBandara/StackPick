@@ -14,43 +14,44 @@ export default function Page() {
       title="Best Free Project Management Tools Without a Credit Card"
       slug="free-project-management-without-credit-card"
       intro="A project tool is only useful if your team can keep work moving after the initial setup. If you want to evaluate one without entering payment details, confirm the live sign-up requirements first, then test a realistic project: tasks, owners, due dates, files and a handoff. Free tiers and trial terms change, so this page emphasizes the checks that decide whether the tool will work for your team."
-      pricingNote="Distinguish an ongoing free plan from a free trial, and check whether a payment method is requested during registration. Also verify current limits for collaborators, projects, automations, storage and exports."
+      quickAnswer="Asana Personal is free forever for up to 2 users and its signup page explicitly says no credit card is required. ClickUp Free Forever also says no card is required and includes unlimited tasks and free members, but only 60 MB of storage. Trello Free supports up to 10 collaborators and 10 boards; Notion Free is no-card for individual use, with collaboration limits to check."
+      pricingNote="Plan and sign-up details checked November 7, 2026. Asana and ClickUp explicitly advertise no-card free access on their official pages. Trello's Free plan is ongoing, but its pricing page does not itself state the card requirement; Notion's no-card statement is for individual use. Do not treat a Premium trial as the same thing as a permanent free plan."
       tools={[
         {
           name: "Trello",
           bestFor: "Small projects that are easiest to manage as cards moving across stages",
           freeOption:
-            "Review Trello's current free-plan limits and sign-up flow; confirm card requirements and workspace limits directly.",
+            "Free plan: up to 10 collaborators and 10 open boards per Workspace, unlimited cards and 250 Workspace command runs/month. Verify the live signup flow for card requirements.",
           tradeoff:
             "Its board model is quick to understand, but complex dependencies and portfolio-level reporting may call for another approach or a paid tier.",
-          url: "https://trello.com/",
+          url: "https://trello.com/en/pricing",
         },
         {
           name: "Asana",
           bestFor: "Teams that need clear task ownership and deadlines",
           freeOption:
-            "Check the current personal or starter offering, including user limits and whether the registration path requests payment details.",
+            "Personal is free forever for 2 users, with unlimited tasks and projects; Asana's signup page explicitly says no credit card required.",
           tradeoff:
             "Structured task tracking helps with accountability, but advanced views, automation and reporting may sit behind paid plans.",
-          url: "https://asana.com/",
+          url: "https://asana.com/pricing",
         },
         {
           name: "ClickUp",
           bestFor: "Teams wanting tasks and multiple project views in one workspace",
           freeOption:
-            "Verify the current free-plan feature and usage limits in the official plan comparison before creating a team workspace.",
+            "Free Forever is $0 with no credit card required, unlimited tasks/subtasks and unlimited free members, but 60 MB storage; some advanced features are trial-only.",
           tradeoff:
             "A wide feature set is flexible, but configuration and feature limits can make it more complex than a simple task board.",
-          url: "https://clickup.com/",
+          url: "https://clickup.com/pricing",
         },
         {
           name: "Notion",
           bestFor: "Projects that need tasks alongside briefs, notes and documentation",
           freeOption:
-            "Review Notion's current plan terms and workspace limits, especially if several people will collaborate.",
+            "The Free plan has no time limit or card requirement for individual use; additional members are subject to collaboration limits and a limited block trial.",
           tradeoff:
             "Keeping project context and documentation together is convenient, but you may need to build your own process and reminders.",
-          url: "https://www.notion.com/",
+          url: "https://www.notion.com/teams",
         },
       ]}
       bottomLine="Choose Trello for a simple stage-based board, Asana when task ownership is the main concern, ClickUp when you need several work views, and Notion when project notes are as important as tasks. Before inviting the team, confirm the plan is ongoing rather than trial-only, test collaboration with a second account if possible, and check what happens when you reach a usage limit."
