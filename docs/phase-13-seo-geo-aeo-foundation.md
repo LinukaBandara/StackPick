@@ -37,7 +37,14 @@ npm run lint
 npm run build
 ```
 
-Record the actual output. Do not mark the phase complete until the route audit and all existing checks pass, and any route exceptions are understood. The GitHub file edits have not been run through local Node, ESLint or Next.js build validation yet.
+Record the actual output. Do not mark the phase complete until the route audit and all existing checks pass, and any route exceptions are understood. The GitHub file edits have not been run through local Node, ESLint or Next.js build validation yet. Vercel deployment is currently unavailable due to the user's deployment limit, so continue with offline/source-level work until the limit resets.
+
+## GEO/AEO answer-format improvements — 7 November 2026
+
+- Added an optional `quickAnswer` field to the shared `ComparisonArticle` template. When supplied, it renders a visible, concise “Short answer” immediately below the article introduction; it is not hidden text or a schema-only claim.
+- Added an individual short answer to eight priority guides: freelance invoicing workflow, freelance lead management, free vs paid software, small-team client project management, AI marketing tools, Calendly vs Google Calendar, Notion vs ClickUp, and Canva vs Adobe Express.
+- The answers focus on decision criteria and caveats rather than unsupported universal winners. The article's full explanation, pricing caveats, evidence and bottom line remain in place.
+- These are source edits on the working branch. They have not been run through ESLint, TypeScript or a production build because local validation has not yet been performed and Vercel deployment is currently unavailable.
 
 ## Next work sequence
 
