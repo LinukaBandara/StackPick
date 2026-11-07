@@ -5,6 +5,7 @@ import SoftwareLogo from "@/components/SoftwareLogo";
 import ProductScreenshot from "@/components/ProductScreenshot";
 import { getSoftwareProfile, SOFTWARE_PROFILES } from "@/lib/software";
 import ReviewSection from "@/components/ReviewSection";
+import VendorActionLink from "@/components/VendorActionLink";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -78,7 +79,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
           <p className="mt-5 max-w-3xl text-xl leading-8 text-[#6e6e73]">{software.tagline}</p>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#1d1d1f]">{software.summary}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={software.officialUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#001D39] px-5 text-sm font-semibold text-white transition-opacity hover:opacity-90">Visit official website <ExternalArrow /></a>
+            <VendorActionLink softwareSlug={software.slug} officialUrl={software.officialUrl} className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#001D39] px-5 text-sm font-semibold text-white transition-opacity hover:opacity-90">Visit official website <ExternalArrow /></VendorActionLink>
             <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm font-semibold text-[#001D39] transition-colors hover:bg-[#f9fafb]">Check official pricing <ExternalArrow /></a>
           </div>
           <div className="mt-5 space-y-2">
