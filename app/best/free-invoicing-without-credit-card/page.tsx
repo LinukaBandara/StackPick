@@ -14,8 +14,8 @@ export default function Page() {
       title="Best Free Invoicing Tools Without a Credit Card"
       slug="free-invoicing-without-credit-card"
       intro="For a freelancer or small service business, the useful test is whether you can create and send a real-looking invoice without starting a paid trial or entering card details. Sign-up requirements vary, so check the live registration flow separately from the product's free-plan claims. Then confirm that the free option covers your normal invoice volume and payment workflow."
-      quickAnswer="Invoice Ninja explicitly offers a permanent no-card Free plan with up to 5 clients and unlimited invoices. Zoho Invoice also advertises a free invoicing product, but confirm the card requirement in your own signup flow. Wave is available only to businesses in the US and Canada; Square Invoices Free has no monthly subscription but charges payment-processing fees and is a US-market reference here."
-      pricingNote="Plan, regional eligibility and signup details checked November 7, 2026. Invoice Ninja explicitly states that its Free plan is no-card, with 5 clients and unlimited invoices. Wave account creation is limited to businesses in the US and Canada. Square's cited invoice plan is US-specific and payment processing is not free. Zoho's US free product page does not itself establish a universal card requirement or global availability."
+      quickAnswer="Invoice Ninja is the clearest verified option here: its official pricing page explicitly says Free forever and no credit card, with up to 5 clients and unlimited invoices. Zoho Invoice is free in its US edition, but the cited pricing page does not establish a universal no-card requirement. Wave is available to businesses in the US and Canada; Square's cited Free invoicing plan is US-specific and payment-processing fees still apply."
+      pricingNote="Plan and regional details checked November 7, 2026. Invoice Ninja explicitly states that its Free plan is no-card, with 5 clients and unlimited invoices. Wave account creation is limited to businesses in the US and Canada. Square's cited invoice plan is US-specific and payment processing is not free. Zoho's US free product page does not itself establish a universal card requirement or global availability."
       tools={[
         {
           name: "Zoho Invoice",
@@ -39,7 +39,7 @@ export default function Page() {
           name: "Invoice Ninja",
           bestFor: "Freelancers who want detailed invoice customization",
           freeOption:
-            "The hosted Free plan is permanent, requires no credit card and includes up to 5 clients with unlimited invoices. Self-hosting is a separate deployment choice.",
+            "Invoice Ninja's hosted Free plan is permanent, explicitly requires no credit card and includes up to 5 clients with unlimited invoices. Self-hosting is a separate deployment choice; it adds server, backup and security-maintenance responsibilities.",
           tradeoff:
             "Flexible invoice workflows suit independent businesses, but self-hosting requires maintenance and the hosted plan may have limits.",
           url: "https://invoiceninja.com/pricing-plans/",
@@ -86,8 +86,7 @@ export default function Page() {
             </div>
           </div>
           <p className="mt-6 max-w-3xl text-sm leading-6 text-[#6e6e73]">
-            No provider's card requirement or regional availability is guaranteed here; verify the
-            current terms shown by the provider before relying on them.
+            Among the providers compared, Invoice Ninja is the only one whose official pricing page explicitly confirms a no-card Free plan. For Zoho, Wave and Square, verify the live registration flow and local eligibility rather than inferring card requirements from a $0 price.
           </p>
         </div>
       </section>
