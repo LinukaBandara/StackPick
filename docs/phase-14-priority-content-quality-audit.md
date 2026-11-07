@@ -596,3 +596,29 @@ Primary sources checked:
 **Commits:** AI coding assistants `84628d2`; React/Next.js guide `3e6257c`.
 
 This is a first source-backed refresh. Cursor plan pages and product packaging are changing; confirm exact usage and billing at checkout. Google's former Gemini Code Assist individual experience should not be recommended as a current consumer workflow; use Antigravity instead. No local build, lint, typecheck or CI run has passed for these edits.
+
+
+## Third article-edit batch — automation billing models (7 November 2026)
+
+Updated:
+- `app/best/n8n-vs-make-vs-zapier/page.tsx`
+- `app/best/ai-automation-tools-small-businesses/page.tsx`
+
+The platform comparison now has a quick answer and a dated source note. It records current public reference allowances: n8n Cloud Starter at 2,500 workflow executions/month for €20/month billed annually; Make Free at 1,000 credits/month with a 15-minute minimum scheduled interval and up to two active scenarios; Zapier Free at 100 tasks/month with two-step Zaps, while Professional starts at US$19.99/month and the selected task tier affects the price. The article explicitly states that executions, credits and tasks are different units.
+
+Billing-model details:
+- **n8n Cloud:** one execution is one full workflow run, regardless of the number of steps. Self-hosting changes the cost model but adds infrastructure, backup, monitoring, update and security responsibilities.
+- **Make:** each module action commonly consumes one credit; some advanced/AI features can consume more. Free currently lists 1,000 credits/month.
+- **Zapier Classic Zaps:** each successful billable action step counts as a task; triggers, filters, paths and several built-in steps do not. The article scopes its example to Classic Zaps and notes the provider's announced December 1, 2026 billing changes for Next Gen Zaps and SDK, including at least one task per completed Next Gen run.
+
+The small-business AI automation guide now includes a quick answer, a November 7 check date, current Free-tier reference limits and direct official pricing links. It keeps Relevance AI's specific limits unquoted pending a separate provider-level check.
+
+Primary sources:
+- n8n pricing and execution definition: https://n8n.io/pricing/
+- Make pricing/credit definition: https://www.make.com/en/pricing and https://help.make.com/credits
+- Zapier pricing: https://zapier.com/pricing
+- Zapier task usage and announced December 1, 2026 changes: https://help.zapier.com/hc/en-us/articles/8496196837261-How-is-task-usage-measured-in-Zapier
+
+**Commits:** comparison guide `868ee80`; small-business AI automation guide `18ce294`.
+
+This is a source-backed editorial update, not a complete test of every billing edge case. The Zapier Next Gen change is future-dated relative to this check and must be rechecked after December 1, 2026. No local build, lint, typecheck or CI run has passed for these edits.
