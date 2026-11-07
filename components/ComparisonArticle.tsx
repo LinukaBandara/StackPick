@@ -230,7 +230,7 @@ const RELATED_GUIDES: Record<string, { href: string; title: string }[]> = {
   ],
   "appointment-scheduling-software": [
     { href: "/best/free-scheduling-software", title: "Free scheduling software" },
-    { href: "/best/scheduling-for-small-businesses", title: "Scheduling for small businesses" },
+    { href: "/best/employee-scheduling-software", title: "Employee scheduling software" },
     { href: "/best/form-builders", title: "Form builders for small business" },
   ],
   "n8n-vs-make-vs-zapier": [
