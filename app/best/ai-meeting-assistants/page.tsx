@@ -70,7 +70,7 @@ export default function Page() {
             transcription allowances, retained meeting history, summary limits and capture
             method. This is desk research, not a claim that StackPick independently benchmarked
             each product's transcription accuracy. Pricing and plan details were checked on
-            October 11, 2026; providers can change them after publication.
+            November 7, 2026; providers can change them after publication.
           </p>
 
           <div className="mt-8 overflow-x-auto rounded-[24px] border border-black/10">
