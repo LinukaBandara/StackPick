@@ -361,3 +361,26 @@ For application snapshot `81d1e8a7`, StackPick CI run `42390182646` and SEO/cont
 5. Free website builder follow-up only if current provider plan limits change
 
 Avoid expanding word count for its own sake. Prioritize factual risk, useful decision criteria, exact plan limits and source quality.
+
+
+## Inventory-driven batch 3 completed — cloud storage, social scheduling and endpoint security
+
+Updated:
+- Cloud storage
+- Social media scheduling
+- Antivirus/endpoint security
+
+The audit document records current plan limits and official source links. Key corrections: Google Workspace pooled storage tiers are separated from personal Google Drive storage; Dropbox Standard/Advanced storage and recovery differ; Buffer/Later/Hootsuite profile and post limits are now specific; Microsoft 365 Business Premium includes Defender for Business (not a generic Defender for Endpoint P1/P2 license); CrowdStrike Falcon Go has a 100-device cap and public per-device pricing.
+
+For application snapshot `09b2db25`:
+- StackPick CI `42390619073`: passed npm install, production dependency audit, internal links, ESLint and production build.
+- SEO/content audit `42390615819`: passed script syntax, route/sitemap integrity, internal links and content inventory generation.
+- Production dependency audit: 0 vulnerabilities; 6 moderate development-dependency advisories remain.
+- No deployment attempted.
+
+### Next priorities
+
+1. Review Search Console query/page data when a deployment/data window is available; do not consolidate based only on source similarity.
+2. Resolve the 6 moderate dev-dependency advisories with a coordinated ESLint/TypeScript parser migration.
+3. Apply P2 editorial standards to pages only when substantively editing them; no mass boilerplate.
+4. After Vercel quota resets, deploy the validated branch and run coverage, sitemap, canonical, indexing and query-overlap checks.
