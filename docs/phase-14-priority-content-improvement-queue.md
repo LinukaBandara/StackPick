@@ -337,3 +337,27 @@ No deployment was attempted. The latest content inventory still shows substantia
 5. Business phone/VoIP
 
 Prioritize current regional pricing, seat/employee limits, payroll/HR compliance, export/API capabilities, contract terms and source-backed free-plan claims. After that, revisit cloud storage, social scheduling and endpoint security.
+
+
+## Inventory-driven batch 2 completed — five high-risk guides
+
+Completed the next five pages listed in the prior queue:
+- Applicant tracking software
+- HR software
+- Expense management software
+- Inventory management software
+- Business phone/VoIP
+
+The audit document now records the source links, exact plan limits and caveats. High-impact corrections include Ramp's US business eligibility, BambooHR's flat vs per-employee pricing, Gusto's US payroll scope, Zoho Inventory's order/location caps, inFlow's tiered team pricing, and the replacement of Perimeter 81 with Check Point SASE.
+
+For application snapshot `81d1e8a7`, StackPick CI run `42390182646` and SEO/content run `42390180465` both passed, including ESLint, production build, route/sitemap and content inventory checks. Production dependency audit reports 0 vulnerabilities; 6 moderate development dependency advisories remain. Subsequent concurrent CRM edits and documentation commits have separate runs and should be checked independently.
+
+### Next inventory-driven batch
+
+1. Cloud storage (distinguish sync, object storage and backup)
+2. Social media scheduling (current channel, post and analytics limits)
+3. Endpoint security/antivirus (seat, device, platform and renewal terms)
+4. Business VPN follow-up only if regional/seat terms change
+5. Free website builder follow-up only if current provider plan limits change
+
+Avoid expanding word count for its own sake. Prioritize factual risk, useful decision criteria, exact plan limits and source quality.
