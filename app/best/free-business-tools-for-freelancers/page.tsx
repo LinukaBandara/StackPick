@@ -14,43 +14,44 @@ export default function Page() {
       title="Best Free Business Tools for Freelancers"
       slug="free-business-tools-for-freelancers"
       intro="Freelancers often need four jobs covered before they need four subscriptions: remember leads, deliver client work, get paid and book meetings. This starter stack maps a tool to each job and focuses on avoiding duplicate data entry. Start with only the parts you use every week, then add another app when a real handoff is failing."
-      pricingNote="Free-plan terms and availability change. Check the provider's current limits for your region, including users, records, branding, integrations and export access before moving client data."
+      quickAnswer="A lean starter stack can use HubSpot Free for leads (no card, up to 2 users and 1,000 contacts), Trello Free for delivery (10 collaborators and 10 boards), Zoho Invoice for invoicing, and Calendly Free for one event type and one calendar connection. Check each service's country/payment availability before making it your client workflow."
+      pricingNote="Plan details checked November 7, 2026. HubSpot explicitly advertises a permanent no-card Free CRM; Trello, Zoho Invoice and Calendly publish free plans but their cited pricing pages do not all explicitly guarantee a no-card signup. Wave is not included as a universal recommendation because it supports businesses in the US and Canada only. Check local payment processing, currency and tax availability before moving client data."
       tools={[
         {
           name: "HubSpot CRM",
           bestFor: "Keeping enquiries, client details and follow-ups in one place",
           freeOption:
-            "A free CRM option is available; verify current contact, user and feature limits for your account.",
+            "Permanent Free CRM; no credit card required. Up to 2 users and 1,000 contacts, with 1,000 records per other standard object type per account.",
           tradeoff:
             "Useful when leads are slipping through the cracks, but may be unnecessary if you only have a few active clients and a reliable tracker.",
-          url: "https://www.hubspot.com/products/crm",
+          url: "https://www.hubspot.com/pricing/crm?selectedPackage=free",
         },
         {
           name: "Trello",
           bestFor: "Tracking client delivery through clear stages",
           freeOption:
-            "Check Trello's current free workspace limits, including boards, collaborators and features.",
+            "Free plan supports up to 10 collaborators and 10 boards per Workspace, unlimited cards and 250 Workspace command runs/month.",
           tradeoff:
             "A visual board makes status easy to scan, but it is not a substitute for detailed documentation or a formal time-tracking system.",
-          url: "https://trello.com/",
+          url: "https://trello.com/en/pricing",
         },
         {
           name: "Zoho Invoice",
           bestFor: "Creating and tracking service invoices",
           freeOption:
-            "Review current regional terms and invoice-related limits directly with Zoho.",
+            "Zoho Invoice advertises a forever-free US invoicing product. Confirm the local edition, payment gateways and signup card requirement before relying on it.",
           tradeoff:
             "Dedicated invoicing is clearer than building invoices from scratch, but payment methods and connected services depend on region.",
-          url: "https://www.zoho.com/invoice/",
+          url: "https://www.zoho.com/us/invoice/pricing/",
         },
         {
           name: "Calendly",
           bestFor: "Letting clients book a time without repeated messages",
           freeOption:
-            "Check the current free plan's event-type, calendar and integration limits.",
+            "Free plan includes one event type, one calendar connection and one-on-one scheduling. Check whether the signup flow requests payment details in your region.",
           tradeoff:
             "Booking links reduce scheduling back-and-forth, but do not replace project deadlines or client communication.",
-          url: "https://calendly.com/",
+          url: "https://calendly.com/pricing",
         },
       ]}
       bottomLine="For a new freelancer, begin with a lead tracker and an invoicing method; add a project board when client delivery gets hard to track, and a booking link when scheduling creates repeated messages. The best free stack is not the one with the most apps—it is the smallest set that reliably takes an enquiry through delivery and payment."
