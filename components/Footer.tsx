@@ -21,6 +21,8 @@ const EXPLORE_LINKS = [
 const COMPANY_LINKS = [
   { href: "/about", label: "About StackPick" },
   { href: "/how-we-verify", label: "How we verify" },
+  { href: "/review-policy", label: "Review policy" },
+  { href: "/report-an-issue", label: "Report an issue" },
   { href: "/contact", label: "Contact" },
   { href: "/affiliate-disclosure", label: "Affiliate disclosure" },
   { href: "/privacy", label: "Privacy" },
