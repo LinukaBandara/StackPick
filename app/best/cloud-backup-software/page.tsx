@@ -16,7 +16,7 @@ export default function Page() {
       reviewedOn="2026-11-07"
       intro="Cloud sync and backup solve different problems. Sync keeps files available across devices and may include version history, but it is not automatically an independent, protected backup. A business backup plan should preserve separate restore points, protect endpoints and servers, and let you recover data after accidental deletion, device loss or ransomware."
       quickAnswer="Backblaze Business Computer Backup is the simplest unlimited-per-computer option at US$99/year per computer with one-year version history. IDrive is useful when one account must cover several devices; its Basic tier includes 10 GB free and Team plans pool storage across users/devices. Carbonite business plans are not unlimited: Core includes 250 GB, Power 500 GB and Ultimate 500 GB. Acronis is broader backup-plus-cyber-protection and requires plan-specific pricing."
-      pricingNote="US plan details checked November 7, 2026. Backblaze Business Computer Backup is US$99/year per computer with unlimited storage and one-year version history. IDrive Basic is 10 GB free/no card; IDrive Team starts at 5 computers/5 users with 5 TB and annual-billing discounts. Carbonite business plans list 250 GB (Core), 500 GB (Power) and 500 GB (Ultimate), with extra storage charged separately; promotional prices may renew at a higher rate. Acronis pricing depends on workload, storage and add-ons. Verify retention, device count, server support and renewal pricing."
+      pricingNote="US plan details checked November 7, 2026. Backblaze Business Computer Backup is US$99/year per computer with unlimited storage and one-year version history. IDrive Basic is 10 GB free/no card; IDrive Team starts at 5 computers/5 users with 5 TB and annual-billing discounts. Carbonite business plans list 250 GB (Core), 500 GB (Power) and 500 GB (Ultimate), with additional 100 GB increments listed at US$99. Its current US page also distinguishes included device/server coverage by tier. Promotional prices may renew at a higher rate; verify the regular annual price, storage and device coverage before buying. Acronis pricing depends on workload, storage and add-ons. Verify retention, device count, server support and renewal pricing."
       tools={[
         {
           name: "Backblaze",
@@ -47,7 +47,7 @@ export default function Page() {
           bestFor: "Businesses wanting a long-established, well-known name with automated continuous backup",
           freeOption: "No free business tier. Core lists 250 GB, Power 500 GB and Ultimate 500 GB of cloud storage; additional 100 GB increments are priced separately. Promotional renewal pricing can change.",
           tradeoff:
-            "Unlimited storage with automatic backup of new and changed files as they're added, and a long track record in this specific category. Now owned by OpenText, and it's priced less competitively than Backblaze for straightforward unlimited backup.",
+            "Carbonite's business plans are capped at 250 GB on Core and 500 GB on Power or Ultimate, with additional 100 GB increments listed at US$99. The plans support different computer, NAS and server combinations, so match the tier to the actual devices and workload rather than assuming unlimited storage. Now part of OpenText Cybersecurity.",
           url: "https://www.carbonite.com/professional/backup/",
         },
       ]}
