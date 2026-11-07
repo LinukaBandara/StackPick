@@ -1231,3 +1231,66 @@ Current primary sources checked:
 - Bitrix24 current pricing: pricing table shows Free for 1–2 users and 5 GB, but its same-page FAQ says unlimited users. This internal conflict is deliberately surfaced rather than resolved by guesswork: https://www.bitrix24.com/prices/
 
 **Validation:** source edits committed through GitHub. No local build, lint, type-check, CI or deployment was run for these edits.
+
+
+### Inventory-driven batch 2 — ATS, HR, expense, inventory and VoIP (7 November 2026)
+
+Updated:
+- `app/best/applicant-tracking-software/page.tsx` — commit `a69270b`
+- `app/best/hr-software/page.tsx` — commit `72d13d38`
+- `app/best/expense-management-software/page.tsx` — commit `4a6b077`
+- `app/best/inventory-management-software/page.tsx` — commit `3a3e6bc`
+- `app/best/business-phone-voip/page.tsx` — commit `81d1e8a`
+
+**ATS**
+- Breezy Bootstrap Free is one active position/candidate pool at a time; candidate data older than 30 days is restricted. Published paid prices are now distinguished from annual/monthly billing.
+- Zoho Recruit Free is one active job per recruiter; Standard US$25/recruiter/month annual, Enterprise US$50.
+- Workable public US price tiers are listed (Standard $299, Premier $599, Enterprise $719/month for the 1–20 employee band).
+- Greenhouse is quote-based; removed the unsupported generic “tens of thousands per year” claim.
+
+**HR**
+- BambooHR Core/Pro/Elite US prices are stated as per-employee rates for 26+ employees and flat monthly fees for 25 or fewer.
+- Gusto Simple/Plus/Premium US base + per-person prices added; clarified US payroll focus and separate international contractor service.
+- Rippling's $8/employee starting price is explicitly not the full bill because a base fee and quote apply.
+- Deel HR Core is distinguished from separate Payroll/EOR products.
+
+**Expense management**
+- Expensify Personal Free is distinguished from a paid team workspace: free SmartScan/mileage/export do not include full approvals, reimbursements or accounting integrations.
+- Ramp Free eligibility is explicit: qualifying US entity, US physical address/EIN, primarily US operations and at least US$25,000 in a linked US business bank account; sole proprietors/individuals are not eligible.
+- Zoho Expense Free: 3 users, 20 receipt scans/user/month and 5 GB storage.
+
+**Inventory**
+- Zoho Inventory Free: 50 orders/month, 1 user, 1 location; published paid tiers and their order/user/location caps added.
+- Sortly Free: 100 unique items, 1 user and 2 active jobs; promotional annual prices and card-required paid trials are distinguished.
+- Square for Retail is described as a POS-linked stock option with separate processing fees.
+- inFlow's tiered member/location pricing is now stated; removed the inaccurate flat-pricing description.
+
+**Business VoIP**
+- Nextiva annual vs monthly price differences, plan names and 12-month agreement conditions added.
+- RingCentral Core/Advanced/Ultra annual vs monthly rates and trial limits added.
+- Ooma Essentials/Pro/Pro Plus prices and included calling regions added.
+- Grasshopper True Solo/Solo Plus/Small Business annual prices and 7-day no-card trial added.
+- Removed unsupported “broadest integration ecosystem” and “easiest” rankings; added total-cost and country/number-porting/E911 checks.
+
+Primary sources:
+- Breezy HR: https://breezy.hr/pricing
+- Zoho Recruit: https://www.zoho.com/recruit/pricing.html
+- Workable: https://www.workable.com/pricing
+- Greenhouse: https://www.greenhouse.com/pricing
+- BambooHR: https://www.bamboohr.com/pricing/
+- Gusto: https://gusto.com/product/pricing
+- Rippling: https://www.rippling.com/pricing
+- Deel HR: https://www.deel.com/solutions/hr/
+- Expensify: https://www.expensify.com/pricing
+- Ramp: https://ramp.com/pricing
+- Zoho Expense: https://www.zoho.com/us/expense/pricing/
+- Zoho Inventory: https://www.zoho.com/us/inventory/pricing/
+- Sortly: https://www.sortly.com/pricing/
+- Square for Retail: https://squareup.com/us/en/point-of-sale/retail/pricing
+- inFlow: https://www.inflowinventory.com/software-pricing-inflow-2026
+- Nextiva: https://www.nextiva.com/nextiva-pricing
+- RingCentral: https://www.ringcentral.com/pricing/business-phone
+- Ooma: https://www.ooma.com/small-business-phone-systems/plans/
+- Grasshopper: https://grasshopper.com/pricing
+
+**Validation:** StackPick CI run `42390182646` and SEO/content audit run `42390180465` passed for application snapshot `81d1e8a7`: npm install, production dependency audit, internal links, ESLint, production build, route/sitemap checks and content inventory. Production dependency audit: 0 vulnerabilities; 6 moderate development dependency advisories remain. Later concurrent CRM/doc commits are outside this validation snapshot and have their own runs in progress. No deployment was attempted.
