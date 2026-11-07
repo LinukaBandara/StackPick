@@ -95,3 +95,13 @@ Before these pages are treated as ready for a public content-quality review:
 - [ ] Add a specific Sri Lanka availability and local-accountant workflow note only after official provider evidence is found; do not assume US/UK/Australia product terms apply in Sri Lanka.
 
 **Commit:** `e5c5785` (accounting guide update). This is editorial desk research based on vendor-published information, not hands-on product testing or accounting advice.
+
+## Email marketing software guide — 7 November 2026
+
+Updated `app/best/email-marketing-software/page.tsx` with a visible short answer and a dated pricing/plan caveat. The Mailchimp Free description now states the vendor-published cap of 250 contacts, 500 monthly sends and 250 sends per day, and links directly to its marketing pricing page. Brevo's Free description distinguishes stored contacts (up to 100,000) from sending capacity (300 emails/day) and notes the 2,000-contact automation limit, linking to Brevo's official plan documentation.
+
+Primary-source checks:
+- Mailchimp pricing: https://mailchimp.com/pricing/marketing/ — checked 7 November 2026. The live pricing page lists the Free plan at up to 250 contacts, 500 sends/month and 250/day; it also says campaigns pause when contact or send limits are reached.
+- Brevo plan documentation: https://help.brevo.com/hc/en-us/articles/208589409-About-Brevo-s-pricing-plans — recheck at publication and before future updates; the guide records the published Free-plan limits noted above.
+
+Remaining quality work: verify current MailerLite, Kit, Systeme.io, GetResponse and ActiveCampaign plan claims from their own documentation; distinguish permanent free plans from trials; check country-specific pricing and availability rather than treating USD plan pages as universal. This guide has not been locally built, linted or deployed as part of this edit.
