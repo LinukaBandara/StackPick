@@ -13,6 +13,7 @@ export default function Page() {
     <ComparisonArticle
       title="Best Payroll Software for Small Business"
       slug="payroll-software"
+      quickAnswer="If your accounting system already includes payroll, price that integrated option first. For US small businesses, compare Gusto for a fuller modern workflow, QuickBooks Payroll when you already use QuickBooks, and Patriot when straightforward payroll at a lower base price matters. State coverage, tax filings, worker count and add-ons can change the real cost."
       reviewedOn="2026-11-07"
       intro="If you already use QuickBooks or Xero for accounting, check their built-in payroll add-on before shopping standalone tools - avoiding double-entry between two systems is worth more than a marginally better feature list elsewhere."
       pricingNote="US plan prices checked November 7, 2026 against provider-owned pricing pages. Gusto Simple is US$49/month + US$6/person and includes tax filings/payments for one state; Plus is US$80 + US$12/person and includes multi-state payroll. QuickBooks Workforce Payroll + Simple Start is US$88/month + US$6.50/employee before the current introductory discount; this is a payroll-and-accounting bundle, not a standalone payroll quote. Patriot Full Service is US$37/month + US$5/worker paid for one state; each additional state is US$12/month. These are US-only references, before tax and optional add-ons. Verify state coverage, worker billing rules, renewal pricing and included filings before buying."
