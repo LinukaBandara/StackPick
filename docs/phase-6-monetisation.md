@@ -106,3 +106,38 @@ Use accurate, consistent information:
 - Geography: state the actual audience geography based on analytics, and separately disclose that the publisher operates from Sri Lanka if requested by the application.
 
 The owner must complete account identity, tax, payout and application declarations personally. Do not submit applications or agree to programme terms on the owner's behalf without explicit authorization.
+
+
+## Private affiliate operations workspace
+
+The private moderator workspace is available at `/admin/affiliate-operations` after signing in with the StackPick moderator account. It is linked from the review-moderation workspace and is marked `noindex, nofollow`.
+
+The workspace includes:
+
+- A partner register with the exact software profile, programme name, application/approval state, official programme and terms URLs, private tracking URL, commission summary, cookie window, disclosure, application/approval dates, last link-verification date and private notes.
+- Server-side validation against the existing software catalogue. URL fields must use HTTPS.
+- An activation guard: a record cannot be marked active without a tracking URL, approval date, recent verification date and disclosure. **The register does not publish or activate affiliate links on public pages.** Public destinations remain controlled by the reviewed `lib/affiliate.ts` allow-list; a human must separately verify and add an approved destination there.
+- A monthly reconciliation ledger for outbound clicks, conversions, reversals and confirmed commission, with source notes. Re-entering a partner/month updates that month's record rather than duplicating it.
+- Commission totals are grouped by currency. No exchange rates or estimated conversions are invented.
+
+### Database and access controls
+
+Migration: `supabase/migrations/20261107060000_create_affiliate_operations.sql`.
+
+- `affiliate_partners` stores programme and tracking details.
+- `affiliate_performance` stores manually reconciled monthly performance.
+- Both tables have RLS enabled, no anonymous grants, and moderator-only policies using `is_stackpick_moderator()`.
+- The Next.js API re-checks the signed-in moderator role on every request. Tracking URLs and private notes are never sent to public pages or public API routes.
+- The register intentionally does not ingest GA4, affiliate network conversion feeds or payouts automatically. Click figures may be reconciled against GA4; conversion and commission figures must come from the programme's own reporting dashboard.
+
+### Operating checklist
+
+1. Add the programme as `prospect` or `applied` only when that status is accurate.
+2. Record written approval and the current programme terms.
+3. Save the exact tracking URL privately and verify its destination and tracking behavior.
+4. Add the required disclosure and verification date before setting the record to `active`.
+5. Separately update `lib/affiliate.ts` in a reviewed code change before any public CTA uses that destination.
+6. Reconcile clicks and partner-reported conversions, reversals and confirmed commission monthly. Record the source and reporting month.
+7. Pause the record and remove the public allow-list entry if approval is withdrawn, terms change or the URL fails verification.
+
+The reporting ledger is an owner-maintained reconciliation record, not proof of payment. Only amounts confirmed in the affiliate programme dashboard should be entered as confirmed commission.
