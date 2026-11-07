@@ -25,7 +25,7 @@ function validate(input: Record<string, unknown>) {
     const raw = clean(value, 10);
     if (!raw) return null;
     const parsed = new Date(`${raw}T00:00:00.000Z`);
-    return /^\\d{4}-\\d{2}-\\d{2}$/.test(raw) && !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === raw ? raw : null;
+    return /^\d{4}-\d{2}-\d{2}$/.test(raw) && !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === raw ? raw : null;
   };
   const applicationDate = dateValue(input.application_date);
   const approvalDate = dateValue(input.approval_date);
