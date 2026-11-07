@@ -16,7 +16,8 @@
 - Dimensions support a full-property snapshot (`*`), a page path, a category and/or a software profile slug.
 - Each record can include a source report URL and notes describing the date range, filters, geography or device scope.
 - The month/source/dimension key upserts, so re-importing a corrected report updates the matching record.
-- The dashboard presents the latest full-property snapshot per source, a page-level content leaderboard with derived CTR, a category-level search-demand view, and a ledger of imported dimensions.\n- Segment views only use the matching reporting month and explicit wildcard dimensions; they are not mixed into full-property totals.
+- The dashboard presents the latest full-property snapshot per source, a page-level content leaderboard with derived CTR, a category-level search-demand view, and a ledger of imported dimensions.
+- Segment views only use the matching reporting month and explicit wildcard dimensions; they are not mixed into full-property totals.
 
 ### Existing commercial reporting
 - The analytics workspace links to the existing affiliate operations ledger.
@@ -38,10 +39,11 @@
 - Page/category/software rows can overlap; the dashboard avoids summing segmented rows into property-wide KPI cards.
 - Search demand, category trends and content performance become useful once the owner imports consistent monthly and segmented reports.
 - No conversion rate, affiliate revenue, user growth or ranking trend is fabricated when source records are absent.
+- The market registry is a separate browsing preference; analytics metrics are not converted between currencies.
 
 ## Verification
 - Migration applied to Supabase project `stackpick-reviews`.
 - SQL verification confirmed the table exists, RLS is enabled, one moderator policy exists and anon has zero table grants.
 - Supabase Security Advisor returned no findings.
 - Performance Advisor reported unused indexes on the new table before any reporting data had been imported, plus an existing multiple-permissive-policy warning on `software_reviews`. The latter is unrelated to this migration.
-- GitHub Actions and application build checks are expected to run on the pull request; no production merge or deployment is included.
+- GitHub Actions validates dependency installation, production dependency audit, internal links, lint and the production build. Production release remains a separate deployment step.
