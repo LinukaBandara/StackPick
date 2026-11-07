@@ -22,7 +22,7 @@ export default function Page() {
       slug="time-tracking-software-pricing"
       quickAnswer="If you only need a timer, start with a free plan and avoid paying for features you will not use. Compare Clockify for approvals and team controls, Toggl Track for reporting and planning, and Harvest when time tracking should feed client invoices. For Harvest, include any usage-based charges in the quote rather than comparing only the starting seat price."
       intro="Time tracking tools can look inexpensive until you need approvals, billable rates, project budgets or client invoices. This guide compares published US prices for three popular options and calculates the seat-based portion of a five- or ten-person team's bill. The important distinction is whether the subscription is just a timer, a reporting workspace, or a billing workflow—and whether the vendor charges for usage beyond seats."
-      pricingNote="Prices checked against official vendor pages on November 8, 2026. USD, before tax. Annual prices are monthly equivalents paid upfront for a year. Prices and plan limits can change by region and account. Harvest's paid prices are starting rates and additional usage-based fees may apply for projects, clients, tasks and invoices; its public pricing page does not list all overage amounts."
+      pricingNote="Prices checked against official vendor pages on November 8, 2026. USD, before tax. Annual prices are monthly equivalents paid upfront for a year. Prices and plan limits can change by region and account. Harvest offers Flex (usage-based) and Unlimited billing: Flex can add charges for active projects, clients, tasks and invoicing above included allowances, while Unlimited uses a fixed usage fee. For new accounts, Harvest says usage charges on Flex begin at the second paid renewal. Treat its seat rates as starting prices, not a complete quote."
       tools={[
         {
           name: "Clockify",
@@ -43,9 +43,9 @@ export default function Page() {
         {
           name: "Harvest",
           bestFor: "Freelancers and agencies that want tracked hours, expenses and client invoices in one workflow",
-          freeOption: "Free for one seat and two projects, with time tracking, invoicing and expense tracking.",
+          freeOption: "Free is limited to one active person and two active projects, with time tracking, invoicing and expense tracking.",
           tradeoff:
-            "Teams starts at $9/seat/month billed annually ($11 monthly). Enterprise starts at $14 annually ($17.50 monthly). These are starting prices: Harvest says additional invoices, projects, clients and tasks may be billed based on usage, and the public pricing page does not publish the full fee schedule. Model the usage-based part before choosing it for a high-volume agency.",
+            "Teams starts at $9/seat/month billed annually ($11 monthly); Enterprise starts at $14 annually ($17.50 monthly). Harvest offers Flex (usage-based) and Unlimited billing. On Flex, active projects, clients, tasks and invoicing can add charges above included allowances; on Unlimited, the usage fee is fixed. Harvest says Flex usage charges for new accounts begin at the second paid renewal. Model the likely usage or request a quote before choosing it for a high-volume agency.",
           url: "https://www.getharvest.com/pricing",
         },
       ]}
@@ -58,7 +58,7 @@ export default function Page() {
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
             The figures below multiply published per-seat rates by five or ten seats. Annual
             equivalents require paying for the year upfront. They exclude tax, promotions and
-            Harvest's usage-based fees.
+            Harvest Flex usage charges or Unlimited usage fees.
           </p>
           <div className="mt-8 overflow-x-auto rounded-2xl border border-black/10">
             <table className="w-full min-w-[760px] border-collapse text-left text-sm">
@@ -77,7 +77,8 @@ export default function Page() {
                 <tr><td className="p-4 font-medium">Clockify Pro</td><td className="p-4">$7.99 annual / $9.99 monthly</td><td className="p-4">$39.95 / $49.95</td><td className="p-4">$79.90 / $99.90</td><td className="p-4">Expenses, budgets and profitability</td></tr>
                 <tr><td className="p-4 font-medium">Toggl Track Starter</td><td className="p-4">$9 annual / $12 monthly</td><td className="p-4">$45 / $60</td><td className="p-4">$90 / $120</td><td className="p-4">Team reports and billable rates</td></tr>
                 <tr><td className="p-4 font-medium">Toggl Track Premium</td><td className="p-4">$16 annual / $24 monthly</td><td className="p-4">$80 / $120</td><td className="p-4">$160 / $240</td><td className="p-4">Approvals, profitability and SSO</td></tr>
-                <tr><td className="p-4 font-medium">Harvest Teams</td><td className="p-4">$9 annual / $11 monthly starting rate</td><td className="p-4">$45 / $55 starting rate</td><td className="p-4">$90 / $110 starting rate</td><td className="p-4">Usage fees may increase the total</td></tr>
+                <tr><td className="p-4 font-medium">Harvest Teams</td><td className="p-4">$9 annual / $11 monthly starting rate</td><td className="p-4">$45 / $55 starting rate</td><td className="p-4">$90 / $110 starting rate</td><td className="p-4">Flex usage charges or fixed Unlimited fee</td></tr>
+                <tr><td className="p-4 font-medium">Harvest Enterprise</td><td className="p-4">$14 annual / $17.50 monthly starting rate</td><td className="p-4">$70 / $87.50 starting rate</td><td className="p-4">$140 / $175 starting rate</td><td className="p-4">Advanced reports, approvals and SSO</td></tr>
               </tbody>
             </table>
           </div>
@@ -91,7 +92,7 @@ export default function Page() {
             <li><strong className="text-[#1d1d1f]">Feature gates:</strong> Identify whether you need approvals, billable rates, expenses, project budgets, custom reports or single sign-on. These may sit on higher tiers.</li>
             <li><strong className="text-[#1d1d1f]">Billing integration:</strong> If the goal is to invoice clients, check whether the tool generates invoices or only exports tracked hours for another product.</li>
             <li><strong className="text-[#1d1d1f]">Seat definitions:</strong> Verify whether invited, active, deactivated and kiosk-only users are billed differently.</li>
-            <li><strong className="text-[#1d1d1f]">Usage-based charges:</strong> Ask Harvest to estimate the actual bill for your number of clients, projects, tasks and invoices. Starting seat prices do not reveal the entire cost.</li>
+            <li><strong className="text-[#1d1d1f]">Usage-based charges:</strong> Choose between Flex and Unlimited, then estimate the active clients, projects, tasks and invoices that affect the usage bill. Starting seat prices alone do not reveal the full cost.</li>
             <li><strong className="text-[#1d1d1f]">Privacy:</strong> Time tracking is different from screenshots, activity monitoring or GPS. Confirm which monitoring features are enabled and communicate the policy to workers.</li>
             <li><strong className="text-[#1d1d1f]">Data portability:</strong> Before switching, test a CSV export of time entries, clients, projects and billable rates. Check whether invoice records migrate separately.</li>
           </ul>
