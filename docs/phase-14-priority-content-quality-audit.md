@@ -1200,3 +1200,16 @@ This queue consolidates the first-pass findings from batches 1–10. Priority re
 **Phase E — technical and release validation.** Run the existing SEO route/sitemap audit, internal-link check and content inventory; then lint, type-check, production build and CI on the final edited commit. Record exact commit/run results. No deployment or live Search Console verification is implied by this queue.
 
 **AdSense readiness is not guaranteed by completing this queue.** The aim is to make every retained page accurate, original, transparent, useful and technically sound. Google makes the approval decision independently.
+
+
+## P0 correction completed — Free CRM guide (7 November 2026)
+
+Updated `app/best/free-crm-software/page.tsx` in commit `69662e4`:
+- Corrected the material HubSpot Free claim: the current limit is 1,000 contacts and 1,000 records per other standard object type per account. The previous “1 million records across other standard object types” statement was incorrect.
+- Refreshed the official-source check date to 7 November 2026.
+- Added a concise desk-research/no-controlled-benchmark disclosure.
+- Kept the existing URL and decision framework; no redirect, noindex or consolidation change.
+
+Primary evidence: HubSpot's official pricing page states Free is $0 for up to two users, requires no credit card, allows 1,000 contacts and limits each other standard object type to 1,000 records per account: https://www.hubspot.com/pricing/crm?selectedPackage=free. The official technical limits catalogue separately documents other product-specific association limits; those must not be confused with the Free CRM record cap: https://legal.hubspot.com/hubspot-product-and-services-catalog/technical-limits.
+
+**Validation:** source edit committed through GitHub. No local build, lint, type-check, CI or deployment was run for this single-page change.
