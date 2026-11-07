@@ -144,3 +144,25 @@ Fixed the missing closing quote after the CRM page's `quickAnswer` prop in `app/
 - Verify payment processor availability, local taxes, domain renewal, app costs and actual checkout totals for each target country before expanding country-specific recommendations.
 - Compare realistic annual total costs with the same site requirements before calling one platform cheaper.
 - This batch was committed through GitHub source editing only. No local build, lint, typecheck, CI run, deployment or live Search Console validation was performed.
+
+## Sitemap and AI Search visibility checks — 7 November 2026
+
+### Editorial last-modified metadata
+Updated `app/sitemap.ts` so the five priority guides substantively revised in this branch carry the actual editorial date `2026-11-07`:
+- `/best/invoicing-software`
+- `/best/accounting-software`
+- `/best/crm-software`
+- `/best/email-marketing-software`
+- `/best/website-builders`
+
+This follows the existing rule in the sitemap source: last-modified dates represent real editorial updates, not the build/deploy date. Other URLs were not mass-dated.
+
+### Google Search generative AI control
+Google's Search Console documentation says its Search generative AI control rolled out worldwide on 31 August 2026. The default is to include a site's links/content in eligible Google Search generative AI features; owners can change this in Search Console. Excluding a site from those features is not a general Search ranking boost or penalty, and it does not replace `noindex` when the goal is to remove a page from Google Search entirely. Source: https://support.google.com/webmasters/answer/16908024
+
+Action after the branch is deployed: inspect the StackPick Search Console property's Search generative AI setting and confirm it remains set to include. This cannot be checked or changed from repository code.
+
+### Quality guardrail
+Google's people-first content guidance emphasizes original information/analysis, demonstrable effort, accuracy, clear authorship and useful added value; it warns against mass-producing pages primarily to capture search traffic. StackPick's 109-guide inventory must therefore be treated as a review queue, not as a target to expand. Do not create more near-duplicate pages or mark weak pages indexable merely because they exist in the sitemap. Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+No Search Console setting, index status, live sitemap, build, lint, CI or deployment was verified in this source-only update.
