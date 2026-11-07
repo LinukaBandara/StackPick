@@ -1515,3 +1515,16 @@ Primary sources:
 - Ramp US qualification: https://support.ramp.com/applying-and-signing-up-for-ramp-us-based
 
 The Expensify correction matters because the old copy incorrectly placed categories/tags behind a paid workspace. The current vendor page places those features in free Submit, while approvals/reimbursements/card-management/accounting integrations are in paid Collect. No live expense workflow or reimbursement test is claimed. No build, lint, type-check, CI or deployment was run.
+
+
+
+### P2 developer-tool regional consistency batch (7 November 2026)
+
+Four developer/AI workflow pages were tightened for market and billing clarity:
+
+- `app/best/ai-tools-react-nextjs/page.tsx` — commit `168ecdb`: added the formal 7 November review date and clarified that consumer subscriptions, API billing, model usage, local pricing, tax and account eligibility must be checked separately.
+- `app/best/n8n-vs-make-vs-zapier/page.tsx` — commit `6570d53`: added the formal review date and expanded the pricing caveat to include country currency/tax, billing terms, app availability, data-processing region and AI/API charges.
+- `app/best/llm-tools-for-developers/page.tsx` — commit `426273b`: added regional currency, tax, availability and data-processing qualifications to the API pricing methodology.
+- `app/best/github-tools-for-developers/page.tsx` — commit `b8a2682`: clarified that CI minute/storage charges, taxes, payment methods and security entitlements may differ by country and billing account.
+
+These were editorial consistency corrections; no vendor price or capability was changed without new primary-source evidence. The pages already include dated source checks and direct official documentation links. No model benchmark, CI billing benchmark or repository-hosting migration test is claimed. No build, lint, type-check, CI or deployment was run.
