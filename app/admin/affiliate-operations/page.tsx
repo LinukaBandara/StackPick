@@ -10,6 +10,7 @@ type Partner = {
   application_date: string | null; approval_date: string | null; last_verified_at: string | null;
   notes: string | null; updated_at: string;
 };
+type SoftwareOption = { slug: string; name: string };
 type Performance = {
   id: string; partner_id: string; period_month: string; outbound_clicks: number;
   conversions: number; reversals: number; confirmed_commission: number; currency: string;
@@ -29,6 +30,7 @@ const statuses = ["prospect", "applied", "approved", "active", "paused", "reject
 export default function AffiliateOperationsPage() {
   const [partners, setPartners] = useState<Partner[]>([]);
   const [records, setRecords] = useState<Performance[]>([]);
+  const [softwareOptions, setSoftwareOptions] = useState<SoftwareOption[]>([]);
   const [form, setForm] = useState<PartnerForm>(emptyPartner);
   const [editingId, setEditingId] = useState("");
   const [partnerId, setPartnerId] = useState("");
@@ -124,7 +126,7 @@ export default function AffiliateOperationsPage() {
         <section className="mt-9 rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
           <div className="flex flex-wrap items-center justify-between gap-3"><div><p className="sp-eyebrow">Partner register</p><h2 className="mt-2 text-xl font-semibold text-[#1d1d1f]">{editingId ? "Edit programme" : "Add a programme"}</h2></div>{editingId && <button type="button" onClick={() => { setEditingId(""); setForm(emptyPartner); }} className="text-sm font-semibold text-[#001D39] underline">Cancel edit</button>}</div>
           <form onSubmit={savePartner} className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <label className={labelClass}>Software profile slug<input required value={form.software_slug} onChange={e => setForm({...form, software_slug:e.target.value})} placeholder="hubspot-crm" className={inputClass} /></label>
+            <label className={labelClass}>Software profile<select required value={form.software_slug} onChange={e => setForm({...form, software_slug:e.target.value})} className={inputClass}><option value="">Choose software</option>{softwareOptions.map(item=><option key={item.slug} value={item.slug}>{item.name} · {item.slug}</option>)}</select></label>
             <label className={labelClass}>Programme name<input required value={form.programme_name} onChange={e => setForm({...form, programme_name:e.target.value})} placeholder="Official affiliate programme" className={inputClass} /></label>
             <label className={labelClass}>Status<select value={form.status} onChange={e => setForm({...form, status:e.target.value as PartnerForm["status"]})} className={inputClass}>{statuses.map(s=><option key={s} value={s}>{s}</option>)}</select></label>
             <label className={labelClass}>Official programme URL<input type="url" value={form.programme_url || ""} onChange={e=>setForm({...form,programme_url:e.target.value})} placeholder="https://" className={inputClass}/></label>
