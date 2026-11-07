@@ -21,12 +21,18 @@ Do not add guessed, shortened, or generic affiliate URLs. Do not label a link as
 
 ## Measurement
 
-Use GA4's `affiliate_click` event to measure outbound partner intent. Its parameters are:
+Use GA4's `vendor_outbound_click` event to measure outbound intent on software profiles. It covers the primary vendor website action, official pricing actions and official-source links. Its parameters are:
 
 - `link_url`
 - `link_domain`
 - `link_text`
 - `page_path`
+- `software_slug`
+- `vendor_action` (`website` or `pricing`)
+
+When the destination is a verified affiliate link, the same click also emits the more specific `affiliate_click` event with the same parameters. Ordinary official vendor links never emit `affiliate_click`.
+
+Both events depend on the existing cookie-consent flow: GA4 is loaded only after analytics consent. With consent rejected or not yet selected, no event is sent. No separate tracking identifiers or click database are created.
 
 Configure `affiliate_click` as a key event only after validating that consent settings and event collection work as intended. Do not treat clicks as confirmed purchases or commissions. Reconcile revenue against each programme's own dashboard and attribution window.
 
@@ -50,11 +56,11 @@ Useful reporting dimensions:
 
 ## Phase 6 delivery sequence
 
-1. Affiliate link registry and disclosure-aware vendor CTA — this initial implementation.
-2. Verify existing GA4 consent behaviour and document the affiliate event in analytics.
-3. Build an approved-programme register and apply to suitable programmes.
+1. Affiliate link registry and disclosure-aware vendor CTA — implemented.
+2. Consent-aware vendor outbound measurement — implemented for profile website and pricing links; affiliate clicks retain a separate event.
+3. Build an approved-programme register and apply to suitable programmes — applications are outside this implementation branch.
 4. Add only verified links after approval.
-5. Review clicks and confirmed revenue monthly; prioritize pages with meaningful buyer intent.
+5. Validate GA4 event receipt in DebugView after analytics consent, then review clicks and confirmed revenue monthly.
 6. Consider vendor lead-generation / sponsored placements only after clear labeling, separation from editorial ranking and an operational review process.
 
 ## Initial partner application shortlist (researched 7 November 2026)
