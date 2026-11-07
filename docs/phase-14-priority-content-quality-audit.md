@@ -735,3 +735,51 @@ Primary sources:
 **Commits:** ClickUp/monday `d513f5a`; HubSpot/Zoho `41cc3c6` and correction `9fa0a36`; HubSpot/Pipedrive `150c25b`; QuickBooks/Xero `c77e99b`; QuickBooks/FreshBooks `61d70e0`.
 
 This is a source-backed plan refresh, not a hands-on benchmark. All prices are US reference prices and must not be presented as global quotes. No local build, lint, typecheck or CI run has passed for these edits.
+
+
+## P1 article-edit batch 1 — AI support, freelancer assistants and developer LLM tools (7 November 2026)
+
+Updated:
+- `app/best/ai-customer-support-tools/page.tsx`
+- `app/best/chatgpt-vs-claude-for-freelancers/page.tsx`
+- `app/best/ai-tools-freelancers/page.tsx`
+- `app/best/llm-tools-for-developers/page.tsx`
+
+### AI customer support
+- Added quick answer, November 7 review date, a desk-research/no-benchmark disclosure and direct provider pricing links.
+- Intercom Fin is described as outcome-priced at US$0.99 per outcome, separate from full-platform seat charges; one conversation can produce at most one outcome charge under the provider's definition.
+- Zendesk AI agents are described using automated-resolution allowances, with Suite Team's published US annual price and included 5 resolutions per agent/month; extra committed resolutions and pay-as-you-go units are distinguished.
+- Tidio Lyro Free is explicitly described as a one-time 50-conversation allowance, not a monthly recurring quota. Paid quotas are monthly and depend on package.
+- Gorgias is described as ticket-based helpdesk billing plus an additional outcome-based AI automation fee when the AI resolves without human handoff. A ticket handed to a human does not incur that automation outcome fee under the provider's definition.
+
+### ChatGPT vs Claude for freelancers
+- Added quick answer, review date and a clear desk-research method statement.
+- Added current individual plan context: ChatGPT Free/Go/Plus/Pro (US Plus $20/month; Pro usage tiers $100/$200/$500; Go pricing localized) and Claude Free/Pro/Max (US Pro $20 monthly or $200 annually; Max $100/$200 monthly).
+- Clarified that usage caps depend on model, context and task; API billing is separate from consumer subscriptions.
+
+### AI tools for freelancers
+- Added quick answer, review date and desk-research/no-benchmark disclosure.
+- Replaced generic product homepages with official plan/pricing pages for ChatGPT, Claude, Grammarly, Canva and Fireflies.
+- Clarified free-vs-paid feature gating, usage quotas, retained meeting storage and client-data review. Added a cost-per-finished-deliverable method that includes subscription, usage add-ons and human editing/review time.
+
+### LLM tools for developers
+- Added quick answer, review date and explicit role-based selection guidance: hosted model APIs, local runtime, model hub and observability are different stack layers.
+- Added billing-unit detail: input/output/cached tokens, batch, tool/search grounding, audio/image and data-residency modifiers can all change API cost. Chat subscriptions are not general API credits.
+- Clarified Gemini free-tier data-use terms differ from paid tier and that model/compute licensing and hardware still matter for local or hosted models.
+- Added full cost-per-successful-task evaluation criteria and a desk-research/no-benchmark disclosure.
+- Updated direct links to official OpenAI, Anthropic, Gemini, Ollama, Hugging Face and Langfuse documentation/pricing.
+
+Primary sources:
+- Intercom pricing and outcome definition: https://www.intercom.com/pricing and https://www.intercom.com/help/en/articles/8205718-fin-ai-agent-outcomes
+- Zendesk pricing and automated-resolution tiers: https://www.zendesk.com/pricing/ and https://support.zendesk.com/hc/en-us/articles/9570369117338-About-automated-resolution-tiers
+- Tidio Lyro quotas and pricing: https://www.tidio.com/pricing/ and https://help.tidio.com/hc/en-us/articles/13924459295900-The-Lyro-AI-agent-limit
+- Gorgias ticket and automation billing: https://helpcenter.gorgias.com/en-US/how-youre-billed-for-using-gorgias-199385
+- ChatGPT plans: https://chatgpt.com/pricing/
+- Claude plans: https://claude.com/pricing
+- OpenAI API token pricing: https://developers.openai.com/api/docs/pricing
+- Anthropic API token pricing: https://platform.claude.com/docs/en/about-claude/pricing
+- Gemini API pricing and free/paid data-use distinction: https://ai.google.dev/gemini-api/docs/pricing
+
+**Commits:** AI customer support `12d7070` and methodology `a7bfd28`; ChatGPT vs Claude `83d2855`; freelancer AI tools `3079b12`; developer LLM tools `3a88334`.
+
+No local build, lint, typecheck or CI run has passed for these edits. This is an evidence and editorial update, not a controlled product test; prices and usage terms are region- and account-dependent.
