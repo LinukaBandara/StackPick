@@ -975,3 +975,30 @@ Primary sources:
 **Commits:** general AI `e78c13e`; writing `01bc452`; productivity `f78f8c5`; business content `1b6ec52`; free AI `729c6b8`; marketing `6d4d6aa`.
 
 No local build, lint, typecheck or CI run has passed for these edits. The guides remain desk-researched and do not claim a controlled model, content-quality or campaign-performance benchmark. Prices are US references and can vary by region.
+
+
+## P1 article-edit batch 5 — developer platform guide and AI intent triage (7 November 2026)
+
+Updated `app/best/github-tools-for-developers/page.tsx`:
+- Added a quick answer, November 7 review date and explicit desk-research/no-benchmark note.
+- GitHub Free now lists 2,000 standard-runner Actions minutes/month and 500 MB artifact storage for private repositories; standard runners are free for public repositories.
+- Clarified that GitHub CLI and pre-commit complement repository hosting rather than replace GitHub/GitLab/Bitbucket.
+- Added direct documentation links for protected branches, secret scanning, Dependabot alerts and Actions billing.
+- Added GitLab/Bitbucket plan-specific CI minutes, storage and seat checks without inventing exact quotas.
+
+Created `docs/phase-14-ai-content-intent-map.md`:
+- Mapped 17 AI guides to distinct primary reader intents and unique page value.
+- Recommended keeping all pages separate for now; no consolidation/noindex action is approved from source code alone.
+- Defined internal-linking paths between general AI, freelancer AI, marketing/content, automation and developer AI guides.
+- Listed Search Console query/page evidence required before any consolidation decision.
+
+Primary sources:
+- GitHub Actions billing: https://docs.github.com/en/billing/concepts/product-billing/github-actions
+- Protected branches: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
+- Secret scanning: https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning
+- Dependabot alerts: https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts
+- AI intent map document: `docs/phase-14-ai-content-intent-map.md`
+
+**Commits:** GitHub guide `ff271ca`; AI intent map `c06af58`.
+
+No live Search Console query overlap analysis has been run. The intent map is a content-purpose assessment, not evidence of actual ranking cannibalization. No build, lint, typecheck or CI run has passed for these edits.
