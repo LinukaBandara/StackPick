@@ -1471,3 +1471,17 @@ Primary sources:
 - SimplyBook.me: https://simplybook.me/en/pricing
 
 The accounting alternatives remain desk research, not tax advice or a live migration test. The booking comparison remains desk research, not a live booking/notification/payment test. No build, lint, type-check, CI or deployment was run.
+
+
+
+### P0 accounting-comparison pricing and eligibility refresh (7 November 2026)
+
+Updated `app/best/freshbooks-vs-wave/page.tsx` — commit `b79934d`:
+- Added a 7 November 2026 review marker and replaced the stale 17 October pricing-check date.
+- Kept FreshBooks standard US monthly prices separate from its current introductory promotion: Lite US$23 (5 clients), Plus US$43 (50 clients), Premium US$70 (unlimited clients). The current vendor page displays a temporary discount, so the article explicitly distinguishes promotional first-month prices from standard renewal prices.
+- Confirmed Wave Starter US$0 and Pro US$19/month or US$190/year per business; Pro's reduced card fee applies to the first 10 cumulative transactions per monthly subscription period, then standard fees apply.
+- Strengthened the Wave location gate: only businesses based in the US and Canada should treat it as a viable candidate.
+
+Sources: FreshBooks official pricing https://www.freshbooks.com/pricing; Wave official pricing https://www.waveapps.com/pricing; Wave processing-fee details https://support.waveapps.com/hc/en-us/articles/218323823-Online-payments-processing-fees-and-timelines; Wave business-location eligibility https://support.waveapps.com/hc/en-us/articles/32449161224852-Create-a-Wave-account.
+
+The QuickBooks vs Xero and QuickBooks vs FreshBooks comparisons were screened and retained: both already had 7 November 2026 dates, primary pricing links, US-specific plan limits, and migration/total-cost caveats. No additional change was necessary in this pass. No hands-on bookkeeping or migration test is claimed; no build, lint, type-check, CI or deployment was run.
