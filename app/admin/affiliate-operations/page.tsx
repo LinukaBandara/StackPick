@@ -102,7 +102,7 @@ export default function AffiliateOperationsPage() {
 
   const activeCount = partners.filter((p) => p.status === "active").length;
   const pendingCount = partners.filter((p) => ["prospect", "applied", "approved"].includes(p.status)).length;
-  const totalCommission = records.reduce((sum, row) => sum + Number(row.confirmed_commission || 0), 0);
+  const commissionByCurrency = records.reduce<Record<string, number>>((totals, row) => { totals[row.currency] = (totals[row.currency] || 0) + Number(row.confirmed_commission || 0); return totals; }, {});
 
   return (
     <main className="min-h-[75vh] bg-[#f5f5f7] px-4 py-12 sm:py-16">
@@ -118,7 +118,7 @@ export default function AffiliateOperationsPage() {
         <div className="mt-8 grid gap-3 sm:grid-cols-3">
           <div className="rounded-2xl border border-black/[0.07] bg-white p-5"><p className="text-xs text-[#6e6e73]">Active verified partners</p><p className="mt-2 text-3xl font-semibold tabular-nums text-[#001D39]">{activeCount}</p></div>
           <div className="rounded-2xl border border-black/[0.07] bg-white p-5"><p className="text-xs text-[#6e6e73]">Prospect / application pipeline</p><p className="mt-2 text-3xl font-semibold tabular-nums text-[#001D39]">{pendingCount}</p></div>
-          <div className="rounded-2xl border border-black/[0.07] bg-white p-5"><p className="text-xs text-[#6e6e73]">Recorded confirmed commissions</p><p className="mt-2 text-3xl font-semibold tabular-nums text-[#001D39]">{totalCommission.toLocaleString(undefined, { maximumFractionDigits: 2 })}</p><p className="mt-1 text-xs text-[#86868b]">Mixed currencies are not converted or summed as a single payout.</p></div>
+          <div className="rounded-2xl border border-black/[0.07] bg-white p-5"><p className="text-xs text-[#6e6e73]">Recorded confirmed commissions</p><p className="mt-2 text-xl font-semibold tabular-nums text-[#001D39]">{Object.entries(commissionByCurrency).map(([currency, amount]) => currency+" "+amount.toLocaleString(undefined, { maximumFractionDigits: 2 })).join(" · ") || "—"}</p><p className="mt-1 text-xs text-[#86868b]">Grouped by currency; no artificial exchange-rate conversion.</p></div>
         </div>
 
         <section className="mt-9 rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
