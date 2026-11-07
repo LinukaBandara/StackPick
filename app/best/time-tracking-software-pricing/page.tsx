@@ -22,12 +22,12 @@ export default function Page() {
       slug="time-tracking-software-pricing"
       quickAnswer="If you only need a timer, start with a free plan and avoid paying for features you will not use. Compare Clockify for approvals and team controls, Toggl Track for reporting and planning, and Harvest when time tracking should feed client invoices. For Harvest, include any usage-based charges in the quote rather than comparing only the starting seat price."
       intro="Time tracking tools can look inexpensive until you need approvals, billable rates, project budgets or client invoices. This guide compares published US prices for three popular options and calculates the seat-based portion of a five- or ten-person team's bill. The important distinction is whether the subscription is just a timer, a reporting workspace, or a billing workflow—and whether the vendor charges for usage beyond seats."
-      pricingNote="Prices checked against official vendor pages on October 18, 2026. USD, before tax. Annual prices are monthly equivalents paid upfront for a year. Prices and plan limits can change by region and account. Harvest's paid prices are starting rates and additional usage-based fees may apply for projects, clients, tasks and invoices; its public pricing page does not list all overage amounts."
+      pricingNote="Prices checked against official vendor pages on November 8, 2026. USD, before tax. Annual prices are monthly equivalents paid upfront for a year. Prices and plan limits can change by region and account. Harvest's paid prices are starting rates and additional usage-based fees may apply for projects, clients, tasks and invoices; its public pricing page does not list all overage amounts."
       tools={[
         {
           name: "Clockify",
           bestFor: "Teams that want time tracking with a low entry price and optional attendance or project-cost features",
-          freeOption: "The official pricing page lists a $0 Free plan; check the current seat limit and reporting-history restrictions in the plan comparison before inviting a team.",
+          freeOption: "The Free plan is $0 and supports up to 5 users. It includes unlimited time tracking and projects; paid tiers add administration, approvals, invoicing, project-cost and security controls. Confirm the current plan details before inviting a larger team.",
           tradeoff:
             "Basic starts at $3.99/seat/month billed annually ($4.99 monthly), Standard at $5.49 annually ($6.99 monthly), Pro at $7.99 annually ($9.99 monthly), and Enterprise at $11.99 annually ($14.99 monthly). Choose by the feature you actually need: approvals and invoicing sit on Standard, while expenses, budgets and profitability are on Pro.",
           url: "https://clockify.me/pricing",
@@ -35,7 +35,7 @@ export default function Page() {
         {
           name: "Toggl Track",
           bestFor: "Freelancers and small teams that prioritize simple timers, client reporting and low-friction tracking",
-          freeOption: "Free plan available for a limited number of users; the pricing page describes a small-team tier.",
+          freeOption: "Free is $0 for up to 3 users. It includes manual and real-time tracking, calendar integrations, tasks, boards and personal reports.",
           tradeoff:
             "Starter is listed at $9/user/month billed annually or $12 monthly; Premium is $16 annually or $24 monthly. Billable rates, team-level reporting and planning features make the paid tiers more relevant to client-service teams, but a solo freelancer may not need to upgrade.",
           url: "https://toggl.com/pricing",
@@ -53,7 +53,7 @@ export default function Page() {
     >
       <section className="bg-white">
         <div className="sp-container py-14 sm:py-18">
-          <p className="sp-eyebrow">US price snapshot · October 18, 2026</p>
+          <p className="sp-eyebrow">US price snapshot · November 8, 2026</p>
           <h2 className="sp-title mt-4 max-w-4xl">Model the seats—and the features—you actually need.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
             The figures below multiply published per-seat rates by five or ten seats. Annual
@@ -102,7 +102,7 @@ export default function Page() {
             ))}
           </ul>
           <p className="mt-6 max-w-3xl text-xs leading-5 text-[#6e6e73]">
-            Editorial note: prices were checked on October 18, 2026. Cost scenarios are arithmetic
+            Editorial note: prices were checked on November 8, 2026. Cost scenarios are arithmetic
             based on public list prices; StackPick does not claim hands-on testing. Recheck official
             terms before purchase because pricing and plan limits can change.
           </p>
