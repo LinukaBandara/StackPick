@@ -1602,3 +1602,13 @@ This pass continued beyond the initial free project-management/invoicing cluster
 - No deployment or AdSense approval is claimed.
 
 **Remaining execution order:** (1) reconcile the one-commit main/branch divergence deliberately; (2) align Next 16/ESLint dependencies and run clean install; (3) run `audit:seo`, `check:links`, `audit:content`, lint and production build, fixing actual failures; (4) inspect current Search Console/Bing evidence and complete the remaining P1 consolidation decisions; (5) deploy only after the Vercel build quota permits and the checks pass.
+
+
+
+### Main-branch AdSense change reviewed and mirrored onto the working branch
+
+The single commit on `main` not yet in the working branch was inspected: `f7913e0` (“Add Google AdSense verification script tag and config”). It adds the public AdSense client ID to `.env.example` and loads the async AdSense script in the root document head. The same two file changes were applied to `growth/adsense-journey-readiness`:
+- `.env.example` — commit `8e13d91`
+- `app/layout.tsx` — commit `bd3a020`
+
+This mirrors the source change without merging or rebasing the 457-commit divergent branch. The AdSense client ID is a public publisher identifier, not a secret. The script insertion has not been validated by a live AdSense crawler or a production deployment; Search Console/AdSense detection must still be checked after a permitted deploy.
