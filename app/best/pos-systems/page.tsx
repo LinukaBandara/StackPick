@@ -13,43 +13,51 @@ export default function Page() {
     <ComparisonArticle
       title="Best POS System for Small Business"
       slug="pos-systems"
-      intro="A POS decision is really a payment-processing decision wearing a software costume. At real transaction volume, a 0.3-0.5 percentage point difference in card processing fees will cost or save you far more per year than the monthly software subscription will."
-      pricingNote="Processing rates and monthly fees both shift periodically, and contract terms (especially Toast's multi-year agreements) matter as much as the headline price. Confirm current rates and contract length directly before signing anything."
+      reviewedOn="2026-11-07"
+      intro="A POS decision combines payment processing, inventory, hardware, software and contract terms. A small rate difference can outweigh the subscription at high transaction volume, but the effective cost depends on card mix, average ticket, keyed vs card-present payments, refunds and add-ons."
+      quickAnswer="Square is a flexible US starting point with no monthly POS software fee on Free, but card-present processing is 2.6% + 15¢ and online is 3.3% + 30¢. Toast has a $0 restaurant Starter Kit for eligible new single-location customers, but processing, hardware and contract terms still apply. Shopify POS makes most sense when you already use Shopify; POS Pro adds $89/location/month. Clover pricing depends on the reseller and processor."
+      pricingNote="US pricing and fees checked November 7, 2026. Square Free: 2.6% + 15¢ in person, 3.3% + 30¢ online/invoices and 3.5% + 15¢ manually entered/card-on-file. Toast restaurant Starter Kit starts at $0/month software for a single location/one terminal, with payment processing, hardware and add-ons separate; its published $69/month POS plan has a different processing rate. Shopify Basic is US$39/month and POS Pro is an additional US$89/location/month; card-present rate starts at 2.6% + 10¢ and third-party payment providers can add 2%. Clover rates and contract terms vary by reseller. These are US references; availability and fees vary by country."
       tools={[
         {
           name: "Square",
           bestFor: "Most small businesses starting out, especially without a long-term contract",
-          freeOption: "Genuinely usable free plan - not a crippled trial.",
+          freeOption: "Square Free has no monthly POS software fee or early-termination fee. US processing: 2.6% + 15¢ in person, 3.3% + 30¢ online/invoices and 3.5% + 15¢ manually entered/card-on-file.",
           tradeoff:
-            "No contracts, no early termination fees, and the cheapest hardware entry point here by a wide margin. Processing fees on the free plan are fine at low volume but get expensive fast - a shop doing meaningful monthly card volume should compare an interchange-plus processor once they outgrow \"just starting out.\"",
-          url: "https://squareup.com/us/en/point-of-sale",
+            "No monthly POS software fee or early-termination fee on Square Free. Compare the effective processing cost against your average ticket and monthly card volume; higher-volume merchants should request competing processor quotes rather than assuming a single flat rate is cheapest.",
+          url: "https://squareup.com/us/en/point-of-sale/software/pricing",
         },
         {
           name: "Toast",
           bestFor: "Full-service restaurants specifically - not adapted for retail",
-          freeOption: "Free Starter Kit available, tied to a multi-year agreement.",
+          freeOption: "Restaurant Starter Kit starts at $0/month software for eligible new single-location customers and includes one terminal; processing fees, extra hardware, installation and contract terms apply. Retail POS starts at $90/month.",
           tradeoff:
-            "Built from the ground up for restaurant service - kitchen display routing, tip handling, and online ordering all feel purpose-made rather than bolted on. The trade-off is a real one: typical multi-year contracts with meaningful early termination penalties, unlike Square's month-to-month flexibility.",
-          url: "https://pos.toasttab.com/",
+            "Built around restaurant workflows such as kitchen display routing, tips and online ordering. Hardware and payment processing are integrated, so compare the full quote and read the actual contract term, early-termination clause and hardware financing terms rather than assuming every customer receives the same agreement.",
+          url: "https://pos.toasttab.com/pricing",
         },
         {
           name: "Clover",
           bestFor: "Businesses that want to choose their own payment processor",
-          freeOption: "Software-only free tier in some configurations, varies by reseller.",
+          freeOption: "No universal Clover free plan or rate: software, hardware, payment processing and contract terms depend on the reseller/processor. Request an itemized quote and compare early-termination and equipment terms.",
           tradeoff:
             "The open app marketplace and processor flexibility are genuine advantages over Square's more closed ecosystem. Pricing and terms vary meaningfully by which reseller/processor you go through - get quotes from more than one before committing.",
-          url: "https://www.clover.com/",
+          url: "https://www.clover.com/pricing",
         },
         {
           name: "Shopify POS",
           bestFor: "Businesses selling both online and in person who want one inventory system",
-          freeOption: "No free tier - requires a Shopify e-commerce subscription as a base.",
+          freeOption: "Shopify POS Lite is included with a paid Shopify plan; Shopify Basic starts at US$39/month and POS Pro is an additional US$89/location/month for advanced staff/inventory controls.",
           tradeoff:
             "If you already run a Shopify store, unifying online and in-store inventory into one system genuinely eliminates a real operational headache. You're paying for a Shopify subscription on top of the POS add-on, so it only makes sense if e-commerce is actually part of the business.",
-          url: "https://www.shopify.com/pos",
+          url: "https://www.shopify.com/pos/pricing",
         },
       ]}
-      bottomLine="Just starting out and want zero contract risk? Square. Running a full-service restaurant specifically? Toast's purpose-built workflows are worth the contract commitment. Want processor flexibility and an app marketplace? Clover, but shop multiple resellers first. Selling online and in person? Shopify POS avoids running two separate inventory systems."
-    />
+      bottomLine="For a US small business that wants no monthly POS software fee, compare Square Free's processing rates with your card mix. For restaurants, evaluate Toast's Starter Kit and full contract quote. Choose Clover only after comparing reseller offers. Choose Shopify POS when you already need Shopify ecommerce and can justify the additional POS Pro location fee."
+    >
+      <section className="rounded-2xl bg-[#f5f5f7] p-6">
+        <h2 className="text-xl font-semibold text-[#101828]">Calculate the real POS cost</h2>
+        <p className="mt-3 text-sm leading-6 text-[#667085]">Estimate monthly processing as: card volume × percentage rate + number of transactions × fixed fee. Add monthly software, hardware leases, chargebacks, online/keyed rates, payroll, loyalty, delivery integrations and contract exit costs. Use your own average ticket and card mix; a rate comparison without transaction volume is not a meaningful winner ranking.</p>
+        <p className="mt-4 text-xs leading-5 text-[#667085]">Research method: desk review of official US pricing and payment-fee pages checked November 7, 2026. No live merchant account or hardware test is claimed; actual rates and availability depend on the merchant's country, underwriting and negotiated contract.</p>
+      </section>
+    </ComparisonArticle>
   );
 }
