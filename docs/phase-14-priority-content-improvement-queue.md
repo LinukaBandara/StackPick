@@ -182,3 +182,19 @@ Updated invoicing and accounting:
 CRM, email marketing and website builder pages already had dated plan-specific comparisons, primary-source links and country/currency caveats; these were reviewed and retained without unnecessary rewrites. The audit document records the exact source checks and remaining regional caveats.
 
 **Next:** P0 item 6 — recheck comparison pages with known stale plan names, caps or unsupported limits.
+
+
+### P0 item 6: Known-risk comparison guides — first refresh completed
+
+Updated:
+- `app/best/clickup-vs-monday/page.tsx`
+- `app/best/hubspot-vs-zoho-crm/page.tsx`
+- `app/best/hubspot-vs-pipedrive/page.tsx`
+- `app/best/quickbooks-vs-xero/page.tsx`
+- `app/best/quickbooks-vs-freshbooks/page.tsx`
+
+The monday 200-item Free cap is now supported by its current official help article (last modified November 1, 2026); ClickUp's old Unlimited paid tier is now Core at US$9/user/month billed yearly. Both HubSpot comparison pages now use the correct 1,000-record cap for each other standard object type. Pipedrive pricing and plan names were refreshed; QuickBooks/Xero/FreshBooks pages now have November 7 review notes and updated free/trial limits and list prices.
+
+Exact sources and country caveats are in the audit document. No local build/lint/typecheck/CI has passed.
+
+**Next:** Begin P1 work — improve evidence and decision value on the weaker guides, starting with AI customer support, ChatGPT vs Claude for freelancers, AI tools for freelancers and LLM tools for developers.
