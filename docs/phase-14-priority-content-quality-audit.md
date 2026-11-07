@@ -166,3 +166,17 @@ Action after the branch is deployed: inspect the StackPick Search Console proper
 Google's people-first content guidance emphasizes original information/analysis, demonstrable effort, accuracy, clear authorship and useful added value; it warns against mass-producing pages primarily to capture search traffic. StackPick's 109-guide inventory must therefore be treated as a review queue, not as a target to expand. Do not create more near-duplicate pages or mark weak pages indexable merely because they exist in the sitemap. Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
 
 No Search Console setting, index status, live sitemap, build, lint, CI or deployment was verified in this source-only update.
+
+## Sitemap metadata validation — 7 November 2026
+
+Updated `app/sitemap.ts` so the five priority guides substantively revised in this branch carry `2026-11-07` as their editorial last-modified date: invoicing, accounting, CRM, email marketing and website builders. Unchanged routes were not mass-dated.
+
+Extended `scripts/audit-seo-routes.mjs` to validate every `LAST_MODIFIED` entry:
+- the date must be a real `YYYY-MM-DD` calendar date;
+- the route must resolve to an App Router page;
+- the route must also appear in the static sitemap;
+- duplicate date-map route keys are reported.
+
+The existing route audit still checks guide-directory duplicates, missing App Router pages, sitemap duplicates and guide links omitted from the sitemap. The workflow's existing Node syntax-check step will cover this script on its next run.
+
+**Validation status:** source edits were fetched back from GitHub and inspected. The audit script has not yet been executed locally or in GitHub Actions; do not call this a passing test. The Next.js build, ESLint, TypeScript check and deployment also remain outstanding.
