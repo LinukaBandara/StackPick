@@ -1528,3 +1528,12 @@ Four developer/AI workflow pages were tightened for market and billing clarity:
 - `app/best/github-tools-for-developers/page.tsx` — commit `b8a2682`: clarified that CI minute/storage charges, taxes, payment methods and security entitlements may differ by country and billing account.
 
 These were editorial consistency corrections; no vendor price or capability was changed without new primary-source evidence. The pages already include dated source checks and direct official documentation links. No model benchmark, CI billing benchmark or repository-hosting migration test is claimed. No build, lint, type-check, CI or deployment was run.
+
+
+
+### P1 business workflow and time-tracking consistency batch (7 November 2026)
+
+- `app/best/free-vs-paid-business-software/page.tsx` — added a 7 November review date and current US-facing plan examples for HubSpot (2 users/1,000 contacts), Trello (10 collaborators/10 boards), Notion (solo vs multi-member Free block limits) and Zoho CRM (3 users). Replaced vendor homepages with official plan pages and clarified regional eligibility.
+- `app/best/time-tracking-software/page.tsx` — commit `f02f959`. Added the 7 November review date, refreshed the official plan-check date, replaced generic product homepages with direct pricing pages, and removed an unsupported subjective claim about Clockify's usability in favor of a recommendation to test the actual workflow.
+
+The other inspected workflow guides—`how-much-business-software-do-you-need`, `simple-small-business-software-stack`, and `manage-client-projects-without-full-time-team`—already had dated plan snapshots, quick answers and practical decision criteria, so they were retained without redundant copy changes. No controlled time-tracking usability test is claimed. No build, lint, type-check, CI or deployment was run.
