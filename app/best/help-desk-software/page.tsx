@@ -13,6 +13,7 @@ export default function Page() {
     <ComparisonArticle
       title="Best Help Desk Software for Small Business"
       slug="help-desk-software"
+      quickAnswer="A shared inbox may be enough for low-volume support. Compare Freshdesk and Zoho Desk when you need ticket assignment, status tracking and basic reporting. Help Scout is worth testing for a customer-friendly shared-inbox workflow; Gorgias is most relevant to ecommerce teams that need order context. Price the exact number of agents and channels you will use."
       intro="A solo operator or 2–5 person team usually needs a dependable place to receive customer questions, assign ownership, find previous conversations and avoid duplicate replies. A shared inbox may be enough for low volume. A help desk becomes more useful when requests need categories, assignment rules, saved replies, service-level targets or reporting. Choose based on the support workflow you actually run — not on enterprise features you will never configure."
       pricingNote="Verify the current free agent cap, ticket or contact limits, shared inbox access, channels, automation, reporting, saved replies and data export. Some providers offer a temporary trial rather than a permanent free tier, and AI features may have separate limits or charges. Calculate the price for your actual agent count and confirm what happens to ticket history if you downgrade or leave."
       tools={[
