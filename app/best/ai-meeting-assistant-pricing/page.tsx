@@ -29,7 +29,7 @@ export default function Page() {
         <p className="sp-eyebrow">Software pricing · Checked November 7, 2026</p>
         <h1 className="sp-display mt-4 max-w-4xl">AI meeting assistant pricing: what do notes and transcripts really cost?</h1>
         <p className="sp-eyebrow mt-6">Quick answer</p>
-        <p className="sp-body-large mt-6 max-w-3xl">For an individual, start with a free tier only if its history, summary and transcription limits cover your real meeting volume. For teams, compare the full seat cost and the features that matter: shared search, CRM sync, admin controls and retention. This guide compares the providers’ publicly displayed US-dollar plan information for Fathom, Fireflies.ai, Otter.ai and Granola; billing currency, tax, offers and eligibility can differ by country.</p>
+        <p className="sp-body-large mt-6 max-w-3xl">For free individual meeting notes, compare Fathom Free with Granola Basic; choose Granola if bot-free device-audio capture is important. Teams should compare Fireflies, Fathom Team/Business and Otter around shared recordings, transcription or storage allowances, CRM sync and admin controls. The prices below are US-dollar references, not quotes for every country; billing currency, tax, offers and eligibility can differ by location.</p>
 
         <section className="mt-10 overflow-x-auto rounded-2xl border border-[#d2d2d7]">
           <table className="w-full min-w-[900px] border-collapse text-left text-sm">
