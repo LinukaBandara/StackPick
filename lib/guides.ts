@@ -5,7 +5,7 @@ export interface GuideItem {
   category: string;
 }
 
-export const ARTICLES = [
+export const ARTICLES: GuideItem[] = [
   { href: "/best/invoicing-software", title: "Best Invoicing Software for Freelancers", desc: "Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks", category: "Finance" },
   { href: "/best/multi-currency-invoicing", title: "Best Multi-Currency Invoicing Software", desc: "Compare foreign-currency invoices, exchange rates, payment collection and accounting trade-offs.", category: "Finance" },
   { href: "/best/accounting-software", title: "Best Accounting Software for Small Business", desc: "Xero, QuickBooks, Wave, Zoho Books", category: "Finance" },
