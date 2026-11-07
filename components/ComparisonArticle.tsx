@@ -524,6 +524,7 @@ export interface ComparisonArticleProps {
   title: string;
   slug: string;
   intro: string;
+  quickAnswer?: string;
   pricingNote?: string;
   tools: ComparisonTool[];
   bottomLine: string;
@@ -534,6 +535,7 @@ export default function ComparisonArticle({
   title,
   slug,
   intro,
+  quickAnswer,
   pricingNote,
   tools,
   bottomLine,
@@ -599,6 +601,12 @@ export default function ComparisonArticle({
           <p className="sp-eyebrow mt-8 uppercase tracking-wider text-xs">Software comparison</p>
           <h1 className="sp-title mt-3 max-w-4xl text-[#1d1d1f]">{title}</h1>
           <p className="mt-5 max-w-3xl text-base sm:text-lg leading-relaxed text-[#6e6e73]">{intro}</p>
+          {quickAnswer && (
+            <div className="mt-7 max-w-3xl border-l-2 border-[#004bb5] pl-5">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#004bb5]">Short answer</p>
+              <p className="mt-2 text-sm sm:text-base leading-relaxed text-[#1d1d1f]">{quickAnswer}</p>
+            </div>
+          )}
           <p className="mt-5 text-xs text-[#86868b]">Independent research · Verify current pricing with each provider</p>
         </div>
       </header>
