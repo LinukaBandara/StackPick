@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "check:links": "node scripts/check-internal-links.mjs",
-    "audit:content": "node scripts/audit-content-quality.mjs"
+    "audit:content": "node scripts/audit-content-quality.mjs",
+    "audit:seo": "node scripts/audit-seo-routes.mjs"
   },
   "dependencies": {
     "next": "16.4.2",
