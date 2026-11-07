@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, type FormEvent } from "react";
 import Link from "next/link";
 
 type Row = { id: string; source: string; page_path: string; category: string; software_slug: string; country_code: string; sessions: number | null; source_note: string | null };
@@ -45,7 +45,7 @@ export default function JourneyReadinessPage() {
   const total = current?.rows.reduce((sum, row) => sum + (row.sessions || 0), 0) || 0;
   const missing = markets.filter((m) => !current?.rows.some((row) => row.country_code === m.code));
 
-  async function save(event: React.FormEvent<HTMLFormElement>) {
+  async function save(event: FormEvent<HTMLFormElement>) {
     event.preventDefault(); setBusy(true); setError(""); setMessage("");
     try {
       const days = (Date.parse(end + "T00:00:00Z") - Date.parse(start + "T00:00:00Z")) / 86400000 + 1;
