@@ -123,3 +123,16 @@ The pricing page now carries a November 7, 2026 source-check date, refreshed pro
 Source note and limitations are recorded in `docs/phase-14-priority-content-quality-audit.md`. This is a first-pass refresh from vendor sources; final checkout terms can vary by country/account. No build, lint, typecheck or CI run has passed yet.
 
 **Next:** P0 item 2 — refresh AI coding-assistant pricing/usage claims, then P0 item 3 — verify automation billing models.
+
+
+### P0 item 2: AI coding-assistant plans — first refresh completed
+
+Updated:
+- `app/best/ai-coding-assistants/page.tsx`
+- `app/best/ai-tools-react-nextjs/page.tsx`
+
+The guide now reflects Copilot's 2,000 Free completions/month and AI-credit billing for agent/chat use; Claude Code's shared Pro/Max usage and separate API billing; Codex plan-based access and Cloud eligibility; Devin Desktop's replacement of the Windsurf name; and Google's transition from Gemini Code Assist for individuals to Antigravity. Cursor's current plan link and variable usage model were refreshed without carrying forward old plan prices.
+
+Sources and details are recorded in the audit document. This is a source-backed first pass, not a hands-on tool benchmark or a guarantee of identical regional checkout terms. No build/lint/typecheck/CI has passed.
+
+**Next:** P0 item 3 — reconcile n8n, Make and Zapier billing units and usage examples.
