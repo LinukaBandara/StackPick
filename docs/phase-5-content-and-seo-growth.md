@@ -76,3 +76,16 @@ Do not delete or redirect URLs based only on low word count, low traffic or an a
 ## Completion criteria
 
 Phase 5 is ready to close only when the content inventory has been reviewed, priority pages have been improved with traceable sources, overlap decisions are documented, internal links and sitemap are checked, and the AdSense account-side diagnostics have been reviewed. No approval or ranking outcome is guaranteed.
+
+## Initial inventory snapshot — 7 November 2026
+
+The first successful repository audit found:
+
+- **109 guide/comparison article routes**
+- **7 permanent-redirect routes**, removed from the XML sitemap
+- **1 main `/best` directory page**
+- The audit script passed syntax validation and generated its CSV report in GitHub Actions.
+- The heuristic scanner currently reports no metadata/structure flags. This is not a quality certification and does not verify the factual accuracy or originality of any article.
+- Eight articles remain in the manual content-review queue because their estimated page-specific source copy is comparatively short: `invoice-clients-as-freelancer`, `manage-customer-leads-as-freelancer`, `free-vs-paid-business-software`, `manage-client-projects-without-full-time-team`, `ai-tools-marketing-small-businesses`, `calendly-vs-google-calendar`, `notion-vs-clickup` and `canva-vs-adobe-express`. Their shared article-template content is not included as unique editorial depth; review these pages manually before making any index or consolidation decision.
+
+The first editorial expansion batch improves eight alternatives/workflow pages and adds contextual related-guide links across additional topic clusters. The next batch should be selected using Search Console query/page performance, then checked against current primary sources.
