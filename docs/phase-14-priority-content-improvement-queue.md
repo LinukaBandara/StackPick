@@ -312,3 +312,28 @@ These validation results apply to snapshot `35e86257`; subsequent documentation-
 4. When Vercel quota permits, deploy the validated branch, then inspect Search Console coverage, query overlap and page performance before making consolidation decisions.
 
 No SEO/GEO/AEO first-place ranking or AdSense approval is guaranteed.
+
+
+## Inventory-driven batch — 13 more guides improved
+
+The generated content inventory was used to prioritize and update 13 guides covering project management, contract management, NPS surveys, automation, scheduling, POS, cloud backup, business VPN, free website builders and form-builder pricing. See `docs/phase-14-priority-content-quality-audit.md` for page-by-page changes, plan evidence and source links.
+
+### Latest validation
+
+For application snapshot `a2039072`:
+- StackPick CI run `42389860220`: passed `npm ci`, production dependency audit, internal links, ESLint and production build.
+- SEO/content run `42389855802`: passed route/sitemap integrity, internal links and content inventory generation.
+- Production dependency audit: 0 vulnerabilities.
+- Full dependency audit: 6 moderate development-dependency advisories remain.
+
+No deployment was attempted. The latest content inventory still shows substantial scanner flags, but not all are defects; do not mass-insert generic review dates, quick answers or pricing notes.
+
+### Next high-risk batch
+
+1. Applicant tracking software
+2. HR software
+3. Expense management software
+4. Inventory management software
+5. Business phone/VoIP
+
+Prioritize current regional pricing, seat/employee limits, payroll/HR compliance, export/API capabilities, contract terms and source-backed free-plan claims. After that, revisit cloud storage, social scheduling and endpoint security.
