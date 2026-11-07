@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 
 type Partner = {
@@ -120,7 +121,7 @@ export default function AffiliateOperationsPage() {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div><p className="sp-eyebrow">Private workspace · Phase 6</p><h1 className="sp-title mt-3 text-[#1d1d1f]">Affiliate operations.</h1><p className="mt-3 max-w-2xl text-sm leading-6 text-[#6e6e73]">Manage programme approvals, verified destinations and monthly figures reconciled against partner dashboards.</p></div>
-          <button type="button" onClick={() => void load()} disabled={loading} className="min-h-10 rounded-full border border-black/15 bg-white px-4 text-sm font-semibold text-[#001D39] disabled:opacity-50">Refresh data</button>
+          <div className="flex flex-wrap gap-2"><Link href="/admin/analytics" className="min-h-10 rounded-full border border-black/15 bg-white px-4 py-2.5 text-sm font-semibold text-[#001D39]">Analytics dashboard</Link><button type="button" onClick={() => void load()} disabled={loading} className="min-h-10 rounded-full border border-black/15 bg-white px-4 text-sm font-semibold text-[#001D39] disabled:opacity-50">Refresh data</button></div>
         </div>
 
         {error && <div role="alert" className="mt-7 rounded-2xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">{error}</div>}
