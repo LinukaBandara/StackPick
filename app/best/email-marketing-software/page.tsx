@@ -14,22 +14,23 @@ export default function EmailMarketingSoftwarePage() {
       title="Best Email Marketing Software for Small Business"
       slug="email-marketing-software"
       intro="The right email platform depends heavily on what drives your cost: contact-list size, sending frequency, automation depth or creator-focused publishing. We compare practical fit and pricing model instead of ranking the platform with the longest feature list."
-      pricingNote="Free-tier limits, contact caps and sending limits change regularly. Verify the current plan details directly with each vendor before importing a list or committing to a paid tier. List size is only half the equation — sending frequency and automation needs often determine the real cost."
+      quickAnswer="For a very small list, Mailchimp’s free plan is limited to 250 contacts and 500 monthly sends. For a large stored list with low daily volume, Brevo’s free plan can be a better fit: it allows up to 100,000 stored contacts but only 300 sends per day. Choose MailerLite for a simpler newsletter workflow, Kit for creator publishing, or ActiveCampaign when advanced automation justifies a paid platform. Compare the exact plan available in your billing country before migrating."
+      pricingNote="Plan details checked 7 November 2026 against vendor documentation. Mailchimp and Brevo limits below are the published free-plan limits reviewed for this guide; vendors can change eligibility, features and prices. Prices, taxes, currencies and payment options may vary by billing country. Confirm the live terms for your country before importing a list or committing to a paid tier. List size is only half the equation — sending frequency and automation needs often determine the real cost."
       tools={[
         {
           name: "Mailchimp",
           bestFor: "First-time senders who want a familiar, well-documented platform",
           freeOption:
-            "A limited free offering may be available for small lists. Confirm current contact and send limits on the official pricing page before relying on it.",
+            "The vendor’s published Free plan includes up to 250 contacts and 500 email sends per month, with a 250-send daily cap. Sending pauses when the free contact or send limit is reached. This is a small-list starter tier, not a generous free newsletter plan.",
           tradeoff:
             "Familiar workflows and broad documentation are useful for beginners. List-based pricing can become expensive as an audience grows, so compare total cost at your expected list size.",
-          url: "https://mailchimp.com/",
+          url: "https://mailchimp.com/pricing/marketing/",
         },
         {
           name: "Brevo",
           bestFor: "Businesses with larger contact lists but modest sending frequency",
           freeOption:
-            "Brevo’s official plan documentation currently lists its Free plan with up to 100,000 stored contacts but only 300 email sends per day; marketing automation is limited to up to 2,000 contacts. Stored contacts are not the same as send capacity, so this can suit a large, lightly contacted list but not a high-frequency newsletter. Recheck the live terms before signup.",
+            "Brevo’s published Free plan allows up to 100,000 stored contacts and 300 email sends per day; marketing automation is limited to up to 2,000 contacts. Stored contacts are not the same as send capacity, so this can suit a large, lightly contacted list but not a high-frequency newsletter. Check the linked plan documentation for current terms before signup.",
           tradeoff:
             "A volume-oriented pricing model can work well for large lists that do not send constantly. Frequent campaigns can change the cost calculation, so model your actual send volume.",
           url: "https://help.brevo.com/hc/en-us/articles/208589409-About-Brevo-s-pricing-plans",
