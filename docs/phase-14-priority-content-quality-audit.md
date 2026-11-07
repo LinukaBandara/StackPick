@@ -667,3 +667,37 @@ Primary sources:
 **Commits:** CRM `5dda1e8`; project management `4000405`; invoicing `6377659`; freelancer stack `c768c8c`.
 
 No local build, lint, typecheck or CI run has passed for these edits.
+
+
+## Fifth article-edit batch — five core commercial guides (7 November 2026)
+
+The five core commercial guides were rechecked against official plan pages. Four already had a November 7 review date and source-led plan/region notes; the invoicing guide was updated further, and the accounting guide received a material QuickBooks correction.
+
+Updated:
+- `app/best/invoicing-software/page.tsx`
+  - Added a quick answer.
+  - Updated Zoho Invoice US Free to the provider-published limits: 2 users, 3 projects and 500 invoices/year; noted invoice branding and deletion after more than 180 days of inactivity.
+  - Clarified QuickBooks Online US Free: $0, no card required, 1 user, no accountant access, 2 invoices/month and 1 connected bank; noted the provider's QuickBooks Payments exception and the need to verify eligibility.
+  - Clarified that FreshBooks' 30-day trial requires no credit card but is not a permanent free plan.
+  - Retained Wave US/Canada eligibility, separate payment-processing fees and Invoice Ninja's 5-client Free plan.
+- `app/best/accounting-software/page.tsx`
+  - Corrected the earlier statement that QuickBooks had no permanent free accounting plan. Its US Free plan is now listed at $0, no card required, 1 user, no accountant access, 2 invoices/month and 1 bank connection, subject to a QuickBooks Payments exception.
+  - Updated the quick answer to reflect the limited QuickBooks tier and distinguish it from Xero's lack of a permanent free tier.
+
+Reviewed and retained as already source-backed:
+- `app/best/crm-software/page.tsx` — HubSpot Free 2 users/1,000 contacts/1,000 records per other standard object; Zoho Free 3 users; Pipedrive no permanent free tier; US pricing clearly labelled.
+- `app/best/email-marketing-software/page.tsx` — dated plan-limit comparisons for Mailchimp, Brevo, MailerLite, ActiveCampaign, Kit, Systeme.io and GetResponse; permanent free tiers distinguished from trials and send-volume vs stored-contact limits.
+- `app/best/website-builders/page.tsx` — US annual-billing references for Squarespace, Wix, Shopify and Webflow, with transaction-fee, plan-scope and regional caveats.
+
+Primary sources checked:
+- Wave pricing and payment fees: https://www.waveapps.com/pricing and https://support.waveapps.com/hc/en-us/articles/218323823-Online-payments-processing-fees-and-timelines
+- Zoho Invoice US Free limits: https://www.zoho.com/us/invoice/pricing/
+- Invoice Ninja Free limits and no-card statement: https://invoiceninja.com/pricing-plans/
+- FreshBooks pricing/trial/client limits: https://www.freshbooks.com/pricing
+- QuickBooks Free plan and exceptions: https://onboard.app.intuit.com/qbo-ecosystem-signup/signup?bc=OBI-LL1&locale=en-US&offerId=undefined&offerType=trial and https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-billing-updates/upgrade-downgrade-quickbooks-online-subscription/L7LN5zzbs_US_en_US
+- Zoho Books US Free eligibility/limits: https://www.zoho.com/us/books/pricing/
+- CRM, email marketing and website builder source links remain listed on their respective guide pages.
+
+**Commits:** invoicing guide `7b38802` and FreshBooks trial clarification `ea9d65d`; accounting guide `156e7ad`.
+
+This review does not make US pricing or eligibility global. QuickBooks Free's two-invoice limit and payment exception should be checked at signup; Zoho Books' US revenue threshold is country-specific. No local build, lint, typecheck or CI run has passed for these edits.
