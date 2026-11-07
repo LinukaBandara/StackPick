@@ -13,6 +13,7 @@ function StackPickMark() {
 
 const EXPLORE_LINKS = [
   { href: "/software-finder", label: "Software finder" },
+  { href: "/markets", label: "Markets & regional pricing" },
   { href: "/alternatives", label: "Find alternatives" },
   { href: "/best/invoicing-software", label: "Invoicing software" },
   { href: "/best/crm-software", label: "CRM software" },
