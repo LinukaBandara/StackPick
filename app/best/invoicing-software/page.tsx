@@ -13,8 +13,9 @@ export default function InvoicingSoftwarePage() {
     <ComparisonArticle
       title="Best Invoicing Software for Freelancers"
       slug="invoicing-software"
+      reviewedOn="2026-11-07"
       intro="For a US freelancer, the right invoicing tool should make it easy to send a professional invoice, remind clients about overdue balances, accept the payment methods clients prefer, and export clean records for bookkeeping. A free plan can be enough when invoices are simple; recurring billing, time tracking, accounting reports or higher card-payment volume can change the calculation. This comparison separates free invoice creation from the cost of getting paid."
-      pricingNote="Plan details below were checked against official provider pages on October 11, 2026. Promotions, payment eligibility and feature limits can change. For a US freelancer, confirm the current plan shown at signup and the payment processor's own fees before moving live client billing. A software subscription fee and a payment-processing fee are separate costs."
+      pricingNote="US plan and fee references checked 7 November 2026; these are not global offers. Wave account eligibility is limited to businesses located in the US and Canada. Payment gateways, card rates, payout currencies, tax handling and local invoice rules vary by business country. Confirm the exact product edition and payment processor terms shown for your country before moving live client billing. A software subscription fee and a payment-processing fee are separate costs."
       tools={[
         {
           name: "Wave",
@@ -33,16 +34,16 @@ export default function InvoicingSoftwarePage() {
         {
           name: "Invoice Ninja",
           bestFor: "Technically comfortable freelancers who value control or self-hosting",
-          freeOption: "Invoice Ninja's Free plan is listed at $0 and includes up to 5 clients with unlimited invoices. It also lists recurring invoices, 11 invoice templates, client payment portals and product/inventory management.",
+          freeOption: "Invoice Ninja's Free plan is listed at $0 and includes up to 5 clients with unlimited invoices. It also lists recurring invoices, 11 invoice templates, client payment portals and product/inventory management. Its published 2026 pricing update confirms the free tier remains free with 5 clients; Pro is listed at US$14/month on monthly billing. Source: https://invoiceninja.com/pricing-plans/.",
           tradeoff: "The hosted free plan is capped at five clients; unlimited clients and removing Invoice Ninja branding require a paid plan. Self-hosting can offer more control, but you take on installation, security updates, backups and maintenance.",
-          url: "https://invoiceninja.com/",
+          url: "https://invoiceninja.com/pricing-plans/",
         },
         {
           name: "FreshBooks",
           bestFor: "Freelancers who want a polished client experience and time tracking",
-          freeOption: "FreshBooks offers a 30-day free trial, not a permanent free plan. Its current US pricing page lists Lite for up to 5 billable clients and Plus for up to 50 at standard pricing, with promotions that may change. Active and archived clients count toward the limit.",
+          freeOption: "FreshBooks offers a 30-day free trial, not a permanent free plan. Its US pricing page lists Lite for up to 5 billable clients and Plus for up to 50; the page currently shows promotional prices alongside standard list prices (Lite $23/month and Plus $43/month on the monthly view). Active and archived clients count toward the limit. Rechecked 7 November 2026. Confirm the billing view and offer at checkout. Source: https://www.freshbooks.com/pricing.",
           tradeoff: "It suits freelancers who also want expense tracking, estimates and accounting reports, but check the standard renewal price after any introductory offer. If you invoice more than five clients, Lite's client cap may force an upgrade.",
-          url: "https://www.freshbooks.com/",
+          url: "https://www.freshbooks.com/pricing",
         },
         {
           name: "QuickBooks",
@@ -90,7 +91,7 @@ export default function InvoicingSoftwarePage() {
           <p className="sp-eyebrow">Research notes</p>
           <h2 className="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-[#1d1d1f]">Official plan details checked</h2>
           <p className="mt-4 max-w-3xl text-sm leading-6 text-[#6e6e73]">
-            Plan facts were checked on October 11, 2026. Provider promotions and features can change; open the official pages to confirm the terms available to your business before relying on a limit or connecting payments.
+            US plan references were rechecked on 7 November 2026. They do not establish availability or payment support in other countries. Provider promotions, taxes, payment gateways, payout currencies and features can change; confirm the terms available to your business before relying on a limit or connecting payments.
           </p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {[

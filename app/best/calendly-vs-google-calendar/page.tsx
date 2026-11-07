@@ -13,6 +13,7 @@ export default function Page() {
       title="Calendly vs Google Calendar"
       slug="calendly-vs-google-calendar"
       intro="Google Calendar is primarily a calendar and scheduling workspace; Calendly is designed to let other people book available time through a controlled booking flow. The better choice depends on whether you are coordinating your own diary or offering customers a self-service way to choose an appointment."
+      quickAnswer="Choose Google Calendar if you mainly need to manage your own diary and share availability. Choose Calendly when you need a dedicated self-service booking page with clearer event types and booking controls. Check the current free-plan limits and paid features against the exact booking flow you need."
       pricingNote="Google appointment-schedule features depend on account type and Workspace edition. Calendly's booking, routing, team and workflow features vary by plan. Verify current limits, calendar connections and regional availability before relying on either product."
       tools={[
         { name: "Calendly", bestFor: "Customer-facing booking links with defined availability and event types", freeOption: "Check current free-plan event-type, calendar-connection and feature limits.", tradeoff: "It reduces back-and-forth and supports structured booking rules, but advanced routing, reminders, team scheduling and integrations may require a paid tier.", url: "https://calendly.com/" },

@@ -523,7 +523,9 @@ export interface ComparisonTool {
 export interface ComparisonArticleProps {
   title: string;
   slug: string;
+  reviewedOn?: string;
   intro: string;
+  quickAnswer?: string;
   pricingNote?: string;
   tools: ComparisonTool[];
   bottomLine: string;
@@ -533,7 +535,9 @@ export interface ComparisonArticleProps {
 export default function ComparisonArticle({
   title,
   slug,
+  reviewedOn,
   intro,
+  quickAnswer,
   pricingNote,
   tools,
   bottomLine,
@@ -549,6 +553,7 @@ export default function ComparisonArticle({
         headline: title,
         description: intro,
         url: `${siteUrl}/best/${slug}`,
+        ...(reviewedOn ? { dateModified: `${reviewedOn}T00:00:00+00:00` } : {}),
         author: { "@type": "Organization", name: "StackPick Editorial", url: siteUrl },
         publisher: { "@type": "Organization", name: "StackPick", url: siteUrl },
         isAccessibleForFree: true,
@@ -599,7 +604,18 @@ export default function ComparisonArticle({
           <p className="sp-eyebrow mt-8 uppercase tracking-wider text-xs">Software comparison</p>
           <h1 className="sp-title mt-3 max-w-4xl text-[#1d1d1f]">{title}</h1>
           <p className="mt-5 max-w-3xl text-base sm:text-lg leading-relaxed text-[#6e6e73]">{intro}</p>
+          {quickAnswer && (
+            <div className="mt-7 max-w-3xl border-l-2 border-[#004bb5] pl-5">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#004bb5]">Short answer</p>
+              <p className="mt-2 text-sm sm:text-base leading-relaxed text-[#1d1d1f]">{quickAnswer}</p>
+            </div>
+          )}
           <p className="mt-5 text-xs text-[#86868b]">Independent research · Verify current pricing with each provider</p>
+          {reviewedOn && (
+            <p className="mt-2 text-xs text-[#86868b]">
+              Reviewed by StackPick Editorial · {new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${reviewedOn}T00:00:00.000Z`))} · Desk research, not a hands-on product test
+            </p>
+          )}
         </div>
       </header>
 

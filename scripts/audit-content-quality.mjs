@@ -69,6 +69,10 @@ function analyse(file) {
   const externalSources = new Set([...source.matchAll(/https?:\/\/[^"\x27\s)]+/g)].map((match) => match[0].replace(/[),.;]+$/, ""))).size;
   const toolEntries = (source.match(/\bname\s*:/g) ?? []).length;
   const reviewedOn = source.match(/(?:reviewed|verified|checked)(?:On|\s+(?:on|date))?\s*[:=]\s*["'`]([^"'`]+)["'`]/i)?.[1] ?? "";
+  const hasQuickAnswer = /\bquickAnswer\s*=/.test(source);
+  const hasPricingNote = /\bpricingNote\s*=/.test(source);
+  const hasCountryCaveat = /\b(?:country-specific|country eligibility|availability varies by country|regional availability|by country|country-specific terms|local market|currency varies)\b/i.test(source);
+  const hasTestingDisclosure = /\b(?:desk research|desk-based|not a hands-on|not tested in a live|not hands-on product testing)\b/i.test(source);
   const flags = [];
   if (!title) flags.push("missing-title");
   if (!description) flags.push("missing-description");
@@ -81,7 +85,7 @@ function analyse(file) {
 
   return {
     route, file: relative, pageType, redirectTo: "", title, description, sourceWordCount, h1Count, h2Count, h3Count,
-    internalLinks, externalSources, toolEntries, reviewedOn, flags: flags.join(";"),
+    internalLinks, externalSources, toolEntries, reviewedOn, hasQuickAnswer, hasPricingNote, hasCountryCaveat, hasTestingDisclosure, flags: flags.join(";"),
     comparisonText: articleText.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim(),
   };
 }
@@ -98,7 +102,7 @@ for (const row of rows) {
   if (duplicateRoutes.has(row.route)) row.flags = [row.flags, "duplicate-title-description-intro"].filter(Boolean).join(";");
 }
 
-const headers = ["route","file","pageType","redirectTo","title","description","sourceWordCount","h1Count","h2Count","h3Count","internalLinks","externalSources","toolEntries","reviewedOn","flags"];
+const headers = ["route","file","pageType","redirectTo","title","description","sourceWordCount","h1Count","h2Count","h3Count","internalLinks","externalSources","toolEntries","reviewedOn","hasQuickAnswer","hasPricingNote","hasCountryCaveat","hasTestingDisclosure","flags"];
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 fs.writeFileSync(OUTPUT_FILE, [headers.join(","), ...rows.map((row) => headers.map((key) => csv(row[key])).join(","))].join("\n") + "\n");
 
@@ -111,3 +115,4 @@ for (const row of flagged.slice(0, 20)) console.log(`- ${row.route}: ${row.flags
 if (flagged.length > 20) console.log(`- …and ${flagged.length - 20} more. Open the CSV for the complete list.`);
 console.log(`Scanned ${contentPages.length} guide/comparison articles, ${redirects.length} permanent redirects and ${directories.length} directory page(s).`);
 console.log(`${flagged.length} content pages have one or more heuristic review flags.`);
+console.log(`Editorial signals present: ${contentPages.filter((row) => row.hasQuickAnswer).length} quick answers, ${contentPages.filter((row) => row.hasPricingNote).length} pricing notes, ${contentPages.filter((row) => row.hasCountryCaveat).length} country/region caveats and ${contentPages.filter((row) => row.hasTestingDisclosure).length} testing-method disclosures.`);

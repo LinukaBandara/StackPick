@@ -1,47 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ARTICLES } from "@/lib/guides";
 
 export const metadata: Metadata = {
-  title: "Practical Software Guides",
-  description: "Find practical software shortlists for freelancers, small businesses, and developers, with key limits and trade-offs explained.",
+  title: "All Software Comparisons & Practical Guides",
+  description: "Browse StackPick's complete directory of practical software comparisons and guides for freelancers, small businesses and developers, with limits and trade-offs explained.",
   alternates: { canonical: "/guides" },
 };
-
-const GUIDES = [
-  { title: "AI Meeting Assistant Pricing", desc: "Compare Fathom, Fireflies, Otter and Granola pricing, free-plan limits and data controls.", href: "/best/ai-meeting-assistant-pricing", category: "Productivity" },
-  { title: "Best Invoicing Software for Freelancers", desc: "Compare invoice creation, reminders, payment collection, and client workflows.", href: "/best/invoicing-software", category: "Finance" },
-  { title: "Best Multi-Currency Invoicing Software", desc: "Compare foreign-currency invoices, exchange rates, payment collection and accounting trade-offs.", href: "/best/multi-currency-invoicing", category: "Finance" },
-  { title: "Best Free CRM Software", desc: "Check contact, user, and automation limits before committing to a free plan.", href: "/best/free-crm-software", category: "Sales" },
-  { title: "CRM Software Pricing for Small Teams", desc: "Compare published per-seat rates, five- and fifteen-user costs, and upgrade traps.", href: "/best/crm-software-pricing", category: "Sales" },
-  { title: "Best Project Management for Small Teams", desc: "Find a practical way to coordinate tasks, owners, and deadlines.", href: "/best/project-management-software", category: "Productivity" },
-  { title: "Time Tracking Software Pricing", desc: "Compare published seat prices, free-plan limits and usage-based billing for freelancers and teams.", href: "/best/time-tracking-software-pricing", category: "Productivity" },
-  { title: "Best Free Website Builders", desc: "Understand branding, domain, storage, and publishing restrictions.", href: "/best/free-website-builders", category: "Marketing" },
-  { title: "Online Form Builder Pricing", desc: "Compare Typeform, Jotform and Fillout pricing, response allowances and branding limits.", href: "/best/online-form-builder-pricing", category: "Productivity" },
-  { title: "Best Scheduling Software for Small Businesses", desc: "Compare bookings, reminders, staff calendars, and client self-service.", href: "/best/appointment-scheduling-software", category: "Operations" },
-  { title: "Appointment Scheduling Software Pricing", desc: "Compare Calendly, Acuity and Cal.com pricing, plan limits and team costs.", href: "/best/appointment-scheduling-software-pricing", category: "Operations" },
-  { title: "Best Business VPN for Remote Teams", desc: "Compare secure access options for distributed teams and small businesses.", href: "/best/business-vpn", category: "Security" },
-  { title: "Best AI Coding Assistants", desc: "Compare coding assistants by workflow, IDE fit, and practical limitations.", href: "/best/ai-coding-assistants", category: "Development" },
-  { title: "AI Tools for React and Next.js", desc: "Explore developer tools that fit common React and Next.js workflows.", href: "/best/ai-tools-react-nextjs", category: "Development" },
-  { title: "n8n Workflow Examples", desc: "Practical automation patterns to help decide what is worth connecting.", href: "/best/n8n-workflow-examples", category: "Automation" },
-  { title: "Developer Tools for GitHub Workflows", desc: "Compare tools that support everyday repository and collaboration work.", href: "/best/github-tools-for-developers", category: "Development" },
-  { title: "Best Accounting Software for Small Business", desc: "Compare bookkeeping, bank reconciliation, reports, and accountant access.", href: "/best/accounting-software", category: "Finance" },
-  { title: "Expense Management Software Pricing", desc: "Compare team-size costs, receipt-scanning limits and eligibility requirements.", href: "/best/expense-management-software-pricing", category: "Finance" },
-  { title: "Best Help Desk Software for Small Business", desc: "Compare ticketing, automation, team limits, and support workflows.", href: "/best/help-desk-software", category: "Operations" },
-];
 
 export default function GuidesPage() {
   return (
     <section className="bg-white">
       <div className="sp-container py-16 sm:py-24">
-        <p className="sp-eyebrow">Practical shortlists</p>
-        <h1 className="sp-display mt-4 max-w-4xl">Guidance for the work ahead.</h1>
-        <p className="sp-body-large mt-6 max-w-2xl">Start with a real task, compare the options that fit, and understand the limits and trade-offs before you choose.</p>
+        <p className="sp-eyebrow">The complete guide library</p>
+        <h1 className="sp-display mt-4 max-w-4xl">Every guide. One clear starting point.</h1>
+        <p className="sp-body-large mt-6 max-w-2xl">
+          Browse all {ARTICLES.length} software comparisons and practical guides. Each page focuses on a real decision, the limits that matter, and the trade-offs to check before choosing a tool.
+        </p>
+        <p className="mt-6 text-sm text-[#6e6e73]">Browse by topic below, or use your browser's Find command to locate a specific tool or task.</p>
         <div className="mt-12 grid gap-4 md:grid-cols-2">
-          {GUIDES.map((item) => (
+          {ARTICLES.map((item, index) => (
             <Link key={item.href} href={item.href} className="group rounded-[24px] border border-[#d2d2d7] p-7 transition-all hover:-translate-y-1 hover:border-[#a8b5c2] hover:shadow-lg sm:p-8">
               <div className="flex items-center justify-between gap-3">
                 <span className="text-xs font-semibold uppercase tracking-wide text-[#6e6e73]">{item.category}</span>
-                <span className="text-xs text-[#001D39]">Guide</span>
+                <span className="text-xs text-[#001D39]">{String(index + 1).padStart(2, "0")}</span>
               </div>
               <h2 className="mt-5 text-xl font-semibold tracking-tight text-[#1d1d1f]">{item.title}</h2>
               <p className="mt-3 text-sm leading-relaxed text-[#6e6e73]">{item.desc}</p>
@@ -49,7 +31,7 @@ export default function GuidesPage() {
             </Link>
           ))}
         </div>
-        <p className="mt-10 text-sm text-[#6e6e73]">Need every topic in one place? <Link href="/best" className="font-semibold text-[#001D39] hover:underline">Open the full directory →</Link></p>
+        <p className="mt-10 text-sm text-[#6e6e73]">Want to filter by category or search the directory? <Link href="/best" className="font-semibold text-[#001D39] hover:underline">Open the interactive comparisons directory →</Link></p>
       </div>
     </section>
   );
