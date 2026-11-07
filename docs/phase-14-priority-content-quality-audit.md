@@ -1566,3 +1566,9 @@ Primary sources:
 - Kinsta: https://kinsta.com/wordpress-hosting/pricing/
 
 These are US-facing public plan snapshots and desk research, not live calls, hosting performance tests or mailbox migration tests. Local currency, taxes, promotions, feature eligibility and renewals may differ. No build, lint, type-check, CI or deployment was run.
+
+
+
+### Project-management comparison source polish follow-up
+
+Updated `app/best/clickup-vs-monday/page.tsx` — commit `37990ae`: added the formal 7 November review date and replaced generic vendor homepage destinations with direct official pricing pages. The article's current plan limits, monday 200-item account cap, ClickUp 60 MB Free storage, ClickUp Core promotional-vs-regular price, and monday three-seat paid minimum were retained after review. No further content change was needed.
