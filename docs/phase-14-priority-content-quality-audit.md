@@ -1485,3 +1485,14 @@ Updated `app/best/freshbooks-vs-wave/page.tsx` — commit `b79934d`:
 Sources: FreshBooks official pricing https://www.freshbooks.com/pricing; Wave official pricing https://www.waveapps.com/pricing; Wave processing-fee details https://support.waveapps.com/hc/en-us/articles/218323823-Online-payments-processing-fees-and-timelines; Wave business-location eligibility https://support.waveapps.com/hc/en-us/articles/32449161224852-Create-a-Wave-account.
 
 The QuickBooks vs Xero and QuickBooks vs FreshBooks comparisons were screened and retained: both already had 7 November 2026 dates, primary pricing links, US-specific plan limits, and migration/total-cost caveats. No additional change was necessary in this pass. No hands-on bookkeeping or migration test is claimed; no build, lint, type-check, CI or deployment was run.
+
+
+
+### P1 alternatives-page consistency batch (7 November 2026)
+
+Two additional alternatives pages received formal review dates, quick answers, direct plan/pricing links and clearer plan-limit comparison criteria:
+
+- `app/best/mailchimp-alternatives/page.tsx` — commit `55d30a4`. Added a concise use-case split for Brevo, MailerLite, Kit and Constant Contact; replaced vendor homepages with direct pricing pages; added guidance to compare active-contact counting, sending caps, automation, domain authentication, deliverability, exports and renewal prices.
+- `app/best/asana-alternatives/page.tsx` — commit `ccf2e46`. Added current US free-tier distinctions for ClickUp (60 MB storage, unlimited tasks/free members), Trello (10 collaborators/10 boards), monday Work Management (2 seats/3 boards/3 Docs) and Notion (solo vs multi-member block limits and 5 MB upload cap); replaced generic homepages with official pricing/help links.
+
+The following pages were screened and retained without further edits because they already had a 7 November review date, current plan limits, direct pricing sources and migration/selection guidance: `slack-alternatives-small-teams`, `trello-alternatives`, and `notion-alternatives-small-businesses`. No hands-on migration or usability benchmark is claimed. No build, lint, type-check, CI or deployment was run.
