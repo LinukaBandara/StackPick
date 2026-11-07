@@ -12,6 +12,7 @@ export default function FreeCrmSoftwarePage() {
     <ComparisonArticle
       title="Best Free CRM Software"
       slug="free-crm-software"
+      quickAnswer="For a small team, HubSpot Free supports up to 2 users and 1,000 contacts, while Zoho CRM Free and Freshsales Free each support up to 3 users. Notion can work as a solo DIY tracker. Be careful with Bitrix24: its public pricing page currently shows conflicting user-limit information, so confirm the limit with the vendor before choosing it for a team."
       intro="A free CRM is only useful if it stays useful after the first week. We look beyond the word 'free' and focus on whether a freelancer or small team can actually capture contacts, manage deals, follow up and keep their data without immediately needing a card."
       pricingNote="Plan limits were checked against official provider pages on November 7, 2026. The HubSpot Free account limit is 1,000 records per other standard object type per account, not 1 million. Prices and feature eligibility can vary by country and account. A permanent free plan is different from a time-limited trial, and some providers cap users, contacts, storage or advanced features. Confirm current terms before migrating customer records."
       tools={[
