@@ -35,6 +35,12 @@ export default function PrivacyPage() {
           </section>
 
           <section>
+            <h2 className="mb-2 text-xl font-bold tracking-tight text-[#1d1d1f]">Vendor requests and profile claims</h2>
+            <p>If you use the vendor workspace, we process your account identifier and confirmed account email, contact name, company or publisher name, role, company website, the software profile you wish to claim or product details you submit, your message, moderation status and timestamps. We use this information to review requests, verify public product information, communicate about the submission and prevent duplicate or abusive requests.</p>
+            <p className="mt-3">Your vendor request is not published publicly. StackPick moderators can access the request and separate private moderation notes. Other users cannot view your submission or moderator notes. Approval does not automatically publish a product, grant profile-editing access, change rankings or reviews, or create a commercial relationship. We retain vendor submissions and moderation records for as long as reasonably necessary to manage the request, maintain an audit trail, prevent abuse and resolve disputes. You can request access or deletion through our Contact page, subject to legitimate retention needs.</p>
+          </section>
+
+          <section>
             <h2 className="mb-2 text-xl font-bold tracking-tight text-[#1d1d1f]">Service providers and international processing</h2>
             <p>We use Supabase for authentication and review data storage. The StackPick review database is hosted in the Singapore region. Supabase processes information on our behalf to provide these services and may process technical data needed to operate, secure and maintain its infrastructure. Review Supabase's own privacy and security information for details about its service.</p>
             <p className="mt-3">Depending on your location and the infrastructure used by our providers, information may be processed outside your country. We limit the information sent to service providers to what is needed for the relevant function.</p>
