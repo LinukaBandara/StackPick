@@ -73,7 +73,7 @@ begin
   new.updated_at = now();
   return new;
 end;
-$;
+$$;
 revoke all on function public.set_affiliate_partner_updated_at() from public, anon, authenticated;
 
 drop trigger if exists affiliate_partner_updated_at on public.affiliate_partners;
