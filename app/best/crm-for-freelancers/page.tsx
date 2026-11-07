@@ -13,10 +13,10 @@ export default function CrmForFreelancersPage() {
     <ComparisonArticle
       title="Best CRM for Freelancers"
       slug="crm-for-freelancers"
-      reviewedOn="2026-11-07"
+      reviewedOn="2026-11-08"
       intro="A freelancer usually does not need a giant sales operation. You need to remember who contacted you, what you promised, when to follow up, and which leads are actually worth pursuing. We focus on that smaller job: low setup, useful free access, clear client tracking, and a sensible upgrade path."
       quickAnswer="For a solo freelancer, HubSpot Free is the simplest starting point if two users and 1,000 contacts are enough. Zoho CRM Free supports up to three users and adds core lead, deal and follow-up tools. Pipedrive is a 14-day trial, not a permanent free plan; Notion works as a DIY tracker but needs ongoing setup. Choose based on the number of people, follow-up workflow and features you actually need."
-      pricingNote="Core free-plan limits and trial status were rechecked against official provider pages on 7 November 2026. The HubSpot and Zoho pages used here display US-dollar pricing; currency, tax, payment methods and paid-plan prices can differ by billing country. HubSpot lists Free for up to 2 users and 1,000 contacts; Zoho CRM Free supports up to 3 users; Pipedrive offers a 14-day trial rather than a permanent free plan. Notion is a DIY database, not a dedicated sales CRM. Confirm the edition and checkout terms for your country before signing up."
+      pricingNote="Core free-plan limits, trial status and displayed US pricing were rechecked against official provider pages on 8 November 2026. HubSpot Free is $0 for up to 2 users and 1,000 contacts; its Starter pricing page currently displays a limited new-customer offer from $7/seat/month with annual commitment and $20/seat/month as the other listed price. Zoho CRM Free supports up to 3 users; Standard is $14/user/month billed annually or $20 month-to-month, and Professional is $23 annually billed or $35 month-to-month. Pipedrive offers a 14-day trial, not a permanent free plan; Lite is displayed at $14/seat/month billed annually ($168 per seat/year), while Growth is $39/seat/month billed annually. Notion is a DIY database, not a dedicated sales CRM. Prices are US-dollar references before applicable taxes; promotions, currency, billing terms and checkout prices can change by country. Confirm the edition and checkout terms before signing up."
       tools={[
         {
           name: "HubSpot CRM",
@@ -33,7 +33,7 @@ export default function CrmForFreelancersPage() {
           freeOption:
             "Pipedrive offers a 14-day trial of its paid plans with no credit card required, rather than a permanent free plan. If you decide not to subscribe, export any data you want to keep before the trial ends.",
           tradeoff:
-            "Its pipeline-first approach is easy to understand when every prospect has a sales stage, but it is harder to justify if you mainly need a lightweight client address book.",
+            "Its pipeline-first approach is easy to understand when every prospect has a sales stage, but it is harder to justify if you mainly need a lightweight client address book. The current US annual-billing display starts at $14/seat/month for Lite and $39/seat/month for Growth; this is a paid subscription after the 14-day trial, not a permanent free tier.",
           url: "https://www.pipedrive.com/en/pricing",
         },
         {
@@ -42,7 +42,7 @@ export default function CrmForFreelancersPage() {
           freeOption:
             "Zoho CRM’s Free Edition is free forever for up to 3 users. It includes leads, contacts, deals, tasks, meetings, calls, notes, follow-up reminders, workflow automation, standard reports and mobile apps. The official pricing page lists up to 10 custom email templates, advertises 5,000 API calls per day and allows up to 10 data exports for free. Zoho’s API documentation defines the Free Edition allowance as 5,000 API credits in a rolling 24-hour window; some operations consume more than one credit, so 5,000 credits does not guarantee 5,000 completed calls. Check the edition comparison for other feature-specific limits. Advanced capabilities such as email integration and mass emailing are reserved for paid editions.",
           tradeoff:
-            "It can make sense when your workflow already uses Zoho products, while the larger feature set can mean more setup than a solo freelancer actually needs.",
+            "It can make sense when your workflow already uses Zoho products, while the larger feature set can mean more setup than a solo freelancer actually needs. For US pricing, Standard is $14/user/month with annual billing ($20 month-to-month), while Professional is $23 annually billed ($35 month-to-month).",
           url: "https://www.zoho.com/crm/zohocrm-pricing.html",
         },
         {
