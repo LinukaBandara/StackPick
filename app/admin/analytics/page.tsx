@@ -83,6 +83,15 @@ export default function AnalyticsDashboardPage() {
     !latest || record.imported_at > latest ? record.imported_at : latest, null
   );
 
+  const contentLeaders = latestGsc ? records
+    .filter((record) => record.source === "google_search_console" && record.period_month === latestGsc.period_month && record.page_path !== "*" && record.category === "*" && record.software_slug === "*")
+    .sort((a, b) => (b.search_clicks ?? 0) - (a.search_clicks ?? 0))
+    .slice(0, 10) : [];
+  const categoryLeaders = latestGsc ? records
+    .filter((record) => record.source === "google_search_console" && record.period_month === latestGsc.period_month && record.page_path === "*" && record.category !== "*" && record.software_slug === "*")
+    .sort((a, b) => (b.search_clicks ?? 0) - (a.search_clicks ?? 0))
+    .slice(0, 10) : [];
+
   async function save(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setBusy(true);
@@ -148,6 +157,21 @@ export default function AnalyticsDashboardPage() {
           <p className="mt-3 text-xs text-[#86868b]">
             {latestImport ? `Last imported: ${new Date(latestImport).toLocaleString()}` : "No analytics records have been imported yet."}
           </p>
+        </section>
+
+        <section className="mt-9 grid gap-4 lg:grid-cols-2">
+          <div className="rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
+            <p className="sp-eyebrow">Search performance</p>
+            <h2 className="mt-2 text-xl font-semibold text-[#1d1d1f]">Top content pages</h2>
+            <p className="mt-2 text-xs leading-5 text-[#86868b]">Search Console page-level records for {latestGsc ? latestGsc.period_month.slice(0, 7) : "the latest imported month"}.</p>
+            {contentLeaders.length === 0 ? <p className="mt-5 rounded-xl bg-[#f5f5f7] p-4 text-sm text-[#6e6e73]">Import Search Console rows with a page path and wildcard category/software dimensions to see content leaders.</p> : <div className="mt-4 space-y-3">{contentLeaders.map((record) => <div key={record.id} className="border-b border-black/[0.06] pb-3 last:border-0"><p className="break-all text-xs font-semibold text-[#1d1d1f]">{record.page_path}</p><div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73]"><span>{number(record.search_clicks)} clicks</span><span>{number(record.impressions)} impressions</span><span>{record.impressions ? ((Number(record.search_clicks) / Number(record.impressions)) * 100).toFixed(1) + "% CTR" : "— CTR"}</span></div></div>)}</div>}
+          </div>
+          <div className="rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
+            <p className="sp-eyebrow">Category performance</p>
+            <h2 className="mt-2 text-xl font-semibold text-[#1d1d1f]">Search demand by category</h2>
+            <p className="mt-2 text-xs leading-5 text-[#86868b]">Category-level Search Console records for {latestGsc ? latestGsc.period_month.slice(0, 7) : "the latest imported month"}.</p>
+            {categoryLeaders.length === 0 ? <p className="mt-5 rounded-xl bg-[#f5f5f7] p-4 text-sm text-[#6e6e73]">Import category-level Search Console rows with wildcard page/software dimensions to compare categories.</p> : <div className="mt-4 space-y-3">{categoryLeaders.map((record) => <div key={record.id} className="flex items-center justify-between gap-3 border-b border-black/[0.06] pb-3 last:border-0"><div className="min-w-0"><p className="truncate text-sm font-semibold text-[#1d1d1f]">{record.category}</p><p className="mt-1 text-xs text-[#6e6e73]">{number(record.impressions)} impressions</p></div><p className="shrink-0 text-sm font-semibold tabular-nums text-[#001D39]">{number(record.search_clicks)} clicks</p></div>)}</div>}
+          </div>
         </section>
 
         <section className="mt-9 rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
