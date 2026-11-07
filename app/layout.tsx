@@ -85,7 +85,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main id="main">{children}</main>
         <Footer />
         <AffiliateClickTracker />
-        <CookieConsent />
+        <CookieConsent nonce={nonce} />
       </body>
     </html>
   );
