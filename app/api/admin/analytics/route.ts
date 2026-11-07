@@ -6,7 +6,7 @@ const clean = (value: unknown, max: number) => typeof value === "string" ? value
 
 function validMonth(value: unknown) {
   if (typeof value !== "string" || !/^\d{4}-\d{2}-01$/.test(value)) return false;
-  const date = new Date(`${value}T00:00:00.000Z`);
+  const date = new Date(value + "T00:00:00.000Z");
   return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
 }
 function metric(value: unknown) {
@@ -21,15 +21,19 @@ function sourceUrl(value: unknown) {
   catch { return null; }
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   const context = await getModeratorApiContext();
   if ("error" in context) return context.error;
   const response = await fetch(
-    `${context.url}/rest/v1/site_analytics_monthly?select=*&order=period_month.desc,source.asc,page_path.asc&limit=1000`,
+    context.url + "/rest/v1/site_analytics_monthly?select=*&order=period_month.desc,source.asc,page_path.asc&limit=1000",
     { headers: context.headers, cache: "no-store" },
   );
   if (!response.ok) return NextResponse.json({ error: "Could not load analytics records. Apply the Phase 10 analytics migration first." }, { status: 502 });
-  return NextResponse.json({ records: await response.json() });
+  const records = await response.json();
+  const includeCountryRows = new URL(request.url).searchParams.get("include_country_rows") === "true";
+  return NextResponse.json({
+    records: includeCountryRows ? records : records.filter((record: { country_code?: string }) => (record.country_code || "*") === "*"),
+  });
 }
 
 export async function POST(request: NextRequest) {
@@ -39,8 +43,12 @@ export async function POST(request: NextRequest) {
     const input = await request.json();
     const source = clean(input.source, 40);
     const periodMonth = clean(input.period_month, 10);
+    const countryCode = clean(input.country_code || "*", 10).toUpperCase();
     if (!sources.includes(source as typeof sources[number]) || !validMonth(periodMonth)) {
       return NextResponse.json({ error: "Choose a supported data source and the first day of a valid reporting month." }, { status: 400 });
+    }
+    if (countryCode !== "*" && !/^[A-Z]{2}$/.test(countryCode)) {
+      return NextResponse.json({ error: "Country must be * for a property-wide total or a two-letter ISO country code." }, { status: 400 });
     }
 
     const impressions = metric(input.impressions);
@@ -78,6 +86,7 @@ export async function POST(request: NextRequest) {
       page_path: path,
       category,
       software_slug: softwareSlug,
+      country_code: countryCode,
       impressions,
       search_clicks: searchClicks,
       sessions,
@@ -87,8 +96,8 @@ export async function POST(request: NextRequest) {
       source_note: clean(input.source_note, 1000) || null,
       imported_at: new Date().toISOString(),
     };
-    const query = new URLSearchParams({ on_conflict: "period_month,source,page_path,category,software_slug" });
-    const response = await fetch(`${context.url}/rest/v1/site_analytics_monthly?${query}`, {
+    const query = new URLSearchParams({ on_conflict: "period_month,source,page_path,category,software_slug,country_code" });
+    const response = await fetch(context.url + "/rest/v1/site_analytics_monthly?" + query.toString(), {
       method: "POST",
       headers: { ...context.headers, Prefer: "resolution=merge-duplicates,return=representation" },
       body: JSON.stringify(payload),
