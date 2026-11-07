@@ -64,7 +64,8 @@ function analyse(file) {
   const sharedRelatedLinks = relatedStart >= 0 && relatedEnd > relatedStart
     ? (COMPARISON_SOURCE.slice(relatedStart, relatedEnd).match(/href:/g) ?? []).length
     : 0;
-  const internalLinks = new Set([...source.matchAll(/(?:href\\s*=\\s*["\\x27\\x60])\\/(?!\\/)([^"\\x27\\x60?#]+)/g)].map((match) => "/" + match[1])).size + sharedRelatedLinks;
+  const localHrefCount = ["href=\"/", "href='/", "href: \"/", "href: '/"].reduce((sum, marker) => sum + Math.max(0, source.split(marker).length - 1), 0);
+  const internalLinks = localHrefCount + sharedRelatedLinks;
   const externalSources = new Set([...source.matchAll(/https?:\/\/[^"\x27\s)]+/g)].map((match) => match[0].replace(/[),.;]+$/, ""))).size;
   const toolEntries = (source.match(/\bname\s*:/g) ?? []).length;
   const reviewedOn = source.match(/(?:reviewed|verified|checked)(?:On|\s+(?:on|date))?\s*[:=]\s*["'`]([^"'`]+)["'`]/i)?.[1] ?? "";
