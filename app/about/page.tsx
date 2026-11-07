@@ -60,9 +60,11 @@ export default function AboutPage() {
               <Link href="/affiliate-disclosure" className="text-[#004bb5] font-medium hover:underline"> affiliate disclosure</Link>.
             </p>
             <p>
-              If you find outdated pricing, a broken link, or a material error, please contact us
-              so we can review it. We aim to correct material errors rather than leave readers with
-              information we know is misleading.
+              If you find outdated pricing, a broken link, or a material error, use our
+              <Link href="/report-an-issue" className="text-[#004bb5] font-medium hover:underline"> correction form</Link>
+              so we can review the evidence. Our
+              <Link href="/review-policy" className="text-[#004bb5] font-medium hover:underline"> editorial review policy</Link>
+              explains the criteria, evidence standards and correction process.
             </p>
             <p>
               Read our <Link href="/privacy" className="text-[#004bb5] font-medium hover:underline">privacy policy</Link>

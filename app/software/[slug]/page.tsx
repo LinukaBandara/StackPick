@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import SoftwareLogo from "@/components/SoftwareLogo";
 import ProductScreenshot from "@/components/ProductScreenshot";
 import { getSoftwareProfile, SOFTWARE_PROFILES } from "@/lib/software";
+import ReviewSection from "@/components/ReviewSection";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -80,7 +81,15 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
             <a href={software.officialUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#001D39] px-5 text-sm font-semibold text-white transition-opacity hover:opacity-90">Visit official website <ExternalArrow /></a>
             <a href={software.pricingUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm font-semibold text-[#001D39] transition-colors hover:bg-[#f9fafb]">Check official pricing <ExternalArrow /></a>
           </div>
-          <p className="mt-5 text-xs text-[#6e6e73]">Editorial review: {software.reviewedOn}. Pricing and features can change; confirm details with the vendor.</p>
+          <div className="mt-5 space-y-2">
+            <p className="text-xs text-[#6e6e73]">Last editorial review: {software.reviewedOn}. Vendor pricing and features can change; confirm current terms before buying.</p>
+            <p className="text-xs leading-5 text-[#6e6e73]">Research basis: desk research using public product and pricing information. This profile is not a claim of hands-on testing.</p>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold text-[#001D39]">
+              <Link href="/review-policy" className="hover:underline">Our review policy</Link>
+              <Link href="/how-we-verify" className="hover:underline">How we verify</Link>
+              <Link href="/report-an-issue" className="hover:underline">Report an issue</Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -197,6 +206,8 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
               </div>
             </section>
           )}
+
+          <ReviewSection softwareSlug={software.slug} softwareName={software.name} />
         </div>
 
         <aside className="h-fit rounded-[24px] border border-black/10 p-6 lg:sticky lg:top-24">

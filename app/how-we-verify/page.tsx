@@ -37,7 +37,7 @@ const STEPS = [
   {
     title: "6. Correct material errors",
     body:
-      "If you find an outdated price, incorrect limit, broken link, or other material error, email us with the page URL and supporting details. We review the report and update the page when the evidence supports a correction.",
+      "Readers and providers can report an outdated price, incorrect limit, broken link or misleading statement through our correction form. We review reports against supporting evidence and update the page when a correction is justified. A submitted report is not automatically accepted.",
   },
 ];
 
@@ -53,6 +53,14 @@ export default function HowWeVerifyPage() {
           before committing. This page explains our research process and what it does—and does
           not—claim.
         </p>
+
+        <div className="mt-8 rounded-2xl border border-black/10 bg-[#f5f5f7] p-5">
+          <p className="text-sm leading-6 text-[#4b5563]">For the criteria behind our editorial assessments, evidence standards and independence rules, read our{" "}
+            <Link href="/review-policy" className="font-semibold text-[#001D39] underline underline-offset-4">Editorial Review Policy</Link>.
+            To flag a problem on a specific page, use the{" "}
+            <Link href="/report-an-issue" className="font-semibold text-[#001D39] underline underline-offset-4">correction form</Link>.
+          </p>
+        </div>
 
         <div className="mt-10 space-y-8">
           {STEPS.map((step) => (
@@ -75,9 +83,9 @@ export default function HowWeVerifyPage() {
             Our goal is to explain trade-offs, including when a product is not a good fit.
           </p>
           <p className="mt-4 text-sm leading-6 text-[#6e6e73]">
-            Last updated: November 7, 2026. To report a correction, visit our{" "}
-            <Link href="/contact" className="font-medium text-[#001D39] underline underline-offset-4">
-              contact page
+            Last updated: November 7, 2026. To report a correction, use our{" "}
+            <Link href="/report-an-issue" className="font-medium text-[#001D39] underline underline-offset-4">
+              correction form
             </Link>.
           </p>
         </section>
