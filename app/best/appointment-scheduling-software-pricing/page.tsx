@@ -34,6 +34,7 @@ export default function Page() {
           </table>
         </section>
         <p className="mt-4 text-sm leading-relaxed text-[#6e6e73]">Prices are published US prices on official vendor pages checked October 19, 2026. Calendly and Cal.com figures shown for paid tiers are annual-billing equivalents; Acuity shows both annual and monthly billing. Taxes, promotions and packaging may change the final checkout amount.</p>
+        <p className="mt-2 text-xs leading-relaxed text-[#6e6e73]">Research method: public-source desk research; no hands-on product testing.</p>
 
         <section className="mt-12 max-w-3xl">
           <h2 className="text-2xl font-semibold tracking-tight">Which pricing model fits your business?</h2>
