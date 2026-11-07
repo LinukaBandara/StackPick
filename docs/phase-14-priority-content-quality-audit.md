@@ -1662,3 +1662,18 @@ PR #99 is open and remains a draft. Its actual base is `growth/phase-11-commerci
 ### Deployment
 
 No deployment was attempted. The Vercel build quota remains the deployment constraint. AdSense crawler detection, live Search Console validation and post-deploy checks remain outstanding; passing repository CI does not prove AdSense approval.
+
+
+## CI follow-up — 8 November 2026
+
+The earlier CI diagnosis is now backed by the actual job log:
+
+- GitHub Actions run `42391790922` (StackPick CI, run 523) completed with failure at lint. `npm ci`, the production dependency audit, the development advisory report, and the internal-link check completed. The production audit found **zero production dependency vulnerabilities**; the full development dependency audit reported **six moderate minimatch advisories** in the nested `@typescript-eslint` toolchain.
+- The lint errors were exactly two unterminated `pricingNote` strings: `app/best/free-accounting-software/page.tsx` and `app/best/web-hosting/page.tsx`. The production build was skipped because lint failed.
+- Both source strings are now visibly closed in the current branch files. The corresponding fix commits are `34c00a63ae04e5d620d81467fd954a70bf7f5271` and `3bc2c04ad0b771d018fab0e21b4f6c0713bc3700`.
+- **Do not mark lint or build as passed yet.** No successful GitHub Actions run for the fix commits was returned during this check. The Vercel status on the web-hosting fix commit is success, but that is a deployment-provider status and does not prove the GitHub Actions lint/build job passed.
+- The branch comparison was rechecked against `main`: status `diverged`, 538 commits ahead and 1 behind. The one main-only commit is the AdSense verification-script change already mirrored into the working branch; the histories have not been reconciled. Do not force-push, rebase, or merge without inspecting the active pull-request context.
+- The failed lint run emitted two remaining `@next/next/no-img-element` warnings in `components/ProductScreenshot.tsx` and `components/SoftwareLogo.tsx`. These are performance warnings, not the two parse errors. Review whether the images can use `next/image` with safe sizing and remote-source configuration before changing them.
+- The SEO/content workflow passed its route/sitemap, internal-link and content-inventory steps on its recorded successful run. This does not replace the separate lint and production build.
+
+Next validation gate: obtain a fresh successful CI run on the fixed branch head; require lint and production build to pass, then review the moderate development-only advisories and remaining image warnings. Vercel deployment remains blocked by its build-rate limit.
