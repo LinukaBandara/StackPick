@@ -1,35 +1,53 @@
-name: Phase 5 content audit
+name: SEO and content quality checks
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - content/phase-5-seo-growth
+      - main
+      - growth/adsense-journey-readiness
   pull_request:
     branches:
-      - trust/reviews-foundation
+      - main
 
 permissions:
   contents: read
 
 jobs:
-  content-audit:
+  seo-content-audit:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
           node-version: 22
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
       - name: Check audit script syntax
-        run: node --check scripts/audit-content-quality.mjs
-      - name: Generate content inventory
+        run: |
+          node --check scripts/audit-content-quality.mjs
+          node --check scripts/audit-seo-routes.mjs
+          node --check scripts/check-internal-links.mjs
+
+      - name: Audit SEO route and sitemap integrity
+        run: npm run audit:seo
+
+      - name: Check internal links
+        run: npm run check:links
+
+      - name: Generate content quality inventory
         run: npm run audit:content
+
       - name: Upload content audit report
         uses: actions/upload-artifact@v4
         with:
-          name: phase-5-content-audit
+          name: stackpick-content-audit
           path: artifacts/phase-5-content-audit.csv
           if-no-files-found: error
           retention-days: 14
