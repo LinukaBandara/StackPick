@@ -157,7 +157,7 @@ export default function AnalyticsDashboardPage() {
             Copy monthly totals from Google Search Console or GA4. Use <strong>*</strong> for a full-property total, or enter a page path, category or software slug to track a specific segment. Keep Search Console and GA4 metrics in separate records.
           </p>
           <form onSubmit={save} className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <label className={labelClass}>Reporting month<input required type="date" value={form.period_month} onChange={(e) => setForm({ ...form, period_month: e.target.value })} className={inputClass} /></label>
+            <label className={labelClass}>Reporting month<input required type="month" value={form.period_month.slice(0, 7)} onChange={(e) => setForm({ ...form, period_month: e.target.value ? e.target.value + "-01" : currentMonth })} className={inputClass} /></label>
             <label className={labelClass}>Data source<select value={form.source} onChange={(e) => setForm({ ...form, source: e.target.value as Source })} className={inputClass}><option value="google_search_console">Google Search Console</option><option value="google_analytics_4">Google Analytics 4</option></select></label>
             <label className={labelClass}>Page path<input value={form.page_path} onChange={(e) => setForm({ ...form, page_path: e.target.value })} placeholder="* or /software/hubspot-crm" className={inputClass} /></label>
             <label className={labelClass}>Category dimension<input value={form.category} onChange={(e) => setForm({ ...form, category: e.target.value })} placeholder="* or CRM" className={inputClass} /></label>
