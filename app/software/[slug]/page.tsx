@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import SoftwareLogo from "@/components/SoftwareLogo";
@@ -52,6 +53,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
   const { slug } = await params;
   const software = getSoftwareProfile(slug);
   if (!software) notFound();
+  const nonce = (await headers()).get("x-nonce") ?? undefined;
   const relatedSoftware = SOFTWARE_PROFILES
     .filter((item) => item.category === software.category && item.slug !== software.slug)
     .slice(0, 4);
@@ -67,7 +69,7 @@ export default async function SoftwareProfilePage({ params }: PageProps) {
 
   return (
     <article className="bg-white">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script nonce={nonce} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <section className="border-b border-black/[0.08] bg-[#f5f5f7]">
         <div className="sp-container py-14 sm:py-20">
           <Link href="/software" className="text-sm font-medium text-[#001D39] hover:underline">← All software profiles</Link>
