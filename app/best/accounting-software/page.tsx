@@ -13,15 +13,17 @@ export default function Page() {
     <ComparisonArticle
       title="Best Accounting Software for Small Business"
       slug="accounting-software"
+      reviewedOn="2026-11-07"
       intro="Start with the person who prepares your accounts: a platform they already support can make month-end and tax-time handoffs simpler. Then compare the work your business actually does—customer invoices, supplier bills, bank reconciliation, expense review and management reports. Local bank feeds, tax rules, payroll coverage and data export can matter more than a long feature list."
-      pricingNote="Prices, included seats and regional features vary by country and plan. Confirm current subscription costs, bank-feed availability, tax and payroll support, accountant access and export options before moving live records."
+      quickAnswer="There is no universal best accounting platform. QuickBooks Online now has a very limited US Free plan (2 invoices/month, 1 bank connection and 1 user); Xero has no permanent free tier. Zoho Books US Free allows 1 user plus 1 accountant and up to 1,000 invoices/expenses per year if annual revenue stays below US$50,000. Wave is only for eligible US and Canadian businesses. Choose around your accountant, local bank feeds, tax support and export needs."
+      pricingNote="Provider plan details and regional availability were checked against official sources on 7 November 2026. Prices, included seats, free-plan eligibility and tax features vary by country. Confirm current subscription costs, bank-feed availability, local tax and payroll support, accountant access and export options before moving live records. US prices and limits are not global offers."
       tools={[
         {
           name: "QuickBooks Online",
           bestFor: "Small businesses whose accountant already uses QuickBooks, especially in the US",
-          freeOption: "No permanent free accounting plan; check the current trial and country-specific offer.",
-          tradeoff: "Its established accountant and bookkeeper ecosystem can simplify collaboration when your finance professional already works in it. Check plan limits, extra-user costs and local tax or payroll coverage before choosing.",
-          url: "https://quickbooks.intuit.com/",
+          freeOption: "QuickBooks Online Free is now listed at $0/month in the US and the official signup page says no credit card is required. It includes 1 user, no accountant access, 2 invoices/month and 1 connected bank. Eligible users who enable QuickBooks Payments may have an invoice-limit exception; confirm the terms. The paid-plan trial is a separate offer.",
+          tradeoff: "The new Free plan is too limited for many active businesses: two invoices monthly, one bank connection and no accountant access. Its established accountant/bookkeeper ecosystem can still simplify collaboration on paid plans when your finance professional already works in it. Check extra-user costs and local tax or payroll coverage.",
+          url: "https://quickbooks.intuit.com/pricing/",
         },
         {
           name: "Xero",
@@ -33,16 +35,16 @@ export default function Page() {
         {
           name: "Zoho Books",
           bestFor: "Small businesses that want cloud accounting connected to other Zoho apps",
-          freeOption: "In the US, the Free plan is for one user plus one accountant, with annual limits of 1,000 invoices and 1,000 expenses and a stated annual-revenue eligibility threshold of $50,000; terms vary by country.",
+          freeOption: "On Zoho Books US, the Free plan is $0 for one user plus one accountant, with annual limits of 1,000 invoices and 1,000 expenses. It remains free while annual revenue stays below the US$50,000 threshold. These are US-specific limits; check the pricing page for your own country because eligibility, currency and features differ.",
           tradeoff: "It can be a practical starting point for an eligible small operation, but transaction caps, revenue eligibility and country-specific tax features matter. Confirm the local plan rather than assuming the US offer applies everywhere.",
-          url: "https://www.zoho.com/books/",
+          url: "https://www.zoho.com/us/books/pricing/",
         },
         {
           name: "Wave",
           bestFor: "Eligible US and Canadian microbusinesses that want simple cloud bookkeeping",
           freeOption: "Wave Starter has no monthly subscription fee for eligible businesses; payment processing and some additional services can cost extra.",
-          tradeoff: "The no-subscription option can keep fixed costs low, but Wave's availability is limited by business location. Do not select it until you have confirmed eligibility and the total cost of payment processing.",
-          url: "https://www.waveapps.com/",
+          tradeoff: "Wave states that it is available to businesses located in the United States and Canada; other countries are not eligible to create a Wave account. The no-subscription option can keep fixed costs low for eligible businesses, but payment processing and some services cost extra. Do not assume it is available to a business registered elsewhere.",
+          url: "https://support.waveapps.com/hc/en-us/articles/32449161224852-Create-a-Wave-account",
         },
         {
           name: "FreshBooks",
@@ -95,9 +97,9 @@ export default function Page() {
             <h3 className="mt-7 text-lg font-semibold">Official product and plan details</h3>
             <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm">
               <a className="underline underline-offset-4" href="https://quickbooks.intuit.com/pricing/" target="_blank" rel="noreferrer">QuickBooks pricing</a>
-              <a className="underline underline-offset-4" href="https://www.xero.com/pricing-plans/" target="_blank" rel="noreferrer">Xero plans</a>
+              <a className="underline underline-offset-4" href="https://www.xero.com/us/pricing-plans/" target="_blank" rel="noreferrer">Xero US pricing (USD; country-specific)</a>
               <a className="underline underline-offset-4" href="https://www.zoho.com/us/books/pricing/" target="_blank" rel="noreferrer">Zoho Books US pricing</a>
-              <a className="underline underline-offset-4" href="https://support.waveapps.com/hc/en-us/articles/208621296-Is-Wave-free" target="_blank" rel="noreferrer">Wave free-plan details</a>
+              <a className="underline underline-offset-4" href="https://support.waveapps.com/hc/en-us/articles/32449161224852-Create-a-Wave-account" target="_blank" rel="noreferrer">Wave country eligibility</a>
               <a className="underline underline-offset-4" href="https://www.freshbooks.com/pricing" target="_blank" rel="noreferrer">FreshBooks pricing</a>
               <a className="underline underline-offset-4" href="https://www.gnucash.org/features.phtml?lang=en_US" target="_blank" rel="noreferrer">GnuCash features</a>
             </div>

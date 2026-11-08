@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 const CRM_PROFILES = [
-  { name: "HubSpot CRM", url: "https://www.hubspot.com/products/crm", href: "/software/hubspot-crm", note: "Free starting point and connected customer tools" },
-  { name: "Pipedrive", url: "https://www.pipedrive.com/", href: "/software/pipedrive", note: "Visual, sales-first pipeline management" },
-  { name: "Zoho CRM", url: "https://www.zoho.com/crm/", href: "/software/zoho-crm", note: "Configurable CRM within a wider business suite" },
+  { name: "HubSpot CRM", url: "https://www.hubspot.com/pricing/crm", href: "/software/hubspot-crm", note: "Free starting point and connected customer tools" },
+  { name: "Pipedrive", url: "https://support.pipedrive.com/en/article/how-does-pricing-work-in-pipedrive", href: "/software/pipedrive", note: "Visual, sales-first pipeline management" },
+  { name: "Zoho CRM", url: "https://www.zoho.com/en-us/crm/zohocrm-pricing.html", href: "/software/zoho-crm", note: "Configurable CRM within a wider business suite" },
 ];
 
 export default function CrmSoftwarePage() {
@@ -21,34 +21,36 @@ export default function CrmSoftwarePage() {
     <ComparisonArticle
       title="Best CRM Software for Freelancers & Small Teams"
       slug="crm-software"
+      reviewedOn="2026-11-08"
       intro="If you have a small list of repeat clients and no missed follow-ups, a well-maintained spreadsheet may be enough. A CRM becomes useful when enquiries arrive from several channels, proposals need follow-up, or more than one person handles customer conversations. This guide compares solo-friendly and small-team options by contact and deal limits, reminders, automation, exportability and the cost of adding users."
-      pricingNote="Compare free CRM plans by the limits that affect real work: users, contacts, deal pipelines, email tracking, custom fields, automation, reporting and data export. A free tier may be excellent for one person but unsuitable for a team handoff. Confirm whether the features you need are permanently free or available only during a trial, and calculate the cost at your expected seat count."
+      quickAnswer="For a solo operator, start with HubSpot Free if two users and 1,000 contacts are enough. Zoho CRM Free supports up to three users and is worth comparing if you want a dedicated sales CRM. Choose Pipedrive when a structured sales pipeline matters more than having a permanent free tier. A Notion database is a manually maintained workflow, not a like-for-like CRM."
+      pricingNote="Plan limits and displayed US prices below were rechecked against official vendor pages on 8 November 2026. HubSpot Free is $0 for up to 2 users and 1,000 contacts; its Starter plan currently displays a limited new-customer offer from $7/seat/month with annual commitment, versus the listed $20/seat/month price. Zoho CRM Free supports up to 3 users; Standard is US$14/user/month billed annually or US$20 month-to-month. Pipedrive has no permanent free tier: its US annual-billing display lists Lite at US$14/seat/month, Growth at US$39, Premium at US$59 and Ultimate at US$79. These are USD references before applicable taxes; promotions, billing terms and feature availability can vary by country and account. Compare user, contact, automation, reporting and export limits, then calculate the full cost at your expected seat count."
       tools={[
         {
           name: "HubSpot CRM",
           bestFor: "Freelancers who want a genuinely capable free tier to start with",
-          freeOption: "Free plan covers contact management and basic email tracking with no time limit.",
-          tradeoff: "The free tier is real, but meaningful automation is gated behind paid HubSpot products. Great for contact tracking; less attractive when automated follow-up becomes the priority.",
+          freeOption: "HubSpot Free is listed at $0/month for up to 2 users and up to 1,000 contacts, with no time limit. HubSpot also limits each other standard object type to 1,000 records per account. The pricing page displays USD; check the account-specific terms and features before adopting it for a team. Source: https://www.hubspot.com/pricing/crm.",
+          tradeoff: "The free tier is real, but meaningful automation is gated behind paid HubSpot products. Starter currently displays a limited new-customer offer from US$7/seat/month with annual commitment, against a listed US$20/seat/month price. Great for contact tracking; less attractive when automated follow-up becomes the priority.",
           url: "https://www.hubspot.com/products/crm",
         },
         {
           name: "Pipedrive",
           bestFor: "Freelancers and small teams who actively sell and want a visual pipeline",
-          freeOption: "No permanent free tier - paid plans are user-based.",
+          freeOption: "Pipedrive lists four paid plans — Lite, Growth, Premium and Ultimate — with optional add-ons and top-ups. Its US pricing page currently displays annual-billing rates of US$14, $39, $59 and $79 per seat/month respectively, paid upfront for the year. It offers a 14-day trial without a credit card, not a permanent free tier. Check the live checkout for your country, currency and billing cycle. Source: https://www.pipedrive.com/en/pricing.",
           tradeoff: "Built around a visual sales pipeline rather than being an all-in-one marketing suite. That focus is an advantage for deal management, but you need other tools for broader marketing workflows.",
           url: "https://www.pipedrive.com/",
         },
         {
           name: "Zoho CRM",
           bestFor: "Small teams already using other Zoho products",
-          freeOption: "A limited free edition is available in supported circumstances; verify the current user and feature limits.",
+          freeOption: "Zoho CRM Free supports up to 3 users. It includes core lead, contact and deal management, but advanced features differ by edition. The vendor’s US pricing page shows Free at $0 and paid Standard from US$14/user/month billed annually or US$20/user/month billed monthly; Professional is US$23/user/month billed annually. Local taxes may apply. Confirm the edition and price shown for your country. Sources: https://www.zoho.com/en-us/crm/zohocrm-pricing.html and https://help.zoho.com/portal/en/kb/crm/crm-reference/introduction-to-zoho-crm/articles/specifications-zoho-crm.",
           tradeoff: "The connected-suite advantage is strong if you already use Zoho Invoice, Books or Projects. The interface can take longer to learn than simpler CRM options.",
           url: "https://www.zoho.com/crm/",
         },
         {
           name: "Notion as a CRM",
           bestFor: "Freelancers who already live in Notion and want a flexible database",
-          freeOption: "Free for personal use, subject to Notion's current plan terms.",
+          freeOption: "Notion can be configured as a personal contact-and-deal database, but it does not become a dedicated CRM automatically. You must build and maintain fields, reminders, pipeline views and follow-up routines yourself. Check Notion’s current plan terms before relying on team access or automation.",
           tradeoff: "You get flexibility rather than built-in sales automation. That can be ideal for a simple custom workflow and a time sink if you need a mature CRM without maintaining it yourself.",
           url: "https://www.notion.so/",
         },

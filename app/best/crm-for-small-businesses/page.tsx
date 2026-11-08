@@ -22,14 +22,16 @@ export default function CrmForSmallBusinessesPage() {
     <ComparisonArticle
       title="Best CRM for Small Businesses"
       slug="crm-for-small-businesses"
+      reviewedOn="2026-11-08"
       intro="A small business CRM has one job first: make sure opportunities and customer conversations do not disappear between people, inboxes and spreadsheets. We compare tools around that reality — setup effort, team handoffs, free access and the point where costs start to matter — rather than ranking the platform with the longest feature list."
-      pricingNote="Free-plan details were checked against official provider pages in late October 2026. HubSpot lists free tools for up to 2 users and 1,000 contacts; Zoho CRM and Freshsales each list a free option for up to 3 users; Pipedrive offers a 14-day trial rather than a permanent free plan. Confirm the exact features and limits on the provider’s pricing page before importing customer data, because plans can change."
+      quickAnswer="For a team of one or two, HubSpot Free is a practical first test if its 1,000-contact limit is enough. Zoho CRM and Freshsales both publish free plans for up to three users. Pipedrive is a paid CRM with a 14-day trial, so budget for seats after testing. Compare the exact free features, team size and local billing terms before importing customer data."
+      pricingNote="Free-plan limits, trial status and displayed US pricing were rechecked against official provider pages on 8 November 2026. HubSpot Free supports up to 2 users and 1,000 contacts, with a separate 1,000-record limit across each other standard object type. Zoho CRM Free and Freshsales Free each support up to 3 users; Pipedrive offers a 14-day trial, not a permanent free plan. Pipedrive Lite is displayed at US$14/seat/month billed annually; Zoho CRM Standard is US$14/user/month billed annually or US$20 month-to-month, and Professional is US$23 annually billed or US$35 month-to-month. Prices are US-dollar references before applicable taxes; confirm local terms and feature availability before importing customer data."
       tools={[
         {
           name: "HubSpot CRM",
           bestFor: "Small teams wanting a broad starting point with a usable free tier",
           freeOption:
-            "HubSpot lists free tools at $0 for up to 2 users and 1,000 contacts, with no time limit. It also states a limit of 1 million records across other standard object types per account. Advanced automation and many marketing/sales features sit in paid products.",
+            "HubSpot lists free tools at $0 for up to 2 users and 1,000 contacts, with no time limit. It also limits each other standard object type to 1,000 records per account. Advanced automation and many marketing/sales features sit in paid products.",
           tradeoff:
             "Practical starting point for a small team. The wider HubSpot ecosystem can introduce paid features you may not need at the beginning. Check each must-have feature gate before building a process around the free tier.",
           url: "https://www.hubspot.com/pricing/crm",
@@ -38,7 +40,7 @@ export default function CrmForSmallBusinessesPage() {
           name: "Pipedrive",
           bestFor: "Sales-led small businesses that need a clear deal pipeline",
           freeOption:
-            "Pipedrive offers a 14-day trial with no credit card required, not a permanent free plan. Paid plans are priced per seat. Confirm current pricing and which email, automation and reporting features are included in the plan you choose.",
+            "Pipedrive offers a 14-day trial with no credit card required, not a permanent free plan. Its US pricing page currently displays Lite at US$14/seat/month billed annually ($168 per seat/year). Confirm billing terms and which email, automation and reporting features are included in the plan you choose.",
           tradeoff:
             "Pipeline-first workflow suits repeatable sales. After the trial you need to budget for every seat, so calculate the full team cost before committing.",
           url: "https://www.pipedrive.com/en/pricing",
@@ -149,7 +151,7 @@ export default function CrmForSmallBusinessesPage() {
             Official plan pages checked
           </h3>
           <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">
-            We checked published pricing and plan information in late October 2026. This is a desk-based comparison, not a claim that every feature was tested in a paid account. Recheck the current plan matrix before relying on a specific feature.
+            We checked published pricing and plan information on 8 November 2026. This is a desk-based comparison, not a claim that every feature was tested in a paid account. Recheck the current plan matrix before relying on a specific feature.
           </p>
           <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
             <li>

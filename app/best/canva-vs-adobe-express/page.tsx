@@ -12,11 +12,13 @@ export default function Page() {
     <ComparisonArticle
       title="Canva vs Adobe Express for Small Businesses"
       slug="canva-vs-adobe-express"
+      reviewedOn="2026-11-07"
       intro="Canva and Adobe Express both help small businesses produce everyday marketing assets without a full design department. Compare them using the actual work you publish: social posts, campaign graphics, short videos, brand templates and handoff between collaborators."
-      pricingNote="Templates, premium assets, brand controls, AI credits, collaboration and export options vary by plan and can change. Check the current commercial-use terms and whether the assets your team needs are included before publishing paid campaigns."
+      quickAnswer="Choose between Canva and Adobe Express by testing the assets you publish most often, not by counting templates. Compare brand controls, collaboration, editing workflow, export formats, AI-generation allowances and licensing terms using the same sample campaign before committing."
+      pricingNote="US plan details checked November 7, 2026. Canva Free is US$0 with limited AI access; Pro is US$144/year and Business US$250/year per person, with pooled AI allowances that vary by plan and tool. Adobe Express Free is US$0, no card required and includes limited generative credits; Premium is US$9.99/month and includes 250 generative credits/month. Prices, asset rights, storage and taxes vary by country."
       tools={[
-        { name: "Canva", bestFor: "Teams that want a broad template library and quick production of recurring marketing assets", freeOption: "Check current access to templates, premium elements, brand tools, AI credits and export features.", tradeoff: "A broad template ecosystem can speed up routine work, but designs can look generic without a clear brand system and careful customization.", url: "https://www.canva.com/" },
-        { name: "Adobe Express", bestFor: "Small businesses that want quick branded content and already use Adobe assets or workflows", freeOption: "Check current free and paid feature access, premium assets, brand kits and AI allowances.", tradeoff: "It can fit naturally with other Adobe work, but compare its specific templates, collaboration and export process against your day-to-day needs.", url: "https://www.adobe.com/express/" },
+        { name: "Canva", bestFor: "Teams that want a broad template library and quick production of recurring marketing assets", freeOption: "Canva Free is US$0 with core templates and limited Standard/Premium AI access. US Pro is US$144/year; Business is US$250/year per person and has higher pooled AI allowances.", tradeoff: "A broad template ecosystem can speed up routine work, but designs can look generic without a clear brand system and careful customization.", url: "https://www.canva.com/pricing/" },
+        { name: "Adobe Express", bestFor: "Small businesses that want quick branded content and already use Adobe assets or workflows", freeOption: "Adobe Express Free is US$0 and requires no card; Premium is US$9.99/month in the US and includes 250 generative credits/month. Premium assets and commercial terms vary by feature.", tradeoff: "It can fit naturally with other Adobe work, but compare its specific templates, collaboration and export process against your day-to-day needs.", url: "https://www.adobe.com/express/pricing/" },
       ]}
       bottomLine="Neither tool is the universal winner. Choose the editor that lets your team produce consistent, correctly licensed assets in the formats you publish, with the least friction and a plan cost you can justify."
     >
@@ -40,6 +42,7 @@ export default function Page() {
           <li>Export the actual formats you publish and check resolution, watermark and premium-asset restrictions.</li>
           <li>Confirm commercial-use rights for the assets and fonts in the final design.</li>
         </ol>
+        <p className="mt-5 text-xs leading-5 text-[#667085]">Research method: desk review of official pricing and generative-credit documentation checked November 7, 2026. This is not a controlled design-quality benchmark; test the same approved campaign and verify commercial asset rights before publishing.</p>
       </section>
     </ComparisonArticle>
   );

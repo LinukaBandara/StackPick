@@ -13,8 +13,10 @@ export default function Page() {
     <ComparisonArticle
       title="Best Form Builders for Lead Generation and Small Business"
       slug="form-builders"
+      reviewedOn="2026-11-07"
+      quickAnswer="Use Google Forms for simple internal surveys, RSVPs and basic lead capture. Choose Typeform when a branded, conversational form experience matters and its response limits fit. Consider Jotform for payments, conditional logic and a wider operational form toolkit. Test the mobile experience and submission destination before publishing."
       intro="For lead generation, a form is part of the sales funnel. It should ask only useful questions, work well on mobile, send submissions to the right place, and make consent and next steps clear. Google Forms is a low-cost utility, Typeform focuses on a branded conversational experience, and Jotform offers a broader set of operational form workflows. The right choice depends on whether you need simple capture, higher completion rates, or conditional logic and integrations."
-      pricingNote="Check the current free monthly submission or view cap, number of forms, file-upload allowance, branding controls, conditional logic and integrations. A free plan that accepts responses but cannot remove provider branding or send data to your CRM may not fit a serious lead funnel. Test the full path from mobile form to follow-up. Limits and pricing can change; verify on the official pages before relying on a free tier."
+      pricingNote="Free-plan limits rechecked 7 November 2026 against provider help/pricing pages. Typeform Free allows 10 responses per month across all forms. Jotform Starter Free allows 5 forms, 100 monthly submissions, 1,000 monthly form views, 100 MB of file storage, 500 total stored submissions and 10 payment submissions; these are account-wide limits, not per-form allowances. Google Forms has no published monthly response cap for ordinary use, but responses still consume the Google account storage available to the owner. Paid-plan prices, taxes, currencies, payment availability and feature access can vary by country. Sources: https://help.typeform.com/hc/en-us/articles/360032972852-Free-plan; https://www.jotform.com/pricing; https://www.google.com/forms/about/."
       tools={[
         {
           name: "Google Forms",
@@ -29,19 +31,19 @@ export default function Page() {
           name: "Typeform",
           bestFor: "Brand-led lead capture and marketing forms where completion rate and presentation matter",
           freeOption:
-            "Free tier is available with a low monthly response cap (commonly around 10 responses per month on the free plan — confirm current limit). Paid plans unlock higher volumes, branding removal and more advanced features.",
+            "Free includes 10 responses per month across all forms. Paid plans raise response limits and add more seats and advanced features; plan experiments may mean the offer shown at account checkout differs.",
           tradeoff:
             "The one-question-at-a-time conversational format can improve completion rates for marketing and lead-gen forms. The free tier’s response cap is restrictive for active campaigns, and you are paying for presentation as much as for the form itself.",
-          url: "https://www.typeform.com/",
+          url: "https://www.typeform.com/pricing",
         },
         {
           name: "Jotform",
           bestFor: "Operational forms that need payments, more complex logic, or a wider set of templates and integrations",
           freeOption:
-            "Free tier is available with modest monthly submission limits. Higher limits, advanced features, payments and branding controls require paid plans. Exact free limits should be checked on the current pricing page.",
+            "Starter Free allows 5 forms, 100 monthly submissions, 1,000 monthly form views, 100 MB storage, 500 total stored submissions and 10 payment submissions across the account.",
           tradeoff:
             "Wide capability after years of feature accumulation (payments, e-signatures, conditional logic, templates). That same breadth can make the editor feel more crowded if your actual need is a simple lead form.",
-          url: "https://www.jotform.com/",
+          url: "https://www.jotform.com/pricing",
         },
       ]}
       bottomLine="Simple internal survey, RSVP or basic lead capture inside Google Workspace? Use Google Forms — do not overthink it. Marketing or brand-sensitive lead form where design and completion rate matter? Test Typeform and accept the free-plan response limit. Need payments, more complex logic or a large library of templates? Look at Jotform and accept the busier editor. Always test the form on a phone and confirm where submissions land before using it live."

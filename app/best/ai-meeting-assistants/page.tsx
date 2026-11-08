@@ -17,7 +17,8 @@ export default function Page() {
       title="Best AI Meeting Assistants"
       slug="ai-meeting-assistants"
       intro="For freelancers and small teams, the useful meeting assistant is the one that turns a call into accurate notes, decisions and next actions without adding a second admin job. We compare four different approaches: Otter's minute-based transcription, Fireflies' searchable meeting archive, Fathom's generous individual recording allowance and Granola's bot-free note capture."
-      pricingNote="Free-plan limits and features can change, and some providers show different offers by region or billing cycle. The limits below are based on the providers' published plan information checked October 11, 2026. Confirm the current plan on the linked official page before relying on a limit or uploading client information."
+      quickAnswer="Start with Fathom if you want an individual free plan with unlimited recordings and transcripts; choose Otter if its 300 monthly free transcription minutes are enough; compare Fireflies if searchable team storage matters; and consider Granola if you prefer device-audio capture without a meeting bot. Check history, AI-summary and privacy limits before choosing."
+      pricingNote="Free-plan limits and features can change, and providers may show different offers by country or billing cycle. The limits below are based on official plan and help pages checked November 7, 2026. Prices are not compared in this guide; consult the linked vendor pages for current local currency and checkout terms before relying on a limit or uploading client information."
       tools={[
         {
           name: "Otter",
@@ -32,7 +33,7 @@ export default function Page() {
           name: "Fireflies.ai",
           bestFor: "Searchable transcripts and a meeting archive across a team's workflow",
           freeOption:
-            "The Free plan lists unlimited transcription, limited AI summaries, 400 minutes of meeting storage and 20 AI credits. Storage is a total archive allowance, not a monthly transcription allowance.",
+            "The Free plan lists unlimited transcription, limited AI summaries, 400 minutes of meeting storage and 20 AI credits. The pricing page labels storage as a team allowance; it is a total archive allowance, not a monthly transcription allowance.",
           tradeoff:
             "You may need to delete older meetings or upgrade as the archive grows. Some advanced automation, downloads and integrations are plan-dependent, so test the exact workflow you need.",
           url: "https://fireflies.ai/pricing",
@@ -50,7 +51,7 @@ export default function Page() {
           name: "Granola",
           bestFor: "People who prefer notes captured from their device audio instead of a meeting bot",
           freeOption:
-            "The Basic plan includes AI meeting notes, limited meeting history, AI chat, shared folders and note templates. Its pricing page lists bot-free device-audio capture across supported apps.",
+            "The Basic plan includes AI meeting notes, 30 days of meeting history, AI chat, shared folders and note templates. Its pricing page lists bot-free device-audio capture across supported apps.",
           tradeoff:
             "Limited history can matter if you need to search old client calls. Advanced integrations, unlimited history and centralized team administration are paid-plan features.",
           url: "https://www.granola.ai/pricing",
@@ -69,7 +70,7 @@ export default function Page() {
             transcription allowances, retained meeting history, summary limits and capture
             method. This is desk research, not a claim that StackPick independently benchmarked
             each product's transcription accuracy. Pricing and plan details were checked on
-            October 11, 2026; providers can change them after publication.
+            November 7, 2026; providers can change them after publication.
           </p>
 
           <div className="mt-8 overflow-x-auto rounded-[24px] border border-black/10">
@@ -99,7 +100,7 @@ export default function Page() {
                 </tr>
                 <tr className="border-t border-black/10">
                   <td className="p-4 font-medium">Granola</td>
-                  <td className="p-4 text-[#6e6e73]">Limited meeting history; advanced integrations and unlimited history require a paid plan.</td>
+                  <td className="p-4 text-[#6e6e73]">30 days of meeting history; advanced integrations and unlimited history require a paid plan.</td>
                   <td className="p-4"><a className={SOURCE_LINK_CLASS} href="https://www.granola.ai/pricing" target="_blank" rel="noopener noreferrer">Plan details</a></td>
                 </tr>
               </tbody>

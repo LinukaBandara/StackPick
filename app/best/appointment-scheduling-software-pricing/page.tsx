@@ -9,22 +9,23 @@ export const metadata: Metadata = {
 
 const plans = [
   { name: "Calendly Free", price: "$0", billing: "Free plan", fit: "One person with a simple one-to-one booking link", limits: "One event type and one calendar connection; no team round-robin scheduling.", url: "https://calendly.com/pricing" },
-  { name: "Calendly Standard", price: "$10/seat/mo", billing: "Billed yearly", fit: "Solo professionals needing multiple event types, calendar connections, reminders and payments", limits: "Each user who connects calendars and hosts meetings needs a seat; team routing is on Teams.", url: "https://calendly.com/pricing" },
-  { name: "Calendly Teams", price: "$16/seat/mo", billing: "Billed yearly", fit: "Sales and service teams that need round-robin scheduling and lead routing", limits: "Seat costs grow with every scheduling host; enterprise controls may require Enterprise.", url: "https://calendly.com/pricing" },
+  { name: "Calendly Standard", price: "$10/seat/mo annual · $12 monthly", billing: "Per host seat; annual billing saves 17%", fit: "Solo professionals needing multiple event types, calendar connections, reminders and payments", limits: "Each user who connects calendars and hosts meetings needs a seat; team routing is on Teams.", url: "https://calendly.com/pricing" },
+  { name: "Calendly Teams", price: "$16/seat/mo annual · $20 monthly", billing: "Per host seat; annual billing saves 20%", fit: "Sales and service teams that need round-robin scheduling and lead routing", limits: "Seat costs grow with every scheduling host; enterprise controls may require Enterprise.", url: "https://calendly.com/pricing" },
   { name: "Cal.com Individual", price: "$0", billing: "Free forever", fit: "Individuals needing multiple event types, calendar connections and payment options", limits: "The free tier is for one user; team scheduling and managed collaboration require a paid team plan.", url: "https://cal.com/pricing" },
-  { name: "Cal.com Teams", price: "$12/user/mo", billing: "Billed yearly", fit: "Teams needing round-robin, managed events, routing forms and booking analytics", limits: "Organization-level controls and SSO are on the higher Organizations plan.", url: "https://cal.com/pricing" },
+  { name: "Cal.com Teams", price: "$12/user/mo annual · $16 monthly", billing: "Per user; 14-day trial for paid plans", fit: "Teams needing round-robin, managed events, routing forms and booking analytics", limits: "Organization-level controls and SSO are on the higher Organizations plan.", url: "https://cal.com/pricing" },
   { name: "Acuity Starter", price: "$16/mo", billing: "Billed yearly; $20 monthly", fit: "Appointment businesses with one staff/location calendar and online payments", limits: "One calendar; no free plan after trial.", url: "https://www.acuityscheduling.com/pricing/" },
   { name: "Acuity Standard", price: "$27/mo", billing: "Billed yearly; $34 monthly", fit: "Small service businesses with multiple staff calendars, SMS reminders and packages", limits: "Up to six calendars; confirm text reminder availability in your region.", url: "https://www.acuityscheduling.com/pricing/" },
-  { name: "Acuity Premium", price: "$49/mo", billing: "Billed yearly; $61 monthly", fit: "Businesses managing many calendars, memberships and advanced booking needs", limits: "Up to 36 calendars; confirm which advanced features your workflow actually requires.", url: "https://www.acuityscheduling.com/pricing/" },
+  { name: "Acuity Premium", price: "$55/mo", billing: "Billed yearly; $69 monthly", fit: "Businesses managing many calendars, memberships and advanced booking needs", limits: "Up to 36 calendars; includes AI Booking Assistant, multiple staff/location time zones and custom API/CSS.", url: "https://acuityscheduling.com/pricing" },
 ];
 
 export default function Page() {
   return (
     <main className="bg-white">
       <article className="sp-container py-14 sm:py-20">
-        <p className="sp-eyebrow">Software pricing · Updated October 19, 2026</p>
+        <p className="sp-eyebrow">Software pricing · Updated November 8, 2026</p>
         <h1 className="sp-display mt-4 max-w-4xl">Appointment scheduling software pricing: compare the cost of bookings</h1>
-        <p className="sp-body-large mt-6 max-w-3xl">A solo consultant, a sales team and a salon with several staff calendars need different booking features. This comparison separates per-user meeting schedulers from appointment-business platforms that price by account and calendar capacity. Compare the real workflow you need—reminders, payments, team routing, staff calendars and branding—rather than choosing by the starting price alone.</p>
+        <p className="sp-eyebrow mt-6">Quick answer</p>
+        <p className="sp-body-large mt-6 max-w-3xl">For a solo booking link, start with Calendly Free if one event type and one calendar are enough, or compare Cal.com Individual if you need more event types and calendar connections. Teams needing round-robin routing should compare Calendly Teams with Cal.com Teams. Service businesses that sell appointments, packages or payments should compare Acuity by calendar count. The figures below are US pricing references; local currency, taxes, feature availability and checkout terms vary by country.</p>
 
         <section className="mt-10 overflow-x-auto rounded-2xl border border-[#d2d2d7]">
           <table className="w-full min-w-[850px] border-collapse text-left text-sm">
@@ -32,7 +33,8 @@ export default function Page() {
             <tbody>{plans.map((p) => <tr key={p.name} className="border-t border-[#d2d2d7] align-top"><td className="p-4"><a className="font-semibold text-[#001D39] underline" href={p.url} target="_blank" rel="noreferrer">{p.name}</a><p className="mt-2 text-[#6e6e73]">{p.billing}</p></td><td className="p-4 whitespace-nowrap">{p.price}</td><td className="p-4">{p.fit}</td><td className="p-4">{p.limits}</td></tr>)}</tbody>
           </table>
         </section>
-        <p className="mt-4 text-sm leading-relaxed text-[#6e6e73]">Prices are published US prices on official vendor pages checked October 19, 2026. Calendly and Cal.com figures shown for paid tiers are annual-billing equivalents; Acuity shows both annual and monthly billing. Taxes, promotions and packaging may change the final checkout amount.</p>
+        <p className="mt-4 text-sm leading-relaxed text-[#6e6e73]">Published US prices checked against official vendor pages on November 8, 2026. Calendly Standard is $10 per seat/month annually or $12 monthly; Teams is $16 annually or $20 monthly. Cal.com Teams is $12 per user/month annually or $16 monthly. Acuity Starter is $16 annually or $20 monthly, Standard $27 or $34, and Premium $55 or $69. Prices exclude applicable taxes; paid monthly equivalents are not the same as annual-billing commitments. Confirm checkout and region-specific feature availability.</p>
+        <p className="mt-2 text-xs leading-relaxed text-[#6e6e73]">Research method: public-source desk research; no hands-on product testing.</p>
 
         <section className="mt-12 max-w-3xl">
           <h2 className="text-2xl font-semibold tracking-tight">Which pricing model fits your business?</h2>
@@ -77,10 +79,10 @@ export default function Page() {
             <li><Link className="underline" href="/best/appointment-scheduling-software">Best appointment scheduling software</Link></li>
             <li><Link className="underline" href="/best/project-management-software">Project management software for small teams</Link></li>
             <li><Link className="underline" href="/best/crm-software-pricing">CRM software pricing</Link></li>
-            <li><Link className="underline" href="/best/invoicing-software">Invoicing software for small businesses</Link></li>
+            <li><Link className="underline" href="/best/invoicing-for-small-businesses">Invoicing software for small businesses</Link></li>
           </ul>
         </section>
-        <p className="mt-8 text-xs leading-relaxed text-[#6e6e73]">Editorial comparison of US pricing checked October 19, 2026. Product packaging and prices can change; verify the exact plan, billing term and final price on each official pricing page before purchasing.</p>
+        <p className="mt-8 text-xs leading-relaxed text-[#6e6e73]">Editorial comparison of published US-dollar pricing checked November 8, 2026. This is desk research, not a live booking-system benchmark. Product packaging, taxes, prices and regional feature availability can change; verify the exact plan, billing term and final price on each official pricing page before purchasing.</p>
       </article>
     </main>
   );

@@ -14,43 +14,44 @@ export default function Page() {
       title="Best Free CRM Tools Without a Credit Card"
       slug="free-crm-without-credit-card"
       intro="If you want to test a CRM without handing over payment details, separate two questions: can you create an account without a card, and can the resulting free plan handle your actual sales process? Sign-up rules and plan limits can change, so this guide focuses on what to verify before you import real customer records."
-      pricingNote="Do not treat a free-plan label as proof that no card is required. Check the provider's current sign-up flow and terms in your region, and distinguish a no-card permanent tier from a time-limited trial."
+      quickAnswer="Two providers explicitly advertise a permanent no-card CRM tier: HubSpot Free (up to 2 users and 1,000 contacts) and Zoho CRM Free (up to 3 users). Bitrix24 and Notion also have free plans, but check their current workspace/user limits and live registration flow before treating them as no-card options."
+      pricingNote="Plan and sign-up details checked November 7, 2026. Only HubSpot and Zoho explicitly state on the linked pages that their free CRM plans do not require a credit card. Prices and plan details are US-dollar references where shown; confirm country-specific availability and the live sign-up flow for other providers before importing customer data."
       tools={[
         {
           name: "HubSpot CRM",
           bestFor: "Testing a conventional contact-and-deal workflow",
           freeOption:
-            "HubSpot offers a free CRM option; confirm the current sign-up requirements and feature limits before committing.",
+            "Permanent Free plan; no credit card required. The current free account supports up to 2 users and 1,000 contacts, plus 1,000 records per other standard object type per account.",
           tradeoff:
             "A low-friction starting point for contacts and deal stages, but advanced automation and other sales features may require paid products.",
-          url: "https://www.hubspot.com/products/crm",
+          url: "https://www.hubspot.com/pricing/crm?selectedPackage=free",
         },
         {
           name: "Zoho CRM",
           bestFor: "Checking whether a CRM can grow with an existing Zoho setup",
           freeOption:
-            "A limited free edition may be available under current terms; verify eligibility, user limits and sign-up requirements.",
+            "Permanent Free Edition for up to 3 users; the US pricing page explicitly says no credit card required. Check your regional edition before signup.",
           tradeoff:
             "A stronger fit when you expect to connect other Zoho business tools, though configuration can be heavier for a simple solo pipeline.",
-          url: "https://www.zoho.com/crm/",
+          url: "https://www.zoho.com/en-us/crm/zohocrm-pricing.html?price=FREE",
         },
         {
           name: "Bitrix24",
           bestFor: "Trying contact tracking alongside team collaboration",
           freeOption:
-            "Review the current plan and account-creation flow to confirm card requirements and included limits.",
+            "The current pricing comparison table lists a Free plan for 1–2 users with 5 GB storage, but its FAQ says the free plan supports unlimited users. Treat the user limit as unresolved and confirm it with the provider. The public pages reviewed do not explicitly confirm a no-card requirement for the ongoing Free plan, so check registration.",
           tradeoff:
             "Combines several workspace functions, which can be useful for a team but excessive if you only need a clean lead list.",
-          url: "https://www.bitrix24.com/",
+          url: "https://www.bitrix24.com/prices/",
         },
         {
           name: "Notion",
           bestFor: "Building a lightweight lead tracker without a dedicated sales platform",
           freeOption:
-            "A free plan is available under Notion's current terms; confirm whether its limits suit your workspace.",
+            "Notion says its Free plan has no time limit or credit-card requirement for individual use. Adding team members can trigger collaboration limits, so test the actual workspace setup.",
           tradeoff:
             "You can model your own stages and notes, but reminders, sales reporting and automation require more manual setup than a purpose-built CRM.",
-          url: "https://www.notion.com/",
+          url: "https://www.notion.com/teams",
         },
       ]}
       bottomLine="Start with HubSpot if you want to test a traditional CRM, compare Zoho if your business already uses its tools, and consider Notion only if a simple database is enough. Before choosing any of them, confirm card requirements directly in the live sign-up flow—this can change and should not be inferred from the word 'free'."

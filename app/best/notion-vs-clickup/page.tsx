@@ -12,11 +12,13 @@ export default function Page() {
     <ComparisonArticle
       title="Notion vs ClickUp"
       slug="notion-vs-clickup"
+      reviewedOn="2026-11-07"
       intro="Notion and ClickUp overlap, but they start from different work models. Notion connects documents, knowledge and flexible databases; ClickUp is organized around tasks and project execution. Compare how each handles your team's everyday work rather than choosing based on the longest feature list."
-      pricingNote="Both products change plan limits and feature access over time. Verify current member, guest, storage, automation, reporting and AI allowances on the exact plan. Include migration effort and the time needed to maintain a customized workspace in your comparison."
+      quickAnswer="Choose Notion when documents, knowledge and flexible databases are the centre of the workflow. Choose ClickUp when task ownership, project status and execution views matter more. Test one real project in each, including file limits, recurring work, reporting and how much configuration the team must maintain."
+      pricingNote="US plan details checked November 7, 2026. Notion Free is no-card for individual use and allows unlimited blocks for a single-person workspace; a Free workspace with multiple members is limited to 1,000 blocks, and Free file uploads are capped at 5 MB each. Plus is US$10/member/month and Business US$20/member/month on the public annual-billing pricing view. ClickUp Free has 60 MB storage, unlimited tasks/subtasks and unlimited free members; Core is displayed at a promotional US$9/user/month billed annually against a regular US$12 rate. Team seats, guest permissions, AI usage, storage, automations and taxes vary by plan and country."
       tools={[
-        { name: "Notion", bestFor: "Teams that organize work around documents, internal knowledge and flexible databases", freeOption: "Check current personal, team, guest, file and collaboration limits.", tradeoff: "It keeps briefs and project context together, but the team must design its own task conventions, reminders and reporting.", url: "https://www.notion.com/" },
-        { name: "ClickUp", bestFor: "Teams that need structured task ownership, deadlines, multiple project views and repeatable workflows", freeOption: "Check current member, storage, automation, dashboard and guest limits.", tradeoff: "Its dedicated project features can make execution more visible, but the breadth of settings can create configuration overhead and notification noise.", url: "https://clickup.com/" },
+        { name: "Notion", bestFor: "Teams that organize work around documents, internal knowledge and flexible databases", freeOption: "Free is no-card and has no time limit for individual use, with unlimited blocks for a single-person workspace. A Free workspace with multiple members is limited to 1,000 blocks, and each uploaded file is capped at 5 MB. Plus is US$10/member/month and Business US$20/member/month on the public annual-billing pricing view.", tradeoff: "It keeps briefs and project context together, but the team must design its own task conventions, reminders and reporting.", url: "https://www.notion.com/pricing" },
+        { name: "ClickUp", bestFor: "Teams that need structured task ownership, deadlines, multiple project views and repeatable workflows", freeOption: "Free Forever: 60 MB storage, unlimited tasks/subtasks and unlimited free members. Core is displayed at a promotional US$9/user/month billed annually against a regular US$12 rate; paid tiers add storage, custom fields and automation allowances.", tradeoff: "Its dedicated project features can make execution more visible, but the breadth of settings can create configuration overhead and notification noise.", url: "https://clickup.com/pricing" },
       ]}
       bottomLine="Choose Notion if connected knowledge and adaptable documents are the center of the work. Choose ClickUp if task ownership, deadlines and project execution need more structure. If your current tool already supports the team, switching is not automatically an improvement."
     >
@@ -38,6 +40,7 @@ export default function Page() {
           <li>Review reminders, recurring tasks, dependencies and notification volume.</li>
           <li>Estimate the ongoing admin time required to keep the workspace accurate.</li>
         </ol>
+        <p className="mt-5 text-xs leading-5 text-[#667085]">Research method: desk review of official plan/pricing pages checked November 7, 2026. No controlled usability benchmark is claimed; compare the same project with actual team members before migrating.</p>
       </section>
     </ComparisonArticle>
   );

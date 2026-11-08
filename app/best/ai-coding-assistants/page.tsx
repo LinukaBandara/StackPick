@@ -15,49 +15,50 @@ export default function Page() {
       title="Best AI Coding Assistants for Developers"
       slug="ai-coding-assistants"
       intro="The useful coding assistant is the one that fits your existing editor, repository, budget and review habits. Inline autocomplete, codebase-aware edits and terminal agents solve different problems, so compare them by the work you need to finish and the checks you can run afterward. This guide is a workflow-based shortlist, not a universal winner ranking. Treat free access as a trial of your real stack—not as proof that the same usage will remain free at project scale."
-      pricingNote="Free access may limit completions, premium model requests, agent tasks, context size, repository indexing or monthly usage. Verify current official plan terms and whether API usage is billed separately from a subscription. StackPick has not presented this shortlist as a controlled hands-on benchmark; treat vendor features as claims to verify in your own repository. For private or client code, review data controls and permissions, never paste secrets into prompts, and inspect diffs and commands before accepting changes."
+      quickAnswer="For inline completion in an existing editor, start with GitHub Copilot. For terminal-based repository work, compare Claude Code and Codex. For agentic editor workflows, test Cursor and Devin Desktop (formerly Windsurf); Google Antigravity is the current individual Google coding-agent path, replacing the former Gemini Code Assist individual experience. Choose by the quota you actually use and the quality of the diff—not the model label."
+      pricingNote="Plan names, quotas and bundled models are changing quickly. Prices below are publicly displayed USD references checked November 7, 2026, not guaranteed local checkout prices. Separate included completions from chat/agent credits, subscription usage from API billing, and consumer plans from business editions. This is desk research, not a controlled hands-on benchmark. For private/client code, review data controls, permissions and training settings; never paste secrets into prompts, and inspect diffs and commands before accepting changes."
       tools={[
         {
           name: "GitHub Copilot",
           bestFor: "Developers who want AI assistance inside an existing editor and GitHub workflow",
-          freeOption: "Check the current Free plan, request limits and eligible IDEs.",
-          tradeoff: "Features differ by IDE and plan; verify which agent, model and repository features are included.",
+          freeOption: "Free currently lists 2,000 code completions per month; chat and agent usage is limited.",
+          tradeoff: "Pro is listed at $10/user/month, but chat and agent interactions draw from monthly AI credits; paid completions are unlimited. Pro+, Max and business tiers have different allowances.",
           url: "https://github.com/features/copilot",
         },
         {
           name: "Cursor",
           bestFor: "Developers who want an AI-focused editor with codebase-aware editing",
-          freeOption: "Check the current plan and included usage before relying on it daily.",
-          tradeoff: "Switching editors may disrupt an established setup, and agent usage can be metered.",
-          url: "https://cursor.com/",
+          freeOption: "The current US pricing page lists a free Hobby tier; confirm the included agent allowance before relying on it.",
+          tradeoff: "Plan names and usage pools have changed; verify current model allowances, on-demand charges and third-party model billing at checkout.",
+          url: "https://prod.cursor.com/en-US/pricing",
         },
         {
           name: "Claude Code",
           bestFor: "Terminal-first work such as repository exploration, multi-file changes and test-driven tasks",
-          freeOption: "Check current Claude plan access and API billing separately; do not assume they are interchangeable.",
-          tradeoff: "A terminal workflow requires comfort reviewing diffs, commands, permissions and tool actions.",
+          freeOption: "Claude Code is available with Claude Pro ($20/month) and Max ($100 or $200/month); usage is shared with Claude chat.",
+          tradeoff: "Pro/Max usage limits depend on task and model; Anthropic Console API usage is billed separately. A terminal workflow also requires careful review of commands and diffs.",
           url: "https://docs.anthropic.com/en/docs/claude-code/overview",
         },
         {
           name: "OpenAI Codex",
           bestFor: "Delegating coding tasks to an agent and reviewing the resulting changes",
-          freeOption: "Check current product availability, plan eligibility and task limits.",
-          tradeoff: "Delegated output still needs review, tests and careful handling of secrets and production access.",
+          freeOption: "Codex is included across ChatGPT plans, including Free and Go, with plan-dependent usage limits; Codex Cloud is not included on Free or Go.",
+          tradeoff: "Usage depends on model and task; API-key usage is billed separately. Delegated output still needs review, tests and careful handling of secrets.",
           url: "https://openai.com/codex/",
         },
         {
-          name: "Windsurf",
-          bestFor: "Developers who prefer an AI-centered editor and guided multi-step workflows",
-          freeOption: "Check current free-tier availability and model or agent allowances.",
-          tradeoff: "Plan limits and the available models can change, so compare the current terms rather than old pricing articles.",
-          url: "https://windsurf.com/",
+          name: "Devin Desktop (formerly Windsurf)",
+          bestFor: "Developers who want an AI-focused IDE and a workspace for managing local and cloud coding agents",
+          freeOption: "A Free tier is listed; Pro is $20/month and Max is $200/month on the current public plan page.",
+          tradeoff: "The product has been renamed and plan/usage terms have changed; check current quotas, team-seat pricing and any overage terms.",
+          url: "https://devin.ai/desktop",
         },
         {
-          name: "Gemini Code Assist",
-          bestFor: "Developers looking for AI assistance across supported IDEs and Google developer workflows",
-          freeOption: "Review current individual, business and region-specific eligibility.",
-          tradeoff: "Capabilities and quotas vary by edition; check whether the features you need are included.",
-          url: "https://codeassist.google/",
+          name: "Google Antigravity",
+          bestFor: "Individual developers who want Google's agentic desktop and terminal coding workflow",
+          freeOption: "The individual tier is listed at $0 with basic weekly rate limits; paid Google AI plans provide higher limits.",
+          tradeoff: "Gemini Code Assist for individuals was replaced by Antigravity in June 2026; business Gemini Code Assist Standard/Enterprise remains a separate offering.",
+          url: "https://www.antigravity.google/pricing",
         },
       ]}
       bottomLine="Choose by the work you need to finish, the editor you already use, the limits you can live with and how reliably you can review the changes. A free tier that covers your real workload can be a better fit than a more capable tool with a restrictive quota."
@@ -102,7 +103,7 @@ export default function Page() {
 
       <section className="bg-white py-16 sm:py-20">
         <div className="sp-container">
-          <p className="sp-eyebrow">Price and usage limits · Checked October 18, 2026</p>
+          <p className="sp-eyebrow">Price and usage limits · Checked November 7, 2026</p>
           <h2 className="sp-title mt-4 max-w-4xl">Compare the bill and the quota—not just the free label.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
             AI coding products may separate autocomplete, chat, agent actions and premium-model usage into different allowances. A subscription price is not necessarily an unlimited-agent price, and API usage may be billed separately. The links below go to provider-owned pages so readers can confirm current plan terms for their region before paying.
@@ -115,17 +116,17 @@ export default function Page() {
                 <th className="p-4 font-semibold text-[#1d1d1f]">Official source</th>
               </tr></thead>
               <tbody className="divide-y divide-[#e4e7ec]">
-                <tr><td className="p-4 font-medium text-[#1d1d1f]">GitHub Copilot</td><td className="p-4 text-[#6e6e73]">Free completion allowance, premium requests/credits, and which agent features are included. The official page currently lists Free at $0 and Pro at $10 per user/month.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">Plans and pricing →</a></td></tr>
-                <tr><td className="p-4 font-medium text-[#1d1d1f]">Cursor</td><td className="p-4 text-[#6e6e73]">Included agent/chat usage, model availability, and what happens after the quota is reached.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://cursor.com/pricing" target="_blank" rel="noopener noreferrer">Official pricing →</a></td></tr>
-                <tr><td className="p-4 font-medium text-[#1d1d1f]">Claude Code</td><td className="p-4 text-[#6e6e73]">Eligible Claude subscription, usage limits, and the separate API billing model.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://www.anthropic.com/pricing" target="_blank" rel="noopener noreferrer">Official pricing →</a></td></tr>
-                <tr><td className="p-4 font-medium text-[#1d1d1f]">OpenAI Codex</td><td className="p-4 text-[#6e6e73]">Current plan eligibility, task limits, and whether the chosen workflow is included in your subscription.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://openai.com/codex/" target="_blank" rel="noopener noreferrer">Product and access →</a></td></tr>
-                <tr><td className="p-4 font-medium text-[#1d1d1f]">Windsurf</td><td className="p-4 text-[#6e6e73]">Current plan name, prompt/agent allowances and included model options.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://windsurf.com/pricing" target="_blank" rel="noopener noreferrer">Official pricing →</a></td></tr>
-                <tr><td className="p-4 font-medium text-[#1d1d1f]">Gemini Code Assist</td><td className="p-4 text-[#6e6e73]">Individual eligibility, daily quotas, supported IDEs and regional terms.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://codeassist.google/" target="_blank" rel="noopener noreferrer">Official product page →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">GitHub Copilot</td><td className="p-4 text-[#6e6e73]">Free: 2,000 completions/month. Pro: $10/user/month; agent/chat actions use AI credits (1 credit = $0.01), while paid completions are unlimited. Pro+, Max and business plans have different allowances.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Plans and pricing →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Cursor</td><td className="p-4 text-[#6e6e73]">Current US page lists a free Hobby tier and a $20/month individual tier; verify included model usage and any on-demand or third-party model charges.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://prod.cursor.com/en-US/pricing" target="_blank" rel="noopener noreferrer">Official pricing →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Claude Code</td><td className="p-4 text-[#6e6e73]">Claude Pro is $20/month; Max tiers are $100 and $200/month. Claude chat and Claude Code share plan usage; Console API usage is separate.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://support.anthropic.com/en/articles/11145838-using-claude-code-with-your-max-plan" target="_blank" rel="noopener noreferrer">Usage and billing →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">OpenAI Codex</td><td className="p-4 text-[#6e6e73]">Included across ChatGPT plans; usage varies by plan, model and task. Codex Cloud is unavailable on Free/Go; API-key usage is billed by API usage.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://chatgpt.com/codex/pricing/" target="_blank" rel="noopener noreferrer">Plans and usage →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Devin Desktop (formerly Windsurf)</td><td className="p-4 text-[#6e6e73]">Current public tiers: Free, Pro $20/month and Max $200/month; team pricing and usage terms need separate review.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://devin.ai/desktop" target="_blank" rel="noopener noreferrer">Plans and product →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Google Antigravity</td><td className="p-4 text-[#6e6e73]">Individual Free tier is $0 with basic weekly limits; Google AI Pro/Ultra provide higher limits. Gemini Code Assist Standard/Enterprise remains a separate business product.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://www.antigravity.google/pricing" target="_blank" rel="noopener noreferrer">Plans and pricing →</a></td></tr>
               </tbody>
             </table>
           </div>
           <p className="mt-4 text-xs leading-5 text-[#6e6e73]">
-            Prices and quotas can change, and access can vary by country, plan and account eligibility. Only the GitHub Copilot figures above are quoted here; other products are linked to their official pages rather than given unverified price claims.
+            Prices and quotas can change, and access can vary by country, plan and account eligibility. The figures are public USD references checked November 7, 2026; local taxes and checkout terms may differ.
           </p>
         </div>
       </section>

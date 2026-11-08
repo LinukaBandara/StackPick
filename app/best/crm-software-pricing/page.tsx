@@ -16,23 +16,23 @@ export const metadata: Metadata = {
 };
 
 const sources = [
-  { name: "HubSpot CRM pricing", url: "https://www.hubspot.com/pricing/crm" },
+  { name: "HubSpot Customer Platform pricing", url: "https://www.hubspot.com/pricing/suite" },
   { name: "Zoho CRM pricing", url: "https://www.zoho.com/en-us/crm/" },
   { name: "Salesforce Sales pricing", url: "https://www.salesforce.com/sales/pricing/" },
 ];
 
 const costRows = [
-  { name: "HubSpot Free tools", rate: "$0", five: "Not eligible", fifteen: "Not eligible", note: "Official page lists up to 2 users and 1,000 contacts; a team of five or fifteen needs a different plan or product." },
-  { name: "Zoho CRM Standard", rate: "From $14/user/month", five: "$70/month", fifteen: "$210/month", note: "Illustrative seat arithmetic at the displayed starting rate; confirm billing term, region and checkout price." },
-  { name: "Salesforce Starter Suite", rate: "$25/user/month", five: "$125/month", fifteen: "$375/month", note: "Official page lists USD $25 per user/month, billed monthly or annually. Confirm the selected term and included features." },
-  { name: "Salesforce Pro Suite", rate: "$100/user/month", five: "$500/month", fifteen: "$1,500/month", note: "Official page lists USD $100 per user/month billed annually; the monthly equivalents are planning arithmetic, not a monthly-billing offer." },
+  { name: "HubSpot Free tools", rate: "$0", five: "Not eligible", fifteen: "Not eligible", note: "HubSpot currently lists its free Customer Platform for up to 2 users. Paid Starter pricing and feature bundles depend on the selected products and offer." },
+  { name: "Zoho CRM Standard", rate: "$14/user/month annual · $20 monthly", five: "$70 annual-billing equivalent · $100 monthly", fifteen: "$210 annual-billing equivalent · $300 monthly", note: "Zoho's US pricing page lists $14/user/month billed annually or $20/user/month billed monthly." },
+  { name: "Salesforce Starter Suite", rate: "$25/user/month", five: "$125/month", fifteen: "$375/month", note: "Official US page lists $25/user/month billed monthly or annually; transaction fees may apply." },
+  { name: "Salesforce Pro Suite", rate: "$100/user/month", five: "$500/month equivalent", fifteen: "$1,500/month equivalent", note: "Official US page lists $100/user/month billed annually with a contract; these are monthly equivalents, not monthly-billed terms." },
 ];
 
 export default function CrmSoftwarePricingPage() {
   return (
     <article className="bg-white">
       <div className="sp-container py-14 sm:py-20">
-        <p className="sp-eyebrow">Software pricing guide · Checked October 18, 2026</p>
+        <p className="sp-eyebrow">Software pricing guide · Checked November 8, 2026</p>
         <h1 className="sp-display mt-4 max-w-4xl">CRM software pricing: what will a small team actually pay?</h1>
         <p className="sp-body-large mt-6 max-w-3xl">
           CRM pricing is more than the number shown on a pricing card. The real bill depends on how many people need access, which sales features are gated behind a higher tier, whether you pay monthly or annually, and whether onboarding or add-ons are required. This guide compares published starting prices and shows how per-seat costs scale.
@@ -42,14 +42,14 @@ export default function CrmSoftwarePricingPage() {
           <p className="text-xs font-semibold uppercase tracking-wide text-[#001D39]">Quick answer</p>
           <h2 className="mt-3 text-xl font-semibold text-[#1d1d1f]">Start with the workflow and seat count—not the advertised starting price.</h2>
           <p className="mt-3 text-sm leading-6 text-[#6e6e73]">
-            A solo freelancer may be fine with a free CRM. A five-person team paying $14 per seat has a $70 monthly base before taxes or extras; at fifteen seats, that same rate becomes $210. If you need automation, reporting, permissions or integrations, compare the tier that actually includes them.
+            A solo freelancer may be fine with a free CRM. HubSpot currently lists its free Customer Platform for up to two users. Zoho CRM Standard is $14 per user/month with annual billing or $20 with monthly billing: five seats work out to $70 or $100 per month, and fifteen seats to $210 or $300. If you need automation, reporting, permissions or integrations, compare the tier that actually includes them.
           </p>
         </section>
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f]">Published starting prices and team-size examples</h2>
           <p className="mt-3 max-w-3xl text-sm leading-6 text-[#6e6e73]">
-            USD figures below come from the providers' public US pricing pages reviewed on October 18, 2026. They are not a like-for-like feature comparison. Seat totals are simple multiplication of the listed rate and exclude taxes, add-ons, implementation, discounts and any minimum-seat rules. Check the official pages before purchasing.
+            USD figures below come from official US pricing pages checked November 8, 2026. These are not like-for-like feature comparisons. Zoho's two figures distinguish annual-billing monthly equivalents from monthly billing; Salesforce Pro requires annual billing. Seat totals are simple multiplication of listed per-seat rates and exclude taxes, add-ons, implementation, discounts and any minimum-seat rules. HubSpot Starter pricing is not shown as a single universal CRM-only rate because its page presents product bundles and limited-time offers. Check the official pages before purchasing.
           </p>
           <div className="mt-6 overflow-x-auto rounded-[20px] border border-[#d2d2d7]">
             <table className="w-full min-w-[760px] text-left text-sm">
@@ -76,7 +76,7 @@ export default function CrmSoftwarePricingPage() {
             </table>
           </div>
           <p className="mt-4 text-xs leading-5 text-[#6e6e73]">
-            The HubSpot row illustrates the included free allowance, not a claim that fifteen users can share one free account. Paid HubSpot prices and feature packaging vary by product and offer; use the official pricing page to price the exact CRM features you need.
+            The HubSpot row illustrates the free Customer Platform's two-user allowance, not a claim that five or fifteen users can share one free account. HubSpot's Starter price is displayed from $7 per seat/month on an introductory offer and $20 per seat/month as the other listed rate; product bundles, new-customer eligibility and renewal terms matter. Price the exact products and seats in its calculator before comparing it with a CRM-only subscription.
           </p>
         </section>
 
@@ -116,7 +116,7 @@ export default function CrmSoftwarePricingPage() {
           <ul className="mt-5 space-y-3 text-sm leading-6 text-[#6e6e73]">
             {sources.map((source) => <li key={source.url}><a className="font-semibold text-[#001D39] underline underline-offset-4" href={source.url} target="_blank" rel="noopener noreferrer">{source.name} →</a></li>)}
           </ul>
-          <p className="mt-6 text-sm leading-6 text-[#6e6e73]">Prices, promotions and plan features can change and may differ by country. This is desk research based on published provider pages, not a hands-on product test or a quote. StackPick currently links directly to vendors and does not claim to earn affiliate commissions from these links.</p>
+          <p className="mt-6 text-sm leading-6 text-[#6e6e73]">Prices, promotions and plan features can change and may differ by country. This desk-research snapshot was checked November 8, 2026; it is not a hands-on product test or a quote. HubSpot's Starter rate is a displayed introductory price and may be restricted to eligible new customers. Zoho's monthly and annual billing prices differ. Salesforce Pro requires annual billing and a contract. StackPick links directly to vendors and does not claim to earn affiliate commissions from these links.</p>
         </section>
 
         <section className="mt-14 rounded-[24px] bg-[#f5f5f7] p-6 sm:p-8">

@@ -12,22 +12,23 @@ const plans = [
   { name: "Fillout Starter", price: "$15/mo", billing: "$180 billed annually; $19 monthly", fit: "Teams needing more question types and up to 2,000 responses monthly", limits: "Unlimited seats; check which custom branding and redirect features are included.", url: "https://www.fillout.com/pricing" },
   { name: "Fillout Pro", price: "$40/mo", billing: "$480 billed annually; $49 monthly", fit: "Teams needing 5,000 responses, custom fonts and no Fillout branding", limits: "Custom domain and advanced analytics are on Business.", url: "https://www.fillout.com/pricing" },
   { name: "Fillout Business", price: "$75/mo", billing: "$900 billed annually; $89 monthly", fit: "Organizations needing unlimited responses, custom domain and form analytics", limits: "Check any organization-level controls and data-handling requirements before rollout.", url: "https://www.fillout.com/pricing" },
-  { name: "Jotform Starter", price: "$0", billing: "Free plan", fit: "Individuals testing forms, surveys and simple payment collection", limits: "5 forms, 100 monthly submissions, 100 MB storage and 500 total stored submissions.", url: "https://www.jotform.com/pricing/" },
-  { name: "Jotform Bronze", price: "$34/mo", billing: "Billed annually", fit: "Small businesses needing more forms and about 1,000 monthly submissions", limits: "25 forms, 1,000 monthly submissions and 1 GB storage.", url: "https://www.jotform.com/pricing/" },
-  { name: "Jotform Silver", price: "$39/mo", billing: "Billed annually", fit: "Businesses with more forms and up to 2,500 monthly submissions", limits: "50 forms, 2,500 monthly submissions and 10 GB storage.", url: "https://www.jotform.com/pricing/" },
-  { name: "Jotform Gold", price: "$99/mo", billing: "Billed annually", fit: "High-volume workflows with up to 10,000 monthly submissions", limits: "100 forms, 10,000 monthly submissions and 100 GB storage.", url: "https://www.jotform.com/pricing/" },
-  { name: "Typeform Basic", price: "$25/mo", billing: "$300 billed yearly; $29 monthly", fit: "Branded conversational forms and surveys for a solo user", limits: "100 responses per month; additional responses may require a higher allowance or add-on.", url: "https://www.typeform.com/pricing" },
-  { name: "Typeform Plus", price: "$50/mo", billing: "$600 billed yearly; $59 monthly", fit: "Small teams needing branding removal and more collaboration", limits: "1,000 responses per month and 3 users.", url: "https://www.typeform.com/pricing" },
-  { name: "Typeform Business", price: "$83/mo", billing: "$996 billed yearly; $99 monthly", fit: "Teams needing conversion analytics and more response capacity", limits: "10,000 responses per month and 5 users; verify maximum-response caps and add-on prices.", url: "https://www.typeform.com/pricing" },
+  { name: "Jotform Starter", price: "$0", billing: "Free plan", fit: "Individuals testing forms, surveys and simple payment collection", limits: "5 forms, 100 monthly submissions, 100 MB storage, 500 total stored submissions and 10 monthly payment submissions.", url: "https://www.jotform.com/pricing/" },
+  { name: "Jotform Bronze", price: "$34/mo", billing: "Billed annually", fit: "Small businesses needing more forms and about 1,000 monthly submissions", limits: "25 forms, 1,000 monthly submissions, 1 GB storage and 100 monthly payment submissions.", url: "https://www.jotform.com/pricing/" },
+  { name: "Jotform Silver", price: "$39/mo", billing: "Billed annually", fit: "Businesses with more forms and up to 2,500 monthly submissions", limits: "50 forms, 2,500 monthly submissions, 10 GB storage and 250 monthly payment submissions.", url: "https://www.jotform.com/pricing/" },
+  { name: "Jotform Gold", price: "$99/mo", billing: "Billed annually", fit: "High-volume workflows with up to 10,000 monthly submissions", limits: "100 forms, 10,000 monthly submissions, 100 GB storage and 1,000 monthly payment submissions.", url: "https://www.jotform.com/pricing/" },
+  { name: "Typeform Basic", price: "$25/mo", billing: "$300 billed yearly; $29 monthly", fit: "Branded conversational forms and surveys for a solo user", limits: "1 seat, 100 base responses/month and a 750 maximum monthly response cap including add-ons.", url: "https://www.typeform.com/pricing" },
+  { name: "Typeform Plus", price: "$50/mo", billing: "$600 billed yearly; $59 monthly", fit: "Small teams needing branding removal and more collaboration", limits: "3 seats, 1,000 base responses/month and a 2,500 maximum monthly response cap including add-ons.", url: "https://www.typeform.com/pricing" },
+  { name: "Typeform Business", price: "$83/mo", billing: "$996 billed yearly; $99 monthly", fit: "Teams needing conversion analytics and more response capacity", limits: "5 seats, 10,000 base responses/month and a 50,000 maximum monthly response cap including add-ons.", url: "https://www.typeform.com/pricing" },
 ];
 
 export default function Page() {
   return (
     <main className="bg-white">
       <article className="sp-container py-14 sm:py-20">
-        <p className="sp-eyebrow">Software pricing · Updated October 19, 2026</p>
+        <p className="sp-eyebrow">Software pricing · Checked November 8, 2026</p>
         <h1 className="sp-display mt-4 max-w-4xl">Online form builder pricing: compare response limits, seats and branding</h1>
         <p className="sp-body-large mt-6 max-w-3xl">Form builders may charge by response volume, form count, seats or feature access. A low subscription can stop being economical when you exceed submission limits or need to remove vendor branding. This comparison covers Fillout, Jotform and Typeform, with attention to monthly response allowances and the practical costs of surveys, lead capture, client intake and payment forms.</p>
+        <p className="mt-4 max-w-3xl text-sm leading-6 text-[#424245]"><strong>Quick answer:</strong> Fillout Free is the broadest low-cost starting point in this comparison: unlimited forms and seats with 1,000 responses/month. Jotform Starter has 5 forms, 100 monthly submissions, 500 total stored submissions and 10 monthly payment submissions. Typeform Basic has 100 responses/month and one seat; Plus has 1,000 responses/month and three seats. Compare maximum-response add-ons and branding before choosing.</p>
 
         <section className="mt-10 overflow-x-auto rounded-2xl border border-[#d2d2d7]">
           <table className="w-full min-w-[850px] border-collapse text-left text-sm">
@@ -35,7 +36,7 @@ export default function Page() {
             <tbody>{plans.map((p) => <tr key={p.name} className="border-t border-[#d2d2d7] align-top"><td className="p-4"><a className="font-semibold text-[#001D39] underline" href={p.url} target="_blank" rel="noreferrer">{p.name}</a><p className="mt-2 text-[#6e6e73]">{p.billing}</p></td><td className="p-4 whitespace-nowrap">{p.price}</td><td className="p-4">{p.fit}</td><td className="p-4">{p.limits}</td></tr>)}</tbody>
           </table>
         </section>
-        <p className="mt-4 text-sm leading-relaxed text-[#6e6e73]">Published USD pricing and allowances checked October 19, 2026. Annual-billing monthly equivalents may be charged upfront. Prices, taxes, regional offers and response allowances can change; confirm the exact amount and plan limits on the official pricing pages.</p>
+        <p className="mt-4 text-sm leading-relaxed text-[#6e6e73]">Published USD pricing and allowances checked November 8, 2026. Annual-billing monthly equivalents may be charged upfront. Typeform's response base and maximum-response caps are different; overages/add-ons may be needed. Prices, taxes, regional offers and response allowances can change; confirm the exact amount and plan limits on the official pricing pages.</p>
 
         <section className="mt-12 max-w-3xl">
           <h2 className="text-2xl font-semibold tracking-tight">Calculate cost by expected responses</h2>
@@ -88,7 +89,7 @@ export default function Page() {
             <li><Link className="underline" href="/best/crm-software-pricing">CRM software pricing</Link></li>
           </ul>
         </section>
-        <p className="mt-8 text-xs leading-relaxed text-[#6e6e73]">Editorial comparison of published USD prices checked October 19, 2026. Plan limits and prices change; confirm current allowances and the final checkout amount on each official vendor pricing page.</p>
+        <p className="mt-8 text-xs leading-relaxed text-[#6e6e73]">Editorial comparison of published US-dollar prices checked November 8, 2026. Annual-billing monthly equivalents are billed upfront; plan limits and prices change. This is desk research, not a live submission-volume benchmark. Confirm the current response base, maximum cap, storage and final checkout amount on each official vendor pricing page; currency, tax and availability vary by country.</p>
       </article>
     </main>
   );

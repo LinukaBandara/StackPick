@@ -22,7 +22,7 @@ function readConsent(): Consent | null {
   }
 }
 
-export default function CookieConsent() {
+export default function CookieConsent({ nonce }: { nonce?: string }) {
   const [consent, setConsent] = useState<Consent | null>(null);
   const [ready, setReady] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -73,8 +73,9 @@ export default function CookieConsent() {
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
             strategy="afterInteractive"
+            nonce={nonce}
           />
-          <Script id="stackpick-google-analytics" strategy="afterInteractive">
+          <Script id="stackpick-google-analytics" strategy="afterInteractive" nonce={nonce}>
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){window.dataLayer.push(arguments);}

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 type ProductScreenshotProps = {
@@ -23,11 +24,12 @@ export default function ProductScreenshot({
     <figure className={className}>
       <div className="flex aspect-[16/10] items-center justify-center overflow-hidden bg-[#f5f5f7]">
         {!failed ? (
-          <img
+          <Image
             src={src}
             alt={alt}
             loading="lazy"
             decoding="async"
+            unoptimized
             width={1200}
             height={750}
             onError={() => setFailed(true)}

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 interface SoftwareLogoProps {
@@ -29,10 +30,11 @@ export default function SoftwareLogo({ name, url, size = "medium" }: SoftwareLog
       title={name}
     >
       {!failed && domain ? (
-        <img
+        <Image
           src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`}
           alt=""
           loading="lazy"
+          unoptimized
           width={size === "small" ? 36 : 44}
           height={size === "small" ? 36 : 44}
           className="h-full w-full object-contain p-1.5"

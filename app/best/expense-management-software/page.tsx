@@ -13,35 +13,37 @@ export default function Page() {
     <ComparisonArticle
       title="Best Expense Tracking Software for Freelancers and Small Business"
       slug="expense-management-software"
+      reviewedOn="2026-11-07"
       intro="Freelancers often need to capture receipts, categorize business purchases and export records for tax preparation; small teams may also need employee submissions, approvals, reimbursements and card controls. Those are different jobs. A tool tied to a corporate card can offer low software fees but may require changing how the business pays, while a subscription product may fit an existing payment setup better. This guide focuses on workflow fit, not the word “free” alone."
-      pricingNote="Before choosing, verify current monthly receipt or transaction limits, supported users, reimbursement features, accounting exports, receipt capture, integrations and required payment accounts. For card-linked products, check eligibility, approval requirements and whether you must issue or route spending through the provider's cards. Confirm availability for your business structure and location, and do not assume a US-focused corporate-card offer is available to every freelancer."
+      quickAnswer="For a solo freelancer, Expensify Submit is free and includes receipt scanning, mileage tracking, expense reports, categories/tags and personal-card import; it does not include business approvals, reimbursements, company cards or accounting integrations. Zoho Expense Free supports 3 users, 20 receipt scans/user/month and 5 GB storage. Ramp Free has richer card/spend controls but is only for eligible US-registered companies with at least US$25,000 in a linked US business bank account; sole proprietors and individuals are not accepted."
+      pricingNote="Plan details checked November 7, 2026. Expensify Submit is free and includes receipt scanning, mileage tracking, expense reports, categories/tags and personal-card import. Collect is US$5 per unique member/month and adds reimbursements, corporate-card management, approvals and QuickBooks/Xero integrations. Zoho Expense US Free: up to 3 users, 20 receipt autoscans/user/month and 5 GB receipt storage. Ramp Free is $0 but eligibility requires a US-registered corporation/LLC/LP, US physical address, EIN, at least US$25,000 cash in a linked US business bank account and primarily US operations. This makes Ramp unavailable to most freelancers and many non-US businesses."
       tools={[
         {
           name: "Expensify",
           bestFor: "Small teams that want straightforward expense reporting and reimbursement",
-          freeOption: "Free tier available for very basic use; paid tiers scale from there.",
+          freeOption: "Personal Free includes unlimited SmartScans, mileage tracking, manual expenses and CSV export. A paid workspace is required for categories/tags, reimbursements, approvals, accounting integrations and corporate-card controls.",
           tradeoff:
-            "The receipt-scanning SmartScan feature and straightforward reimbursement flow are genuinely well-reviewed and quick to set up. It's a subscription cost with no corporate-card offset, so at a real headcount it can cost more per month than a card-based free alternative - the trade-off is not needing to route company spend through a specific card provider.",
-          url: "https://www.expensify.com/",
+            "Submit is useful for free expense capture and reporting, but it is not the same as a managed business expense workflow. Reimbursements, corporate-card management, approvals and accounting integrations are listed under Collect at US$5 per unique member/month. Compare those paid features with a corporate-spend platform rather than assuming the free tier covers the whole team process.",
+          url: "https://www.expensify.com/pricing",
         },
         {
           name: "Ramp",
           bestFor: "Businesses willing to put company card spend through Ramp's own cards",
-          freeOption: "Free tier available, subsidized by Ramp's corporate card interchange revenue.",
+          freeOption: "Ramp Free is $0 and includes corporate cards, expense management and accounting integrations, but eligibility is restricted to qualifying US businesses: corporation/LLC/LP, US physical address, EIN, at least US$25,000 cash in a linked US business account and primarily US operations. Sole proprietors and individuals are not accepted.",
           tradeoff:
-            "Real-time spend controls, automated categorization, and proactive savings suggestions go meaningfully beyond passive expense reporting - this is a spend-management platform, not just a report-filing tool. The free/cheap pricing model depends on actually using Ramp's cards for company spend, which is a bigger commitment than just installing a reporting app.",
-          url: "https://ramp.com/",
+            "A broader spend-management platform with card controls, bill pay and accounting integrations. The free offer is not a universal no-cost expense app: application eligibility and corporate-card underwriting matter, and most freelancers outside the US will not qualify.",
+          url: "https://ramp.com/pricing",
         },
         {
           name: "Zoho Expense",
           bestFor: "Very small teams on a tight budget, especially already using Zoho",
-          freeOption: "Free plan for a small number of users.",
+          freeOption: "US Free plan supports up to 3 users, 20 receipt autoscans/user/month and 5 GB storage. Standard and Premium add higher scan limits, card feeds and advanced policies.",
           tradeoff:
             "The most budget-friendly genuine option here, and it connects cleanly to Zoho Books if you're already in that ecosystem. Automation and card-integration depth are lighter than Ramp's - fine for basic reporting, limiting if you want proactive spend controls.",
-          url: "https://www.zoho.com/expense/",
+          url: "https://www.zoho.com/us/expense/pricing/",
         },
       ]}
-      bottomLine="For a solo freelancer, first test whether a receipt-capture and export workflow is enough; do not pay for team approvals you will never use. For a small team that needs reimbursement and review, compare the full submission-to-payment process. Consider card-linked spend management only if the business is eligible and willing to use that card ecosystem. Before committing, export a month of test transactions and check whether the categories and records are usable by your bookkeeper or tax preparer."
+      bottomLine="Solo freelancer: Expensify Personal Free is a useful receipt/mileage/export tool, but not a full team expense system. Small team: compare Zoho Expense's 3-user US Free plan with its paid scan and policy limits. Eligible US company: consider Ramp only after confirming corporate eligibility and card underwriting. These are US-market plan references, not a global shortlist; verify local tax, reimbursement and accounting requirements. Test export quality before handing records to a bookkeeper."
     />
   );
 }

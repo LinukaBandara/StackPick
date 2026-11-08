@@ -68,7 +68,14 @@ function analyse(file) {
   const internalLinks = localHrefCount + sharedRelatedLinks;
   const externalSources = new Set([...source.matchAll(/https?:\/\/[^"\x27\s)]+/g)].map((match) => match[0].replace(/[),.;]+$/, ""))).size;
   const toolEntries = (source.match(/\bname\s*:/g) ?? []).length;
-  const reviewedOn = source.match(/(?:reviewed|verified|checked)(?:On|\s+(?:on|date))?\s*[:=]\s*["'`]([^"'`]+)["'`]/i)?.[1] ?? "";
+  const structuredReviewDate = source.match(/(?:reviewed|verified|checked)(?:On|\s+(?:on|date))?\s*[:=]\s*["'`]([^"'`]+)["'`]/i)?.[1] ?? "";
+  const proseReviewDate = source.match(/\b(?:reviewed|verified|checked)\b[^\n]{0,100}?\b((?:20\d{2}-\d{2}-\d{2}|(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}))\b/i)?.[1] ?? "";
+  const reviewedOn = structuredReviewDate || proseReviewDate;
+  const hasDatedReview = Boolean(reviewedOn);
+  const hasQuickAnswer = /\bquickAnswer\s*=|\bquick answer\b/i.test(source);
+  const hasPricingNote = /\bpricingNote\s*=/.test(source);
+  const hasCountryCaveat = /\b(?:country-specific|country eligibility|availability varies by country|regional availability|regional pricing|regional prices|regional plans|regional currency|pricing varies by country|prices vary by country|prices vary by region|vary by region|by region and account|for your region|for your country|region and negotiated|by plan and country|local taxes|taxes extra|taxes are added|prices exclude applicable tax|data-center region|local data-protection|data residency|jurisdiction|provider region|and country|US plan reference|US-registered|US business bank|US operations|US-only|by country|country-specific terms|US-specific|US pricing|US-dollar|US-facing|US market|US-only|US\/Canada|US and Canada|US or Canada|billing country|country of billing|local market|local currency|currency varies)\b/i.test(source);
+  const hasTestingDisclosure = /\b(?:desk research|desk-based|not a hands-on|not tested in a live|not hands-on product testing)\b/i.test(source) || (usesComparisonTemplate && COMPARISON_SOURCE.includes("Research method: public-source desk research; no hands-on product testing unless explicitly stated."));
   const flags = [];
   if (!title) flags.push("missing-title");
   if (!description) flags.push("missing-description");
@@ -78,10 +85,13 @@ function analyse(file) {
   if (!/pricing|price|cost|free plan|free tier/i.test(source)) flags.push("no-pricing-or-free-plan-context");
   if (!/trade.?off|limitation|limit|drawback|not ideal|who should not/i.test(source)) flags.push("no-obvious-trade-off-language");
   if (!/related|alternatives|comparison/i.test(source)) flags.push("no-obvious-topic-cluster-links");
+  if (!hasQuickAnswer) flags.push("missing-quick-answer");
+  if (hasPricingNote && !hasDatedReview) flags.push("pricing-without-checked-date");
+  if (hasPricingNote && !hasCountryCaveat) flags.push("pricing-without-country-caveat");
 
   return {
     route, file: relative, pageType, redirectTo: "", title, description, sourceWordCount, h1Count, h2Count, h3Count,
-    internalLinks, externalSources, toolEntries, reviewedOn, flags: flags.join(";"),
+    internalLinks, externalSources, toolEntries, reviewedOn, hasDatedReview, hasQuickAnswer, hasPricingNote, hasCountryCaveat, hasTestingDisclosure, flags: flags.join(";"),
     comparisonText: articleText.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim(),
   };
 }
@@ -98,7 +108,7 @@ for (const row of rows) {
   if (duplicateRoutes.has(row.route)) row.flags = [row.flags, "duplicate-title-description-intro"].filter(Boolean).join(";");
 }
 
-const headers = ["route","file","pageType","redirectTo","title","description","sourceWordCount","h1Count","h2Count","h3Count","internalLinks","externalSources","toolEntries","reviewedOn","flags"];
+const headers = ["route","file","pageType","redirectTo","title","description","sourceWordCount","h1Count","h2Count","h3Count","internalLinks","externalSources","toolEntries","reviewedOn","hasDatedReview","hasQuickAnswer","hasPricingNote","hasCountryCaveat","hasTestingDisclosure","flags"];
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 fs.writeFileSync(OUTPUT_FILE, [headers.join(","), ...rows.map((row) => headers.map((key) => csv(row[key])).join(","))].join("\n") + "\n");
 
@@ -111,3 +121,11 @@ for (const row of flagged.slice(0, 20)) console.log(`- ${row.route}: ${row.flags
 if (flagged.length > 20) console.log(`- …and ${flagged.length - 20} more. Open the CSV for the complete list.`);
 console.log(`Scanned ${contentPages.length} guide/comparison articles, ${redirects.length} permanent redirects and ${directories.length} directory page(s).`);
 console.log(`${flagged.length} content pages have one or more heuristic review flags.`);
+const missingQuickAnswer = contentPages.filter((row) => !row.hasQuickAnswer);
+const pricingWithoutDate = contentPages.filter((row) => row.hasPricingNote && !row.hasDatedReview);
+const pricingWithoutRegion = contentPages.filter((row) => row.hasPricingNote && !row.hasCountryCaveat);
+console.log(`Editorial signals present: ${contentPages.filter((row) => row.hasQuickAnswer).length} quick answers, ${contentPages.filter((row) => row.hasPricingNote).length} pricing notes, ${contentPages.filter((row) => row.hasCountryCaveat).length} country/region caveats and ${contentPages.filter((row) => row.hasTestingDisclosure).length} testing-method disclosures.`);
+console.log(`Review prompts: ${missingQuickAnswer.length} pages without a detectable quick answer, ${pricingWithoutDate.length} pricing pages without a detectable checked date, and ${pricingWithoutRegion.length} pricing pages without a detectable country/region caveat.`);
+for (const [label, group] of [["Missing quick answer", missingQuickAnswer], ["Pricing without checked date", pricingWithoutDate], ["Pricing without region caveat", pricingWithoutRegion]]) {
+  if (group.length) console.log(`${label}: ${group.slice(0, 15).map((row) => row.route).join(", ")}${group.length > 15 ? ", …" : ""}`);
+}

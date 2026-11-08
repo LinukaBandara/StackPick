@@ -13,41 +13,43 @@ export default function Page() {
     <ComparisonArticle
       title="Best Live Chat Software for Small Business Websites"
       slug="live-chat-software"
+      reviewedOn="2026-11-07"
+      quickAnswer="Start with Tidio for a straightforward live-chat setup and basic AI support. Choose Crisp if you want a predictable shared inbox and team workflow. Tawk.to can provide a no-subscription starting point, while Intercom is better suited to teams with enough support volume and budget to justify usage-based AI charges. Test mobile and offline handling before launch."
       intro="Live chat for small websites has split into two tiers: simpler tools with relatively predictable pricing (Tidio, Crisp, Tawk.to) and AI-first platforms that often charge per resolved conversation on top of seat costs (Intercom). For most small sites, predictable pricing and a tool the team will actually answer usually matter more than the most advanced AI deflection."
-      pricingNote="Confirm current free-tier limits (seats, conversations, AI replies, branding) on the official pricing pages. Some tools charge per AI resolution or conversation on top of seats, which can make the monthly bill hard to predict when chat volume rises. Always test the widget on mobile and check what happens when no agent is online."
+      pricingNote="Official pricing pages checked 7 November 2026. Tidio Free includes 50 billable conversations and 10 seats; its Starter plan is shown from US$24.17/month with annual billing and 100 billable conversations. Crisp Free includes 2 seats and 100 customer profiles; Mini is US$45/month per workspace with 4 seats, and Essentials is US$95/month with 10 seats. Intercom Essential starts at US$29/seat/month on annual billing, with Fin AI Agent charged separately from US$0.99 per outcome. Tawk.to offers a free core live-chat service. These are USD-facing references; currency, taxes, promotions, AI usage and channel charges can vary by country and account. Model a typical month of real conversations before choosing. Sources: https://www.tidio.com/pricing/; https://crisp.chat/en/pricing/; https://www.intercom.com/pricing; https://www.tawk.to/."
       tools={[
         {
           name: "Tidio",
           bestFor: "Most small e-commerce and service websites starting with live chat",
           freeOption:
-            "Usable free tier is available (confirm current conversation and feature limits). Paid plans unlock higher volume, more advanced automation and AI features.",
+            "Free includes 50 billable conversations and 10 seats. Paid plans raise conversation limits and add more advanced automation and AI features; AI usage may be charged separately.",
           tradeoff:
             "Commonly recommended starting point for small sites because of a real free tier, relatively approachable pricing, and optional AI features. Advanced automation depth is lower than pure enterprise platforms, which is the right trade-off for many small businesses.",
-          url: "https://www.tidio.com/",
+          url: "https://www.tidio.com/pricing/",
         },
         {
           name: "Crisp",
           bestFor: "Teams that want a real free tier and prefer flat or workspace pricing as they grow",
           freeOption:
-            "Free tier typically includes a limited number of seats and one website (confirm current limits). Paid plans move to more predictable workspace-style pricing rather than pure per-seat multiplication in some cases.",
+            "Free includes 2 seats and 100 customer profiles. Mini is priced per workspace and includes 4 seats; Essentials includes 10 seats and more automation and omnichannel features.",
           tradeoff:
             "Flat or workspace-oriented pricing can be an advantage as the support team grows. AI and automation features are generally lighter than the most advanced platforms.",
-          url: "https://crisp.chat/",
+          url: "https://crisp.chat/en/pricing/",
         },
         {
           name: "Intercom",
           bestFor: "Mid-market or higher-volume teams that want strong AI deflection and can manage usage-based costs",
           freeOption:
-            "No permanent free plan for ongoing use. Pricing is typically seat-based with additional charges for AI resolutions or advanced features — confirm current structure carefully.",
+            "No permanent free plan. Essential starts at US$29/seat/month on annual billing; Fin AI Agent is billed separately from US$0.99 per outcome, so estimate both seat and resolution costs.",
           tradeoff:
             "Among the strongest AI-assisted support experiences. The combination of seat pricing plus per-resolution AI charges can make the total bill unpredictable and is often more than most small websites need to spend.",
-          url: "https://www.intercom.com/",
+          url: "https://www.intercom.com/pricing",
         },
         {
           name: "Tawk.to",
           bestFor: "Bootstrapped businesses that need live chat at zero or near-zero cost",
           freeOption:
-            "Core live chat features are free with no seat or conversation caps on the basic offering (confirm current terms and any paid add-ons).",
+            "Core live chat is free; optional paid add-ons are available. Confirm current terms and any optional branding or AI charges before enabling them.",
           tradeoff:
             "Hard to beat when budget is essentially zero. Design polish, automation and AI features trail the paid-first competitors. You get functional chat, not a polished all-in-one support platform.",
           url: "https://www.tawk.to/",

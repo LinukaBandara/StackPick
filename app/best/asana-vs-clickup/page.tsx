@@ -12,11 +12,13 @@ export default function Page() {
     <ComparisonArticle
       title="Asana vs ClickUp"
       slug="asana-vs-clickup"
+      reviewedOn="2026-11-07"
       intro="Asana and ClickUp can both organize team work, but they reward different habits. Compare how each handles ownership, recurring work, project visibility and the effort required to keep the workspace useful."
-      pricingNote="Do not compare a headline starting price alone. Check the plan needed for your actual team size, guest access, automation volume, reporting and any features you rely on. Confirm current limits with each provider before purchasing."
+      quickAnswer="Asana Personal is simpler for one or two people and includes unlimited tasks/projects; Starter is US$10.99 per user/month billed annually. ClickUp Free offers unlimited tasks and free members but 60 MB storage; its first paid tier is Core at US$9/user/month billed annually. Choose Asana for a more structured team workflow or ClickUp when you will actively configure its flexibility."
+      pricingNote="US plan details checked November 7, 2026. Asana Personal is $0 for up to 2 users; Starter is displayed at US$10.99/user/month billed annually (US$13.49 monthly), and Asana says paid subscriptions start at 2 seats. ClickUp Free is $0 with 60 MB storage, unlimited tasks/subtasks and unlimited free members; Core is displayed at a promotional US$9/user/month billed annually against a regular US$12 rate. Compare seat minimums, guest permissions, automations, storage and included AI usage; prices exclude tax and may differ by country."
       tools={[
-        { name: "Asana", bestFor: "Teams that want projects, owners and milestones to stay clear across several people.", freeOption: "Check current seat limits and which views or reporting features are included on the plan you would use.", tradeoff: "A structured workflow is helpful, but teams should confirm that their preferred reporting and workflow rules fit the chosen plan.", url: "https://asana.com/" },
-        { name: "ClickUp", bestFor: "Teams that want to shape tasks, views and workflows around their own process.", freeOption: "Check current usage limits and whether the views, storage, automations and permissions you need are included.", tradeoff: "Flexibility can become configuration work; agree on a small set of spaces, statuses and fields before rolling it out.", url: "https://clickup.com/" },
+        { name: "Asana", bestFor: "Teams that want projects, owners and milestones to stay clear across several people.", freeOption: "Personal is free forever for 1–2 users, with unlimited tasks/projects, list/board/calendar views and 100 MB per file. Starter is displayed at US$10.99/user/month annually or US$13.49 monthly, with a 2-seat minimum for paid subscriptions.", tradeoff: "A structured workflow is helpful, but teams should confirm that their preferred reporting and workflow rules fit the chosen plan.", url: "https://asana.com/pricing" },
+        { name: "ClickUp", bestFor: "Teams that want to shape tasks, views and workflows around their own process.", freeOption: "Free Forever includes 60 MB storage, unlimited tasks/subtasks, unlimited free members and 1 form. Core is displayed at a promotional US$9/user/month billed yearly (regular US$12) and adds unlimited storage, custom fields, guest permissions and 1,000 automations/month.", tradeoff: "Flexibility can become configuration work; agree on a small set of spaces, statuses and fields before rolling it out.", url: "https://clickup.com/pricing" },
       ]}
       bottomLine="Choose Asana when consistent ownership, milestones and a relatively structured way of coordinating work matter most. Choose ClickUp when your team will actively use its flexibility and has someone willing to maintain the setup. If you cannot name the specific workflow that needs extra customization, start with the simpler configuration."
     >
@@ -28,7 +30,7 @@ export default function Page() {
             Use the same small project in both tools: a client asks for a change, one person owns
             it, another reviews it, a deadline moves, and the team needs to see what is blocked.
             Record how quickly a teammate can understand the task without a walkthrough. That
-            reveals more than counting available views.
+            reveals more than counting available views. Research method: desk review of official pricing and plan documentation checked November 7, 2026; this is not a controlled usability benchmark.
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             <div className="rounded-2xl border border-[#d2d2d7] p-6">

@@ -13,34 +13,36 @@ export default function MultiCurrencyInvoicingPage() {
     <ComparisonArticle
       title="Best Multi-Currency Invoicing Software"
       slug="multi-currency-invoicing"
+      reviewedOn="2026-11-08"
+      quickAnswer="If you need multi-currency bookkeeping and reconciliation, compare QuickBooks Online Essentials with Xero Established and ask your accountant which they support. Zoho Books may be a lower-cost fit if the edition in your country supports the currencies and accounting features you need. FreshBooks suits service businesses prioritising client billing; Stripe is a payment tool, not a full accounting replacement."
       intro="If clients pay in USD, EUR, GBP or another currency, the right tool should do more than print a different currency symbol. Check whether it remembers a currency for each customer, converts transactions into your accounting currency, records exchange-rate differences, supports your payment method and exports records your accountant can reconcile. This guide compares tools for US-based freelancers and small businesses billing international clients; country availability and features can differ."
-      pricingNote="Official vendor pages were checked on October 18, 2026. Prices below are standard US list prices where clearly published, before tax, payment-processing charges and optional add-ons; introductory promotions can make the first months look much cheaper. Currency support can be plan- and country-specific, so confirm the exact plan and supported currency list before migrating live invoices."
+      pricingNote="Official US vendor pages were rechecked on November 8, 2026. QuickBooks Essentials is $85/month at standard list price and includes multi-currency; Xero Established is $97/month after the promotion displayed on its US pricing page ended November 2; Zoho Books Professional is $50/month or $40/month billed annually and is the first listed US plan with multi-currency transactions. FreshBooks currently advertises a limited-time introductory discount, but its displayed regular prices are Lite $23, Plus $43 and Premium $70/month. USD prices are before tax and payment-processing charges. Promotions, plan gates, currency availability and fees can change; confirm your business-country edition and checkout terms before migrating live invoices."
       tools={[
         {
           name: "QuickBooks Online",
           bestFor: "Small businesses that need foreign-currency invoices and accounting in the same ledger",
-          freeOption: "No permanent free accounting plan. The US Essentials plan is listed at $85/month at standard pricing (promotions may apply); multicurrency is available in Essentials, Plus and Advanced, not Simple Start.",
+          freeOption: "No permanent free accounting plan. US Essentials is $85/month at standard list pricing; Essentials, Plus and Advanced include multi-currency, while Simple Start does not. Check the account home currency before setup.",
           tradeoff: "Once multicurrency is enabled, QuickBooks says it cannot be turned off because the currency-conversion information becomes part of the accounting records. Confirm your plan and discuss the irreversible setting with your accountant before switching it on.",
           url: "https://quickbooks.intuit.com/pricing/",
         },
         {
           name: "Xero",
           bestFor: "Growing teams that need multi-currency accounting, bank reconciliation and shared accountant access",
-          freeOption: "No permanent free plan. The US Established plan is listed at $97/month after its current introductory offer and includes multiple currencies; the lower Early and Growing plans do not list this feature.",
+          freeOption: "No permanent free plan. US Established is $97/month at standard pricing and includes multiple currencies; Early ($27/month) and Growing ($59/month) do not list the feature. The pricing page’s 90%-off offer ended November 2, 2026, so do not use introductory prices as the ongoing cost.",
           tradeoff: "Multi-currency is gated to the Established plan in the US, so the price jump can be significant if you only need to send a few foreign-currency invoices. Check payment fees and local bank-feed availability separately.",
           url: "https://www.xero.com/us/pricing-plans/",
         },
         {
           name: "Zoho Books",
           bestFor: "Small businesses that want customer-specific currencies and connected cloud accounting",
-          freeOption: "A free plan is available in the US, and paid plans are listed from $20/month on monthly billing. Zoho states that foreign-currency invoicing is only available on certain plans, so do not assume the free plan includes it.",
-          tradeoff: "Each customer can have one associated currency, and item prices are stored in the organisation's base currency before conversion. Confirm which US plan enables multi-currency before choosing it for international billing.",
+          freeOption: "Zoho Books Free is $0, Standard is $20/month, and Professional is $50/month (or $40/month billed annually). The US pricing page lists recording multi-currency transactions in Professional and above, not Free or Standard.",
+          tradeoff: "Do not mistake Zoho Invoice's separate free invoicing product for Zoho Books multi-currency accounting. The US Zoho Books plan comparison places multi-currency transactions in Professional and above; verify the precise customer-currency and exchange-rate workflow in a trial before migrating. Confirm which US plan enables multi-currency before choosing it for international billing.",
           url: "https://www.zoho.com/us/books/",
         },
         {
           name: "FreshBooks",
           bestFor: "Freelancers and service businesses that want client-friendly invoices and project/time workflows",
-          freeOption: "A 30-day trial is available, not a permanent free plan. The US Lite plan is listed at $23/month at standard pricing and allows up to five billable clients; verify that the plan you choose supports your required currency workflow.",
+          freeOption: "A 30-day trial is available, not a permanent free plan. The US page currently advertises an 80% introductory discount for four months; its displayed regular prices are Lite $23/month (5 billable clients), Plus $43/month (50) and Premium $70/month (unlimited). Confirm the currency and accounting workflow in a trial before relying on it for foreign-currency bookkeeping.",
           tradeoff: "FreshBooks lets you set currency per client and on invoices, estimates and proposals. That makes client-facing billing straightforward, but confirm how foreign-currency transactions flow into your books and payment setup before relying on it for complex accounting.",
           url: "https://www.freshbooks.com/pricing",
         },
@@ -89,10 +91,10 @@ export default function MultiCurrencyInvoicingPage() {
               </thead>
               <tbody>
                 {[
-                  ["QuickBooks Online", "$85/mo Essentials standard list price", "Multicurrency is not in Simple Start; turning it on cannot be reversed."],
-                  ["Xero", "$97/mo Established standard price after promo", "Multi-currency is listed in Established, not the lower US plans."],
-                  ["Zoho Books", "Paid plans from $20/mo monthly", "Which plan includes multi-currency; the free plan is not guaranteed to include it."],
-                  ["FreshBooks", "$23/mo Lite standard price; up to 5 clients", "Per-client currency workflow, client cap and accounting treatment."],
+                  ["QuickBooks Online", "$85/mo Essentials standard list price", "Essentials is the entry plan with multi-currency; enabling it cannot be reversed."],
+                  ["Xero", "$97/mo Established standard price", "Multi-currency is listed in Established, not Early or Growing; the 90% offer ended Nov 2."],
+                  ["Zoho Books", "$50/mo Professional ($40/mo annual equivalent)", "Professional is the first US plan listing multi-currency transactions."],
+                  ["FreshBooks", "Lite $23; Plus $43; Premium $70/mo regular prices", "Current introductory discount is temporary; verify client caps and currency/accounting workflow."],
                   ["Stripe Invoicing", "0.4% per paid one-time invoice", "Payment processing, currency conversion, recurring billing and country eligibility."],
                 ].map(([tool, price, check]) => (
                   <tr key={tool} className="border-b border-black/[0.06] align-top">
@@ -131,15 +133,15 @@ export default function MultiCurrencyInvoicingPage() {
           <p className="sp-eyebrow">Primary sources</p>
           <h2 className="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-[#1d1d1f]">Official plan and feature details</h2>
           <p className="mt-4 max-w-3xl text-sm leading-6 text-[#6e6e73]">
-            Checked October 18, 2026. Promotions and plan inclusions can change. Read the current
+            Checked November 8, 2026. Promotions and plan inclusions can change. Read the current
             vendor documentation for the edition and country where your business is registered.
           </p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {[
               ["QuickBooks US pricing", "https://quickbooks.intuit.com/pricing/"],
-              ["QuickBooks multicurrency plans and setup", "https://quickbooks.intuit.com/learn-support/en-us/help-article/multicurrency/learn-multicurrency-quickbooks-online/L5krkKQi8_US_en_US"],
+              ["QuickBooks multicurrency plans and setup", "https://quickbooks.intuit.com/learn-support/en-global/help-article/multicurrency/set-use-multicurrency-quickbooks-online/L5krkKQi8_ROW_en"],
               ["Xero US pricing and multi-currency", "https://www.xero.com/us/pricing-plans/"],
-              ["Zoho Books US pricing", "https://www.zoho.com/us/books/"],
+              ["Zoho Books US pricing and plan comparison", "https://www.zoho.com/us/books/pricing/"],
               ["Zoho Books foreign-currency invoicing limits", "https://www.zoho.com/us/books/kb/invoices/invoice-in-multiple-currencies.html"],
               ["FreshBooks pricing", "https://www.freshbooks.com/pricing"],
               ["FreshBooks client currency settings", "https://support.freshbooks.com/hc/en-us/articles/217212017-How-do-I-change-my-client-s-currency-and-language"],

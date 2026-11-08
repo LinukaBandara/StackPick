@@ -13,36 +13,38 @@ export default function Page() {
     <ComparisonArticle
       title="How to Build a Simple Small-Business Software Stack"
       slug="simple-small-business-software-stack"
+      reviewedOn="2026-11-07"
       intro="A small-business stack should follow the way work moves through your company: a lead arrives, someone delivers the service, an invoice gets paid and the customer may return. Choose one reliable home for each important record and avoid adopting several apps that all claim to manage the same work. This guide focuses on the order to build that stack and the handoffs to test."
-      pricingNote="Before adopting a suite, check the current plan terms for each included product, integrations, user permissions and data export. A bundle is only economical if it covers the functions your business will actually use."
+      quickAnswer="A lean stack usually needs one customer record, one delivery board, one invoicing/accounting workflow and one communication channel—not four overlapping suites. HubSpot Free can hold up to 2 users and 1,000 contacts; Trello Free supports 10 collaborators and 10 boards; Notion Free suits an individual workspace. Add Zoho apps only when you know which specific function you need."
+      pricingNote="Plan details checked November 7, 2026. HubSpot Free: 2 users and 1,000 contacts, with 1,000 records per other standard object type. Trello Free: 10 collaborators, 10 boards and 250 monthly Workspace command runs. Notion Free has no time limit/card requirement for individual use, but team collaboration is limited. Zoho CRM, Books, Invoice and Expense are separate products with different regional plans and limits; do not generalize one product's free tier to the whole suite."
       tools={[
         {
           name: "HubSpot",
           bestFor: "Keeping lead history and follow-up actions in one place",
-          freeOption: "Check current CRM plan terms and included features.",
+          freeOption: "Permanent Free CRM: up to 2 users and 1,000 contacts, plus 1,000 records per other standard object type per account.",
           tradeoff: "Useful as a customer record, but avoid duplicating the same lead details across multiple systems.",
-          url: "https://www.hubspot.com/",
+          url: "https://www.hubspot.com/pricing/crm?selectedPackage=free",
         },
         {
           name: "Notion",
           bestFor: "Centralizing internal procedures, briefs and project context",
-          freeOption: "Check current workspace, collaboration and usage terms.",
+          freeOption: "Free plan has no time limit or card requirement for individual use; team collaboration and member limits apply.",
           tradeoff: "Can hold process knowledge next to project notes, but needs a clear owner and consistent structure.",
-          url: "https://www.notion.com/",
+          url: "https://www.notion.com/teams",
         },
         {
           name: "Trello",
           bestFor: "Showing which work is queued, active, blocked or complete",
-          freeOption: "Check current free-plan board and collaboration limits.",
+          freeOption: "Free plan supports up to 10 collaborators and 10 boards per Workspace, unlimited cards and 250 Workspace command runs/month.",
           tradeoff: "Good for a visual workflow, but do not maintain a second task board if your main work system already covers it.",
-          url: "https://trello.com/",
+          url: "https://trello.com/en/pricing",
         },
         {
-          name: "Zoho",
-          bestFor: "Exploring a connected suite when several business functions need coordination",
-          freeOption: "Check the exact product's plan and regional availability; Zoho products have different terms.",
-          tradeoff: "Connected products can reduce switching, but a suite can add complexity if you only need one function.",
-          url: "https://www.zoho.com/",
+          name: "Zoho CRM",
+          bestFor: "A dedicated CRM option when a small team needs configurable lead records",
+          freeOption: "US CRM Free Edition supports up to 3 users; Zoho Invoice, Books and Expense have separate product-specific limits.",
+          tradeoff: "The broader ecosystem can connect business workflows, but choose and price each product separately rather than assuming one suite plan includes all features.",
+          url: "https://www.zoho.com/en-us/crm/zohocrm-pricing.html?price=FREE",
         },
       ]}
       bottomLine="Build the stack in stages: establish a customer record, make delivery visible, standardize invoicing, then connect scheduling and communication only where they remove friction. Do not migrate everything at once. Run a small pilot, choose a source of truth for each record type and keep a simple export route before rolling the system out to the whole team."

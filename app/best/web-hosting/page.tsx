@@ -13,8 +13,10 @@ export default function Page() {
     <ComparisonArticle
       title="Best Web Hosting for Small Business"
       slug="web-hosting"
+      quickAnswer="For a first small-business site, Hostinger is a value-focused starting point if you are comfortable with a longer introductory term and its renewal price. SiteGround is worth paying more for when support is a priority. Bluehost is a familiar entry point for a first WordPress site; compare Cloudways or Kinsta when performance and managed WordPress needs justify the higher budget. Always compare renewal, not teaser, pricing."
+      reviewedOn="2026-11-07"
       intro="The number that matters most isn't the price you see advertised - it's the renewal price after your first term ends. Nearly every host in this category runs a low introductory rate for 12-48 months, then renews at a meaningfully higher price. Budget for the renewal rate from day one, not the teaser."
-      pricingNote="Intro pricing, renewal pricing, and what counts as 'free' (domain, SSL, backups) all vary and change often. Check both the intro AND renewal price on the vendor's page - this is the single most important thing to verify before buying."
+      pricingNote="Provider plan pages checked November 7, 2026. This is a shortlist, not a fixed-price ranking: introductory term, renewal price, billing length, data-center region, backups, migration, CDN, email, storage, visit/CPU limits, overage and support differ by plan. Compare the same workload and contract length, then confirm taxes, currency and renewal price at checkout. Sources: Hostinger https://www.hostinger.com/web-hosting; SiteGround https://www.siteground.com/web-hosting.htm; Bluehost https://www.bluehost.com/hosting/shared; Cloudways https://www.cloudways.com/en/pricing.php; Kinsta https://kinsta.com/wordpress-hosting/pricing/."
       tools={[
         {
           name: "Hostinger",
@@ -22,7 +24,7 @@ export default function Page() {
           freeOption: "No free tier - paid plans start very low, especially on long-term commitments.",
           tradeoff:
             "Its low-cost plans can offer a broad set of included hosting features, but the value depends heavily on the initial term, renewal rate and resources included in the exact plan. The lowest advertised rates require committing to a long term (sometimes 48 months) upfront - the monthly-equivalent price rises noticeably on shorter terms.",
-          url: "https://www.hostinger.com/",
+          url: "https://www.hostinger.com/web-hosting",
         },
         {
           name: "SiteGround",
@@ -30,7 +32,7 @@ export default function Page() {
           freeOption: "No free tier.",
           tradeoff:
             "Support quality and reliability are important reasons to consider a premium host. Compare the latest independent uptime evidence, support terms and renewal pricing rather than relying on a single review ranking. Renewal pricing after the first term is notably steeper than the intro rate, more so than most competitors here.",
-          url: "https://www.siteground.com/",
+          url: "https://www.siteground.com/web-hosting.htm",
         },
         {
           name: "Bluehost",
@@ -38,7 +40,7 @@ export default function Page() {
           freeOption: "No free tier - trial only.",
           tradeoff:
             "Its WordPress-focused setup can be approachable for first-time site owners. If WordPress is your stack, compare the current plan features, backup schedule and support terms before choosing. Backups on entry plans are only weekly, which matters if your site content changes often.",
-          url: "https://www.bluehost.com/",
+          url: "https://www.bluehost.com/hosting/shared",
         },
         {
           name: "Cloudways",
@@ -46,7 +48,7 @@ export default function Page() {
           freeOption: "No free tier - pay-as-you-go pricing instead of fixed plans.",
           tradeoff:
             "Managed cloud hosting across multiple infrastructure providers gives genuine room to scale without migrating hosts later - a real advantage over fixed shared-hosting plans that cap out. Pay-as-you-go pricing is less predictable month to month than a flat plan, and it assumes more technical comfort than Bluehost's beginner-friendly setup.",
-          url: "https://www.cloudways.com/",
+          url: "https://www.cloudways.com/en/pricing.php",
         },
         {
           name: "Kinsta",

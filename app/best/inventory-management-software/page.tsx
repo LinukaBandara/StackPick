@@ -13,43 +13,45 @@ export default function Page() {
     <ComparisonArticle
       title="Best Inventory Management Software for Small Business"
       slug="inventory-management-software"
+      reviewedOn="2026-11-07"
       intro="The right tool depends more on what you sell than how much. A wholesaler quoting B2B orders, a retailer with a physical counter, and a maker tracking raw materials all need genuinely different feature sets, not just different price tiers of the same thing."
-      pricingNote="Most vendors here price per warehouse, per order volume, or per user - three different models that aren't directly comparable without knowing your own volume. Confirm current tiers directly."
+      quickAnswer="Zoho Inventory Free is a useful US starter for 50 orders/month, 1 user and 1 location. Sortly Free tracks 100 unique items for one user and two active jobs, but is better for assets and simple stock than full purchasing. Square for Retail fits physical stores already using Square payments. inFlow Lite starts at US$99/month billed annually for 2 team members and 1 location; it is not a low-cost flat-rate plan."
+      pricingNote="US plan details checked November 7, 2026. Zoho Inventory Free: 50 orders/month, 1 user, 1 location; Standard US$29/month annual billing (500 orders, 3 users, 2 locations), Premium $79 (3,000 orders, 5 users, 4 locations), Plus $129 (7,500 orders, 10 users, 6 locations) and Enterprise $249 (15,000 orders, 10 users, 10 locations). Sortly Free: 100 unique items, 1 user and 2 active jobs; paid introductory discounts renew at higher list prices and paid trials require a card. inFlow Lite/Core/Pro/Max are US$99/$299/$499/$699 per month billed annually, with 2/5/10/20 team members. Square for Retail software fees and payment processing depend on plan/region. Compare orders, SKUs, locations, users, integrations and add-ons—not just monthly headline prices. These are US plan references; pricing currency, local taxes, payment availability and feature access can differ by country."
       tools={[
         {
           name: "Zoho Inventory",
           bestFor: "Online sellers on a budget, especially multi-channel (Shopify + Amazon + retail)",
-          freeOption: "Free tier with a real order cap, not just a trial.",
+          freeOption: "US Free plan: 50 orders/month, 1 user and 1 location. Standard is US$29/month billed annually for 500 orders, 3 users and 2 locations.",
           tradeoff:
             "Genuinely capable multi-channel sync at a price point nothing else here matches, and it connects cleanly if you're already using Zoho Books or Zoho CRM. The interface has a steeper learning curve than Sortly's simpler visual approach.",
-          url: "https://www.zoho.com/inventory/",
+          url: "https://www.zoho.com/us/inventory/pricing/",
         },
         {
           name: "Sortly",
           bestFor: "Small teams who want dead-simple visual, photo-based tracking",
-          freeOption: "Free tier available for a small item count.",
+          freeOption: "Free: 100 unique items, 1 user and 2 active jobs. Paid 14-day trials require a credit card; introductory annual discounts renew at higher standard rates.",
           tradeoff:
-            "The photo-based, QR-label approach is the easiest of these four to onboard a non-technical team onto - genuinely faster to start using than a spreadsheet. It's asset/item tracking more than full inventory operations - don't expect purchase order automation or multi-channel sales sync.",
-          url: "https://www.sortly.com/",
+            "The photo-based approach is useful for equipment and asset tracking. Free is limited to 100 unique items, one user and two active jobs; purchase orders, barcode workflows, multi-user permissions and integrations require paid tiers.",
+          url: "https://www.sortly.com/pricing/",
         },
         {
           name: "Square for Retail",
           bestFor: "Brick-and-mortar shops that want POS and inventory in one system",
-          freeOption: "Free tier available; paid plans layer on more inventory depth.",
+          freeOption: "Square for Retail Free has no monthly subscription fee for one location; Square Plus/Premium add inventory and team features. Payment processing is charged separately and rates depend on country and transaction type.",
           tradeoff:
             "If you're already using Square to take payments, getting inventory in the same system avoids syncing two separate tools - a real practical win. Less suited to a business that doesn't have a physical point of sale at all.",
-          url: "https://squareup.com/us/en/point-of-sale/retail",
+          url: "https://squareup.com/us/en/point-of-sale/retail/pricing",
         },
         {
           name: "inFlow Inventory",
           bestFor: "Wholesale and B2B sellers who need a customer-facing ordering showroom",
-          freeOption: "No free tier.",
+          freeOption: "No permanent free tier. Lite starts at US$99/month billed annually for 2 team members and 1 location; Core $299, Pro $499 and Max $699. A 14-day trial is available without a card.",
           tradeoff:
-            "The built-in B2B showroom - letting wholesale customers browse and place orders themselves - is a genuine differentiator few competitors offer. Flat pricing (not per-user) is friendlier for a small team than seat-based competitors, but it's overkill if you're not doing wholesale.",
-          url: "https://www.inflowinventory.com/",
+            "Built for wholesale order workflows, with customer showroom and integrations. Pricing is tiered by team members, locations and order volume; additional users, integrations, serial/lot tracking and API access can add monthly fees.",
+          url: "https://www.inflowinventory.com/software-pricing-inflow-2026",
         },
       ]}
-      bottomLine="Selling across multiple online channels on a budget? Zoho Inventory. Just need simple visual tracking for a small team? Sortly. Already running Square for payments? Add Square for Retail rather than a second system. Doing wholesale/B2B orders? inFlow's showroom feature is worth the price on its own."
+      bottomLine="Choose Zoho Inventory when order volume and multi-channel sync matter; Sortly when you track equipment/assets with simple visual records; Square for Retail when POS and stock should stay in one retail system; and inFlow when wholesale orders, locations and customer showroom justify the higher monthly fee. Test receiving, sale, stock correction and export before migration."
     >
       <section className="bg-white">
         <div className="sp-container py-10">
