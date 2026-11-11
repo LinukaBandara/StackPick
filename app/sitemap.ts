@@ -36,6 +36,7 @@ const ROUTES = [
   "/best/password-managers",
   "/best/help-desk-software",
   "/best/esignature-software",
+  "/best/esignature-software-pricing",
   "/best/time-tracking-software",
   "/best/time-tracking-software-pricing",
   "/best/web-hosting",

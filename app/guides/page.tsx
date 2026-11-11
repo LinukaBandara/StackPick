@@ -27,6 +27,7 @@ const GUIDES = [
   { title: "Best Accounting Software for Small Business", desc: "Compare bookkeeping, bank reconciliation, reports, and accountant access.", href: "/best/accounting-software", category: "Finance" },
   { title: "Expense Management Software Pricing", desc: "Compare team-size costs, receipt-scanning limits and eligibility requirements.", href: "/best/expense-management-software-pricing", category: "Finance" },
   { title: "Best Help Desk Software for Small Business", desc: "Compare ticketing, automation, team limits, and support workflows.", href: "/best/help-desk-software", category: "Operations" },
+  { title: "E-Signature Software Pricing", desc: "Compare free-plan limits, sender seats, document caps and paid e-signature plans.", href: "/best/esignature-software-pricing", category: "Operations" },
 ];
 
 export default function GuidesPage() {
