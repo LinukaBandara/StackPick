@@ -13,6 +13,7 @@
 ## Guides
 
 - [Best Invoicing Software for Freelancers](/best/invoicing-software) (Finance): Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks
+- [Invoice Payment Processing Fees Compared](/best/invoice-payment-processing-fees) (Finance): Compare standard US online card fees from Stripe, Square and Wave, with example costs for $500 and $1,000 invoices.
 - [Best Multi-Currency Invoicing Software](/best/multi-currency-invoicing) (Finance): QuickBooks Online, Xero, Zoho Books, FreshBooks, Stripe Invoicing
 - [Best Accounting Software for Small Business](/best/accounting-software) (Finance): Xero, QuickBooks, Wave, Zoho Books
 - [Best Payroll Software for Small Business](/best/payroll-software) (People): Gusto, QuickBooks Payroll, OnPay, Patriot Software

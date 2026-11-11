@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 const GUIDES = [
   { title: "AI Meeting Assistant Pricing", desc: "Compare Fathom, Fireflies, Otter and Granola pricing, free-plan limits and data controls.", href: "/best/ai-meeting-assistant-pricing", category: "Productivity" },
   { title: "Best Invoicing Software for Freelancers", desc: "Compare invoice creation, reminders, payment collection, and client workflows.", href: "/best/invoicing-software", category: "Finance" },
+  { title: "Invoice Payment Processing Fees Compared", desc: "Estimate card fees on common invoice sizes and compare the trade-offs between providers.", href: "/best/invoice-payment-processing-fees", category: "Finance" },
   { title: "Best Multi-Currency Invoicing Software", desc: "Compare foreign-currency invoices, exchange rates, payment collection and accounting trade-offs.", href: "/best/multi-currency-invoicing", category: "Finance" },
   { title: "Best Free CRM Software", desc: "Check contact, user, and automation limits before committing to a free plan.", href: "/best/free-crm-software", category: "Sales" },
   { title: "CRM Software Pricing for Small Teams", desc: "Compare published per-seat rates, five- and fifteen-user costs, and upgrade traps.", href: "/best/crm-software-pricing", category: "Sales" },
