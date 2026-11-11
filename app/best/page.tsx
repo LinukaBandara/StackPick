@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   { href: "/best/invoicing-software", title: "Best Invoicing Software for Freelancers", desc: "Wave, FreshBooks, Zoho Invoice, Invoice Ninja, QuickBooks", category: "Finance" },
+  { href: "/best/invoicing-software-pricing", title: "Invoicing Software Pricing", desc: "Compare free plans, standard subscriptions, invoice limits and payment charges.", category: "Finance" },
   { href: "/best/multi-currency-invoicing", title: "Best Multi-Currency Invoicing Software", desc: "Compare foreign-currency invoices, exchange rates, payment collection and accounting trade-offs.", category: "Finance" },
   { href: "/best/accounting-software", title: "Best Accounting Software for Small Business", desc: "Xero, QuickBooks, Wave, Zoho Books", category: "Finance" },
   { href: "/best/payroll-software", title: "Best Payroll Software for Small Business", desc: "Gusto, QuickBooks Payroll, OnPay, Patriot Software", category: "People" },
