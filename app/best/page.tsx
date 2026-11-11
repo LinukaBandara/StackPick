@@ -60,6 +60,7 @@ const ARTICLES = [
   { href: "/best/applicant-tracking-software", title: "Best Applicant Tracking System (ATS) for Small Business", desc: "Breezy HR, Zoho Recruit, Workable, Greenhouse", category: "People" },
   { href: "/best/employee-scheduling-software", title: "Best Employee Scheduling Software for Small Business", desc: "When I Work, Deputy, Connecteam, 7shifts", category: "People" },
   { href: "/best/business-email-hosting", title: "Best Business Email Hosting for Small Business", desc: "Google Workspace, Microsoft 365, Zoho Mail, Proton Mail", category: "Infrastructure" },
+  { href: "/best/business-email-hosting-pricing", title: "Business Email Hosting Pricing", desc: "Compare per-mailbox costs, annual commitments, storage and productivity-suite bundles.", category: "Infrastructure" },
   { href: "/best/crm-for-freelancers", title: "Best CRM for Freelancers", desc: "Track leads, client conversations and follow-ups without creating a heavy sales process.", category: "Sales" },
   { href: "/best/crm-for-small-businesses", title: "Best CRM for Small Businesses", desc: "Compare customer-management tools by team fit, pipeline visibility and everyday administration.", category: "Sales" },
   { href: "/best/free-crm-software", title: "Best Free CRM Software", desc: "Understand the limits that matter in free CRM plans, including users, contacts and automation.", category: "Sales" },

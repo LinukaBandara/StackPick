@@ -49,6 +49,7 @@ const ROUTES = [
   "/best/applicant-tracking-software",
   "/best/employee-scheduling-software",
   "/best/business-email-hosting",
+  "/best/business-email-hosting-pricing",
   "/best/crm-for-freelancers",
   "/best/crm-for-solopreneurs",
   "/best/crm-for-small-businesses",
