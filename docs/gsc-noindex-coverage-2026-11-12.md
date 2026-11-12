@@ -110,3 +110,34 @@ For one URL from each family, obtain the actual HTTP status, redirect chain, `X-
 - [ ] Verify vendor portal status and access behavior.
 - [ ] Reconcile live deployment revision with GitHub `main`.
 - [ ] Make only evidence-backed canonical/noindex/redirect changes.
+
+
+## URL-level classification from the supplied export — 2026-11-12
+
+The original ZIP was re-opened and the exact sample URLs confirmed. Examples include:
+
+- Comparison finder: `/compare?tools=wave,xero`, `/compare?tools=firebase,supabase`, `/compare?tools=monday,clickup`, and bare `/compare`.
+- Alternatives finder: `/alternatives?software=figma`, `/alternatives?software=wordpress-com`, `/alternatives?software=freshbooks`, and bare `/alternatives`.
+- Vendor portal: `/for-vendors/portal?software=freshbooks`, `/for-vendors/portal?software=figma`, and bare `/for-vendors/portal`.
+
+These are query-driven finder/tool states, not the editorial comparison/alternatives article URLs. The current GSC issue is specifically a **noindex exclusion**, not a crawl error or proof of missing canonical editorial content.
+
+### Recommended disposition
+
+1. Keep query-parameter variants of `/compare` and `/alternatives` out of the index unless StackPick intentionally plans to create unique, substantial, stable landing pages for specific pairs/products. The current URL pattern creates a large combinatorial set and risks thin/duplicate search results.
+2. Keep `/for-vendors/portal` out of the index. It is a vendor workflow, not a public editorial landing page.
+3. Decide separately whether the two clean finder landing pages (`/compare` and `/alternatives`) should be indexable. If they are intended as search landing pages, they need unique editorial copy, self-referencing canonicals, and inclusion in the sitemap. If they are just interactive utilities, noindex is appropriate.
+4. Do not redirect finder states to unrelated editorial pages. Do not remove noindex from all 91 URLs as a bulk fix.
+
+### Access limitation and deployment ownership
+
+The Vercel connector available in this session lists no linked Git projects and no StackPick production deployments for the authenticated Vercel team. Direct HTTP requests from the execution environment also fail at DNS resolution, and the browser inspection cannot expose response headers or the raw HTML metadata for the parameterized URLs. Therefore the actual deployed commit, response status, `X-Robots-Tag`, HTML robots meta, and canonical cannot be authoritatively verified here.
+
+This means the production deployment may belong to a different Vercel account/team, or the deployment connection is not available to this session. No production code or SEO directives were changed. The only safe code action at this stage is to preserve the existing noindex behavior until the actual deployed source and headers can be inspected.
+
+## Final audit disposition
+
+- **59 comparison finder URLs:** retain noindex for query states; assess the clean finder landing page separately.
+- **18 alternatives finder URLs:** retain noindex for query states; assess the clean finder landing page separately.
+- **14 vendor portal URLs:** retain noindex and keep out of sitemap.
+- **Production changes:** none recommended without access to the Vercel project/deployment that serves `www.stackpick.tech`.
