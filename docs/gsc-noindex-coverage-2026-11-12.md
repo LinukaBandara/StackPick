@@ -141,3 +141,20 @@ This means the production deployment may belong to a different Vercel account/te
 - **18 alternatives finder URLs:** retain noindex for query states; assess the clean finder landing page separately.
 - **14 vendor portal URLs:** retain noindex and keep out of sitemap.
 - **Production changes:** none recommended without access to the Vercel project/deployment that serves `www.stackpick.tech`.
+
+
+## Route-level metadata verification — 2026-11-12
+
+The actual route implementations were located on the feature branches that introduced the discovery and vendor workspace routes (not on the current default branch):
+
+- `app/compare/page.tsx` explicitly sets `robots: { index: false, follow: true }`.
+- `app/alternatives/page.tsx` explicitly sets `robots: { index: false, follow: true }`.
+- `app/for-vendors/portal/page.tsx` explicitly sets `robots: { index: false, follow: false }`.
+- The corresponding `app/sitemap.ts` includes the public `/for-vendors` partnerships page, but does not include `/compare`, `/alternatives`, or `/for-vendors/portal`.
+- `app/robots.ts` allows crawling, which is necessary for Google to fetch these routes and observe their noindex directives.
+
+### Final code assessment
+
+The three route families are intentionally excluded from search indexing in the inspected discovery/vendor-marketplace source. The 91 GSC rows therefore match the route-level SEO policy; they are not evidence of a broken noindex implementation. No code change should remove these directives or add these routes to the sitemap. The query variants are interactive finder/workspace states, not distinct editorial landing pages.
+
+The remaining check is deployment alignment: verify that the deployed revision serving `www.stackpick.tech` contains these same route files and metadata. Until that is confirmed, keep the production directives unchanged. This is a verified code-level decision, not a claim that the live Vercel deployment has been inspected.
