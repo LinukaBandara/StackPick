@@ -50,3 +50,37 @@ A Search Console **noindex exclusion is not automatically an SEO defect**. For l
 - [ ] Search Console validation completed.
 
 No production SEO directives were changed as part of this evidence-only audit.
+
+## Follow-up repository verification — 2026-11-12
+
+A recursive Git tree inspection of the current `main` branch (334 entries; tree response not truncated) confirms:
+
+- There is no App Router route for `/compare`, `/alternatives`, or `/for-vendors/portal`.
+- There is no root `middleware.ts` or `proxy.ts`.
+- `next.config.js` contains security headers only; it defines no rewrites or redirects.
+- `app/sitemap.ts` contains no entries for these legacy URL families.
+- The app has a shared `app/not-found.tsx` page. In the absence of a matching route or rewrite, these paths should resolve through Next.js not-found handling, which emits a noindex directive for not-found responses.
+
+### Decision
+
+**Do not add blanket redirects or remove noindex.** The current source has no corresponding public pages to preserve, and there is no reliable URL-to-article mapping for all 77 query URLs (59 comparison + 18 alternatives). The vendor portal is also absent from this source tree.
+
+The observed noindex state is therefore consistent with retired/nonexistent routes, rather than proof that 91 valuable editorial pages have been accidentally blocked. This is the safest repository-level outcome.
+
+### Remaining production verification
+
+The GitHub connector could inspect source but could not establish live HTTP status, rendered meta robots, or Vercel edge configuration for the exact affected URLs. Confirm representative URLs from the original GSC export using URL Inspection or a direct HTTP/browser check:
+
+- If they return 404 with noindex, leave them retired; no code change is required.
+- If an exact old URL has a genuinely equivalent current article, add a specific 301 mapping for that URL only.
+- If any URL returns 200 with a noindex tag, inspect the deployed source/edge rules before changing it.
+- Do not submit these legacy URLs to indexing.
+
+## Updated status
+
+- [x] Recursive route-tree inspection on `main`.
+- [x] Confirm no route, middleware, proxy, rewrite, or sitemap entry for the legacy URL families.
+- [x] Decide against unsafe blanket redirects or bulk noindex removal.
+- [ ] Verify live status/meta for representative URLs from the exact GSC URL export.
+- [ ] Add only evidence-backed one-to-one redirects, if any are found.
+- [ ] Complete Search Console validation after any required production change.
