@@ -84,3 +84,29 @@ The GitHub connector could inspect source but could not establish live HTTP stat
 - [ ] Verify live status/meta for representative URLs from the exact GSC URL export.
 - [ ] Add only evidence-backed one-to-one redirects, if any are found.
 - [ ] Complete Search Console validation after any required production change.
+
+
+## Production spot-check — 2026-11-12
+
+A live page fetch provides additional evidence, but does not yet close the URL-level verification:
+
+- `https://www.stackpick.tech/compare` returns a rendered StackPick comparison interface with a tool selector and explanatory comparison copy. The web inspection exposed page content but not the HTTP status, response headers, canonical tag, or robots metadata.
+- `https://www.stackpick.tech/alternatives` returns a rendered alternatives-finder interface with a product selector. The inspection exposed page content but not the HTTP status, response headers, canonical tag, or robots metadata.
+- The exact parameterized GSC examples (`/compare?tools=wave,xero`, `/alternatives?software=figma`) and the vendor portal could not be retrieved by the available browser inspection. Direct network access from the execution environment is unavailable.
+- This differs from the repository-tree finding that the corresponding route files are absent on `main`. The live deployment may be running a different revision/configuration, or the routes may be supplied outside the inspected source tree. Do not infer that these live pages are 404s.
+
+### Updated decision
+
+Do not add redirects or remove noindex based only on the source-tree snapshot. The clean base routes are real user-facing finder interfaces; they should not be redirected away. The query URLs may be functional states of those interfaces, and whether they should be indexed is a separate canonical/indexing decision. Keep the vendor portal excluded unless its live purpose and access controls are confirmed.
+
+### Remaining evidence needed
+
+For one URL from each family, obtain the actual HTTP status, redirect chain, `X-Robots-Tag`, HTML `meta name="robots"`, canonical URL, and rendered content from a browser or deployment environment that can access the exact query URLs. Then inspect the remaining GSC URL list for consistent behavior before changing code.
+
+## Updated status
+
+- [x] Confirm clean `/compare` and `/alternatives` finder interfaces are live.
+- [ ] Verify parameterized comparison and alternatives URL responses and metadata.
+- [ ] Verify vendor portal status and access behavior.
+- [ ] Reconcile live deployment revision with GitHub `main`.
+- [ ] Make only evidence-backed canonical/noindex/redirect changes.
