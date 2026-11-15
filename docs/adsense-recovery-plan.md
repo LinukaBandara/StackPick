@@ -48,6 +48,16 @@ The following is a source-level review of representative routes, not a claim tha
 | `/best/n8n-workflow-examples` | Provides multiple operational workflow examples, failure-path checks and an explicit statement that the blueprints are not claimed to have been run by StackPick. This is a stronger example of page-specific utility. | Keep / verify |
 | `/best/time-tracking-software-pricing` | Includes official vendor pricing links, a stated verification date and cost modelling. Recheck prices and calculations before release because pricing is volatile. | Keep / refresh |
 
+### First content improvements implemented
+
+Added page-specific decision frameworks to three representative routes:
+
+- `/best/web-hosting`: a like-for-like hosting quote worksheet covering first-term payment, renewal, included services, recovery and resource limits, plus a pre-purchase checklist.
+- `/best/pos-systems`: a transparent monthly processing-cost model and quote checklist covering payment mix, fixed fees, hardware, contract terms and operating workflows. The formula is a framework, not a vendor-rate claim.
+- `/best/hr-software`: a people-workflow checklist covering records, onboarding, time off, payroll geography, hiring modules and total annual cost.
+
+These additions use reader-supplied figures and vendor verification rather than introducing unsupported current prices or fabricated product tests. They are implemented on the recovery branch; fresh CI/build validation is still pending.
+
 ### Next audit actions
 
 1. Complete a route-by-route inventory of all 109 content pages and record page-specific evidence, useful unique sections, date/source coverage, regional scope and overlap.
