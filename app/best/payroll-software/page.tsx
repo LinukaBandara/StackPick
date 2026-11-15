@@ -21,7 +21,7 @@ export default function Page() {
           bestFor: "Small businesses with mixed salaried/hourly staff who also want benefits admin",
           freeOption: "No free tier.",
           tradeoff:
-            "A broad feature set combines payroll with benefits and optional time-tracking workflows. That breadth can reduce tool switching, although the base fee plus per-person cost can add up as headcount grows. Pricing has risen over the years and the base fee plus per-person cost adds up faster than budget-tier competitors as headcount grows.",
+            "A broad feature set combines payroll with benefits and optional time-tracking workflows. That breadth can reduce tool switching, although the base fee plus per-person cost can add up as headcount grows. Price the regular plan and any state-specific or optional services against your actual team size.",
           url: "https://gusto.com/",
         },
         {
@@ -37,23 +37,23 @@ export default function Page() {
           bestFor: "Multi-state employers who don't want per-state add-on fees",
           freeOption: "No free tier.",
           tradeoff:
-            "A pricing structure that can include multi-state filing may be attractive when employees work across states. Compare the current included states, filing scope and total per-employee cost before deciding. Fewer bundled HR extras than Gusto if you want payroll and HR fully combined.",
+            "A pricing structure that can include multi-state filing may suit employers with staff in several states. Confirm the current included states, filing scope and total per-employee cost before deciding. Compare its HR and benefits coverage separately if you want payroll and HR in one platform.",
           url: "https://onpay.com/",
         },
         {
           name: "Patriot Software",
           bestFor: "Very budget-conscious small businesses with simple payroll needs",
-          freeOption: "No free tier, but the lowest starting price in this category.",
+          freeOption: "No free tier; paid Basic and Full Service options are available.",
           tradeoff:
             "A lower starting price can suit straightforward payroll needs. The trade-off is a narrower feature set than broader payroll-and-HR platforms, so check whether benefits, HR and time-tracking needs are covered. Fine for straightforward payroll, limiting if you want integrated benefits administration or HR tools.",
           url: "https://www.patriotsoftware.com/payroll/",
         },
       ]}
-      bottomLine="Already on QuickBooks for accounting? Use its payroll add-on before anything else - the integration alone is worth it. Want the most complete, modern experience and can afford it? Gusto. Multi-state team? OnPay's flat multi-state pricing likely saves money. Tight budget, simple needs? Patriot Software."
+      bottomLine="Already on QuickBooks for accounting? Compare its payroll-and-accounting bundle with your existing subscription. Want payroll plus benefits and HR options? Evaluate Gusto against the features you need. Multi-state team? Compare OnPay's included filing states and total fees with alternatives. Tight budget and straightforward requirements? Price Patriot Basic and Full Service separately, including who handles tax filings."
     >
       <section className="bg-white">
         <div className="sp-container py-16 sm:py-20">
-          <p className="sp-eyebrow">US payroll cost check · October 18, 2026</p>
+          <p className="sp-eyebrow">US payroll cost check · November 15, 2026</p>
           <h2 className="sp-title mt-4 max-w-4xl">Compare the regular bill, including tax filing.</h2>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
             These are published list prices shown on the providers' US pages at review time, before applicable taxes and optional add-ons. QuickBooks currently promotes a discount for the first three months; the regular price is shown here so the ongoing cost is easier to compare.
@@ -67,9 +67,9 @@ export default function Page() {
                 <th className="p-4 font-semibold text-[#1d1d1f]">Official pricing</th>
               </tr></thead>
               <tbody className="divide-y divide-[#e4e7ec]">
-                <tr><td className="p-4 font-medium text-[#1d1d1f]">Gusto Simple</td><td className="p-4 text-[#424245]">$49/month + $6/person/month</td><td className="p-4 text-[#6e6e73]">Tax filings and payments listed as included; state tax registration can be an add-on.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://gusto.com/product/pricing" target="_blank" rel="noopener noreferrer">Gusto pricing →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Gusto Simple</td><td className="p-4 text-[#424245]">$49/month + $6/person/month</td><td className="p-4 text-[#6e6e73]">Tax filings and payments are listed as included on Simple; confirm any state registration or business-compliance services and their separate fees.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://gusto.com/product/pricing" target="_blank" rel="noopener noreferrer">Gusto pricing →</a></td></tr>
                 <tr><td className="p-4 font-medium text-[#1d1d1f]">QuickBooks Workforce Payroll + Simple Start</td><td className="p-4 text-[#424245]">$88/month + $6.50/employee/month before the advertised introductory discount</td><td className="p-4 text-[#6e6e73]">The listed bundle includes full-service payroll and basic accounting; compare the bundle with your existing subscription.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://quickbooks.intuit.com/payroll/pricing/" target="_blank" rel="noopener noreferrer">QuickBooks pricing →</a></td></tr>
-                <tr><td className="p-4 font-medium text-[#1d1d1f]">Patriot Full Service Payroll</td><td className="p-4 text-[#424245]">$37/month + $5/worker/month at list price</td><td className="p-4 text-[#6e6e73]">Includes federal, state and local payroll tax filings; an additional-state filing fee may apply.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://www.patriotsoftware.com/pricing/" target="_blank" rel="noopener noreferrer">Patriot pricing →</a></td></tr>
+                <tr><td className="p-4 font-medium text-[#1d1d1f]">Patriot Full Service Payroll</td><td className="p-4 text-[#424245]">$37/month + $5/worker/month at list price</td><td className="p-4 text-[#6e6e73]">Includes federal, state and local payroll tax filings for one state; each additional state is listed at $12/month.</td><td className="p-4"><a className="font-semibold text-[#001D39] underline underline-offset-4" href="https://www.patriotsoftware.com/pricing/" target="_blank" rel="noopener noreferrer">Patriot pricing →</a></td></tr>
               </tbody>
             </table>
           </div>
