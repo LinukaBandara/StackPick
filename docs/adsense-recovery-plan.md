@@ -146,3 +146,14 @@ Run lint, build and all content-integrity checks. Review representative pages on
 - [AdSense: What to do when your site is not ready to show ads](https://support.google.com/adsense/answer/12176698)
 - [AdSense: Your account wasn't approved](https://support.google.com/adsense/answer/81904)
 - [Google Search spam policies](https://developers.google.com/search/docs/essentials/spam-policies)
+
+
+### Primary-source verification pass — November 15, 2026
+
+Rechecked selected volatile plan details against provider-owned pricing and help pages. These are US-specific where stated; localized prices and eligibility may differ.
+
+- `/best/password-managers`: refreshed Bitwarden, 1Password, NordPass and Keeper plan wording. Removed NordPass and Keeper price ranges that could not be reliably confirmed from stable public pricing output. Added current 1Password US Teams Starter Pack and Business annual-billing prices and seat terms. Confirmed NordPass Free's one-active-session limitation from its support documentation. This is a source check, not hands-on product testing.
+- `/best/payroll-software`: rechecked Gusto Simple ($49/month + $6/person), QuickBooks Workforce Payroll + Simple Start ($88/month + $6.50/employee before promotion) and Patriot Full Service ($37/month + $5/worker). Clarified that QuickBooks is a payroll-and-accounting bundle, Patriot's first state is included with additional-state fees, and the page is not Sri Lankan payroll guidance. Removed unsupported comparative language about OnPay pricing and Patriot being the lowest-priced option.
+- `/best/invoicing-software`: refreshed the review date and clarified Zoho Invoice's US allowance (2 users, 3 projects and up to 500 invoices/year) and QuickBooks Free's two-invoice monthly default, including the QuickBooks Payments eligibility exception.
+
+Official primary sources consulted include provider pricing or help pages for Bitwarden, 1Password, NordPass, Keeper, Gusto, QuickBooks, Patriot, Wave, Zoho Invoice, Invoice Ninja and FreshBooks. Pricing and feature limits remain subject to change and country-specific checkout terms. The live preview could not be inspected through the current Vercel connection, so rendered-page/mobile review remains open. The latest CI and Vercel checks must pass on the final branch head before release.
