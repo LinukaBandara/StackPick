@@ -25,7 +25,7 @@ function collectContentRoutes(directory, segments = []) {
     } else if (entry.isFile() && entry.name === "page.tsx" && segments.length > 0) {
       const pageSource = fs.readFileSync(fullPath, "utf8");
       // Redirect aliases are intentionally excluded from the public content directory.
-      if (!/permanentRedirect\\s*\\(/.test(pageSource)) {
+      if (!/permanentRedirect\s*\(/.test(pageSource)) {
         routes.push(segments.join("/"));
       }
     }
