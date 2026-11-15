@@ -16,19 +16,24 @@ const articlesSource = source.slice(start, end);
 const links = [...articlesSource.matchAll(/href:\s*"\/best\/([^"]+)"/g)].map((match) => match[1]);
 const duplicates = links.filter((slug, index) => links.indexOf(slug) !== index);
 
-function collectPageRoutes(directory, segments = []) {
+function collectContentRoutes(directory, segments = []) {
   const routes = [];
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const fullPath = path.join(directory, entry.name);
     if (entry.isDirectory()) {
-      routes.push(...collectPageRoutes(path.join(directory, entry.name), [...segments, entry.name]));
+      routes.push(...collectContentRoutes(fullPath, [...segments, entry.name]));
     } else if (entry.isFile() && entry.name === "page.tsx" && segments.length > 0) {
-      routes.push(segments.join("/"));
+      const pageSource = fs.readFileSync(fullPath, "utf8");
+      // Redirect aliases are intentionally excluded from the public content directory.
+      if (!/permanentRedirect\\s*\\(/.test(pageSource)) {
+        routes.push(segments.join("/"));
+      }
     }
   }
   return routes;
 }
 
-const routeSlugs = collectPageRoutes(path.join(root, "app", "best"));
+const routeSlugs = collectContentRoutes(path.join(root, "app", "best"));
 const linked = new Set(links);
 const routed = new Set(routeSlugs);
 const missingFromDirectory = routeSlugs.filter((slug) => !linked.has(slug));
