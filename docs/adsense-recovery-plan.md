@@ -58,6 +58,24 @@ Added page-specific decision frameworks to three representative routes:
 
 These additions use reader-supplied figures and vendor verification rather than introducing unsupported current prices or fabricated product tests. They are implemented on the recovery branch; fresh CI/build validation is still pending.
 
+### Second content improvements implemented
+
+Added original, task-specific decision guidance to four additional comparison pages:
+
+- `/best/business-vpn`: distinguishes when a managed VPN may be sufficient from when to evaluate ZTNA, then adds access-control scenarios for starters, contractors, lost devices, role changes and offboarding.
+- `/best/applicant-tracking-software`: adds a hiring-stage workflow test from job approval through candidate-data retention/export, plus selection guidance based on hiring volume.
+- `/best/employee-scheduling-software`: adds a difficult-week shift-planning test for availability, swaps, absences, overtime and payroll handoff, with a clear warning that product features do not guarantee jurisdictional compliance.
+- `/best/contract-management-software`: adds a contract lifecycle test covering creation, review, signature, storage and renewal, with guidance for choosing between proposal tools, repositories and broader CLM.
+
+These sections are process frameworks and buyer checklists, not claims that StackPick has performed vendor tests. No new prices, ratings, product capabilities or legal compliance claims were invented.
+
+### Additional route-level risks to resolve
+
+- `/best/password-managers` contains specific prices and plan-limit claims and says they were checked in late October 2026. Recheck each figure against the current official plan page before any review request.
+- `/best/payroll-software` is explicitly US-focused and has dated vendor price references; verify the quoted bundle contents and state coverage before release.
+- `/best/accounting-software` correctly warns that regional availability differs, but its country-specific claims and pricing links need a current check.
+- Some routes use the shared comparison template with no page-specific section beyond the template's product summaries and verdict. These are priority candidates for a deeper editorial review; the absence of a custom section alone is not a final quality judgment.
+
 ### Next audit actions
 
 1. Complete a route-by-route inventory of all 109 content pages and record page-specific evidence, useful unique sections, date/source coverage, regional scope and overlap.
