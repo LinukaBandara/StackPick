@@ -33,7 +33,7 @@ export default function Page() {
         {
           name: "Zoho Books",
           bestFor: "Small businesses that want cloud accounting connected to other Zoho apps",
-          freeOption: "In the US, the Free plan is for one user plus one accountant, with annual limits of 1,000 invoices and 1,000 expenses and a stated annual-revenue eligibility threshold of $50,000; terms vary by country.",
+          freeOption: "In the US, the Free plan is for one user plus one accountant, with annual limits of 1,000 invoices and 1,000 expenses. It remains available while the business's financial-year revenue does not exceed $50,000; terms and eligibility vary by country.",
           tradeoff: "It can be a practical starting point for an eligible small operation, but transaction caps, revenue eligibility and country-specific tax features matter. Confirm the local plan rather than assuming the US offer applies everywhere.",
           url: "https://www.zoho.com/books/",
         },
@@ -96,7 +96,7 @@ export default function Page() {
             <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm">
               <a className="underline underline-offset-4" href="https://quickbooks.intuit.com/pricing/" target="_blank" rel="noreferrer">QuickBooks pricing</a>
               <a className="underline underline-offset-4" href="https://www.xero.com/pricing-plans/" target="_blank" rel="noreferrer">Xero plans</a>
-              <a className="underline underline-offset-4" href="https://www.zoho.com/us/books/pricing/" target="_blank" rel="noreferrer">Zoho Books US pricing</a>
+              <a className="underline underline-offset-4" href="https://www.zoho.com/us/books/pricing/" target="_blank" rel="noreferrer">Zoho Books US pricing and Free-plan limits · checked November 15, 2026</a>
               <a className="underline underline-offset-4" href="https://support.waveapps.com/hc/en-us/articles/208621296-Is-Wave-free" target="_blank" rel="noreferrer">Wave free-plan details</a>
               <a className="underline underline-offset-4" href="https://www.freshbooks.com/pricing" target="_blank" rel="noreferrer">FreshBooks pricing</a>
               <a className="underline underline-offset-4" href="https://www.gnucash.org/features.phtml?lang=en_US" target="_blank" rel="noreferrer">GnuCash features</a>

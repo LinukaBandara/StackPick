@@ -50,6 +50,39 @@ export default function Page() {
         },
       ]}
       bottomLine="Small team, want the simplest option? When I Work. Operating where fair workweek or predictive scheduling laws apply? Deputy's compliance tools are worth the switch. Deskless team that also needs messaging and time tracking in one app? Connecteam. Running a restaurant? 7shifts is built specifically for that - don't use a general-purpose scheduler instead."
-    />
+    >
+      <section className="bg-white">
+        <div className="sp-container py-16 sm:py-20">
+          <p className="sp-eyebrow">Shift planning worksheet</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Test a difficult week, not an empty calendar.</h2>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
+            A scheduling tool can look simple when every employee is available. Use a realistic
+            week with different roles, availability, leave and last-minute changes to see whether
+            managers can build a workable rota without creating avoidable gaps or overtime.
+          </p>
+          <div className="mt-10 overflow-x-auto rounded-[28px] border border-black/10">
+            <table className="w-full min-w-[700px] text-left text-sm">
+              <thead><tr className="border-b border-black/10 bg-[#f5f5f7]"><th className="p-5">Scenario</th><th className="p-5">Test</th><th className="p-5">Decision signal</th></tr></thead>
+              <tbody>
+                <tr className="border-b border-black/10"><td className="p-5 font-medium">Availability</td><td className="p-5">Enter recurring availability and one-off unavailable dates.</td><td className="p-5 text-[#6e6e73]">Can managers see conflicts before publishing?</td></tr>
+                <tr className="border-b border-black/10"><td className="p-5 font-medium">Shift swap</td><td className="p-5">Request a swap and route it for approval.</td><td className="p-5 text-[#6e6e73]">Does the change preserve manager oversight?</td></tr>
+                <tr className="border-b border-black/10"><td className="p-5 font-medium">Unexpected absence</td><td className="p-5">Mark a shift uncovered and find a replacement.</td><td className="p-5 text-[#6e6e73]">Can the team fill the gap without messaging everyone manually?</td></tr>
+                <tr className="border-b border-black/10"><td className="p-5 font-medium">Hours & overtime</td><td className="p-5">Review total hours before publishing the rota.</td><td className="p-5 text-[#6e6e73]">Are alerts available, and what rules do they actually enforce?</td></tr>
+                <tr><td className="p-5 font-medium">Payroll handoff</td><td className="p-5">Export approved hours to the payroll process.</td><td className="p-5 text-[#6e6e73]">Is the integration native, an add-on or a manual export?</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 className="mt-12 text-2xl font-semibold tracking-tight">Check local rules separately</h3>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">
+            Scheduling features do not guarantee compliance with working-time, break, overtime
+            or predictive-scheduling requirements. Confirm the rules that apply to the locations
+            where employees work, then ask the provider to demonstrate how the selected plan
+            supports your process. Do not assume a vendor's compliance feature covers every
+            jurisdiction or replaces a payroll and HR review.
+          </p>
+        </div>
+      </section>
+    </ComparisonArticle>
+
   );
 }

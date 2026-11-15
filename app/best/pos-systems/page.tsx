@@ -50,6 +50,49 @@ export default function Page() {
         },
       ]}
       bottomLine="Just starting out and want zero contract risk? Square. Running a full-service restaurant specifically? Toast's purpose-built workflows are worth the contract commitment. Want processor flexibility and an app marketplace? Clover, but shop multiple resellers first. Selling online and in person? Shopify POS avoids running two separate inventory systems."
-    />
+    >
+      <section className="bg-white">
+        <div className="sp-container py-16 sm:py-20">
+          <p className="sp-eyebrow">Work out the real processing cost</p>
+          <h2 className="sp-title mt-4 max-w-4xl">Compare the same payment mix—not just the headline rate.</h2>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
+            A processor quote is only comparable when both providers price the same kinds of
+            transactions. Card-present, online, keyed, international and manually entered
+            payments may be treated differently. Use your own recent transaction mix and written
+            quotes rather than assuming one advertised rate applies to every sale.
+          </p>
+          <div className="mt-8 rounded-[24px] border border-black/10 bg-[#f5f5f7] p-6 sm:p-8">
+            <h3 className="text-lg font-semibold tracking-tight">A simple monthly cost model</h3>
+            <p className="mt-3 text-sm leading-7 text-[#48484a]">
+              Estimated monthly cost = percentage fees on each payment type + per-transaction
+              fees × transaction count + monthly software/hardware charges + required add-ons.
+              Add one-time setup costs and contract exit costs separately.
+            </p>
+            <p className="mt-3 text-sm leading-7 text-[#6e6e73]">
+              To estimate the effect of a rate difference, multiply your monthly card volume by
+              the percentage-point difference. Then add any difference in fixed per-transaction
+              fees. This is a calculation framework, not a quoted rate for any provider.
+            </p>
+          </div>
+          <div className="mt-10 overflow-x-auto rounded-[24px] border border-black/10">
+            <table className="w-full min-w-[680px] text-left text-sm">
+              <thead><tr className="border-b border-black/10 bg-[#f5f5f7]"><th className="p-4">Quote item</th><th className="p-4">Ask both providers</th><th className="p-4">Record</th></tr></thead>
+              <tbody>
+                <tr className="border-b border-black/10"><td className="p-4 font-medium">Payment mix</td><td className="p-4">In-person, online, keyed and international rates</td><td className="p-4">Monthly volume and transaction count by type</td></tr>
+                <tr className="border-b border-black/10"><td className="p-4 font-medium">Fixed fees</td><td className="p-4">Per-transaction, chargeback and other account fees</td><td className="p-4">Fee amount and when it applies</td></tr>
+                <tr className="border-b border-black/10"><td className="p-4 font-medium">Hardware</td><td className="p-4">Terminal purchase, rental, replacement and compatibility</td><td className="p-4">Upfront and recurring cost</td></tr>
+                <tr className="border-b border-black/10"><td className="p-4 font-medium">Contract</td><td className="p-4">Minimum term, early termination, auto-renewal and rate changes</td><td className="p-4">Exit cost and notice period</td></tr>
+                <tr><td className="p-4 font-medium">Operations</td><td className="p-4">Refunds, tips, offline mode, inventory and accounting exports</td><td className="p-4">Which workflows are included in the quoted plan</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-6 max-w-3xl text-sm leading-7 text-[#6e6e73]">
+            Before signing, ask for the full fee schedule and contract—not only a sales
+            presentation. Confirm the country where the business is registered and where it
+            processes payments, because availability and rates can differ by market.
+          </p>
+        </div>
+      </section>
+    </ComparisonArticle>
   );
 }

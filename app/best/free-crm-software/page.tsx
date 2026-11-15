@@ -13,7 +13,7 @@ export default function FreeCrmSoftwarePage() {
       title="Best Free CRM Software"
       slug="free-crm-software"
       intro="A free CRM is only useful if it stays useful after the first week. We look beyond the word 'free' and focus on whether a freelancer or small team can actually capture contacts, manage deals, follow up and keep their data without immediately needing a card."
-      pricingNote="Plan limits were checked against official provider pages on October 18, 2026. A permanent free plan is different from a time-limited trial, and some providers cap users, contacts, storage or advanced features. Confirm current terms before migrating customer records."
+      pricingNote="Plan limits were checked against official provider pages on November 15, 2026. A permanent free plan is different from a time-limited trial, and some providers cap users, contacts, storage or advanced features. Confirm current terms before migrating customer records."
       tools={[
         { name: "HubSpot CRM", bestFor: "A conventional CRM for contact and deal management", freeOption: "HubSpot lists free tools at $0 for up to 2 users and 1,000 contacts, with no expiration date. The provider also lists up to 1 million records across other standard object types per account.", tradeoff: "The free tier is a strong starting point, but advanced automation and features from other HubSpot products may require an upgrade. Verify each must-have feature instead of assuming all HubSpot functionality is free.", url: "https://www.hubspot.com/pricing/crm" },
         { name: "Zoho CRM", bestFor: "Small teams that need a traditional CRM with follow-up reminders", freeOption: "Zoho CRM lists a Free Edition that is free forever for up to 3 users. Published limits include up to 10 custom email templates, up to 10 free data exports and 5,000 API credits per rolling 24-hour window; individual API operations may consume different amounts of credits.", tradeoff: "The free edition includes useful core sales tools, but certain email integrations, mass emailing and more advanced capabilities require paid editions. Check the official edition comparison before choosing it.", url: "https://www.zoho.com/en-us/crm/zohocrm-pricing.html" },
@@ -64,7 +64,7 @@ export default function FreeCrmSoftwarePage() {
         </section>
 
         <h3 className="mt-12 text-2xl font-semibold tracking-tight">Official plan pages checked</h3>
-        <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">The plan details below reflect published provider information checked on October 18, 2026. Feature availability can vary by product, region and plan, so confirm the current terms before depending on a limit.</p>
+        <p className="mt-4 max-w-3xl text-base leading-7 text-[#6e6e73]">The plan details below reflect published provider information checked on November 15, 2026. Feature availability can vary by product, region and plan, so confirm the current terms before depending on a limit.</p>
         <ul className="mt-5 max-w-3xl list-disc space-y-3 pl-6 text-sm leading-6 text-[#6e6e73]">
           <li><a className="underline underline-offset-4" href="https://www.hubspot.com/pricing/crm" target="_blank" rel="noreferrer">HubSpot official pricing</a> — free users, contacts and record limits.</li>
           <li><a className="underline underline-offset-4" href="https://www.zoho.com/en-us/crm/zohocrm-pricing.html" target="_blank" rel="noreferrer">Zoho CRM official pricing</a> — Free Edition limits.</li>

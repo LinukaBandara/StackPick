@@ -14,7 +14,7 @@ export default function Page() {
       title="Best Password Managers for Freelancers and Small Business"
       slug="password-managers"
       intro="A solo freelancer mainly needs secure storage of unique passwords across client accounts and tools. A small team also needs controlled sharing, simple onboarding and offboarding, recovery options, and a clear view of who can access what. This comparison separates individual free plans from paid business plans so a low personal price is not mistaken for a team-ready solution."
-      pricingNote="Plan details were checked against official provider pages in late October 2026. Free individual plans are not the same as business plans. Shared vaults, admin policies, access reports and employee management usually require paid seats. Before rollout, confirm current seat minimums, trial length, recovery options, export format and whether pricing requires annual billing."
+      pricingNote="Plan details were checked against official provider pages on November 15, 2026. Prices and offers can vary by billing term, country and checkout currency; this guide avoids quoting a business price where the provider's public page does not expose a stable, comparable amount. Free individual plans are not the same as business plans. Before rollout, confirm the current seat minimum, billing term, trial length, recovery options, export format and the exact team features included."
       tools={[
         {
           name: "Bitwarden",
@@ -29,7 +29,7 @@ export default function Page() {
           name: "1Password Business",
           bestFor: "Mixed technical and non-technical teams that want the smoothest onboarding and polished apps",
           freeOption:
-            "1Password has no permanent free plan. It offers a 14-day free trial. Business plans start with a Teams Starter Pack (flat rate for up to 10 members) and a per-user Business plan. Individual and Families plans are available separately for personal use.",
+            "1Password has no permanent free business plan and offers a 14-day trial. Its US business pricing page lists the Teams Starter Pack at $24.95 per month when billed annually, including 10 members; up to 10 additional seats can be added at $4.99 per seat per month. The Business plan is listed at $8.99 per user per month when billed annually. Individual and Families plans are separate personal subscriptions.",
           tradeoff:
             "It is generally the most polished experience and reduces friction for mixed teams. The trade-off is higher per-seat cost than Bitwarden or NordPass for comparable team features.",
           url: "https://1password.com/business",
@@ -38,7 +38,7 @@ export default function Page() {
           name: "NordPass Business",
           bestFor: "Small teams that want a simple, fast rollout with lower seat cost",
           freeOption:
-            "NordPass has a free individual plan limited to one active device at a time. Business plans start at roughly $3.59–$3.99 per user per month (billed annually, minimum seats apply) and include an admin panel, sharing and company-wide settings. A short business trial is usually available.",
+            "NordPass Free allows one active session on one device at a time; paid personal plans allow simultaneous sessions on multiple devices. Its business page currently presents Teams (10-user pack) and Business (5-user minimum) plans, with prices that vary by billing term and offer. The business plans include admin controls and team-sharing features; check the live checkout for the current per-user amount and trial terms.",
           tradeoff:
             "It is quick to deploy and competitively priced for small teams. The feature set is shallower than 1Password or Keeper once needs become more complex (advanced policies, deeper integrations, or heavy compliance).",
           url: "https://nordpass.com/business/",
@@ -47,7 +47,7 @@ export default function Page() {
           name: "Keeper Business",
           bestFor: "Teams that need stronger governance, audit controls or compliance features",
           freeOption:
-            "Keeper does not offer a permanent free business plan. Business Starter and Business plans are available (typically starting around $2–$4 per user per month when billed annually, with seat minimums). Enterprise features such as advanced SSO and provisioning are quote-based. Many business users receive a free Family plan for personal use.",
+            "Keeper does not offer a permanent free business plan. Its current business page lists Business Starter for teams of 5–10 seats and Business with a minimum of 5 seats, both billed annually; Enterprise adds advanced provisioning and SSO capabilities. The public page does not expose a stable price in the retrieved view, so confirm the localized checkout quote rather than relying on an older advertised rate. Keeper states that each business user receives a free Family plan.",
           tradeoff:
             "It provides granular policy and audit capabilities useful for regulated or more formal environments. Those controls can be unnecessary overhead for a very small team without compliance requirements.",
           url: "https://www.keepersecurity.com/business.html",

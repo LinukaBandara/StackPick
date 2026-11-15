@@ -17,7 +17,7 @@ export default function Page() {
       title="Best AI Meeting Assistants"
       slug="ai-meeting-assistants"
       intro="For freelancers and small teams, the useful meeting assistant is the one that turns a call into accurate notes, decisions and next actions without adding a second admin job. We compare four different approaches: Otter's minute-based transcription, Fireflies' searchable meeting archive, Fathom's generous individual recording allowance and Granola's bot-free note capture."
-      pricingNote="Free-plan limits and features can change, and some providers show different offers by region or billing cycle. The limits below are based on the providers' published plan information checked October 11, 2026. Confirm the current plan on the linked official page before relying on a limit or uploading client information."
+      pricingNote="Free-plan limits and features can change, and some providers show different offers by region or billing cycle. The limits below are based on provider pricing and help pages checked November 15, 2026. Confirm the current plan on the linked official page before relying on a limit or uploading client information."
       tools={[
         {
           name: "Otter",
@@ -32,25 +32,25 @@ export default function Page() {
           name: "Fireflies.ai",
           bestFor: "Searchable transcripts and a meeting archive across a team's workflow",
           freeOption:
-            "The Free plan lists unlimited transcription, limited AI summaries, 400 minutes of meeting storage and 20 AI credits. Storage is a total archive allowance, not a monthly transcription allowance.",
+            "The Free plan lists unlimited transcription, limited AI features and 400 minutes of total meeting storage per user, pooled across the team. Storage is a total archive allowance, not a monthly transcription allowance.",
           tradeoff:
             "You may need to delete older meetings or upgrade as the archive grows. Some advanced automation, downloads and integrations are plan-dependent, so test the exact workflow you need.",
-          url: "https://fireflies.ai/pricing",
+          url: "https://guide.fireflies.ai/articles/4777633252-learn-about-meeting-storage-limits",
         },
         {
           name: "Fathom",
           bestFor: "Individuals who want to record and transcribe meetings without a small monthly recording cap",
           freeOption:
-            "Fathom's individual Free plan lists unlimited recordings, storage and transcription. Its help centre says advanced AI summaries are available for the first five calls each month; after that, the general summary remains available.",
+            "Fathom's individual Free plan lists unlimited recordings and transcription with instant AI call summaries. Advanced call summaries, action items and the conversational meeting assistant are included with Premium.",
           tradeoff:
             "Unlimited recording does not mean every AI feature is unlimited. If you depend on custom summaries, action items or follow-up emails, check which paid features are required.",
-          url: "https://fathom.video/pricing",
+          url: "https://www.fathom.ai/pricing",
         },
         {
           name: "Granola",
           bestFor: "People who prefer notes captured from their device audio instead of a meeting bot",
           freeOption:
-            "The Basic plan includes AI meeting notes, limited meeting history, AI chat, shared folders and note templates. Its pricing page lists bot-free device-audio capture across supported apps.",
+            "The Basic plan includes AI meeting notes, 30 days of meeting history, AI chat, shared folders and note templates. Its pricing page lists bot-free device-audio capture across supported apps.",
           tradeoff:
             "Limited history can matter if you need to search old client calls. Advanced integrations, unlimited history and centralized team administration are paid-plan features.",
           url: "https://www.granola.ai/pricing",
@@ -69,7 +69,7 @@ export default function Page() {
             transcription allowances, retained meeting history, summary limits and capture
             method. This is desk research, not a claim that StackPick independently benchmarked
             each product's transcription accuracy. Pricing and plan details were checked on
-            October 11, 2026; providers can change them after publication.
+            November 15, 2026; providers can change them after publication.
           </p>
 
           <div className="mt-8 overflow-x-auto rounded-[24px] border border-black/10">
@@ -89,7 +89,7 @@ export default function Page() {
                 </tr>
                 <tr className="border-t border-black/10">
                   <td className="p-4 font-medium">Fireflies.ai</td>
-                  <td className="p-4 text-[#6e6e73]">400 minutes of stored meeting content and limited AI summaries on Free.</td>
+                  <td className="p-4 text-[#6e6e73]">400 minutes of total stored meeting content per user, pooled across the team, plus limited AI features on Free.</td>
                   <td className="p-4"><a className={SOURCE_LINK_CLASS} href="https://fireflies.ai/pricing" target="_blank" rel="noopener noreferrer">Plan details</a></td>
                 </tr>
                 <tr className="border-t border-black/10">

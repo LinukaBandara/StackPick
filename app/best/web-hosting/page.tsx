@@ -58,6 +58,39 @@ export default function Page() {
         },
       ]}
       bottomLine="Most small businesses starting out: Hostinger for the best value, but commit to the longer term to actually get the low rate, and know what it renews at. Want premium support you'll never have to think about? SiteGround, and budget for the renewal jump. First WordPress site, want simplicity? Bluehost. Expect real growth and want performance headroom? Cloudways. Running WordPress and prioritizing managed support over the lowest price? Compare Kinsta carefully against your traffic and budget."
-    />
+    >
+      <section className="bg-white">
+        <div className="sp-container py-16 sm:py-20">
+          <p className="sp-eyebrow">Compare the full contract</p>
+          <h2 className="sp-title mt-4 max-w-4xl">A hosting quote is not the whole cost.</h2>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-[#6e6e73]">
+            Compare providers using the same contract length, site type and expected workload.
+            A low monthly equivalent can hide a large upfront payment or a renewal increase.
+            Fill in these figures from each provider's current checkout and plan documentation
+            before deciding; do not compare introductory prices with another host's renewal price.
+          </p>
+          <div className="mt-10 overflow-x-auto rounded-[24px] border border-black/10">
+            <table className="w-full min-w-[680px] text-left text-sm">
+              <thead><tr className="border-b border-black/10 bg-[#f5f5f7]"><th className="p-4">Cost or requirement</th><th className="p-4">What to record</th><th className="p-4">Why it changes the decision</th></tr></thead>
+              <tbody>
+                <tr className="border-b border-black/10"><td className="p-4 font-medium">First term</td><td className="p-4">Total paid today, billing period and renewal date</td><td className="p-4">The advertised monthly rate may require prepayment.</td></tr>
+                <tr className="border-b border-black/10"><td className="p-4 font-medium">Renewal</td><td className="p-4">Renewal total for the same term</td><td className="p-4">Shows the cost after the introductory period.</td></tr>
+                <tr className="border-b border-black/10"><td className="p-4 font-medium">Included services</td><td className="p-4">Domain, email, SSL, backups, CDN and migration</td><td className="p-4">A low base plan may need paid add-ons.</td></tr>
+                <tr className="border-b border-black/10"><td className="p-4 font-medium">Recovery</td><td className="p-4">Backup frequency, retention, restore process and fees</td><td className="p-4">A backup is useful only if you can restore the site when needed.</td></tr>
+                <tr><td className="p-4 font-medium">Resource limits</td><td className="p-4">CPU, memory, storage, inode and traffic limits where published</td><td className="p-4">Limits can matter more than an unlimited-storage headline.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 className="mt-10 text-xl font-semibold tracking-tight">A short pre-purchase test</h3>
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-[#6e6e73]">
+            <li>Confirm the data-centre region and whether it suits the audience you serve.</li>
+            <li>Check how support is reached and whether the advertised support applies to your plan.</li>
+            <li>Ask how a full backup is downloaded and restored, not only how it is created.</li>
+            <li>Check whether staging, migration assistance and SSL renewal are included in the quoted plan.</li>
+            <li>Save the checkout summary and renewal terms so you can compare like for like.</li>
+          </ul>
+        </div>
+      </section>
+    </ComparisonArticle>
   );
 }
