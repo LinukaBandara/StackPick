@@ -1,6 +1,6 @@
 # AdSense recovery: guide audit batch 11
 
-**Scope:** Alphabetical route directories 95–104. Eight content routes were screened; `/best/scheduling-for-small-businesses` and `/best/project-management-for-small-teams` are intentional redirect aliases and excluded from the 109-page count.
+**Scope:** Alphabetical route directories 95–104. Nine content routes were screened; `/best/scheduling-for-small-businesses` is an intentional redirect alias and excluded from the 109-page count.
 
 **Branch:** `adsense-recovery/phase-1-directory-integrity`
 
@@ -20,7 +20,7 @@
 
 ## Batch conclusion
 
-- **8 content routes source-screened; 2 redirect aliases excluded.**
+- **9 content routes source-screened; 1 redirect alias excluded.**
 - **Highest-priority content fixes:** QuickBooks alternatives, Salesforce alternatives and Slack alternatives currently rely on generic template descriptions rather than distinct, useful switching guidance.
 - **Highest-priority fact checks:** accounting prices/limits and social scheduler publishing capabilities.
 - **Original-value opportunity:** the small-business software-stack guide can be made distinctive through a fully worked, explicitly hypothetical workflow with record ownership and failure handling.
@@ -30,4 +30,4 @@
 
 Each source file was inspected for page intent, unique decision support, workflow specificity, pricing/plan assertions, external source links, regional claims and overlap. Numeric prices, quotas, accounting features, integration capabilities and platform API support require separate current primary-source verification before publication. Do not invent hands-on testing, first-hand experience, customer outcomes or credentials.
 
-**Progress:** 97 / 109 content routes source-screened (89.0%). The remaining 12 content routes still require review.
+**Progress:** 98 / 109 content routes source-screened (89.9%). The remaining 11 content routes still require review.
