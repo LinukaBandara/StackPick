@@ -17,14 +17,14 @@ Improve the usefulness, originality, trust signals and navigability of StackPick
 
 Completed on the recovery branch:
 
-- Compared `app/best/page.tsx` directory links with static `app/best/**/page.tsx` routes.
+- Compared `app/best/page.tsx` directory links with the source of every static `app/best/**/page.tsx` route.
 - Removed the duplicate AI Meeting Assistant Pricing directory entry.
-- Added the seven existing guide routes that were missing from the directory.
-- Added `npm run check:best-directory` to prevent duplicate, missing or orphaned guide routes.
+- Confirmed that the seven route files absent from the directory are intentional `permanentRedirect` aliases, not standalone guide pages. They should not be added as separate directory entries.
+- Added `npm run check:best-directory` to detect duplicate entries, content routes missing from the directory and directory links without a content route. Intentional permanent-redirect aliases are excluded.
 
-Baseline before the change: 110 directory entries, 109 unique links, 116 static guide routes, seven routes absent from the directory, and no directory links without a route.
+Baseline before the change: 110 directory entries, 109 unique links and 116 static route files. Of those route files, 109 are content pages and seven are redirect aliases.
 
-Expected after the change: 116 unique directory entries matching 116 static guide routes.
+Expected after the change: 109 unique directory entries matching the 109 content routes, with seven redirect aliases intentionally excluded.
 
 ## Phase 2 — content quality audit
 
