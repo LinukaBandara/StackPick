@@ -26,9 +26,9 @@ Baseline before the change: 110 directory entries, 109 unique links and 116 stat
 
 Expected after the change: 109 unique directory entries matching the 109 content routes, with seven redirect aliases intentionally excluded.
 
-## Phase 2 — initial source audit findings (in progress)
+## Phase 2 — content quality audit (source screening complete; implementation in progress)
 
-The following is a source-level review of representative routes, not a claim that all 109 pages have been fully verified or that the live rendered pages have been browser-tested.
+All 109 content routes have now received a source-level editorial screen, recorded across `docs/adsense-guide-audit-batch-01.md` through `docs/adsense-guide-audit-batch-12.md`. This is not a claim that every live page has been browser-tested or that all volatile vendor facts have been independently reverified.
 
 ### Shared comparison template
 
@@ -82,13 +82,12 @@ The current `lib/software.ts` inventory contains **9 software profiles**, all ca
 
 The current catalogue is not yet a broad 50-profile resource. Do not expand it by creating thin template entries. Add profiles only when each has enough product-specific decision guidance and current primary-source evidence. Review screenshot provenance as part of that work: some imagery is vendor-hosted, some is third-party sourced, and some is explicitly labelled as an illustrative StackPick-created preview rather than a live product screenshot.
 
-### Next audit actions
+### Source audit completion and implementation queue
 
-1. Complete a route-by-route inventory of all 109 content pages and record page-specific evidence, useful unique sections, date/source coverage, regional scope and overlap.
-2. Prioritize pages that rely on broad assertions or current pricing without dated primary-source evidence.
-3. Add original scenarios, decision thresholds, migration/checklist guidance or worked calculations only where they genuinely help the stated reader.
-4. Review overlapping pages by search intent and distinct reader need before considering consolidation or noindex.
-5. Do not infer that a page is thin solely because it uses the shared template; assess its complete page-specific content and rendered experience.
+- Completed source-level screening of all 109 content routes. Seven intentional redirect aliases were excluded from the content count.
+- The route-by-route findings and recommended fixes are documented in audit batches 01–12. Batch 11's route count was corrected after identifying the redirect alias in that batch.
+- The highest-priority thin/template-mismatch pages were rewritten with distinct product-selection criteria, practical workflows, migration steps and regional caveats. See the implementation log below.
+- Remaining work is to verify volatile claims against current primary sources, inspect rendered pages, address overlap and complete technical/trust checks. The source audit is not a substitute for these release gates.
 
 ## Phase 2 — content quality audit
 
@@ -103,6 +102,26 @@ Audit every guide and profile with a consistent rubric:
 7. Links, metadata, canonical URL and structured data are correct.
 
 Classify each URL as keep, improve, consolidate, noindex or investigate. Do not make mass noindex or deletion changes based on similarity alone.
+
+
+
+### Additional content improvements — alternatives and practical workflows
+
+Replaced generic product rows and repeated template copy with page-specific decision frameworks on eleven routes:
+
+- `/best/notion-alternatives-small-businesses`: differentiates project control, knowledge management, database complexity and adoption; adds a comparable pilot and migration checklist.
+- `/best/quickbooks-alternatives`: separates invoicing from accounting needs, explains regional/accountant/inventory considerations and adds a controlled accounting migration sequence.
+- `/best/salesforce-alternatives-small-businesses`: adds CRM complexity criteria, a realistic pilot and Salesforce data/schema migration checks.
+- `/best/slack-alternatives-small-teams`: compares business chat models, external access, retention, administration and self-hosting; adds a migration plan.
+- `/best/trello-alternatives`: distinguishes project dependencies, reporting, database and documentation needs; adds a fair pilot and board migration checks.
+- `/best/manage-client-projects-without-full-time-team`: adds the client delivery lifecycle from scope approval through handover and a weekly status-update template.
+- `/best/manage-customer-leads-as-freelancer`: adds a freelancer pipeline, minimal lead-record schema and respectful follow-up routine.
+- `/best/invoice-clients-as-freelancer`: replaces unrelated generic tool copy with a quote-to-payment workflow, invoice checklist, reconciliation and jurisdiction caveats.
+- `/best/asana-alternatives`: differentiates alternatives by workflow friction and adds a one-week comparison pilot and migration checklist.
+- `/best/calendly-alternatives`: compares booking scenarios and adds a complete test for time zones, rescheduling, team routing and payments.
+- `/best/freshbooks-alternatives`: distinguishes invoicing from full accounting and adds regional and accounting migration guidance.
+
+These additions are editorial frameworks and practical checklists. They do not claim StackPick conducted hands-on vendor tests, and they intentionally avoid unsupported current prices or fabricated customer outcomes.
 
 ## Phase 3 — software catalogue
 
