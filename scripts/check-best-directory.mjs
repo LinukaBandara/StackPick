@@ -13,7 +13,7 @@ if (start < 0 || end < 0) {
 }
 
 const articlesSource = source.slice(start, end);
-const links = [...articlesSource.matchAll(/href:\\s*"\\/best\\/([^"]+)"/g)].map((match) => match[1]);
+const links = [...articlesSource.matchAll(/href:\s*"\/best\/([^"]+)"/g)].map((match) => match[1]);
 const duplicates = links.filter((slug, index) => links.indexOf(slug) !== index);
 
 function collectPageRoutes(directory, segments = []) {
