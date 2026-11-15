@@ -327,7 +327,7 @@ export default function ComparisonArticle({
           <p className="sp-eyebrow mt-8 uppercase tracking-wider text-xs">Software comparison</p>
           <h1 className="sp-title mt-3 max-w-4xl text-[#1d1d1f]">{title}</h1>
           <p className="mt-5 max-w-3xl text-base sm:text-lg leading-relaxed text-[#6e6e73]">{intro}</p>
-          <p className="mt-5 text-xs text-[#86868b]">Independent research · Verify current pricing with each provider</p>
+          <p className="mt-5 text-xs text-[#86868b]">Desk research · Hands-on testing is only claimed when explicitly described · Verify current pricing with each provider</p>
         </div>
       </header>
 
