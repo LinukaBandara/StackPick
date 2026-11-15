@@ -14,7 +14,7 @@ export default function InvoicingSoftwarePage() {
       title="Best Invoicing Software for Freelancers"
       slug="invoicing-software"
       intro="For a US freelancer, the right invoicing tool should make it easy to send a professional invoice, remind clients about overdue balances, accept the payment methods clients prefer, and export clean records for bookkeeping. A free plan can be enough when invoices are simple; recurring billing, time tracking, accounting reports or higher card-payment volume can change the calculation. This comparison separates free invoice creation from the cost of getting paid."
-      pricingNote="Plan details below were checked against official provider pages on October 11, 2026. Promotions, payment eligibility and feature limits can change. For a US freelancer, confirm the current plan shown at signup and the payment processor's own fees before moving live client billing. A software subscription fee and a payment-processing fee are separate costs."
+      pricingNote="US plan details below were checked against official provider pages on November 15, 2026. Promotions, payment eligibility and feature limits can change. For a US freelancer, confirm the current plan shown at signup and the payment processor's own fees before moving live client billing. A software subscription fee and a payment-processing fee are separate costs."
       tools={[
         {
           name: "Wave",
@@ -26,7 +26,7 @@ export default function InvoicingSoftwarePage() {
         {
           name: "Zoho Invoice",
           bestFor: "Early-stage freelancers with a small client list",
-          freeOption: "Zoho Invoice is presented as a free invoicing product on its US site and supports recurring invoices, payment reminders, expenses, projects and online-payment integrations. Its public landing page does not clearly state a single numerical cap, so confirm any account-specific limits and supported payment gateways during signup rather than assuming unlimited use.",
+          freeOption: "Zoho Invoice is free on its US site, but the provider lists usage limits: up to 2 users, 3 projects and 500 invoices per year. The annual invoice allowance is reset based on the organisation's creation date. Confirm current usage statistics and payment-gateway availability in your account before moving client billing.",
           tradeoff: "The invoice software is free, but card or bank-payment processing fees may still apply through the gateway you connect. Check the gateway's pricing, country support and payout timing separately; those costs are not set by the Zoho Invoice subscription.",
           url: "https://www.zoho.com/invoice/",
         },
@@ -47,7 +47,7 @@ export default function InvoicingSoftwarePage() {
         {
           name: "QuickBooks",
           bestFor: "Freelancers who also need bookkeeping and tax-oriented accounting",
-          freeOption: "QuickBooks now lists a $0 Free plan in the US. It allows up to 2 invoices per month, one connected bank and one user, with no accountant access. A separate 30-day trial provides access to a paid plan; don't confuse the two offers.",
+          freeOption: "QuickBooks lists a $0 Free plan in the US for one user, with no accountant access and one connected bank. It allows up to 2 invoices per month by default, or unlimited invoices if you qualify for and enable QuickBooks Payments. A separate 30-day trial provides access to a paid plan; don't confuse the two offers.",
           tradeoff: "The Free plan can cover very low-volume billing, but two invoices per month is restrictive for active freelancers. QuickBooks also offers a 30-day paid-plan trial; verify which plan and billing terms you're selecting before checkout.",
           url: "https://quickbooks.intuit.com/",
         },
@@ -90,7 +90,7 @@ export default function InvoicingSoftwarePage() {
           <p className="sp-eyebrow">Research notes</p>
           <h2 className="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-[#1d1d1f]">Official plan details checked</h2>
           <p className="mt-4 max-w-3xl text-sm leading-6 text-[#6e6e73]">
-            Plan facts were checked on October 11, 2026. Provider promotions and features can change; open the official pages to confirm the terms available to your business before relying on a limit or connecting payments.
+            US plan facts and published limits were checked on November 15, 2026. Provider promotions and features can change; open the official pages to confirm the terms available to your business before relying on a limit or connecting payments.
           </p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {[
