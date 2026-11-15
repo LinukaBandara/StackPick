@@ -76,6 +76,12 @@ These sections are process frameworks and buyer checklists, not claims that Stac
 - `/best/accounting-software` correctly warns that regional availability differs, but its country-specific claims and pricing links need a current check.
 - Some routes use the shared comparison template with no page-specific section beyond the template's product summaries and verdict. These are priority candidates for a deeper editorial review; the absence of a custom section alone is not a final quality judgment.
 
+### Software catalogue audit
+
+The current `lib/software.ts` inventory contains **9 software profiles**, all carrying the same `October 14, 2026` review date. Each profile includes a summary, intended audience, key features, strengths, trade-offs, pricing/free-plan notes, official product/pricing links, alternatives and comparison links. This is a useful structure, but the repeated review date should be checked against actual editorial work and not treated as proof that every price and feature was reverified on that date.
+
+The current catalogue is not yet a broad 50-profile resource. Do not expand it by creating thin template entries. Add profiles only when each has enough product-specific decision guidance and current primary-source evidence. Review screenshot provenance as part of that work: some imagery is vendor-hosted, some is third-party sourced, and some is explicitly labelled as an illustrative StackPick-created preview rather than a live product screenshot.
+
 ### Next audit actions
 
 1. Complete a route-by-route inventory of all 109 content pages and record page-specific evidence, useful unique sections, date/source coverage, regional scope and overlap.
