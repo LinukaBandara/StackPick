@@ -35,7 +35,7 @@ export default function Page() {
             "The Free plan lists unlimited transcription, limited AI features and 400 minutes of total meeting storage per user, pooled across the team. Storage is a total archive allowance, not a monthly transcription allowance.",
           tradeoff:
             "You may need to delete older meetings or upgrade as the archive grows. Some advanced automation, downloads and integrations are plan-dependent, so test the exact workflow you need.",
-          url: "https://fireflies.ai/pricing",
+          url: "https://guide.fireflies.ai/articles/4777633252-learn-about-meeting-storage-limits",
         },
         {
           name: "Fathom",
@@ -44,7 +44,7 @@ export default function Page() {
             "Fathom's individual Free plan lists unlimited recordings and transcription with instant AI call summaries. Advanced call summaries, action items and the conversational meeting assistant are included with Premium.",
           tradeoff:
             "Unlimited recording does not mean every AI feature is unlimited. If you depend on custom summaries, action items or follow-up emails, check which paid features are required.",
-          url: "https://fathom.video/pricing",
+          url: "https://www.fathom.ai/pricing",
         },
         {
           name: "Granola",
