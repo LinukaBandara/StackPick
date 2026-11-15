@@ -107,7 +107,7 @@ Classify each URL as keep, improve, consolidate, noindex or investigate. Do not 
 
 ### Additional content improvements — alternatives and practical workflows
 
-Replaced generic product rows and repeated template copy with page-specific decision frameworks on eleven routes:
+Replaced generic product rows and repeated template copy with page-specific decision frameworks on twelve routes:
 
 - `/best/notion-alternatives-small-businesses`: differentiates project control, knowledge management, database complexity and adoption; adds a comparable pilot and migration checklist.
 - `/best/quickbooks-alternatives`: separates invoicing from accounting needs, explains regional/accountant/inventory considerations and adds a controlled accounting migration sequence.
@@ -120,6 +120,7 @@ Replaced generic product rows and repeated template copy with page-specific deci
 - `/best/asana-alternatives`: differentiates alternatives by workflow friction and adds a one-week comparison pilot and migration checklist.
 - `/best/calendly-alternatives`: compares booking scenarios and adds a complete test for time zones, rescheduling, team routing and payments.
 - `/best/freshbooks-alternatives`: distinguishes invoicing from full accounting and adds regional and accounting migration guidance.
+- `/best/free-vs-paid-business-software`: replaces generic product rows with an upgrade decision framework, a reader-calculated break-even model and hidden-cost checks.
 
 These additions are editorial frameworks and practical checklists. They do not claim StackPick conducted hands-on vendor tests, and they intentionally avoid unsupported current prices or fabricated customer outcomes.
 
