@@ -26,6 +26,36 @@ Baseline before the change: 110 directory entries, 109 unique links and 116 stat
 
 Expected after the change: 109 unique directory entries matching the 109 content routes, with seven redirect aliases intentionally excluded.
 
+## Phase 2 — initial source audit findings (in progress)
+
+The following is a source-level review of representative routes, not a claim that all 109 pages have been fully verified or that the live rendered pages have been browser-tested.
+
+### Shared comparison template
+
+- The shared `ComparisonArticle` template supplies a consistent overview matrix, product-by-product free-plan/trade-off blocks, a verdict, related guides and direct vendor links.
+- It does not itself provide page-specific source citations, a verification date, a named human reviewer, or an article-specific decision framework. Those elements must come from each page's own content where appropriate; a shared layout cannot substitute for original editorial substance.
+- Replaced the generic "Independent research" label with a clearer disclosure: "Desk research · Hands-on testing is only claimed when explicitly described · Verify current pricing with each provider." This aligns the page-level wording with the existing About and How We Verify disclosures. It does not claim that every fact on every page has been freshly rechecked.
+
+### Representative route findings
+
+| Route | Source-level observation | Initial classification |
+|---|---|---|
+| `/best/web-hosting` | Five vendors and useful renewal-price framing, but the inspected page has no page-specific source/date block or extra decision checklist. Several factual statements (including backup cadence and support/reliability positioning) need current primary-source evidence or qualification. | Improve |
+| `/best/pos-systems` | Four providers and a useful processing-fee decision angle, but the inspected page has no dated source block or original cost scenario. The percentage-point example and contract assertions need source support and a clear market/region scope. | Improve |
+| `/best/hr-software` | Distinguishes HR from payroll and differentiates four vendors, but the inspected page has no dated source block or detailed workflow checklist. US employee-count guidance and international payroll claims need explicit geography and official-source support. | Improve |
+| `/best/cloud-storage` | Includes a distinct collaboration, external-sharing, recovery and data-exit checklist; useful original decision guidance is present. Free storage figures and product capability statements still need dated primary-source links. | Keep / verify |
+| `/best/form-builders` | Includes a lead handoff checklist and a practical mobile submission test. The article should keep its advice distinct from generic feature summaries and attach dated evidence to plan limits. | Keep / verify |
+| `/best/n8n-workflow-examples` | Provides multiple operational workflow examples, failure-path checks and an explicit statement that the blueprints are not claimed to have been run by StackPick. This is a stronger example of page-specific utility. | Keep / verify |
+| `/best/time-tracking-software-pricing` | Includes official vendor pricing links, a stated verification date and cost modelling. Recheck prices and calculations before release because pricing is volatile. | Keep / refresh |
+
+### Next audit actions
+
+1. Complete a route-by-route inventory of all 109 content pages and record page-specific evidence, useful unique sections, date/source coverage, regional scope and overlap.
+2. Prioritize pages that rely on broad assertions or current pricing without dated primary-source evidence.
+3. Add original scenarios, decision thresholds, migration/checklist guidance or worked calculations only where they genuinely help the stated reader.
+4. Review overlapping pages by search intent and distinct reader need before considering consolidation or noindex.
+5. Do not infer that a page is thin solely because it uses the shared template; assess its complete page-specific content and rendered experience.
+
 ## Phase 2 — content quality audit
 
 Audit every guide and profile with a consistent rubric:
