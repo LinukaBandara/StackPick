@@ -11,13 +11,13 @@ const plans = [
   { name: "Fathom Free", price: "$0", billing: "Free forever", fit: "Individuals who want meeting recordings, transcripts and summaries without a subscription", limits: "Advanced summaries and team-wide controls are limited by plan; check current feature allowances.", url: "https://www.fathom.ai/pricing" },
   { name: "Fathom Premium", price: "$16/user/mo", billing: "Annual billing; $20 monthly", fit: "Individuals needing advanced summaries, action items and a custom meeting bot", limits: "Team collaboration and shared workflows are on team plans.", url: "https://www.fathom.ai/pricing" },
   { name: "Fathom Team", price: "$15/user/mo", billing: "Annual billing; $19 monthly; 2-user minimum", fit: "Small teams that need shared recordings, comments and collaboration", limits: "Business tier adds CRM field sync, deal views and coaching features.", url: "https://www.fathom.ai/pricing" },
-  { name: "Fireflies Free", price: "$0", billing: "Free forever", fit: "Testing transcription and basic AI notes", limits: "400 minutes of storage per team and limited AI summaries/credits; storage is not the same as monthly transcription allowance.", url: "https://fireflies.ai/pricing" },
-  { name: "Fireflies Pro", price: "$10/seat/mo", billing: "Billed annually; $18 monthly", fit: "Individuals or small teams needing unlimited transcription, summaries and integrations", limits: "8,000 minutes of storage per seat; Business adds unlimited storage and team analytics.", url: "https://fireflies.ai/pricing" },
+  { name: "Fireflies Free", price: "$0", billing: "Free forever", fit: "Testing transcription and basic AI notes", limits: "400 minutes of total meeting storage per user, pooled across the team, plus limited AI credits; storage is not a monthly transcription allowance.", url: "https://fireflies.ai/pricing" },
+  { name: "Fireflies Pro", price: "$10/seat/mo", billing: "Billed annually; $18 monthly", fit: "Individuals or small teams needing unlimited transcription, summaries and integrations", limits: "8,000 minutes of total meeting storage per seat, pooled across the team; Business adds unlimited storage and team analytics.", url: "https://fireflies.ai/pricing" },
   { name: "Fireflies Business", price: "$19/seat/mo", billing: "Billed annually; $29 monthly", fit: "Teams needing conversation intelligence, analytics and expanded storage", limits: "Enterprise security, SSO/SCIM and advanced governance require Enterprise.", url: "https://fireflies.ai/pricing" },
   { name: "Otter Basic", price: "$0", billing: "Free forever", fit: "Occasional meetings and live transcription", limits: "300 transcription minutes/month, 30 minutes per conversation and 3 lifetime audio/video imports.", url: "https://otter.ai/pricing-new" },
-  { name: "Otter Pro", price: "$8.33/user/mo", billing: "Annual-billing equivalent; verify current checkout price", fit: "Individuals needing more transcription minutes, longer meetings and exports", limits: "1,200 in-app recording minutes/month, up to 90 minutes per meeting and 10 file imports/month.", url: "https://otter.ai/pricing-new" },
-  { name: "Otter Business", price: "$20/user/mo", billing: "Annual-billing equivalent shown on vendor page; verify checkout", fit: "Teams needing longer meetings, more transcription capacity and admin controls", limits: "6,000 transcription minutes and up to 4 hours per meeting on published plan comparison.", url: "https://otter.ai/pricing-new" },
-  { name: "Granola Basic", price: "$0/user/mo", billing: "Free", fit: "Individuals trying device-audio capture and AI notes without a meeting bot", limits: "Limited meeting history; advanced integrations and full history require Business.", url: "https://www.granola.ai/pricing" },
+  { name: "Otter Pro", price: "Annual-billing equivalent shown on pricing page", billing: "Monthly list price $16.99/user; confirm the current annual checkout amount", fit: "Individuals needing more transcription minutes, longer meetings and exports", limits: "1,200 in-app recording minutes/month, up to 90 minutes per meeting and 10 file imports/month.", url: "https://otter.ai/pricing" },
+  { name: "Otter Business", price: "$19.99/user/mo", billing: "Annual-billing equivalent; monthly list price and promotions vary", fit: "Teams needing longer meetings, more transcription capacity and admin controls", limits: "Unlimited in-app meeting transcription; up to 6,000 imported-file transcription minutes per user/month and 4 hours per conversation.", url: "https://otter.ai/pricing" },
+  { name: "Granola Basic", price: "$0/user/mo", billing: "Free", fit: "Individuals trying device-audio capture and AI notes without a meeting bot", limits: "30-day meeting history; advanced integrations and unlimited history require Business.", url: "https://www.granola.ai/pricing" },
   { name: "Granola Business", price: "$14/user/mo", billing: "Monthly per-user price", fit: "Individuals and small teams needing full history, integrations, API and MCP access", limits: "Enterprise adds SSO, organization-wide admin controls and retention policies.", url: "https://www.granola.ai/pricing" },
 ];
 
@@ -25,7 +25,7 @@ export default function Page() {
   return (
     <main className="bg-white">
       <article className="sp-container py-14 sm:py-20">
-        <p className="sp-eyebrow">Software pricing · Updated October 19, 2026</p>
+        <p className="sp-eyebrow">Software pricing · Updated November 15, 2026</p>
         <h1 className="sp-display mt-4 max-w-4xl">AI meeting assistant pricing: what do notes and transcripts really cost?</h1>
         <p className="sp-body-large mt-6 max-w-3xl">AI meeting assistants differ in how they capture calls, limit free usage, store recordings and share notes with a team. This guide compares published US pricing for Fathom, Fireflies.ai, Otter.ai and Granola. A free plan may be enough for one person, while searchable archives, CRM automation, team analytics and organization-wide controls can move the cost up quickly.</p>
 
@@ -35,7 +35,7 @@ export default function Page() {
             <tbody>{plans.map((p) => <tr key={p.name} className="border-t border-[#d2d2d7] align-top"><td className="p-4"><a className="font-semibold text-[#001D39] underline" href={p.url} target="_blank" rel="noreferrer">{p.name}</a><p className="mt-2 text-[#6e6e73]">{p.billing}</p></td><td className="p-4 whitespace-nowrap">{p.price}</td><td className="p-4">{p.fit}</td><td className="p-4">{p.limits}</td></tr>)}</tbody>
           </table>
         </section>
-        <p className="mt-4 text-sm leading-relaxed text-[#6e6e73]">Official vendor pricing pages checked October 19, 2026. Some vendors show an annual-billing monthly equivalent beside a higher monthly rate; Otter's displayed annual figures can vary by offer and region. Check the final checkout total, tax, seat minimums and current feature limits before purchasing.</p>
+        <p className="mt-4 text-sm leading-relaxed text-[#6e6e73]">Official provider pricing and help pages checked November 15, 2026. Fireflies storage is a total retained-minutes allowance, pooled across Free and Pro team members; it does not reset monthly. Otter displays different annual-billing equivalents in parts of its pricing page, so this guide avoids presenting a disputed Pro amount as a fixed price. Check checkout currency, annual commitment, seat minimums and current feature limits before purchasing.</p>
 
         <section className="mt-12 max-w-3xl">
           <h2 className="text-2xl font-semibold tracking-tight">Compare the capture method before the price</h2>
@@ -75,7 +75,7 @@ export default function Page() {
             <li><Link className="underline" href="/best/crm-software-pricing">CRM software pricing</Link></li>
           </ul>
         </section>
-        <p className="mt-8 text-xs leading-relaxed text-[#6e6e73]">Editorial comparison of public US pricing checked October 19, 2026. Vendor plans and limits change; verify the current official pricing and data-handling terms before uploading or recording sensitive meetings.</p>
+        <p className="mt-8 text-xs leading-relaxed text-[#6e6e73]">Editorial comparison of public US pricing and plan details checked November 15, 2026. Sources: <a className="underline" href="https://guide.fireflies.ai/articles/4777633252-learn-about-meeting-storage-limits" target="_blank" rel="noreferrer">Fireflies storage limits</a>, <a className="underline" href="https://guide.fireflies.ai/articles/3734844560-learn-about-the-fireflies-pricing-plans" target="_blank" rel="noreferrer">Fireflies plan pricing</a>, <a className="underline" href="https://help.otter.ai/hc/en-us/articles/360047538094-Conversation-import-and-app-limits-on-the-Basic-free-plan" target="_blank" rel="noreferrer">Otter Basic limits</a>, and the linked vendor pricing pages. Vendor plans and limits change; verify the current official pricing and data-handling terms before uploading or recording sensitive meetings.</p>
       </article>
     </main>
   );
