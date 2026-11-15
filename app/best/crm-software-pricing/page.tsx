@@ -24,15 +24,15 @@ const sources = [
 const costRows = [
   { name: "HubSpot Free tools", rate: "$0", five: "Not eligible", fifteen: "Not eligible", note: "Official page lists up to 2 users and 1,000 contacts; a team of five or fifteen needs a different plan or product." },
   { name: "Zoho CRM Standard", rate: "From $14/user/month", five: "$70/month", fifteen: "$210/month", note: "Illustrative seat arithmetic at the displayed starting rate; confirm billing term, region and checkout price." },
-  { name: "Salesforce Starter Suite", rate: "$25/user/month", five: "$125/month", fifteen: "$375/month", note: "Official page lists USD $25 per user/month, billed monthly or annually. Confirm the selected term and included features." },
-  { name: "Salesforce Pro Suite", rate: "$100/user/month", five: "$500/month", fifteen: "$1,500/month", note: "Official page lists USD $100 per user/month billed annually; the monthly equivalents are planning arithmetic, not a monthly-billing offer." },
+  { name: "Salesforce Starter Suite", rate: "$25/user/month", five: "$125/month", fifteen: "$375/month", note: "Official page lists USD $25 per user/month, billed monthly or annually; transaction fees may apply. Confirm the selected term and included features." },
+  { name: "Salesforce Pro Suite", rate: "$100/user/month", five: "$500/month", fifteen: "$1,500/month", note: "Official page lists USD $100 per user/month billed annually with a contract; the monthly equivalents are planning arithmetic, not a monthly-billing offer." },
 ];
 
 export default function CrmSoftwarePricingPage() {
   return (
     <article className="bg-white">
       <div className="sp-container py-14 sm:py-20">
-        <p className="sp-eyebrow">Software pricing guide · Checked October 18, 2026</p>
+        <p className="sp-eyebrow">Software pricing guide · Checked November 15, 2026</p>
         <h1 className="sp-display mt-4 max-w-4xl">CRM software pricing: what will a small team actually pay?</h1>
         <p className="sp-body-large mt-6 max-w-3xl">
           CRM pricing is more than the number shown on a pricing card. The real bill depends on how many people need access, which sales features are gated behind a higher tier, whether you pay monthly or annually, and whether onboarding or add-ons are required. This guide compares published starting prices and shows how per-seat costs scale.
@@ -49,7 +49,7 @@ export default function CrmSoftwarePricingPage() {
         <section className="mt-12">
           <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f]">Published starting prices and team-size examples</h2>
           <p className="mt-3 max-w-3xl text-sm leading-6 text-[#6e6e73]">
-            USD figures below come from the providers' public US pricing pages reviewed on October 18, 2026. They are not a like-for-like feature comparison. Seat totals are simple multiplication of the listed rate and exclude taxes, add-ons, implementation, discounts and any minimum-seat rules. Check the official pages before purchasing.
+            USD figures below come from the providers' public US pricing pages reviewed on November 15, 2026. They are not a like-for-like feature comparison. Seat totals are simple multiplication of the listed rate and exclude taxes, transaction fees, add-ons, implementation, discounts and any minimum-seat rules. Salesforce Pro Suite requires annual billing and a contract; Zoho's displayed starting rate should be confirmed at checkout for billing term and region.
           </p>
           <div className="mt-6 overflow-x-auto rounded-[20px] border border-[#d2d2d7]">
             <table className="w-full min-w-[760px] text-left text-sm">
